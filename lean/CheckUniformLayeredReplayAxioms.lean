@@ -1,0 +1,18 @@
+import UniformLayeredReplay
+
+#print axioms ExactFourierCircuits.UniformLayeredReplay.layerOrder
+#print axioms ExactFourierCircuits.UniformLayeredReplay.layerOrder_nodup
+#print axioms ExactFourierCircuits.UniformLayeredReplay.mem_layerOrder
+#print axioms ExactFourierCircuits.UniformLayeredReplay.layerOrder_perm
+#print axioms ExactFourierCircuits.UniformLayeredReplay.LevelSafe
+#print axioms ExactFourierCircuits.UniformLayeredReplay.OnLevel
+#print axioms ExactFourierCircuits.UniformLayeredReplay.OnLevel.safe
+#print axioms ExactFourierCircuits.UniformLayeredReplay.destinationUses
+#print axioms ExactFourierCircuits.UniformLayeredReplay.sourceUses
+#print axioms ExactFourierCircuits.UniformLayeredReplay.degree_of_level
+#print axioms ExactFourierCircuits.UniformLayeredReplay.shear_commute
+#print axioms ExactFourierCircuits.UniformLayeredReplay.safe_perm
+#print axioms ExactFourierCircuits.UniformLayeredReplay.run_perm
+#print axioms ExactFourierCircuits.UniformLayeredReplay.colorOrdered
+#print axioms ExactFourierCircuits.UniformLayeredReplay.colorOrdered_perm
+#print axioms ExactFourierCircuits.UniformLayeredReplay.colorOrdered_action

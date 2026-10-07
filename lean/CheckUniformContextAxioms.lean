@@ -1,0 +1,12 @@
+import UniformContext
+
+#print axioms ExactFourierCircuits.UniformContext.instructionFree
+#print axioms ExactFourierCircuits.UniformContext.ContextFree
+#print axioms ExactFourierCircuits.UniformContext.step_same
+#print axioms ExactFourierCircuits.UniformContext.execution
+#print axioms ExactFourierCircuits.UniformContext.bounded_execution
+#print axioms ExactFourierCircuits.UniformContext.runs
+#print axioms ExactFourierCircuits.UniformContext.bounded_runs
+#print axioms ExactFourierCircuits.UniformContext.preparation_contextFree
+#print axioms ExactFourierCircuits.UniformContext.fft_in_context
+#print axioms ExactFourierCircuits.UniformContext.fft_heap_in_context

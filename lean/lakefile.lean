@@ -165,3 +165,15 @@ lean_lib UniformWorkingMachine
 lean_lib UniformColoring
 
 lean_lib UniformDFSProgram
+
+lean_lib UniformWorkingCompletion
+
+lean_lib UniformLayeredReplay
+
+lean_lib UniformContext
+
+lean_lib UniformInPlaceMachine
+
+lean_lib UniformConvolutionDAG
+
+lean_lib UniformMasterRootMachine
