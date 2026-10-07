@@ -1,0 +1,7 @@
+import RoleWords
+#print axioms ExactFourierCircuits.RoleWords.pointwiseWord_matrix
+#print axioms ExactFourierCircuits.RoleWords.pointwiseWord_calls
+#print axioms ExactFourierCircuits.RoleWords.pointwiseWord_array
+#print axioms ExactFourierCircuits.RoleWords.pointwiseShearWord_apply
+#print axioms ExactFourierCircuits.RoleWords.pointwiseShearWord_untouched
+#print axioms ExactFourierCircuits.RoleWords.compile_pointwise_shear

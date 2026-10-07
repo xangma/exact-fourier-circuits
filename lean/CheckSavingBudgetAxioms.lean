@@ -3,3 +3,4 @@ import SavingBudget
 #print axioms ExactFourierCircuits.SavingBudget.coefficient_saving
 #print axioms ExactFourierCircuits.SavingBudget.factored_saving
 #print axioms ExactFourierCircuits.SavingBudget.floor_choice_saves
+#print axioms ExactFourierCircuits.SavingBudget.tensor_axis_factorization

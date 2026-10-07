@@ -10,12 +10,12 @@ numerical stability.
 The [proof contract](docs/proof-contract.md) specifies the exact cost models,
 coordinate conventions, admissible parameters and remaining witness lemmas.
 
-The installed proof checks successfully with Lean **4.34.1** and the upstream
-Mathlib revision. The 51 upstream modules are unchanged. The theorem, five
-kernel/shear identities, eleven projection/network identities, and 21
-construction-foundation declarations have axiom
-closures containing only `propext`,
-`Classical.choice`, and `Quot.sound`.
+The installed proof checks successfully with Lean **4.34.1** and pinned
+Mathlib. The 51 upstream modules are unchanged. New paper-derived component
+proofs and literal word compilers are checked with axiom closures containing
+only `propext`, `Classical.choice`, and `Quot.sound`. The complete saving word
+is still awaiting its assembled action/count certificate; see the
+[proof contract](docs/proof-contract.md) and [declaration registry](lean/CONSTRUCTION_CHECKS.json).
 
 ## Run
 
@@ -45,7 +45,7 @@ install `.venv/bin/python -m pip install -e '.[cuda]'` on a CUDA12 machine.
 | `gf2.py`, `directional.py` | Sparse binary orthonormal complements and bounded pairwise expansion of directional kernels |
 | `network.py` | Complete lazy scalar/frame network, terminal corrections, padding and role axes; exact integer saving budget |
 | `projection.py`, `dyadic.py` | Bounded binary projections of the complete network and fast exact checkpoint references |
-| `lean/` | Original existence theorem, exact matrix identities, conditional binary complement frames, budget arithmetic and explicit-witness interface |
+| `lean/` | Original theorem, actual binary complement bases, residual/spectral identities, typed component compilers, exact cardinalities and budget arithmetic |
 | `scripts/check-cuda.py` | CUDA scalar-DAG evaluator in FP32/FP64 against exact references |
 | `scripts/check-projected-cuda.py` | Complete projected-network CUDA execution, compiled/direct shear controls and stage diagnostics |
 
@@ -95,6 +95,12 @@ measure a bounded implementation, with no claim of a saving or full-width
 stability. See the [report and checkpoint plot](docs/projected-stability.md)
 and [projection contract](docs/projection-contract.md).
 
+A focused three-C diagnostic then found a source-restoration failure: with
+`t=1`, source `1` becomes `0` beside target `2^24` in FP32 or `2^64` in FP64.
+Direct shears preserve it. All 9,360 CUDA cases were independently checked
+using exact rational references. Common normalization removes the observed
+overflow but does not fix source loss. See [counterexamples and reproducible traces](docs/isolated-shear-stability.md).
+
 For fixture generation and plotting, install
 `.venv/bin/python -m pip install -e '.[research]'`.
 
@@ -129,6 +135,7 @@ Original source headers are retained. Apache2.0: see [LICENSE](LICENSE).
 Observed verification receipts live in `verification/`; generated circuits,
 large caches, Python environments and execution logs are ignored by Git.
 The graph is now indexed; Lean's whole-file parser gaps require exact source
-reads. [Construction-foundation receipt](verification/constructive-foundations.json)
-records the new declarations, source hashes and axiom closures. These checks
+reads. [Initial foundation receipt](verification/constructive-foundations.json) and
+[paper-component receipt](verification/paper-foundations.json) record checked
+declarations, source hashes and axiom closures for their respective snapshots. These checks
 do not certify the complete saving word.

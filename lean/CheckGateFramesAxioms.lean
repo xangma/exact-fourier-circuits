@@ -1,0 +1,22 @@
+import GateFrames
+
+#print axioms ExactFourierCircuits.GateFrames.hasONBasis_space
+#print axioms ExactFourierCircuits.GateFrames.hasONBasis_tripleTensor_perp
+#print axioms ExactFourierCircuits.GateFrames.hasONBasis_pair_perp
+#print axioms ExactFourierCircuits.GateFrames.edge_orthogonal
+#print axioms ExactFourierCircuits.GateFrames.row_support_common_label
+#print axioms ExactFourierCircuits.GateFrames.reverse_row_support_common_label
+#print axioms ExactFourierCircuits.GateFrames.rowLabel_hasONBasis
+#print axioms ExactFourierCircuits.GateFrames.transitionToEdge
+#print axioms ExactFourierCircuits.GateFrames.tensorData
+#print axioms ExactFourierCircuits.GateFrames.invocationCoordinates
+#print axioms ExactFourierCircuits.GateFrames.Data.local_transition
+#print axioms ExactFourierCircuits.GateFrames.Data.at_transition
+#print axioms ExactFourierCircuits.GateFrames.Data.sink_transition
+#print axioms ExactFourierCircuits.GateFrames.Data.edges
+#print axioms ExactFourierCircuits.GateFrames.Data.sinkEdges
+#print axioms ExactFourierCircuits.GateFrames.Data.forward_compatible
+#print axioms ExactFourierCircuits.GateFrames.Data.reverse_compatible
+#print axioms ExactFourierCircuits.GateFrames.Data.entry_auxiliary_zero
+#print axioms ExactFourierCircuits.GateFrames.Data.final_auxiliary_top
+#print axioms ExactFourierCircuits.GateFrames.Data.final_bank_spaces

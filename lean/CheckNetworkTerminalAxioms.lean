@@ -1,0 +1,9 @@
+import NetworkTerminal
+
+#print axioms ExactFourierCircuits.NetworkTerminal.translateMap_square
+#print axioms ExactFourierCircuits.NetworkTerminal.corrected_source_sink_exchange
+#print axioms ExactFourierCircuits.NetworkTerminal.bankDirection_norm
+#print axioms ExactFourierCircuits.NetworkTerminal.bankDirection_weight
+#print axioms ExactFourierCircuits.NetworkTerminal.triple_corrected_source_sink_exchange
+#print axioms ExactFourierCircuits.NetworkTerminal.corrected_column_source_sink_exchange
+#print axioms ExactFourierCircuits.NetworkTerminal.triple_column_corrected_source_sink_exchange

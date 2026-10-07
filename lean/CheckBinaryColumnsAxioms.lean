@@ -1,0 +1,26 @@
+import BinaryColumns
+
+#print axioms ExactFourierCircuits.BinaryColumns.column
+#print axioms ExactFourierCircuits.BinaryColumns.columnFamily
+#print axioms ExactFourierCircuits.BinaryColumns.columnFamily_orthonormal
+#print axioms ExactFourierCircuits.BinaryColumns.weight_unit
+#print axioms ExactFourierCircuits.BinaryColumns.columnFamily_weight
+#print axioms ExactFourierCircuits.BinaryColumns.columnFamily_weightModFour
+#print axioms ExactFourierCircuits.BinaryColumns.dot_columnFamily
+#print axioms ExactFourierCircuits.BinaryColumns.columnFamily_projection_block
+#print axioms ExactFourierCircuits.BinaryColumns.columnFamily_projection
+#print axioms ExactFourierCircuits.BinaryColumns.weight_columns
+#print axioms ExactFourierCircuits.BinaryColumns.weightModFour_columns
+#print axioms ExactFourierCircuits.BinaryColumns.columnFamily_projection_weightModFour
+#print axioms ExactFourierCircuits.BinaryColumns.columnFamily_projection_phase
+#print axioms ExactFourierCircuits.BinaryColumns.columnFamily_signedWord
+#print axioms ExactFourierCircuits.BinaryColumns.globalDirection
+#print axioms ExactFourierCircuits.BinaryColumns.columnLineExponent
+#print axioms ExactFourierCircuits.BinaryColumns.columnPerpExponent
+#print axioms ExactFourierCircuits.BinaryColumns.dot_globalDirection
+#print axioms ExactFourierCircuits.BinaryColumns.binarySign_finset_sum
+#print axioms ExactFourierCircuits.BinaryColumns.column_terminal_phase
+#print axioms ExactFourierCircuits.BinaryColumns.column_terminal_frame_ratio
+#print axioms ExactFourierCircuits.BinaryColumns.zero_columns_projection
+#print axioms ExactFourierCircuits.BinaryColumns.empty_frame_projection
+#print axioms ExactFourierCircuits.BinaryColumns.zero_columns_terminal_ratio

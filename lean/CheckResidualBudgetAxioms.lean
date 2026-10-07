@@ -1,0 +1,20 @@
+import ResidualBudget
+
+#print axioms ExactFourierCircuits.ResidualBudget.nested_decomposes
+#print axioms ExactFourierCircuits.ResidualBudget.nested_residual_cardinality
+#print axioms ExactFourierCircuits.ResidualBudget.nested_residual_dimension
+#print axioms ExactFourierCircuits.ResidualBudget.nested_residual_finrank_add
+#print axioms ExactFourierCircuits.ResidualBudget.central_edge_dimension
+#print axioms ExactFourierCircuits.ResidualBudget.central_future_edge_dimension
+#print axioms ExactFourierCircuits.ResidualBudget.GeometricEdge
+#print axioms ExactFourierCircuits.ResidualBudget.step_accounting
+#print axioms ExactFourierCircuits.ResidualBudget.geometric_edge_accounting
+#print axioms ExactFourierCircuits.ResidualBudget.budget_comp
+#print axioms ExactFourierCircuits.ResidualBudget.finite_path_accounting
+#print axioms ExactFourierCircuits.ResidualBudget.geometric_frame_path_budget
+#print axioms ExactFourierCircuits.ResidualBudget.role_budget_sum
+#print axioms ExactFourierCircuits.ResidualBudget.uniform_decrease_total
+#print axioms ExactFourierCircuits.ResidualBudget.geometric_role_paths_budget
+#print axioms ExactFourierCircuits.ResidualBudget.network_residual_balance
+#print axioms ExactFourierCircuits.ResidualBudget.network_residual_formula
+#print axioms ExactFourierCircuits.ResidualBudget.residual_saving_balance

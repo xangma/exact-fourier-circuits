@@ -1,0 +1,3440 @@
+{
+  "schema": "lean-construction-foundations/v2",
+  "passed": true,
+  "finished_utc": "2026-10-07T15:45:45.561559+00:00",
+  "lean_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "upstream_files_verified": 51,
+  "source_sha256": {
+    "KernelIdentities.lean": "009b8ba2b0dbd2f2f16ccb092b8e0bc882313ae2d54558f035a8280054043031",
+    "ProjectionIdentities.lean": "90f245cd0855dc67c3366715b5f278842631b0ac6e9050765c4f1e6175fa8e6d",
+    "CONSTRUCTION_CHECKS.json": "de4ea5f42346008d75d0a313b3677f3dd227b370e5a642ca797d073ddfc6e565",
+    "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "lakefile.lean": "c4bc1c8c5b4f72681f5909cc745ac5f2f4a9948019b642e1405e35c0848a0cce",
+    "UPSTREAM_MANIFEST.json": "164f39279317c670920956d5260da95c02dad03acd140329fc503dc263cd2251",
+    "lake-manifest.json": "7b626f9e30d660141cb94e48851728dd8a1bd2b65028ba765bae7de0e2582639",
+    "BinaryFrames.lean": "b04f6f0e2b2adaf22b982a8172b544c9735013617b824c984c400e318b505bd0",
+    "CheckBinaryFramesAxioms.lean": "16eac8ba9eea7a7260c853d7a8211d069e032f99a60fbf356241bfad0aa3f5e5",
+    "ConstructiveBridge.lean": "7dd114a9e68b64105bce4caccf2063b1afbc5ee8d56dc656aeae33d72f6a8094",
+    "CheckConstructiveBridgeAxioms.lean": "75d4db6f76cfd2f96db6fcf1449d26bc158f1e52b8eb0e5491c1774420a58913",
+    "SavingBudget.lean": "0b9e843e6ef0a7dba978ae86091ab3bfa4f6b3ce1446af07b884eeb2ea9f1c08",
+    "CheckSavingBudgetAxioms.lean": "2d0c8ececd7322c922d90ab70f611e93c8444b4865ec5262d5320c5e6e3ba835",
+    "BinaryComplement.lean": "1ddc7760901b0bb8d3b8e184d5a0fd04937f9d76f4f4ede13bafe29922c51f0e",
+    "CheckBinaryComplementAxioms.lean": "f002646df3f8a00834728d543990e968776e171df794bfd44af2f27102a6aa48",
+    "BinaryTensor.lean": "03793275ae54447818721984b6d8d266cd1c9502f65db027ae18dbc7da137eb7",
+    "CheckBinaryTensorAxioms.lean": "f768ea8a3a4f4e06a6c803e23480b9691c5f300da08f3879fa23eeeea693bf4f",
+    "TypedKernelWords.lean": "71338589b396abdfdf98a318d7b8dff9b00a6f83739346f681564daaa7269fca",
+    "CheckTypedKernelWordsAxioms.lean": "3c9d25a88091e85f3d6c6ecd0b98347dae9dba0800d28c8c153a7cce40eff6c9",
+    "DirectionalWords.lean": "5e7de26580bd52dbcc8d40bf550231db95f6123d0b0618d9ce118b58257dd9fa",
+    "CheckDirectionalWordsAxioms.lean": "ba2f486d1084daebe51ccefa20f75cee1625aeb227568bef98498fccfd9701b0",
+    "TensorWords.lean": "ee548d951979f27342730d95c33b7bb7c9337cbb4a2f2171c289164a152b1099",
+    "CheckTensorWordsAxioms.lean": "78293aa4d8ab0bca1ff04fb1a8f3aade55d3bb7a435a8e3ba4a45e52854a1327",
+    "ScalarNetwork.lean": "adf2bbfeb81c8f1d3c11314ca1d99337c17305be4741475eed60731fc64a9a89",
+    "CheckScalarNetworkAxioms.lean": "7f1dd522d581d92927076f48912d2d51fc530e6e17d35597d6667310a103f641",
+    "TripleNetwork.lean": "350421898f9da06013968297668f820fa51e0c3db0b6e31160a231d0ea54cda0",
+    "CheckTripleNetworkAxioms.lean": "94680087a30bed6a92c0adc8d9d0d2e77a751eced9be0b3aa1f511f188b49a10",
+    "FrameSpectrum.lean": "465aa8215d1567de0e23c807687e94412db8666c2d0323413753c657613098fb",
+    "CheckFrameSpectrumAxioms.lean": "ef9217b1448dd318f93011d84affea2047e07ef8d9f72c25ed07dca02fd442f3",
+    "FrameCommutation.lean": "d4fee3b0eec9b3bdc56d56eb2de5def3e2d06fc9ee7b62d6782f91cc163edb19",
+    "CheckFrameCommutationAxioms.lean": "cf5ea8c3ae0144ec525d3cad15f439807df45862be8b21112b468272d1245b4a",
+    "ExplicitSeedBudget.lean": "f9cfd81cb636ff2043f8a19b83395f3d6928547b53584f3cb94c3c9cb397c268",
+    "CheckExplicitSeedBudgetAxioms.lean": "02ac86ebba512a6792f5cc78dc693c4bb929fba574a5a58bb2aeeec00448f9ec",
+    "RoleWords.lean": "b3afaef02b4a0f090ffbe6f01e1de20ee7490cdad5801e01b2c7b12ac43303d8",
+    "CheckRoleWordsAxioms.lean": "5fb71d32cc13f043d41428a8eedacad00370bfd15483d833d2e0b069dec8e8d0",
+    "FrameWords.lean": "4029ce5a23d106999d329ee43b612a4c2e226dafb4e775acda36fed3dd218ba4",
+    "CheckFrameWordsAxioms.lean": "d90762ea893e67bf0138eff712e024240b8251504a0e6625abeb729ab054170e",
+    "TripleCounting.lean": "0ea862cfb923aa1422ee8cd8f546b30417b0931867df0a5b40b562c21f1a4b6b",
+    "CheckTripleCountingAxioms.lean": "badc6ce7d9fdee3ff65f2ec7c42ed49e3d72cf3b8469482e094ad9e53e4c3d19",
+    "BinaryResiduals.lean": "f6061c2114c9729480c18c888095e867b5b7542f65322f591ffc5c0f800471c9",
+    "CheckBinaryResidualsAxioms.lean": "18557bff28b867321a68bca5c73029b6c391244673b206eb55d266996c8c97dd",
+    "BinaryProjection.lean": "8d374db67a61cdec79631c3d6b649de433f2d047e5537447b93b6c81eda562f6",
+    "CheckBinaryProjectionAxioms.lean": "9c0a45f525bc5d05e99c8427641b61974e013a07fc703c58d35efe015f52020e",
+    "BinaryColumns.lean": "c9c84054b642a0acbaaec67129580e01f64a93eb34472fedd570cf2e1db1ea2f",
+    "CheckBinaryColumnsAxioms.lean": "383aa3954b1efec74e223cdef2d8a0de800de7f73623012baa155d85486a7164",
+    "NetworkTerminal.lean": "ce0129df65aff1424faff91d4a8b0bc385f7bbf6cd4a8c2b318ba9519c92fee0",
+    "CheckNetworkTerminalAxioms.lean": "2b821024850bb8bc3fc1376f81084687036bd913dad1fb1dda94484e626f9503",
+    "ScalarSupport.lean": "3a40a9fedc6d6c7e8b77fce18bf3056043dd0de3c03b6dff9bc25a4bcfcfee97",
+    "CheckScalarSupportAxioms.lean": "fa6f2d7de0bf5c25859e6302b599876785429f9824e18d040f0c2f6f64959744",
+    "RoleFrameWords.lean": "a28d5621bf0a4c838412920d7be9897b5abf8a992efecfb76e553b6cf0feb3c3",
+    "CheckRoleFrameWordsAxioms.lean": "f4aa1459855a431217c8efa103f85e2fa4df5071f8eb0e180f02a1c2173d1f90",
+    "RectangularWords.lean": "4055e7b00aa2d7dd69ee5c67c2a0a1427c079b439db49f1d06f539d493c61ca6",
+    "CheckRectangularWordsAxioms.lean": "595f02194590517df6f8697654f65b5327ab8503296d8292720ace6cd6a65ad3",
+    "StageFrames.lean": "8dd11dfb38920d584c483f5d6b64f58e5a6ef4873e5e6ed586cc4b376a06de3b",
+    "CheckStageFramesAxioms.lean": "b2473ee3e7100ecbec6af3142c39e40c82caf333a446206bff18c58933a8b50e",
+    "FramedScheduleWords.lean": "49321ffeb5817be0bc8fb03f874d68cc9f827621e5906137e06a352018126a6f",
+    "CheckFramedScheduleWordsAxioms.lean": "3b4d8c0a83e9db73cdc354477f0bbad9904b680066d0fa1f3e57f03ad8e84fbf",
+    "ResidualBudget.lean": "5cf5f6cc36dbb32b9eabc8f25b9f9807ef8bb1ce887ba9e967d4486016f8e48d",
+    "CheckResidualBudgetAxioms.lean": "fa3cc057c7857604c4b8f9bdd69602e3f3801b3d00bb2869bc1b106d28dfd081",
+    "TensorFusion.lean": "1a84ca609664498e146a6a2d920c0ce8f32cbb6637a5e4d967a57e400ae5050d",
+    "CheckTensorFusionAxioms.lean": "157ae5f94c5bb683909bb19cfea06bba071047bd450a19c29842c2296ac192ff",
+    "GateFrames.lean": "247c79c8c4522534b3df2436ada0015860d2243d4cd0cc6d2fad46e42786c23e",
+    "CheckGateFramesAxioms.lean": "76a7b97727efab12fd396a01ec40b8eba6d50301768fb95f4c7725c1c0fbe8a9",
+    "PaddingWords.lean": "ae5cbda148482982c17b8826165559dff77cad571afa61c1868845613214550c",
+    "CheckPaddingWordsAxioms.lean": "ca1f423673468047dd7fc4720ee48e946eb845eba259cd9836055884fc783d14",
+    "ColumnSchedule.lean": "de80668187e982e6bc1318deb05c1bf8f6678a11a6fb621a11479cbc3d4142ee",
+    "CheckColumnScheduleAxioms.lean": "2c4d95b9a03846089c355405b400e41528c2353ff744d12898c417f677efa303",
+    "TerminalWords.lean": "081e5cf84abfdfde3df4bc1a5998cdd4ab3ddf82d4c7eabd5cfc1d030617984b",
+    "CheckTerminalWordsAxioms.lean": "144469381f12d3b774b9e04e38e8c7b8c0067805399d3e51a0c50a132327c624",
+    "TripleInvocationFrames.lean": "9541e83e6b78d035b7aef29850319293b033b07cca3fb98ef83c8e49b4bf8740",
+    "CheckTripleInvocationFramesAxioms.lean": "a8d6d29cfa5f4332afb31492c46257a5cfd2c5f0a93e1949ae37dab40dcc79bc"
+  },
+  "verification_script_sha256": "9206d88baff87b028b0d7b178358270f6447405eab2c341c468d62920990ad92",
+  "axioms": {
+    "ExactFourierCircuits.BinaryFrames.transvection_add": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.transvection_smul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.transvection_involutive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.transvection_preserves_dot": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.transvectionEquiv": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.pivot_direction_isotropic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.pivot_transvection_unit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.twoFrameEquiv": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.twoFrame_preserves_dot": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.twoFrame_unit_first": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.twoFrame_unit_second": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.twoFrame_orthonormal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.twoFrame_complement_orthogonal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.twoFrame_complement_spans": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ConstructiveBridge.kernel_isUnit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ConstructiveBridge.kernel_not_isMonomial": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ConstructiveBridge.finiteWin_of_word": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ConstructiveBridge.main_of_word": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.SavingBudget.coefficient_saving": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.SavingBudget.factored_saving": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.SavingBudget.floor_choice_saves": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.SavingBudget.tensor_axis_factorization": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.f2_cases": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.f2_square": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.characteristic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.dot_characteristic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.transvection_fixes_characteristic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.exists_zero_iff_not_characteristic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.one_complement_orthogonal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.one_complement_spans": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.one_index_card": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.two_index_card": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.failed_second_pivot_shape": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.exists_second_pivot": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.exists_valid_pivots": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.perp": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.mem_perp": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.oneFamily": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.twoFamily": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.oneAmbientBasis": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.oneAmbientBasis_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.twoAmbientBasis": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.twoAmbientBasis_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.oneFamily_linearIndependent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.twoFamily_linearIndependent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.oneFamily_span": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.twoFamily_span": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.oneComplementBasis": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.twoComplementBasis": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.oneComplementBasis_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.twoComplementBasis_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.oneComplementBasis_orthonormal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.twoComplementBasis_orthonormal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.indicator": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.dot_indicators": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.triple_indicator_norm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.exists_outside": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.triple_indicator_not_characteristic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.triple_indicator_valid_pivot": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.triple_basis_exists": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.triple_pair_sum_not_characteristic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.even_intersection_orthogonal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.triple_pair_valid_pivots": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryComplement.triple_pair_basis_exists": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.bit_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.bit_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.bit_cast": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.bit_mul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.bit_sq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.bit_add_overlap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.bit_finset_prod": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.weight_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.weightModFour_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.weight_eq_support_card": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.overlap_cast": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.weight_cast_norm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.weight_add_overlap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.overlap_even_of_dot_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.weightModFour_add_of_dot_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.weightModFour_smul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.norm_one_weight_mod_four": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.dot_tensor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.weight_tensor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.tensor_norm_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.tensor_orthonormal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.emptyTensor_weight": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.emptyTensor_norm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.dot_tensorFamily": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.weight_tensorFamily": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.tensorFamily_norm_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.tensorFamily_empty_weight": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.tensorFamily_empty_norm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.dot_finset_sum_right": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.orthogonal_sum_weightModFour": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.orthogonal_family_weightModFour": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.orthogonal_sum_weight_mod_four": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.frameProjection_dot": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.frameProjection_idempotent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryTensor.frameProjection_weightModFour": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TypedKernelWords.compile_nonzero_shear": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TypedKernelWords.compile_inverse": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TypedKernelWords.hadamardWord_matrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TypedKernelWords.relabelWord_matrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TypedKernelWords.relabelWord_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.DirectionalWords.pairPoint_injective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.DirectionalWords.representatives_card": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.DirectionalWords.compile_directional": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.DirectionalWords.compile_inverse_directional": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.DirectionalWords.directionalC_inverse": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TensorWords.embeddedWord_matrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TensorWords.embeddedWord_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TensorWords.parallelWord_matrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TensorWords.parallelWord_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TensorWords.unit_axis_matrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TensorWords.tensorCoordinates_bridge": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TensorWords.compile_ordinary_tensor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ScalarNetwork.composeMatrix_mulVec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ScalarNetwork.RG_entry": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ScalarNetwork.JV_entry": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ScalarNetwork.intersection_card_three_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ScalarNetwork.incidence_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ScalarNetwork.incidence_linear_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ScalarNetwork.invocation_dirty_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ScalarNetwork.neighboring_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ScalarNetwork.neighboring_even": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ScalarNetwork.neighboring_distinct": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ScalarNetwork.triple_card": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleNetwork.stage_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleNetwork.reverseEdge_involutive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleNetwork.reverseRows_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleNetwork.reverseStage_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleNetwork.scalarNetwork_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleNetwork.profile_card": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleNetwork.bank_card": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.I_pow_four": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.I_pow_mod_four": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.phase_natCast": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.phase_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.phase_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.phase_neg_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.phase_add": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.phase_ne_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.phase_neg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.phase_finset_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.binary_cases": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.binarySign_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.binarySign_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.binarySign_add": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.binarySign_phase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.kernel_phase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.inverse_kernel_phase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.vec_add_self": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.character_comm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.character_add": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.character_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.character_at_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.translate_character": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.directional_character": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.inverse_directional_character": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.inverse_directional_translation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.directional_square": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.directional_inverse": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.character_sum_nonzero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.character_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.character_pair_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.walsh_square": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.walsh_character": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.cardinal_ne_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.character_expansion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.operator_eq_of_characters": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.frameMap_character": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.frameMap_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.frameMap_comp": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.frameMap_inverse": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.norm_one_weightModFour": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.signedMap_character": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.signedWord_character": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.signed_projection_phase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.signedWord_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.signedWords_same_projection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.frame_ratio_signedWord": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.weightModFour_unit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.signedMap_unit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.unit_frameProjection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.coordinate_word_standard": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.terminal_weight_ratio": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.terminal_frame_ratio": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameSpectrum.frameEquiv": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameCommutation.pointwiseMatrix_as_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameCommutation.compatible_operators_commute": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameCommutation.common_operator_commutes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameCommutation.compatible_frames_commute": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ExplicitSeedBudget.parameter_formulas": [
+      "propext"
+    ],
+    "ExactFourierCircuits.ExplicitSeedBudget.padding": [
+      "propext"
+    ],
+    "ExactFourierCircuits.ExplicitSeedBudget.residual_balance": [
+      "propext"
+    ],
+    "ExactFourierCircuits.ExplicitSeedBudget.columns_value": [
+      "propext"
+    ],
+    "ExactFourierCircuits.ExplicitSeedBudget.bits_value": [
+      "propext"
+    ],
+    "ExactFourierCircuits.ExplicitSeedBudget.strict_margin": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ExplicitSeedBudget.saved_coefficient": [
+      "propext"
+    ],
+    "ExactFourierCircuits.ExplicitSeedBudget.bits_at_least_two": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ExplicitSeedBudget.ordinary_factorization": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ExplicitSeedBudget.proposed_count_saves": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ExplicitSeedBudget.closed_proposed_count_saves": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleWords.pointwiseWord_matrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleWords.pointwiseWord_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleWords.pointwiseWord_array": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleWords.pointwiseShearWord_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleWords.pointwiseShearWord_untouched": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleWords.compile_pointwise_shear": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameWords.binaryAction_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameWords.binaryAction_mul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameWords.translation_entry": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameWords.binaryAction_translation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameWords.binaryAction_directional": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameWords.binaryAction_inverse": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameWords.norm_one_nonzero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameWords.signedLayer_action": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameWords.signedLayer_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameWords.signedFrameList_action": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameWords.signedFrameList_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FrameWords.compile_signed_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleCounting.splitTripleEquiv": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleCounting.neighboring_degree": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleCounting.edge_card": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleCounting.role_card": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.Orthogonal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.Nondegenerate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.orth": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.residual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.Decomposes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.orthogonal_symm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.orthogonal_mono": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.orthogonal_sup_left": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.orthogonal_sup_right": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.decomposes_symm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.decomposes_nested": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.residual_of_decomposes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.orthogonal_span": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.nondegenerate_bot": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.nondegenerate_sup": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.residualBasis": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.residualBasis_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.residualBasis_orthonormal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.dot_frame_coeff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.orthonormal_linearIndependent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.frameBasis": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.frameBasis_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.basis_nondegenerate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.vec_add_self": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.basis_span_coe": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.sumFamily_span": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.sumFamily_orthonormal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.sumBasis": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.sumBasis_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.sumBasis_orthonormal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.fullBasis": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.fullBasis_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.fullBasis_orthonormal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.full_nondegenerate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.line": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.mem_line": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.line_perp_orthogonal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.line_decomposes_perp": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.pair_decomposes_perp": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.constant_span": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.lineBasis": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.lineBasis_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.line_nondegenerate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.perp_nondegenerate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.pairPerp_nondegenerate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tensor_add_left": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tensor_add_right": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tensor_smul_left": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tensor_smul_right": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tensor_zero_left": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tensor_zero_right": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tensorSpace": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tensor_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tensorSpace_mono": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tensorSpace_sup_left": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tensorSpace_sup_right": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tensorSpace_orthogonal_left": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tensorSpace_orthogonal_right": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tensorSpace_decomposes_left": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tensorSpace_decomposes_right": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tensor_unit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tensorSpace_top_top": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tensor_finset_sum_left": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tensor_finset_sum_right": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tensorBasis_span": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tensorBasis": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tensorBasis_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tensorBasis_orthonormal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tensor_nondegenerate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.label0": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.label1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.label2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.label3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.label5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.residual_X_in_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.residual_X_2_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.residual_Y_0_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.residual_Y_4_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.zero_decomposes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.residual_center_source_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.residual_center_BD_ED": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.residual_side_source_0": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.residual_side_0_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.residual_side_2_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.residual_side_5_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.residual_auxiliary_last_sink": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.stage_Y_outgoing_relative_perp": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.central_residual_dimension": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.central_decrease_dimension": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.central_future_residual_dimension": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.central_future_decrease_dimension": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.weight_indicator": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.weight_characteristic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tripleTensor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tripleTensor_norm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tripleTensor_weight": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tripleTensor_ambient_card": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tripleTensor_not_characteristic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tripleTensor_complement_basis": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.perp_characteristic_of_unique": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tripleTensor_zero_characteristic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tripleTensor_zero_perp": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.emptyTripleComplementBasis": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tripleTensor_prefix_split": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tripleTensor_zero_line": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryResiduals.tripleTensor_perp_nondegenerate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.dot_sub_right": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.frame_unit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.frame_orth": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.frameProjection_add": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.frameProjection_smul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.frameProjection_mem_span": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.frameProjection_generator": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.frameProjection_fixed_of_mem_span": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.dot_projection_of_mem_span": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.frameProjection_unique": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.frameSpan_nondegenerate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.frameSpan_disjoint_residual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.frameProjection_remainder_mem_orth": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.frameSpan_decomposes_residual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.frameProjection_eq_of_span_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.projectionMap_eq_of_span_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.signedWords_eq_of_span_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.frameMap_eq_of_span_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.frameProjection_sumFamily": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.frameProjection_direct_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.frameExponent_direct_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.residual_exponent_increasing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.residual_exponent_decreasing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.frame_ratio_increasing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.frame_ratio_decreasing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.nested_frame_ratio_increasing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.nested_frame_ratio_decreasing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.basis_projection_same_space": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.nested_basis_ratio_increasing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.nested_basis_ratio_decreasing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryProjection.projectionMap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryColumns.columnFamily": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryColumns.columnFamily_orthonormal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryColumns.weight_unit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryColumns.columnFamily_weight": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryColumns.columnFamily_weightModFour": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryColumns.dot_columnFamily": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryColumns.columnFamily_projection_block": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryColumns.columnFamily_projection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryColumns.weight_columns": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryColumns.weightModFour_columns": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryColumns.columnFamily_projection_weightModFour": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryColumns.columnFamily_projection_phase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryColumns.columnFamily_signedWord": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryColumns.columnLineExponent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryColumns.columnPerpExponent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryColumns.dot_globalDirection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryColumns.binarySign_finset_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryColumns.column_terminal_phase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryColumns.column_terminal_frame_ratio": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryColumns.zero_columns_projection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryColumns.empty_frame_projection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryColumns.zero_columns_terminal_ratio": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.NetworkTerminal.translateMap_square": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.NetworkTerminal.corrected_source_sink_exchange": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.NetworkTerminal.bankDirection_norm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.NetworkTerminal.bankDirection_weight": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.NetworkTerminal.triple_corrected_source_sink_exchange": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.NetworkTerminal.corrected_column_source_sink_exchange": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.NetworkTerminal.triple_column_corrected_source_sink_exchange": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ScalarSupport.neighbor_coefficient_ne_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ScalarSupport.G_nonzero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ScalarSupport.R_nonzero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ScalarSupport.V_nonzero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ScalarSupport.J_nonzero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ScalarSupport.G_support_card": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ScalarSupport.R_support_card": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ScalarSupport.V_support_card": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ScalarSupport.J_support_card": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ScalarSupport.invocation_support_count": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.roleEmbedding": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.roleEmbedding_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.roleEmbedding_not_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.roleMatrix_selected_entry": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.roleMatrix_selected_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.roleMatrix_untouched_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.roleWord": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.roleWord_matrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.roleWord_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.binaryValues": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.binaryValues_at": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.binaryValues_surjective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.binaryAction_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.roleWord_selected_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.roleWord_untouched_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.roleWord_array": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.roleFrameList": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.roleFrameList_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.roleFrameList_array": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.roleFrameList_selected_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.roleFrameList_untouched_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.compile_signed_role_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.nestedRatio": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.nestedRatio_signedWord": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.roleFrameList_nested_array": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RoleFrameWords.compile_nested_role_edge": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.support": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.mem_support": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.entryMatrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.entryWord": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.entryWord_matrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.entryWord_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.entryMatrix_mul_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.listWord": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.entrySum_mul_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.listWord_matrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.listWord_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.rectangularWord": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.rectangularMatrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.support_sum_eq_univ": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.rectangularWord_matrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.rectangularWord_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.rectangularWord_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.rectangularWord_target": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.rectangularWord_untouched": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.rectangularWord_source": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.pointwiseRectangularWord": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.pointwiseRectangularWord_matrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.pointwiseRectangularWord_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.pointwiseRectangularWord_target": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.pointwiseRectangularWord_untouched": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.pointwiseRectangularWord_source": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.pointwiseRectangularWord_array": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.disjoint_ranges": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.compile_rectangular_shear": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.support_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.RectangularWords.rectangularWord_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.StageFrames.coordinates_dot": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.StageFrames.coordinates_weight": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.StageFrames.space_perp": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.StageFrames.outgoing_perp": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.StageFrames.space_assoc_line": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.StageFrames.append_tripleTensor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.StageFrames.prepend_tripleTensor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.StageFrames.prefix_outgoing_perp": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.StageFrames.future_line_factor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.StageFrames.physical_full_tripleTensor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.StageFrames.physical_source": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.StageFrames.consecutive_boundaries": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.StageFrames.physical_sink": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.StageFrames.triple_stage_boundaries": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.StageFrames.factor_complement_basis": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.StageFrames.addressCoordinates": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Label": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Label.vectors": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Label.exponent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Label.span": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Label.exponent_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Label.nondegenerate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Label.selfResidual_eq_bot": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Label.emptyResidualBasis": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Labels": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Values": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.frames": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.inverseFrames": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.frames_inverse": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.inverseFrames_frames": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.scalarAction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.scalarAction_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.scalarAction_mul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.NestedEdge": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.NestedEdge.dimension": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.NestedEdge.refl": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.NestedEdge.refl_dimension": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.NestedEdge.word": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.edgeOperator": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.NestedEdge.word_array": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.NestedEdge.word_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.edgesWord": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.edgesWord_array": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.allEdgesWord_array": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.edgesWord_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.allEdgesWord_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.pointwiseWord_binary_array": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Event": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Event.scalarMatrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Event.word": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Event.residualDimension": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Event.frames_commute": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Event.word_array": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Event.word_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Schedule": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Schedule.word": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Schedule.scalarMatrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Schedule.residualDimension": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Schedule.scalarCount": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Schedule.word_array": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Schedule.word_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Schedule.append": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Schedule.append_word": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Schedule.append_scalarMatrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Schedule.append_residualDimension": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Schedule.append_scalarCount": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.compile_schedule": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Schedule.finishWord": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Schedule.finishWord_array": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.Schedule.finishWord_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.FramedScheduleWords.compile_finish_edges": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ResidualBudget.nested_decomposes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ResidualBudget.nested_residual_cardinality": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ResidualBudget.nested_residual_dimension": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ResidualBudget.nested_residual_finrank_add": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ResidualBudget.central_edge_dimension": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ResidualBudget.central_future_edge_dimension": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ResidualBudget.GeometricEdge": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ResidualBudget.step_accounting": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ResidualBudget.geometric_edge_accounting": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ResidualBudget.budget_comp": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ResidualBudget.finite_path_accounting": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ResidualBudget.geometric_frame_path_budget": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ResidualBudget.role_budget_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ResidualBudget.uniform_decrease_total": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ResidualBudget.geometric_role_paths_budget": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ResidualBudget.network_residual_balance": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ResidualBudget.network_residual_formula": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ResidualBudget.residual_saving_balance": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TensorFusion.split_tensor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TensorFusion.fusion_tensor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.GateFrames.hasONBasis_space": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.GateFrames.hasONBasis_tripleTensor_perp": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.GateFrames.hasONBasis_pair_perp": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.GateFrames.edge_orthogonal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.GateFrames.row_support_common_label": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.GateFrames.reverse_row_support_common_label": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.GateFrames.rowLabel_hasONBasis": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.GateFrames.transitionToEdge": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.GateFrames.tensorData": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.GateFrames.invocationCoordinates": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.GateFrames.Data.local_transition": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.GateFrames.Data.at_transition": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.GateFrames.Data.sink_transition": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.GateFrames.Data.edges": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.GateFrames.Data.sinkEdges": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.GateFrames.Data.forward_compatible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.GateFrames.Data.reverse_compatible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.GateFrames.Data.entry_auxiliary_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.GateFrames.Data.final_auxiliary_top": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.GateFrames.Data.final_bank_spaces": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.reindex_mul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.copiesMatrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.addressCopies": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.ordinaryCopiesWord": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.ordinaryTensorWord_calls_all": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.ordinaryCopiesWord_matrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.ordinaryCopiesWord_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.blockCoordinates": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.sumWord": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.sumWord_matrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.sumWord_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.copiesMatrix_blocks": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.fillWord": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.fillWord_matrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.fillWord_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.paddingRoles": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.paddedWord": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.paddedWord_matrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.role_axis_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.paddedWord_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.fusedCoordinates": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.fusedWord": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.fusedWord_matrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.fusedWord_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.addressRelabel": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.copiesMatrix_addressRelabel": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.canonicalNetworkWord": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.canonicalNetworkWord_matrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.canonicalNetworkWord_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.extendedWord": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.extendedWord_matrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.extendedWord_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.ordinary_cost_balance": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.fusedWord_saving": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.compile_padded_tensor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.PaddingWords.extend_network_saving": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.columnSpace": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.columnBasis": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.columnBasis_vector": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.columnBasis_orthonormal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.columns": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.columns_space": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.columns_dimension": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.columnSpace_mono": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.columns_decomposes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.columns_residual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.columnResidualBasis": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.columnResidualBasis_orthonormal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.edgeColumns": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.edgeColumns_dimension": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.labelsColumns": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.edgesColumns": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.edgesColumns_dimension": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.eventColumns": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.eventColumns_scalarMatrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.eventColumns_residualDimension": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.scheduleColumns": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.scheduleColumns_scalarMatrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.scheduleColumns_scalarCount": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.scheduleColumns_residualDimension": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.scheduleColumns_word_array": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.scheduleColumns_word_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.finishColumns_word_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.finishColumns_word_array": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.projection_index_equiv": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.projection_coordinates": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.coordinates_weightModFour": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.columns_vectors_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.columns_projection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.columns_exponent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.column": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.columns_exponent_flat": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ColumnSchedule.zero_columns_exponent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TerminalWords.pack_surjective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TerminalWords.correctionWord_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TerminalWords.correctionWord_monomial": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TerminalWords.correctionWord_unit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TerminalWords.translationMatrix_action": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TerminalWords.exchangeMatrix_action": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TerminalWords.correctionWord_action": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TerminalWords.corrected_endpoint_word": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TerminalWords.coordinateWord_action": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TerminalWords.ordinaryWord_action": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TerminalWords.ordinaryWord_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TerminalWords.master_terminal_bridge": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TerminalWords.master_terminal_bridge_of_endpoint": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TerminalWords.master_terminal_calls": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TerminalWords.finiteBankDirection_norm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TerminalWords.triple_corrected_endpoint_word": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TerminalWords.triple_master_terminal_bridge": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleInvocationFrames.pair_tensor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleInvocationFrames.pair_complement": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleInvocationFrames.invocationData": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleInvocationFrames.invocationCoordinates": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleInvocationFrames.invocationAddressCoordinates": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleInvocationFrames.bank_reassemble": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleInvocationFrames.entry_X": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleInvocationFrames.entry_Y": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleInvocationFrames.final_X": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleInvocationFrames.final_Y": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleInvocationFrames.bankDirection_norm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleInvocationFrames.entry_bank": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleInvocationFrames.final_bank": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleInvocationFrames.source_bank": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleInvocationFrames.sink_bank": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.TripleInvocationFrames.consecutive_bank": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryColumns.column": [],
+    "ExactFourierCircuits.BinaryColumns.globalDirection": []
+  },
+  "scope": "Exact paper-derived component identities and literal component compilers. The complete saving word and its action/count connection are not certified. See docs/proof-contract.md for hypotheses and remaining obligations."
+}

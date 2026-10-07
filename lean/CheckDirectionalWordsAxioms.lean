@@ -1,0 +1,6 @@
+import DirectionalWords
+#print axioms ExactFourierCircuits.DirectionalWords.pairPoint_injective
+#print axioms ExactFourierCircuits.DirectionalWords.representatives_card
+#print axioms ExactFourierCircuits.DirectionalWords.compile_directional
+#print axioms ExactFourierCircuits.DirectionalWords.compile_inverse_directional
+#print axioms ExactFourierCircuits.DirectionalWords.directionalC_inverse

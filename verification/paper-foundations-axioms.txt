@@ -1,0 +1,1025 @@
+'ExactFourierCircuits.BinaryFrames.transvection_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryFrames.transvection_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryFrames.transvection_involutive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryFrames.transvection_preserves_dot' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryFrames.transvectionEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryFrames.pivot_direction_isotropic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryFrames.pivot_transvection_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryFrames.twoFrameEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryFrames.twoFrame_preserves_dot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryFrames.twoFrame_unit_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryFrames.twoFrame_unit_second' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryFrames.twoFrame_orthonormal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryFrames.twoFrame_complement_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryFrames.twoFrame_complement_spans' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ConstructiveBridge.kernel_isUnit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ConstructiveBridge.kernel_not_isMonomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ConstructiveBridge.finiteWin_of_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ConstructiveBridge.main_of_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.SavingBudget.coefficient_saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.SavingBudget.factored_saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.SavingBudget.floor_choice_saves' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.SavingBudget.tensor_axis_factorization' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.f2_cases' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.f2_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.characteristic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.dot_characteristic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.transvection_fixes_characteristic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryComplement.exists_zero_iff_not_characteristic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryComplement.one_complement_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryComplement.one_complement_spans' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.one_index_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.two_index_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.failed_second_pivot_shape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryComplement.exists_second_pivot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.exists_valid_pivots' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.perp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.mem_perp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.oneFamily' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.twoFamily' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.oneAmbientBasis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.oneAmbientBasis_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.twoAmbientBasis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.twoAmbientBasis_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.oneFamily_linearIndependent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryComplement.twoFamily_linearIndependent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryComplement.oneFamily_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.twoFamily_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.oneComplementBasis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.twoComplementBasis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.oneComplementBasis_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryComplement.twoComplementBasis_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryComplement.oneComplementBasis_orthonormal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryComplement.twoComplementBasis_orthonormal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryComplement.indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.dot_indicators' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.triple_indicator_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.exists_outside' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.triple_indicator_not_characteristic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryComplement.triple_indicator_valid_pivot' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryComplement.triple_basis_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryComplement.triple_pair_sum_not_characteristic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryComplement.even_intersection_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryComplement.triple_pair_valid_pivots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryComplement.triple_pair_basis_exists' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryTensor.bit_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.bit_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.bit_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.bit_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.bit_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.bit_add_overlap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.bit_finset_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.weight_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.weightModFour_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.weight_eq_support_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.overlap_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.weight_cast_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.weight_add_overlap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.overlap_even_of_dot_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.weightModFour_add_of_dot_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryTensor.weightModFour_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.norm_one_weight_mod_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.dot_tensor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.weight_tensor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.tensor_norm_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.tensor_orthonormal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.emptyTensor_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.emptyTensor_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.dot_tensorFamily' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.weight_tensorFamily' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.tensorFamily_norm_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.tensorFamily_empty_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.tensorFamily_empty_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.dot_finset_sum_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.orthogonal_sum_weightModFour' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryTensor.orthogonal_family_weightModFour' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryTensor.orthogonal_sum_weight_mod_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryTensor.frameProjection_dot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryTensor.frameProjection_idempotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryTensor.frameProjection_weightModFour' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.TypedKernelWords.compile_nonzero_shear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TypedKernelWords.compile_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TypedKernelWords.hadamardWord_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TypedKernelWords.relabelWord_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TypedKernelWords.relabelWord_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.DirectionalWords.pairPoint_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.DirectionalWords.representatives_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.DirectionalWords.compile_directional' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.DirectionalWords.compile_inverse_directional' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.DirectionalWords.directionalC_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TensorWords.embeddedWord_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TensorWords.embeddedWord_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TensorWords.parallelWord_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TensorWords.parallelWord_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TensorWords.unit_axis_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TensorWords.tensorCoordinates_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TensorWords.compile_ordinary_tensor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ScalarNetwork.composeMatrix_mulVec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ScalarNetwork.RG_entry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ScalarNetwork.JV_entry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ScalarNetwork.intersection_card_three_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ScalarNetwork.incidence_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ScalarNetwork.incidence_linear_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ScalarNetwork.invocation_dirty_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ScalarNetwork.neighboring_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ScalarNetwork.neighboring_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ScalarNetwork.neighboring_distinct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ScalarNetwork.triple_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TripleNetwork.stage_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TripleNetwork.reverseEdge_involutive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TripleNetwork.reverseRows_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TripleNetwork.reverseStage_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TripleNetwork.scalarNetwork_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TripleNetwork.profile_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TripleNetwork.bank_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.I_pow_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.I_pow_mod_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.phase_natCast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.phase_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.phase_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.phase_neg_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.phase_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.phase_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.phase_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.phase_finset_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.binary_cases' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.binarySign_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.binarySign_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.binarySign_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.binarySign_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.kernel_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.inverse_kernel_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.vec_add_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.character_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.character_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.character_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.character_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.translate_character' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.directional_character' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.inverse_directional_character' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.inverse_directional_translation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.directional_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.directional_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.character_sum_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.character_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.character_pair_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.walsh_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.walsh_character' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.cardinal_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.character_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.operator_eq_of_characters' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.frameMap_character' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.frameMap_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.frameMap_comp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.frameMap_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.norm_one_weightModFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.signedMap_character' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.signedWord_character' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.signed_projection_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.signedWord_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.signedWords_same_projection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.frame_ratio_signedWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.weightModFour_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.signedMap_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.unit_frameProjection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.coordinate_word_standard' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.terminal_weight_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.terminal_frame_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameSpectrum.frameEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameCommutation.pointwiseMatrix_as_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FrameCommutation.compatible_operators_commute' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FrameCommutation.common_operator_commutes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FrameCommutation.compatible_frames_commute' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ExplicitSeedBudget.parameter_formulas' depends on axioms: [propext]
+'ExactFourierCircuits.ExplicitSeedBudget.padding' depends on axioms: [propext]
+'ExactFourierCircuits.ExplicitSeedBudget.residual_balance' depends on axioms: [propext]
+'ExactFourierCircuits.ExplicitSeedBudget.columns_value' depends on axioms: [propext]
+'ExactFourierCircuits.ExplicitSeedBudget.bits_value' depends on axioms: [propext]
+'ExactFourierCircuits.ExplicitSeedBudget.strict_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ExplicitSeedBudget.saved_coefficient' depends on axioms: [propext]
+'ExactFourierCircuits.ExplicitSeedBudget.bits_at_least_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ExplicitSeedBudget.ordinary_factorization' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.ExplicitSeedBudget.proposed_count_saves' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ExplicitSeedBudget.closed_proposed_count_saves' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.RoleWords.pointwiseWord_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RoleWords.pointwiseWord_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RoleWords.pointwiseWord_array' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RoleWords.pointwiseShearWord_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RoleWords.pointwiseShearWord_untouched' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RoleWords.compile_pointwise_shear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameWords.binaryAction_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameWords.binaryAction_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameWords.translation_entry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameWords.binaryAction_translation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameWords.binaryAction_directional' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameWords.binaryAction_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameWords.norm_one_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameWords.signedLayer_action' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameWords.signedLayer_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameWords.signedFrameList_action' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameWords.signedFrameList_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FrameWords.compile_signed_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TripleCounting.splitTripleEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TripleCounting.neighboring_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TripleCounting.edge_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TripleCounting.role_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.Orthogonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.Nondegenerate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.orth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.Decomposes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.orthogonal_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.orthogonal_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.orthogonal_sup_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.orthogonal_sup_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.decomposes_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.decomposes_nested' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.residual_of_decomposes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.orthogonal_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.nondegenerate_bot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.nondegenerate_sup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.residualBasis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.residualBasis_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.residualBasis_orthonormal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.dot_frame_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.orthonormal_linearIndependent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.frameBasis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.frameBasis_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.basis_nondegenerate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.vec_add_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.basis_span_coe' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.sumFamily_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.sumFamily_orthonormal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.sumBasis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.sumBasis_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.sumBasis_orthonormal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.fullBasis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.fullBasis_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.fullBasis_orthonormal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.full_nondegenerate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.line' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.mem_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.line_perp_orthogonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.line_decomposes_perp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.pair_decomposes_perp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.constant_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.lineBasis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.lineBasis_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.line_nondegenerate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.perp_nondegenerate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.pairPerp_nondegenerate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tensor_add_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tensor_add_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tensor_smul_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tensor_smul_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tensor_zero_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tensor_zero_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tensorSpace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tensor_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tensorSpace_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tensorSpace_sup_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tensorSpace_sup_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tensorSpace_orthogonal_left' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tensorSpace_orthogonal_right' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tensorSpace_decomposes_left' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tensorSpace_decomposes_right' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tensor_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tensorSpace_top_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tensor_finset_sum_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tensor_finset_sum_right' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tensorBasis_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tensorBasis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tensorBasis_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tensorBasis_orthonormal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tensor_nondegenerate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.label0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.label1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.label2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.label3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.label5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.residual_X_in_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.residual_X_2_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.residual_Y_0_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.residual_Y_4_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.zero_decomposes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.residual_center_source_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.residual_center_BD_ED' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.residual_side_source_0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.residual_side_0_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.residual_side_2_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.residual_side_5_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.residual_auxiliary_last_sink' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.stage_Y_outgoing_relative_perp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.central_residual_dimension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.central_decrease_dimension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.central_future_residual_dimension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.central_future_decrease_dimension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.weight_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.weight_characteristic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tripleTensor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tripleTensor_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tripleTensor_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tripleTensor_ambient_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tripleTensor_not_characteristic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tripleTensor_complement_basis' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.perp_characteristic_of_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tripleTensor_zero_characteristic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tripleTensor_zero_perp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.emptyTripleComplementBasis' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tripleTensor_prefix_split' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tripleTensor_zero_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryResiduals.tripleTensor_perp_nondegenerate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.dot_sub_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryProjection.frame_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryProjection.frame_orth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryProjection.frameProjection_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryProjection.frameProjection_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryProjection.frameProjection_mem_span' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.frameProjection_generator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.frameProjection_fixed_of_mem_span' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.dot_projection_of_mem_span' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.frameProjection_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.frameSpan_nondegenerate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.frameSpan_disjoint_residual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.frameProjection_remainder_mem_orth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.frameSpan_decomposes_residual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.frameProjection_eq_of_span_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.projectionMap_eq_of_span_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.signedWords_eq_of_span_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.frameMap_eq_of_span_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.frameProjection_sumFamily' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.frameProjection_direct_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.frameExponent_direct_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.residual_exponent_increasing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.residual_exponent_decreasing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.frame_ratio_increasing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.frame_ratio_decreasing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.nested_frame_ratio_increasing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.nested_frame_ratio_decreasing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.basis_projection_same_space' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.nested_basis_ratio_increasing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.nested_basis_ratio_decreasing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryProjection.projectionMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryColumns.column' does not depend on any axioms
+'ExactFourierCircuits.BinaryColumns.columnFamily' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryColumns.columnFamily_orthonormal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryColumns.weight_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryColumns.columnFamily_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryColumns.columnFamily_weightModFour' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryColumns.dot_columnFamily' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryColumns.columnFamily_projection_block' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryColumns.columnFamily_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryColumns.weight_columns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryColumns.weightModFour_columns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryColumns.columnFamily_projection_weightModFour' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryColumns.columnFamily_projection_phase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryColumns.columnFamily_signedWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryColumns.globalDirection' does not depend on any axioms
+'ExactFourierCircuits.BinaryColumns.columnLineExponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryColumns.columnPerpExponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryColumns.dot_globalDirection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryColumns.binarySign_finset_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryColumns.column_terminal_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryColumns.column_terminal_frame_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryColumns.zero_columns_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryColumns.empty_frame_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryColumns.zero_columns_terminal_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.NetworkTerminal.translateMap_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.NetworkTerminal.corrected_source_sink_exchange' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.NetworkTerminal.bankDirection_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.NetworkTerminal.bankDirection_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.NetworkTerminal.triple_corrected_source_sink_exchange' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.NetworkTerminal.corrected_column_source_sink_exchange' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.NetworkTerminal.triple_column_corrected_source_sink_exchange' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ScalarSupport.neighbor_coefficient_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ScalarSupport.G_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ScalarSupport.R_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ScalarSupport.V_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ScalarSupport.J_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ScalarSupport.G_support_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ScalarSupport.R_support_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ScalarSupport.V_support_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ScalarSupport.J_support_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ScalarSupport.invocation_support_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.roleEmbedding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.roleEmbedding_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.roleEmbedding_not_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.roleMatrix_selected_entry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.roleMatrix_selected_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.roleMatrix_untouched_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.roleWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.roleWord_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.roleWord_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.binaryValues' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.binaryValues_at' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.binaryValues_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.binaryAction_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.roleWord_selected_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.roleWord_untouched_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.roleWord_array' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.roleFrameList' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.roleFrameList_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.roleFrameList_array' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.roleFrameList_selected_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.roleFrameList_untouched_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.compile_signed_role_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.nestedRatio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.nestedRatio_signedWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.roleFrameList_nested_array' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.RoleFrameWords.compile_nested_role_edge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.RectangularWords.support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RectangularWords.mem_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RectangularWords.entryMatrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RectangularWords.entryWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RectangularWords.entryWord_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RectangularWords.entryWord_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RectangularWords.entryMatrix_mul_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RectangularWords.listWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RectangularWords.entrySum_mul_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RectangularWords.listWord_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RectangularWords.listWord_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RectangularWords.rectangularWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RectangularWords.rectangularMatrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RectangularWords.support_sum_eq_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RectangularWords.rectangularWord_matrix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.RectangularWords.rectangularWord_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RectangularWords.rectangularWord_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RectangularWords.rectangularWord_target' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.RectangularWords.rectangularWord_untouched' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.RectangularWords.rectangularWord_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.RectangularWords.pointwiseRectangularWord' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.RectangularWords.pointwiseRectangularWord_matrix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.RectangularWords.pointwiseRectangularWord_calls' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.RectangularWords.pointwiseRectangularWord_target' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.RectangularWords.pointwiseRectangularWord_untouched' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.RectangularWords.pointwiseRectangularWord_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.RectangularWords.pointwiseRectangularWord_array' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.RectangularWords.disjoint_ranges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RectangularWords.compile_rectangular_shear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.RectangularWords.support_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.RectangularWords.rectangularWord_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.StageFrames.coordinates_dot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.StageFrames.coordinates_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.StageFrames.space_perp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.StageFrames.outgoing_perp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.StageFrames.space_assoc_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.StageFrames.append_tripleTensor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.StageFrames.prepend_tripleTensor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.StageFrames.prefix_outgoing_perp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.StageFrames.future_line_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.StageFrames.physical_full_tripleTensor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.StageFrames.physical_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.StageFrames.consecutive_boundaries' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.StageFrames.physical_sink' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.StageFrames.triple_stage_boundaries' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.StageFrames.factor_complement_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.StageFrames.addressCoordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Label' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Label.vectors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Label.exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Label.span' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Label.exponent_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Label.nondegenerate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Label.selfResidual_eq_bot' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Label.emptyResidualBasis' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Labels' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Values' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.frames' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.inverseFrames' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.frames_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.inverseFrames_frames' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.scalarAction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.scalarAction_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.scalarAction_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.NestedEdge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.NestedEdge.dimension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.NestedEdge.refl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.NestedEdge.refl_dimension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.NestedEdge.word' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.edgeOperator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.NestedEdge.word_array' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.NestedEdge.word_calls' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.edgesWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.edgesWord_array' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.allEdgesWord_array' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.edgesWord_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.allEdgesWord_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.pointwiseWord_binary_array' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Event' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Event.scalarMatrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Event.word' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Event.residualDimension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Event.frames_commute' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Event.word_array' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Event.word_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Schedule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Schedule.word' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Schedule.scalarMatrix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Schedule.residualDimension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Schedule.scalarCount' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Schedule.word_array' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Schedule.word_calls' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Schedule.append' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Schedule.append_word' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Schedule.append_scalarMatrix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Schedule.append_residualDimension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Schedule.append_scalarCount' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.compile_schedule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Schedule.finishWord' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Schedule.finishWord_array' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.Schedule.finishWord_calls' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.FramedScheduleWords.compile_finish_edges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ResidualBudget.nested_decomposes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ResidualBudget.nested_residual_cardinality' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ResidualBudget.nested_residual_dimension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ResidualBudget.nested_residual_finrank_add' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ResidualBudget.central_edge_dimension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ResidualBudget.central_future_edge_dimension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ResidualBudget.GeometricEdge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ResidualBudget.step_accounting' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.ResidualBudget.geometric_edge_accounting' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ResidualBudget.budget_comp' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.ResidualBudget.finite_path_accounting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ResidualBudget.geometric_frame_path_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ResidualBudget.role_budget_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ResidualBudget.uniform_decrease_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ResidualBudget.geometric_role_paths_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ResidualBudget.network_residual_balance' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.ResidualBudget.network_residual_formula' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.ResidualBudget.residual_saving_balance' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.TensorFusion.split_tensor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TensorFusion.fusion_tensor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.GateFrames.hasONBasis_space' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.GateFrames.hasONBasis_tripleTensor_perp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.GateFrames.hasONBasis_pair_perp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.GateFrames.edge_orthogonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.GateFrames.row_support_common_label' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.GateFrames.reverse_row_support_common_label' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.GateFrames.rowLabel_hasONBasis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.GateFrames.transitionToEdge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.GateFrames.tensorData' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.GateFrames.invocationCoordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.GateFrames.Data.local_transition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.GateFrames.Data.at_transition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.GateFrames.Data.sink_transition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.GateFrames.Data.edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.GateFrames.Data.sinkEdges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.GateFrames.Data.forward_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.GateFrames.Data.reverse_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.GateFrames.Data.entry_auxiliary_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.GateFrames.Data.final_auxiliary_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.GateFrames.Data.final_bank_spaces' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.reindex_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.copiesMatrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.addressCopies' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.ordinaryCopiesWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.ordinaryTensorWord_calls_all' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.PaddingWords.ordinaryCopiesWord_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.ordinaryCopiesWord_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.blockCoordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.sumWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.sumWord_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.sumWord_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.copiesMatrix_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.fillWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.fillWord_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.fillWord_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.paddingRoles' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.PaddingWords.paddedWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.paddedWord_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.role_axis_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.paddedWord_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.fusedCoordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.fusedWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.fusedWord_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.fusedWord_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.addressRelabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.copiesMatrix_addressRelabel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.PaddingWords.canonicalNetworkWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.canonicalNetworkWord_matrix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.PaddingWords.canonicalNetworkWord_calls' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.PaddingWords.extendedWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.extendedWord_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.extendedWord_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.ordinary_cost_balance' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.PaddingWords.fusedWord_saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.compile_padded_tensor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.PaddingWords.extend_network_saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.columnSpace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.columnBasis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.columnBasis_vector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.columnBasis_orthonormal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.columns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.columns_space' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.columns_dimension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.columnSpace_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.columns_decomposes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.columns_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.columnResidualBasis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.columnResidualBasis_orthonormal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.edgeColumns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.edgeColumns_dimension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.labelsColumns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.edgesColumns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.edgesColumns_dimension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.eventColumns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.eventColumns_scalarMatrix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.eventColumns_residualDimension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.scheduleColumns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.scheduleColumns_scalarMatrix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.scheduleColumns_scalarCount' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.scheduleColumns_residualDimension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.scheduleColumns_word_array' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.scheduleColumns_word_calls' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.finishColumns_word_calls' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.finishColumns_word_array' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.projection_index_equiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.projection_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.coordinates_weightModFour' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.columns_vectors_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.columns_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.columns_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.column' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.columns_exponent_flat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ColumnSchedule.zero_columns_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TerminalWords.pack_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TerminalWords.correctionWord_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TerminalWords.correctionWord_monomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TerminalWords.correctionWord_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TerminalWords.translationMatrix_action' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TerminalWords.exchangeMatrix_action' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TerminalWords.correctionWord_action' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TerminalWords.corrected_endpoint_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TerminalWords.coordinateWord_action' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TerminalWords.ordinaryWord_action' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TerminalWords.ordinaryWord_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TerminalWords.master_terminal_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TerminalWords.master_terminal_bridge_of_endpoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.TerminalWords.master_terminal_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TerminalWords.finiteBankDirection_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TerminalWords.triple_corrected_endpoint_word' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.TerminalWords.triple_master_terminal_bridge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.TripleInvocationFrames.pair_tensor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TripleInvocationFrames.pair_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TripleInvocationFrames.invocationData' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TripleInvocationFrames.invocationCoordinates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.TripleInvocationFrames.invocationAddressCoordinates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.TripleInvocationFrames.bank_reassemble' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TripleInvocationFrames.entry_X' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TripleInvocationFrames.entry_Y' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TripleInvocationFrames.final_X' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TripleInvocationFrames.final_Y' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TripleInvocationFrames.bankDirection_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.TripleInvocationFrames.entry_bank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TripleInvocationFrames.final_bank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TripleInvocationFrames.source_bank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TripleInvocationFrames.sink_bank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.TripleInvocationFrames.consecutive_bank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

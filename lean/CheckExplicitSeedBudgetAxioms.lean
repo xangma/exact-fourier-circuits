@@ -1,0 +1,13 @@
+import ExplicitSeedBudget
+
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.parameter_formulas
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.padding
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.residual_balance
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.columns_value
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.bits_value
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.strict_margin
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.saved_coefficient
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.bits_at_least_two
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.ordinary_factorization
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.proposed_count_saves
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.closed_proposed_count_saves

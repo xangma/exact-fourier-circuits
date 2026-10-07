@@ -1,0 +1,8 @@
+import TensorWords
+#print axioms ExactFourierCircuits.TensorWords.embeddedWord_matrix
+#print axioms ExactFourierCircuits.TensorWords.embeddedWord_calls
+#print axioms ExactFourierCircuits.TensorWords.parallelWord_matrix
+#print axioms ExactFourierCircuits.TensorWords.parallelWord_calls
+#print axioms ExactFourierCircuits.TensorWords.unit_axis_matrix
+#print axioms ExactFourierCircuits.TensorWords.tensorCoordinates_bridge
+#print axioms ExactFourierCircuits.TensorWords.compile_ordinary_tensor

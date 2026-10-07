@@ -1,0 +1,6 @@
+import FrameCommutation
+
+#print axioms ExactFourierCircuits.FrameCommutation.pointwiseMatrix_as_sum
+#print axioms ExactFourierCircuits.FrameCommutation.compatible_operators_commute
+#print axioms ExactFourierCircuits.FrameCommutation.common_operator_commutes
+#print axioms ExactFourierCircuits.FrameCommutation.compatible_frames_commute

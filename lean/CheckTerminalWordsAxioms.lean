@@ -1,0 +1,19 @@
+import TerminalWords
+
+#print axioms ExactFourierCircuits.TerminalWords.pack_surjective
+#print axioms ExactFourierCircuits.TerminalWords.correctionWord_calls
+#print axioms ExactFourierCircuits.TerminalWords.correctionWord_monomial
+#print axioms ExactFourierCircuits.TerminalWords.correctionWord_unit
+#print axioms ExactFourierCircuits.TerminalWords.translationMatrix_action
+#print axioms ExactFourierCircuits.TerminalWords.exchangeMatrix_action
+#print axioms ExactFourierCircuits.TerminalWords.correctionWord_action
+#print axioms ExactFourierCircuits.TerminalWords.corrected_endpoint_word
+#print axioms ExactFourierCircuits.TerminalWords.coordinateWord_action
+#print axioms ExactFourierCircuits.TerminalWords.ordinaryWord_action
+#print axioms ExactFourierCircuits.TerminalWords.ordinaryWord_calls
+#print axioms ExactFourierCircuits.TerminalWords.master_terminal_bridge
+#print axioms ExactFourierCircuits.TerminalWords.master_terminal_bridge_of_endpoint
+#print axioms ExactFourierCircuits.TerminalWords.master_terminal_calls
+#print axioms ExactFourierCircuits.TerminalWords.finiteBankDirection_norm
+#print axioms ExactFourierCircuits.TerminalWords.triple_corrected_endpoint_word
+#print axioms ExactFourierCircuits.TerminalWords.triple_master_terminal_bridge

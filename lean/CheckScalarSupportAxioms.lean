@@ -1,0 +1,12 @@
+import ScalarSupport
+
+#print axioms ExactFourierCircuits.ScalarSupport.neighbor_coefficient_ne_zero
+#print axioms ExactFourierCircuits.ScalarSupport.G_nonzero
+#print axioms ExactFourierCircuits.ScalarSupport.R_nonzero
+#print axioms ExactFourierCircuits.ScalarSupport.V_nonzero
+#print axioms ExactFourierCircuits.ScalarSupport.J_nonzero
+#print axioms ExactFourierCircuits.ScalarSupport.G_support_card
+#print axioms ExactFourierCircuits.ScalarSupport.R_support_card
+#print axioms ExactFourierCircuits.ScalarSupport.V_support_card
+#print axioms ExactFourierCircuits.ScalarSupport.J_support_card
+#print axioms ExactFourierCircuits.ScalarSupport.invocation_support_count

@@ -1,0 +1,3 @@
+import TensorFusion
+#print axioms ExactFourierCircuits.TensorFusion.split_tensor
+#print axioms ExactFourierCircuits.TensorFusion.fusion_tensor

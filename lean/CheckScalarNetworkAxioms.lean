@@ -1,0 +1,13 @@
+import ScalarNetwork
+
+#print axioms ExactFourierCircuits.ScalarNetwork.composeMatrix_mulVec
+#print axioms ExactFourierCircuits.ScalarNetwork.RG_entry
+#print axioms ExactFourierCircuits.ScalarNetwork.JV_entry
+#print axioms ExactFourierCircuits.ScalarNetwork.intersection_card_three_iff
+#print axioms ExactFourierCircuits.ScalarNetwork.incidence_identity
+#print axioms ExactFourierCircuits.ScalarNetwork.incidence_linear_identity
+#print axioms ExactFourierCircuits.ScalarNetwork.invocation_dirty_identity
+#print axioms ExactFourierCircuits.ScalarNetwork.neighboring_iff
+#print axioms ExactFourierCircuits.ScalarNetwork.neighboring_even
+#print axioms ExactFourierCircuits.ScalarNetwork.neighboring_distinct
+#print axioms ExactFourierCircuits.ScalarNetwork.triple_card

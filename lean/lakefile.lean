@@ -20,3 +20,61 @@ lean_lib ConstructiveBridge
 lean_lib SavingBudget
 
 lean_lib BinaryFrames
+
+lean_lib BinaryTensor
+
+lean_lib TypedKernelWords
+
+lean_lib BinaryComplement
+
+lean_lib DirectionalWords
+
+lean_lib ExplicitSeedBudget
+
+lean_lib ScalarNetwork
+
+lean_lib FrameSpectrum
+
+lean_lib TensorWords
+
+lean_lib FrameCommutation
+
+lean_lib TripleNetwork
+
+lean_lib RoleWords
+
+lean_lib FrameWords
+
+lean_lib BinaryResiduals
+
+lean_lib TripleCounting
+
+lean_lib BinaryProjection
+
+lean_lib BinaryColumns
+
+lean_lib NetworkTerminal
+
+lean_lib RoleFrameWords
+
+lean_lib ScalarSupport
+
+lean_lib RectangularWords
+
+lean_lib StageFrames
+
+lean_lib FramedScheduleWords
+
+lean_lib ResidualBudget
+
+lean_lib TensorFusion
+
+lean_lib GateFrames
+
+lean_lib PaddingWords
+
+lean_lib ColumnSchedule
+
+lean_lib TerminalWords
+
+lean_lib TripleInvocationFrames

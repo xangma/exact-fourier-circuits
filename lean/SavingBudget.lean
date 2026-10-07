@@ -31,4 +31,11 @@ theorem floor_choice_saves {Δ H : ℕ} (hΔ : 0 < Δ) :
   rw [hmul]
   omega
 
+/-- Prove exponent regrouping with symbolic exponents before choosing enormous sizes. -/
+theorem tensor_axis_factorization (n r : ℕ) (hn : 0 < n) :
+    (n + r) * 2 ^ (n + r - 1) = ((n + r) * 2 ^ r) * 2 ^ (n - 1) := by
+  have he : n + r - 1 = r + (n - 1) := by omega
+  rw [he, pow_add]
+  exact (Nat.mul_assoc _ _ _).symm
+
 end ExactFourierCircuits.SavingBudget

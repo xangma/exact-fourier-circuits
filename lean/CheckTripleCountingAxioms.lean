@@ -1,0 +1,5 @@
+import TripleCounting
+#print axioms ExactFourierCircuits.TripleCounting.splitTripleEquiv
+#print axioms ExactFourierCircuits.TripleCounting.neighboring_degree
+#print axioms ExactFourierCircuits.TripleCounting.edge_card
+#print axioms ExactFourierCircuits.TripleCounting.role_card

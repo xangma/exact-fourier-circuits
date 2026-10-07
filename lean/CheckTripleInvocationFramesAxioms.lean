@@ -1,0 +1,18 @@
+import TripleInvocationFrames
+
+#print axioms ExactFourierCircuits.TripleInvocationFrames.pair_tensor
+#print axioms ExactFourierCircuits.TripleInvocationFrames.pair_complement
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationData
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationCoordinates
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationAddressCoordinates
+#print axioms ExactFourierCircuits.TripleInvocationFrames.bank_reassemble
+#print axioms ExactFourierCircuits.TripleInvocationFrames.entry_X
+#print axioms ExactFourierCircuits.TripleInvocationFrames.entry_Y
+#print axioms ExactFourierCircuits.TripleInvocationFrames.final_X
+#print axioms ExactFourierCircuits.TripleInvocationFrames.final_Y
+#print axioms ExactFourierCircuits.TripleInvocationFrames.bankDirection_norm
+#print axioms ExactFourierCircuits.TripleInvocationFrames.entry_bank
+#print axioms ExactFourierCircuits.TripleInvocationFrames.final_bank
+#print axioms ExactFourierCircuits.TripleInvocationFrames.source_bank
+#print axioms ExactFourierCircuits.TripleInvocationFrames.sink_bank
+#print axioms ExactFourierCircuits.TripleInvocationFrames.consecutive_bank

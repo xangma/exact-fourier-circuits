@@ -1,0 +1,161 @@
+{
+  "passed": true,
+  "arms": 16,
+  "cases_per_arm": 585,
+  "total_cases": 9360,
+  "fma_arrays_bitwise_equal": true,
+  "results": [
+    {
+      "precision": "float32",
+      "fma": false,
+      "variant": "direct",
+      "cases": 585,
+      "failed": 0,
+      "nonfinite": 0,
+      "raw_sha256": "23f0a26a9ba9085bb3273c3cd1ea17073b4ffaa6036c4994390565de7e475909"
+    },
+    {
+      "precision": "float32",
+      "fma": false,
+      "variant": "compiled",
+      "cases": 585,
+      "failed": 21,
+      "nonfinite": 5,
+      "raw_sha256": "4ca5156bd267b6dd484f3fe7a20732deb5d509bb50e80218a641d733c7a9bcdc"
+    },
+    {
+      "precision": "float32",
+      "fma": false,
+      "variant": "common_power_two",
+      "cases": 585,
+      "failed": 17,
+      "nonfinite": 0,
+      "raw_sha256": "6d4465662441d2d8c3fabf1f9bb9a08a526cd5f73ad0917124fb3436c7ffb9c9"
+    },
+    {
+      "precision": "float32",
+      "fma": false,
+      "variant": "source_scaled",
+      "cases": 585,
+      "failed": 19,
+      "nonfinite": 2,
+      "raw_sha256": "a2e1252e9e37a18571fad6ca0307ea0c4b9fbd5f58c0c49143f0a5fd7e94cf69"
+    },
+    {
+      "precision": "float32",
+      "fma": true,
+      "variant": "direct",
+      "cases": 585,
+      "failed": 0,
+      "nonfinite": 0,
+      "raw_sha256": "23f0a26a9ba9085bb3273c3cd1ea17073b4ffaa6036c4994390565de7e475909"
+    },
+    {
+      "precision": "float32",
+      "fma": true,
+      "variant": "compiled",
+      "cases": 585,
+      "failed": 21,
+      "nonfinite": 5,
+      "raw_sha256": "4ca5156bd267b6dd484f3fe7a20732deb5d509bb50e80218a641d733c7a9bcdc"
+    },
+    {
+      "precision": "float32",
+      "fma": true,
+      "variant": "common_power_two",
+      "cases": 585,
+      "failed": 17,
+      "nonfinite": 0,
+      "raw_sha256": "6d4465662441d2d8c3fabf1f9bb9a08a526cd5f73ad0917124fb3436c7ffb9c9"
+    },
+    {
+      "precision": "float32",
+      "fma": true,
+      "variant": "source_scaled",
+      "cases": 585,
+      "failed": 19,
+      "nonfinite": 2,
+      "raw_sha256": "a2e1252e9e37a18571fad6ca0307ea0c4b9fbd5f58c0c49143f0a5fd7e94cf69"
+    },
+    {
+      "precision": "float64",
+      "fma": false,
+      "variant": "direct",
+      "cases": 585,
+      "failed": 0,
+      "nonfinite": 0,
+      "raw_sha256": "a140fef48ada43faa2d9192b41e626754dca3375bb67a88650b58f03b0c47fd0"
+    },
+    {
+      "precision": "float64",
+      "fma": false,
+      "variant": "compiled",
+      "cases": 585,
+      "failed": 13,
+      "nonfinite": 5,
+      "raw_sha256": "aade9f7d6a412bd5a91c3efe95cc24bef82fb82fa491b5a9a5308fd54e1ec22a"
+    },
+    {
+      "precision": "float64",
+      "fma": false,
+      "variant": "common_power_two",
+      "cases": 585,
+      "failed": 9,
+      "nonfinite": 0,
+      "raw_sha256": "3a4b0df8007d477229821476fa63c094beadf1826540d98609b99ed4e472e358"
+    },
+    {
+      "precision": "float64",
+      "fma": false,
+      "variant": "source_scaled",
+      "cases": 585,
+      "failed": 11,
+      "nonfinite": 2,
+      "raw_sha256": "2987977e9f8a52496660a71364c073c66cc914ad2b1f37ea6b158db1cbb649db"
+    },
+    {
+      "precision": "float64",
+      "fma": true,
+      "variant": "direct",
+      "cases": 585,
+      "failed": 0,
+      "nonfinite": 0,
+      "raw_sha256": "a140fef48ada43faa2d9192b41e626754dca3375bb67a88650b58f03b0c47fd0"
+    },
+    {
+      "precision": "float64",
+      "fma": true,
+      "variant": "compiled",
+      "cases": 585,
+      "failed": 13,
+      "nonfinite": 5,
+      "raw_sha256": "aade9f7d6a412bd5a91c3efe95cc24bef82fb82fa491b5a9a5308fd54e1ec22a"
+    },
+    {
+      "precision": "float64",
+      "fma": true,
+      "variant": "common_power_two",
+      "cases": 585,
+      "failed": 9,
+      "nonfinite": 0,
+      "raw_sha256": "3a4b0df8007d477229821476fa63c094beadf1826540d98609b99ed4e472e358"
+    },
+    {
+      "precision": "float64",
+      "fma": true,
+      "variant": "source_scaled",
+      "cases": 585,
+      "failed": 11,
+      "nonfinite": 2,
+      "raw_sha256": "2987977e9f8a52496660a71364c073c66cc914ad2b1f37ea6b158db1cbb649db"
+    }
+  ],
+  "archive_sha256": "b622f417ba0d61aaa92a3674823b772456662d9f320f368fca29426c3ddb5d25",
+  "reference": "independent Fraction subtraction on raw stored float components",
+  "source_hashes_checked": {
+    "scripts/check-isolated-shear.py": "fc07f7000140c71e5367cec8b819307fee15c4b739c033b8062065d79eeffca2",
+    "scripts/check-projected-cuda.py": "89d4defaa94b159efeccb823b915429f11830c8daec8d91d073264f752fdf125",
+    "src/exact_fourier/words.py": "4e8dd700a7c80c9985989600bfe4e5c50a53f440df15ff24d81da0ececa3a8d6",
+    "src/exact_fourier/scalars.py": "cceab698dd089a23c1d91f46a28bd199f44b63c447c106c25bf2ead621309a4f"
+  }
+}

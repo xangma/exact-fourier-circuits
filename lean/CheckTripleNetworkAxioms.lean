@@ -1,0 +1,9 @@
+import TripleNetwork
+
+#print axioms ExactFourierCircuits.TripleNetwork.stage_identity
+#print axioms ExactFourierCircuits.TripleNetwork.reverseEdge_involutive
+#print axioms ExactFourierCircuits.TripleNetwork.reverseRows_identity
+#print axioms ExactFourierCircuits.TripleNetwork.reverseStage_identity
+#print axioms ExactFourierCircuits.TripleNetwork.scalarNetwork_identity
+#print axioms ExactFourierCircuits.TripleNetwork.profile_card
+#print axioms ExactFourierCircuits.TripleNetwork.bank_card

@@ -1,0 +1,33 @@
+import RectangularWords
+
+#print axioms ExactFourierCircuits.RectangularWords.support
+#print axioms ExactFourierCircuits.RectangularWords.mem_support
+#print axioms ExactFourierCircuits.RectangularWords.entryMatrix
+#print axioms ExactFourierCircuits.RectangularWords.entryWord
+#print axioms ExactFourierCircuits.RectangularWords.entryWord_matrix
+#print axioms ExactFourierCircuits.RectangularWords.entryWord_calls
+#print axioms ExactFourierCircuits.RectangularWords.entryMatrix_mul_zero
+#print axioms ExactFourierCircuits.RectangularWords.listWord
+#print axioms ExactFourierCircuits.RectangularWords.entrySum_mul_zero
+#print axioms ExactFourierCircuits.RectangularWords.listWord_matrix
+#print axioms ExactFourierCircuits.RectangularWords.listWord_calls
+#print axioms ExactFourierCircuits.RectangularWords.rectangularWord
+#print axioms ExactFourierCircuits.RectangularWords.rectangularMatrix
+#print axioms ExactFourierCircuits.RectangularWords.support_sum_eq_univ
+#print axioms ExactFourierCircuits.RectangularWords.rectangularWord_matrix
+#print axioms ExactFourierCircuits.RectangularWords.rectangularWord_calls
+#print axioms ExactFourierCircuits.RectangularWords.rectangularWord_apply
+#print axioms ExactFourierCircuits.RectangularWords.rectangularWord_target
+#print axioms ExactFourierCircuits.RectangularWords.rectangularWord_untouched
+#print axioms ExactFourierCircuits.RectangularWords.rectangularWord_source
+#print axioms ExactFourierCircuits.RectangularWords.pointwiseRectangularWord
+#print axioms ExactFourierCircuits.RectangularWords.pointwiseRectangularWord_matrix
+#print axioms ExactFourierCircuits.RectangularWords.pointwiseRectangularWord_calls
+#print axioms ExactFourierCircuits.RectangularWords.pointwiseRectangularWord_target
+#print axioms ExactFourierCircuits.RectangularWords.pointwiseRectangularWord_untouched
+#print axioms ExactFourierCircuits.RectangularWords.pointwiseRectangularWord_source
+#print axioms ExactFourierCircuits.RectangularWords.pointwiseRectangularWord_array
+#print axioms ExactFourierCircuits.RectangularWords.disjoint_ranges
+#print axioms ExactFourierCircuits.RectangularWords.compile_rectangular_shear
+#print axioms ExactFourierCircuits.RectangularWords.support_zero
+#print axioms ExactFourierCircuits.RectangularWords.rectangularWord_zero

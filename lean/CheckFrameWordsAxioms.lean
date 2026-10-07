@@ -1,0 +1,14 @@
+import FrameWords
+
+#print axioms ExactFourierCircuits.FrameWords.binaryAction_one
+#print axioms ExactFourierCircuits.FrameWords.binaryAction_mul
+#print axioms ExactFourierCircuits.FrameWords.translation_entry
+#print axioms ExactFourierCircuits.FrameWords.binaryAction_translation
+#print axioms ExactFourierCircuits.FrameWords.binaryAction_directional
+#print axioms ExactFourierCircuits.FrameWords.binaryAction_inverse
+#print axioms ExactFourierCircuits.FrameWords.norm_one_nonzero
+#print axioms ExactFourierCircuits.FrameWords.signedLayer_action
+#print axioms ExactFourierCircuits.FrameWords.signedLayer_calls
+#print axioms ExactFourierCircuits.FrameWords.signedFrameList_action
+#print axioms ExactFourierCircuits.FrameWords.signedFrameList_calls
+#print axioms ExactFourierCircuits.FrameWords.compile_signed_frame

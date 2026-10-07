@@ -1,0 +1,18 @@
+import StageFrames
+
+#print axioms ExactFourierCircuits.StageFrames.coordinates_dot
+#print axioms ExactFourierCircuits.StageFrames.coordinates_weight
+#print axioms ExactFourierCircuits.StageFrames.space_perp
+#print axioms ExactFourierCircuits.StageFrames.outgoing_perp
+#print axioms ExactFourierCircuits.StageFrames.space_assoc_line
+#print axioms ExactFourierCircuits.StageFrames.append_tripleTensor
+#print axioms ExactFourierCircuits.StageFrames.prepend_tripleTensor
+#print axioms ExactFourierCircuits.StageFrames.prefix_outgoing_perp
+#print axioms ExactFourierCircuits.StageFrames.future_line_factor
+#print axioms ExactFourierCircuits.StageFrames.physical_full_tripleTensor
+#print axioms ExactFourierCircuits.StageFrames.physical_source
+#print axioms ExactFourierCircuits.StageFrames.consecutive_boundaries
+#print axioms ExactFourierCircuits.StageFrames.physical_sink
+#print axioms ExactFourierCircuits.StageFrames.triple_stage_boundaries
+#print axioms ExactFourierCircuits.StageFrames.factor_complement_basis
+#print axioms ExactFourierCircuits.StageFrames.addressCoordinates

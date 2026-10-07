@@ -44,15 +44,15 @@ explicitly before claiming an executable faster DFT.
    **Deliverable:** Lean modules proving the actual network's exact action.
    **Completion:** the proofs cover the required parameter family, rather than
    only sampled inputs or generic algebra with an unproved frame hypothesis.
-   The first finite-index foundation is checked: transvections are involutive
-   dot-preserving linear equivalences; the actual two-transvection order maps
-   the prescribed pivots to the two vectors, with orthonormal complement images
-   and spanning. Pivot existence, one-vector complement spanning, cardinality
-   packaging, tensor/residual/sign identities and network instantiation remain.
-   The separate budget cancellation and floor-choice inequalities are checked;
-   they assume the count formula and do not certify a word.
+   Checked components now include triple-incidence cancellation, successful
+   triple/pair pivots and actual complement bases, tensor weights, signed Walsh
+   operators and terminal correction, all eleven symbolic residual table shapes,
+   and the three-axis scalar network with the actual stage-two reversal.
+   Actual per-invocation frame labels, concrete consecutive-stage coordinate
+   identities, column lifts and a literal free terminal correction now compile.
+   Whole-network chronology and residual totals still require assembly; generic table hypotheses alone do not finish this step.
 
-4. **Connect the construction to a saving word and its cost.**
+4. **Connect the construction to a saving word and its cost — in progress.**
    Translate directional layers, compiled shears, padding, permutations and
    scalings into Lean's chronological word model. Prove the coordinate
    identification, output tensor identity, and forward-call count. Derive the
@@ -62,6 +62,11 @@ explicitly before claiming an executable faster DFT.
    **Deliverable:** a kernel-checked constructive finite-win statement matching
    the Python budget. **Completion:** correct action and strict saving are
    proved together, without `sorry`, custom axioms, or native decision shortcuts.
+   Literal three-C shears, directional layers, signed frame words, pointwise
+   role lifts and the ordinary tensor compiler now have exact action/count
+   proofs. Actual neighbor, edge and physical role cardinalities are checked.
+   The h=100 arithmetic saving is proved symbolically, but its connection to
+   the complete saving word remains open.
 
 5. **Investigate numerical stability alongside the proof work.**
    First isolate the three-C shear: measure target error and failure to restore
@@ -84,10 +89,15 @@ explicitly before claiming an executable faster DFT.
    **Deliverable:** a supported conclusion about exact validity, stability and
    practical usefulness, each backed by its own evidence.
 
-The immediate next action is to prove pivot existence and complete the binary
-complement constructor for the admissible triple family, then prove tensor
-and signed-weight identities. Numerical work can proceed independently once
-its test contract is fixed. This update does not start another experiment.
+The immediate next action is to finish the full frame schedule, stage boundary
+transport and residual dimension total, then assemble and count the same literal
+saving word. Numerical work can proceed independently once its test contract is
+fixed. The isolated-shear experiment is now complete: all 9,360 raw CUDA cases were
+independently verified. Normal finite inputs expose complete source loss in
+the compiled shear, reproduced by chronological CPU rounding traces; scaling
+controls do not repair it. See [numerical report](docs/isolated-shear-stability.md).
+This establishes a concrete implementation limit; a full-width stability
+characterization remains out of reach for the enormous saving seed.
 
 Every experiment will have explicit memory/work limits, a deadline, input and
 source hashes, retained logs and a stop command. Remote jobs will preserve

@@ -26,10 +26,14 @@ if actual != manifest['mathlib_revision']:
 print('Verified toolchain pins and 51 unmodified upstream modules.')
 PY_PIN
 lean --version
-lake build BinaryFrames ConstructiveBridge SavingBudget
+mapfile_modules=()
+while IFS= read -r module; do mapfile_modules+=("$module"); done < <(
+  python3 -c "import json; print('\n'.join(json.load(open('CONSTRUCTION_CHECKS.json'))['modules']))"
+)
+lake build "${mapfile_modules[@]}"
 : > "$log_dir/lean-construction-axioms.log"
-for checker in CheckBinaryFramesAxioms CheckConstructiveBridgeAxioms CheckSavingBudgetAxioms; do
-  lake env lean "$checker.lean" | tee -a "$log_dir/lean-construction-axioms.log"
+for module in "${mapfile_modules[@]}"; do
+  lake env lean "Check${module}Axioms.lean" | tee -a "$log_dir/lean-construction-axioms.log"
 done
 python3 - "$log_dir" <<'PY_AXIOMS'
 from pathlib import Path
@@ -38,22 +42,12 @@ import hashlib, json, re, subprocess, sys
 log_dir = Path(sys.argv[1])
 text = (log_dir / 'lean-construction-axioms.log').read_text()
 allowed = {'propext', 'Quot.sound', 'Classical.choice'}
-groups = {
-    'BinaryFrames': (
-        'transvection_add', 'transvection_smul', 'transvection_involutive',
-        'transvection_preserves_dot', 'transvectionEquiv',
-        'pivot_direction_isotropic', 'pivot_transvection_unit', 'twoFrameEquiv',
-        'twoFrame_preserves_dot', 'twoFrame_unit_first', 'twoFrame_unit_second',
-        'twoFrame_orthonormal', 'twoFrame_complement_orthogonal',
-        'twoFrame_complement_spans',
-    ),
-    'ConstructiveBridge': (
-        'kernel_isUnit', 'kernel_not_isMonomial', 'finiteWin_of_word', 'main_of_word',
-    ),
-    'SavingBudget': ('coefficient_saving', 'factored_saving', 'floor_choice_saves'),
-}
-expected = {f'ExactFourierCircuits.{group}.{name}'
-            for group, names in groups.items() for name in names}
+groups = json.loads(Path('CONSTRUCTION_CHECKS.json').read_text())['modules']
+expected = {name for names in groups.values() for name in names}
+for module, declarations in groups.items():
+    checker = Path(f'Check{module}Axioms.lean').read_text()
+    if re.findall(r'^#print axioms (\S+)', checker, re.M) != declarations:
+        raise SystemExit(f'Checker differs from declaration registry: {module}')
 results = {}
 for match in re.finditer(r"'?([A-Za-z0-9_.]+)'? depends on axioms:\s*\[([^\]]*)\]", text):
     name, names = match.groups()
@@ -65,12 +59,13 @@ if set(results) != expected:
 for name, axioms in results.items():
     if axioms - allowed:
         raise SystemExit(f'{name}: forbidden axioms {sorted(axioms - allowed)}')
-files = ['KernelIdentities.lean', 'lean-toolchain', 'lakefile.lean',
+files = ['KernelIdentities.lean', 'ProjectionIdentities.lean',
+         'CONSTRUCTION_CHECKS.json', 'lean-toolchain', 'lakefile.lean',
          'UPSTREAM_MANIFEST.json', 'lake-manifest.json']
 for group in groups:
     files.extend((f'{group}.lean', f'Check{group}Axioms.lean'))
 receipt = {
-    'schema': 'lean-construction-foundations/v1',
+    'schema': 'lean-construction-foundations/v2',
     'passed': True,
     'finished_utc': datetime.now(timezone.utc).isoformat(),
     'lean_version': subprocess.check_output(['lean', '--version'], text=True).strip(),
@@ -81,7 +76,7 @@ receipt = {
     'source_sha256': {name: hashlib.sha256(Path(name).read_bytes()).hexdigest() for name in files},
     'verification_script_sha256': hashlib.sha256(Path('../scripts/verify-construction.sh').read_bytes()).hexdigest(),
     'axioms': {name: sorted(axioms) for name, axioms in results.items()},
-    'scope': 'Finite-index binary frames under successful-pivot hypotheses; conditional q=2 Fourier bridge; budget arithmetic under a count formula. No complete explicit word, pivot-existence, residual-table, or saving-word certificate.',
+    'scope': 'Exact paper-derived component identities and literal component compilers. The complete saving word and its action/count connection are not certified. See docs/proof-contract.md for hypotheses and remaining obligations.',
 }
 receipt_path = log_dir / 'lean-construction-receipt.json'
 receipt_path.write_text(json.dumps(receipt, indent=2) + '\n')

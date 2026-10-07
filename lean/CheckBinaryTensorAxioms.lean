@@ -1,0 +1,37 @@
+import BinaryTensor
+
+#print axioms ExactFourierCircuits.BinaryTensor.bit_zero
+#print axioms ExactFourierCircuits.BinaryTensor.bit_one
+#print axioms ExactFourierCircuits.BinaryTensor.bit_cast
+#print axioms ExactFourierCircuits.BinaryTensor.bit_mul
+#print axioms ExactFourierCircuits.BinaryTensor.bit_sq
+#print axioms ExactFourierCircuits.BinaryTensor.bit_add_overlap
+#print axioms ExactFourierCircuits.BinaryTensor.bit_finset_prod
+#print axioms ExactFourierCircuits.BinaryTensor.weight_zero
+#print axioms ExactFourierCircuits.BinaryTensor.weightModFour_zero
+#print axioms ExactFourierCircuits.BinaryTensor.weight_eq_support_card
+#print axioms ExactFourierCircuits.BinaryTensor.overlap_cast
+#print axioms ExactFourierCircuits.BinaryTensor.weight_cast_norm
+#print axioms ExactFourierCircuits.BinaryTensor.weight_add_overlap
+#print axioms ExactFourierCircuits.BinaryTensor.overlap_even_of_dot_zero
+#print axioms ExactFourierCircuits.BinaryTensor.weightModFour_add_of_dot_zero
+#print axioms ExactFourierCircuits.BinaryTensor.weightModFour_smul
+#print axioms ExactFourierCircuits.BinaryTensor.norm_one_weight_mod_four
+#print axioms ExactFourierCircuits.BinaryTensor.dot_tensor
+#print axioms ExactFourierCircuits.BinaryTensor.weight_tensor
+#print axioms ExactFourierCircuits.BinaryTensor.tensor_norm_one
+#print axioms ExactFourierCircuits.BinaryTensor.tensor_orthonormal
+#print axioms ExactFourierCircuits.BinaryTensor.emptyTensor_weight
+#print axioms ExactFourierCircuits.BinaryTensor.emptyTensor_norm
+#print axioms ExactFourierCircuits.BinaryTensor.dot_tensorFamily
+#print axioms ExactFourierCircuits.BinaryTensor.weight_tensorFamily
+#print axioms ExactFourierCircuits.BinaryTensor.tensorFamily_norm_one
+#print axioms ExactFourierCircuits.BinaryTensor.tensorFamily_empty_weight
+#print axioms ExactFourierCircuits.BinaryTensor.tensorFamily_empty_norm
+#print axioms ExactFourierCircuits.BinaryTensor.dot_finset_sum_right
+#print axioms ExactFourierCircuits.BinaryTensor.orthogonal_sum_weightModFour
+#print axioms ExactFourierCircuits.BinaryTensor.orthogonal_family_weightModFour
+#print axioms ExactFourierCircuits.BinaryTensor.orthogonal_sum_weight_mod_four
+#print axioms ExactFourierCircuits.BinaryTensor.frameProjection_dot
+#print axioms ExactFourierCircuits.BinaryTensor.frameProjection_idempotent
+#print axioms ExactFourierCircuits.BinaryTensor.frameProjection_weightModFour

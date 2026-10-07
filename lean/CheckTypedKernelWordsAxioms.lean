@@ -1,0 +1,7 @@
+import TypedKernelWords
+
+#print axioms ExactFourierCircuits.TypedKernelWords.compile_nonzero_shear
+#print axioms ExactFourierCircuits.TypedKernelWords.compile_inverse
+#print axioms ExactFourierCircuits.TypedKernelWords.hadamardWord_matrix
+#print axioms ExactFourierCircuits.TypedKernelWords.relabelWord_matrix
+#print axioms ExactFourierCircuits.TypedKernelWords.relabelWord_calls

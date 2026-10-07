@@ -1,0 +1,18 @@
+{
+  "host": "len",
+  "cwd": "/tmp/fourier-isolated-shear-20261007-v1",
+  "pid": 3217776,
+  "command": [
+    "/tmp/pycbc-jax-conventional-gpu-20261004/venv/bin/python",
+    "-I",
+    "-u",
+    "/tmp/fourier-isolated-shear-20261007-v1/scripts/check-isolated-shear.py",
+    "--output",
+    "/tmp/fourier-isolated-shear-20261007-v1/output"
+  ],
+  "log": "/tmp/fourier-isolated-shear-20261007-v1/output/run.log",
+  "deadline_seconds": 180,
+  "stop": "ssh len kill -TERM 3217776",
+  "status": "running",
+  "worker_pid": 3217795
+}
