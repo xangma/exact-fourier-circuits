@@ -213,3 +213,9 @@ lean_lib UniformCRTHeaderMachine
 lean_lib UniformRankKernelPreparation
 
 lean_lib UniformToeplitzChunkWord
+
+lean_lib UniformChirpTableMachine
+
+lean_lib UniformRootTableMachine
+
+lean_lib UniformChirpPreparation
