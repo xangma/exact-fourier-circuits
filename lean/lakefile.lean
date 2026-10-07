@@ -219,3 +219,11 @@ lean_lib UniformChirpTableMachine
 lean_lib UniformRootTableMachine
 
 lean_lib UniformChirpPreparation
+
+lean_lib UniformBalancedToeplitz
+
+lean_lib UniformPaddedInputMachine
+
+lean_lib UniformPaddedInputPreparation
+
+lean_lib UniformNewtonTableMachine
