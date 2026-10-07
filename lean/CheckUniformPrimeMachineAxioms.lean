@@ -1,0 +1,32 @@
+import UniformPrimeMachine
+
+#print axioms ExactFourierCircuits.UniformPrimeMachine.program
+#print axioms ExactFourierCircuits.UniformPrimeMachine.boolCode
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loopCost
+#print axioms ExactFourierCircuits.UniformPrimeMachine.totalCost
+#print axioms ExactFourierCircuits.UniformPrimeMachine.Frame
+#print axioms ExactFourierCircuits.UniformPrimeMachine.frame_refl
+#print axioms ExactFourierCircuits.UniformPrimeMachine.Frame.trans
+#print axioms ExactFourierCircuits.UniformPrimeMachine.initialized
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loopEntry
+#print axioms ExactFourierCircuits.UniformPrimeMachine.Invariant
+#print axioms ExactFourierCircuits.UniformPrimeMachine.tested
+#print axioms ExactFourierCircuits.UniformPrimeMachine.incremented
+#print axioms ExactFourierCircuits.UniformPrimeMachine.decremented
+#print axioms ExactFourierCircuits.UniformPrimeMachine.roundState
+#print axioms ExactFourierCircuits.UniformPrimeMachine.round_invariant
+#print axioms ExactFourierCircuits.UniformPrimeMachine.state_frames
+#print axioms ExactFourierCircuits.UniformPrimeMachine.round_bounded
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loop_bounded
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loopCost_bound
+#print axioms ExactFourierCircuits.UniformPrimeMachine.initialized_bounded
+#print axioms ExactFourierCircuits.UniformPrimeMachine.start_bounded
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loopEntry_invariant
+#print axioms ExactFourierCircuits.UniformPrimeMachine.bounded_trialPrime
+#print axioms ExactFourierCircuits.UniformPrimeMachine.boolCode_one
+#print axioms ExactFourierCircuits.UniformPrimeMachine.bounded_prime_correct
+#print axioms ExactFourierCircuits.UniformPrimeMachine.totalCost_bound
+#print axioms ExactFourierCircuits.UniformPrimeMachine.candidateState
+#print axioms ExactFourierCircuits.UniformPrimeMachine.candidateState_bound
+#print axioms ExactFourierCircuits.UniformPrimeMachine.canonical_prime
+#print axioms ExactFourierCircuits.UniformPrimeMachine.placed_trialPrime

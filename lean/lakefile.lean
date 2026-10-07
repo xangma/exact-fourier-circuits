@@ -154,3 +154,14 @@ lean_lib UniformAssembly
 lean_lib UniformDAGLowering
 
 lean_lib UniformAssembledDirect
+
+lean_lib UniformReplayPrint
+
+lean_lib UniformPrimeMachine
+lean_lib UniformRadixTwoMachine
+
+lean_lib UniformWorkingMachine
+
+lean_lib UniformColoring
+
+lean_lib UniformDFSProgram

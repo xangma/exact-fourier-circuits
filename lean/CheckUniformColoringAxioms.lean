@@ -1,0 +1,35 @@
+import UniformColoring
+
+#print axioms ExactFourierCircuits.UniformColoring.firstFree
+#print axioms ExactFourierCircuits.UniformColoring.firstFree_spec
+#print axioms ExactFourierCircuits.UniformColoring.Edge
+#print axioms ExactFourierCircuits.UniformColoring.Incident
+#print axioms ExactFourierCircuits.UniformColoring.Conflict
+#print axioms ExactFourierCircuits.UniformColoring.conflict_symm
+#print axioms ExactFourierCircuits.UniformColoring.incidentEdges
+#print axioms ExactFourierCircuits.UniformColoring.earlierNeighbors
+#print axioms ExactFourierCircuits.UniformColoring.earlierColors
+#print axioms ExactFourierCircuits.UniformColoring.DegreeBound
+#print axioms ExactFourierCircuits.UniformColoring.neighbors_subset
+#print axioms ExactFourierCircuits.UniformColoring.neighbors_card
+#print axioms ExactFourierCircuits.UniformColoring.earlierColors_card
+#print axioms ExactFourierCircuits.UniformColoring.greedy
+#print axioms ExactFourierCircuits.UniformColoring.greedy_next
+#print axioms ExactFourierCircuits.UniformColoring.Good
+#print axioms ExactFourierCircuits.UniformColoring.greedy_good
+#print axioms ExactFourierCircuits.UniformColoring.coloring
+#print axioms ExactFourierCircuits.UniformColoring.coloring_bound
+#print axioms ExactFourierCircuits.UniformColoring.coloring_proper
+#print axioms ExactFourierCircuits.UniformColoring.same_color_disjoint
+#print axioms ExactFourierCircuits.UniformColoring.layer
+#print axioms ExactFourierCircuits.UniformColoring.layers
+#print axioms ExactFourierCircuits.UniformColoring.mem_layer
+#print axioms ExactFourierCircuits.UniformColoring.layer_nodup
+#print axioms ExactFourierCircuits.UniformColoring.layers_length
+#print axioms ExactFourierCircuits.UniformColoring.unique_layer
+#print axioms ExactFourierCircuits.UniformColoring.layer_disjoint
+#print axioms ExactFourierCircuits.UniformColoring.shearEdge
+#print axioms ExactFourierCircuits.UniformColoring.printedEdges
+#print axioms ExactFourierCircuits.UniformColoring.printedLayers
+#print axioms ExactFourierCircuits.UniformColoring.printedLayers_length
+#print axioms ExactFourierCircuits.UniformColoring.printed_matching
