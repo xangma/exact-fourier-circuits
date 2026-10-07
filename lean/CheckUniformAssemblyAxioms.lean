@@ -1,0 +1,20 @@
+import UniformAssembly
+
+#print axioms ExactFourierCircuits.UniformAssembly.relocate
+#print axioms ExactFourierCircuits.UniformAssembly.placed
+#print axioms ExactFourierCircuits.UniformAssembly.placedResult
+#print axioms ExactFourierCircuits.UniformAssembly.CodeAt
+#print axioms ExactFourierCircuits.UniformAssembly.step_placed
+#print axioms ExactFourierCircuits.UniformAssembly.running_pc
+#print axioms ExactFourierCircuits.UniformAssembly.halted_pc
+#print axioms ExactFourierCircuits.UniformAssembly.running_placed
+#print axioms ExactFourierCircuits.UniformAssembly.halted_placed
+#print axioms ExactFourierCircuits.UniformAssembly.Runs.placed
+#print axioms ExactFourierCircuits.UniformAssembly.Executes.placed
+#print axioms ExactFourierCircuits.UniformAssembly.wordBound_mono
+#print axioms ExactFourierCircuits.UniformAssembly.placed_bound
+#print axioms ExactFourierCircuits.UniformAssembly.BoundedRuns.placed
+#print axioms ExactFourierCircuits.UniformAssembly.BoundedExecution.placed
+#print axioms ExactFourierCircuits.UniformAssembly.embed
+#print axioms ExactFourierCircuits.UniformAssembly.embed_code
+#print axioms ExactFourierCircuits.UniformAssembly.embed_length

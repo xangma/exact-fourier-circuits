@@ -136,3 +136,21 @@ lean_lib UniformNewton
 lean_lib UniformDirectBounds
 
 lean_lib UniformNetworkCost
+
+lean_lib UniformPreparationMachine
+
+lean_lib UniformIntegerScalarMachine
+
+lean_lib UniformCRTMachine
+
+lean_lib UniformLinearMachine
+
+lean_lib UniformSectorPacking
+
+lean_lib UniformRadixTwoDAG
+
+lean_lib UniformAssembly
+
+lean_lib UniformDAGLowering
+
+lean_lib UniformAssembledDirect

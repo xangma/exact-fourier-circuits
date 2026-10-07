@@ -1,0 +1,32 @@
+import UniformDAGLowering
+
+#print axioms ExactFourierCircuits.UniformDAGLowering.DProgram
+#print axioms ExactFourierCircuits.UniformDAGLowering.DInstruction
+#print axioms ExactFourierCircuits.UniformDAGLowering.lowerInstruction
+#print axioms ExactFourierCircuits.UniformDAGLowering.compile
+#print axioms ExactFourierCircuits.UniformDAGLowering.compileReverse
+#print axioms ExactFourierCircuits.UniformDAGLowering.compileLinear
+#print axioms ExactFourierCircuits.UniformDAGLowering.compileLinear_eq
+#print axioms ExactFourierCircuits.UniformDAGLowering.bytecode
+#print axioms ExactFourierCircuits.UniformDAGLowering.bytecode_length
+#print axioms ExactFourierCircuits.UniformDAGLowering.bytecode_get
+#print axioms ExactFourierCircuits.UniformDAGLowering.compile_length
+#print axioms ExactFourierCircuits.UniformDAGLowering.compile_prefix_get
+#print axioms ExactFourierCircuits.UniformDAGLowering.compile_last_get
+#print axioms ExactFourierCircuits.UniformDAGLowering.NatTable
+#print axioms ExactFourierCircuits.UniformDAGLowering.bytecode_natTable
+#print axioms ExactFourierCircuits.UniformDAGLowering.RootsReady
+#print axioms ExactFourierCircuits.UniformDAGLowering.LiteralReady
+#print axioms ExactFourierCircuits.UniformDAGLowering.LiteralsReady
+#print axioms ExactFourierCircuits.UniformDAGLowering.BaseHeap
+#print axioms ExactFourierCircuits.UniformDAGLowering.Values
+#print axioms ExactFourierCircuits.UniformDAGLowering.Registers
+#print axioms ExactFourierCircuits.UniformDAGLowering.schedule_append
+#print axioms ExactFourierCircuits.UniformDAGLowering.instruction_operands
+#print axioms ExactFourierCircuits.UniformDAGLowering.natTable_prefix
+#print axioms ExactFourierCircuits.UniformDAGLowering.compile_valid
+#print axioms ExactFourierCircuits.UniformDAGLowering.literals_heap_eq
+#print axioms ExactFourierCircuits.UniformDAGLowering.instruction_addresses
+#print axioms ExactFourierCircuits.UniformDAGLowering.values_output
+#print axioms ExactFourierCircuits.UniformDAGLowering.interpreted_DAG
+#print axioms ExactFourierCircuits.UniformDAGLowering.interpreted_DAG_packed

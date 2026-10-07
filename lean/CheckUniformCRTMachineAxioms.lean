@@ -1,0 +1,37 @@
+import UniformCRTMachine
+
+#print axioms ExactFourierCircuits.UniformCRTMachine.Result
+#print axioms ExactFourierCircuits.UniformCRTMachine.failedProbeCost
+#print axioms ExactFourierCircuits.UniformCRTMachine.scanLoop
+#print axioms ExactFourierCircuits.UniformCRTMachine.scan
+#print axioms ExactFourierCircuits.UniformCRTMachine.failedProbeCost_bound
+#print axioms ExactFourierCircuits.UniformCRTMachine.scanLoop_cost
+#print axioms ExactFourierCircuits.UniformCRTMachine.inverse_value_spec
+#print axioms ExactFourierCircuits.UniformCRTMachine.inverse_unique
+#print axioms ExactFourierCircuits.UniformCRTMachine.scanLoop_correct
+#print axioms ExactFourierCircuits.UniformCRTMachine.scan_correct
+#print axioms ExactFourierCircuits.UniformCRTMachine.program
+#print axioms ExactFourierCircuits.UniformCRTMachine.crtDigit
+#print axioms ExactFourierCircuits.UniformCRTMachine.initialized
+#print axioms ExactFourierCircuits.UniformCRTMachine.probeStart
+#print axioms ExactFourierCircuits.UniformCRTMachine.productState
+#print axioms ExactFourierCircuits.UniformCRTMachine.residueState
+#print axioms ExactFourierCircuits.UniformCRTMachine.failedState
+#print axioms ExactFourierCircuits.UniformCRTMachine.matchedState
+#print axioms ExactFourierCircuits.UniformCRTMachine.Context
+#print axioms ExactFourierCircuits.UniformCRTMachine.Frame
+#print axioms ExactFourierCircuits.UniformCRTMachine.frame_trans
+#print axioms ExactFourierCircuits.UniformCRTMachine.probe_runs
+#print axioms ExactFourierCircuits.UniformCRTMachine.failed_runs
+#print axioms ExactFourierCircuits.UniformCRTMachine.matched_executes
+#print axioms ExactFourierCircuits.UniformCRTMachine.failed_context
+#print axioms ExactFourierCircuits.UniformCRTMachine.matched_frame
+#print axioms ExactFourierCircuits.UniformCRTMachine.loop_execution
+#print axioms ExactFourierCircuits.UniformCRTMachine.Counters
+#print axioms ExactFourierCircuits.UniformCRTMachine.Interior
+#print axioms ExactFourierCircuits.UniformCRTMachine.step_interior
+#print axioms ExactFourierCircuits.UniformCRTMachine.startup_bounded
+#print axioms ExactFourierCircuits.UniformCRTMachine.inverse_bounded
+#print axioms ExactFourierCircuits.UniformCRTMachine.crtDigit_eq
+#print axioms ExactFourierCircuits.UniformCRTMachine.cofactor_budget
+#print axioms ExactFourierCircuits.UniformCRTMachine.crt_inverse_bounded

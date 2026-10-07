@@ -1,0 +1,5 @@
+import UniformAssembledDirect
+
+#print axioms ExactFourierCircuits.UniformAssembledDirect.program
+#print axioms ExactFourierCircuits.UniformAssembledDirect.program_length
+#print axioms ExactFourierCircuits.UniformAssembledDirect.bounded_DFT
