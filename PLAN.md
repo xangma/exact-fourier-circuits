@@ -112,6 +112,11 @@ the Python producer to the Lean word remains unproved, and Python's
 numerically safer compiler would be separate follow-up work; neither is
 needed for the completed exact Lean witness and bounded CUDA assessment.
 
+The next investigation is to formalize the explicit construction paper's
+stronger single algorithm at every length, including its scalar preparation,
+schedule construction and address-work bounds. That theorem is not implied
+by the currently checked subsequential `MainStatement`.
+
 Every experiment will have explicit memory/work limits, a deadline, input and
 source hashes, retained logs and a stop command. Remote jobs will preserve
 existing services. Each milestone will report implementation, exact checks,

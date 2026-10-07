@@ -6,6 +6,11 @@ proved, yielding closed finite-win and Fourier statements. The Python producer
 is a separate implementation: its equivalence to this Lean word is unproved,
 so its metadata remains `kernel_verified=false`.
 
+The Fourier conclusion here is the subsequential circuit statement in `130.md`.
+The explicit construction paper's stronger uniform algorithm at every length,
+including scalar preparation, scheduling and indexing, remains outside this
+completed proof contract.
+
 ## Statements and cost models
 
 `OAI.ExactFourier.MainStatement` in [Core.lean](../lean/OAI/Computability/FourierCircuit/Core.lean)

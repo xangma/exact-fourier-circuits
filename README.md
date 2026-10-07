@@ -17,6 +17,11 @@ finite-win witness and derives the Fourier theorem. All 1,101 registered
 declarations have axiom closures containing only `propext`, `Classical.choice`,
 and `Quot.sound`; see the [final receipt](verification/constructive-seed.json).
 
+This verifies the subsequential circuit theorem described in `130.md` and the
+explicit finite saving construction. The companion paper's stronger single
+algorithm for every length, with preparation and indexing costs included, has
+not yet been formalized here.
+
 ## Run
 
 The local checkout already has `.venv` and the Lean dependencies installed.

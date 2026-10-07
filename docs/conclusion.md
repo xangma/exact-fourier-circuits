@@ -6,9 +6,9 @@ The integrated build and axiom audit passed all 1,101 registered declarations.
 The 51 original modules are unchanged; the axiom closures use only `propext`,
 `Classical.choice` and `Quot.sound`.
 
-The [finite tensor paper](../../math/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/main.pdf)
+The [finite tensor paper](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/main.pdf)
 provides the exact Fourier transfer, while the
-[explicit construction paper](../../math/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/main.pdf)
+[explicit construction paper](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/main.pdf)
 provides the incidence network, binary frames, residual accounting and padding.
 Their details resolved the physical stage-two reversal, terminal correction,
 actual residual total and cost of role-axis layers.
@@ -39,6 +39,13 @@ not enter the count or matrix proof. Free invertible monomials belong to the
 intermediate call model; the upstream transfer charges their scalar overhead.
 The Fourier conclusion applies at selected unbounded lengths, and supplies no
 floating-point error bound or practical faster FFT.
+
+This is the subsequential theorem documented in `math/lean/docs/130.md`, from
+the finite tensor paper. The explicit construction paper additionally claims a
+single deterministic algorithm at every length, with running time
+`O(n*(log n)^theta*(log log n)^(4-theta))`, including scalar preparation,
+schedule construction and indexing. That stronger theorem is not yet
+formalized here; only its finite saving construction feeds our checked bridge.
 
 The word uses noncomputable finite coordinate and basis choices. The Python
 producer follows the paper but has no formal translation proof to this Lean
