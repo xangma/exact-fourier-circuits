@@ -1,0 +1,33 @@
+{
+  "schema": "projected-cuda-controller/v1",
+  "host": "len",
+  "pid": 2058554,
+  "cwd": "/dev/shm/exact-fourier-projected-01a11542-20261007",
+  "command": [
+    "/tmp/pycbc-jax-conventional-gpu-20261004/venv/bin/python",
+    "-I",
+    "-u",
+    "/dev/shm/exact-fourier-projected-01a11542-20261007/scripts/check-projected-cuda.py",
+    "--program",
+    "/dev/shm/exact-fourier-projected-01a11542-20261007/bits6/program.json",
+    "--fixture",
+    "/dev/shm/exact-fourier-projected-01a11542-20261007/bits6/fixture.npz",
+    "--output-prefix",
+    "/dev/shm/exact-fourier-projected-01a11542-20261007/bits6/gpu/sweep",
+    "--timeout",
+    "180"
+  ],
+  "log": "/dev/shm/exact-fourier-projected-01a11542-20261007/bits6/gpu/run.log",
+  "status": "completed",
+  "started_utc": "2026-10-07T09:22:11.078450+00:00",
+  "deadline_seconds": 240.0,
+  "next_check": "sweep.results.json / terminal.json within60seconds",
+  "child_pid": 2058572,
+  "child_pgid": 2058572,
+  "stop": "ssh len kill -TERM 2058554",
+  "returncode": 0,
+  "child_reaped": true,
+  "process_group_exists": false,
+  "elapsed_seconds": 63.87338496884331,
+  "finished_utc": "2026-10-07T09:23:14.951811+00:00"
+}

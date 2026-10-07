@@ -1,0 +1,62 @@
+{
+  "schema": "lean-projection-verification/v1",
+  "passed": true,
+  "finished_utc": "2026-10-07T09:13:48.943237+00:00",
+  "lean_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "source_sha256": {
+    "ProjectionIdentities.lean": "90f245cd0855dc67c3366715b5f278842631b0ac6e9050765c4f1e6175fa8e6d",
+    "CheckProjectionAxioms.lean": "0b3b2e95b03c300c04026c04b1f9c50aa9b26629b586f1f82015a07336d1949b",
+    "KernelIdentities.lean": "009b8ba2b0dbd2f2f16ccb092b8e0bc882313ae2d54558f035a8280054043031",
+    "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "lakefile.lean": "dde62e75f9bf1c53c5891acec27456b43680e46e1d5a200fa9a6a08b299874c8"
+  },
+  "axioms": {
+    "ExactFourierCircuits.Projection.pullback_translate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.Projection.pullback_directionalC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.Projection.pullback_inverseDirectionalC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.Projection.directionalC_inverse": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.Projection.pullback_injective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.Projection.pullback_pointwise": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.Projection.intertwines_comp": [
+      "propext"
+    ],
+    "ExactFourierCircuits.Projection.frame_telescoping": [
+      "Quot.sound"
+    ],
+    "ExactFourierCircuits.Projection.eightRows_identity": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.Projection.scalar_exchange": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.Projection.intertwines_runWord": []
+  },
+  "scope": "General algebraic identities; not a certificate of the complete GF(2) combinatorial network or saving budget."
+}

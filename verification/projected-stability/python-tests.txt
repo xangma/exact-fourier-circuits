@@ -1,0 +1,80 @@
+test_all_emitted_scalings_cost_gates (test_circuit.CircuitTests.test_all_emitted_scalings_cost_gates) ... ok
+test_chronological_program_and_free_aliases (test_circuit.CircuitTests.test_chronological_program_and_free_aliases) ... ok
+test_exact_kernel_and_basis_certificate (test_circuit.CircuitTests.test_exact_kernel_and_basis_certificate) ... ok
+test_invalid_references_are_rejected_before_execution (test_circuit.CircuitTests.test_invalid_references_are_rejected_before_execution) ... ok
+test_json_roundtrip_stable_hash_and_reject_invalid_import (test_circuit.CircuitTests.test_json_roundtrip_stable_hash_and_reject_invalid_import) ... ok
+test_resource_limits_precede_materialization (test_circuit.CircuitTests.test_resource_limits_precede_materialization) ... ok
+test_tensor_axis_baseline_matches_independent_exact_entries (test_circuit.CircuitTests.test_tensor_axis_baseline_matches_independent_exact_entries) ... ok
+test_zero_matrix_and_empty_linear_map (test_circuit.CircuitTests.test_zero_matrix_and_empty_linear_map) ... ok
+test_call_pairs_partition_each_column_and_pivot_is_zero (test_directional.DirectionalTests.test_call_pairs_partition_each_column_and_pivot_is_zero) ... ok
+test_directional_step_role_is_external (test_directional.DirectionalTests.test_directional_step_role_is_external) ... ok
+test_every_walsh_character_gets_exact_phase (test_directional.DirectionalTests.test_every_walsh_character_gets_exact_phase) ... ok
+test_exact_full_matrix_forward_and_inverse_random_odd_directions (test_directional.DirectionalTests.test_exact_full_matrix_forward_and_inverse_random_odd_directions) ... ok
+test_inverse_permutation_translates_all_column_masks (test_directional.DirectionalTests.test_inverse_permutation_translates_all_column_masks) ... ok
+test_oversized_space_rejected_before_mask_support_expansion (test_directional.DirectionalTests.test_oversized_space_rejected_before_mask_support_expansion) ... ok
+test_reject_invalid_norm_columns_inverse_and_values (test_directional.DirectionalTests.test_reject_invalid_norm_columns_inverse_and_values) ... ok
+test_tensor_support_uses_row_major_positions_as_lsb_address_bits (test_directional.DirectionalTests.test_tensor_support_uses_row_major_positions_as_lsb_address_bits) ... ok
+test_logical_shear_matches_compiled_word_and_restores_source (test_dyadic.DyadicTests.test_logical_shear_matches_compiled_word_and_restores_source) ... ok
+test_pairs_match_actual_exact_c_word (test_dyadic.DyadicTests.test_pairs_match_actual_exact_c_word) ... ok
+test_role_layer_agrees_with_c (test_dyadic.DyadicTests.test_role_layer_agrees_with_c) ... ok
+test_walsh_target_matches_independent_direction_product (test_dyadic.DyadicTests.test_walsh_target_matches_independent_direction_product) ... ok
+test_complement_of_triple_and_orthogonal_triple_pair (test_gf2.SparseBinaryTests.test_complement_of_triple_and_orthogonal_triple_pair) ... ok
+test_every_small_orthonormal_one_or_two_seed_layout (test_gf2.SparseBinaryTests.test_every_small_orthonormal_one_or_two_seed_layout) ... ok
+test_large_dimension_basis_is_lazy (test_gf2.SparseBinaryTests.test_large_dimension_basis_is_lazy) ... ok
+test_sparse_dot_xor_and_validation (test_gf2.SparseBinaryTests.test_sparse_dot_xor_and_validation) ... ok
+test_tensor_empty_zero_and_huge_dimension (test_gf2.SparseBinaryTests.test_tensor_empty_zero_and_huge_dimension) ... ok
+test_tensor_support_flattening_and_parity (test_gf2.SparseBinaryTests.test_tensor_support_flattening_and_parity) ... ok
+test_transvection_preserves_all_small_dot_products (test_gf2.SparseBinaryTests.test_transvection_preserves_all_small_dot_products) ... ok
+test_zero_complement_and_alternating_failure (test_gf2.SparseBinaryTests.test_zero_complement_and_alternating_failure) ... ok
+test_complete_framed_network_on_exact_walsh_modes (test_network.NetworkTests.test_complete_framed_network_on_exact_walsh_modes) ... ok
+test_complete_scalar_exchange_on_every_basis_vector (test_network.NetworkTests.test_complete_scalar_exchange_on_every_basis_vector) ... ok
+test_complex_data_exchange_and_arbitrary_auxiliaries (test_network.NetworkTests.test_complex_data_exchange_and_arbitrary_auxiliaries) ... ok
+test_each_invocation_restores_dirty_auxiliaries (test_network.NetworkTests.test_each_invocation_restores_dirty_auxiliaries) ... ok
+test_lazy_network_counts_match_full_dimension_budget (test_network.NetworkTests.test_lazy_network_counts_match_full_dimension_budget) ... ok
+test_paper_seed_exact_budget_and_minimal_column_count (test_network.NetworkTests.test_paper_seed_exact_budget_and_minimal_column_count) ... ok
+test_parameter_and_count_guards (test_network.NetworkTests.test_parameter_and_count_guards) ... ok
+test_residual_sparse_bases_dimensions_and_orthogonality (test_network.NetworkTests.test_residual_sparse_bases_dimensions_and_orthogonality) ... ok
+test_rg_plus_jv_exact_identity (test_network.NetworkTests.test_rg_plus_jv_exact_identity) ... ok
+test_triple_neighbors_and_ordered_side_ranks (test_network.NetworkTests.test_triple_neighbors_and_ordered_side_ranks) ... ok
+test_actual_shear_word_restores_source_exactly (test_projected_cuda_contract.ProjectedCudaContractTests.test_actual_shear_word_restores_source_exactly) ... ok
+test_bad_shapes_coordinates_coefficients_and_checkpoint_order (test_projected_cuda_contract.ProjectedCudaContractTests.test_bad_shapes_coordinates_coefficients_and_checkpoint_order) ... ok
+test_fixture_shapes_and_finite_error_metrics (test_projected_cuda_contract.ProjectedCudaContractTests.test_fixture_shapes_and_finite_error_metrics) ... ok
+test_four_gate_pair_matches_exact_kernel (test_projected_cuda_contract.ProjectedCudaContractTests.test_four_gate_pair_matches_exact_kernel) ... ok
+test_generated_cuda_tracking_needs_no_system_headers (test_projected_cuda_contract.ProjectedCudaContractTests.test_generated_cuda_tracking_needs_no_system_headers) ... ok
+test_one_ulp_discrepancy_survives_normalization (test_projected_cuda_contract.ProjectedCudaContractTests.test_one_ulp_discrepancy_survives_normalization) ... ok
+test_record_caps_fail_before_kernel_generation (test_projected_cuda_contract.ProjectedCudaContractTests.test_record_caps_fail_before_kernel_generation) ... ok
+test_subnormal_raw_difference_and_large_finite_ratio (test_projected_cuda_contract.ProjectedCudaContractTests.test_subnormal_raw_difference_and_large_finite_ratio) ... ok
+test_sweep_stops_after_first_execution_failure_and_retains_results (test_projected_cuda_contract.ProjectedCudaContractTests.test_sweep_stops_after_first_execution_failure_and_retains_results) ... {"family": "family-0", "dtype": "float32", "fmad": "on", "shear_mode": "compiled", "status": "execution_error"}
+{"family": "family-0", "dtype": "float32", "fmad": "on", "shear_mode": "compiled", "status": "timeout"}
+ok
+test_valid_record_and_checkpoint_contract (test_projected_cuda_contract.ProjectedCudaContractTests.test_valid_record_and_checkpoint_contract) ... ok
+test_zero_directions_are_valid_identity_records (test_projected_cuda_contract.ProjectedCudaContractTests.test_zero_directions_are_valid_identity_records) ... ok
+test_all_dirty_roles_compiled_shears_equal_independent_target (test_projection.FullProjectedNetworkTests.test_all_dirty_roles_compiled_shears_equal_independent_target) ... ok
+test_default_program_schema_and_projection_identity_minor (test_projection.FullProjectedNetworkTests.test_default_program_schema_and_projection_identity_minor) ... ok
+test_four_address_values_full_original_network_equal_independent_target (test_projection.FullProjectedNetworkTests.test_four_address_values_full_original_network_equal_independent_target) ... ok
+test_padding_budget_and_stage_boundaries (test_projection.FullProjectedNetworkTests.test_padding_budget_and_stage_boundaries) ... ok
+test_two_column_full_network_keeps_separate_kernel_factors (test_projection.FullProjectedNetworkTests.test_two_column_full_network_keeps_separate_kernel_factors) ... ok
+test_zero_direction_records_are_preserved (test_projection.FullProjectedNetworkTests.test_zero_direction_records_are_preserved) ... ok
+test_all_reduced_basis_vectors_intertwine_actual_direction_words (test_projection.ProjectionIdentityTests.test_all_reduced_basis_vectors_intertwine_actual_direction_words) ... ok
+test_all_reduced_basis_vectors_intertwine_full_tensor_target (test_projection.ProjectionIdentityTests.test_all_reduced_basis_vectors_intertwine_full_tensor_target) ... ok
+test_column_offset_uses_distinct_projected_kernels (test_projection.ProjectionIdentityTests.test_column_offset_uses_distinct_projected_kernels) ... ok
+test_surjectivity_and_domain_guards (test_projection.ProjectionIdentityTests.test_surjectivity_and_domain_guards) ... ok
+test_exact_field_arithmetic (test_scalars.GaussianRationalTests.test_exact_field_arithmetic) ... ok
+test_integer_powers_and_zero (test_scalars.GaussianRationalTests.test_integer_powers_and_zero) ... ok
+test_json_roundtrip_and_canonical_fractions (test_scalars.GaussianRationalTests.test_json_roundtrip_and_canonical_fractions) ... ok
+test_no_floating_point_coercion (test_scalars.GaussianRationalTests.test_no_floating_point_coercion) ... ok
+test_real_hash_agrees_with_numeric_equality (test_scalars.GaussianRationalTests.test_real_hash_agrees_with_numeric_equality) ... ok
+test_candidate_requires_saving_and_correct_identity (test_words.WordTests.test_candidate_requires_saving_and_correct_identity) ... ok
+test_exact_json_roundtrip (test_words.WordTests.test_exact_json_roundtrip) ... ok
+test_fixed_six_call_zero_and_complex (test_words.WordTests.test_fixed_six_call_zero_and_complex) ... ok
+test_huge_verification_is_bounded (test_words.WordTests.test_huge_verification_is_bounded) ... ok
+test_inverse_is_swap_times_forward (test_words.WordTests.test_inverse_is_swap_times_forward) ... ok
+test_kernel_four_gate_implementation (test_words.WordTests.test_kernel_four_gate_implementation) ... ok
+test_reject_invalid_word (test_words.WordTests.test_reject_invalid_word) ... ok
+test_tensor_baseline_matches_independent_entry_formula (test_words.WordTests.test_tensor_baseline_matches_independent_entry_formula) ... ok
+test_three_call_shear_all_basis_vectors (test_words.WordTests.test_three_call_shear_all_basis_vectors) ... ok
+
+----------------------------------------------------------------------
+Ran 73 tests in 19.651s
+
+OK

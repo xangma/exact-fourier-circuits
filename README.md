@@ -4,8 +4,9 @@ An exact-arithmetic circuit engine, a lazy constructive saving seed, and a
 pinned Lean verification project for the result described in `math/lean/docs/130.md`.
 
 The installed proof checks successfully with Lean **4.34.1** and the upstream
-Mathlib revision. The 51 upstream modules are unchanged. The theorem and five
-new kernel/shear identities have axiom closures containing only `propext`,
+Mathlib revision. The 51 upstream modules are unchanged. The theorem, five
+kernel/shear identities, and eleven projection/network identities have axiom
+closures containing only `propext`,
 `Classical.choice`, and `Quot.sound`.
 
 ## Run
@@ -18,6 +19,7 @@ cd ~/repos/exact-fourier-circuits
 .venv/bin/exact-fourier seed --h 100 --prefix 10 --output outputs/seed.json
 .venv/bin/python -m unittest discover -s tests
 ./scripts/verify-lean.sh --skip-cache
+./scripts/verify-projection.sh
 ```
 
 For a fresh checkout, `./scripts/setup.sh` installs the Python environment,
@@ -33,8 +35,10 @@ install `.venv/bin/python -m pip install -e '.[cuda]'` on a CUDA12 machine.
 | `words.py` | Fixed-kernel calls, invertible scalings, permutations, three-forward-call shear compiler, strict finite-win verifier |
 | `gf2.py`, `directional.py` | Sparse binary orthonormal complements and bounded pairwise expansion of directional kernels |
 | `network.py` | Complete lazy scalar/frame network, terminal corrections, padding and role axes; exact integer saving budget |
+| `projection.py`, `dyadic.py` | Bounded binary projections of the complete network and fast exact checkpoint references |
 | `lean/` | Original existence theorem and new exact matrix identity proofs |
 | `scripts/check-cuda.py` | CUDA scalar-DAG evaluator in FP32/FP64 against exact references |
+| `scripts/check-projected-cuda.py` | Complete projected-network CUDA execution, compiled/direct shear controls and stage diagnostics |
 
 The constructive seed specializes to
 
@@ -67,11 +71,23 @@ See [construction audit](docs/constructive-seed-audit.md) for formulas and scope
 
 ## Exact and numerical checks
 
-The Python suite has 48 passing tests. It checks all entries of small circuit
+The Python suite has 73 passing tests. It checks all entries of small circuit
 identities, dirty auxiliaries, directional inverse formulas, binary bases,
 resource bounds, and frame cancellation on four exact Walsh modes of the
 complete `h=4` network. Those modes cover selected invariant subspaces rather
 than every possible array.
+
+The complete projected network was also checked exactly on three dirty arrays
+at each of two address widths, then executed in **48 CUDA cases on len**.
+Worst final relative L2 errors were `1.59e-6` in FP32 and `2.06e-15` in FP64.
+Compiled three-C shears produced roughly 2.2–2.3 times the error of direct
+shears on stress inputs; FMA on/off arrays were identical. These projections
+measure a bounded implementation, with no claim of a saving or full-width
+stability. See the [report and checkpoint plot](docs/projected-stability.md)
+and [projection contract](docs/projection-contract.md).
+
+For fixture generation and plotting, install
+`.venv/bin/python -m pip install -e '.[research]'`.
 
 Four exported small circuits were executed on **len / RTX4090**, with 60 input
 vectors per precision. The maximum scaled output errors were `8.58e-8` in FP32

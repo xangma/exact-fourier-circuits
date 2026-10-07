@@ -1,0 +1,608 @@
+{
+  "schema": "projected-cuda-results/v1",
+  "diagnostic_only": true,
+  "program_sha256": "ac25ab2e095756929e34024438cf580debea3249b1226df3b5cd186b7734b42c",
+  "fixture_sha256": "5c41605ed4d5e201a2669170c3d091c2e28054e5c1fb5f7d8b4ed1524c403375",
+  "metadata": {
+    "address_bits": 6,
+    "ambient_bits": 64,
+    "bank_size": 64,
+    "columns": 1,
+    "coordinate_layout": "(role << address_bits) | reduced_address; column c starts at original bit c*m",
+    "h": 4,
+    "include_padding": true,
+    "m": 64,
+    "original_directional_steps": 62208,
+    "original_pointwise_shears": 5376,
+    "original_roles": 944,
+    "record_count": 72842,
+    "role_bits": 10,
+    "roles": 1024,
+    "seed": 130,
+    "status": "exact algebraic projection; no saving or full-word verification claim",
+    "width": 64,
+    "zero_direction_records": 595
+  },
+  "cases": [
+    {
+      "schema": "projected-cuda-case/v1",
+      "status": "completed",
+      "diagnostic_only": true,
+      "family": "wide_dynamic_range",
+      "family_index": 1,
+      "dtype": "float64",
+      "fmad": "on",
+      "shear_mode": "compiled",
+      "roles": 1024,
+      "width": 64,
+      "records": 72842,
+      "operation_counts": {
+        "0": 67328,
+        "1": 5376,
+        "2": 64,
+        "3": 64,
+        "4": 10
+      },
+      "elapsed_kernel_seconds": 0.15731876296922565,
+      "GPU_allocation_estimate_bytes": 12467760,
+      "max_finite_intermediate_component": 71651966367103.97,
+      "nan_gate_component_events": 0,
+      "inf_gate_component_events": 0,
+      "intermediate_tracking": "inputs and complex scalar gate outputs; events may count one value repeatedly",
+      "compiled_shears": [
+        {
+          "numerator": -1,
+          "denominator": 1,
+          "C_calls": 3,
+          "scalings": 15,
+          "scalar_gates": 27
+        },
+        {
+          "numerator": -1,
+          "denominator": 2,
+          "C_calls": 3,
+          "scalings": 15,
+          "scalar_gates": 27
+        },
+        {
+          "numerator": 1,
+          "denominator": 2,
+          "C_calls": 3,
+          "scalings": 15,
+          "scalar_gates": 27
+        },
+        {
+          "numerator": 1,
+          "denominator": 1,
+          "C_calls": 3,
+          "scalings": 15,
+          "scalar_gates": 27
+        }
+      ],
+      "primitive_C_scalar_gates": 4,
+      "metrics": {
+        "all": {
+          "elements": 65536,
+          "nonfinite_elements": 0,
+          "nan_components": 0,
+          "inf_components": 0,
+          "exact_reference_match": false,
+          "relative_l2": 2.0591783965424905e-15,
+          "max_scaled_error": 1.918268466263914e-15,
+          "max_absolute_error": 0.0015695057215116932,
+          "error_evaluation": "raw-subtraction"
+        },
+        "X_bank": {
+          "elements": 4096,
+          "nonfinite_elements": 0,
+          "nan_components": 0,
+          "inf_components": 0,
+          "exact_reference_match": false,
+          "relative_l2": 1.913609529566934e-15,
+          "max_scaled_error": 1.873352268913636e-15,
+          "max_absolute_error": 0.0014248800695713809,
+          "error_evaluation": "raw-subtraction"
+        },
+        "Y_bank": {
+          "elements": 4096,
+          "nonfinite_elements": 0,
+          "nan_components": 0,
+          "inf_components": 0,
+          "exact_reference_match": false,
+          "relative_l2": 2.1092429624937997e-15,
+          "max_scaled_error": 2.190912582121038e-15,
+          "max_absolute_error": 0.0014654793949637414,
+          "error_evaluation": "raw-subtraction"
+        },
+        "auxiliary": {
+          "elements": 52224,
+          "nonfinite_elements": 0,
+          "nan_components": 0,
+          "inf_components": 0,
+          "exact_reference_match": false,
+          "relative_l2": 2.0621511185367565e-15,
+          "max_scaled_error": 2.0067683526326493e-15,
+          "max_absolute_error": 0.0015695057215116932,
+          "error_evaluation": "raw-subtraction"
+        },
+        "padding": {
+          "elements": 5120,
+          "nonfinite_elements": 0,
+          "nan_components": 0,
+          "inf_components": 0,
+          "exact_reference_match": false,
+          "relative_l2": 2.1058599953844678e-15,
+          "max_scaled_error": 1.7415052829715651e-15,
+          "max_absolute_error": 0.0014248800695713809,
+          "error_evaluation": "raw-subtraction"
+        }
+      },
+      "checkpoints": [
+        {
+          "label": "stage_1",
+          "record_index": 20224,
+          "metrics": {
+            "all": {
+              "elements": 65536,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 9.376479459919211e-16,
+              "max_scaled_error": 7.74618728010526e-16,
+              "max_absolute_error": 0.0018067334125507427,
+              "error_evaluation": "raw-subtraction"
+            },
+            "X_bank": {
+              "elements": 4096,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 1.122601519704735e-15,
+              "max_scaled_error": 1.424443916185628e-15,
+              "max_absolute_error": 0.0014685147698212143,
+              "error_evaluation": "raw-subtraction"
+            },
+            "Y_bank": {
+              "elements": 4096,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 1.135785384634731e-15,
+              "max_scaled_error": 9.377666375060425e-16,
+              "max_absolute_error": 0.0015295366316090903,
+              "error_evaluation": "raw-subtraction"
+            },
+            "auxiliary": {
+              "elements": 52224,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 9.28748227251819e-16,
+              "max_scaled_error": 7.74618728010526e-16,
+              "max_absolute_error": 0.0018067334125507427,
+              "error_evaluation": "raw-subtraction"
+            },
+            "padding": {
+              "elements": 5120,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": true,
+              "relative_l2": 0.0,
+              "max_scaled_error": 0.0,
+              "max_absolute_error": 0.0,
+              "error_evaluation": "raw-subtraction"
+            }
+          }
+        },
+        {
+          "label": "stage_2",
+          "record_index": 41600,
+          "metrics": {
+            "all": {
+              "elements": 65536,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 1.6179752540207098e-15,
+              "max_scaled_error": 1.0726621307900008e-15,
+              "max_absolute_error": 0.002501894728331219,
+              "error_evaluation": "raw-subtraction"
+            },
+            "X_bank": {
+              "elements": 4096,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 3.1097177987203276e-15,
+              "max_scaled_error": 2.9836695434967525e-15,
+              "max_absolute_error": 0.002501894728331219,
+              "error_evaluation": "raw-subtraction"
+            },
+            "Y_bank": {
+              "elements": 4096,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 1.5573849057782937e-15,
+              "max_scaled_error": 1.6213304493004423e-15,
+              "max_absolute_error": 0.002139062366806037,
+              "error_evaluation": "raw-subtraction"
+            },
+            "auxiliary": {
+              "elements": 52224,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 1.5378604994853055e-15,
+              "max_scaled_error": 8.705170504145031e-16,
+              "max_absolute_error": 0.002030408230922129,
+              "error_evaluation": "raw-subtraction"
+            },
+            "padding": {
+              "elements": 5120,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": true,
+              "relative_l2": 0.0,
+              "max_scaled_error": 0.0,
+              "max_absolute_error": 0.0,
+              "error_evaluation": "raw-subtraction"
+            }
+          }
+        },
+        {
+          "label": "stage_3",
+          "record_index": 67584,
+          "metrics": {
+            "all": {
+              "elements": 65536,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 2.0328948557141125e-15,
+              "max_scaled_error": 1.2567745135168635e-15,
+              "max_absolute_error": 0.002763676428538369,
+              "error_evaluation": "raw-subtraction"
+            },
+            "X_bank": {
+              "elements": 4096,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 3.2963510781613066e-15,
+              "max_scaled_error": 2.1872799177040613e-15,
+              "max_absolute_error": 0.002339327135832129,
+              "error_evaluation": "raw-subtraction"
+            },
+            "Y_bank": {
+              "elements": 4096,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 3.3104421092939567e-15,
+              "max_scaled_error": 2.6544954189618603e-15,
+              "max_absolute_error": 0.002763676428538369,
+              "error_evaluation": "raw-subtraction"
+            },
+            "auxiliary": {
+              "elements": 52224,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 1.8536280756829737e-15,
+              "max_scaled_error": 1.636252451146359e-15,
+              "max_absolute_error": 0.002030408230922129,
+              "error_evaluation": "raw-subtraction"
+            },
+            "padding": {
+              "elements": 5120,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": true,
+              "relative_l2": 0.0,
+              "max_scaled_error": 0.0,
+              "max_absolute_error": 0.0,
+              "error_evaluation": "raw-subtraction"
+            }
+          }
+        },
+        {
+          "label": "terminal_translation",
+          "record_index": 67648,
+          "metrics": {
+            "all": {
+              "elements": 65536,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 2.0328948557141117e-15,
+              "max_scaled_error": 1.2567745135168635e-15,
+              "max_absolute_error": 0.002763676428538369,
+              "error_evaluation": "raw-subtraction"
+            },
+            "X_bank": {
+              "elements": 4096,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 3.2963510781613066e-15,
+              "max_scaled_error": 2.1872799177040613e-15,
+              "max_absolute_error": 0.002339327135832129,
+              "error_evaluation": "raw-subtraction"
+            },
+            "Y_bank": {
+              "elements": 4096,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 3.3104421092939567e-15,
+              "max_scaled_error": 2.6544954189618603e-15,
+              "max_absolute_error": 0.002763676428538369,
+              "error_evaluation": "raw-subtraction"
+            },
+            "auxiliary": {
+              "elements": 52224,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 1.8536280756829737e-15,
+              "max_scaled_error": 1.636252451146359e-15,
+              "max_absolute_error": 0.002030408230922129,
+              "error_evaluation": "raw-subtraction"
+            },
+            "padding": {
+              "elements": 5120,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": true,
+              "relative_l2": 0.0,
+              "max_scaled_error": 0.0,
+              "max_absolute_error": 0.0,
+              "error_evaluation": "raw-subtraction"
+            }
+          }
+        },
+        {
+          "label": "terminal_bank_exchange",
+          "record_index": 67712,
+          "metrics": {
+            "all": {
+              "elements": 65536,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 2.0328948557141117e-15,
+              "max_scaled_error": 1.2567745135168635e-15,
+              "max_absolute_error": 0.002763676428538369,
+              "error_evaluation": "raw-subtraction"
+            },
+            "X_bank": {
+              "elements": 4096,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 3.3104421092939567e-15,
+              "max_scaled_error": 2.6544954189618603e-15,
+              "max_absolute_error": 0.002763676428538369,
+              "error_evaluation": "raw-subtraction"
+            },
+            "Y_bank": {
+              "elements": 4096,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 3.2963510781613066e-15,
+              "max_scaled_error": 2.1872799177040613e-15,
+              "max_absolute_error": 0.002339327135832129,
+              "error_evaluation": "raw-subtraction"
+            },
+            "auxiliary": {
+              "elements": 52224,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 1.8536280756829737e-15,
+              "max_scaled_error": 1.636252451146359e-15,
+              "max_absolute_error": 0.002030408230922129,
+              "error_evaluation": "raw-subtraction"
+            },
+            "padding": {
+              "elements": 5120,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": true,
+              "relative_l2": 0.0,
+              "max_scaled_error": 0.0,
+              "max_absolute_error": 0.0,
+              "error_evaluation": "raw-subtraction"
+            }
+          }
+        },
+        {
+          "label": "padding",
+          "record_index": 72832,
+          "metrics": {
+            "all": {
+              "elements": 65536,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 2.0407241654356463e-15,
+              "max_scaled_error": 2.2271739552186406e-15,
+              "max_absolute_error": 0.002763676428538369,
+              "error_evaluation": "raw-subtraction"
+            },
+            "X_bank": {
+              "elements": 4096,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 3.3104421092939567e-15,
+              "max_scaled_error": 2.6544954189618603e-15,
+              "max_absolute_error": 0.002763676428538369,
+              "error_evaluation": "raw-subtraction"
+            },
+            "Y_bank": {
+              "elements": 4096,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 3.2963510781613066e-15,
+              "max_scaled_error": 2.1872799177040613e-15,
+              "max_absolute_error": 0.002339327135832129,
+              "error_evaluation": "raw-subtraction"
+            },
+            "auxiliary": {
+              "elements": 52224,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 1.8536280756829737e-15,
+              "max_scaled_error": 1.636252451146359e-15,
+              "max_absolute_error": 0.002030408230922129,
+              "error_evaluation": "raw-subtraction"
+            },
+            "padding": {
+              "elements": 5120,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 6.592411060629325e-16,
+              "max_scaled_error": 6.525639881290727e-16,
+              "max_absolute_error": 0.0005883765264648225,
+              "error_evaluation": "raw-subtraction"
+            }
+          }
+        },
+        {
+          "label": "role_axes",
+          "record_index": 72842,
+          "metrics": {
+            "all": {
+              "elements": 65536,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 2.0591783965424905e-15,
+              "max_scaled_error": 1.918268466263914e-15,
+              "max_absolute_error": 0.0015695057215116932,
+              "error_evaluation": "raw-subtraction"
+            },
+            "X_bank": {
+              "elements": 4096,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 1.913609529566934e-15,
+              "max_scaled_error": 1.873352268913636e-15,
+              "max_absolute_error": 0.0014248800695713809,
+              "error_evaluation": "raw-subtraction"
+            },
+            "Y_bank": {
+              "elements": 4096,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 2.1092429624937997e-15,
+              "max_scaled_error": 2.190912582121038e-15,
+              "max_absolute_error": 0.0014654793949637414,
+              "error_evaluation": "raw-subtraction"
+            },
+            "auxiliary": {
+              "elements": 52224,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 2.0621511185367565e-15,
+              "max_scaled_error": 2.0067683526326493e-15,
+              "max_absolute_error": 0.0015695057215116932,
+              "error_evaluation": "raw-subtraction"
+            },
+            "padding": {
+              "elements": 5120,
+              "nonfinite_elements": 0,
+              "nan_components": 0,
+              "inf_components": 0,
+              "exact_reference_match": false,
+              "relative_l2": 2.1058599953844678e-15,
+              "max_scaled_error": 1.7415052829715651e-15,
+              "max_absolute_error": 0.0014248800695713809,
+              "error_evaluation": "raw-subtraction"
+            }
+          }
+        }
+      ],
+      "output_npz": "/dev/shm/exact-fourier-projected-01a11542-20261007/bits6/metric-check/sweep.family1.float64.fmad-on.compiled.npz",
+      "program_sha256": "ac25ab2e095756929e34024438cf580debea3249b1226df3b5cd186b7734b42c",
+      "fixture_sha256": "5c41605ed4d5e201a2669170c3d091c2e28054e5c1fb5f7d8b4ed1524c403375",
+      "kernel_sha256": "5c9b306a2278c46926b66a22a0ba1d3fa8c5ed039e69c7dae4f0b0b8b79934d9",
+      "runner_sha256": "89d4defaa94b159efeccb823b915429f11830c8daec8d91d073264f752fdf125",
+      "cuda_compile_options": [
+        "--std=c++11",
+        "--fmad=true"
+      ],
+      "host": "len",
+      "pid": 2287016,
+      "cwd": "/dev/shm/exact-fourier-projected-01a11542-20261007",
+      "device": "NVIDIA GeForce RTX 4090",
+      "cupy_version": "13.3.0",
+      "numpy_version": "2.2.6",
+      "cuda_runtime_version": 12060,
+      "cuda_driver_version": 13030,
+      "metadata": {
+        "address_bits": 6,
+        "ambient_bits": 64,
+        "bank_size": 64,
+        "columns": 1,
+        "coordinate_layout": "(role << address_bits) | reduced_address; column c starts at original bit c*m",
+        "h": 4,
+        "include_padding": true,
+        "m": 64,
+        "original_directional_steps": 62208,
+        "original_pointwise_shears": 5376,
+        "original_roles": 944,
+        "record_count": 72842,
+        "role_bits": 10,
+        "roles": 1024,
+        "seed": 130,
+        "status": "exact algebraic projection; no saving or full-word verification claim",
+        "width": 64,
+        "zero_direction_records": 595
+      }
+    }
+  ]
+}

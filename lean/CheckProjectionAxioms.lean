@@ -1,0 +1,13 @@
+import ProjectionIdentities
+
+#print axioms ExactFourierCircuits.Projection.pullback_translate
+#print axioms ExactFourierCircuits.Projection.pullback_directionalC
+#print axioms ExactFourierCircuits.Projection.pullback_inverseDirectionalC
+#print axioms ExactFourierCircuits.Projection.directionalC_inverse
+#print axioms ExactFourierCircuits.Projection.pullback_injective
+#print axioms ExactFourierCircuits.Projection.pullback_pointwise
+#print axioms ExactFourierCircuits.Projection.intertwines_comp
+#print axioms ExactFourierCircuits.Projection.intertwines_runWord
+#print axioms ExactFourierCircuits.Projection.frame_telescoping
+#print axioms ExactFourierCircuits.Projection.eightRows_identity
+#print axioms ExactFourierCircuits.Projection.scalar_exchange

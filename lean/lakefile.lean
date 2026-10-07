@@ -12,3 +12,5 @@ require mathlib from git
   globs := #[`OAI.+]
 
 lean_lib KernelIdentities
+
+lean_lib ProjectionIdentities

@@ -1,0 +1,155 @@
+{
+  "elapsed_seconds": 30.851747541004443,
+  "families": [
+    {
+      "checkpoint_hashes": [
+        {
+          "exact_state_sha256": "23520892aafba4ee6229b9d1d5bfa9549591ec85274c8efc51c75f2705c67483",
+          "label": "stage_1"
+        },
+        {
+          "exact_state_sha256": "4c3b2bda24dd08693cb707edefc5f43581b52d3f6cf6b5deecf75a6e1ed9d385",
+          "label": "stage_2"
+        },
+        {
+          "exact_state_sha256": "7fe7ff0c367a13582f5bfcd3ca6f69722ac6860b3401a30f63687e5714c66744",
+          "label": "stage_3"
+        },
+        {
+          "exact_state_sha256": "26478c7b5e0cf59c3ab6e14ec5eac9c5a5af3d66e50e7e5811974173360f4587",
+          "label": "terminal_translation"
+        },
+        {
+          "exact_state_sha256": "a227d9e860a6abde90ea44a79796895271b177262580b145c29bab438b853118",
+          "label": "terminal_bank_exchange"
+        },
+        {
+          "exact_state_sha256": "5fa4456808413dd8610814ca1612127ba67dd2f80f367aa1d664b2c64e35df78",
+          "label": "padding"
+        },
+        {
+          "exact_state_sha256": "577554b28081bad0253ebb468e99b9e00be9fe6f15ce5eeee7a28b32a1e2ac66",
+          "label": "role_axes"
+        }
+      ],
+      "complex_coordinates_checked": 262144,
+      "elapsed_seconds": 8.435882667006808,
+      "exact_agreement": true,
+      "exact_input_sha256": "7852dc2954e131ac5a888997ff424a9d4a1e7bdad97c576f1a75070a6763c152",
+      "exact_source_sha256": "577554b28081bad0253ebb468e99b9e00be9fe6f15ce5eeee7a28b32a1e2ac66",
+      "exact_target_sha256": "577554b28081bad0253ebb468e99b9e00be9fe6f15ce5eeee7a28b32a1e2ac66",
+      "family": "moderate_dyadic",
+      "input_exact_in_fp32_and_fp64": true,
+      "roles_checked": 1024
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "exact_state_sha256": "6eafaa546c448f2c45a0210a34c87e50bd51077686f89532e0f4102525894554",
+          "label": "stage_1"
+        },
+        {
+          "exact_state_sha256": "f2b173ec46a51b7f161d40f0040885e19472257bf4b47937cd6fbcae046f8ac1",
+          "label": "stage_2"
+        },
+        {
+          "exact_state_sha256": "21caee344995ca253580ce64fc8d5eb7cb8cad539b1fa642817ceb336ee440ed",
+          "label": "stage_3"
+        },
+        {
+          "exact_state_sha256": "cd000890633ecb2eac3108b0bb7634c69b19e33e77ff76f0036880377908d317",
+          "label": "terminal_translation"
+        },
+        {
+          "exact_state_sha256": "90cd603f6c4556f1a568288b1592cb252c1dc5321d0a962e9929a53e73638245",
+          "label": "terminal_bank_exchange"
+        },
+        {
+          "exact_state_sha256": "400d54062f17ab028e24d3e0ff3d30b4a3341dc75385b7f5735fb97183a83204",
+          "label": "padding"
+        },
+        {
+          "exact_state_sha256": "804747e40c6aa48ed4352a0000172c7d63699550116b62b04a18758b5c3f28e7",
+          "label": "role_axes"
+        }
+      ],
+      "complex_coordinates_checked": 262144,
+      "elapsed_seconds": 10.75501616600377,
+      "exact_agreement": true,
+      "exact_input_sha256": "d559526a766e1524f8b4b419322249fbcea748e82127932871b1f71ff25b9186",
+      "exact_source_sha256": "804747e40c6aa48ed4352a0000172c7d63699550116b62b04a18758b5c3f28e7",
+      "exact_target_sha256": "804747e40c6aa48ed4352a0000172c7d63699550116b62b04a18758b5c3f28e7",
+      "family": "wide_dynamic_range",
+      "input_exact_in_fp32_and_fp64": true,
+      "roles_checked": 1024
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "exact_state_sha256": "7228fef18badadc0cc7f2c6b10d5d5d2130ba8bb19177f174c3a63a79e59ba82",
+          "label": "stage_1"
+        },
+        {
+          "exact_state_sha256": "ec4a7dae6e3cf9e518dba35557cd556579ac96c8ff96b6046d08eae402ad3f96",
+          "label": "stage_2"
+        },
+        {
+          "exact_state_sha256": "a0f88f1ff51dc9821c624cecede6baeca23779c70a4d888138fa3be6e1b2d3d8",
+          "label": "stage_3"
+        },
+        {
+          "exact_state_sha256": "8a017dd8fe1e867212605f082f95806a9aa9376a9314310f41cdfb9b459dc094",
+          "label": "terminal_translation"
+        },
+        {
+          "exact_state_sha256": "66b213ad6fea67777d5461e31e4b1197598ae46d3bc6013cce6e6f1998660d1d",
+          "label": "terminal_bank_exchange"
+        },
+        {
+          "exact_state_sha256": "616e42c052f50830e91b8aea2a4acf7fcba4e27e03599c41faeb2425f2f6d769",
+          "label": "padding"
+        },
+        {
+          "exact_state_sha256": "d38d44861b11ad1902ebdd5ff8f5b445599bbc54b9a000e924f535ad83f09cbb",
+          "label": "role_axes"
+        }
+      ],
+      "complex_coordinates_checked": 262144,
+      "elapsed_seconds": 7.332557290996192,
+      "exact_agreement": true,
+      "exact_input_sha256": "ecf79ba979f058e3b6b7e0ad85b9d065fcd7e47b05adf1bcd08b1dc2c2d0f60c",
+      "exact_source_sha256": "d38d44861b11ad1902ebdd5ff8f5b445599bbc54b9a000e924f535ad83f09cbb",
+      "exact_target_sha256": "d38d44861b11ad1902ebdd5ff8f5b445599bbc54b9a000e924f535ad83f09cbb",
+      "family": "cancellation",
+      "input_exact_in_fp32_and_fp64": true,
+      "roles_checked": 1024
+    }
+  ],
+  "fixture_sha256": "946eebe33f36eb042666c50fd1f5f2f578497cdfdbba0e505f794843f9e8718f",
+  "host": "RONI2.local",
+  "metadata": {
+    "address_bits": 8,
+    "ambient_bits": 64,
+    "bank_size": 64,
+    "columns": 1,
+    "coordinate_layout": "(role << address_bits) | reduced_address; column c starts at original bit c*m",
+    "h": 4,
+    "include_padding": true,
+    "m": 64,
+    "original_directional_steps": 62208,
+    "original_pointwise_shears": 5376,
+    "original_roles": 944,
+    "record_count": 72842,
+    "role_bits": 10,
+    "roles": 1024,
+    "seed": 131,
+    "status": "exact algebraic projection; no saving or full-word verification claim",
+    "width": 256,
+    "zero_direction_records": 147
+  },
+  "numpy": "2.5.3",
+  "pid": 49363,
+  "program_sha256": "4cd0444a111ef5e4d8b08e05fe158b8df6f3560bcc53593449b16ebdbc3bc25a",
+  "schema": "exact-projected-fixture-verification/v1",
+  "scope": "exact agreement on three dirty dyadic arrays; not an exhaustive matrix certificate or a saving witness"
+}

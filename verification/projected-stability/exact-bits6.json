@@ -1,0 +1,155 @@
+{
+  "elapsed_seconds": 9.041046333004488,
+  "families": [
+    {
+      "checkpoint_hashes": [
+        {
+          "exact_state_sha256": "6b732177af29f1d694102320f89343d73bb4d0695cd199184cda40af424d12e6",
+          "label": "stage_1"
+        },
+        {
+          "exact_state_sha256": "e6a5639d8aa2c4104828d5c2cb06773de9fa4cfc65fbf57dcd6bdb8bf23a0faf",
+          "label": "stage_2"
+        },
+        {
+          "exact_state_sha256": "52711a4a7e8f0dac0ee7e9c76ebe7cffb3a1765556da43a3dc9e7f5e9456b3ce",
+          "label": "stage_3"
+        },
+        {
+          "exact_state_sha256": "d99ece26d31c8a77c7ba8c156df94c8d6b366ab0ac1a2d82383665030c207e92",
+          "label": "terminal_translation"
+        },
+        {
+          "exact_state_sha256": "293d60b25b170856558a9c0c1b83f76eb9b36b1feaaf4219ab2409cca3f3e53e",
+          "label": "terminal_bank_exchange"
+        },
+        {
+          "exact_state_sha256": "7a322a6e0508b5d8be48afed5188af9c214bb776f9d9db32090c21e1ff23e4c5",
+          "label": "padding"
+        },
+        {
+          "exact_state_sha256": "0b90ea6c213bcdf4619a5e46ac0775a30c9bbf4c2f6b57cea66e0225ac235dbc",
+          "label": "role_axes"
+        }
+      ],
+      "complex_coordinates_checked": 65536,
+      "elapsed_seconds": 2.066727458994137,
+      "exact_agreement": true,
+      "exact_input_sha256": "6df4335390104e64da8a79fb365342c08c899265c58f58a1757c409222de2cfd",
+      "exact_source_sha256": "0b90ea6c213bcdf4619a5e46ac0775a30c9bbf4c2f6b57cea66e0225ac235dbc",
+      "exact_target_sha256": "0b90ea6c213bcdf4619a5e46ac0775a30c9bbf4c2f6b57cea66e0225ac235dbc",
+      "family": "moderate_dyadic",
+      "input_exact_in_fp32_and_fp64": true,
+      "roles_checked": 1024
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "exact_state_sha256": "21c10548b3a30c393d559bad20bb8d0241c5966fa3d58a7820a3802ddcfc196e",
+          "label": "stage_1"
+        },
+        {
+          "exact_state_sha256": "01b8d5ac12e7effd66bf68f23357fb9fea62141368e8f5a63d236c38cfe3f18a",
+          "label": "stage_2"
+        },
+        {
+          "exact_state_sha256": "6ec7b0fde9200153f907f40958d27c34faa02a9b2dc4fd7089fda6eb93f75311",
+          "label": "stage_3"
+        },
+        {
+          "exact_state_sha256": "67eddf0ea86a6daa395c302389f8d862f29de924683af61556fd44375a554e73",
+          "label": "terminal_translation"
+        },
+        {
+          "exact_state_sha256": "fd7f75c1278eed6ae928f71bc3e554c068eb641e21ca7b5431ebde52c889a01f",
+          "label": "terminal_bank_exchange"
+        },
+        {
+          "exact_state_sha256": "18bee2649d15d8fe276eeacd167e8a4180d45435654a06d383ee5fbc63f82749",
+          "label": "padding"
+        },
+        {
+          "exact_state_sha256": "881e93f28a8a66fd0952a866c48d463950ca5e1f2ffd73e817b34bf6fba677c2",
+          "label": "role_axes"
+        }
+      ],
+      "complex_coordinates_checked": 65536,
+      "elapsed_seconds": 2.6892107500025304,
+      "exact_agreement": true,
+      "exact_input_sha256": "88fe045ff0f3239d9478dd35bc805bf3844136de6210c6061cfb11da384a6598",
+      "exact_source_sha256": "881e93f28a8a66fd0952a866c48d463950ca5e1f2ffd73e817b34bf6fba677c2",
+      "exact_target_sha256": "881e93f28a8a66fd0952a866c48d463950ca5e1f2ffd73e817b34bf6fba677c2",
+      "family": "wide_dynamic_range",
+      "input_exact_in_fp32_and_fp64": true,
+      "roles_checked": 1024
+    },
+    {
+      "checkpoint_hashes": [
+        {
+          "exact_state_sha256": "0e2127dfbe640aa3528bddfcfabbd68f5b7841aac1f38b5e979dd3692171ea3a",
+          "label": "stage_1"
+        },
+        {
+          "exact_state_sha256": "9b7c7d64c24a63662667c90541d3f9dcda5abd92adea9775280f7cca74e9830f",
+          "label": "stage_2"
+        },
+        {
+          "exact_state_sha256": "c700fee636b7c78badcb9184272e1938537d64adf25622b3fe7fadfa108747ce",
+          "label": "stage_3"
+        },
+        {
+          "exact_state_sha256": "f17d66935f5a33babf52293373c31e5a0551f65f5b4eeadb576c6a9f009d1798",
+          "label": "terminal_translation"
+        },
+        {
+          "exact_state_sha256": "7f98131cb19afaf02feff7ebd6a40874cfbf6c7936665951494d15c646b292a4",
+          "label": "terminal_bank_exchange"
+        },
+        {
+          "exact_state_sha256": "c7a9aa6a1538407f48c4a2b7d627e4464d2fc01bee3790ee2f0c9431826cdf49",
+          "label": "padding"
+        },
+        {
+          "exact_state_sha256": "980cba9d5b78d44651f25c3026c616ebbdf2c179822490c0a5849982dd52c947",
+          "label": "role_axes"
+        }
+      ],
+      "complex_coordinates_checked": 65536,
+      "elapsed_seconds": 1.791252999988501,
+      "exact_agreement": true,
+      "exact_input_sha256": "552ecb5b8718d88358416f2139df49477d63b85e4b2a17e809db3aa03201eb20",
+      "exact_source_sha256": "980cba9d5b78d44651f25c3026c616ebbdf2c179822490c0a5849982dd52c947",
+      "exact_target_sha256": "980cba9d5b78d44651f25c3026c616ebbdf2c179822490c0a5849982dd52c947",
+      "family": "cancellation",
+      "input_exact_in_fp32_and_fp64": true,
+      "roles_checked": 1024
+    }
+  ],
+  "fixture_sha256": "5c41605ed4d5e201a2669170c3d091c2e28054e5c1fb5f7d8b4ed1524c403375",
+  "host": "RONI2.local",
+  "metadata": {
+    "address_bits": 6,
+    "ambient_bits": 64,
+    "bank_size": 64,
+    "columns": 1,
+    "coordinate_layout": "(role << address_bits) | reduced_address; column c starts at original bit c*m",
+    "h": 4,
+    "include_padding": true,
+    "m": 64,
+    "original_directional_steps": 62208,
+    "original_pointwise_shears": 5376,
+    "original_roles": 944,
+    "record_count": 72842,
+    "role_bits": 10,
+    "roles": 1024,
+    "seed": 130,
+    "status": "exact algebraic projection; no saving or full-word verification claim",
+    "width": 64,
+    "zero_direction_records": 595
+  },
+  "numpy": "2.5.3",
+  "pid": 48149,
+  "program_sha256": "ac25ab2e095756929e34024438cf580debea3249b1226df3b5cd186b7734b42c",
+  "schema": "exact-projected-fixture-verification/v1",
+  "scope": "exact agreement on three dirty dyadic arrays; not an exhaustive matrix certificate or a saving witness"
+}
