@@ -1,0 +1,26 @@
+import UniformTraversalMachine
+
+#print axioms ExactFourierCircuits.UniformTraversalMachine.program
+#print axioms ExactFourierCircuits.UniformTraversalMachine.packingState
+#print axioms ExactFourierCircuits.UniformTraversalMachine.packingDigit
+#print axioms ExactFourierCircuits.UniformTraversalMachine.stage1
+#print axioms ExactFourierCircuits.UniformTraversalMachine.stage2
+#print axioms ExactFourierCircuits.UniformTraversalMachine.stage3
+#print axioms ExactFourierCircuits.UniformTraversalMachine.stage4
+#print axioms ExactFourierCircuits.UniformTraversalMachine.stage5
+#print axioms ExactFourierCircuits.UniformTraversalMachine.stage6
+#print axioms ExactFourierCircuits.UniformTraversalMachine.stage7
+#print axioms ExactFourierCircuits.UniformTraversalMachine.finalState
+#print axioms ExactFourierCircuits.UniformTraversalMachine.program_length
+#print axioms ExactFourierCircuits.UniformTraversalMachine.executes
+#print axioms ExactFourierCircuits.UniformTraversalMachine.executes_unique
+#print axioms ExactFourierCircuits.UniformTraversalMachine.final_packingState
+#print axioms ExactFourierCircuits.UniformTraversalMachine.final_temporary
+#print axioms ExactFourierCircuits.UniformTraversalMachine.final_natReg_other
+#print axioms ExactFourierCircuits.UniformTraversalMachine.final_pc
+#print axioms ExactFourierCircuits.UniformTraversalMachine.final_preserves_auxiliary_state
+#print axioms ExactFourierCircuits.UniformTraversalMachine.writeNat_wordBound
+#print axioms ExactFourierCircuits.UniformTraversalMachine.LocalBounds
+#print axioms ExactFourierCircuits.UniformTraversalMachine.AssignmentBounds
+#print axioms ExactFourierCircuits.UniformTraversalMachine.assignment_bounds
+#print axioms ExactFourierCircuits.UniformTraversalMachine.bounded_executes

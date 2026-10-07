@@ -1,0 +1,36 @@
+import UniformDirectMachine
+
+#print axioms ExactFourierCircuits.UniformDirectMachine.program
+#print axioms ExactFourierCircuits.UniformDirectMachine.term
+#print axioms ExactFourierCircuits.UniformDirectMachine.partialSum
+#print axioms ExactFourierCircuits.UniformDirectMachine.partialSum_zero
+#print axioms ExactFourierCircuits.UniformDirectMachine.partialSum_succ
+#print axioms ExactFourierCircuits.UniformDirectMachine.partialSum_dft
+#print axioms ExactFourierCircuits.UniformDirectMachine.context
+#print axioms ExactFourierCircuits.UniformDirectMachine.innerInvariant
+#print axioms ExactFourierCircuits.UniformDirectMachine.readState
+#print axioms ExactFourierCircuits.UniformDirectMachine.multiplyState
+#print axioms ExactFourierCircuits.UniformDirectMachine.addState
+#print axioms ExactFourierCircuits.UniformDirectMachine.powerState
+#print axioms ExactFourierCircuits.UniformDirectMachine.innerNext
+#print axioms ExactFourierCircuits.UniformDirectMachine.inner_round
+#print axioms ExactFourierCircuits.UniformDirectMachine.inner_round_invariant
+#print axioms ExactFourierCircuits.UniformDirectMachine.inner_round_outputs
+#print axioms ExactFourierCircuits.UniformDirectMachine.inner_loop
+#print axioms ExactFourierCircuits.UniformDirectMachine.outerInvariant
+#print axioms ExactFourierCircuits.UniformDirectMachine.innerInitial
+#print axioms ExactFourierCircuits.UniformDirectMachine.enter_row
+#print axioms ExactFourierCircuits.UniformDirectMachine.innerInitial_invariant
+#print axioms ExactFourierCircuits.UniformDirectMachine.emitState
+#print axioms ExactFourierCircuits.UniformDirectMachine.nextRow
+#print axioms ExactFourierCircuits.UniformDirectMachine.finish_row
+#print axioms ExactFourierCircuits.UniformDirectMachine.nextRow_invariant
+#print axioms ExactFourierCircuits.UniformDirectMachine.outer_round
+#print axioms ExactFourierCircuits.UniformDirectMachine.outer_loop
+#print axioms ExactFourierCircuits.UniformDirectMachine.startupRoot
+#print axioms ExactFourierCircuits.UniformDirectMachine.startup
+#print axioms ExactFourierCircuits.UniformDirectMachine.startup_runs
+#print axioms ExactFourierCircuits.UniformDirectMachine.startup_invariant
+#print axioms ExactFourierCircuits.UniformDirectMachine.halt_executes
+#print axioms ExactFourierCircuits.UniformDirectMachine.direct_execution
+#print axioms ExactFourierCircuits.UniformDirectMachine.direct_root_bound

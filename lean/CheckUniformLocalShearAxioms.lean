@@ -1,0 +1,15 @@
+import UniformLocalShear
+
+#print axioms ExactFourierCircuits.UniformLocalShear.kappa_re
+#print axioms ExactFourierCircuits.UniformLocalShear.kappa_im
+#print axioms ExactFourierCircuits.UniformLocalShear.kappa_re_pos
+#print axioms ExactFourierCircuits.UniformLocalShear.kappa_ne_zero
+#print axioms ExactFourierCircuits.UniformLocalShear.second_ne_zero
+#print axioms ExactFourierCircuits.UniformLocalShear.split_sum
+#print axioms ExactFourierCircuits.UniformLocalShear.upperShear_mul
+#print axioms ExactFourierCircuits.UniformLocalShear.word_matrix
+#print axioms ExactFourierCircuits.UniformLocalShear.word_calls
+#print axioms ExactFourierCircuits.UniformLocalShear.word_action
+#print axioms ExactFourierCircuits.UniformLocalShear.compile_shear
+#print axioms ExactFourierCircuits.UniformLocalShear.zero_matrix
+#print axioms ExactFourierCircuits.UniformLocalShear.zero_calls

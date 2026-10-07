@@ -92,3 +92,47 @@ lean_lib MasterBudget
 lean_lib ColumnTerminalFlat
 
 lean_lib ExplicitSeed
+
+lean_lib UniformMachine
+
+lean_lib UniformExponent
+
+lean_lib UniformRoots
+
+lean_lib UniformLocalShear
+
+lean_lib UniformBatching
+
+lean_lib UniformChirp
+
+lean_lib UniformScalarPreparation
+
+lean_lib UniformTraversal
+
+lean_lib UniformWorkingLength
+
+lean_lib UniformAsymptotics
+
+lean_lib UniformCyclic
+
+lean_lib UniformDiagonal
+
+lean_lib UniformMachineRuns
+
+lean_lib UniformCRT
+
+lean_lib UniformTraversalMachine
+
+lean_lib UniformSelectedCRT
+
+lean_lib UniformDirectMachine
+
+lean_lib UniformWorkingPreparation
+
+lean_lib UniformPowerMachine
+
+lean_lib UniformNewton
+
+lean_lib UniformDirectBounds
+
+lean_lib UniformNetworkCost

@@ -1,0 +1,30 @@
+import UniformCRT
+
+#print axioms ExactFourierCircuits.UniformCRT.cofactor
+#print axioms ExactFourierCircuits.UniformCRT.inverseDigit
+#print axioms ExactFourierCircuits.UniformCRT.idempotent
+#print axioms ExactFourierCircuits.UniformCRT.address
+#print axioms ExactFourierCircuits.UniformCRT.localOutput
+#print axioms ExactFourierCircuits.UniformCRT.cofactor_mul
+#print axioms ExactFourierCircuits.UniformCRT.cofactor_eq_div
+#print axioms ExactFourierCircuits.UniformCRT.cofactor_coprime
+#print axioms ExactFourierCircuits.UniformCRT.inverseDigit_lt
+#print axioms ExactFourierCircuits.UniformCRT.idempotent_lt
+#print axioms ExactFourierCircuits.UniformCRT.idempotent_self
+#print axioms ExactFourierCircuits.UniformCRT.idempotent_other
+#print axioms ExactFourierCircuits.UniformCRT.localOutput_inverse
+#print axioms ExactFourierCircuits.UniformCRT.inverse_localOutput
+#print axioms ExactFourierCircuits.UniformCRT.localPermutation
+#print axioms ExactFourierCircuits.UniformCRT.idempotent_projection
+#print axioms ExactFourierCircuits.UniformCRT.component_specified_root
+#print axioms ExactFourierCircuits.UniformCRT.local_root_primitive
+#print axioms ExactFourierCircuits.UniformCRT.crt_sum
+#print axioms ExactFourierCircuits.UniformCRT.address_lt
+#print axioms ExactFourierCircuits.UniformCRT.address_crt
+#print axioms ExactFourierCircuits.UniformCRT.decode
+#print axioms ExactFourierCircuits.UniformCRT.encode
+#print axioms ExactFourierCircuits.UniformCRT.decode_encode
+#print axioms ExactFourierCircuits.UniformCRT.encode_decode
+#print axioms ExactFourierCircuits.UniformCRT.permutation
+#print axioms ExactFourierCircuits.UniformCRT.fourier_phase
+#print axioms ExactFourierCircuits.UniformCRT.matrix_factorization

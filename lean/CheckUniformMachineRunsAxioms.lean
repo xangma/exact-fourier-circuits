@@ -1,0 +1,18 @@
+import UniformMachineRuns
+
+#print axioms ExactFourierCircuits.UniformMachine.Runs
+#print axioms ExactFourierCircuits.UniformMachine.BoundedRuns
+#print axioms ExactFourierCircuits.UniformMachine.Runs.trans
+#print axioms ExactFourierCircuits.UniformMachine.Runs.executes
+#print axioms ExactFourierCircuits.UniformMachine.BoundedRuns.runs
+#print axioms ExactFourierCircuits.UniformMachine.BoundedRuns.initial_bound
+#print axioms ExactFourierCircuits.UniformMachine.BoundedRuns.final_bound
+#print axioms ExactFourierCircuits.UniformMachine.BoundedRuns.trans
+#print axioms ExactFourierCircuits.UniformMachine.BoundedRuns.executes
+#print axioms ExactFourierCircuits.UniformMachine.Runs.bounded_of_invariant
+#print axioms ExactFourierCircuits.UniformMachine.Executes.bounded_of_invariant
+#print axioms ExactFourierCircuits.UniformMachine.field_step_write
+#print axioms ExactFourierCircuits.UniformMachine.writeNat_bound
+#print axioms ExactFourierCircuits.UniformMachine.writeScalar_bound
+#print axioms ExactFourierCircuits.UniformMachine.changePC_bound
+#print axioms ExactFourierCircuits.UniformMachine.emit_bound

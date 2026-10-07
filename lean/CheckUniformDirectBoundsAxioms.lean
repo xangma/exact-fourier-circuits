@@ -1,0 +1,13 @@
+import UniformDirectBounds
+
+#print axioms ExactFourierCircuits.UniformDirectBounds.Counters
+#print axioms ExactFourierCircuits.UniformDirectBounds.Interior
+#print axioms ExactFourierCircuits.UniformDirectBounds.step_interior
+#print axioms ExactFourierCircuits.UniformDirectBounds.startupRoot_bound
+#print axioms ExactFourierCircuits.UniformDirectBounds.startup_bounded
+#print axioms ExactFourierCircuits.UniformDirectBounds.startup_counters
+#print axioms ExactFourierCircuits.UniformDirectBounds.direct_bounded
+#print axioms ExactFourierCircuits.UniformDirectBounds.wordBound_mono
+#print axioms ExactFourierCircuits.UniformDirectBounds.boundedExecution_mono
+#print axioms ExactFourierCircuits.UniformDirectBounds.linear_le_polynomial
+#print axioms ExactFourierCircuits.UniformDirectBounds.direct_polynomial_bounded

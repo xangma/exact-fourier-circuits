@@ -117,6 +117,10 @@ stronger single algorithm at every length, including its scalar preparation,
 schedule construction and address-work bounds. That theorem is not implied
 by the currently checked subsequential `MainStatement`.
 
+Work is active on `codex/uniform-fourier`; the [uniform proof contract](docs/uniform-proof-contract.md)
+records the stronger operational statement, completed components and remaining
+links. The full uniform theorem is not yet proved.
+
 Every experiment will have explicit memory/work limits, a deadline, input and
 source hashes, retained logs and a stop command. Remote jobs will preserve
 existing services. Each milestone will report implementation, exact checks,

@@ -1,0 +1,19 @@
+import UniformCyclic
+
+#print axioms ExactFourierCircuits.UniformCyclic.positiveDFT_apply
+#print axioms ExactFourierCircuits.UniformCyclic.inversePositiveDFT_apply
+#print axioms ExactFourierCircuits.UniformCyclic.inversePositiveDFT_positiveDFT
+#print axioms ExactFourierCircuits.UniformCyclic.positiveDFT_inversePositiveDFT
+#print axioms ExactFourierCircuits.UniformCyclic.positiveDFT_convolution
+#print axioms ExactFourierCircuits.UniformCyclic.convolution_via_fourier
+#print axioms ExactFourierCircuits.UniformCyclic.positiveDFT_fin
+#print axioms ExactFourierCircuits.UniformCyclic.fromZMod_positiveDFT
+#print axioms ExactFourierCircuits.UniformCyclic.signed_embedding
+#print axioms ExactFourierCircuits.UniformCyclic.signed_interval_injective
+#print axioms ExactFourierCircuits.UniformCyclic.support_disjoint
+#print axioms ExactFourierCircuits.UniformCyclic.chirpKernel_signed
+#print axioms ExactFourierCircuits.UniformCyclic.chirpKernel_difference
+#print axioms ExactFourierCircuits.UniformCyclic.convolution_pad
+#print axioms ExactFourierCircuits.UniformCyclic.bluestein_convolution
+#print axioms ExactFourierCircuits.UniformCyclic.bluestein_three_transforms
+#print axioms ExactFourierCircuits.UniformCyclic.bluestein_positive_transforms

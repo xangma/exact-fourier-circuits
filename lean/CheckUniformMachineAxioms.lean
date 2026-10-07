@@ -1,0 +1,30 @@
+import UniformMachine
+
+#print axioms ExactFourierCircuits.UniformMachine.NatOp
+#print axioms ExactFourierCircuits.UniformMachine.FieldOp
+#print axioms ExactFourierCircuits.UniformMachine.Scalar
+#print axioms ExactFourierCircuits.UniformMachine.Scalar.zero
+#print axioms ExactFourierCircuits.UniformMachine.Instruction
+#print axioms ExactFourierCircuits.UniformMachine.Program
+#print axioms ExactFourierCircuits.UniformMachine.State
+#print axioms ExactFourierCircuits.UniformMachine.initial
+#print axioms ExactFourierCircuits.UniformMachine.next
+#print axioms ExactFourierCircuits.UniformMachine.writeNat
+#print axioms ExactFourierCircuits.UniformMachine.writeScalar
+#print axioms ExactFourierCircuits.UniformMachine.evalNat
+#print axioms ExactFourierCircuits.UniformMachine.evalField
+#print axioms ExactFourierCircuits.UniformMachine.StepResult
+#print axioms ExactFourierCircuits.UniformMachine.step
+#print axioms ExactFourierCircuits.UniformMachine.Executes
+#print axioms ExactFourierCircuits.UniformMachine.WordBound
+#print axioms ExactFourierCircuits.UniformMachine.BoundedExecution
+#print axioms ExactFourierCircuits.UniformMachine.BoundedExecution.executes
+#print axioms ExactFourierCircuits.UniformMachine.BoundedExecution.final_bound
+#print axioms ExactFourierCircuits.UniformMachine.Executes.positive
+#print axioms ExactFourierCircuits.UniformMachine.Executes.deterministic
+#print axioms ExactFourierCircuits.UniformMachine.initial_wordBound
+#print axioms ExactFourierCircuits.UniformMachine.evalField_mul_rejects_data
+#print axioms ExactFourierCircuits.UniformMachine.evalField_div_prepared
+#print axioms ExactFourierCircuits.UniformMachine.ComputesDFT
+#print axioms ExactFourierCircuits.UniformMachine.asymptoticCost
+#print axioms ExactFourierCircuits.UniformMachine.UniformDFTStatement

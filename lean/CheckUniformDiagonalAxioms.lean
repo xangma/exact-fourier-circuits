@@ -1,0 +1,20 @@
+import UniformDiagonal
+
+#print axioms ExactFourierCircuits.UniformDiagonal.shift
+#print axioms ExactFourierCircuits.UniformDiagonal.shift_re
+#print axioms ExactFourierCircuits.UniformDiagonal.shift_im
+#print axioms ExactFourierCircuits.UniformDiagonal.shift_re_lower
+#print axioms ExactFourierCircuits.UniformDiagonal.shift_re_pos
+#print axioms ExactFourierCircuits.UniformDiagonal.shift_ne_zero
+#print axioms ExactFourierCircuits.UniformDiagonal.coefficient_sub_shift_ne_zero
+#print axioms ExactFourierCircuits.UniformDiagonal.first
+#print axioms ExactFourierCircuits.UniformDiagonal.second
+#print axioms ExactFourierCircuits.UniformDiagonal.split_diagonal
+#print axioms ExactFourierCircuits.UniformDiagonal.first_monomial
+#print axioms ExactFourierCircuits.UniformDiagonal.second_monomial
+#print axioms ExactFourierCircuits.UniformDiagonal.diagonal_sumLayered
+#print axioms ExactFourierCircuits.UniformDiagonal.preparedShift
+#print axioms ExactFourierCircuits.UniformDiagonal.preparedShift_eq
+#print axioms ExactFourierCircuits.UniformDiagonal.preparedShift_inverse_roots
+#print axioms ExactFourierCircuits.UniformDiagonal.preparedShift_ne_zero
+#print axioms ExactFourierCircuits.UniformDiagonal.preparedCoefficient_sub_shift_ne_zero

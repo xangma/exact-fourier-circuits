@@ -1,0 +1,11 @@
+import UniformSelectedCRT
+
+#print axioms ExactFourierCircuits.UniformSelectedCRT.radices
+#print axioms ExactFourierCircuits.UniformSelectedCRT.radix_pos
+#print axioms ExactFourierCircuits.UniformSelectedCRT.radix_coprime_binary
+#print axioms ExactFourierCircuits.UniformSelectedCRT.radices_pairwise
+#print axioms ExactFourierCircuits.UniformSelectedCRT.radices_product
+#print axioms ExactFourierCircuits.UniformSelectedCRT.radix_quadratic
+#print axioms ExactFourierCircuits.UniformSelectedCRT.permutation
+#print axioms ExactFourierCircuits.UniformSelectedCRT.permutation_address
+#print axioms ExactFourierCircuits.UniformSelectedCRT.matrix_factorization

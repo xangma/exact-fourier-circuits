@@ -20,7 +20,11 @@ and `Quot.sound`; see the [final receipt](verification/constructive-seed.json).
 This verifies the subsequential circuit theorem described in `130.md` and the
 explicit finite saving construction. The companion paper's stronger single
 algorithm for every length, with preparation and indexing costs included, has
-not yet been formalized here.
+not yet been proved here. Work on that target is active on `codex/uniform-fourier`.
+The [uniform proof contract](docs/uniform-proof-contract.md) distinguishes the
+checked components from the remaining program and cost obligations. The
+[component receipt](verification/uniform-components.json) explicitly records
+`uniform_algorithm_verified=false`.
 
 ## Run
 
@@ -34,6 +38,7 @@ cd ~/repos/exact-fourier-circuits
 ./scripts/verify-lean.sh --skip-cache
 ./scripts/verify-projection.sh
 ./scripts/verify-construction.sh
+./scripts/verify-uniform.sh
 ```
 
 For a fresh checkout, `./scripts/setup.sh` installs the Python environment,

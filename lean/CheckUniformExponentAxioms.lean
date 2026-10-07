@@ -1,0 +1,34 @@
+import UniformExponent
+
+#print axioms ExactFourierCircuits.UniformExponent.m
+#print axioms ExactFourierCircuits.UniformExponent.lambda
+#print axioms ExactFourierCircuits.UniformExponent.theta
+#print axioms ExactFourierCircuits.UniformExponent.epsilon
+#print axioms ExactFourierCircuits.UniformExponent.eta
+#print axioms ExactFourierCircuits.UniformExponent.m_eq
+#print axioms ExactFourierCircuits.UniformExponent.m_pos
+#print axioms ExactFourierCircuits.UniformExponent.one_lt_m
+#print axioms ExactFourierCircuits.UniformExponent.lambda_eq_sub
+#print axioms ExactFourierCircuits.UniformExponent.one_lt_lambda
+#print axioms ExactFourierCircuits.UniformExponent.lambda_pos
+#print axioms ExactFourierCircuits.UniformExponent.lambda_lt_m
+#print axioms ExactFourierCircuits.UniformExponent.theta_pos
+#print axioms ExactFourierCircuits.UniformExponent.theta_lt_one
+#print axioms ExactFourierCircuits.UniformExponent.m_rpow_theta
+#print axioms ExactFourierCircuits.UniformExponent.epsilon_exact
+#print axioms ExactFourierCircuits.UniformExponent.epsilon_pos
+#print axioms ExactFourierCircuits.UniformExponent.epsilon_lt_one
+#print axioms ExactFourierCircuits.UniformExponent.epsilon_lower
+#print axioms ExactFourierCircuits.UniformExponent.lambda_eq_mul
+#print axioms ExactFourierCircuits.UniformExponent.log_ten_lt
+#print axioms ExactFourierCircuits.UniformExponent.log_m_pos
+#print axioms ExactFourierCircuits.UniformExponent.log_m_lt_fourteen
+#print axioms ExactFourierCircuits.UniformExponent.eta_pos
+#print axioms ExactFourierCircuits.UniformExponent.eta_log_m_lt_epsilon
+#print axioms ExactFourierCircuits.UniformExponent.log_lambda_bound
+#print axioms ExactFourierCircuits.UniformExponent.theta_explicit_gap
+#print axioms ExactFourierCircuits.UniformExponent.theta_decimal_gap
+#print axioms ExactFourierCircuits.UniformExponent.affine_chain_bound
+#print axioms ExactFourierCircuits.UniformExponent.lambda_rpow_logb
+#print axioms ExactFourierCircuits.UniformExponent.critical_depth_bound
+#print axioms ExactFourierCircuits.UniformExponent.critical_recurrence_bound

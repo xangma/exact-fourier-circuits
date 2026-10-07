@@ -1,0 +1,5 @@
+import UniformRoots
+
+#print axioms ExactFourierCircuits.UniformRoots.specifiedRoot_ne_zero
+#print axioms ExactFourierCircuits.UniformRoots.specifiedRoot_mul_power
+#print axioms ExactFourierCircuits.UniformRoots.specifiedRoot_divisor_power
