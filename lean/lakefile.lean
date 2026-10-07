@@ -185,3 +185,23 @@ lean_lib UniformFixedNetwork
 lean_lib UniformReciprocalPreparation
 
 lean_lib UniformCKernelPreparation
+
+lean_lib UniformResidualFibers
+
+lean_lib UniformShearPreparation
+
+lean_lib UniformToeplitzCrossDAG
+
+lean_lib UniformWorkspacePlanner
+
+lean_lib UniformCConstantsMachine
+
+lean_lib UniformDirectToeplitz
+
+lean_lib UniformKernelSpectrumPreparation
+
+lean_lib UniformPairDiagonalMachine
+
+lean_lib UniformDAGLayers
+
+lean_lib UniformHadamardPairMachine

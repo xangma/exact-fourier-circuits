@@ -1,0 +1,16 @@
+import UniformPairDiagonalMachine
+
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.program
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.program_length
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.contextFree
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.scaledLeft
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.scaledBoth
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.storedLeft
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.finalState
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.bounded_execution
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.final_frame
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.final_heap
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.final_values
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.untouched
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.preserves_bank
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.diagonal_execution

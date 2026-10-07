@@ -1,0 +1,28 @@
+import UniformCConstantsMachine
+
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.suffix
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.oneState
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.inverseState
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.iState
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.arithmeticState
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.save
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.savedA
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.savedB
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.savedInverse
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.savedI
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.finalState
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.suffix_length
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.a_sub_b
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.save_bound
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.suffix_execution
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.final_frame
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.final_heap
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.program
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.program_length
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.preparation_code
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.suffix_code
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.preparationBudget
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.wordBound_setup
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.bank
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.preparation_execution
+#print axioms ExactFourierCircuits.UniformCConstantsMachine.preparationBudget_isLittleO_input
