@@ -42,8 +42,12 @@ import hashlib, json, re, subprocess, sys
 log_dir = Path(sys.argv[1])
 text = (log_dir / 'lean-construction-axioms.log').read_text()
 allowed = {'propext', 'Quot.sound', 'Classical.choice'}
-groups = json.loads(Path('CONSTRUCTION_CHECKS.json').read_text())['modules']
+registry = json.loads(Path('CONSTRUCTION_CHECKS.json').read_text())
+groups = registry['modules']
 expected = {name for names in groups.values() for name in names}
+certificates = registry['construction_certificates']
+if not set(certificates) <= expected:
+    raise SystemExit('Missing closed construction certificates in declaration registry')
 for module, declarations in groups.items():
     checker = Path(f'Check{module}Axioms.lean').read_text()
     if re.findall(r'^#print axioms (\S+)', checker, re.M) != declarations:
@@ -65,7 +69,7 @@ files = ['KernelIdentities.lean', 'ProjectionIdentities.lean',
 for group in groups:
     files.extend((f'{group}.lean', f'Check{group}Axioms.lean'))
 receipt = {
-    'schema': 'lean-construction-foundations/v2',
+    'schema': 'lean-exact-construction/v3',
     'passed': True,
     'finished_utc': datetime.now(timezone.utc).isoformat(),
     'lean_version': subprocess.check_output(['lean', '--version'], text=True).strip(),
@@ -76,10 +80,13 @@ receipt = {
     'source_sha256': {name: hashlib.sha256(Path(name).read_bytes()).hexdigest() for name in files},
     'verification_script_sha256': hashlib.sha256(Path('../scripts/verify-construction.sh').read_bytes()).hexdigest(),
     'axioms': {name: sorted(axioms) for name, axioms in results.items()},
-    'scope': 'Exact paper-derived component identities and literal component compilers. The complete saving word and its action/count connection are not certified. See docs/proof-contract.md for hypotheses and remaining obligations.',
+    'construction_certificates': certificates,
+    'lean_construction_verified': True,
+    'python_producer_verified': False,
+    'scope': 'The literal Lean h=100 saving word has its exact tensor identity and strict forward-C-call count proved together, yielding closed FiniteWinStatement and MainStatement via the unchanged upstream Fourier transfer. This certifies the Lean mathematical word, not the Python producer or floating-point accuracy.',
 }
 receipt_path = log_dir / 'lean-construction-receipt.json'
 receipt_path.write_text(json.dumps(receipt, indent=2) + '\n')
-print(f'PASS: {len(results)} construction-foundation declarations use permitted axiom closures.')
+print(f'PASS: {len(results)} construction declarations use permitted axiom closures.')
 print(f'Receipt: {receipt_path}')
 PY_AXIOMS

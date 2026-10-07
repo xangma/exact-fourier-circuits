@@ -10,7 +10,9 @@ the 100% relative error in the source.
 This is a finite-precision implementation failure, not a machine-precision
 error in Lean's exact-complex proof. The full two-dimensional matrix of every
 tested literal shear was checked with Gaussian rationals before execution.
-The complete saving word's Lean action/count certificate remains unfinished.
+The complete saving word's Lean action/count certificate is now checked;
+see the [final conclusion](conclusion.md). Equivalence of the Python producer
+to that Lean word remains a separate obligation.
 
 ## Evidence and controls
 

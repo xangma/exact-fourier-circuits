@@ -78,3 +78,17 @@ lean_lib ColumnSchedule
 lean_lib TerminalWords
 
 lean_lib TripleInvocationFrames
+
+lean_lib TripleStageAction
+
+lean_lib TripleSchedule
+
+lean_lib TripleColumnAction
+
+lean_lib InvocationBudget
+
+lean_lib MasterBudget
+
+lean_lib ColumnTerminalFlat
+
+lean_lib ExplicitSeed

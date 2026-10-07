@@ -3,19 +3,19 @@
 An exact-arithmetic circuit engine, a lazy constructive saving seed, and a
 pinned Lean verification project for the result described in `math/lean/docs/130.md`.
 
-The [investigation plan](PLAN.md) records completed work, next steps, and the
-evidence required to connect the explicit construction to Lean and assess its
-numerical stability.
+The [conclusion](docs/conclusion.md) records the completed proof and numerical
+assessment. The [investigation plan](PLAN.md) tracks their evidence and scope.
 
 The [proof contract](docs/proof-contract.md) specifies the exact cost models,
-coordinate conventions, admissible parameters and remaining witness lemmas.
+coordinate conventions, admissible parameters and proved witness lemmas.
 
 The installed proof checks successfully with Lean **4.34.1** and pinned
-Mathlib. The 51 upstream modules are unchanged. New paper-derived component
-proofs and literal word compilers are checked with axiom closures containing
-only `propext`, `Classical.choice`, and `Quot.sound`. The complete saving word
-is still awaiting its assembled action/count certificate; see the
-[proof contract](docs/proof-contract.md) and [declaration registry](lean/CONSTRUCTION_CHECKS.json).
+Mathlib. The 51 upstream modules are unchanged. The paper-derived literal
+`h=100` word now has its exact tensor identity and strict forward-call saving
+proved together. [ExplicitSeed.lean](lean/ExplicitSeed.lean) supplies a closed
+finite-win witness and derives the Fourier theorem. All 1,101 registered
+declarations have axiom closures containing only `propext`, `Classical.choice`,
+and `Quot.sound`; see the [final receipt](verification/constructive-seed.json).
 
 ## Run
 
@@ -45,7 +45,7 @@ install `.venv/bin/python -m pip install -e '.[cuda]'` on a CUDA12 machine.
 | `gf2.py`, `directional.py` | Sparse binary orthonormal complements and bounded pairwise expansion of directional kernels |
 | `network.py` | Complete lazy scalar/frame network, terminal corrections, padding and role axes; exact integer saving budget |
 | `projection.py`, `dyadic.py` | Bounded binary projections of the complete network and fast exact checkpoint references |
-| `lean/` | Original theorem, actual binary complement bases, residual/spectral identities, typed component compilers, exact cardinalities and budget arithmetic |
+| `lean/` | Original theorem and paper-derived finite saving word, with full action, residual totals, terminal correction, padding, count and closed Fourier conclusion |
 | `scripts/check-cuda.py` | CUDA scalar-DAG evaluator in FP32/FP64 against exact references |
 | `scripts/check-projected-cuda.py` | Complete projected-network CUDA execution, compiled/direct shear controls and stage diagnostics |
 
@@ -71,11 +71,13 @@ Counts retain their exponential factors symbolically. Even the smaller
 `seed --prefix` exports a bounded prefix of the actual lazy instruction stream,
 alongside its budget; the prefix is explicitly incomplete.
 
-The existing Lean existential proof is noncomputable. This Python construction
-implements the companion paper's explicit witness, and has **not** been
-formally connected to that proof. It also does not implement the entire
-Toeplitz-to-Fourier compilation pipeline or a practical faster FFT. Small
-examples are correctness checks and have no claimed call saving.
+The Lean word uses noncomputable finite coordinate and basis choices. Its
+identity and count are proved without action or count assumptions. The Python
+generator follows the same paper, but its equivalence to that Lean word has
+**not** been proved; its metadata remains `kernel_verified=false`. The Python
+code also does not implement the entire Toeplitz-to-Fourier compilation
+pipeline or a practical faster FFT. Small examples are correctness checks
+and have no claimed call saving.
 See [construction audit](docs/constructive-seed-audit.md) for formulas and scope.
 
 ## Exact and numerical checks
@@ -136,6 +138,6 @@ Observed verification receipts live in `verification/`; generated circuits,
 large caches, Python environments and execution logs are ignored by Git.
 The graph is now indexed; Lean's whole-file parser gaps require exact source
 reads. [Initial foundation receipt](verification/constructive-foundations.json) and
-[paper-component receipt](verification/paper-foundations.json) record checked
-declarations, source hashes and axiom closures for their respective snapshots. These checks
-do not certify the complete saving word.
+[paper-component receipt](verification/paper-foundations.json) record earlier
+snapshots. The [complete construction receipt](verification/constructive-seed.json)
+records the final word, source hashes and closed theorem axiom checks.

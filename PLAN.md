@@ -33,10 +33,10 @@ explicitly before claiming an executable faster DFT.
    statement and specified hypotheses.
    See [proof contract](docs/proof-contract.md). Its dependency map records the
    scalar/call-cost distinction, coordinate transport, admissible parameter
-   range and missing action/count proofs. The checked conditional q=2 bridge
-   can reuse the upstream Fourier transfer once a concrete word is supplied.
+   range and completed action/count proofs. The q=2 bridge now receives the
+   actual word and reuses the upstream Fourier transfer.
 
-3. **Prove the specific binary frame construction — in progress.**
+3. **Prove the specific binary frame construction — completed.**
    Formalize the incidence/complement identities, residual subspaces, signed
    weights, and orthonormal bases over GF(2). Instantiate the existing general
    dirty-auxiliary and frame-telescoping proofs with this construction. Prove
@@ -50,25 +50,32 @@ explicitly before claiming an executable faster DFT.
    and the three-axis scalar network with the actual stage-two reversal.
    Actual per-invocation frame labels, concrete consecutive-stage coordinate
    identities, column lifts and a literal free terminal correction now compile.
-   Whole-network chronology and residual totals still require assembly; generic table hypotheses alone do not finish this step.
+   `TripleSchedule` now assembles the actual chronology and physical role
+   embeddings. `TripleStageAction`, `TripleColumnAction` and
+   `ColumnTerminalFlat` prove the endpoint and correction for every array;
+   `InvocationBudget` totals the actual residual ranks.
 
-4. **Connect the construction to a saving word and its cost — in progress.**
+4. **Connect the construction to a saving word and its cost — completed.**
    Translate directional layers, compiled shears, padding, permutations and
    scalings into Lean's chronological word model. Prove the coordinate
    identification, output tensor identity, and forward-call count. Derive the
    strict saving inequality for an explicit valid parameter choice. Keep the
    construction symbolic: even the current smaller saving choice has billions
    of address bits and cannot be materialized.
-   **Deliverable:** a kernel-checked constructive finite-win statement matching
-   the Python budget. **Completion:** correct action and strict saving are
+   **Deliverable:** a kernel-checked constructive finite-win statement with
+   the paper's budget. **Completion:** correct action and strict saving are
    proved together, without `sorry`, custom axioms, or native decision shortcuts.
    Literal three-C shears, directional layers, signed frame words, pointwise
    role lifts and the ordinary tensor compiler now have exact action/count
    proofs. Actual neighbor, edge and physical role cardinalities are checked.
-   The h=100 arithmetic saving is proved symbolically, but its connection to
-   the complete saving word remains open.
+   `MasterBudget` connects the actual count, correction and padding to the
+   h=100 saving. `ExplicitSeed.word_matrix` and `word_saves` prove identity and
+   saving for the same literal word. Its `witness`, `finiteWin` and `main` are
+   closed proofs. Integrated verification passed all 1,101 registered axiom
+   checks, using only standard Lean foundations and 51 unchanged upstream
+   modules. [Final receipt](verification/constructive-seed.json).
 
-5. **Investigate numerical stability alongside the proof work.**
+5. **Investigate numerical stability — completed within the stated bounds.**
    First isolate the three-C shear: measure target error and failure to restore
    its source on cancellation-sensitive and wide-range inputs. Use exact or
    higher-precision references and compare arithmetic orderings and equivalent
@@ -78,26 +85,32 @@ explicitly before claiming an executable faster DFT.
    and nonfinite events. Set the accuracy criterion before judging a variant.
    **Deliverable:** retained counterexamples or an error-growth characterization,
    with controls that identify the responsible operations. **Completion:** we
-   can explain the observed scaling with precision and construction size;
-   passing small projections alone does not establish full-width stability.
+   can explain the observed failure using exact references and chronological
+   rounding traces. The 48 projected-network cases and 9,360 isolated-shear
+   cases are retained and independently checked. Normal finite inputs expose
+   complete source loss in the literal three-C implementation in FP32/FP64;
+   direct shears preserve the source. Common normalization removes observed
+   overflow but retains source loss. Passing small projections does not
+   establish full-width stability, and a full-width characterization remains
+   unavailable. [Numerical report](docs/isolated-shear-stability.md).
 
-6. **Assess what the result means for an actual Fourier implementation.**
+6. **Assess practical meaning — completed.**
    Once the exact bridge and numerical behavior are understood, identify any
    feasible DFT instance and compare its accuracy, memory and runtime with an
    ordinary FFT under equivalent conditions. If the saving construction remains
    infeasible, document its symbolic saving and numerical limits instead.
    **Deliverable:** a supported conclusion about exact validity, stability and
    practical usefulness, each backed by its own evidence.
+   The selected seed has 6,544,863,000,071 address bits and cannot be
+   materialized. It provides an exact asymptotic saving through the verified
+   bridge, with no feasible FFT benchmark or finite-precision accuracy claim.
+   [Conclusion](docs/conclusion.md).
 
-The immediate next action is to finish the full frame schedule, stage boundary
-transport and residual dimension total, then assemble and count the same literal
-saving word. Numerical work can proceed independently once its test contract is
-fixed. The isolated-shear experiment is now complete: all 9,360 raw CUDA cases were
-independently verified. Normal finite inputs expose complete source loss in
-the compiled shear, reproduced by chronological CPU rounding traces; scaling
-controls do not repair it. See [numerical report](docs/isolated-shear-stability.md).
-This establishes a concrete implementation limit; a full-width stability
-characterization remains out of reach for the enormous saving seed.
+The planned investigation is complete at these scopes. Formal equivalence of
+the Python producer to the Lean word remains unproved, and Python's
+`kernel_verified` flag remains false. A producer translation proof or a
+numerically safer compiler would be separate follow-up work; neither is
+needed for the completed exact Lean witness and bounded CUDA assessment.
 
 Every experiment will have explicit memory/work limits, a deadline, input and
 source hashes, retained logs and a stop command. Remote jobs will preserve

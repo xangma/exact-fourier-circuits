@@ -1,0 +1,22 @@
+import TripleStageAction
+
+#print axioms ExactFourierCircuits.TripleStageAction.label_exponent_bot
+#print axioms ExactFourierCircuits.TripleStageAction.label_exponent_top
+#print axioms ExactFourierCircuits.TripleStageAction.label_exponent_line
+#print axioms ExactFourierCircuits.TripleStageAction.label_exponent_perp
+#print axioms ExactFourierCircuits.TripleStageAction.consecutive_spaces
+#print axioms ExactFourierCircuits.TripleStageAction.consecutive_exponents
+#print axioms ExactFourierCircuits.TripleStageAction.inverse_frames
+#print axioms ExactFourierCircuits.TripleStageAction.cancel_of_exponents
+#print axioms ExactFourierCircuits.TripleStageAction.consecutive_cancel
+#print axioms ExactFourierCircuits.TripleStageAction.scalar_stages
+#print axioms ExactFourierCircuits.TripleStageAction.framed_stages
+#print axioms ExactFourierCircuits.TripleStageAction.initial_exponents
+#print axioms ExactFourierCircuits.TripleStageAction.final_exponents
+#print axioms ExactFourierCircuits.TripleStageAction.initial_auxiliary_exponent
+#print axioms ExactFourierCircuits.TripleStageAction.final_auxiliary_exponent
+#print axioms ExactFourierCircuits.TripleStageAction.source_inverse_arrays
+#print axioms ExactFourierCircuits.TripleStageAction.exchanged_arrays
+#print axioms ExactFourierCircuits.TripleStageAction.sink_frames_arrays
+#print axioms ExactFourierCircuits.TripleStageAction.framed_stages_endpoint
+#print axioms ExactFourierCircuits.TripleStageAction.corrected_stages_endpoint

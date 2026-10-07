@@ -93,8 +93,9 @@ binds the checked sources and toolchain.
 
 These are algebraic proofs over exact mathematical structures. Floating-point
 rounding in CUDA cannot explain a false positive in those identities. The
-proofs do not yet certify the Python combinatorial frame construction, its
-complete saving witness, or its count against Lean's circuit definition.
+projection proofs do not certify the Python producer. Subsequent paper-derived
+work now separately proves a complete literal Lean saving word and its count;
+see the [final conclusion](conclusion.md).
 
 The projection preserves the exact operator on a restricted subspace, but
 collapses some directions to identities and changes physical pair orientation.
@@ -103,10 +104,9 @@ reproduce every rounding operation of the astronomical saving word or execute
 the full Toeplitz-to-DFT pipeline. Stability and practicality at the saving
 dimension remain open.
 
-The next decisive proof task is to formalize the specific GF(2) frame identities
-and connect their compiled word/counts to the Lean theorem. The next numerical
-task is to increase construction height and search for inputs that maximize
-compiled-shear source-restoration error, with explicit resource limits.
+The subsequent [isolated-shear experiment](isolated-shear-stability.md) found
+complete source-restoration failure on normal finite FP32/FP64 inputs and
+reproduced its rounding mechanism. The full saving instance remains infeasible.
 
 ## Reproduction and retained evidence
 

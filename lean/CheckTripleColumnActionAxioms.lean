@@ -1,0 +1,18 @@
+import TripleColumnAction
+
+#print axioms ExactFourierCircuits.TripleColumnAction.consecutive_spaces
+#print axioms ExactFourierCircuits.TripleColumnAction.consecutive_exponents
+#print axioms ExactFourierCircuits.TripleColumnAction.cancel_of_exponents
+#print axioms ExactFourierCircuits.TripleColumnAction.consecutive_cancel
+#print axioms ExactFourierCircuits.TripleColumnAction.scalar_stages
+#print axioms ExactFourierCircuits.TripleColumnAction.framed_stages
+#print axioms ExactFourierCircuits.TripleColumnAction.initial_exponents
+#print axioms ExactFourierCircuits.TripleColumnAction.columns_top_exponent
+#print axioms ExactFourierCircuits.TripleColumnAction.final_exponents
+#print axioms ExactFourierCircuits.TripleColumnAction.initial_auxiliary_exponent
+#print axioms ExactFourierCircuits.TripleColumnAction.final_auxiliary_exponent
+#print axioms ExactFourierCircuits.TripleColumnAction.source_inverse_arrays
+#print axioms ExactFourierCircuits.TripleColumnAction.exchanged_arrays
+#print axioms ExactFourierCircuits.TripleColumnAction.sink_frames_arrays
+#print axioms ExactFourierCircuits.TripleColumnAction.framed_stages_endpoint
+#print axioms ExactFourierCircuits.TripleColumnAction.corrected_stages_endpoint

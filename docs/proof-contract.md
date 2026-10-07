@@ -1,9 +1,10 @@
 # Contract for the explicit saving construction
 
-This contract connects the companion paper and lazy Python construction to
-the exact Lean theorem. The original theorem is checked. Our explicit saving
-word is not yet checked: its metadata remains `kernel_verified=false`.
-The new conditional bridge states exactly what would finish that connection.
+This contract records the companion paper's construction in Lean. The literal
+`h=100` saving word now has both its exact tensor action and strict call count
+proved, yielding closed finite-win and Fourier statements. The Python producer
+is a separate implementation: its equivalence to this Lean word is unproved,
+so its metadata remains `kernel_verified=false`.
 
 ## Statements and cost models
 
@@ -42,12 +43,13 @@ For our kernel `C=[[(1+i)/2,(1-i)/2],[(1-i)/2,(1+i)/2]]`,
 [ConstructiveBridge.lean](../lean/ConstructiveBridge.lean) proves invertibility
 and nonmonomiality. Its `finiteWin_of_word` and `main_of_word` accept a literal
 `W : List (WordStep C (2^b))`, its tensor identity, and strict saving.
-They supply the exact finite-win and Fourier conclusions. They supply no word.
+They supply the exact finite-win and Fourier conclusions. The literal word
+and discharged premises are now supplied by [ExplicitSeed.lean](../lean/ExplicitSeed.lean).
 
 ## Reusable Fourier bridge
 
-The remaining construction work ends at `finiteWin_of_word`. These existing
-upstream results already handle the rest:
+The constructed witness feeds `finiteWin_of_word`. These unchanged upstream
+results handle the rest:
 
 | Result | Role |
 |---|---|
@@ -59,7 +61,7 @@ upstream results already handle the rest:
 
 The original `GraphBlocks.finite_win` proves existence by contradiction through
 matrix prices. It does not identify that witness with the Python network.
-Our witness can use `win_to_fourier` directly once its obligations are proved.
+`ExplicitSeed.main` uses `win_to_fourier` directly with the constructed witness.
 
 ## Parameter and coordinate contract
 
@@ -99,16 +101,17 @@ word's embeddings must still be ordered injections.
 
 Lean's `tensorCoordinates` is a noncomputable `Fintype.equivFin` enumeration.
 It promises neither this bit ordering nor this tensor-factor ordering.
-Construct a finite coordinate equivalence and conjugate the compiled word.
+The Lean construction supplies a finite coordinate equivalence and conjugates
+the compiled word; no agreement with Python's enumeration is assumed.
 `TensorAxis.source_power_reindex` supplies the existing bridge to recursive
 Kronecker powers; `CircuitCost.cost_reindex` preserves scalar cost. The new
-word relabeling must also preserve forward-call count.
+word relabeling preserves forward-call count in `TensorWords` and `PaddingWords`.
 
-## Dependency map and missing statements
+## Completed dependency map
 
-Names below are proposed proof obligations unless an implemented declaration
-is explicitly named. Each statement must be symbolic over the finite index
-types; exhausting the astronomical instruction stream is unnecessary.
+The obligations below are discharged for the selected `h=100` witness.
+Intermediate proofs are symbolic over finite index types; checking them does
+not exhaust the astronomical instruction stream.
 
 For `triple_incidence_identity`, let T be the three-element subsets of `Fin h`,
 E the ordered pairs `(S,T)` with intersection size 0 or 2, B=`ℂ^T`,
@@ -132,22 +135,23 @@ these orientations. This is distinct from binary incidence dot products.
 | `triple_pivots_exist` | A triple has an unused pivot; two norm-one, mutually orthogonal neighboring triples admit the second pivot after the first transvection, for the required `h>=22` | `BinaryComplement.triple_indicator_valid_pivot` and `triple_pair_valid_pivots` prove existence; the pair result needs ambient cardinality at least 7, satisfied by the saving range |
 | `transvection_frame` | Over `ZMod 2`, `T_v(x)=x+<v,x>v` preserves the dot product and is an involution when `<v,v>=0`; map coordinate pivots to prescribed norm-one orthogonal vectors using `T_first o T_second` | New [BinaryFrames.lean](../lean/BinaryFrames.lean) formalization |
 | `complement_frame` | Under successful distinct-pivot hypotheses, the remaining transformed coordinate vectors form an orthonormal basis of the prescribed orthogonal complement | `BinaryComplement.oneComplementBasis` and `twoComplementBasis` package actual spanning orthonormal bases and cardinalities; individual triple and pair existence proved |
-| `residual_partition` | For every row/edge and stage, prove the exact nested orthogonal sums with orthonormal residual bases, and equal source/target labels at every scalar shear. Consecutive stage boundaries agree; only central row 3 to row 4 decreases | `BinaryResiduals` proves all eleven symbolic decomposition shapes, tensor/direct-sum bases, empty factors and actual central decrease dimension; `GateFrames` instantiates actual common gate labels and geometric residual bases; `TripleInvocationFrames` proves concrete initial, consecutive and final bank spaces. Full invocation chronology and global assembly remain |
+| `residual_partition` | For every row/edge and stage, prove the exact nested orthogonal sums with orthonormal residual bases, and equal source/target labels at every scalar shear. Consecutive stage boundaries agree; only central row 3 to row 4 decreases | `BinaryResiduals`, `GateFrames` and `TripleInvocationFrames` supply actual bases and spaces; `InvocationBudget` totals actual residual ranks and decreases. `TripleSchedule` assembles forward/reverse chronology with actual physical role embeddings |
 | `signed_weight` | Tensor frames preserve the product dot form, including the empty tensor; unit directions have odd weight. Prove tensor weight multiplicativity and weight additivity modulo 4 for orthogonal vectors. Increasing edges use inverse at weight 3 modulo 4; decreasing edges use inverse at weight 1 | `BinaryTensor` proves tensor dot/weight products, empty tensors, and orthogonal weight additivity modulo 4; `FrameSpectrum` proves both signed kernel phase rules |
 | `signed_frame_spectrum` | For a nondegenerate binary subspace U with orthonormal basis, use forward C_z at weight 1 modulo 4 and inverse C_z at weight 3. Prove its Walsh multiplier is `i^wt(P_U(xi))`, with P_U the orthogonal projection, including basis independence and ratios for nested subspaces | `FrameSpectrum.signedWord_frame` proves whole-array identities using Walsh completeness, plus actual frame inverses and the terminal ratio; `BinaryProjection` proves basis independence and actual geometric residual ratios |
 | `directional_pairs` | For `z!=0` and `f>=1`, one column's pair expansion computes `C_z=a*I+b*R_z` using `2^(mf-1)` forward calls. A Python DirectionalStep has f column layers, hence `f*2^(mf-1)` calls. Its inverse is a forward layer then translation | `DirectionalWords.compile_directional` and `compile_inverse_directional` give literal ordered-pair words with exact matrix and count; the latter uses forward calls plus translation |
-| `lift_scalar_edge` | Source and target frames intertwine every scalar shear; arbitrary dirty auxiliary data is preserved | `FrameCommutation.compatible_frames_commute` proves actual linear address-frame commutation under the nonzero-entry support condition; `GateFrames` discharges the actual forward and reverse row support conditions; global assembly remains |
-| `network_terminal_identity` | Stage prefixes telescope, stage two retains physical frame labels while reversing scalar rows/signs and exchanging logical banks. The exceptional triple-tensor direction has weight 27. Translate Y first, then apply `(X,Y)<-(Y,-X)` to restore all roles to the ordinary transform | `TripleNetwork` implements the actual three physical axes, reversed stage-two updates and side-pair orientation; arbitrary dirty auxiliaries are restored. `FrameSpectrum.terminal_frame_ratio` proves the whole-array line/perp terminal ratio. `TerminalWords` supplies the literal free correction and an ordinary per-role word; it consumes the still-missing full labeled-network action |
+| `lift_scalar_edge` | Source and target frames intertwine every scalar shear; arbitrary dirty auxiliary data is preserved | `FrameCommutation` and `GateFrames` prove actual forward/reverse compatibility; `TripleSchedule.Global.masterWordColumns_packed_endpoint` proves the literal global word's action for every array |
+| `network_terminal_identity` | Stage prefixes telescope, stage two retains physical frame labels while reversing scalar rows/signs and exchanging logical banks. The exceptional triple-tensor direction has weight 27. Translate Y first, then apply `(X,Y)<-(Y,-X)` to restore all roles to the ordinary transform | `TripleStageAction` and `TripleColumnAction` telescope actual stage labels. `ColumnTerminalFlat` proves the terminal ratio for every column count, including even counts. `TerminalWords` supplies the literal free correction; `ExplicitSeed.word_matrix` discharges its endpoint premise |
 | `compile_nonzero_shear` | Each coefficient `+/-1,+/-1/2` has a typed three-forward-C word with invertible monomials, in the specified chronological order | `TypedKernelWords.shearWord_matrix`/`shearWord_calls` prove the literal three-C list. `RoleWords` proves its physical pointwise action, source/other-role restoration and multiplied count |
-| `padded_seed_identity` | Add `W_star-W` ordinary roles, then all role-axis transforms, giving `C^(tensor b)` on exactly `2^b` coordinates for every input | `TensorWords` proves embedding, parallel copies, tensor-coordinate transport and an ordinary tensor word; `PaddingWords` proves literal padding, role axes and tensor fusion given a correct network word; that network input is still missing |
-| `seed_word_count` | The very same finite word has `g=(S*f+r*W_star+2*H)*2^(mf-1)` calls; prove every combinatorial enumeration and injection cardinality | `TripleCounting` verifies actual finite role/edge counts; component word counts and the actual `ColumnSchedule` lift are checked. The residual sum and the assembled saving-word count remain |
-| `strict_seed_saving` | With `S+Delta=W_star*m`, `Delta>0` and the floor choice of `f`, show `g<b*2^(b-1)` and `b>=2` | `SavingBudget` proves general cancellation and floor choice. `ExplicitSeedBudget` proves the closed h=100 arithmetic inequality with astronomical powers left symbolic; the formula is not yet tied to a saving word |
-| `constructive_finite_win` | Feed the word, its identity and its strict call bound into `ConstructiveBridge.finiteWin_of_word` | Conditional bridge checked; explicit inputs missing |
+| `padded_seed_identity` | Add `W_star-W` ordinary roles, then all role-axis transforms, giving `C^(tensor b)` on exactly `2^b` coordinates for every input | `TensorWords` and `PaddingWords` prove literal coordinate transport, padding, role axes and fusion. `MasterBudget.ordinaryWord_matrix` and `ExplicitSeed.word_matrix` connect the actual corrected network to the final tensor identity |
+| `seed_word_count` | The very same finite word has `g=(S*f+r*W_star+2*H)*2^(mf-1)` calls; prove every combinatorial enumeration and injection cardinality | `InvocationBudget`, `TripleSchedule` and `MasterBudget.seed_master_residual_balance` count actual residuals and scalar gates. `ExplicitSeed.word_calls` proves the stated formula for the actual final word |
+| `strict_seed_saving` | With `S+Delta=W_star*m`, `Delta>0` and the floor choice of `f`, show `g<b*2^(b-1)` and `b>=2` | `SavingBudget` and `ExplicitSeedBudget` prove exact integer arithmetic; `MasterBudget.actualSeedWord_saves` and `ExplicitSeed.word_saves` tie that saving to the same literal word |
+| `constructive_finite_win` | Feed the word, its identity and its strict call bound into `ConstructiveBridge.finiteWin_of_word` | `ExplicitSeed.witness`, `finiteWin` and `main` are closed proofs with no action/count premises |
 
-Pivot and complement existence, signed spectral identities and literal component
-compilers are now checked. The critical path is the complete gate/frame schedule,
-stage coordinate identities, and action/count proofs for the assembled word. The budget
-algebra and upstream Fourier transfer do not resolve any missing action identity.
+The complete chain now certifies one literal Lean word: actual chronological
+network, terminal correction, coordinate transport, padding, role axes and
+tensor fusion, together with its exact count. The remaining implementation
+obligation is a formal translation between the Python producer and this Lean
+word; the completed Lean result does not certify exported Python instructions.
 
 ## Numerical interpretation and verification boundaries
 
@@ -160,10 +164,12 @@ and do not establish full-width stability.
 
 New proof checks use pinned Lean/Mathlib and inspect axiom closures for only
 `propext`, `Classical.choice`, and `Quot.sound`. The checks exclude `sorry`
-and custom axioms. This contract makes no claim that all rows above are proved.
-The original 51 upstream modules remain unchanged.
+and custom axioms. The [final receipt](../verification/constructive-seed.json)
+records all 1,101 registered declaration closures, source hashes and six final
+construction certificates. The original 51 upstream modules remain unchanged.
 
 Source discovery used the `exact-fourier-circuits` graph at generation
 `2026-10-07T11:11:44Z` and targeted traces/snippets for Python, followed by exact
-source reads for Lean's flagged whole-file parser gaps. This is a focused
-dependency audit, not an exhaustive graph completeness claim.
+source reads for Lean's flagged whole-file parser gaps and new files not tracked
+by that generation. Final claims rely on source review and kernel checks.
+This is a focused dependency audit, not an exhaustive graph completeness claim.
