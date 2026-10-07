@@ -1,0 +1,30 @@
+[
+  {
+    "circuit_sha256": "c4fe73de155eb7a8b73f5c52e0412dd884defff8bc05b135b206262f7fe69fd9",
+    "exact_basis_verified": true,
+    "inputs": 2,
+    "name": "three-call-shear",
+    "scalar_gates": 27
+  },
+  {
+    "circuit_sha256": "9c9ef88e6a0516b8bd0f5a218e337afd1e08d95fcb43700c43762ee2fec02ead",
+    "exact_basis_verified": true,
+    "inputs": 8,
+    "name": "C-tensor-cubed",
+    "scalar_gates": 48
+  },
+  {
+    "circuit_sha256": "c7aa42ef0a3770f487958c1396c032a44f4d844acf838c0bd2a6c09327a1fd30",
+    "exact_basis_verified": true,
+    "inputs": 14,
+    "name": "dirty-auxiliary-scalar-exchange-h3",
+    "scalar_gates": 1296
+  },
+  {
+    "circuit_sha256": "4da94fd39cd0b46f9913a8bd1aedb59ab31c37283f2fbb97fa0cb8a2f9f90ea0",
+    "exact_basis_verified": true,
+    "inputs": 4,
+    "name": "positive-sign-Fourier-4",
+    "scalar_gates": 16
+  }
+]

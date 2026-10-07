@@ -1,0 +1,270 @@
+{
+  "source_repository": "https://github.com/openai/math",
+  "source_commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "source_subdirectory": "lean",
+  "root_module": "OAI.Computability.FourierCircuit.Main",
+  "local_import_closure_count": 51,
+  "external_imports": [
+    "Mathlib"
+  ],
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "source_files_unmodified": true,
+  "files": [
+    {
+      "path": "OAI/Computability/FourierCircuit/AmplificationMaster.lean",
+      "sha256": "876bfba4405df25a01ea07be21f8bfbc840bdfa50197c37356f5adca3625263e",
+      "bytes": 16692
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/Boundary.lean",
+      "sha256": "2b22a0965493eaf6241e9f5402e4fb5b7e2931a6ef052816c1a61a8692e272cd",
+      "bytes": 24075
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/BoundaryActiveCircuit.lean",
+      "sha256": "0774872986218a7de4e09c19fcba2f40b068feab025f795c6100a6a08c694897",
+      "bytes": 17605
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/CascadeLimit.lean",
+      "sha256": "9e2a8ba5a7ad70fda983f24f727f6acb25d00fd1e6d216655d84c307c6360b82",
+      "bytes": 16103
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/CascadeWord.lean",
+      "sha256": "28873f803caf6bbe3e62468c57b64a7914b2f97ef620451a1c0a0391845c8729",
+      "bytes": 17409
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/CircuitCost.lean",
+      "sha256": "33d80b1b4eb938cd67bfe25395419f7e9564ebcec8f04149798f227388aa5aeb",
+      "bytes": 15884
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/CircuitExtensions.lean",
+      "sha256": "f7f6754bec8d8d0dd14f29eeb0a009048d36f65c6534477333028c1c53738650",
+      "bytes": 19069
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/ClearedCircuit.lean",
+      "sha256": "e7817700a7a7caf574bca57fc12e066e5f650a4df88afd958fe9bf7bfe07c372",
+      "bytes": 14751
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/ComparisonRename.lean",
+      "sha256": "d500c696620d675b8056abf12012aebc5cb7d357634adddcc365b2f81c2f35da",
+      "bytes": 18662
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/Core.lean",
+      "sha256": "45fd659a66b3bb93ea9e55ebf0c06fde26a3038e2c7fb369cbd8dada371603a6",
+      "bytes": 1748
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/DiagonalBlocks.lean",
+      "sha256": "c6612118544f475b2bfa646bff922eff1935dc13ea2f56f1c99487071620eff9",
+      "bytes": 16925
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/DisplacementKernel.lean",
+      "sha256": "485824a0c0080d8acf1781fcc06968a4c47b5c11db056bfb5bc34c2c0e217cd4",
+      "bytes": 15623
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/FFTCircuit.lean",
+      "sha256": "10d06e994ba0ef2008edcb1444cb3ed9a45447714ba2e4791c76dc00f9d95de5",
+      "bytes": 16523
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/FiniteSeparation.lean",
+      "sha256": "2819d514ddd9c8789b9b54a492ff5bef458e976336c7fd66c252683cdc158dc4",
+      "bytes": 15453
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/GraphBlocks.lean",
+      "sha256": "b74e58ea8ca56e3b518c6a0f8214a474282d32942595b508cc273c141a23524c",
+      "bytes": 16975
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/InventoryValidity.lean",
+      "sha256": "e4ed518032c004cf69e69c2eafb4317d87d5436dc40eeb199436c5064d438989",
+      "bytes": 15008
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/LinearDAG.lean",
+      "sha256": "d82a7b78a04c5f1a1bef9bab356cab5ae4f08e6fe6636bd5bb1930e8168c4f19",
+      "bytes": 12431
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/LiveSectors.lean",
+      "sha256": "0b773d35b4a860522649600649580d957db2aa0c9970f79a07185c9b9d0432ab",
+      "bytes": 18906
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/Main.lean",
+      "sha256": "ff1fb1bc4b5ec26f1722d41d9603898b3361844af1cb4a78e0233a6bc6de582b",
+      "bytes": 15102
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/MatrixRelabel.lean",
+      "sha256": "5463a5ba94b9f26272966c03fb6029635fc0e730edbe0ee8d2a356d148f1814c",
+      "bytes": 17797
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/MonomialFeedback.lean",
+      "sha256": "ed865d97caf26ee1d5a0a201177df9887ed0071be2cbd9901baf9f8b68ded4de",
+      "bytes": 16490
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/MonomialTools.lean",
+      "sha256": "482d3e2d900cc422d18c1434cd85c0359cb0ebf1abc212c6d94008ce3cb332c5",
+      "bytes": 16786
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/MultiWord.lean",
+      "sha256": "cbcbbba4d099066d486b29794eb7d6692f6b21182984fc43917b1c183f379761",
+      "bytes": 15070
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/PackedSchedule.lean",
+      "sha256": "24bb8757a33f88b8c24cea29adb3d05c3b34110bb0f83727c6c92fafd554e26c",
+      "bytes": 15297
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/PairFamilies.lean",
+      "sha256": "c13e4f9177433493dd2d5b66736c35f66d5e9a30c2cdb1b4363c90491c597523",
+      "bytes": 17228
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/ParameterAlgebra.lean",
+      "sha256": "d3744dbb54a49f7a24b5b6ffb49943bc463f665533ca516096ddbd357be01fff",
+      "bytes": 14139
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/PiTensor.lean",
+      "sha256": "2c5551fde12488ea2e8003d2527cbc9c911780166cf4689e246cc4ab4269e64b",
+      "bytes": 19165
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/PivotAlgebra.lean",
+      "sha256": "aabacf5f02bb9cf2acb2322d77e9f5b96c89458eed00593aa001e9518127fca8",
+      "bytes": 16311
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/PivotJoin.lean",
+      "sha256": "10537c4fe858b69e4840b08716a50715daa4cae6434a8ae8f2e338854063f72e",
+      "bytes": 21585
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/PolynomialClearing.lean",
+      "sha256": "5a7b4b3eb602f5de9168afb84e8f046d3fe4b41184f57a9793faeeab529bc64d",
+      "bytes": 20112
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/PortMatrices.lean",
+      "sha256": "b93adbdcf4901998e29767e1aea695aa6cef18781925217cbae328c6b990d36a",
+      "bytes": 18450
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/PositiveReach.lean",
+      "sha256": "f8815cad2f01689a58f20678bd63596840043df25b43c6508d0916e266399286",
+      "bytes": 14806
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/Prices.lean",
+      "sha256": "131359dad35e2381d60e90811f2348bd5285a116d567f13ac0f8723544e990f1",
+      "bytes": 18784
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/RationalClearing.lean",
+      "sha256": "ae8d5610f092d4f6bdbec8d948111e53b1faedf2d0fbf9b6c714698b606ac099",
+      "bytes": 16698
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/RawPositive.lean",
+      "sha256": "21f7bb1223ccc05176d9359f4ce48f9362e19ce19fd424bbc46a42bf90463f3b",
+      "bytes": 16129
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/RawWordBound.lean",
+      "sha256": "28b51ed9917ac73a5c33561a02fbb42f74734e200f765893584e1f007acf0c43",
+      "bytes": 20837
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/RectStableAlgebra.lean",
+      "sha256": "ccc3e1351dd2b258f3a53510c42d210fc55b8c3146122345e179b2529908e615",
+      "bytes": 18131
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/Shears.lean",
+      "sha256": "8bcdd80af087314d24c429097d2cc62f607bdc0d6c3d3075d5604195d0b8fb7e",
+      "bytes": 13448
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/SignedPrice.lean",
+      "sha256": "2da1da505d51279869e8a28232afd52708d16013fd42f100948e4e83e6a3f2db",
+      "bytes": 16840
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/SlotAssembly.lean",
+      "sha256": "cb57eb08f738346bfbd22f75280423d4f518ed18744dd9502e2ac752fb95e5a2",
+      "bytes": 16756
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/SparseShear.lean",
+      "sha256": "a1ae51b89d9abc24e6b8efe45ec1ea48d2e117d842ae513add787398209ac57b",
+      "bytes": 20978
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/SparseSpectral.lean",
+      "sha256": "07d0e79c59e8f8bf5660fb89bcd4b6ce37cddba207497fc530961115f9aaefb8",
+      "bytes": 16825
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/StreamSeries.lean",
+      "sha256": "40c023c4745b6b2deb4277bc056a0da56da83bcd3a176eabc5ac2fc8daa18a8c",
+      "bytes": 20933
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/SumFramed.lean",
+      "sha256": "3171eade73a889a4449abfbf94e68c54d5a75fd675acf91a347b08cc2b5bde52",
+      "bytes": 17794
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/SymmetricLaplacian.lean",
+      "sha256": "bbdd7f0fa3b2ceb6c82ab86e9ddc515a22bfb1006ec07e728fa7fac402731db1",
+      "bytes": 16493
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/TensorCostAlgebra.lean",
+      "sha256": "9dd1e545fb099d0d7e3b3cb652a77716da2155ef55e5aa835a6abc3ea5452441",
+      "bytes": 16137
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/TensorTools.lean",
+      "sha256": "9159d03f6f409fe4c8b69aceb74595a6b3a621033656e3339501d8ddbbf8b2a8",
+      "bytes": 21456
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/ToeplitzCross.lean",
+      "sha256": "d75fcbd8dcdd2e85c2d09853c80094c847b4ef27f73a40bb0fb445de9b216d3c",
+      "bytes": 16488
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/Triangular.lean",
+      "sha256": "a21688d80b37db9e84a30d4342d4288db2f32cbc819f105604efafeb794dbbcc",
+      "bytes": 16947
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/WordScheduling.lean",
+      "sha256": "dba4f2335bdce8d3ed38aefbff7a6420ba1b394e3597bc4e7d65030bdf0f9267",
+      "bytes": 16071
+    },
+    {
+      "path": "OAI/Computability/FourierCircuit/Words.lean",
+      "sha256": "89bf59683cb8293d78b88bcc7ac389cbb8c7a4f0b2645fc743224d6c2d695f9a",
+      "bytes": 2490
+    }
+  ]
+}

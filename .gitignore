@@ -1,0 +1,10 @@
+.lake/
+**/.lake/
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+logs/*
+!logs/.gitkeep
+outputs/*
+!outputs/.gitkeep

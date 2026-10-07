@@ -1,0 +1,10 @@
+Exact Fourier Circuits
+
+This project includes unchanged source from OpenAI's math repository:
+https://github.com/openai/math
+Revision adc7f1241b42e322a6451854ab7e4b4c146bf78a
+Distributed under Apache License 2.0. Original file headers are retained.
+
+The constructive algorithm follows the companion preprint:
+An explicit power saving for the exact discrete Fourier transform,
+September 25, 2026, included in the same upstream repository.

@@ -1,0 +1,27 @@
+{
+  "budget": {
+    "Delta": 6871402692000000,
+    "H": 22486194194905980000000,
+    "S": 2361183241427951204156000000,
+    "W": 1873807244643542670000,
+    "W_star": 2361183241434822606848,
+    "b": 6544863000071,
+    "calls": "15453620833254481400417734993086208 * 2^6544862999999",
+    "expanded": false,
+    "f": 6544863,
+    "h": 100,
+    "kernel_verified": false,
+    "m": 1000000,
+    "neighbors": 147731,
+    "ordinary_calls": "15453620833254481401264894229086208 * 2^6544862999999",
+    "role_bits": 71,
+    "saved_calls": "847159236000000 * 2^6544862999999",
+    "scalar_shears": 7495398064968660000000,
+    "status": "lazy constructive program and arithmetic budget; no full execution or formal witness verification",
+    "v": 161700,
+    "width": "2^6544863000071"
+  },
+  "instruction_prefix": [],
+  "prefix_is_complete": false,
+  "schema": "exact-fourier-lazy-seed/v1"
+}
