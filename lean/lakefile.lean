@@ -205,3 +205,11 @@ lean_lib UniformPairDiagonalMachine
 lean_lib UniformDAGLayers
 
 lean_lib UniformHadamardPairMachine
+
+lean_lib UniformBoundedAssembly
+
+lean_lib UniformCRTHeaderMachine
+
+lean_lib UniformRankKernelPreparation
+
+lean_lib UniformToeplitzChunkWord

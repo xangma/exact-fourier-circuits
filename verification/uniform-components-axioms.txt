@@ -3910,3 +3910,473 @@
 'ExactFourierCircuits.UniformHadamardPairMachine.preparation_constants' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'ExactFourierCircuits.UniformBoundedAssembly.placed_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformBoundedAssembly.boundedExecution_placed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.head' does not depend on any axioms
+'ExactFourierCircuits.UniformCRTHeaderMachine.tail' does not depend on any axioms
+'ExactFourierCircuits.UniformCRTHeaderMachine.program' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCRTHeaderMachine.inverse_code' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.program_length' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCRTHeaderMachine.tableAddress' does not depend on any axioms
+'ExactFourierCircuits.UniformCRTHeaderMachine.CRTTable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.Header' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.Frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.frame_refl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.frame_trans' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.execution_placed_same' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.inverse_step_high' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.inverse_high' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.stored' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.stored_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.literal_runs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.binary_runs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.branch_runs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.jump_runs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.load_runs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.store_runs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.initialized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.LoopData' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.initialized_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.initialized_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.startup_runs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.savePrefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.savePrefix_reg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.savePrefix_pointer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.savePrefix_pc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.savePrefix_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.savePrefix_runs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.savePrefix_before' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.savePrefix_fields' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.writeNat_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.pc_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.LoopData.high' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.selectedState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.cofactorState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.selected_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.selected_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.radix_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.select_runs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.selected_values' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.inverse_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.RowTable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.PartialTable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.finishedRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.save_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.row_runs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.rowBudget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.preparationBudget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.terminal_execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.loop_execution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.preparation_cost' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.post_header_execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.preparationBudget_isLittleO_input' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.post_wordBound_setup' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.fullProgram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.constants_code' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.header_code' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.fullProgram_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.full_finish_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.fullPreparationBudget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.full_wordBound_setup' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.preparation_execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCRTHeaderMachine.fullPreparationBudget_isLittleO_input' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Expr' does not depend on any axioms
+'ExactFourierCircuits.UniformRankKernelPreparation.Expr.work' does not depend on any axioms
+'ExactFourierCircuits.UniformRankKernelPreparation.Expr.eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Result' does not depend on any axioms
+'ExactFourierCircuits.UniformRankKernelPreparation.Expr.compile' does not depend on any axioms
+'ExactFourierCircuits.UniformRankKernelPreparation.Expr.compile_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Expr.compile_old_val' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankKernelPreparation.Expr.compile_old' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Expr.compile_output' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Expr.compile_admissible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Expr.compile_counts' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankKernelPreparation.Forest' does not depend on any axioms
+'ExactFourierCircuits.UniformRankKernelPreparation.compileList' does not depend on any axioms
+'ExactFourierCircuits.UniformRankKernelPreparation.compileList_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.compileList_outputs_length' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankKernelPreparation.compileList_old_val' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankKernelPreparation.compileList_old' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.compileList_outputs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.compileList_admissible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.compileList_counts' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankKernelPreparation.family' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankKernelPreparation.family_output' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.initialProgram' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.zeroRef' does not depend on any axioms
+'ExactFourierCircuits.UniformRankKernelPreparation.oneRef' does not depend on any axioms
+'ExactFourierCircuits.UniformRankKernelPreparation.initial_old' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.initial_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.initial_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.initial_admissible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.initial_counts' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.sumExpr' does not depend on any axioms
+'ExactFourierCircuits.UniformRankKernelPreparation.sumExpr_work' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.sumExpr_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Sources' does not depend on any axioms
+'ExactFourierCircuits.UniformRankKernelPreparation.Sources.hExpr' does not depend on any axioms
+'ExactFourierCircuits.UniformRankKernelPreparation.Sources.gExpr' does not depend on any axioms
+'ExactFourierCircuits.UniformRankKernelPreparation.Sources.crossExpr' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Sources.vExpr' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Sources.wExpr' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Sources.rowExpr' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Sources.colExpr' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Sources.deltaExpr' does not depend on any axioms
+'ExactFourierCircuits.UniformRankKernelPreparation.Sources.padExpr' does not depend on any axioms
+'ExactFourierCircuits.UniformRankKernelPreparation.Sources.kernelExpr' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Sources.crossExpr_work' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Sources.kernelExpr_work' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Sources.matrix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Sources.left' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Sources.right' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Sources.crossExpr_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Sources.vExpr_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Sources.wExpr_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Sources.rowExpr_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Sources.colExpr_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Sources.deltaExpr_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Sources.padExpr_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.Sources.kernelExpr_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.flatExpr' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.prepared' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.retained' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.kernelRef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.retained_val' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.prepared_old' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.prepared_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.prepared_admissible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.prepared_counts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.prepared_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.prepared_length_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.spectrumBank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.spectrumBank_admissible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.spectrumBank_run' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.spectrumBank_counts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.spectrumBank_length_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.spectrumRetained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.spectrumRetained_val' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.spectrumBank_old' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.spectrumBank_cross_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankKernelPreparation.reciprocalDAG' does not depend on any axioms
+'ExactFourierCircuits.UniformRankKernelPreparation.reciprocalSources' does not depend on any axioms
+'ExactFourierCircuits.UniformRankKernelPreparation.reciprocal_spectrumBank_run' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.Placement' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzChunkWord.Placement.coordinates' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzChunkWord.flatten' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.Placement.embedding' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.shearWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.listWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.shearWord_matrix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.shearWord_calls' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.shearWord_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.shearWord_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.listWord_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.listWord_calls' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.listWord_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.Matching' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzChunkWord.matching_get' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.pairPosition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.pairPosition_at' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.embedded_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.block_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.matchingWord_matrix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.matchingWord_depth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.natPorts' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.port' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.port_natPorts' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.Stored' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.natPorts_port' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.port_ne' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.packCode' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.packList' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.packList_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.mem_packList' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.packList_append' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.packList_matching' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.packCode_act' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.packList_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.replayLayers_stored' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.packLayers' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.packLayers_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.packLayers_flatten' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.packLayers_matching' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.relabelLayers' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzChunkWord.relabelLayers_flatten' depends on axioms: [propext]
+'ExactFourierCircuits.UniformToeplitzChunkWord.relabelLayers_length' depends on axioms: [propext]
+'ExactFourierCircuits.UniformToeplitzChunkWord.matching_relabel' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.relabelLayers_matching' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.layersWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.listWord_append' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.layersWord_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.layersWord_calls' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.layersWord_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.layersWord_depth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.chunkLayers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.chunkLayers_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.chunkLayers_matching' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.chunkWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.chunkWord_calls' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.chunkWord_call_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.chunkWord_depth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.placedList_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.relabelList_outside' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.chunkWord_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.chunkWord_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.chunkWord_gates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.chunkWord_target' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.chunkWord_outside' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.chunkWord_other' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.positions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.positions_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.positions_disjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.placementOfFit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.selectedPlacement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.crossWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.crossWord_calls' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.crossWord_call_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.crossWord_depth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.crossWord_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.crossWord_other' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.toeplitzChunk_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.selectedWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.selectedWord_call_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.selectedWord_depth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.selectedWord_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.selectedWord_other' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.selectedToeplitzWord_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.preparedCrossWord' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.preparedCrossWord_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.preparedCrossWord_call_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.preparedCrossWord_depth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.preparedCrossWord_other' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzChunkWord.preparedSelectedWord_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

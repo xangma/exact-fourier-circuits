@@ -1,0 +1,4 @@
+import UniformBoundedAssembly
+
+#print axioms ExactFourierCircuits.UniformBoundedAssembly.placed_bound
+#print axioms ExactFourierCircuits.UniformBoundedAssembly.boundedExecution_placed
