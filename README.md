@@ -3,6 +3,10 @@
 An exact-arithmetic circuit engine, a lazy constructive saving seed, and a
 pinned Lean verification project for the result described in `math/lean/docs/130.md`.
 
+The [investigation plan](PLAN.md) records completed work, next steps, and the
+evidence required to connect the explicit construction to Lean and assess its
+numerical stability.
+
 The installed proof checks successfully with Lean **4.34.1** and the upstream
 Mathlib revision. The 51 upstream modules are unchanged. The theorem, five
 kernel/shear identities, and eleven projection/network identities have axiom
