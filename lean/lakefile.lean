@@ -227,3 +227,15 @@ lean_lib UniformPaddedInputMachine
 lean_lib UniformPaddedInputPreparation
 
 lean_lib UniformNewtonTableMachine
+
+lean_lib UniformChirpKernelMachine
+
+lean_lib UniformChirpKernelPreparation
+
+lean_lib UniformChirpOutputMachine
+
+lean_lib UniformReciprocalMachine
+
+lean_lib UniformLocalFourierWord
+
+lean_lib UniformCRTTraversalMachine
