@@ -177,3 +177,11 @@ lean_lib UniformInPlaceMachine
 lean_lib UniformConvolutionDAG
 
 lean_lib UniformMasterRootMachine
+
+lean_lib UniformPairMachine
+
+lean_lib UniformFixedNetwork
+
+lean_lib UniformReciprocalPreparation
+
+lean_lib UniformCKernelPreparation

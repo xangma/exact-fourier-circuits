@@ -2341,3 +2341,434 @@
 'ExactFourierCircuits.UniformMasterRootMachine.preparationBudget_isLittleO_input' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.program' does not depend on any axioms
+'ExactFourierCircuits.UniformPairMachine.program_length' does not depend on any axioms
+'ExactFourierCircuits.UniformPairMachine.contextFree' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.prepared' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.combine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.loadedLeft' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.loadedBoth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.productLeft' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.productRight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.addedLeft' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.productOtherLeft' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.productOtherRight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.addedRight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.storedLeft' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.finalState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.Ready' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.prepared_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.product_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.bounded_execution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.final_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.final_heap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.final_values' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.untouched' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.C_execution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.coefficientProgram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.coefficientProgram_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.coefficientOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.coefficientHalf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.coefficientSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.coefficientDifference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.coefficientDiagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.coefficientState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.coefficient_execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.coefficient_values' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPairMachine.coefficient_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.m' does not depend on any axioms
+'ExactFourierCircuits.UniformFixedNetwork.W' does not depend on any axioms
+'ExactFourierCircuits.UniformFixedNetwork.S' does not depend on any axioms
+'ExactFourierCircuits.UniformFixedNetwork.pointwiseCalls' does not depend on any axioms
+'ExactFourierCircuits.UniformFixedNetwork.hh' depends on axioms: [propext]
+'ExactFourierCircuits.UniformFixedNetwork.dimension_eq' depends on axioms: [propext]
+'ExactFourierCircuits.UniformFixedNetwork.W_eq' depends on axioms: [propext]
+'ExactFourierCircuits.UniformFixedNetwork.residual_balance' depends on axioms: [propext]
+'ExactFourierCircuits.UniformFixedNetwork.address_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.correctedWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.correctedWord_chronology' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.correctedWord_matrix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.correctedWord_calls' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.simultaneousWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.simultaneousWord_matrix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.simultaneousWord_array' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.fill_calls_from_cost' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.transfer_padding' does not depend on any axioms
+'ExactFourierCircuits.UniformFixedNetwork.seedPaddingResiduals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.simultaneousWord_calls' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.simultaneousWord_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.simultaneousWord_saves' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.Macro' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.Macro.residuals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.Macro.scalars' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.Macro.compile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.tapeResiduals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.tapeScalars' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.compileTape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.compileTape_append' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.Macro.compile_calls' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.compileTape_calls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.edgesTape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.eventTape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.scheduleTape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.finishTape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.edgesTape_compile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.eventTape_compile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.scheduleTape_compile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.finishTape_compile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.edgesTape_residuals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.edgesTape_scalars' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.eventTape_residuals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.eventTape_scalars' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.scheduleTape_residuals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.scheduleTape_scalars' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.finishTape_residuals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.finishTape_scalars' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.edgeVectors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.edgeInverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.edgeVectors_orthonormal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.columnDirection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.columnDirections_orthonormal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.columnDirection_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.copied_event_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.copied_edge_vector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.copied_edge_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.blockTape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.blockTape_compile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.blockTape_residuals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.blockTape_scalars' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.fixedInvocations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.fixedInvocations_cover' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.fixedInvocations_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.fixedInvocations_nodup' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.fixedBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.actualBlock_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.fixedBlock_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.fixedInvocations_compile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.fixedMetadata_compile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.metadata_pointwise_total' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.scale_equality' does not depend on any axioms
+'ExactFourierCircuits.UniformFixedNetwork.add_equality' does not depend on any axioms
+'ExactFourierCircuits.UniformFixedNetwork.fixedMetadata_pointwise_total' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.metadata_residual_total' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.fixedMetadata_residual_total' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformFixedNetwork.normalized_residuals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.inverse_coeff_succ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.Bank' does not depend on any axioms
+'ExactFourierCircuits.UniformReciprocalPreparation.Bank.push' does not depend on any axioms
+'ExactFourierCircuits.UniformReciprocalPreparation.Bank.push_length' does not depend on any axioms
+'ExactFourierCircuits.UniformReciprocalPreparation.Bank.push_eval_old' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.Bank.push_eval_last' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.Bank.Correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.Bank.correct_push' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.SumBank' does not depend on any axioms
+'ExactFourierCircuits.UniformReciprocalPreparation.SumBank.term' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.SumBank.term_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.SumBank.term_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.SumBank.term_acc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.SumBank.term_admissible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.SumBank.terms' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.SumBank.terms_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.SumBank.terms_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.SumBank.terms_acc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.SumBank.terms_admissible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.initial' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.initial_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.initial_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.initial_admissible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.next' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.next_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.next_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.next_admissible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.build' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.build_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.build_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.build_admissible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.reciprocal' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.shared' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.reciprocal_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.shared_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.reciprocal_admissible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.shared_admissible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.reciprocal_run' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.shared_run_h' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.shared_run_g' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.inputSeries' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.inputSeries_coeff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.inputSeries_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.values' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.values_eq_coeff_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.values_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.values_succ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.inverse_convolution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.values_convolution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.preparedToeplitz' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.preparedInverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.preparedToeplitz_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.preparedInverse_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.preparedInverse_is_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.reciprocal_length_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.reciprocal_output_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.operandsBound' depends on axioms: [propext]
+'ExactFourierCircuits.UniformReciprocalPreparation.operandsBound_of_prior' depends on axioms: [propext]
+'ExactFourierCircuits.UniformReciprocalPreparation.referencesBound' depends on axioms: [propext]
+'ExactFourierCircuits.UniformReciprocalPreparation.referencesBound_of_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.reciprocal_references_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.preparedInverse_eq_of_coeff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.newtonInput' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.newtonInput_admissible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.newtonInput_coeff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.newtonInput_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.newtonReciprocal' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.newtonReciprocal_admissible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.newtonReciprocal_run' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.newtonReciprocal_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.newton_preparedInverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.CountKind' does not depend on any axioms
+'ExactFourierCircuits.UniformReciprocalPreparation.instructionCount' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.programCount' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.initial_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.term_count' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.terms_count' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.next_count' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.build_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.reciprocal_root_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.reciprocal_divide_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformReciprocalPreparation.reciprocal_otherRational_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.zeta_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.four_dvd_order' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.setup' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.program' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.program_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.master_code' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.power_code' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.coefficient_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.zeroState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.headerState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.savedState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.copyZeroState' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.copyState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.divisorState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.setupState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.setup_code' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.setup_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.setup_properties' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.setup_registers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.restoreState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.restore_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.HeaderFrame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.HeaderFrame.prepared' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.scalar_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.tail_execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.preparationBudget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.wordBound_setup' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.preparation_execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.extractionBudget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.extractionBudget_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.extractionBudget_isBigO_log' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCKernelPreparation.preparationBudget_isLittleO_input' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
