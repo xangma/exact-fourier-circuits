@@ -7,9 +7,13 @@ The [investigation plan](PLAN.md) records completed work, next steps, and the
 evidence required to connect the explicit construction to Lean and assess its
 numerical stability.
 
+The [proof contract](docs/proof-contract.md) specifies the exact cost models,
+coordinate conventions, admissible parameters and remaining witness lemmas.
+
 The installed proof checks successfully with Lean **4.34.1** and the upstream
 Mathlib revision. The 51 upstream modules are unchanged. The theorem, five
-kernel/shear identities, and eleven projection/network identities have axiom
+kernel/shear identities, eleven projection/network identities, and 21
+construction-foundation declarations have axiom
 closures containing only `propext`,
 `Classical.choice`, and `Quot.sound`.
 
@@ -24,6 +28,7 @@ cd ~/repos/exact-fourier-circuits
 .venv/bin/python -m unittest discover -s tests
 ./scripts/verify-lean.sh --skip-cache
 ./scripts/verify-projection.sh
+./scripts/verify-construction.sh
 ```
 
 For a fresh checkout, `./scripts/setup.sh` installs the Python environment,
@@ -40,7 +45,7 @@ install `.venv/bin/python -m pip install -e '.[cuda]'` on a CUDA12 machine.
 | `gf2.py`, `directional.py` | Sparse binary orthonormal complements and bounded pairwise expansion of directional kernels |
 | `network.py` | Complete lazy scalar/frame network, terminal corrections, padding and role axes; exact integer saving budget |
 | `projection.py`, `dyadic.py` | Bounded binary projections of the complete network and fast exact checkpoint references |
-| `lean/` | Original existence theorem and new exact matrix identity proofs |
+| `lean/` | Original existence theorem, exact matrix identities, conditional binary complement frames, budget arithmetic and explicit-witness interface |
 | `scripts/check-cuda.py` | CUDA scalar-DAG evaluator in FP32/FP64 against exact references |
 | `scripts/check-projected-cuda.py` | Complete projected-network CUDA execution, compiled/direct shear controls and stage diagnostics |
 
@@ -123,4 +128,7 @@ Original source headers are retained. Apache2.0: see [LICENSE](LICENSE).
 
 Observed verification receipts live in `verification/`; generated circuits,
 large caches, Python environments and execution logs are ignored by Git.
-Codebase graph indexing timed out; the audit used bounded exact source reads.
+The graph is now indexed; Lean's whole-file parser gaps require exact source
+reads. [Construction-foundation receipt](verification/constructive-foundations.json)
+records the new declarations, source hashes and axiom closures. These checks
+do not certify the complete saving word.

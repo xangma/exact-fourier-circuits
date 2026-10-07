@@ -14,3 +14,9 @@ require mathlib from git
 lean_lib KernelIdentities
 
 lean_lib ProjectionIdentities
+
+lean_lib ConstructiveBridge
+
+lean_lib SavingBudget
+
+lean_lib BinaryFrames

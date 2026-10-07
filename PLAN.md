@@ -22,7 +22,7 @@ explicitly before claiming an executable faster DFT.
    roughly 2.3 times the stress-input error. Raw outputs were independently
    checked. See the [experiment report](docs/projected-stability.md).
 
-2. **Write the precise proof contract — next.**
+2. **Write the precise proof contract — completed.**
    Identify the exact theorem statements, circuit semantics, allowed free
    operations, charged calls, tensor coordinate convention, and parameter
    assumptions. Map the paper's explicit construction and Python objects to
@@ -31,8 +31,12 @@ explicitly before claiming an executable faster DFT.
    **Deliverable:** a dependency map and an explicit list of missing lemmas.
    **Completion:** every claimed output identity and saving count has a named
    statement and specified hypotheses.
+   See [proof contract](docs/proof-contract.md). Its dependency map records the
+   scalar/call-cost distinction, coordinate transport, admissible parameter
+   range and missing action/count proofs. The checked conditional q=2 bridge
+   can reuse the upstream Fourier transfer once a concrete word is supplied.
 
-3. **Prove the specific binary frame construction.**
+3. **Prove the specific binary frame construction — in progress.**
    Formalize the incidence/complement identities, residual subspaces, signed
    weights, and orthonormal bases over GF(2). Instantiate the existing general
    dirty-auxiliary and frame-telescoping proofs with this construction. Prove
@@ -40,6 +44,13 @@ explicitly before claiming an executable faster DFT.
    **Deliverable:** Lean modules proving the actual network's exact action.
    **Completion:** the proofs cover the required parameter family, rather than
    only sampled inputs or generic algebra with an unproved frame hypothesis.
+   The first finite-index foundation is checked: transvections are involutive
+   dot-preserving linear equivalences; the actual two-transvection order maps
+   the prescribed pivots to the two vectors, with orthonormal complement images
+   and spanning. Pivot existence, one-vector complement spanning, cardinality
+   packaging, tensor/residual/sign identities and network instantiation remain.
+   The separate budget cancellation and floor-choice inequalities are checked;
+   they assume the count formula and do not certify a word.
 
 4. **Connect the construction to a saving word and its cost.**
    Translate directional layers, compiled shears, padding, permutations and
@@ -73,9 +84,10 @@ explicitly before claiming an executable faster DFT.
    **Deliverable:** a supported conclusion about exact validity, stability and
    practical usefulness, each backed by its own evidence.
 
-The immediate next action is step 2, followed by the smallest missing GF(2)
-lemma in step 3. Numerical work can proceed independently once its test contract
-is fixed. This plan does not start another experiment.
+The immediate next action is to prove pivot existence and complete the binary
+complement constructor for the admissible triple family, then prove tensor
+and signed-weight identities. Numerical work can proceed independently once
+its test contract is fixed. This update does not start another experiment.
 
 Every experiment will have explicit memory/work limits, a deadline, input and
 source hashes, retained logs and a stop command. Remote jobs will preserve

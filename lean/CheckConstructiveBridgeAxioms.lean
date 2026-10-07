@@ -1,0 +1,6 @@
+import ConstructiveBridge
+
+#print axioms ExactFourierCircuits.ConstructiveBridge.kernel_isUnit
+#print axioms ExactFourierCircuits.ConstructiveBridge.kernel_not_isMonomial
+#print axioms ExactFourierCircuits.ConstructiveBridge.finiteWin_of_word
+#print axioms ExactFourierCircuits.ConstructiveBridge.main_of_word

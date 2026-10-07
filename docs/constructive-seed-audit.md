@@ -12,6 +12,13 @@ Lean-verified witness. Its metadata retains `expanded=false` and
 `kernel_verified=false`. These statements concern this constructed seed, not
 whether the existing abstract Lean theorem compiles.
 
+The subsequent [proof contract](proof-contract.md) records exact hypotheses and
+missing Lean obligations. In particular, scalar parameters allow `h>=3`, but
+the full framed stream fails at `h=3` and `h=6`: the required positive-dimensional
+binary complements are alternating. The saving range `h>=22` avoids these
+obstructions, as does the tested `h=4` projection. Scalar-only tests at `h=3`
+do not certify its framed stream.
+
 ## Exact source and scope
 
 Audited local sources, read directly because the parent graph status/indexing

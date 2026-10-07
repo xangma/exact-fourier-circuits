@@ -1,0 +1,16 @@
+import BinaryFrames
+
+#print axioms ExactFourierCircuits.BinaryFrames.transvection_add
+#print axioms ExactFourierCircuits.BinaryFrames.transvection_smul
+#print axioms ExactFourierCircuits.BinaryFrames.transvection_involutive
+#print axioms ExactFourierCircuits.BinaryFrames.transvection_preserves_dot
+#print axioms ExactFourierCircuits.BinaryFrames.transvectionEquiv
+#print axioms ExactFourierCircuits.BinaryFrames.pivot_direction_isotropic
+#print axioms ExactFourierCircuits.BinaryFrames.pivot_transvection_unit
+#print axioms ExactFourierCircuits.BinaryFrames.twoFrameEquiv
+#print axioms ExactFourierCircuits.BinaryFrames.twoFrame_preserves_dot
+#print axioms ExactFourierCircuits.BinaryFrames.twoFrame_unit_first
+#print axioms ExactFourierCircuits.BinaryFrames.twoFrame_unit_second
+#print axioms ExactFourierCircuits.BinaryFrames.twoFrame_orthonormal
+#print axioms ExactFourierCircuits.BinaryFrames.twoFrame_complement_orthogonal
+#print axioms ExactFourierCircuits.BinaryFrames.twoFrame_complement_spans

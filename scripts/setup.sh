@@ -16,4 +16,5 @@ python3 -m venv .venv
 .venv/bin/python -m pip install -e .
 ./scripts/verify-lean.sh
 ./scripts/verify-projection.sh
+./scripts/verify-construction.sh
 .venv/bin/python -m unittest discover -s tests

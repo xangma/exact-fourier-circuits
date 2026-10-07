@@ -1,0 +1,129 @@
+{
+  "schema": "lean-construction-foundations/v1",
+  "passed": true,
+  "finished_utc": "2026-10-07T13:35:11.720446+00:00",
+  "lean_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "upstream_files_verified": 51,
+  "source_sha256": {
+    "KernelIdentities.lean": "009b8ba2b0dbd2f2f16ccb092b8e0bc882313ae2d54558f035a8280054043031",
+    "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "lakefile.lean": "00cd06348cc77b610f8d9ad9cbe94e722ccde85a286dcffa7ad832c8915de88d",
+    "UPSTREAM_MANIFEST.json": "164f39279317c670920956d5260da95c02dad03acd140329fc503dc263cd2251",
+    "lake-manifest.json": "7b626f9e30d660141cb94e48851728dd8a1bd2b65028ba765bae7de0e2582639",
+    "BinaryFrames.lean": "b04f6f0e2b2adaf22b982a8172b544c9735013617b824c984c400e318b505bd0",
+    "CheckBinaryFramesAxioms.lean": "16eac8ba9eea7a7260c853d7a8211d069e032f99a60fbf356241bfad0aa3f5e5",
+    "ConstructiveBridge.lean": "7dd114a9e68b64105bce4caccf2063b1afbc5ee8d56dc656aeae33d72f6a8094",
+    "CheckConstructiveBridgeAxioms.lean": "75d4db6f76cfd2f96db6fcf1449d26bc158f1e52b8eb0e5491c1774420a58913",
+    "SavingBudget.lean": "746514c40b5dc5fa0ac2d78ea556ebfebeb742035ddfee97314e7b7073c35085",
+    "CheckSavingBudgetAxioms.lean": "45bcb1815bcd48aaf09f5896653b08bc1af76ea633c43846cdf334c9b2d90b71"
+  },
+  "verification_script_sha256": "829e442862372a304811b620288fc0f5f6b89e1d7b4a54b4d8338eddb457ccc8",
+  "axioms": {
+    "ExactFourierCircuits.BinaryFrames.transvection_add": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.transvection_smul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.transvection_involutive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.transvection_preserves_dot": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.transvectionEquiv": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.pivot_direction_isotropic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.pivot_transvection_unit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.twoFrameEquiv": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.twoFrame_preserves_dot": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.twoFrame_unit_first": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.twoFrame_unit_second": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.twoFrame_orthonormal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.twoFrame_complement_orthogonal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.BinaryFrames.twoFrame_complement_spans": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ConstructiveBridge.kernel_isUnit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ConstructiveBridge.kernel_not_isMonomial": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ConstructiveBridge.finiteWin_of_word": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.ConstructiveBridge.main_of_word": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.SavingBudget.coefficient_saving": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.SavingBudget.factored_saving": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.SavingBudget.floor_choice_saves": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "scope": "Finite-index binary frames under successful-pivot hypotheses; conditional q=2 Fourier bridge; budget arithmetic under a count formula. No complete explicit word, pivot-existence, residual-table, or saving-word certificate."
+}

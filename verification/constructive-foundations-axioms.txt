@@ -1,0 +1,27 @@
+'ExactFourierCircuits.BinaryFrames.transvection_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryFrames.transvection_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryFrames.transvection_involutive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryFrames.transvection_preserves_dot' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryFrames.transvectionEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryFrames.pivot_direction_isotropic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryFrames.pivot_transvection_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryFrames.twoFrameEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryFrames.twoFrame_preserves_dot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryFrames.twoFrame_unit_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryFrames.twoFrame_unit_second' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryFrames.twoFrame_orthonormal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.BinaryFrames.twoFrame_complement_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.BinaryFrames.twoFrame_complement_spans' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ConstructiveBridge.kernel_isUnit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ConstructiveBridge.kernel_not_isMonomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.ConstructiveBridge.finiteWin_of_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.ConstructiveBridge.main_of_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.SavingBudget.coefficient_saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.SavingBudget.factored_saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.SavingBudget.floor_choice_saves' depends on axioms: [propext, Quot.sound]

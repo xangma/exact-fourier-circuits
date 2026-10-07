@@ -1,0 +1,38 @@
+{
+  "schema": "construction-proof-contract-audit/v1",
+  "finished_utc": "2026-10-07T13:37:41.291513+00:00",
+  "scope": "Focused source/definition audit and concrete unsupported-frame reproductions; not a certificate of the full constructive word.",
+  "source_sha256": {
+    "/Users/xangma/repos/exact-fourier-circuits/src/exact_fourier/network.py": "9ac063ac7df936d2f05621cb012d18ab56e2da98b4dab395d4da70db0edb4f09",
+    "/Users/xangma/repos/exact-fourier-circuits/src/exact_fourier/gf2.py": "9a870a9fd8f01ff717fdb0f3536b490025550a11270879f59176378b1bfcd748",
+    "/Users/xangma/repos/exact-fourier-circuits/src/exact_fourier/directional.py": "ee6c5314ea939b4af97cee504c855852daa750c3e8bd50bc57f23765008f375b",
+    "/Users/xangma/repos/exact-fourier-circuits/src/exact_fourier/words.py": "4e8dd700a7c80c9985989600bfe4e5c50a53f440df15ff24d81da0ececa3a8d6",
+    "/Users/xangma/repos/math/lean/docs/130.md": "4d28a5c6645d2d1bb188a55b4ad01904ce15378f1d60b6cf46e49b475b18c7d5",
+    "/Users/xangma/repos/math/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/network.tex": "7218f4312afb772bde87c5e1c64eabe7ab3524be090ea5621afb5608a4b10350",
+    "/Users/xangma/repos/math/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/local.tex": "616e2707aabf2f7591a687331d4cb0f2fa486f92c3f7fe96a133b90faff60561",
+    "/Users/xangma/repos/math/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/synthesis.tex": "601067c49c2d61c56d0d42ab4a35d4c3d4b2c95d5428e61e44fda71c3dce1d39"
+  },
+  "graph": {
+    "project": "exact-fourier-circuits",
+    "generation": "2026-10-07T11:11:44Z",
+    "status": "ready",
+    "tier": "Verify",
+    "python_paths_status": "metadata_match/no_recorded_issue; best effort only",
+    "lean_paths_status": "Whole-file parse_unusable; relied on exact source reads for all material statements. New proof files reviewed directly."
+  },
+  "reproduction": {
+    "command": "PYTHONPATH=src .venv/bin/python: enumerate at most 5000 instructions of iter_network_program(NetworkParameters(h)) for h=3,6",
+    "h3": {
+      "instructions_before_failure": 4,
+      "error": "positive-dimensional complement is alternating: u is all ones"
+    },
+    "h6": {
+      "instructions_before_failure": 1029,
+      "error": "positive-dimensional complement is alternating: u+y is all ones"
+    },
+    "interpretation": "Scalar h>=3 is insufficient for framed construction. Saving h>=22 and tested h=4 avoid these obstructions."
+  },
+  "implementation_changes": "Lean proof foundations and verification script; Python constructors unchanged.",
+  "new_lean_receipt": "constructive-foundations.json",
+  "new_cuda_runs": 0
+}
