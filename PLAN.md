@@ -168,7 +168,11 @@ global scheduler remain required before the stronger theorem can be claimed.
 
 Measured workspace selection now executes all ragged pair checks with actual
 integer instructions. Original/conjugate coefficient preparation and the explicit
-zero-free shift each have charged physical execution proofs. The next local
+zero-free shift now compose into one charged 374-instruction execution from the
+original master root and typed/rational tapes. The next local
 compiler milestone prints the convolution topology from its integer height, then
 joins the six corrected-cross graphs, layers and dirty replay. In parallel, the
 all-axis diagonal pass must install its caller headers from actual empty startup.
+The block traversal's reversed cons output is proved equal to the exact ordered
+sector directory. Its physical metadata scan/DFS must derive this directory and
+every stack read from original width rows, then support charged scalar packing.

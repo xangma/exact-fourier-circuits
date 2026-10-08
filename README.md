@@ -75,9 +75,13 @@ fitting ragged chunk, including the unit-width boundary. A 336-instruction progr
 prepares the inverse master root and evaluates the same coefficient tapes twice,
 producing original and conjugate banks. A 30-instruction producer then constructs
 the explicit zero-free shift and reciprocal differences from those physical banks.
+The joined 374-instruction program derives those banks and division guards in one
+continuous run from the original master root and physical typed/rational tapes.
 An all-axis directory driver constructs complete diagonal banks; its continuous
 108-instruction producer/tensor assembly derives its action from actual banks.
 Caller setup for that global pass and the complete fast scheduler remain open.
+The mathematical block traversal now has an exact ordered-list identity with the
+sector directory; its physical metadata producer and scalar packing remain separate.
 
 
 ## Run
@@ -104,6 +108,10 @@ the native transform inputs in the transfer tests are explicit caller fixtures.
 It also runs 180 exact zero-free diagonal cases and six guard controls from
 explicit prepared coefficient/conjugate caller banks. Results are written to
 `logs/uniform-bytecode/fixtures.json` and `logs/uniform-bytecode/zero-free-fixtures.json`.
+Another 90 continuous 374-instruction cases start with the original master and
+typed/rational tapes, checking derived conjugates, shifts, all dependency tags,
+dirty-bank frames and seven expected guard failures. Their receipt is
+`logs/uniform-bytecode/prepared-zero-free-fixtures.json`.
 
 For a fresh checkout, `./scripts/setup.sh` installs the Python environment,
 the pinned Lean toolchain, and the pinned Mathlib dependencies/cache, then

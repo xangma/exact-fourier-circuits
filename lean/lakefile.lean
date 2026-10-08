@@ -363,3 +363,9 @@ lean_lib CheckUniformPreparedDAGConjugateMachineAxioms
 
 lean_lib UniformZeroFreeDiagonalMachine
 lean_lib CheckUniformZeroFreeDiagonalMachineAxioms
+
+lean_lib UniformPreparedZeroFreeDAGMachine
+lean_lib CheckUniformPreparedZeroFreeDAGMachineAxioms
+
+lean_lib UniformSectorTraversalOrder
+lean_lib CheckUniformSectorTraversalOrderAxioms

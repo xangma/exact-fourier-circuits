@@ -16878,3 +16878,96 @@ Note: This linter can be disabled with `set_option linter.auxLemma false`
 'ExactFourierCircuits.UniformZeroFreeDiagonalMachine.sum_properties._proof_1_9' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.setup' does not depend on any axioms
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.program' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.program_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.conjugate_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.diagonal_code' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.Op' does not depend on any axioms
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.applyBlock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.peak' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.BlockAt' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.block_runs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.setupOps' does not depend on any axioms
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.setup_code' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.Protected' does not depend on any axioms
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.protectedDecidable' does not depend on any axioms
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.Frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.Header' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.Frame.trans' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.Frame.of_conjugate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.Frame.of_diagonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.block_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.setup_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.setup_arguments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.wordBudget' does not depend on any axioms
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.runtime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.OutsideScalar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.execution_specifiedRoot' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.wordBudget_polynomial' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.runtime_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.saved_headers_retained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.scalar_prefix_retained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.produced_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformSectorTraversalOrder.block_lex_ofFn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformSectorTraversalOrder.block_lex_sectorStates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformSectorTraversalOrder.foldl_output' depends on axioms: [propext]
+'ExactFourierCircuits.UniformSectorTraversalOrder.lexOutcomes' does not depend on any axioms
+'ExactFourierCircuits.UniformSectorTraversalOrder.lexOutcomes._f' does not depend on any axioms
+'ExactFourierCircuits.UniformSectorTraversalOrder.lexOutcomes._sunfold' does not depend on any axioms
+'ExactFourierCircuits.UniformSectorTraversalOrder.lexOutcomes._unsafe_rec' does not depend on any axioms
+'ExactFourierCircuits.UniformSectorTraversalOrder.lexOutcomes.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformSectorTraversalOrder.lexOutcomes.eq_2' does not depend on any axioms
+'ExactFourierCircuits.UniformSectorTraversalOrder.lexOutcomes.eq_def' does not depend on any axioms
+'ExactFourierCircuits.UniformSectorTraversalOrder.lexOutcomes.match_1' does not depend on any axioms
+'ExactFourierCircuits.UniformSectorTraversalOrder.run_output_reverse' depends on axioms: [propext]
+'ExactFourierCircuits.UniformSectorTraversalOrder.run_sectorStates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformSectorTraversalOrder.traverse_output' depends on axioms: [propext]
+'_private.UniformSectorTraversalOrder.0.ExactFourierCircuits.UniformSectorTraversalOrder.lexOutcomes.match_1.eq_1' depends on axioms: []
+'_private.UniformSectorTraversalOrder.0.ExactFourierCircuits.UniformSectorTraversalOrder.lexOutcomes.match_1.eq_2' depends on axioms: []
+'_private.UniformSectorTraversalOrder.0.ExactFourierCircuits.UniformSectorTraversalOrder.lexOutcomes.match_1.splitter' depends on axioms: []

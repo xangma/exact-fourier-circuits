@@ -8695,6 +8695,56 @@
       "ExactFourierCircuits.UniformZeroFreeDiagonalMachine.sum_properties._proof_1_7",
       "ExactFourierCircuits.UniformZeroFreeDiagonalMachine.sum_properties._proof_1_8",
       "ExactFourierCircuits.UniformZeroFreeDiagonalMachine.sum_properties._proof_1_9"
+    ],
+    "UniformPreparedZeroFreeDAGMachine": [
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.setup",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.program",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.program_length",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.conjugate_code",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.diagonal_code",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.Op",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.applyBlock",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.peak",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.BlockAt",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.block_runs",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.setupOps",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.setup_code",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.Protected",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.protectedDecidable",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.Frame",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.Header",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.Frame.trans",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.Frame.of_conjugate",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.Frame.of_diagonal",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.block_frame",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.setup_frame",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.setup_arguments",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.wordBudget",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.runtime",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.OutsideScalar",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.execution",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.execution_specifiedRoot",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.wordBudget_polynomial",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.runtime_bound",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.saved_headers_retained",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.scalar_prefix_retained",
+      "ExactFourierCircuits.UniformPreparedZeroFreeDAGMachine.produced_nonzero"
+    ],
+    "UniformSectorTraversalOrder": [
+      "ExactFourierCircuits.UniformSectorTraversalOrder.block_lex_ofFn",
+      "ExactFourierCircuits.UniformSectorTraversalOrder.block_lex_sectorStates",
+      "ExactFourierCircuits.UniformSectorTraversalOrder.foldl_output",
+      "ExactFourierCircuits.UniformSectorTraversalOrder.lexOutcomes",
+      "ExactFourierCircuits.UniformSectorTraversalOrder.lexOutcomes._f",
+      "ExactFourierCircuits.UniformSectorTraversalOrder.lexOutcomes._sunfold",
+      "ExactFourierCircuits.UniformSectorTraversalOrder.lexOutcomes._unsafe_rec",
+      "ExactFourierCircuits.UniformSectorTraversalOrder.lexOutcomes.eq_1",
+      "ExactFourierCircuits.UniformSectorTraversalOrder.lexOutcomes.eq_2",
+      "ExactFourierCircuits.UniformSectorTraversalOrder.lexOutcomes.eq_def",
+      "ExactFourierCircuits.UniformSectorTraversalOrder.lexOutcomes.match_1",
+      "ExactFourierCircuits.UniformSectorTraversalOrder.run_output_reverse",
+      "ExactFourierCircuits.UniformSectorTraversalOrder.run_sectorStates",
+      "ExactFourierCircuits.UniformSectorTraversalOrder.traverse_output"
     ]
   },
   "closed_uniform_algorithm": null,
@@ -8791,6 +8841,11 @@
       "_private.UniformTensorMonomialMachine.0.ExactFourierCircuits.UniformTensorMonomialMachine.treeCost.match_1.eq_1",
       "_private.UniformTensorMonomialMachine.0.ExactFourierCircuits.UniformTensorMonomialMachine.treeCost.match_1.eq_2",
       "_private.UniformTensorMonomialMachine.0.ExactFourierCircuits.UniformTensorMonomialMachine.treeCost.match_1.splitter"
+    ],
+    "UniformSectorTraversalOrder": [
+      "_private.UniformSectorTraversalOrder.0.ExactFourierCircuits.UniformSectorTraversalOrder.lexOutcomes.match_1.eq_1",
+      "_private.UniformSectorTraversalOrder.0.ExactFourierCircuits.UniformSectorTraversalOrder.lexOutcomes.match_1.eq_2",
+      "_private.UniformSectorTraversalOrder.0.ExactFourierCircuits.UniformSectorTraversalOrder.lexOutcomes.match_1.splitter"
     ]
   }
 }
