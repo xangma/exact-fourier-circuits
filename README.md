@@ -90,12 +90,15 @@ constructs all six padded rank kernels from actual prepared H/G cells, including
 zero coefficients, with a proved quadratic preparation bound. The 297-instruction spectrum
 producer charges its six FFT/copy passes and root-power bank. The 271-instruction
 corrected-cross printer derives all six remapped graphs and final additions from
-height and ragged dimensions. Their continuous caller, depth grouping and dirty
-replay remain active obligations.
+height and ragged dimensions. Their continuous caller, physical replay remain active obligations. The 35-instruction depth writer
+derives every typed longest-path label from its physical tape in at most
+`5*(N+1)+22*G+10` charged steps.
 The mathematical block traversal now has an exact ordered-list identity with the
 sector directory. Its 92-instruction physical metadata producer now derives that
 ordered directory and suffix volumes from the original width rows in at most
-`130*L+16` steps. Scalar packing and the full recursive scheduler remain open.
+`130*L+16` steps. The 137-instruction packing DFS derives inverse addresses and gathers exact tagged
+values in at most `213*L+20` steps. Per-axis physical table production and the full
+recursive scheduler remain open.
 
 
 ## Run
@@ -135,6 +138,10 @@ in the same directory. A further 40 exact cyclotomic spectrum cases use canonica
 roots of orders 4 through 64, and 54 corrected-cross cases compare the physical
 tape against freshly exported typed Lean records. Their receipts are
 `kernel-spectrum/cyclotomic-fixtures.json` and `cross-topology/runtime-receipt.json`.
+The depth writer adds 76 cases (30 pinned typed examples and eight fresh small
+examples, each in two layouts); packing adds 270 cases, including local
+permutations whose inverse differs from the forward permutation. Their receipts
+are `dag-depth/fixtures.json` and `sector-packing/bytecode-results.json`.
 
 For a fresh checkout, `./scripts/setup.sh` installs the Python environment,
 the pinned Lean toolchain, and the pinned Mathlib dependencies/cache, then

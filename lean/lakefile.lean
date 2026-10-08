@@ -390,3 +390,9 @@ lean_lib CheckUniformKernelSpectrumMachineAxioms
 
 lean_lib UniformToeplitzCrossTopologyMachine
 lean_lib CheckUniformToeplitzCrossTopologyMachineAxioms
+
+lean_lib UniformDAGDepthMachine
+lean_lib CheckUniformDAGDepthMachineAxioms
+
+lean_lib UniformSectorPackingMachine
+lean_lib CheckUniformSectorPackingMachineAxioms

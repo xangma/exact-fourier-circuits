@@ -177,9 +177,11 @@ actual empty startup in 1084 instructions and has a proved linear runtime bound.
 An actual contiguous power writer charges every bank store, and the fixed
 90-instruction kernel producer derives all six physical kernels from H/G. The
 297-instruction FFT/copy spectrum assembly and 271-instruction corrected-cross
-topology printer are verified. Their continuous caller, depth grouping and dirty
-replay remain to be completed.
+topology printer are verified. A 35-instruction physical depth writer now derives every typed label. Their
+continuous caller, bucket ordering and dirty replay remain to be completed.
 The block traversal's reversed cons output is proved equal to the exact ordered
 sector directory. Its physical 92-instruction metadata scan/DFS derives this
-directory and every stack read from original width rows in linear time. A
-continuous scalar packing DFS/gather and charged graph-depth pass are active.
+directory and every stack read from original width rows in linear time. The continuous
+137-instruction scalar packing DFS/gather is verified, including inverse-address
+production and exact dependency tags. Original per-axis tables and the full
+recursive caller remain open.
