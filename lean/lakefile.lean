@@ -239,3 +239,21 @@ lean_lib UniformReciprocalMachine
 lean_lib UniformLocalFourierWord
 
 lean_lib UniformCRTTraversalMachine
+
+lean_lib UniformNatCopyMachine
+
+lean_lib UniformNormalizationMachine
+
+lean_lib UniformNormalizationPreparation
+
+lean_lib UniformCommonSlots
+
+lean_lib UniformChirpPointwiseMachine
+
+lean_lib UniformCRTTraversalCycle
+
+lean_lib UniformGlobalNatPreparation
+
+lean_lib UniformLocalFourierLayers
+
+lean_lib UniformInitialPreparation

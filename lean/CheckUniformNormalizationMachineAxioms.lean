@@ -1,0 +1,17 @@
+import UniformNormalizationMachine
+
+#print axioms ExactFourierCircuits.UniformNormalizationMachine.head
+#print axioms ExactFourierCircuits.UniformNormalizationMachine.program
+#print axioms ExactFourierCircuits.UniformNormalizationMachine.program_length
+#print axioms ExactFourierCircuits.UniformNormalizationMachine.rational_code
+#print axioms ExactFourierCircuits.UniformNormalizationMachine.zeroed
+#print axioms ExactFourierCircuits.UniformNormalizationMachine.saved
+#print axioms ExactFourierCircuits.UniformNormalizationMachine.numerator
+#print axioms ExactFourierCircuits.UniformNormalizationMachine.entry
+#print axioms ExactFourierCircuits.UniformNormalizationMachine.startup_runs
+#print axioms ExactFourierCircuits.UniformNormalizationMachine.stored
+#print axioms ExactFourierCircuits.UniformNormalizationMachine.stored_bound
+#print axioms ExactFourierCircuits.UniformNormalizationMachine.Frame
+#print axioms ExactFourierCircuits.UniformNormalizationMachine.runtime
+#print axioms ExactFourierCircuits.UniformNormalizationMachine.normalization_execution
+#print axioms ExactFourierCircuits.UniformNormalizationMachine.runtime_log_bound

@@ -1,0 +1,22 @@
+import UniformInitialPreparation
+
+#print axioms ExactFourierCircuits.UniformInitialPreparation.head
+#print axioms ExactFourierCircuits.UniformInitialPreparation.program
+#print axioms ExactFourierCircuits.UniformInitialPreparation.head_length
+#print axioms ExactFourierCircuits.UniformInitialPreparation.program_length
+#print axioms ExactFourierCircuits.UniformInitialPreparation.normalization_code
+#print axioms ExactFourierCircuits.UniformInitialPreparation.traversal_code
+#print axioms ExactFourierCircuits.UniformInitialPreparation.metadata_code
+#print axioms ExactFourierCircuits.UniformInitialPreparation.halt_at
+#print axioms ExactFourierCircuits.UniformInitialPreparation.ell
+#print axioms ExactFourierCircuits.UniformInitialPreparation.len
+#print axioms ExactFourierCircuits.UniformInitialPreparation.copyBase
+#print axioms ExactFourierCircuits.UniformInitialPreparation.alphaBase
+#print axioms ExactFourierCircuits.UniformInitialPreparation.betaBase
+#print axioms ExactFourierCircuits.UniformInitialPreparation.Operands
+#print axioms ExactFourierCircuits.UniformInitialPreparation.Operands.transport
+#print axioms ExactFourierCircuits.UniformInitialPreparation.Ready
+#print axioms ExactFourierCircuits.UniformInitialPreparation.word_setup
+#print axioms ExactFourierCircuits.UniformInitialPreparation.preparationBudget
+#print axioms ExactFourierCircuits.UniformInitialPreparation.preparation_execution
+#print axioms ExactFourierCircuits.UniformInitialPreparation.preparationBudget_isBigO_input

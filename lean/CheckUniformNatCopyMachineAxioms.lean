@@ -1,0 +1,37 @@
+import UniformNatCopyMachine
+
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.program
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.program_length
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.Source
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.Outside
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.Invariant
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.Frame
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.Frame.trans
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.Invariant.withPC
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.sourceAddress
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.loaded
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.destinationAddress
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.stored
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.advanced
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iterationEnd
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.store_bound
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration_heap
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration_frame
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration_invariant
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.NatFrame
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.NatFrame.trans
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration_nat
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.loop
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.zeroState
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.initialized
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.initialize_invariant
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.initialize_frame
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.initialize_nat
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.execution
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.runtime_bound
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.wordBudget
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.wordBudget_polynomial
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.execution_budget
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.isScalar
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.no_scalar_input_root_output

@@ -121,6 +121,14 @@ Work is active on `codex/uniform-fourier`; the [uniform proof contract](docs/uni
 records the stronger operational statement, completed components and remaining
 links. The full uniform theorem is not yet proved.
 
+The fixed initial preparation now has a composed 418-instruction execution
+proof. It initializes and protects the actual CRT permutations while retaining
+all chirp operands and normalization. The next decisive link is the charged
+local topology/coefficient printer and global saving-network scheduler, followed
+by three-transform assembly and its actual runtime bound. The proved larger
+local layer constant is covered by a scaled reserve; realizing that reserve
+operationally is still required.
+
 Every experiment will have explicit memory/work limits, a deadline, input and
 source hashes, retained logs and a stop command. Remote jobs will preserve
 existing services. Each milestone will report implementation, exact checks,

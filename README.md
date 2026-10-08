@@ -26,6 +26,14 @@ checked components from the remaining program and cost obligations. The
 [component receipt](verification/uniform-components.json) explicitly records
 `uniform_algorithm_verified=false`.
 
+The current uniform work includes one fixed 418-instruction startup program.
+Lean proves that it constructs the chirped padded input, signed convolution
+kernel, normalization factor and both CRT permutations, copies the complete
+index metadata out of local workspace, and preserves the prepared banks.
+All startup work is charged and bounded by `O(n)`, with polynomial integer
+words. Concrete local Fourier layers and the pointwise multiplication loop
+are also checked; the fast transform printer and scheduler remain open.
+
 ## Run
 
 The local checkout already has `.venv` and the Lean dependencies installed.

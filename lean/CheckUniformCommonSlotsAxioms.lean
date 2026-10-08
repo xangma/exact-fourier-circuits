@@ -1,0 +1,14 @@
+import UniformCommonSlots
+
+#print axioms ExactFourierCircuits.UniformCommonSlots.scale
+#print axioms ExactFourierCircuits.UniformCommonSlots.slotCount
+#print axioms ExactFourierCircuits.UniformCommonSlots.workingCount
+#print axioms ExactFourierCircuits.UniformCommonSlots.scale_pos
+#print axioms ExactFourierCircuits.UniformCommonSlots.radix_lt_twice_nextPrime
+#print axioms ExactFourierCircuits.UniformCommonSlots.clog_radix_bound
+#print axioms ExactFourierCircuits.UniformCommonSlots.localSlots_bound
+#print axioms ExactFourierCircuits.UniformCommonSlots.local_word_depth
+#print axioms ExactFourierCircuits.UniformCommonSlots.prepared_local_word_depth
+#print axioms ExactFourierCircuits.UniformCommonSlots.slotCount_bound
+#print axioms ExactFourierCircuits.UniformCommonSlots.workingCount_isBigO_paper
+#print axioms ExactFourierCircuits.UniformCommonSlots.workingCount_isLittleO_decimal
