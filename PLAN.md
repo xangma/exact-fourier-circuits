@@ -121,11 +121,12 @@ Work is active on `codex/uniform-fourier`; the [uniform proof contract](docs/uni
 records the stronger operational statement, completed components and remaining
 links. The full uniform theorem is not yet proved.
 
-The fixed initial preparation now has a composed 465-instruction execution
-proof. It initializes and protects the actual CRT permutations while retaining
+The fixed global startup has a composed 465-instruction execution proof;
+a 766-instruction extension now prepares the first axis from the empty state. It initializes and protects the actual CRT permutations while retaining
 all chirp operands and normalization, gathers the input through alpha and
 constructs the inverse beta output table. A shared recursive coefficient DAG,
-a literal FFT instruction decoder and actual tensor-fiber addresses are checked.
+actual FFT row and prepared-power producers, a mixed-tag shifted interpreter
+and tensor-fiber addresses are checked.
 The next decisive link is the charged
 local topology/coefficient printer and global saving-network scheduler, followed
 by three-transform assembly and its actual runtime bound. The proved larger

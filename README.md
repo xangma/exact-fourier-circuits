@@ -35,8 +35,10 @@ All startup work is charged and bounded by `O(n)`, with polynomial integer
 words. Concrete local Fourier layers and the pointwise multiplication loop
 are also checked. A literal FFT row printer, sparse prepared-power loop, local Newton/reciprocal
 producer and one shared coefficient bank are verified components. Canonical
-root extraction preserves the sole master-root request. Whole local compiler
-execution and the global fast transform scheduler remain open.
+root extraction preserves the sole master-root request. A fixed 766-instruction program now joins startup to the first selected axis's
+local preparation. The shifted FFT interpreter handles the actual mixed input
+flags, including prepared padding. Whole local compiler execution and the global
+fast transform scheduler remain open.
 
 ## Run
 

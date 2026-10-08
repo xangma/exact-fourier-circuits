@@ -1,7 +1,7 @@
 {
   "schema": "lean-uniform-components/v1",
   "passed": true,
-  "finished_utc": "2026-10-08T01:24:04.968974+00:00",
+  "finished_utc": "2026-10-08T01:34:44.202809+00:00",
   "lean_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
   "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
   "upstream_files_verified": 51,
@@ -52,6 +52,7 @@
     "CheckUniformGlobalNatPreparationAxioms.lean": "a99c9a2c198b6a02256955992e1f919a504369e2db40cc37253eac1a9106eb27",
     "CheckUniformHadamardPairMachineAxioms.lean": "6378fb968aa7c333fa0242bf274997ea6f0fafd08b71e8a5ed2c1bab0a5e2546",
     "CheckUniformInPlaceMachineAxioms.lean": "b9b50dbfeff919ec2ccf24a2307c15667b1c2e081511b76acf0d802fad7d34b3",
+    "CheckUniformInitialLocalPreparationAxioms.lean": "5fa56c376c5860d56774c415ce440b90256cf9ab09164ee24224b299a2bd719a",
     "CheckUniformInitialPreparationAxioms.lean": "81e2844c7b4fa0461a9b81435642065a6f26c9b7da9c975c40ab6bd82c8dd0e5",
     "CheckUniformInputPermutationPreparationAxioms.lean": "971a97a661296e487e38b59006058315411fa728e3ed1f357d8a1d9206e46921",
     "CheckUniformIntegerScalarMachineAxioms.lean": "e9912fc70e79d7f844241dd22bcbd41e97b8c2d19070c4e8eb5f08a98c3b7571",
@@ -72,6 +73,7 @@
     "CheckUniformNewtonTableMachineAxioms.lean": "3e1daa870772f8d8c23ceaac41aa76030e7e01c06161485233995bc820963ffa",
     "CheckUniformNormalizationMachineAxioms.lean": "ab80d55ccf3252495b9de878e57856486c25cefb98ffb95f354ff584f4a9d134",
     "CheckUniformNormalizationPreparationAxioms.lean": "2810fc9e30a672576ca875d202dabad28c7bf3ebff6bd7c457d4cd6a1d431ca9",
+    "CheckUniformOffsetLinearMachineAxioms.lean": "19f8320eb92f35f507466958122b8c194c3bdd5a217d2c3406bd595f3d724a1a",
     "CheckUniformPaddedInputMachineAxioms.lean": "3555228f74f5a3a3ef285ec03790bfc5dc19bd3f6d5d92491068c3b8fd3f7466",
     "CheckUniformPaddedInputPreparationAxioms.lean": "4f612c60824410a0d32425e3ef42a4433161619606951c9d356b2c214a1c1438",
     "CheckUniformPairDiagonalMachineAxioms.lean": "1fa97bcd04a3a4b27ee2f55a2ab406727ce44c4ca74ede3f9a2780a55021ea50",
@@ -196,7 +198,7 @@
     "TripleSchedule.lean": "4a971ec67830b3802a15edb8deae8b90c3173333beb0a0ee6420ef3bb1edbd9c",
     "TripleStageAction.lean": "a889724eb6c4261e6215b28ddeb430b67e7b9a3c2341cb395d910661bfcff09d",
     "TypedKernelWords.lean": "71338589b396abdfdf98a318d7b8dff9b00a6f83739346f681564daaa7269fca",
-    "UNIFORM_CHECKS.json": "8332e79bed3b74a92610f384eba494fa72539a2fa26fea7a77564186c04167d1",
+    "UNIFORM_CHECKS.json": "fbff7e2f8cdca38420fb363149c9e206848943aaf809b760e231ddf690b77012",
     "UPSTREAM_MANIFEST.json": "164f39279317c670920956d5260da95c02dad03acd140329fc503dc263cd2251",
     "UniformAssembledDirect.lean": "416e0e8ad544a130c967f5cdc226adf3f4551e3753d8ed31e2c6b1b7f470c323",
     "UniformAssembly.lean": "7ecf2fe0401129fcd35f551f231a2ffd7bf1703bb1c772bc28f9a4ce3e55eada",
@@ -236,6 +238,7 @@
     "UniformGlobalNatPreparation.lean": "a5119a9b140d73086d71a3e5cdc767267ae197867402857c754f5ced35ea70ba",
     "UniformHadamardPairMachine.lean": "88262a71650512010363c3a423888d6a1b57a5db2f4576113b1ef7ceec111512",
     "UniformInPlaceMachine.lean": "47480d350ad62b24ad8cc120f2bf97bf8dd74dc9d524ae17b03fa7ab45ee3c9b",
+    "UniformInitialLocalPreparation.lean": "20b88d4533390bd0eca46a30cf0106c4ef2f90abbd508a9c857634983ed0e089",
     "UniformInitialPreparation.lean": "04964c452b37fc58ca78357e393a59b519791fa5c323b0d0fb9ba6616f8b0a9a",
     "UniformInputPermutationPreparation.lean": "05f7c7ee51a9c267d32f9c673f3ed60e55d6d7c92cefdc8c76cd6ee02983876a",
     "UniformIntegerScalarMachine.lean": "10a1be104690c43b834c644e7bb64b185ab952af6da9f2a7ada0e46bfed85155",
@@ -256,6 +259,7 @@
     "UniformNewtonTableMachine.lean": "2b2c1ebdc5b09cd43d377985f36d831c1d85420a1ef71cb4ee2c132a6c43323e",
     "UniformNormalizationMachine.lean": "ff149cd65bc564cf899d0111b113f6fe09b53dda79cc0b043ca42988e057462c",
     "UniformNormalizationPreparation.lean": "10483267ac81b0f966917c2cc864fe782a147545ba6edb54a8860955a351b711",
+    "UniformOffsetLinearMachine.lean": "5fd63d6b8195efb74a0e428721f0b3a54b2aeeac1d6164efeab01ad664c4bfe6",
     "UniformPaddedInputMachine.lean": "6e63121224276d32a5836f94108b86d0fdf2381aab3989633cb73764b581df7f",
     "UniformPaddedInputPreparation.lean": "b21e9aa67e9eba7090e1cd852b2e6e064a139b7d6358eec640fc36a2c64a2e7d",
     "UniformPairDiagonalMachine.lean": "cecb40a835f9352c46686ee529e801e54ed266e44f6997d386f0996b9c677629",
@@ -295,7 +299,7 @@
     "UniformWorkingPreparation.lean": "060da6dacf00de1a6002af31f1ae9416e6be0a38e354d24617e1d474407bee97",
     "UniformWorkspacePlanner.lean": "92b32717c436b1fdcb861638bd2c2d28aa0836d44f2b0e246e8dee69616ff729",
     "lake-manifest.json": "7b626f9e30d660141cb94e48851728dd8a1bd2b65028ba765bae7de0e2582639",
-    "lakefile.lean": "91e21caf496151d09b2a264b1850c56b5337dfff2e2114ca27a818c0e9d7a0f6",
+    "lakefile.lean": "a19e5125056e260df1c8153f5d511c7868a49e52c42e1d22b973501090202642",
     "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
   },
   "verification_script_sha256": "04656ec5586af2e6a8d864d3d98e344937ab037d093b4fe5f4677cf8dda132a0",
@@ -21517,6 +21521,634 @@
       "Quot.sound",
       "propext"
     ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.Ready": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.entered": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.rawPointer": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.pointer": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.tagState": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.leftPointer": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.leftState": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.rightPointer": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.rightState": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.leftValue": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.rightValue": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.dispatch": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.arithmeticState": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.computed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.stored": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.advanced": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.rowEnd": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.prefix_runs": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.dispatch_runs": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.suffix_runs": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.row_runs": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.row_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.totalCost": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.totalCost_bound": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.ValidSchedule": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.ValidSchedule.runs": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.ValidSchedule.pc": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.ValidSchedule.counters": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.Counters": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.Interior": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.store_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.step_interior": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.initialized": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.startup_bounded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.initialized_counters": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.exit_executes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.interpreted_schedule": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.Frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.Frame.refl": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.Frame.trans": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.row_full_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.initialized_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.Outside": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.ValidSchedule.frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.ValidSchedule.outside": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.interpreted_schedule_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.shiftedRow": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.rows": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.rows_length": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.Entry": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.Frontier": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.initialized_frontier": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.row_ready": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.advance": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.advance_frontier": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.rowsFrom": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.rowsFrom_succ": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.finish": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.finish_valid": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.finalState": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.compiled_schedule": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.Values": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.Outputs": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.final_values": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.final_outputs": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.bounded_execution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.specified_outputs": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.table_of_printer": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.powers_of_bank": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.envelope_power": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.FFT.specified_execution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.dependencyEval_congr": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.dependencyPrefix": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.dependencyPrefix_stable": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.dependencyValue": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.dependencyValue_input": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.dependencyValue_gate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.dependencyPrefix_prepared": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.dependencyValue_prepared": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.scalarValue": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.scalar_ext": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.scalarValue_input": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.leftScalar": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.rightScalar": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.eval_row": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.shiftedRow": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.rows": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.rows_length": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.Entry": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.Frontier": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.initialized_frontier": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.row_ready": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.advance": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.advance_frontier": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.rowsFrom": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.rowsFrom_succ": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.finish": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.finish_valid": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.finalState": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.compiled_schedule": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.Values": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.Outputs": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.final_values": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.final_outputs": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.bounded_execution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.output_value": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.output_dependency": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.output_specified_value": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.output_prepared": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.specified_execution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.prepared_execution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.entry_of_producers": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInitialLocalPreparation.axis": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInitialLocalPreparation.radix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInitialLocalPreparation.localTime": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInitialLocalPreparation.head": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInitialLocalPreparation.program": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInitialLocalPreparation.head_length": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInitialLocalPreparation.program_length": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInitialLocalPreparation.startup_code": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInitialLocalPreparation.argument_at": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInitialLocalPreparation.local_code": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInitialLocalPreparation.halt_at": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInitialLocalPreparation.setAxis": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInitialLocalPreparation.setAxis_saved": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInitialLocalPreparation.setAxis_metadata": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInitialLocalPreparation.word_setup": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInitialLocalPreparation.preparationBudget": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInitialLocalPreparation.preparation_execution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInitialLocalPreparation.startupBudget_isBigO_input": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
     "ExactFourierCircuits.UniformMachine.NatOp": [],
     "ExactFourierCircuits.UniformMachine.FieldOp": [],
     "ExactFourierCircuits.UniformMachine.Instruction": [],
@@ -21925,7 +22557,13 @@
     "ExactFourierCircuits.UniformLocalPreparationReferences.Macro.cost": [],
     "ExactFourierCircuits.UniformScalarCopyMachine.program": [],
     "ExactFourierCircuits.UniformScalarCopyMachine.program_length": [],
-    "ExactFourierCircuits.UniformScalarCopyMachine.wordBudget": []
+    "ExactFourierCircuits.UniformScalarCopyMachine.wordBudget": [],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.program": [],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.program_length": [],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.rowCost": [],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.rowCost_bound": [],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.arithmeticPC": [],
+    "ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.dependencyEval": []
   },
   "components_verified": true,
   "uniform_algorithm_verified": false,

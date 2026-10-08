@@ -8489,3 +8489,343 @@ ExactFourierCircuits.UniformRadixRowTableMachine.canonical_encoded (K : ℕ)
 'ExactFourierCircuits.UniformScalarCopyMachine.execution_budget' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.specified_execution (k A d : ℕ)
+  (input : Fin (ExactFourierCircuits.UniformRadixTwoDAG.width k) → ExactFourierCircuits.UniformMachine.Scalar)
+  (s : ExactFourierCircuits.UniformMachine.State) (B : ℕ)
+  (h :
+    ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.Entry k A d
+      (OAI.ExactFourier.zeta (ExactFourierCircuits.UniformRadixTwoDAG.width k)) input s)
+  (hB :
+    d + 4 * ExactFourierCircuits.UniformRadixTwoDAG.count k + (A + ExactFourierCircuits.UniformRadixTwoDAG.width k) +
+        42 ≤
+      B)
+  (hs : ExactFourierCircuits.UniformMachine.WordBound B s) :
+  ∃ u t,
+    ExactFourierCircuits.UniformMachine.BoundedExecution ExactFourierCircuits.UniformOffsetLinearMachine.program
+        (ExactFourierCircuits.UniformRadixTwoDAG.width k) (fun i => (input i).value) B s t u ∧
+      t ≤ 22 * ExactFourierCircuits.UniformRadixTwoDAG.count k + 5 ∧
+        ExactFourierCircuits.UniformOffsetLinearMachine.Frame s u ∧
+          ExactFourierCircuits.UniformOffsetLinearMachine.Outside (A + ExactFourierCircuits.UniformRadixTwoDAG.width k)
+              (ExactFourierCircuits.UniformRadixTwoDAG.count k) s.scalarHeap u ∧
+            ∀ (i : Fin (ExactFourierCircuits.UniformRadixTwoDAG.width k)),
+              u.scalarHeap (A + ExactFourierCircuits.UniformRadixTwoDAG.count k + ↑i) =
+                some
+                  {
+                    value :=
+                      (OAI.ExactFourier.fourierMatrix (ExactFourierCircuits.UniformRadixTwoDAG.width k)).mulVec
+                        (fun i => (input i).value) i,
+                    dependent :=
+                      ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.dependencyValue k
+                        (fun i => (input i).dependent) (ExactFourierCircuits.UniformRadixTwoDAG.count k + ↑i) }
+ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.prepared_execution (k A d : ℕ)
+  (input : Fin (ExactFourierCircuits.UniformRadixTwoDAG.width k) → ExactFourierCircuits.UniformMachine.Scalar)
+  (s : ExactFourierCircuits.UniformMachine.State) (B : ℕ)
+  (hp : ∀ (i : Fin (ExactFourierCircuits.UniformRadixTwoDAG.width k)), (input i).dependent = false)
+  (h :
+    ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.Entry k A d
+      (OAI.ExactFourier.zeta (ExactFourierCircuits.UniformRadixTwoDAG.width k)) input s)
+  (hB :
+    d + 4 * ExactFourierCircuits.UniformRadixTwoDAG.count k + (A + ExactFourierCircuits.UniformRadixTwoDAG.width k) +
+        42 ≤
+      B)
+  (hs : ExactFourierCircuits.UniformMachine.WordBound B s) :
+  ∃ u t,
+    ExactFourierCircuits.UniformMachine.BoundedExecution ExactFourierCircuits.UniformOffsetLinearMachine.program
+        (ExactFourierCircuits.UniformRadixTwoDAG.width k) (fun i => (input i).value) B s t u ∧
+      t ≤ 22 * ExactFourierCircuits.UniformRadixTwoDAG.count k + 5 ∧
+        ExactFourierCircuits.UniformOffsetLinearMachine.Frame s u ∧
+          ExactFourierCircuits.UniformOffsetLinearMachine.Outside (A + ExactFourierCircuits.UniformRadixTwoDAG.width k)
+              (ExactFourierCircuits.UniformRadixTwoDAG.count k) s.scalarHeap u ∧
+            ∀ (i : Fin (ExactFourierCircuits.UniformRadixTwoDAG.width k)),
+              u.scalarHeap (A + ExactFourierCircuits.UniformRadixTwoDAG.count k + ↑i) =
+                some
+                  (ExactFourierCircuits.UniformRadixTwoMachine.preparedScalar
+                    ((OAI.ExactFourier.fourierMatrix (ExactFourierCircuits.UniformRadixTwoDAG.width k)).mulVec
+                      (fun i => (input i).value) i))
+ExactFourierCircuits.UniformOffsetLinearMachine.FFT.envelope_power (k A d : ℕ) :
+  d + 4 * ExactFourierCircuits.UniformRadixTwoDAG.count k + (A + ExactFourierCircuits.UniformRadixTwoDAG.width k) + 42 ≤
+    A + d + 2 ^ (2 * k + 8)
+'ExactFourierCircuits.UniformOffsetLinearMachine.program' does not depend on any axioms
+'ExactFourierCircuits.UniformOffsetLinearMachine.program_length' does not depend on any axioms
+'ExactFourierCircuits.UniformOffsetLinearMachine.rowCost' does not depend on any axioms
+'ExactFourierCircuits.UniformOffsetLinearMachine.rowCost_bound' does not depend on any axioms
+'ExactFourierCircuits.UniformOffsetLinearMachine.Ready' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.entered' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.rawPointer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.pointer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.tagState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.leftPointer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.leftState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.rightPointer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.rightState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.leftValue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.rightValue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.dispatch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.arithmeticPC' does not depend on any axioms
+'ExactFourierCircuits.UniformOffsetLinearMachine.arithmeticState' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.computed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.stored' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.advanced' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.rowEnd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.prefix_runs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.dispatch_runs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.suffix_runs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.row_runs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.row_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.totalCost' depends on axioms: [propext]
+'ExactFourierCircuits.UniformOffsetLinearMachine.totalCost_bound' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.ValidSchedule' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.ValidSchedule.runs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.ValidSchedule.pc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.ValidSchedule.counters' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.Counters' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.Interior' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.store_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.step_interior' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.initialized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.startup_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.initialized_counters' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.exit_executes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.interpreted_schedule' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.Frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.Frame.refl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.Frame.trans' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.row_full_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.initialized_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.Outside' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.ValidSchedule.frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.ValidSchedule.outside' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.interpreted_schedule_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.shiftedRow' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.rows' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.rows_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.Entry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.Frontier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.initialized_frontier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.row_ready' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.advance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.advance_frontier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.rowsFrom' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.rowsFrom_succ' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.finish' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.finish_valid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.finalState' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.compiled_schedule' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.Values' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.Outputs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.final_values' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.final_outputs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.bounded_execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.specified_outputs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.table_of_printer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.powers_of_bank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.envelope_power' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.FFT.specified_execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.dependencyEval' does not depend on any axioms
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.dependencyEval_congr' depends on axioms: [propext]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.dependencyPrefix' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.dependencyPrefix_stable' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.dependencyValue' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.dependencyValue_input' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.dependencyValue_gate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.dependencyPrefix_prepared' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.dependencyValue_prepared' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.scalarValue' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.scalar_ext' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.scalarValue_input' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.leftScalar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.rightScalar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.eval_row' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.shiftedRow' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.rows' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.rows_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.Entry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.Frontier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.initialized_frontier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.row_ready' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.advance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.advance_frontier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.rowsFrom' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.rowsFrom_succ' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.finish' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.finish_valid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.finalState' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.compiled_schedule' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.Values' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.Outputs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.final_values' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.final_outputs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.bounded_execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.output_value' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.output_dependency' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.output_specified_value' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.output_prepared' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.specified_execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.prepared_execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformOffsetLinearMachine.TaggedFFT.entry_of_producers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInitialLocalPreparation.axis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformInitialLocalPreparation.radix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformInitialLocalPreparation.localTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInitialLocalPreparation.head' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformInitialLocalPreparation.program' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformInitialLocalPreparation.head_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInitialLocalPreparation.program_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInitialLocalPreparation.startup_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInitialLocalPreparation.argument_at' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInitialLocalPreparation.local_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInitialLocalPreparation.halt_at' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformInitialLocalPreparation.setAxis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformInitialLocalPreparation.setAxis_saved' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInitialLocalPreparation.setAxis_metadata' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInitialLocalPreparation.word_setup' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformInitialLocalPreparation.preparationBudget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInitialLocalPreparation.preparation_execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInitialLocalPreparation.startupBudget_isBigO_input' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

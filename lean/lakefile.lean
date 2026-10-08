@@ -283,3 +283,7 @@ lean_lib UniformGlobalLocalPreparation
 lean_lib UniformLocalPreparationReferences
 
 lean_lib UniformScalarCopyMachine
+
+lean_lib UniformOffsetLinearMachine
+
+lean_lib UniformInitialLocalPreparation
