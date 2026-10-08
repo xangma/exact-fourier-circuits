@@ -69,8 +69,12 @@ if set(environment_checks) - set(groups):
 for module, names in environment_checks.items():
     prefix = f'_private.{module}.'
     checker = Path(f'Check{module}Axioms.lean').read_text()
+    def permitted_generated_name(name):
+        return (name.startswith(f'ExactFourierCircuits.{module}.') and
+                f'._@.{module}.' in name and
+                f'name.toString == "{name}"' in checker)
     if (len(names) != len(set(names)) or set(names) & expected or
-            any(not name.startswith(prefix) for name in names) or
+            any(not (name.startswith(prefix) or permitted_generated_name(name)) for name in names) or
             f'"{prefix}".isPrefixOf name.toString' not in checker or
             'collectAxioms name' not in checker):
         raise SystemExit(f'Invalid explicit environment audit: {module}')
@@ -82,10 +86,10 @@ for module, declarations in groups.items():
     if re.findall(r'^#print axioms (\S+)', checker, re.M) != declarations:
         raise SystemExit(f'Checker differs from declaration registry: {module}')
 results = {}
-for match in re.finditer(r"'?([A-Za-z0-9_.]+)'? depends on axioms:\s*\[([^\]]*)\]", text):
+for match in re.finditer(r"'?([A-Za-z0-9_.@]+)'? depends on axioms:\s*\[([^\]]*)\]", text):
     name, names = match.groups()
     results[name] = {a.strip() for a in names.split(',') if a.strip()}
-for match in re.finditer(r"'?([A-Za-z0-9_.]+)'? does not depend on any axioms", text):
+for match in re.finditer(r"'?([A-Za-z0-9_.@]+)'? does not depend on any axioms", text):
     results[match.group(1)] = set()
 if set(results) != expected:
     raise SystemExit(f'Missing/unexpected axiom reports: {expected ^ set(results)}')

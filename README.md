@@ -45,8 +45,31 @@ root. A selected-axis copier retains the five actual Newton/reciprocal coefficie
 lanes above every local workspace. A fixed 221-instruction assembly now gathers
 strided inputs, writes prepared-zero padding and executes the FFT without
 host-side phase writes.
+A fixed 935-instruction program now prepares and retains every selected axis's
+local seed bank from empty heaps. The 53-instruction selected DFS copies its
+radices from protected metadata and enumerates all working addresses in at most
+84*L+6 charged steps. A fixed 989-instruction program joins these phases from
+empty heaps with charged transitions. A fixed 41-instruction transfer reads the independent beta
+inverse and alpha banks between transforms in exactly 18*L+25 steps.
+A fixed 769-instruction program now executes exact dyadic cyclic convolution,
+including all three FFTs, prepared-kernel multiplication, normalization and index
+reversal. All-axis preparation costs O(log^5 n)=o(n); the complete 989-instruction
+startup and traversal costs O(n).
 Printing the full balanced local compiler and executing the global fast scheduler
 remain open.
+A fixed 66-instruction tensor monomial interpreter now derives its action from
+physical permutation and coefficient banks, with at most 153*L+10 selected-length
+steps. A shifted 32-instruction scalar-DAG interpreter has certified divisions
+and fresh leaf/result placement. A 49-instruction producer constructs signed
+rational leaves from physical integer rows; a 70-instruction assembly copies
+root leaves and constructs the complete prepared leaf bank. A 39-instruction
+printer now builds interpreter rows from a physical typed DAG tape. One continuous
+157-instruction program constructs leaves, prints those rows and evaluates the DAG,
+charging every phase transition. A 17-instruction scan prints distinct borrowed
+coordinates outside both block intervals; its selected-block theorem derives
+capacity from the measured graph size. A 20-instruction producer constructs an
+identity permutation and diagonal coefficient bank for the tensor interpreter.
+Printing the actual balanced compiler tape remains an obligation.
 
 ## Run
 
@@ -61,7 +84,15 @@ cd ~/repos/exact-fourier-circuits
 ./scripts/verify-projection.sh
 ./scripts/verify-construction.sh
 ./scripts/verify-uniform.sh
+python3 scripts/check-uniform-bytecode.py
 ```
+
+The bytecode check exports the current Lean programs and runs 84 exact convolution
+cases, three empty-heap startup cases and nine CRT-transfer cases, including
+different and coincident CRT maps. It checks dependency tags and charged steps
+with rational arithmetic. These bounded diagnostics complement the Lean proofs;
+the native transform inputs in the transfer tests are explicit caller fixtures.
+Results are written to `logs/uniform-bytecode/fixtures.json`.
 
 For a fresh checkout, `./scripts/setup.sh` installs the Python environment,
 the pinned Lean toolchain, and the pinned Mathlib dependencies/cache, then

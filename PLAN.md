@@ -121,6 +121,14 @@ Work is active on `codex/uniform-fourier`; the [uniform proof contract](docs/uni
 records the stronger operational statement, completed components and remaining
 links. The full uniform theorem is not yet proved.
 
+The tensor monomial interpreter now has a physical-bank-to-action proof with a
+linear selected-length instruction bound. The shifted scalar-DAG interpreter,
+signed-rational leaf producer and assembled root/rational leaf preparation are
+checked. Next, assemble actual topology printing and DAG execution, finish the
+integer workspace scan, and connect emitted local layers to the global saving
+scheduler. Physical topology/rational tapes remain honest entry premises until
+their producers are proved.
+
 The fixed global startup has a composed 465-instruction execution proof;
 a 766-instruction extension now prepares the first axis from the empty state. It initializes and protects the actual CRT permutations while retaining
 all chirp operands and normalization, gathers the input through alpha and
@@ -132,7 +140,12 @@ single-master-root typed coefficient schedule now check. Identity-padded slot
 synchronization plus the generated alpha/beta CRT maps proves the working DFT
 identity. Actual dyadic-root sizing/extraction, retained local coefficient lanes,
 and strided input gathering plus prepared padding are now charged RAM programs.
-The next decisive link is the charged balanced local
+All-axis seed preparation now runs from empty heaps in one fixed 935-instruction
+program. Selected traversal and the beta-to-alpha array transfer have linear
+charged instruction bounds. Actual all-axis preparation is O(log^5 n)=o(n), and
+the joined 989-instruction startup/traversal is O(n). Dyadic cyclic convolution
+now executes all three FFTs and normalization in one fixed 769-instruction
+program. The next decisive link is the charged balanced local
 topology/coefficient printer and global saving-network scheduler, followed
 by three-transform assembly and its actual runtime bound. The proved larger
 local layer constant is covered by a scaled reserve; realizing that reserve
@@ -143,3 +156,13 @@ source hashes, retained logs and a stop command. Remote jobs will preserve
 existing services. Each milestone will report implementation, exact checks,
 Lean verification and observed CUDA results separately. A failed check will
 trigger reproduction and competing-hypothesis tests before another patch.
+
+The current local-compiler milestone closes row relocation and DAG execution:
+a 39-instruction printer consumes a physical typed node tape, and a continuous
+157-instruction assembly constructs leaves, prints rows and evaluates all nodes.
+A 17-instruction scan realizes the paper's ascending borrowed-coordinate choice
+under its actual measured capacity bound. A 20-instruction diagonal-bank producer
+feeds the physical tensor interpreter. These components retain the master root,
+protected metadata and unrelated banks. The typed/rational tape producer, conjugate
+coefficient preparation, balanced local compiler and recursive global scheduler
+remain required before the stronger theorem can be claimed.
