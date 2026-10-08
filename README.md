@@ -70,6 +70,15 @@ coordinates outside both block intervals; its selected-block theorem derives
 capacity from the measured graph size. A 20-instruction producer constructs an
 identity permutation and diagonal coefficient bank for the tensor interpreter.
 Printing the actual balanced compiler tape remains an obligation.
+A 58-instruction measured workspace search now computes the paper's largest
+fitting ragged chunk, including the unit-width boundary. A 336-instruction program
+prepares the inverse master root and evaluates the same coefficient tapes twice,
+producing original and conjugate banks. A 30-instruction producer then constructs
+the explicit zero-free shift and reciprocal differences from those physical banks.
+An all-axis directory driver constructs complete diagonal banks; its continuous
+108-instruction producer/tensor assembly derives its action from actual banks.
+Caller setup for that global pass and the complete fast scheduler remain open.
+
 
 ## Run
 
@@ -92,7 +101,9 @@ cases, three empty-heap startup cases and nine CRT-transfer cases, including
 different and coincident CRT maps. It checks dependency tags and charged steps
 with rational arithmetic. These bounded diagnostics complement the Lean proofs;
 the native transform inputs in the transfer tests are explicit caller fixtures.
-Results are written to `logs/uniform-bytecode/fixtures.json`.
+It also runs 180 exact zero-free diagonal cases and six guard controls from
+explicit prepared coefficient/conjugate caller banks. Results are written to
+`logs/uniform-bytecode/fixtures.json` and `logs/uniform-bytecode/zero-free-fixtures.json`.
 
 For a fresh checkout, `./scripts/setup.sh` installs the Python environment,
 the pinned Lean toolchain, and the pinned Mathlib dependencies/cache, then

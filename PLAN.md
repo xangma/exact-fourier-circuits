@@ -163,6 +163,12 @@ a 39-instruction printer consumes a physical typed node tape, and a continuous
 A 17-instruction scan realizes the paper's ascending borrowed-coordinate choice
 under its actual measured capacity bound. A 20-instruction diagonal-bank producer
 feeds the physical tensor interpreter. These components retain the master root,
-protected metadata and unrelated banks. The typed/rational tape producer, conjugate
-coefficient preparation, balanced local compiler and recursive global scheduler
-remain required before the stronger theorem can be claimed.
+protected metadata and unrelated banks. The typed/rational tape producer, complete balanced local compiler and recursive
+global scheduler remain required before the stronger theorem can be claimed.
+
+Measured workspace selection now executes all ragged pair checks with actual
+integer instructions. Original/conjugate coefficient preparation and the explicit
+zero-free shift each have charged physical execution proofs. The next local
+compiler milestone prints the convolution topology from its integer height, then
+joins the six corrected-cross graphs, layers and dirty replay. In parallel, the
+all-axis diagonal pass must install its caller headers from actual empty startup.
