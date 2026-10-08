@@ -26,7 +26,10 @@ not yet been proved here. Work on that target is active on `codex/uniform-fourie
 The [uniform proof contract](docs/uniform-proof-contract.md) distinguishes the
 checked components from the remaining program and cost obligations. The
 [component receipt](verification/uniform-components.json) explicitly records
-`uniform_algorithm_verified=false`.
+`uniform_algorithm_verified=false`. The [latest checkpoint](docs/uniform-closeout.md)
+records the physical conjugate-spectrum, generated-count six-C matching and
+complete tensor-fiber implementations, with their remaining caller and global
+scheduler obligations.
 
 The current uniform work includes one fixed 465-instruction startup program.
 Lean proves that it constructs the chirped padded input, signed convolution
@@ -147,18 +150,20 @@ one C round in 23 instructions and `17*M+7` steps; the 45-instruction
 `UniformPackedPairScatterPreparation` joins charged header setup, that round
 and inverse scatter in exactly `17*M+9*L+21` steps. Its native-coordinate
 values, tail entries and actual OR flags are proved. Matching count remains
-an ordinary caller input; six-C matching execution and its numeric workspace
-restoration remain open.
+an ordinary caller input for that earlier C-round wrapper. The new 422-instruction
+six-C matching loop instead reads generated Nat894 and derives its table and
+inverse from actual packing. Continuous producer composition and full local
+workspace restoration remain open.
 
-Eight new modules are integrated and passed default normal
-Lean builds; the complete fresh audit verified 168 modules and
-19,540 permitted axiom closures. The fresh 38-suite diagnostic run passed
-15,613 exact cases. Canonical selected seed/chunk allocation now fits the unchanged
-`(n+2)^19` budget. The 1317-instruction canonical caller computes its allocation
+Nine new modules pass default normal Lean builds and extend the registry to
+177 modules. The [latest checkpoint](docs/uniform-closeout.md) records full audit
+results and exact component boundaries. Canonical selected seed/chunk allocation
+fits the unchanged `(n+2)^19` budget; its 1317-instruction caller derives allocation
 headers from the actual saved length and executes SeedChunk continuously.
-Next are conjugate spectra, six-C matching execution, fiber movement, per-axis
-assembly and the recursive scheduler.
-The stronger uniform theorem remains unproved and has no registered proof.
+Physical conjugate spectra, six-C matching and complete fiber movement are now
+checked in separate programs. Continuous local replay, per-axis assembly and the
+recursive scheduler remain. The stronger uniform theorem is still unproved and
+has no registered proof.
 
 
 ## Run

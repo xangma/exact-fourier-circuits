@@ -1,0 +1,111 @@
+import UniformFixedCoefficientCodec
+import Lean
+set_option linter.auxLemma false
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EncodedMacro
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EncodedMacro._sizeOf_1
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EncodedMacro._sizeOf_inst
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EncodedMacro.casesOn
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EncodedMacro.ctorElim
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EncodedMacro.ctorElimType
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EncodedMacro.ctorIdx
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EncodedMacro.edge
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EncodedMacro.edge.elim
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EncodedMacro.edge.inj
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EncodedMacro.edge.injEq
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EncodedMacro.edge.noConfusion
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EncodedMacro.edge.sizeOf_spec
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EncodedMacro.noConfusion
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EncodedMacro.noConfusionType
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EncodedMacro.rec
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EncodedMacro.recOn
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EncodedMacro.shear
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EncodedMacro.shear.congr_simp
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EncodedMacro.shear.elim
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EncodedMacro.shear.inj
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EncodedMacro.shear.injEq
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EncodedMacro.shear.noConfusion
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EncodedMacro.shear.sizeOf_spec
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EventsSmall
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EventsSmall._f
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EventsSmall._sunfold
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EventsSmall._unsafe_rec
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.EventsSmall.match_1
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.G_small
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.G_small._simp_1_1
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.G_small._simp_1_2
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.J_small
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.J_small._simp_1_1
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.MacroSmall
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.MacroSmall.eq_1
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.MacroSmall.eq_2
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.MacroSmall.match_1
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.R_small
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.Small
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.Small._proof_1
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.Small.eq_1
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.Small.neg
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.TapeSmall
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.V_small
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.V_small._simp_1_1
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.V_small._simp_1_2
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.actual_block_small
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.code
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.code._proof_1
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.code.eq_1
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.code_round_trip
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.coefficient_small
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.constant_rows_small
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.decode
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.decode.eq_1
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.decodeMacro
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.decodeMacro.eq_1
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.decodeMacro.eq_2
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.decodeMacro.match_1
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.decode_code
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.decode_encodeMacro
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.decode_encodeTape
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.decode_real
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.decode_small
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.edges_small
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.encodeMacro
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.encodeMacro._proof_1
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.encodeMacro._proof_2
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.encodeMacro._proof_3
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.encodeMacro._proof_4
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.encodeMacro.eq_1
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.encodeTape
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.encodeTape._f
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.encodeTape._proof_1
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.encodeTape._proof_2
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.encodeTape._sunfold
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.encodeTape._unsafe_rec
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.encodeTape.match_1
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.encoded_fixed_block_compile
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.encoded_shear_conjugate
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.event_small
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.events_append
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.finish_small
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.fixed_block_small
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.local_schedule_small
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.reverse_constant_rows_small
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.reverse_local_schedule_small
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.reverse_row_schedule_small
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.reverse_row_small
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.row_schedule_small
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.row_small
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.schedule_small
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.small_half
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.small_neg_half
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.small_one
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.small_zero
+#print axioms ExactFourierCircuits.UniformFixedCoefficientCodec.tape_append
+open Lean Elab Command in
+run_cmd do
+ let env←getEnv
+ for (name,_) in env.constants.toList do
+  if "_private.UniformFixedCoefficientCodec.".isPrefixOf name.toString then
+   let axioms←collectAxioms name
+   logInfo m!"'{name}' depends on axioms: {axioms.toList}"
+   for ax in axioms do
+    unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
+     throwError m!"Forbidden axiom {ax} in {name}"

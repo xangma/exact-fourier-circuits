@@ -258,16 +258,20 @@ cost is `29 + sum_j(completeRuntime(r_j)+75*r_j+172)`. A charged
 1460-instruction wrapper starts from empty heaps, retaining both directories,
 metadata, operands and the single specified master-root request.
 
-Next, produce actual conjugate frequency coefficients. Reuse Rank90 and
-Spectrum297 on the retained conjugate H/G lanes, then prove and execute frequency
-reversal within each of the seven dyadic blocks. Retained time-domain conjugates
-alone do not prove this spectrum bank. Gather each actual matching coefficient
-and its conjugate with charged reads, covering signed and normalization cases.
-The existing ZeroFreeDiagonal30 can then prepare a shared nonzero shift and
-shifted inverses; prove the two-three-C split and physically prepare all four
-scales using the retained 5/4 and 4/5 constants. Execute six packed rounds and
-scatter, proving numeric source/workspace restoration with conservative tags.
-Then assemble fiber iteration, the corrected saving network, per-axis execution,
-recursive batching and chirp/output routing, including the direct small-axis
-fallback. `uniform_algorithm_verified` remains false; the stronger theorem
-has no registered proof.
+Physical conjugate spectra, row-pointer loading, internally prepared six-C
+matching execution and complete tensor-fiber movement are now implemented in
+separate fixed RAM programs. The spectrum producer uses the actual compact
+inverse-H lane3, not Newton-H lane0, and proves every coefficient in all seven
+blocks. The matching loop reads its count from actual Nat894 and consumes
+producer-derived rows and inverse packing. The whole-fiber gather/scatter
+computes axis products once, with linear movement cost and the same canonical
+word bound. Fixed network coefficients have a five-value static codec.
+
+The [latest checkpoint](docs/uniform-closeout.md) records exact interfaces,
+entry boundaries, focused diagnostics and the final audit. Next are a continuous
+conjugate-producer-to-matching caller, complete forward/inverse local replay,
+the corrected saving-network RAM implementation, recursive batches and
+all-axis/chirp/output routing. The actual full program must realize the count
+majorant and a common polynomial word bound before `UniformDFTStatement` can
+close. `uniform_algorithm_verified` remains false; there is no registered
+stronger theorem.

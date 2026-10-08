@@ -4,6 +4,16 @@ open Lake DSL
 package ExactFourierCircuits where
   leanOptions := #[⟨`autoImplicit, false⟩]
 
+lean_lib UniformAllTensorFibersCopyMachine
+lean_lib UniformPackedMatchingShearMachine
+lean_lib UniformSpectrumReversalMachine
+lean_lib UniformConjugateRankSpectrumPreparation
+lean_lib UniformFixedCoefficientCodec
+lean_lib UniformTensorFiberCopyMachine
+lean_lib UniformSelectedAxisFiberPreparation
+lean_lib UniformMatchingConjugateLoadMachine
+lean_lib UniformZeroFreePairShearMachine
+
 require mathlib from git
   "https://github.com/leanprover-community/mathlib4.git" @ "d13f23b723b8a846827a245b89c10fc7d3f11612"
 

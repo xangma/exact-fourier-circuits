@@ -1,0 +1,111 @@
+import UniformTensorFiberCopyMachine
+import Lean
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Cursor
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Cursor.casesOn
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Cursor.copied
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Cursor.header
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Cursor.index
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Cursor.mk
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Cursor.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Cursor.one
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Cursor.outside
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Cursor.rec
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Cursor.recOn
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Frame
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Frame.casesOn
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Frame.mk
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Frame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Frame.natHeap
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Frame.natReg
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Frame.outputs
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Frame.rec
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Frame.recOn
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Frame.refl
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Frame.roots
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Frame.scalarReg
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Frame.trans
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Header
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Header.casesOn
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Header.destination
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Header.destinationStride
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Header.frame
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Header.frame._proof_1_1
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Header.frame._proof_1_2
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Header.frame._proof_1_3
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Header.frame._proof_1_4
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Header.frame._proof_1_5
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Header.length
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Header.mk
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Header.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Header.rec
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Header.recOn
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Header.source
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Header.sourceStride
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Header.withPC
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Outside
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Source
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.body
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.body.eq_1
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.body_code
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.boot
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.boot.eq_1
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.boot_code
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.boot_frame
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.boot_frame._proof_1_2
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.boot_frame._proof_1_3
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.branch_at
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.execution
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.halt_at
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iteration
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iteration._proof_1_1
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iteration._proof_1_2
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iteration._proof_1_3
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iteration._proof_1_4
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iteration._proof_1_6
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iteration._proof_1_8
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iterationEnd
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iterationEnd.eq_1
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iteration_cursor
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iteration_cursor._proof_1_3
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iteration_cursor._proof_1_4
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iteration_frame
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iteration_frame._proof_1_10
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iteration_frame._proof_1_11
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iteration_frame._proof_1_12
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iteration_frame._proof_1_13
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iteration_frame._proof_1_3
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iteration_frame._proof_1_4
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iteration_frame._proof_1_5
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iteration_frame._proof_1_6
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iteration_frame._proof_1_7
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iteration_frame._proof_1_8
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iteration_frame._proof_1_9
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.iteration_heap
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.jump_at
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.loop
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.loop._proof_1_1
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.loop._proof_1_2
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.loop._proof_1_3
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.program
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.program_length
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.runtime_linear
+#print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.runtime_linear._proof_1_1
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformTensorFiberCopyMachine.".isPrefixOf name.toString then
+   let axioms ← collectAxioms name
+   logInfo m!"'{name}' depends on axioms: {axioms.toList}"
+   for ax in axioms do
+    unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
+     throwError m!"Forbidden axiom {ax} in {name}"
