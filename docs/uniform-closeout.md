@@ -69,10 +69,11 @@ returns and recursive batches. Metadata decoding alone is insufficient.
 3. Produce and pack genuine matching rows across all CRT axes. The new selected
 startup handles one axis, whose two-slot sectors have `k=1`; therefore the saving
 network gets `q=floor(k/1000000)=0`. Its convolution FFT exponent is not this sector
-exponent. The global compiler must supply enough simultaneous axes and explicitly
-handle the possible final radix1 before instantiating packing axes (which require
-radix at least2). Directory generation alone does not close that producer/action
-link or yield a positive-q saving instance.
+exponent. The global compiler must supply enough simultaneous axes and actual
+per-axis matching rows. Packing axes require radix at least2; the positive-length
+working-length selection already ensures this, including its final binary factor.
+Directory generation alone does not close the producer/action link or yield a
+positive-q saving instance.
 4. Assemble every axis, chirp/convolution and output routing in one fixed program,
 with one root request and one common polynomial word bound. Bound this same
 program's actual charged instructions by the claimed fast runtime. The old

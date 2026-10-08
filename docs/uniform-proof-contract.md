@@ -129,8 +129,9 @@ Complete six-phase physical cross replay, residual recursive C geometry, the
 remaining saving-network opcodes, recursive batching, all-axis scheduling and
 chirp/output routing remain open. A selected one-axis two-slot sector has k=1,
 hence q=0 for the fixed m=1000000 network; its FFT exponent is not a saving-sector
-exponent. The global compiler needs genuine simultaneous per-axis rows and must
-handle the possible selected radix1 before packing. Their common word bound,
+exponent. The global compiler needs genuine simultaneous per-axis rows. Its
+positive-length working selection has radix at least2 on every axis; radix1 is
+not an obstruction for this startup. Their common word bound,
 exact global action and fast runtime must be proved for the same final program.
 The fixed network's five-value scalar codec preserves its actual chronology;
 partial child execution does not establish this final bound.
