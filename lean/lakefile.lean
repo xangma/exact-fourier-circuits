@@ -287,3 +287,21 @@ lean_lib UniformScalarCopyMachine
 lean_lib UniformOffsetLinearMachine
 
 lean_lib UniformInitialLocalPreparation
+
+lean_lib UniformSynchronizedLayers
+
+lean_lib UniformSectorTensor
+
+lean_lib UniformMasterRootSeedDAG
+
+lean_lib UniformPreparedFFTMachine
+
+lean_lib UniformMasterSynchronizedLayers
+
+lean_lib UniformDyadicRootBankMachine
+
+lean_lib UniformLocalSeedTableMachine
+
+lean_lib UniformFFTInputMachine
+
+lean_lib UniformSectorNetworkAction

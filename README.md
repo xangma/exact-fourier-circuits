@@ -37,8 +37,16 @@ are also checked. A literal FFT row printer, sparse prepared-power loop, local N
 producer and one shared coefficient bank are verified components. Canonical
 root extraction preserves the sole master-root request. A fixed 766-instruction program now joins startup to the first selected axis's
 local preparation. The shifted FFT interpreter handles the actual mixed input
-flags, including prepared padding. Whole local compiler execution and the global
-fast transform scheduler remain open.
+flags, including prepared padding. A fixed 199-instruction program now joins FFT row printing, canonical root
+extraction, prepared powers and mixed-tag interpretation. The one-master-root
+shared coefficient DAG and synchronized CRT Fourier identities are also checked.
+A fixed 35-instruction program computes the dyadic root table from that master
+root. A selected-axis copier retains the five actual Newton/reciprocal coefficient
+lanes above every local workspace. A fixed 221-instruction assembly now gathers
+strided inputs, writes prepared-zero padding and executes the FFT without
+host-side phase writes.
+Printing the full balanced local compiler and executing the global fast scheduler
+remain open.
 
 ## Run
 

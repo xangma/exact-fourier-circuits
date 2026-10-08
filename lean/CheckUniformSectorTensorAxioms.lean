@@ -1,0 +1,24 @@
+import UniformSectorTensor
+
+#print axioms ExactFourierCircuits.UniformSectorTensor.blockEntry
+#print axioms ExactFourierCircuits.UniformSectorTensor.blockEntry_two
+#print axioms ExactFourierCircuits.UniformSectorTensor.blockEntry_one
+#print axioms ExactFourierCircuits.UniformSectorTensor.localEntry
+#print axioms ExactFourierCircuits.UniformSectorTensor.localEntry_same
+#print axioms ExactFourierCircuits.UniformSectorTensor.localEntry_off
+#print axioms ExactFourierCircuits.UniformSectorTensor.localTensor
+#print axioms ExactFourierCircuits.UniformSectorTensor.sectorTensor
+#print axioms ExactFourierCircuits.UniformSectorTensor.localTensor_same
+#print axioms ExactFourierCircuits.UniformSectorTensor.localTensor_off
+#print axioms ExactFourierCircuits.UniformSectorTensor.blockChoiceDecEq
+#print axioms ExactFourierCircuits.UniformSectorTensor.originalTensor
+#print axioms ExactFourierCircuits.UniformSectorTensor.originalTensor_coordinates
+#print axioms ExactFourierCircuits.UniformSectorTensor.sectorMatrix
+#print axioms ExactFourierCircuits.UniformSectorTensor.originalTensor_sectors
+#print axioms ExactFourierCircuits.UniformSectorTensor.packedTensor
+#print axioms ExactFourierCircuits.UniformSectorTensor.packing_tensor
+#print axioms ExactFourierCircuits.UniformSectorTensor.binaryDigits
+#print axioms ExactFourierCircuits.UniformSectorTensor.binaryDigits_length
+#print axioms ExactFourierCircuits.UniformSectorTensor.binaryDigits_lt_two
+#print axioms ExactFourierCircuits.UniformSectorTensor.binaryEntry
+#print axioms ExactFourierCircuits.UniformSectorTensor.sectorTensor_binary

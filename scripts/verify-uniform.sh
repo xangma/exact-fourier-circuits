@@ -63,6 +63,18 @@ allowed = {'propext', 'Quot.sound', 'Classical.choice'}
 registry = json.loads(Path('UNIFORM_CHECKS.json').read_text())
 groups = registry['modules']
 expected = {name for names in groups.values() for name in names}
+environment_checks = registry.get('environment_checks', {})
+if set(environment_checks) - set(groups):
+    raise SystemExit('Environment checks name an unregistered module')
+for module, names in environment_checks.items():
+    prefix = f'_private.{module}.'
+    checker = Path(f'Check{module}Axioms.lean').read_text()
+    if (len(names) != len(set(names)) or set(names) & expected or
+            any(not name.startswith(prefix) for name in names) or
+            f'"{prefix}".isPrefixOf name.toString' not in checker or
+            'collectAxioms name' not in checker):
+        raise SystemExit(f'Invalid explicit environment audit: {module}')
+    expected.update(names)
 if registry['closed_uniform_algorithm'] is not None:
     raise SystemExit('This component verifier does not certify the final uniform algorithm')
 for module, declarations in groups.items():

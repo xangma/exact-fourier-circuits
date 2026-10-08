@@ -1,0 +1,59 @@
+import UniformFFTInputMachine
+
+#check ExactFourierCircuits.UniformFFTInputMachine.execution
+#check ExactFourierCircuits.UniformFFTInputMachine.combined_execution
+#check ExactFourierCircuits.UniformFFTInputMachine.selected_combined_execution
+
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.setup
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.grow
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.copyBlock
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.tailBlock
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.program
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.program_length
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.setup_at
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.grow_at
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.copy_at
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.tail_at
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.iterationCost
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.loopCost
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.loopCost_formula
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.paddedAt
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.padded
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.Source
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.Outside
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.Frame
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.Frame.refl
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.Frame.trans
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.Initializing
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.Initializing.withPC
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.setup_spec
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.setup_frame
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.grow_spec
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.grow_frame
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.setup_readable
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.grow_readable
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.initialize_loop
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.Invariant
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.Invariant.withPC
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.source_after_store
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.picked
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.iterationEnd
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.picked_spec
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.iteration_heap
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.iteration_frame
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.iteration_invariant
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.iteration
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.loop
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.execution
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.wordBudget
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.wordBudget_bounds
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.runtime_bound
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.padded_prepared
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.combinedProgram
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.combinedProgram_length
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.gather_code
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.prepared_code
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.CombinedPersistent
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.combined_execution
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.selected_combined_execution
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.combined_output_prepared

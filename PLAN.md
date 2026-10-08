@@ -127,8 +127,13 @@ all chirp operands and normalization, gathers the input through alpha and
 constructs the inverse beta output table. A shared recursive coefficient DAG,
 actual FFT row and prepared-power producers, a mixed-tag shifted interpreter
 and tensor-fiber addresses are checked.
-The next decisive link is the charged
-local topology/coefficient printer and global saving-network scheduler, followed
+The complete 199-instruction dyadic FFT producer/interpreter and the closed
+single-master-root typed coefficient schedule now check. Identity-padded slot
+synchronization plus the generated alpha/beta CRT maps proves the working DFT
+identity. Actual dyadic-root sizing/extraction, retained local coefficient lanes,
+and strided input gathering plus prepared padding are now charged RAM programs.
+The next decisive link is the charged balanced local
+topology/coefficient printer and global saving-network scheduler, followed
 by three-transform assembly and its actual runtime bound. The proved larger
 local layer constant is covered by a scaled reserve; realizing that reserve
 operationally is still required.
