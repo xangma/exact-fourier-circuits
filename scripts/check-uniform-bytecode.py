@@ -7,6 +7,15 @@ p=argparse.ArgumentParser(description=__doc__)
 p.add_argument('--skip-build',action='store_true',help='Use already built Lean component libraries')
 a=p.parse_args();root=Path(__file__).resolve().parents[1]
 extra_suites = [
+    ('UniformXorCallerInterface', 'XorTable',
+     'logs/uniform-bytecode/xor-table/fixtures.json',
+     'uniform-xor-table-bytecode-fixtures.py'),
+    ('UniformFixedNetworkRecordLoopMachine', 'FixedNetworkRecordLoop',
+     'logs/uniform-bytecode/fixed-network-record-loop/fixtures.json',
+     'uniform-fixed-network-record-loop-bytecode-fixtures.py'),
+    ('UniformEmptyStartupBranchPreparation', 'EmptyStartupMatching',
+     'logs/uniform-bytecode/empty-startup-matching/fixtures.json',
+     'uniform-empty-startup-matching-bytecode-fixtures.py'),
     ('UniformCrossBroadcastTableMachine', 'CrossBroadcast',
      'logs/uniform-bytecode/cross-broadcast/fixtures.json',
      'uniform-cross-broadcast-bytecode-fixtures.py'),
@@ -190,6 +199,7 @@ records = []
 for relative in receipt_paths:
     f=root/relative
     d=json.loads(f.read_text())
+    d=d.get('summary',d)
     assert d['status']=='PASS',relative
     if relative.endswith('/uniform-bytecode/fixtures.json'):
         count=len(d['cases'])+len(d['empty_startup_cases'])+len(d['transfer_cases'])

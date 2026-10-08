@@ -1,0 +1,110 @@
+import UniformXorWordBounds
+import Lean
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformXorWordBounds.bitBody
+#print axioms ExactFourierCircuits.UniformXorWordBounds.bitBody.eq_1
+#print axioms ExactFourierCircuits.UniformXorWordBounds.bitBoot
+#print axioms ExactFourierCircuits.UniformXorWordBounds.bitBoot.eq_1
+#print axioms ExactFourierCircuits.UniformXorWordBounds.bit_execution_bounded
+#print axioms ExactFourierCircuits.UniformXorWordBounds.bit_execution_bounded._proof_1_1
+#print axioms ExactFourierCircuits.UniformXorWordBounds.bit_execution_bounded._proof_1_2
+#print axioms ExactFourierCircuits.UniformXorWordBounds.bit_loop_bounded
+#print axioms ExactFourierCircuits.UniformXorWordBounds.bit_loop_bounded._proof_1_1
+#print axioms ExactFourierCircuits.UniformXorWordBounds.bit_loop_bounded._proof_1_2
+#print axioms ExactFourierCircuits.UniformXorWordBounds.bit_loop_bounded._proof_1_3
+#print axioms ExactFourierCircuits.UniformXorWordBounds.bit_loop_bounded._proof_1_4
+#print axioms ExactFourierCircuits.UniformXorWordBounds.body_code
+#print axioms ExactFourierCircuits.UniformXorWordBounds.body_peak
+#print axioms ExactFourierCircuits.UniformXorWordBounds.body_peak._proof_1_1
+#print axioms ExactFourierCircuits.UniformXorWordBounds.body_peak._proof_1_11
+#print axioms ExactFourierCircuits.UniformXorWordBounds.body_post
+#print axioms ExactFourierCircuits.UniformXorWordBounds.body_readable
+#print axioms ExactFourierCircuits.UniformXorWordBounds.boot_bounded
+#print axioms ExactFourierCircuits.UniformXorWordBounds.boot_bounded._proof_1_1
+#print axioms ExactFourierCircuits.UniformXorWordBounds.boot_bounded._proof_1_14
+#print axioms ExactFourierCircuits.UniformXorWordBounds.boot_code
+#print axioms ExactFourierCircuits.UniformXorWordBounds.headerBody
+#print axioms ExactFourierCircuits.UniformXorWordBounds.headerBody.eq_1
+#print axioms ExactFourierCircuits.UniformXorWordBounds.header_code
+#print axioms ExactFourierCircuits.UniformXorWordBounds.lookupBody
+#print axioms ExactFourierCircuits.UniformXorWordBounds.lookupBody.eq_1
+#print axioms ExactFourierCircuits.UniformXorWordBounds.lookup_code
+#print axioms ExactFourierCircuits.UniformXorWordBounds.lookup_execution_bounded
+#print axioms ExactFourierCircuits.UniformXorWordBounds.lookup_execution_bounded._proof_1_1
+#print axioms ExactFourierCircuits.UniformXorWordBounds.lookup_execution_bounded._proof_1_16
+#print axioms ExactFourierCircuits.UniformXorWordBounds.lookup_execution_bounded._proof_1_2
+#print axioms ExactFourierCircuits.UniformXorWordBounds.lookup_execution_bounded._proof_1_3
+#print axioms ExactFourierCircuits.UniformXorWordBounds.powerBody
+#print axioms ExactFourierCircuits.UniformXorWordBounds.powerBody.eq_1
+#print axioms ExactFourierCircuits.UniformXorWordBounds.powerBoot
+#print axioms ExactFourierCircuits.UniformXorWordBounds.powerBoot.eq_1
+#print axioms ExactFourierCircuits.UniformXorWordBounds.power_body_code
+#print axioms ExactFourierCircuits.UniformXorWordBounds.power_boot_bounded
+#print axioms ExactFourierCircuits.UniformXorWordBounds.power_boot_bounded._proof_1_1
+#print axioms ExactFourierCircuits.UniformXorWordBounds.power_boot_bounded._proof_1_14
+#print axioms ExactFourierCircuits.UniformXorWordBounds.power_boot_code
+#print axioms ExactFourierCircuits.UniformXorWordBounds.power_loop_bounded
+#print axioms ExactFourierCircuits.UniformXorWordBounds.power_loop_bounded._proof_1_1
+#print axioms ExactFourierCircuits.UniformXorWordBounds.power_loop_bounded._proof_1_2
+#print axioms ExactFourierCircuits.UniformXorWordBounds.power_loop_bounded._proof_1_3
+#print axioms ExactFourierCircuits.UniformXorWordBounds.power_loop_bounded._proof_1_4
+#print axioms ExactFourierCircuits.UniformXorWordBounds.power_round_bounded
+#print axioms ExactFourierCircuits.UniformXorWordBounds.power_round_bounded._proof_1_1
+#print axioms ExactFourierCircuits.UniformXorWordBounds.power_round_bounded._proof_1_16
+#print axioms ExactFourierCircuits.UniformXorWordBounds.power_round_bounded._proof_1_2
+#print axioms ExactFourierCircuits.UniformXorWordBounds.power_round_bounded._proof_1_20
+#print axioms ExactFourierCircuits.UniformXorWordBounds.power_round_bounded._proof_1_3
+#print axioms ExactFourierCircuits.UniformXorWordBounds.round_bounded
+#print axioms ExactFourierCircuits.UniformXorWordBounds.round_bounded._proof_1_1
+#print axioms ExactFourierCircuits.UniformXorWordBounds.round_bounded._proof_1_2
+#print axioms ExactFourierCircuits.UniformXorWordBounds.round_bounded._proof_1_3
+#print axioms ExactFourierCircuits.UniformXorWordBounds.round_weight
+#print axioms ExactFourierCircuits.UniformXorWordBounds.runs_same_end
+#print axioms ExactFourierCircuits.UniformXorWordBounds.sizeBody
+#print axioms ExactFourierCircuits.UniformXorWordBounds.sizeBody.eq_1
+#print axioms ExactFourierCircuits.UniformXorWordBounds.size_code
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_cost_array_bound
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_execution_bounded
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_execution_bounded._proof_1_1
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_execution_bounded._proof_1_15
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_execution_bounded._proof_1_19
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_execution_bounded._proof_1_2
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_iteration_bounded
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_iteration_bounded._proof_1_1
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_iteration_bounded._proof_1_16
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_iteration_bounded._proof_1_2
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_iteration_bounded._proof_1_20
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_iteration_bounded._proof_1_21
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_iteration_bounded._proof_1_22
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_iteration_bounded._proof_1_23
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_iteration_bounded._proof_1_24
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_iteration_bounded._proof_1_25
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_iteration_bounded._proof_1_26
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_iteration_bounded._proof_1_27
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_iteration_bounded._proof_1_28
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_iteration_bounded._proof_1_29
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_iteration_bounded._proof_1_3
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_iteration_bounded._proof_1_30
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_iteration_bounded._proof_1_32
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_iteration_bounded._proof_1_33
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_iteration_bounded._proof_1_34
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_loop_bounded
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_loop_bounded._proof_1_1
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_loop_bounded._proof_1_2
+#print axioms ExactFourierCircuits.UniformXorWordBounds.table_loop_bounded._proof_1_3
+#print axioms ExactFourierCircuits.UniformXorWordBounds.tailBody
+#print axioms ExactFourierCircuits.UniformXorWordBounds.tailBody.eq_1
+#print axioms ExactFourierCircuits.UniformXorWordBounds.tail_code
+#print axioms ExactFourierCircuits.UniformXorWordBounds.weighted_parity
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformXorWordBounds.".isPrefixOf name.toString then
+   let axioms ← collectAxioms name
+   for ax in axioms do
+    unless ax == ``propext || ax == ``Quot.sound || ax == ``Classical.choice do
+     throwError m!"Nonstandard axiom {ax} in {name}"
+   logInfo m!"{name} depends on axioms: {axioms.toList}"

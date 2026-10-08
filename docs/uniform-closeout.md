@@ -5,11 +5,12 @@ every-positive-length theorem is **still open**. There is no registered closed
 proof of `UniformDFTStatement`; aggregate receipts retain
 `uniform_algorithm_verified=false`.
 
-Final source-stable audits passed on 2026-10-08: **193 modules and 24,644 distinct
-declaration axiom closures**, plus **57 exact-bytecode suites and 24,592 cases**.
-The receipts bind 483 Lean inputs and 310 bytecode inputs; every hash was checked
+Final source-stable audits passed on 2026-10-08: **211 modules and 27,154 distinct
+declaration axiom closures**, plus **60 exact-bytecode suites and 46,962 cases**.
+The receipts bind 519 Lean inputs and 334 bytecode inputs; every hash was checked
 again after both runs completed. The original three theorem checks, five kernel
-identities and all 1,101 construction declaration checks also passed again.
+identities and all 1,101 construction declaration checks retain their previously
+verified baseline receipts.
 The component audit includes generated and private declarations, permits only `propext`,
 `Quot.sound` and `Classical.choice`, and checks the 51 unchanged upstream sources
 and pinned toolchain. Counts describe verified components, not completed global
@@ -17,12 +18,16 @@ algorithm obligations.
 
 ## Implemented and checked
 
-This checkpoint adds 16 registered modules to the previous 177-module checkpoint.
+This checkpoint adds 18 registered modules to the previous 193-module checkpoint.
 Every new registered module passed a normal Lake build under default proof limits
 and a complete declaration census matched to its versioned checker.
 
 | Component | Actual behavior and entry boundary |
 |---|---|
+| Empty startup and fallback | `UniformEmptyStartupBranchPreparation`: fixed4306 starts from empty heaps, obtains the same single master root and executes a genuine direct DFT for the small branch or actual selected-axis193 matching preparation for the large branch. Its fixed4255 matching caller derives initializer/header/allocation requirements internally. The large branch prepares one matching; it does not compute the full DFT. `UniformRetainedDirectDFTFallback` fixed49 retains the prepared master and outputs the exact DFT. |
+| Mixed saving-network children | `UniformFixedNetworkRecordLoopMachine`: fixed335 decodes variable-length records and executes actual scalar-shear, signed exchange and ordinary-padding children (opcodes1/4/5), including returns, exact values and dependency flags. Residual recursion, translation and layout opcodes are separate obligations. The former fixed40 scalar-shear prototype is now registered. |
+| Charged XOR preparation | `UniformNatBlockMachine`, `UniformXorTableMachine`, `UniformXorWordBounds` and `UniformXorCallerInterface` supply actual ordinary-integer producers/lookups, complete bounded execution and table setup cost at most `25*2^k` when `3*q<=k`. No XOR instruction or supplied lookup table enters the machine. `UniformBinaryXorCoordinates` proves their literal bit addresses agree with the exact F2 translation coordinates. Joining this setup to every recursive caller remains. |
+| Physical replay action | `UniformMatchingActionBridge`, `UniformPhysicalReplayBridge` and `UniformBroadcastActionBridge` derive actual forward/inverse matching action, printed color/ordinal order, last-gate output coordinates and the corrected logical cross action. Their operational six-phase caller and common physical pullback remain separate obligations. |
 | Seed-to-matching caller | `UniformSeedHighDataMatchingPreparation`: fixed2669 executes SeedChunk1286, 16 charged ordinary header copies and HighDataConjugateMatching1366. It derives generated rows/count/packing/action internally and retains both coefficient directories, metadata, operands and root. Ordinary physical input, compatible allocation and future caller headers remain inputs; this is not a complete empty-startup matching program. |
 | Conjugate retention and high data | `UniformSeedConjugatePreservation` proves exact retention through the real producer chain. `UniformHighDataPackingPreparation` fixed167 copies low physical data above protected coefficient banks before packing. `UniformHighDataConjugateMatchingPreparation` fixed1366 joins that copy to ConjugatePacked1198. `UniformConjugatePackedMatchingPreparation` joins the actual spectrum producer to matching with charged setup; its retained seed, layout and physical data remain stated entry requirements. |
 | Actual coefficient values | `UniformMatchingCoefficientValueBridge` links generated forward leaves to their exact values. Inverse references use the negative reciprocal bank for `-1/N`, including the `N=1` pointer exception. Physical pointer equality alone is not used as coefficient-value equality. |
@@ -44,12 +49,13 @@ this checkpoint.
 
 ## Retained follow-on work
 
-The [prototype handoff](../research/uniform-prototypes/README.md) preserves three
-byte-identical source snapshots outside normal-library and aggregate
-certification: a physical fixed40 scalar-shear child, a fixed796 continuous
-forward matching body, and selected-axis193 startup allocation geometry.
-Their focused checks and remaining entry conditions are recorded separately.
-They are not silently included in the 193-module certification.
+The [prototype handoff](../research/uniform-prototypes/README.md) preserves earlier
+source snapshots. Its fixed40 scalar-shear source is byte-identical to the now
+registered module. The forward fixed796 body and selected-axis193 geometry remain
+historical, component-only handoffs; the new empty-startup caller closes the
+latter's initializer and small-length fallback requirements. Current agent scratch
+work on full six-phase execution, multi-axis metadata and translations is outside
+this source-stable aggregate checkpoint until separately integrated and audited.
 
 ## Required before the stronger theorem can close
 
@@ -60,10 +66,13 @@ forward body are insufficient.
 2. Join actual saving-network child execution to the runtime decoder: residual
 basis movement, scalar shears, translations, signed exchanges, ordinary padding,
 returns and recursive batches. Metadata decoding alone is insufficient.
-3. Complete charged startup and common compatible layouts through actual operand
-input banks. The selected-axis193 prototype assumes `ell n >= 194`; it still
-needs initialization and a smaller-radix fallback, and is not the universal
-saving-network scheduler.
+3. Produce and pack genuine matching rows across all CRT axes. The new selected
+startup handles one axis, whose two-slot sectors have `k=1`; therefore the saving
+network gets `q=floor(k/1000000)=0`. Its convolution FFT exponent is not this sector
+exponent. The global compiler must supply enough simultaneous axes and explicitly
+handle the possible final radix1 before instantiating packing axes (which require
+radix at least2). Directory generation alone does not close that producer/action
+link or yield a positive-q saving instance.
 4. Assemble every axis, chirp/convolution and output routing in one fixed program,
 with one root request and one common polynomial word bound. Bound this same
 program's actual charged instructions by the claimed fast runtime. The old

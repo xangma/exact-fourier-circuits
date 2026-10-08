@@ -1,0 +1,23 @@
+import UniformBinaryXorCoordinates
+import Lean
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformBinaryXorCoordinates.binaryCoordinates
+#print axioms ExactFourierCircuits.UniformBinaryXorCoordinates.binaryCoordinates.eq_1
+#print axioms ExactFourierCircuits.UniformBinaryXorCoordinates.binaryCoordinates_value
+#print axioms ExactFourierCircuits.UniformBinaryXorCoordinates.bitEquiv
+#print axioms ExactFourierCircuits.UniformBinaryXorCoordinates.bitEquiv._proof_1
+#print axioms ExactFourierCircuits.UniformBinaryXorCoordinates.bitEquiv._proof_2
+#print axioms ExactFourierCircuits.UniformBinaryXorCoordinates.bitEquiv._proof_3
+#print axioms ExactFourierCircuits.UniformBinaryXorCoordinates.bitEquiv._proof_4
+#print axioms ExactFourierCircuits.UniformBinaryXorCoordinates.bitEquiv.eq_1
+#print axioms ExactFourierCircuits.UniformBinaryXorCoordinates.encode
+#print axioms ExactFourierCircuits.UniformBinaryXorCoordinates.encode.eq_1
+#print axioms ExactFourierCircuits.UniformBinaryXorCoordinates.encode_value
+#print axioms ExactFourierCircuits.UniformBinaryXorCoordinates.repeated_direction_bit
+#print axioms ExactFourierCircuits.UniformBinaryXorCoordinates.repeated_mask_value
+#print axioms ExactFourierCircuits.UniformBinaryXorCoordinates.translated_address
+#print axioms ExactFourierCircuits.UniformBinaryXorCoordinates.xorIndex
+#print axioms ExactFourierCircuits.UniformBinaryXorCoordinates.xorIndex._proof_1
+#print axioms ExactFourierCircuits.UniformBinaryXorCoordinates.xorIndex.eq_1
+#print axioms ExactFourierCircuits.UniformBinaryXorCoordinates.xor_coordinates

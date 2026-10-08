@@ -34,7 +34,7 @@ instruction. Rational literals belong to the fixed program.
 The checked programs now include charged seed/conjugate/matching composition,
 forward/inverse matching, complete ordinary binary C tensor execution, actual
 output-broadcast tables, and runtime decoding of fixed-network records.
-The registry contains 193 modules and 24,644 public/generated/private
+The registry contains 211 modules and 27,154 public/generated/private
 axiom closures. The [latest checkpoint](uniform-closeout.md) records fresh audit
 results and exact entry boundaries. Scratch follow-on prototypes are retained
 separately from these certified components. `uniform_algorithm_verified=false` remains
@@ -116,16 +116,24 @@ inverse from actual SeedChunk/Packed postconditions and scatters native values.
 The fixed55 whole-fiber gather/scatter derives axis products once and moves every
 Scalar, with linear charged cost and the same canonical word budget.
 
-These are separate checked programs. The continuous conjugate-producer-to-matching
-caller still needs retention and charged setup proofs. The generated matching
-adapter handles forward buckets; its pointer equality needs a separate
-coefficient-value bridge for actual rational leaves. Inverse `-1/N` uses the
-negative normalization slot, not the current forward `P+2` alias. Complete forward/inverse
-local replay, corrected saving-network RAM execution, recursive batching,
-all-axis scheduling and chirp/output routing remain open. Their common word bound,
+The actual continuous coefficient/conjugate-to-matching caller, coefficient-value
+bridge and inverse matching caller are now registered and checked. The inverse
+`-1/N` uses the negative normalization slot, including the N=1 pointer exception.
+The fixed4306 branch begins from the empty initial state, retains the prepared
+single root and executes a direct small-length fallback or selected large-length
+matching preparation. The fixed335 record loop executes actual scalar, signed
+exchange and padding children. Charged XOR-table preparation/lookup and explicit
+binary translation coordinates are also registered.
+
+Complete six-phase physical cross replay, residual recursive C geometry, the
+remaining saving-network opcodes, recursive batching, all-axis scheduling and
+chirp/output routing remain open. A selected one-axis two-slot sector has k=1,
+hence q=0 for the fixed m=1000000 network; its FFT exponent is not a saving-sector
+exponent. The global compiler needs genuine simultaneous per-axis rows and must
+handle the possible selected radix1 before packing. Their common word bound,
 exact global action and fast runtime must be proved for the same final program.
 The fixed network's five-value scalar codec preserves its actual chronology;
-it does not execute its residual geometry or prove this final bound.
+partial child execution does not establish this final bound.
 
 ## Reuse boundary
 

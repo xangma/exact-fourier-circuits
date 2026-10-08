@@ -1,0 +1,11 @@
+import UniformXorCallerInterface
+import Lean
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformXorCallerInterface.table_execution_bounded_size
+#print axioms ExactFourierCircuits.UniformXorCallerInterface.table_execution_size
+#print axioms ExactFourierCircuits.UniformXorCallerInterface.table_execution_size._proof_1_1
+#print axioms ExactFourierCircuits.UniformXorCallerInterface.table_execution_size._proof_1_2
+#print axioms ExactFourierCircuits.UniformXorCallerInterface.table_loop_size
+#print axioms ExactFourierCircuits.UniformXorCallerInterface.table_loop_size._proof_1_1
+#print axioms ExactFourierCircuits.UniformXorCallerInterface.table_loop_size._proof_1_2

@@ -156,14 +156,17 @@ inverse from actual packing. A 2669-instruction caller now joins seed/chunk,
 conjugate preparation and matching with charged header setup. It consumes
 ordinary physical input/layout headers. The complete local replay remains open.
 
-The registry contains 193 modules. The [latest checkpoint](docs/uniform-closeout.md) records full audit
+The registry contains 211 modules. The [latest checkpoint](docs/uniform-closeout.md) records full audit
 results and exact component boundaries. Canonical selected seed/chunk allocation
 fits the unchanged `(n+2)^19` budget; its 1317-instruction caller derives allocation
 headers from the actual saved length and executes SeedChunk continuously.
 Physical conjugate spectra, forward/inverse matching, a complete ordinary
-binary C tensor loop, output-broadcast tables and a runtime network-opcode
-decoder are checked in fixed programs. Complete local replay, saving-network
-child dispatch, recursive scheduling and final Fourier routing remain.
+binary C tensor loop, output-broadcast tables and scalar/exchange/padding record
+execution are checked in fixed programs. A fixed4306 branch starts from empty
+heaps and supplies a genuine direct small-length fallback or selected-axis
+matching preparation. Charged XOR tables and their exact binary coordinates are
+verified. Complete local replay, remaining recursive saving-network children,
+all-axis packing and final Fourier routing remain.
 The stronger uniform theorem is still unproved and has no registered proof.
 
 

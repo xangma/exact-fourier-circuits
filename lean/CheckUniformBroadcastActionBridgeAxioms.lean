@@ -1,0 +1,15 @@
+import UniformBroadcastActionBridge
+import Lean
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformBroadcastActionBridge.cross_outputs
+#print axioms ExactFourierCircuits.UniformBroadcastActionBridge.cross_outputs._proof_1_1
+#print axioms ExactFourierCircuits.UniformBroadcastActionBridge.lastBroadcast
+#print axioms ExactFourierCircuits.UniformBroadcastActionBridge.lastBroadcast._proof_1
+#print axioms ExactFourierCircuits.UniformBroadcastActionBridge.lastBroadcast._proof_2
+#print axioms ExactFourierCircuits.UniformBroadcastActionBridge.lastBroadcast.eq_1
+#print axioms ExactFourierCircuits.UniformBroadcastActionBridge.lastBroadcast_eq
+#print axioms ExactFourierCircuits.UniformBroadcastActionBridge.lastBroadcast_eq._proof_1_1
+#print axioms ExactFourierCircuits.UniformBroadcastActionBridge.lastBroadcast_eq._proof_1_4
+#print axioms ExactFourierCircuits.UniformBroadcastActionBridge.lastBroadcast_eq._proof_1_5
+#print axioms ExactFourierCircuits.UniformBroadcastActionBridge.reference_present
