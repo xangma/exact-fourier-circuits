@@ -170,9 +170,12 @@ Measured workspace selection now executes all ragged pair checks with actual
 integer instructions. Original/conjugate coefficient preparation and the explicit
 zero-free shift now compose into one charged 374-instruction execution from the
 original master root and typed/rational tapes. The next local
-compiler milestone prints the convolution topology from its integer height, then
-joins the six corrected-cross graphs, layers and dirty replay. In parallel, the
-all-axis diagonal pass must install its caller headers from actual empty startup.
+compiler milestone now has a verified 154-instruction convolution topology printer
+from integer height. The next step joins six corrected-cross graphs, layers and
+dirty replay. The all-axis diagonal pass installs its own caller headers from
+actual empty startup in 1084 instructions and has a proved linear runtime bound.
+An actual contiguous power writer charges every bank store; six physical kernels
+and their joined FFT/copy spectrum assembly remain to be completed.
 The block traversal's reversed cons output is proved equal to the exact ordered
 sector directory. Its physical metadata scan/DFS must derive this directory and
 every stack read from original width rows, then support charged scalar packing.

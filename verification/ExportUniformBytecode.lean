@@ -3,6 +3,7 @@ import UniformInitialTraversalPreparation
 import UniformCRTTransferMachine
 import UniformZeroFreeDiagonalMachine
 import UniformPreparedZeroFreeDAGMachine
+import UniformContiguousPowerBankMachine
 open ExactFourierCircuits UniformMachine UniformRadixTwoDAG UniformPreparationMachine
 open Lean
 
@@ -40,7 +41,8 @@ def programJson (p:Program) : Json:=.arr (p.map insJson).toArray
   ("traversalStartup",programJson UniformInitialTraversalPreparation.program),
   ("transfer",programJson UniformCRTTransferMachine.program),
   ("zeroFree",programJson UniformZeroFreeDiagonalMachine.program),
-  ("preparedZeroFree",programJson UniformPreparedZeroFreeDAGMachine.program)]))
+  ("preparedZeroFree",programJson UniformPreparedZeroFreeDAGMachine.program),
+  ("contiguousPower",programJson UniformContiguousPowerBankMachine.program)]))
 #eval IO.FS.writeFile "../logs/uniform-bytecode/expected.json"
   (Json.compress (.arr ((List.range 7).map fixture).toArray))
 
