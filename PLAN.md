@@ -176,7 +176,9 @@ dirty replay. The all-axis diagonal pass installs its own caller headers from
 actual empty startup in 1084 instructions and has a proved linear runtime bound.
 An actual contiguous power writer charges every bank store, and the fixed
 90-instruction kernel producer derives all six physical kernels from H/G. The
-joined FFT/copy spectrum assembly remains to be completed.
+297-instruction FFT/copy spectrum assembly and 271-instruction corrected-cross
+topology printer are verified. Their continuous caller, depth grouping and dirty
+replay remain to be completed.
 The block traversal's reversed cons output is proved equal to the exact ordered
 sector directory. Its physical 92-instruction metadata scan/DFS derives this
 directory and every stack read from original width rows in linear time. A

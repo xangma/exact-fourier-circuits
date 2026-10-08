@@ -87,8 +87,11 @@ record from its integer height, with lossless coefficient decoding and bounded w
 An 11-instruction contiguous power writer produces a prepared bank in exactly
 `6*N+6` steps from one physical prepared root. The 90-instruction kernel producer
 constructs all six padded rank kernels from actual prepared H/G cells, including
-zero coefficients, with a proved quadratic preparation bound. Shared spectra and
-corrected-cross graph assembly remain active obligations.
+zero coefficients, with a proved quadratic preparation bound. The 297-instruction spectrum
+producer charges its six FFT/copy passes and root-power bank. The 271-instruction
+corrected-cross printer derives all six remapped graphs and final additions from
+height and ragged dimensions. Their continuous caller, depth grouping and dirty
+replay remain active obligations.
 The mathematical block traversal now has an exact ordered-list identity with the
 sector directory. Its 92-instruction physical metadata producer now derives that
 ordered directory and suffix volumes from the original width rows in at most
@@ -128,7 +131,10 @@ to `logs/uniform-bytecode/contiguous-power-fixtures.json`. Another 30 physical
 metadata cases check all 92 PCs against Lean sector lists, and 24 exact kernel
 cases check all 90 PCs against independent Gaussian-rational formulas. Their
 receipts are `sector-metadata-fixtures.json` and `rank-kernel-fixtures.json`
-in the same directory.
+in the same directory. A further 40 exact cyclotomic spectrum cases use canonical
+roots of orders 4 through 64, and 54 corrected-cross cases compare the physical
+tape against freshly exported typed Lean records. Their receipts are
+`kernel-spectrum/cyclotomic-fixtures.json` and `cross-topology/runtime-receipt.json`.
 
 For a fresh checkout, `./scripts/setup.sh` installs the Python environment,
 the pinned Lean toolchain, and the pinned Mathlib dependencies/cache, then

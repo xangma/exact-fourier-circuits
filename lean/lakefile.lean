@@ -384,3 +384,9 @@ lean_lib CheckUniformSectorMetadataMachineAxioms
 
 lean_lib UniformRankKernelMachine
 lean_lib CheckUniformRankKernelMachineAxioms
+
+lean_lib UniformKernelSpectrumMachine
+lean_lib CheckUniformKernelSpectrumMachineAxioms
+
+lean_lib UniformToeplitzCrossTopologyMachine
+lean_lib CheckUniformToeplitzCrossTopologyMachineAxioms

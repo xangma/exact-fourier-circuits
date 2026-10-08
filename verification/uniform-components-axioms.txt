@@ -20361,3 +20361,1375 @@ Note: This linter can be disabled with `set_option linter.auxLemma false`
 'ExactFourierCircuits.UniformRankKernelMachine.Headers.fftSize' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Context' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Context.casesOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Context.count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Context.cursor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Context.header' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Context.index' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Context.mk' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Context.mk._flat_ctor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Context.one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Context.rec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Context.recOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Context.slots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Context.transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Context.two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Context.width' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Context.withPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Context.zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.ControlRegs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Frame.master' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Frame.refl' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Frame.trans' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Frame.withPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Header' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Header.arena' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Header.bank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Header.casesOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Header.frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Header.height' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Header.kernels' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Header.mk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Header.mk._flat_ctor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Header.order' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Header.rec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Header.recOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Header.rows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Header.withPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Kernels' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Kernels.frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Layout' depends on axioms: [propext]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Layout.arenaPositive' depends on axioms: [propext]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Layout.arena_le_bank' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Layout.arena_le_bank._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Layout.bankAfter' depends on axioms: [propext]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Layout.bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Layout.bounds._proof_1_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Layout.bounds._proof_1_2' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Layout.bounds._proof_1_3' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Layout.bounds._proof_1_4' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Layout.bounds._proof_1_5' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Layout.bounds._proof_1_6' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Layout.bounds._proof_1_7' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Layout.casesOn' depends on axioms: [propext]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Layout.divisor' depends on axioms: [propext]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Layout.envelope' depends on axioms: [propext]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Layout.mk' depends on axioms: [propext]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Layout.mk._flat_ctor' depends on axioms: [propext]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Layout.orderPositive' depends on axioms: [propext]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Layout.rec' depends on axioms: [propext]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Layout.recOn' depends on axioms: [propext]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Layout.sourceEnd' depends on axioms: [propext]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.LoopCursor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.LoopCursor.casesOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.LoopCursor.context' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.LoopCursor.count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.LoopCursor.header' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.LoopCursor.index' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.LoopCursor.mk' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.LoopCursor.mk._flat_ctor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.LoopCursor.one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.LoopCursor.pc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.LoopCursor.rec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.LoopCursor.recOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.LoopCursor.slots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.LoopCursor.two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.LoopCursor.width' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.LoopCursor.zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Persistent' does not depend on any axioms
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Persistent.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Result' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Result.of_parts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.SetupFrame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.SetupFrame.frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.SetupFrame.frame._proof_1_2' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.SetupFrame.trans' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.SetupFrame.withPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Sizing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Sizing.casesOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Sizing.height' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Sizing.index' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Sizing.mk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Sizing.mk._flat_ctor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Sizing.one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Sizing.rec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Sizing.recOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Sizing.two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Sizing.width' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Sizing.withPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.Sizing.zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.SpectraPrefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.SpectraPrefix.transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.boot_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.boot_frame._proof_1_10' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.boot_frame._proof_1_2' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.boot_frame._proof_1_3' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.boot_frame._proof_1_4' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.boot_frame._proof_1_5' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.boot_frame._proof_1_6' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.boot_frame._proof_1_7' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.boot_frame._proof_1_8' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.boot_frame._proof_1_9' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.boot_sizing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.controllerHead' does not depend on any axioms
+'ExactFourierCircuits.UniformKernelSpectrumMachine.controllerHead_length' does not depend on any axioms
+'ExactFourierCircuits.UniformKernelSpectrumMachine.copySetup' does not depend on any axioms
+'ExactFourierCircuits.UniformKernelSpectrumMachine.copySetup.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformKernelSpectrumMachine.copySetup_at' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.copySetup_safe' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.copySetup_safe._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.copySetup_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.copy_call' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.copy_call._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.copy_call._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.copy_call._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.copy_call._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.copy_call._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.copy_call._proof_1_6' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.copy_call._proof_1_7' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.copy_call._proof_1_8' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.copy_code' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.copy_controls' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.copy_controls._proof_1_3' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.copy_controls._simp_1_1' depends on axioms: [propext]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.copy_controls._simp_1_2' depends on axioms: [propext]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.copy_persistent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.copy_persistent._proof_1_2' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.countHead' does not depend on any axioms
+'ExactFourierCircuits.UniformKernelSpectrumMachine.countHead.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformKernelSpectrumMachine.countHead_code' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.count_div_at' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.execution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.execution._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.execution._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.execution._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.execution._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.execution._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.execution._proof_1_6' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.execution._proof_1_7' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.fftSetup' does not depend on any axioms
+'ExactFourierCircuits.UniformKernelSpectrumMachine.fftSetup.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformKernelSpectrumMachine.fftSetup_at' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.fftSetup_safe' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.fftSetup_safe._proof_1_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.fftSetup_safe._proof_1_2' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.fftSetup_safe._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.fftSetup_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.fft_call' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.fft_call._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.fft_call._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.fft_call._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.fft_call._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.fft_call._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.fft_call._proof_1_6' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.fft_code' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.fft_controls' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.fft_controls._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.fft_controls._simp_1_1' depends on axioms: [propext]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.fft_controls._simp_1_2' depends on axioms: [propext]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.fft_persistent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.fft_persistent._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.final_halt' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.final_halt._proof_1_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.finish' does not depend on any axioms
+'ExactFourierCircuits.UniformKernelSpectrumMachine.finish.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformKernelSpectrumMachine.finish_at' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.finish_at._proof_1_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.finish_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.grow' does not depend on any axioms
+'ExactFourierCircuits.UniformKernelSpectrumMachine.grow.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformKernelSpectrumMachine.grow_code' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.grow_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.grow_frame._proof_1_2' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.grow_frame._proof_1_3' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.grow_frame._proof_1_4' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.grow_frame._proof_1_5' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.grow_sizing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.grow_sizing._proof_1_2' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver._proof_1_10' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver._proof_1_11' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver._proof_1_12' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver._proof_1_13' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver._proof_1_14' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver._proof_1_15' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver._proof_1_16' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver._proof_1_17' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver._proof_1_18' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver._proof_1_19' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver._proof_1_20' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver._proof_1_21' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver._proof_1_22' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver._proof_1_23' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver._proof_1_24' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver._proof_1_25' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver._proof_1_26' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver._proof_1_27' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver._proof_1_6' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver._proof_1_7' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.initialize_driver._proof_1_8' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.iterationBudget' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.loopBoot' does not depend on any axioms
+'ExactFourierCircuits.UniformKernelSpectrumMachine.loopBoot.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformKernelSpectrumMachine.loopBoot_code' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.loop_branch' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.loop_iteration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.loop_iteration._proof_1_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.loop_iteration._proof_1_10' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.loop_iteration._proof_1_11' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.loop_iteration._proof_1_12' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.loop_iteration._proof_1_13' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.loop_iteration._proof_1_2' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.loop_iteration._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.loop_iteration._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.loop_iteration._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.loop_iteration._proof_1_6' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.loop_iteration._proof_1_7' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.loop_iteration._proof_1_9' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.loop_jump' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.loop_jump._proof_1_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.padded_self' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.powerSetup' does not depend on any axioms
+'ExactFourierCircuits.UniformKernelSpectrumMachine.powerSetup.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformKernelSpectrumMachine.powerSetup_at' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.powerSetup_at._proof_1_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.powerSetup_safe' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.powerSetup_safe._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.powerSetup_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.power_call' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.power_call._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.power_call._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.power_call._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.power_call._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.power_call._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.power_call._proof_1_6' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.power_call._proof_1_7' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.power_code' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.power_controls' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.power_controls._proof_1_3' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.power_controls._simp_1_1' depends on axioms: [propext]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.power_controls._simp_1_2' depends on axioms: [propext]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.power_persistent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.power_persistent._proof_1_2' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.program' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.program.eq_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.program_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_10' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_11' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_12' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_13' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_14' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_15' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_16' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_17' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_18' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_19' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_20' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_21' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_22' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_23' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_24' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_25' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_26' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_27' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_28' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_29' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_30' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_31' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_32' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_33' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_34' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_35' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_36' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_37' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_38' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_39' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_40' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_41' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_42' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_43' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_44' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_45' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_46' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_47' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_48' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_49' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_50' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_51' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_52' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_53' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_54' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_55' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_56' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_57' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_58' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_59' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_60' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_61' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_62' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_63' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_64' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_65' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_66' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_67' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_68' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_69' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_7' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_8' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._proof_1_9' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._simp_1_1' depends on axioms: [propext]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_controls._simp_1_2' depends on axioms: [propext]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_10' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_11' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_12' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_13' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_14' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_15' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_16' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_17' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_18' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_19' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_20' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_21' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_22' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_23' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_24' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_25' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_26' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_27' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_28' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_29' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_30' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_31' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_32' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_33' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_34' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_35' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_36' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_37' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_38' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_39' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_40' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_41' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_42' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_43' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_44' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_45' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_46' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_47' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_48' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_49' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_50' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_51' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_52' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_53' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_54' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_55' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_56' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_57' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_58' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_59' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_60' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_61' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_62' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_63' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_64' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_65' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_66' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_67' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_68' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_69' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_7' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_70' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_8' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.pure_frame._proof_1_9' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.rootSetup' does not depend on any axioms
+'ExactFourierCircuits.UniformKernelSpectrumMachine.rootSetup.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformKernelSpectrumMachine.rootSetup_at' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.rootSetup_at._proof_1_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.rootSetup_safe' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.rootSetup_safe._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.rootSetup_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.rootSetup_spec._proof_1_2' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.root_call' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.root_call._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.root_call._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.root_call._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.root_call._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.root_call._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.root_call._proof_1_6' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.root_call._proof_1_7' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.root_call._proof_1_8' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.root_code' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.root_controls' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.root_controls._proof_1_3' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.root_controls._proof_1_4' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.root_controls._simp_1_1' depends on axioms: [propext]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.root_controls._simp_1_2' depends on axioms: [propext]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.root_persistent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.root_persistent._proof_1_2' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.root_persistent._proof_1_3' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.runtimeBudget' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.runtime_log_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.segment_code' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.segment_code._proof_1_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.segment_code._proof_1_2' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.segment_code._proof_1_3' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.setupFrame_refl' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.sizeBoot' does not depend on any axioms
+'ExactFourierCircuits.UniformKernelSpectrumMachine.sizeBoot.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformKernelSpectrumMachine.sizeBoot_code' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.size_branch' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.size_jump' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.sizing_loop' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.sizing_loop._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.sizing_loop._proof_1_10' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.sizing_loop._proof_1_11' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.sizing_loop._proof_1_12' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.sizing_loop._proof_1_13' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.sizing_loop._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.sizing_loop._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.sizing_loop._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.sizing_loop._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.sizing_loop._proof_1_6' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.sizing_loop._proof_1_8' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.sizing_loop._proof_1_9' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.source_address_bound' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.source_address_bound._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.spectra_loop' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.spectra_loop._proof_1_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.spectra_loop._proof_1_2' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.spectra_loop._proof_1_3' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.spectra_loop._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.spectra_loop._proof_1_5' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.spectra_loop._proof_1_6' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.spectra_loop._proof_1_7' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.spectrum_address_end' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.spectrum_address_end._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.spectrum_after_arena' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.spectrum_after_arena._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.suffix' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.suffix.eq_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.suffix_get' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.suffix_get._proof_1_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.suffix_get._proof_1_2' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.suffix_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformKernelSpectrumMachine.wordBudget' depends on axioms: [propext]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.G' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.coefficientRef' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.dataRef' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.remapRow' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.mapExpr' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.remapExpr' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.embedding_val' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.encode_remap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.encode_embedding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.branchOutput' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.slotRows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.firstAdds' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.secondAdds' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.crossRows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.slotRows_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.crossRows_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.mapExpr_map' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.mapExpr_refs' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.mapExpr_id' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.mapExpr_then_map' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.mapProgram_records' depends on axioms: [propext]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.liftRef' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.appendWire_identity' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.reverseWire' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.reverseWire_fin' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.reverse_appendWire' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.first_dataRef' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.convolution_output_val' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.convolution_records' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.first_records' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.firstDAG' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.G_width' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.firstDAG_size' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.firstDAG_output' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.second_append_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.kernel_records' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.kernel_size' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.kernel_output' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.lift_first' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.lift_second' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.lifted_kernel_rows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.appendWire_identity_function' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.sumThree_records' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.lift_zero' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.expr_map_zero' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.branchOutput_lift' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.crossRows_typed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.head' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.tail' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.program' depends on axioms: [propext]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.head_length' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.tail_length' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.program_length' depends on axioms: [propext]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.convolution_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.Params' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.Frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.Frame.refl' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.Frame.trans' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.safe' depends on axioms: [propext]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.safe_relocate' depends on axioms: [propext]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.safe_convolution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.program_safe' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.write_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.step_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.execution_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.runs_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.Params.frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.saved_headers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.budget' depends on axioms: [propext]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.budget_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.budget_convolution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.boot' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.boot_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.boot_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.convolution_start' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.tail_lookup' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.Constants' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.Base' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.RowState' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.Fields' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.Base.withPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.RowState.withPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.Fields.withPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.block_keeps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.postBlock' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.postBlock_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.reads' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.reads_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.Atom' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.Atom.pc' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.Atom.code' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.Atom.apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.Atom.ready' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.Atom.peak' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.trace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.traceReady' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.tracePeak' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.TraceCode' depends on axioms: [propext]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.Atom.step' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.Atom.bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.trace_runs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.refTrace' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.tail_absolute' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.refTrace_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.refTrace_length' depends on axioms: [propext]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.refTrace_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.Atom.scratch' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.trace_keeps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.ControlSame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.RowState.controls' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.refTrace_controls' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.budget_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.refTrace_peak' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.ref_run' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.reads_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.trace_append' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.traceReady_append' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.tracePeak_append' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.refTrace_keeps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.left_fields' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.right_fields' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.rightTrace' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.rightTrace_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.rightTrace_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.rightTrace_peak' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.coefficientTrace' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.coefficientTrace_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.coefficientTrace_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.coefficientTrace_peak' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.rightTrace_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.coefficientTrace_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.mapper_run' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.reads_peak' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.read_mapper_run' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.HeapFields' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.PrintedSlots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.stores' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.stores_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.stores_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.dataRef_bound' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.coefficientRef_bound' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.remapRow_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.budget_tape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.stores_peak' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.stores_printed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.stores_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.stores_outside' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.RowInvariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.RowInvariant.withPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.row_iteration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.row_loop' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.SlotInvariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.SlotInvariant.withPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.slotInit' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.slotInit_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.slotInit_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.slotInit_peak' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.slot_iteration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.slots_loop' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.addRow' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.PrintedAdds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.AddState' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.AddInvariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.AddState.withPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.AddInvariant.withPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.addInit' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.addInit_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.addInit_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.addInit_peak' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.addFieldsTrace' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.addFieldsTrace_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.addFieldsTrace_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.addFieldsTrace_peak' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.addStores' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.addStores_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.addStores_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.addRow_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.addStores_peak' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.addStores_printed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.addStores_slots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.addStores_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.addStores_outside' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.addFieldsTrace_length' depends on axioms: [propext]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.add_iteration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.add_loop' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.postBlock_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.slots_execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.add_phase_exit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.phaseSwitch' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.phaseSwitch_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.phaseSwitch_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.adds_execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.RowTable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.RowTable.append' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.RowTable.ofFn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.slotRows_ofFn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.slotPrefix_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.slotPrefix_table' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.printed_rowTable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.typed_execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.decodeCrossRow' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.mapped_encoding_lossless' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.slot_encoding_lossless' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.lifted_kernel_exprs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.cross_encoding_lossless' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.programRecords_before' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.rowTable_present' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.runtime_width' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.budget_width' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.program_zero_height' does not depend on any axioms
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.fixture_empty_cross' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.fixture_unit_cross' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.fixture_ragged_cross' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.missing_source_guard' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformToeplitzCrossTopologyMachine.modulo_zero_guard' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
