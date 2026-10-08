@@ -1,9 +1,9 @@
 {
   "schema": "exact-uniform-bytecode-diagnostics/v1",
   "status": "PASS",
-  "created_utc": "2026-10-08T07:55:02.182983+00:00",
+  "created_utc": "2026-10-08T08:44:17.757656+00:00",
   "command": "python3 scripts/check-uniform-bytecode.py",
-  "exact_cases": 7002,
+  "exact_cases": 8702,
   "records": [
     {
       "receipt": "logs/uniform-bytecode/fixtures.json",
@@ -124,18 +124,52 @@
       "sha256": "0f9c32127cb66a391fec613f600986d19f8bc693b967b759808f9f370019e5f3",
       "cases": 1656,
       "status": "PASS"
+    },
+    {
+      "receipt": "logs/uniform-bytecode/cross-height/bytecode-results.json",
+      "sha256": "6e08508516a647938f9fbf11002ec1c39284c2f42349b7b17d64692eff599c70",
+      "cases": 54,
+      "status": "PASS"
+    },
+    {
+      "receipt": "logs/uniform-bytecode/scalar-replay/fixtures.json",
+      "sha256": "09348efe735b11d367fd8af47f6cd5f78cfce7e79c6c634d71e0ba0254ea6197",
+      "cases": 756,
+      "status": "PASS"
+    },
+    {
+      "receipt": "logs/uniform-bytecode/chunk-rows/cyclotomic-fixtures.json",
+      "sha256": "86eb1446852a77f51b90200412e770b1f6f2734f1b52ad82485f998fc3b20c68",
+      "cases": 52,
+      "status": "PASS"
+    },
+    {
+      "receipt": "logs/uniform-bytecode/seed-rank-cross/fixtures.json",
+      "sha256": "0b19f64fad6b34866c092e20dad7ccb90a53d17f6d3d792b56cf9ae057442ea2",
+      "cases": 40,
+      "status": "PASS"
+    },
+    {
+      "receipt": "logs/uniform-bytecode/dirty-replay/fixtures.json",
+      "sha256": "faa209abfaaa58e3a4aa4753852b10d954d48da5a12e7b165aa39c6d50400acc",
+      "cases": 798,
+      "status": "PASS"
     }
   ],
   "source_sha256": {
-    "scripts/check-uniform-bytecode.py": "f8450b4a7bc546d0c50740b02a608473378c42ca3b12cdb77c05901ed09458a0",
+    "scripts/check-uniform-bytecode.py": "e3a50783441710417c7120fe981a994feae0d966a125151cf193473222d03e4d",
+    "scripts/check-uniform-seed-cyclotomic-engine.py": "d6a4dfee7a420a72ee6e671658be575a8dbb0a180db44be50839e65dfc10f5b4",
     "scripts/uniform-bytecode-fixtures.py": "ac223f2b089b5f5c205f40c285042c7e5f2055884b109b589a5471b369c6b6d1",
+    "scripts/uniform-chunk-rows-bytecode-fixtures.py": "4839719d4692d9e1cf8bc099c73825e6ed7bfe039a00d8ac7a28f8b9a15cdbe2",
     "scripts/uniform-color-layer-bytecode-fixtures.py": "41f4847e3c6a15dbf83d5d4d3e00b8f3d674768dc65ba5a986defe3029d1390d",
     "scripts/uniform-contiguous-power-bytecode-fixtures.py": "3b2807d98a1b67ecdf2449d6dc73aedbc6de2601384069c461e5d2f614b9e564",
     "scripts/uniform-cross-depth-bytecode-fixtures.py": "3f5c38b4f83a5c30cd7592a7b2b49a843ebafb64d8524083b84ed6b12d434b80",
+    "scripts/uniform-cross-height-bytecode-fixtures.py": "8ad3d5ebeada45cc489b055e1381fa3a4c42a5024e648353ebbf61fdac815ac6",
     "scripts/uniform-cross-shear-bytecode-fixtures.py": "2c7865066b5decaebcd5bba4fe58f3ab139c7596cea2d1d482b9d6af430ca96c",
     "scripts/uniform-cross-topology-bytecode-fixtures.py": "125dc1c87e64ba1563e865591749979655db67a6ca6b1999d8ccb94273afac08",
     "scripts/uniform-dag-bucket-bytecode-fixtures.py": "c58aaca51d2c913bb331a79747b0b5e7045dfe73168a5981ecbd250181f61f67",
     "scripts/uniform-dag-depth-bytecode-fixtures.py": "1e8fa9fa1e4629b5cc730c212f438146c8d97350fda49042c9784517ece4027d",
+    "scripts/uniform-dirty-replay-bytecode-fixtures.py": "04a0aff2dac95bc3c5855b4b8a1d8ea9b4164b7d86ac419e7921e5c6b38172de",
     "scripts/uniform-greedy-color-bytecode-fixtures.py": "423e2f9baa51a91ca9a114740f181f485ac25b282ce0319e6dd3febb09a9266a",
     "scripts/uniform-inverse-shear-bytecode-fixtures.py": "bcff8acda1efb7e2f028bc009442851b784db42c51bc20ec5ae2dfd59ab813e7",
     "scripts/uniform-kernel-spectrum-bytecode-fixtures.py": "165783baa6f96cdf8c69c933c8ab194d02b7b29bc34cbbe4e720e57d2835950b",
@@ -145,17 +179,23 @@
     "scripts/uniform-rank-cross-replay-bytecode-fixtures.py": "d24206dc3f801619e45cdd6014c5aee4ba70178c3d51b6a5b7fffa7fbdb72118",
     "scripts/uniform-rank-kernel-bytecode-fixtures.py": "dd38bbe14fa46fc4278aa4d7a0faedbdfaa4dfa89a458c7a58314f11e3056d2f",
     "scripts/uniform-replay-coefficient-bytecode-fixtures.py": "7d107be57f8f5e8395ab3da59e415928b4dfc3e3d86ba0ae66c4c401cc95db5e",
+    "scripts/uniform-scalar-replay-bytecode-fixtures.py": "e9711ccb6ed1996de5560cb7df3ba52919eb2c8a56de22917ef6d5106af8c6ab",
     "scripts/uniform-sector-metadata-bytecode-fixtures.py": "2691b1225f1ea02683743aae6440e9b34af49b10a9990215a482b24985527799",
     "scripts/uniform-sector-packing-bytecode-fixtures.py": "db821a5cffa95764318e423e51cdccacccbcc19ae1ed1989100650a41d4e1a26",
+    "scripts/uniform-seed-rank-cross-bytecode-fixtures.py": "e6e8abadfe49f950749bce60a3fadd0f696bd6d4f227d574ee993caa4a2137e2",
     "scripts/uniform-zero-free-bytecode-fixtures.py": "bba25dd362b9239366d7e07e280928db71db1ac7d79949dae12ff6329cef7922",
     "scripts/uniform_cyclotomic_engine.py": "8ec3ef6f79e9ccbbf0eae3c0273a64a25f8a0b8fde3bea3326a068f678011524",
+    "scripts/uniform_seed_cyclotomic_engine.py": "c43973275dfdb1ac3fbd7de07a6c4fef06b0a67808bacab6c71fbddc43492bf3",
+    "verification/ExportChunkRowsBytecode.lean": "f6fc812c78f1455129d38e646622b26420968b360327efc0239b27286a007460",
     "verification/ExportColorLayerBytecode.lean": "e243c6fa240ce21fd3c84686722cab5a16ba743831c0b03768120ce2f38ffda5",
     "verification/ExportCrossDepthBytecode.lean": "7d66febad3c1138d9abadd078fdb344b5ba9ed192469d5e66eee69857f1949e0",
     "verification/ExportCrossDepthTypedBytecode.lean": "e5c8b9970319f5ba7ca98ff97a1916145da97ef680b174dd9724bda1d98e6ea1",
+    "verification/ExportCrossHeightBytecode.lean": "17d0f8a51159adb005fce1aeb0fb3b9f549f0bebfc4ed9cf789f86b20d2960da",
     "verification/ExportCrossShearBytecode.lean": "8ea71c31bef83fec41ece63b56929ca8052d07fc6d0de35f36a17abcf2820bf9",
     "verification/ExportCrossTopologyBytecode.lean": "d2c294bd4d96c0b84beee59d328b6e1ee99659f800f95e82653962f2bd722b9a",
     "verification/ExportDAGBucketBytecode.lean": "5e789ca6fd9a8908ae95b2608cb292ea86aeed78175cfea3fab8cc12bc8913f2",
     "verification/ExportDAGDepthBytecode.lean": "1bd115ab037a084e73f1b35024e1276e7b8ae23dcf324a8a0cfeb9ca0f0a0962",
+    "verification/ExportDirtyReplayBytecode.lean": "6e1e73e51dc986fa10937097ca4b0a387e67253d57776fda17541dba16f2d63f",
     "verification/ExportGreedyColorBytecode.lean": "ae1bc78f7bef4a73acdc9d2869966d57690c77ec254ac38cf8cc429e74d10de6",
     "verification/ExportInverseShearBytecode.lean": "855d7a4d916e4583b7a1968196cd0532118d3b604f62864649b58fc00748e22f",
     "verification/ExportKernelSpectrumBytecode.lean": "600c8b9cbf7be38d93c1cb19f24c4dab05138188b9ad80af35ea84335d69f299",
@@ -164,11 +204,22 @@
     "verification/ExportRankCrossReplayBytecode.lean": "309141f8b0c9a34cc4a554d8b894816832a5ddebeef8b3c6030ee3aad0643932",
     "verification/ExportRankKernelBytecode.lean": "44606460fa1d0d22f8c83024e09e6fb4ac4578fe99ba46e3d0cecf0e93637b15",
     "verification/ExportReplayCoefficientBytecode.lean": "975893091f872d830f7cb5383b60c3c13062426632841c386197140290ce89a4",
+    "verification/ExportScalarReplayBytecode.lean": "a3b5fdfa9a47d7e9be8535ba8250d4b65a42c68ead0a7b0831726a9f1721d74a",
     "verification/ExportSectorMetadataBytecode.lean": "0f82036d4b531ce38edfa79a19f3bcfc352adc70e88d80cf510fedc23309f1c2",
     "verification/ExportSectorPackingBytecode.lean": "349c889e9f4b8eefd4b2f8171786902585d85b510148f213aebf7f5b2dac5306",
+    "verification/ExportSeedRankCrossBytecode.lean": "46b076e80941650dbbc9f34b49752a3a2bad225bb82128e2d88b8562fb1b4384",
     "verification/ExportUniformBytecode.lean": "ce220e9e920798ab51beb020e62df622224408b1d500f8fa6e6260956df9a4b3",
     "verification/fixtures/dag-depth-typed.json": "d870f5e2194dac64cf783a938ad3b9e5dc3910cbde1df154e49e1499362e9ddd"
   },
   "uniform_algorithm_verified": false,
-  "scope": "Bounded exact instruction diagnostics complement universal Lean proofs; fixture entry boundaries and cached-reference provenance are stated in each receipt. No full uniform fast-DFT claim."
+  "scope": "Bounded exact instruction diagnostics complement universal Lean proofs; fixture entry boundaries and cached-reference provenance are stated in each receipt. No full uniform fast-DFT claim.",
+  "auxiliary_checks": [
+    {
+      "receipt": "logs/uniform-bytecode/seed-rank-cross/engine-check.json",
+      "sha256": "a9c8c74eb7a57cdd1bce7cdc45d5ce95d9d8235ad95d7093aa90f49754603839",
+      "status": "PASS",
+      "dyadic_arithmetic_comparisons": 250,
+      "actual_empty_startup_steps": 1652
+    }
+  ]
 }

@@ -95,8 +95,11 @@ depth labels from original H/G/master cells, installing every helper header
 through charged instructions. Its 799-instruction extension also derives the stable
 order/directory and signed coefficient banks continuously. A 132-instruction
 caller prepares and colors one actual depth bucket; a 30-instruction filter
-prints each selected matching layer. The whole height loop, port embedding and
-physical replay remain open; the retained seed-to-H/G connection is under investigation. The 35-instruction depth writer
+prints each selected matching layer. The 186-instruction height caller prepares every actual depth bucket in
+`8*K+7` iterations and records each row/color bank. The 835-instruction
+seed caller reads the retained axis directory and actual compact inverse-H/G
+lanes before executing the 799-instruction preparation; it retains those banks.
+These are proved component executions; their continuous composition is pending. The 35-instruction depth writer
 derives every typed longest-path label from its physical tape in at most
 `5*(N+1)+22*G+10` charged steps. A 24-instruction printer then constructs
 a stable complete gate permutation and bucket directory from those actual labels;
@@ -114,9 +117,14 @@ rows. A 55-instruction producer converts actual matching rows into ordered
 forward permutations, widths and a physical axis header in exactly
 `17*r+8*M+21` steps. A 36-instruction inverse-table producer reverses the
 actual rows and derives exact negative coefficient addresses in at most
-`25*M+6` steps, including normalization aliases. Its dirty inverse-action
-contract is algebraic; continuous scalar replay remains to be connected. Port
-embedding, full per-axis assembly and the recursive scheduler remain open.
+`25*M+6` steps, including normalization aliases. A 20-instruction scalar interpreter reads actual physical rows and prepared
+coefficients in `16*M+5` steps. Its 81-instruction caller executes inverse-table
+production, forward replay and inverse replay continuously in at most
+`57*M+21` steps, restoring all numeric cells while tracking possible tag growth.
+A 14-instruction port mapper and 59-instruction row mapper connect logical
+coordinates to the actual borrowed bank and source/target allocation.
+Full per-axis assembly, conjugate coefficient production and the recursive
+scheduler remain open.
 
 
 ## Run
@@ -160,7 +168,7 @@ The depth writer adds 76 cases (30 pinned typed examples and eight fresh small
 examples, each in two layouts); packing adds 270 cases, including local
 permutations whose inverse differs from the forward permutation. Their receipts
 are `dag-depth/fixtures.json` and `sector-packing/bytecode-results.json`.
-The complete command currently passes **7,002 cases**. Receipts in
+The complete command currently passes **8,702 cases**. Receipts in
 `color-layer`, `cross-depth` and `rank-cross-replay` add 1,665, 484 and 32 cases.
 The last suite runs the continuous 799-instruction program from original
 H/G/master cells with exact cyclotomic arithmetic and freshly exported formal
@@ -169,7 +177,14 @@ instruction; the 132-instruction bucket caller exercises 131 of 132 PCs.
 `inverse-shear` adds 1,656 cases, every one of its 36 instructions, nine guard
 checks and 1,602 exact dirty-array restoration checks. These tests execute the
 actual signed-coefficient producer at its component boundary; continuous scalar
-replay caller composition remains separate. The [diagnostic manifest](verification/uniform-bytecode-components.json)
+replay caller composition is checked separately by `dirty-replay`: 798 cases
+exercise all 81 continuous instructions and exact tag changes. `scalar-replay`
+adds 756 cases, `cross-height` 54, and `chunk-rows` 52. The 40 `seed-rank-cross`
+cases consume banks produced by actual empty-state startup, including radix 3
+and radix 4, using the true cyclotomic fields for master orders 128 and 24,576.
+Its auxiliary arithmetic check independently constructs both cyclotomic
+polynomials and compares 250 dyadic operations with the prior exact engine.
+The [diagnostic manifest](verification/uniform-bytecode-components.json)
 records source and receipt hashes; the universal Lean proofs remain the primary evidence.
 
 For a fresh checkout, `./scripts/setup.sh` installs the Python environment,

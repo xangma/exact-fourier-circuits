@@ -1,0 +1,111 @@
+import UniformDirtyReplayMachine
+import Lean
+
+set_option autoImplicit false
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.Data
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.Frame
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.Frame.refl
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.Frame.trans
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.Frame.withPC
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.Protected
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.Rows
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.action
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.coefficients_transport
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.data_after_action
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.domain_lower
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.domain_lower._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.domain_lower._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.domain_lower._proof_1_3
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.execution
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.execution._proof_1_10
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.execution._proof_1_11
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.execution._proof_1_12
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.execution._proof_1_13
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.execution._proof_1_14
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.execution._proof_1_15
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.execution._proof_1_16
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.execution._proof_1_18
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.execution._proof_1_19
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.execution._proof_1_20
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.execution._proof_1_21
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.execution._proof_1_22
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.execution._proof_1_23
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.execution._proof_1_24
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.execution._proof_1_25
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.execution._proof_1_9
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.forwardSetup
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.forwardSetup.eq_1
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.forward_code
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.forward_setup_code
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.forward_setup_frame
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.forward_setup_frame._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.forward_setup_frame._proof_1_3
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.forward_setup_frame._proof_1_4
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.forward_setup_frame._proof_1_5
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.forward_setup_frame._proof_1_6
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.forward_setup_frame._proof_1_7
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.forward_setup_frame._proof_1_8
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.forward_setup_header
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.forward_setup_heap
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.halt_at
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.inverseRows
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.inverseSetup
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.inverseSetup.eq_1
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.inverse_code
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.inverse_coefficients_lower
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.inverse_data
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.inverse_geometry
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.inverse_lower
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.inverse_lower._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.inverse_lower._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.inverse_lower._proof_1_3
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.inverse_lower._proof_1_4
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.inverse_lower._proof_1_5
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.inverse_member
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.inverse_setup_code
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.inverse_setup_frame
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.inverse_setup_frame._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.inverse_setup_header
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.inverse_setup_heap
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.inverse_table_code
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.master_retained
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.numeric
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.present_action
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.program
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.program.eq_1
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.program_length
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.replay_frame
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.replay_frame._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.reset_placed
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.retained_above
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.retained_above._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.saved_headers
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.saved_headers._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.separated_of_geometry
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.separated_of_geometry._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.signed_banks_retained
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.signed_banks_retained._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.signed_banks_retained._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.signed_banks_retained._proof_1_3
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.table_frame
+#print axioms ExactFourierCircuits.UniformDirtyReplayMachine.valueOf
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformDirtyReplayMachine.".isPrefixOf name.toString then
+   let axioms ← collectAxioms name
+   logInfo m!"'{name}' depends on axioms: {axioms.toList}"
+   for ax in axioms do
+    unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
+     throwError m!"Forbidden axiom {ax} in {name}"
