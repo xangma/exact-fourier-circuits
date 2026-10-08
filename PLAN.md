@@ -174,8 +174,10 @@ compiler milestone now has a verified 154-instruction convolution topology print
 from integer height. The next step joins six corrected-cross graphs, layers and
 dirty replay. The all-axis diagonal pass installs its own caller headers from
 actual empty startup in 1084 instructions and has a proved linear runtime bound.
-An actual contiguous power writer charges every bank store; six physical kernels
-and their joined FFT/copy spectrum assembly remain to be completed.
+An actual contiguous power writer charges every bank store, and the fixed
+90-instruction kernel producer derives all six physical kernels from H/G. The
+joined FFT/copy spectrum assembly remains to be completed.
 The block traversal's reversed cons output is proved equal to the exact ordered
-sector directory. Its physical metadata scan/DFS must derive this directory and
-every stack read from original width rows, then support charged scalar packing.
+sector directory. Its physical 92-instruction metadata scan/DFS derives this
+directory and every stack read from original width rows in linear time. A
+continuous scalar packing DFS/gather and charged graph-depth pass are active.

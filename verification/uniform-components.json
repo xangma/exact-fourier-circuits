@@ -1,7 +1,7 @@
 {
   "schema": "lean-uniform-components/v1",
   "passed": true,
-  "finished_utc": "2026-10-08T04:43:07.503616+00:00",
+  "finished_utc": "2026-10-08T05:26:22.727334+00:00",
   "lean_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
   "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
   "upstream_files_verified": 51,
@@ -112,6 +112,7 @@
     "CheckUniformRadixRowTableMachineAxioms.lean": "6a3cb76e9e5be02bac8a85d7b5bbc733ea1118c424b47467422cf3ddd12975ea",
     "CheckUniformRadixTwoDAGAxioms.lean": "76c201de16bcfa4b0e2c8cfee27870a8200191563099b3d40877354500f7661b",
     "CheckUniformRadixTwoMachineAxioms.lean": "57397fa98130768c251f0df1e74d350cc9fad1b59666832963623781b0ec482d",
+    "CheckUniformRankKernelMachineAxioms.lean": "d06017e4e0030e817118d861522884a578f8a25a2902d5bacca4dbd56e6680c4",
     "CheckUniformRankKernelPreparationAxioms.lean": "6e1a686cb005c8f3a1210eed476af08780e6bd076e9d0a1ba6da04087b858d77",
     "CheckUniformReciprocalMachineAxioms.lean": "795bca43d68594a65259f8456493c63f3009fca6a60a46b04eb1d75d766d97af",
     "CheckUniformReciprocalPreparationAxioms.lean": "764d5501b6820304e7d5c7ec0a42aeb1381879bb95ad21c5e26506439c306499",
@@ -122,6 +123,7 @@
     "CheckUniformRootsAxioms.lean": "bbc438be9465ffba044ff854e9224a46d6e44e08a3406481bca0f7297d5464de",
     "CheckUniformScalarCopyMachineAxioms.lean": "a69f55b39b89d0f7aca58e041694d3c1c1a902a769a84cd9e4bc1eb809a479ae",
     "CheckUniformScalarPreparationAxioms.lean": "a857ac23199fda0b99d63d2b20c7c632a6830dd711c9044ec07d421045fa08cb",
+    "CheckUniformSectorMetadataMachineAxioms.lean": "d45358d3534eeae3b4cc872916cb86383880a8a14281bc506739072007154fbf",
     "CheckUniformSectorNetworkActionAxioms.lean": "b9dca14766be2a18fd80b38b3e4dfe7e9b875909d36beb4f0de249bbaeafd51f",
     "CheckUniformSectorPackingAxioms.lean": "5c33284670a0fefb431d47dc5d67c122bddebc05b1674bd1c535d982d255dc55",
     "CheckUniformSectorTensorAxioms.lean": "33205584cb203ce38d7e22acc7e5416ed0260eddb8a6c968236cc650e4e482b9",
@@ -230,7 +232,7 @@
     "TripleSchedule.lean": "4a971ec67830b3802a15edb8deae8b90c3173333beb0a0ee6420ef3bb1edbd9c",
     "TripleStageAction.lean": "a889724eb6c4261e6215b28ddeb430b67e7b9a3c2341cb395d910661bfcff09d",
     "TypedKernelWords.lean": "71338589b396abdfdf98a318d7b8dff9b00a6f83739346f681564daaa7269fca",
-    "UNIFORM_CHECKS.json": "7708866ab8d9fa32c837e255047b1f86a8c95667ae62edfd8d532f9de9dc20ea",
+    "UNIFORM_CHECKS.json": "a1b02b536a4565125efd6e2a16bef179e0b6efb5c0cdd429cd12072277967265",
     "UPSTREAM_MANIFEST.json": "164f39279317c670920956d5260da95c02dad03acd140329fc503dc263cd2251",
     "UniformAllAxisDiagonalPreparation.lean": "247cff2c9d23f44d0852bb5f0e2941fb6a5deacfacc64a9fa9dd9e7299691d45",
     "UniformAllAxisSeedCost.lean": "8a100c2795665c66444599d651f1b6582613029452830970321d96f05d528cb2",
@@ -330,6 +332,7 @@
     "UniformRadixRowTableMachine.lean": "00fda848f9d69ee87dc2aa70186670f439d64a61dc15b81addeeef01da245cd9",
     "UniformRadixTwoDAG.lean": "9a225d57d884b8388c6f7e80e1548508268c2c11f5563b08780af889a82a0062",
     "UniformRadixTwoMachine.lean": "c0e21a56d30f3bf40447aea7e312ea921e63dd343231e0526e39761ba3b6f27c",
+    "UniformRankKernelMachine.lean": "76a5c4ca49b4f17468962b402e9246e3e7c3e34da675a6981406ed193e008910",
     "UniformRankKernelPreparation.lean": "3eb5e228e02a65412ca1c622675d12d29b81b068b998312a78da9e76d0de33db",
     "UniformReciprocalMachine.lean": "9253768442da6f6b2091d40c9abb1ebe300a7566cf90d84e08b4a3c417ed5e4f",
     "UniformReciprocalPreparation.lean": "84c49cb0630e50e39712557919592fc8ab27325009d92ea4cf1231ca668af5fe",
@@ -340,6 +343,7 @@
     "UniformRoots.lean": "98f2d4b40377d61f3de5f7b924124d8b56a97bd08f541db837b37d606aeef676",
     "UniformScalarCopyMachine.lean": "841b3e56476518a5b138d2d2f5640ac30a5205f57d72cf3d72db1823a6ac7aec",
     "UniformScalarPreparation.lean": "dc56350afaedd118851948a844b8c3e2b4c90f49977bc6e470afca6ad110fbb6",
+    "UniformSectorMetadataMachine.lean": "75ef899325a7b86b9e6d3e06faddd0f045200d81e3ede8a44f55f2033b866188",
     "UniformSectorNetworkAction.lean": "94f2443fa41041cd64622cc21a951afb5c5f8937a55f8fe76fe4247c6f6726fc",
     "UniformSectorPacking.lean": "fe776952d7258bf8c0384315e2e4b1ad19744f61c348fd2d78fae74cca79e659",
     "UniformSectorTensor.lean": "ab35b383b4e914e2b6294461b7e82c6992d11276bff696532a0fdb21607864fa",
@@ -363,7 +367,7 @@
     "UniformWorkspaceSearchMachine.lean": "25e5da89ba3201d64615441f01ae021d44e13f5109e7e8759757bc495fe44af7",
     "UniformZeroFreeDiagonalMachine.lean": "a26e26fdbac93c15235dd87aac68184d71bf1136540d974d9a72da6273731fb3",
     "lake-manifest.json": "7b626f9e30d660141cb94e48851728dd8a1bd2b65028ba765bae7de0e2582639",
-    "lakefile.lean": "060fbb83746e4287684454efcbe698f62711b99dcfbdf0fdba9ba00810fa2cd8",
+    "lakefile.lean": "81c5647391af67176506eb5aeba232938170cae3b6e9dad6f1cdb1cc9cb90288",
     "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
   },
   "verification_script_sha256": "b02436f218755e8246ea970546d49a664542ff2c142307e0cc3fa91f49913497",
@@ -38910,6 +38914,4059 @@
       "Quot.sound",
       "propext"
     ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Axis": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Axis._sizeOf_1": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Axis._sizeOf_inst": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Axis.casesOn": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Axis.ctorIdx": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Axis.geometry": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Axis.mk": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Axis.mk._flat_ctor": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Axis.mk.inj": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Axis.mk.injEq": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Axis.mk.noConfusion": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Axis.mk.sizeOf_spec": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Axis.noConfusion": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Axis.noConfusionType": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Axis.rec": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Axis.recOn": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Axis.widthsBase": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Banks": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Banks.below": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Banks.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Banks.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Banks.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Banks.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Banks.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Banks.rows": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Banks.suffixes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Banks.widths": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Cell": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.ChildrenSafe": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.ChildrenSafe._f": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.ChildrenSafe._sunfold": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.ChildrenSafe._unsafe_rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Constants": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Constants.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Cursor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Cursor.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Cursor.count": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Cursor.depth": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Cursor.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Cursor.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Cursor.pairs": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Cursor.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Cursor.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Cursor.start": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Cursor.width": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.DescentSafe": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.DescentSafe.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.DescentSafe.go": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.DescentSafe.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.DescentSafe.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.DescentSafe.pc": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.DescentSafe.peak": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.DescentSafe.readable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.DescentSafe.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.DescentSafe.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Directory": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Directory._f": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Directory._sunfold": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Directory._unsafe_rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Directory.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Directory.eq_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Directory.eq_def": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Directory.match_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Effect": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Effect.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Effect.constants": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Effect.cursor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Effect.directory": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Effect.frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Effect.header": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Effect.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Effect.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Effect.natFrame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Effect.pc": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Effect.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Effect.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.EntrySafe": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.EntrySafe.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.EntrySafe.go": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.EntrySafe.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.EntrySafe.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.EntrySafe.pc": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.EntrySafe.peak": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.EntrySafe.readable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.EntrySafe.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.EntrySafe.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Exhausted": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Exhausted.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Exhausted.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Exhausted.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Exhausted.pc": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Exhausted.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Exhausted.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Exhausted.stop": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Fits": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Frame.trans": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Header": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Header.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Header.count": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Header.directory": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Header.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Header.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Header.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Header.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Header.rows": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Header.stack": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Header.suffix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Header.transport": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Header.transport._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Header.transport._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Header.transport._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Header.transport._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Header.transport._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.mk.injEq": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.LeafSafe": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.LeafSafe.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.LeafSafe.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.LeafSafe.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.LeafSafe.pc": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.LeafSafe.peak": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.LeafSafe.readable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.LeafSafe.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.LeafSafe.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.LeafSafe.stop": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.LoopEffect": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.LoopEffect.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.LoopEffect.constants": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.LoopEffect.cursor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.LoopEffect.directory": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.LoopEffect.frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.LoopEffect.header": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.LoopEffect.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.LoopEffect.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.LoopEffect.natFrame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.LoopEffect.pc": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.LoopEffect.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.LoopEffect.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.NatWithin": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.NatWithin._sparseCasesOn_1": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.NatWithin._sparseCasesOn_1.else_eq": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.NatWithin.eq_1": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.NatWithin.eq_2": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.NatWithin.eq_3": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.NatWithin.eq_4": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.NatWithin.eq_5": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.NatWithin.eq_6": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.NatWithin.eq_7": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.NatWithin.match_1": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Outside": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Outside.trans": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.OutsideAllocation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.PhysicalTree": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.RangeFrame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.RangeFrame.frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.RangeFrame.frame._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.RangeFrame.frame._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.RangeFrame.trans": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.ReturnSafe": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.ReturnSafe.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.ReturnSafe.go": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.ReturnSafe.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.ReturnSafe.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.ReturnSafe.pc": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.ReturnSafe.peak": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.ReturnSafe.readable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.ReturnSafe.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.ReturnSafe.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Rows": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Rows._f": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Rows._sunfold": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Rows._unsafe_rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Rows.match_1": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Saved": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Saved.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Suffixes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.TreeSafe": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.TreeSafe._f": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.TreeSafe._sunfold": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.TreeSafe._unsafe_rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Widths": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.WrittenSuffix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.advanceAt": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.advanceAt.eq_1": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.advanceAt_fin": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.allocatedLayout": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.allocatedLayout._proof_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.allocatedLayout._proof_10": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.allocatedLayout._proof_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.allocatedLayout._proof_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.allocatedLayout._proof_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.allocatedLayout._proof_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.allocatedLayout._proof_6": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.allocatedLayout._proof_7": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.allocatedLayout._proof_8": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.allocatedLayout._proof_9": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.axes": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.axis_count_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.banks_tail": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.banks_tail._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.banks_tail._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.banks_transfer": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.banks_transfer._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.banks_transfer._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.block_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.blocks_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.body_constants": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.body_constants._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.body_constants._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.body_constants._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.body_constants._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.body_constants._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.branched_block": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.branched_block._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_actual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_actual._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_actual._proof_1_10": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_actual._proof_1_11": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_actual._proof_1_12": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_actual._proof_1_13": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_actual._proof_1_14": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_actual._proof_1_15": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_actual._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_actual._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_actual._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_actual._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_actual._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_actual._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_actual._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_actual._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_branch": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_code": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_constants": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_cursor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_fits": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_fits._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_fits._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_heap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_jump": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_safe": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_safe._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_safe._proof_1_10": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_safe._proof_1_12": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_safe._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_safe._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_safe._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_safe._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_safe._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_safe._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_safe._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_safe._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.children": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.children._f": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.children._sunfold": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.children._unsafe_rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.children.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.children.eq_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.children.eq_def": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.children.match_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.children_bounded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.constants_setPC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.counts": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.cursor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.cursor_setPC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.directory_append": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.directory_append._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.directory_transfer": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.directory_transfer._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.directory_transfer._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.directory_transfer._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.directory_transfer._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.directory_transfer._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.directory_transfer._proof_1_6": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.directory_transfer._proof_1_7": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.directory_transfer._proof_1_8": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.enter_actual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.enter_actual._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.enter_actual._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.enter_actual._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.enter_actual._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.enter_code": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.entered": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.entered.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.entry_branch": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.enumerate_ofFn": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.enumerate_ofFn._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.execution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.execution._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.execution._proof_1_10": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.execution._proof_1_11": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.execution._proof_1_12": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.execution._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.execution._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.execution._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.execution._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.execution._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.execution._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.execution._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.execution_cost": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.halt_at": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.header_setPC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.initialized": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.initialized.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.initialized_properties": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.leaf": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.leaf.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.leaf_actual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.leaf_actual._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.leaf_actual._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.leaf_actual._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.leaf_actual._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.leaf_actual._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.leaf_actual._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.leaf_code": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.leaf_heap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.leaf_jump": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.natOnly": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.natOnly._sparseCasesOn_1": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.natOnly.match_1": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.natWithinDecidable": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.nat_op_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.nat_op_frame._proof_1_9": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.no_scalar_input_root_output": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.outcomes": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.outcomes.eq_1": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.outcomes_length": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_10": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_11": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_12": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_13": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_14": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_15": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_16": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_17": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_18": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_19": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_20": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_21": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_22": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_23": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_24": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_25": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_26": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_27": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_28": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_29": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_30": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_31": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_children._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_leaf": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_leaf._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_leaf._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_leaf._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_leaf._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_tree": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_tree._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_tree._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.physical_tree._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.pop_actual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.pop_actual._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.pop_actual._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.pop_actual._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.pop_actual._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.pop_actual._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.pop_actual._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.pop_branch": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.pop_code": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.pop_constants": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.pop_cursor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.pop_heap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.pop_jump": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.popped": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.popped.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.protected_prefix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.protected_prefix._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.protected_prefix._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.rows_get": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.rows_get._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.rows_transfer": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.rows_transfer._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.rows_transfer._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.rows_transfer._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.rows_transfer._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.rows_transfer._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.runtime_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.runtime_bound._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.safe_child": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.safe_child._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.safe_child._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.safe_enter": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.safe_enter._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.safe_enter._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.safe_exhausted": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.safe_exhausted._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.safe_leaf": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.safe_leaf._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.safe_leaf._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.safe_pop": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.safe_pop._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.safe_pop._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.saved_registers": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.saved_registers._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.sector_count_le_volume": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.sector_count_le_volume._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.sector_count_le_volume._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.states": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.states.eq_1": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.states_cons": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.states_length": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffixBody_code": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffixBoot_code": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffixInitialized": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffixInitialized.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffixIteration": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffixIteration.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_boot": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_boot._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_boot._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_boot._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_boot._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_boot._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_boot._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_branch": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_jump": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_loop": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_loop._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_loop._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_loop._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_loop._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_loop._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_preparation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_preparation._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_preparation._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_preparation._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_step": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_step._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_step._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_step._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_step._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_step._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_step._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_step_outside": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_step_outside._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_step_written": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_step_written._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffix_step_written._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.tree": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.tree._f": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.tree._sunfold": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.tree._unsafe_rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.tree.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.tree.eq_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.tree.eq_def": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.tree.match_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.treeBoot_code": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.treeCost_balance": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.tree_bounded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.tree_bounded._proof_1_7": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.volume": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.volume_cons": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.volume_drop_le": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.volume_drop_step": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.volume_nil": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.volume_pos": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.volume_pos._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.volume_tail_le": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.volume_tail_le._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.widths_transfer": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.widths_transfer._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.wordBudget": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.wordBudget_linear": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.wordBudget_linear._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.UniformSectorMetadataMachine.0.ExactFourierCircuits.UniformSectorMetadataMachine.tree.match_1.splitter": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.UniformSectorMetadataMachine.0.ExactFourierCircuits.UniformSectorMetadataMachine.children.match_1.splitter": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.UniformSectorMetadataMachine.0.ExactFourierCircuits.UniformSectorMetadataMachine.NatWithin.match_1.eq_6": [
+      "propext"
+    ],
+    "_private.UniformSectorMetadataMachine.0.ExactFourierCircuits.UniformSectorMetadataMachine.tree.match_1.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.UniformSectorMetadataMachine.0.ExactFourierCircuits.UniformSectorMetadataMachine.tree.match_1.eq_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.UniformSectorMetadataMachine.0.ExactFourierCircuits.UniformSectorMetadataMachine.NatWithin.match_1.eq_3": [
+      "propext"
+    ],
+    "_private.UniformSectorMetadataMachine.0.ExactFourierCircuits.UniformSectorMetadataMachine.NatWithin.match_1.eq_5": [
+      "propext"
+    ],
+    "_private.UniformSectorMetadataMachine.0.ExactFourierCircuits.UniformSectorMetadataMachine.Directory.match_1.eq_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.UniformSectorMetadataMachine.0.ExactFourierCircuits.UniformSectorMetadataMachine.treeCost.match_1.splitter": [],
+    "_private.UniformSectorMetadataMachine.0.ExactFourierCircuits.UniformSectorMetadataMachine.enumerate.match_1.eq_2": [],
+    "_private.UniformSectorMetadataMachine.0.ExactFourierCircuits.UniformSectorMetadataMachine.enumerate.match_1.splitter": [],
+    "_private.UniformSectorMetadataMachine.0.ExactFourierCircuits.UniformSectorMetadataMachine.NatWithin.match_1.eq_4": [
+      "propext"
+    ],
+    "_private.UniformSectorMetadataMachine.0.ExactFourierCircuits.UniformSectorMetadataMachine.children.match_1.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.UniformSectorMetadataMachine.0.ExactFourierCircuits.UniformSectorMetadataMachine.children.match_1.eq_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.UniformSectorMetadataMachine.0.ExactFourierCircuits.UniformSectorMetadataMachine.Directory.match_1.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.UniformSectorMetadataMachine.0.ExactFourierCircuits.UniformSectorMetadataMachine.treeCost.match_1.eq_1": [],
+    "_private.UniformSectorMetadataMachine.0.ExactFourierCircuits.UniformSectorMetadataMachine.NatWithin.match_1.eq_2": [
+      "propext"
+    ],
+    "_private.UniformSectorMetadataMachine.0.ExactFourierCircuits.UniformSectorMetadataMachine.enumerate.match_1.eq_1": [],
+    "_private.UniformSectorMetadataMachine.0.ExactFourierCircuits.UniformSectorMetadataMachine.treeCost.match_1.eq_2": [],
+    "_private.UniformSectorMetadataMachine.0.ExactFourierCircuits.UniformSectorMetadataMachine.Directory.match_1.splitter": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.UniformSectorMetadataMachine.0.ExactFourierCircuits.UniformSectorMetadataMachine.NatWithin.match_1.eq_7": [
+      "propext"
+    ],
+    "_private.UniformSectorMetadataMachine.0.ExactFourierCircuits.UniformSectorMetadataMachine.NatWithin.match_1.splitter": [
+      "propext"
+    ],
+    "_private.UniformSectorMetadataMachine.0.ExactFourierCircuits.UniformSectorMetadataMachine.NatWithin.match_1.eq_1": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossTerm.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_27": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.finalCells": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_7": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cell_address_injective._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_23": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_term_safe._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.finalCells_rankKernels._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cell_address_injective._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_blocks_frame._proof_1_12": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.crossBoot": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.zero_loop": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.zero_cells": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossFrame.fullFrame._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossTerm.stop": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_6": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossHeaders.split": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.split": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowCost_bound": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossHeaders.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.delta_spec._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.zero_spec._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_iteration._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cache_at": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.matrixValue.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowCells": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.zero_loop._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_iteration._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.row_finish_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.inputVector_padding": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_21": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cache_spec._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.zero_cells._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_loop._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.vValue": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.crossProgram": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossHeaders.withPC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.bounded_execution._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.finalCells_rankKernels": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Stable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.row_branch": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossTerm.accumulator": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_loop._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.op_stable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.changeCell": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Bank.withPC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.row_iteration._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Fixed.limit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.zero_loop._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.frame._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Bank.fullFrame._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.columnCells_step._simp_1_3": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_8": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_call._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_call._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.finalCells.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Cached.withPC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_29": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.row_jump": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Fixed.colBase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Fixed.scalarOne": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_18": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.delta_spec._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.bounded_execution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.frame._proof_1_11": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_10": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.row_finish_spec._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_loop": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_blocks_frame._proof_1_15": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.vPre_at": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossFrame.fullFrame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Frame.saved": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Cached.w0": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Stable.frame._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_term_code": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Cached.crossFrame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.columnCells_step_zero._simp_1_4": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.row_finish_spec._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.changeCell.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot.eq_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Fixed.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.bounded_execution._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_9": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.crossSum_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Bank": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.bounded_execution._proof_1_10": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.zero_spec._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.zero_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Frame.saved._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.row_iteration._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.zero_at": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_24": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_blocks_frame._proof_1_7": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.program_length": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Frame.withPC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.frame._proof_1_6": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_call": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.zero_jump": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.bounded_execution._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_iteration._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.frame._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.bounded_execution._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.height": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_jump": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.vCost_bound._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_33": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_term_values._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowValue": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_blocks_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.colValue.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.block_stable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_iteration._proof_1_19": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossHeaders.hBase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.width": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_19": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.bounded_execution._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.withPC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossFrame.fullFrame._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_safe": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.zero_spec._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.KernelBank": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_boot_safe": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Cached.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_blocks_frame._proof_1_14": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Fixed.leftDeltaBase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.row_loop": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.runtime_axis_bound._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowCells_step._simp_1_3": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.zero_spec._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Fixed.crossFrame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.finalCells_rankKernels._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.frame._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.vCost_bound": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_blocks_frame._proof_1_16": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.row_iteration._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.advance_run": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossHeaders.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_loop": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Cells": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_iteration._proof_1_16": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossTerm.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.wValue": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.frame._proof_1_8": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Cached.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Fixed.rightDeltaBase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Fixed.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.col_finish_spec._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Stable.trans": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.columnCells_step_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Frame.master": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.halt_at": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cell_address_injective": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_iteration": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_blocks_frame._proof_1_17": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.runtime_bound._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.delta_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowCells_step._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossHeaders.frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_blocks_frame._proof_1_6": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_term_safe": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossTerm.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.program": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_25": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.bounded_execution._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_26": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.columnCells_step._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.crossBoot.eq_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Cached.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_iteration._proof_1_12": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_iteration._proof_1_15": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowCells_step": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Bank.frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowCost_bound._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.frame._proof_1_9": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.zero_loop._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_call._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.zero_spec._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Stable.frame._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowPre_at": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.rank_kernel_execution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossHeaders.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.row_pre_spec._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_iteration._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.crossBoot_length": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_12": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_iteration._proof_1_14": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowCells_step._proof_1_6": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.op_stable._proof_1_10": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_iteration._proof_1_10": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Cells.update": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.row": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.matrixValue": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_blocks_frame._proof_1_13": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Fixed.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_iteration._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Cached": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_16": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_term_values": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_14": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_boot_code": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_blocks_frame._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_iteration": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.runtime_axis_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossHeaders": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.wValue.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.advance_run._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_branch": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.zero_loop._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.row_pre_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_blocks_frame._proof_1_10": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_blocks_frame._proof_1_11": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossFrame.withPC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Bank.fullFrame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.row_iteration._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_at": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Fixed.zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Fixed.scalarZero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.zero_branch": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_pre_spec._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_loop._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowFinish_at": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.colFinish_at": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_30": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.finalCells_rankKernels._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossTerm.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_execution._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_execution._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.row_pre_spec._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.hBase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cache_spec._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_11": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Fixed.withPC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters.mk.injEq": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossFrame.trans": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_term_safe._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.zero_loop._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Stable.fixed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.crossProgram_length": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_branch": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_blocks_frame._proof_1_9": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.col_pre_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.row_iteration._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossHeaders.column": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_20": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_term_values._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_iteration._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_pre_spec._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_iteration._proof_1_18": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_31": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_jump": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_blocks_frame._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.columnCells_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.bounded_execution._proof_1_11": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossFrame.fullFrame._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.row_loop._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_32": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.delta_cells_step": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossFrame.fullFrame._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Frame.refl": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.row_loop._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.instDecidableAllowed": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_call._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.col_finish_spec._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossHeaders.gBase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_34": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_28": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Fixed.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_boot_values": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowCells.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.frame._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_loop._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_13": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_iteration._proof_1_13": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Fixed.rowBase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossTerm.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.vStart_at": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Frame.trans": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_halt": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossFrame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Fixed.vBase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_execution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.row_iteration": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossTerm.index": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Fixed.one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_22": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.gBase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.colValue": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossHeaders.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Cached.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.columnCells_step._proof_1_6": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossTerm.withPC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.column": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossHeaders.one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossFrame.fullFrame._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_execution._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_loop._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossHeaders.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.columnCells_step._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.row_iteration._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.advance_run._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.delta_spec._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Cached.v0": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.row_iteration._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_boot_safe._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.colPre_at": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.row_loop._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.zero_column_branch": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.row_iteration._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.columnCells.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_blocks_frame._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.frame._proof_1_10": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.crossSum_succ": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Stable.frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cache_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_loop._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Cells.heapEq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.row_finish_spec._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowCross_at": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_pre_spec._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowValue.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_iteration._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.crossSum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.runtime_axis_bound._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossTerm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.columnCells": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.vValue.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.col_finish_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossHeaders.row": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_17": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.target": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_blocks_frame._proof_1_8": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossFrame.refl": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.vCost_bound._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_iteration._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_iteration._proof_1_11": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.advance_at": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.zero_spec._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.frame._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.col_finish_spec._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_term_safe._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_blocks_frame._proof_1_18": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.vCost_bound._proof_1_6": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.crossSum.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.deltas_at": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Cells.withPC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Fixed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cache_spec._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.columnCells_step": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.bounded_execution._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cell_address_injective._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_loop._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_iteration._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Fixed.wBase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Fixed.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.frame._proof_1_7": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.gSize": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.runtime_bound": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Stable.refl": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.hSize": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.cross_iteration._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.zero_loop._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowCells_step._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_spec._proof_1_15": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.boot_safe._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.delta_cells_step._simp_1_5": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Cached.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.zero_loop._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.colCross_at": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.row_iteration._proof_1_10": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.v_pre_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.advance_run._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.zero_spec._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankKernelMachine.Headers.fftSize": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
     "ExactFourierCircuits.UniformMachine.NatOp": [],
     "ExactFourierCircuits.UniformMachine.FieldOp": [],
     "ExactFourierCircuits.UniformMachine.Instruction": [],
@@ -39864,7 +43921,200 @@
     "ExactFourierCircuits.UniformConvolutionTopologyMachine.normalize": [],
     "ExactFourierCircuits.UniformConvolutionTopologyMachine.one_height_last": [],
     "ExactFourierCircuits.UniformContiguousPowerBankMachine.body": [],
-    "ExactFourierCircuits.UniformContiguousPowerBankMachine.body.eq_1": []
+    "ExactFourierCircuits.UniformContiguousPowerBankMachine.body.eq_1": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.B": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout._sizeOf_1": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout._sizeOf_inst": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.casesOn": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.code": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.ctorIdx": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.directory": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.directoryBound": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.ell": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.mk": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.mk._flat_ctor": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.mk.inj": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.mk.noConfusion": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.mk.sizeOf_spec": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.noConfusion": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.noConfusionType": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.rec": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.recOn": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.rows": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.rowsBelow": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.stack": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.stackBelow": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.suffix": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.suffixBelow": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.total": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.Layout.volumeBound": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.childBlock": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.childBlock.eq_1": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.child_length": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.enterBlock": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.enterBlock.eq_1": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.enter_length": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.enumerate": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.enumerate._f": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.enumerate._sunfold": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.enumerate._unsafe_rec": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.enumerate.eq_1": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.enumerate.eq_2": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.enumerate.eq_def": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.enumerate.match_1": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.leafBlock": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.leafBlock.eq_1": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.leaf_length": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.natWithinDecidable._proof_1": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.natWithinDecidable._proof_10": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.natWithinDecidable._proof_2": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.natWithinDecidable._proof_3": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.natWithinDecidable._proof_4": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.natWithinDecidable._proof_5": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.natWithinDecidable._proof_6": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.natWithinDecidable._proof_7": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.natWithinDecidable._proof_8": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.natWithinDecidable._proof_9": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.popBlock": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.popBlock.eq_1": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.pop_length": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.program": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.program_length": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffixBody": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffixBody.eq_1": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffixBody_length": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffixBoot": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffixBoot.eq_1": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.suffixBoot_length": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.treeBoot": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.treeBoot.eq_1": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.treeBoot_length": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.treeCost": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.treeCost._f": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.treeCost._sunfold": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.treeCost._unsafe_rec": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.treeCost.eq_1": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.treeCost.eq_2": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.treeCost.eq_def": [],
+    "ExactFourierCircuits.UniformSectorMetadataMachine.treeCost.match_1": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowFinish": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.allowed.match_1": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.vStart.eq_1": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.instDecidableAllowed._proof_8": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossBounds.rec": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.vPre": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.allowed.eq_8": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Geometry.casesOn": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowCost.match_1": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.allowed.eq_3": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossBounds.mk": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.instDecidableAllowed._proof_1": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Geometry.positiveA": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters.j0": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters.mk": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Geometry": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.zeroBody.eq_1": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.deltas.eq_1": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowCost._sunfold": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Geometry.interior": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.instDecidableAllowed._proof_3": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters.N": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.vCost._unsafe_rec": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowPre.eq_1": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.vCost._f": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.instDecidableAllowed._proof_4": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters.a": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossBounds.gEnd": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossBounds.splitBound": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowPre": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Geometry.gFresh": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowCost": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters.recOn": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.crossTerm_length": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.allowed.eq_7": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Geometry.columns": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Geometry.positiveE": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.allowed.eq_1": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossBounds.recOn": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.deltas": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.colPre": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowCost._f": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters.ctorIdx": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.vCost": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossBounds.interior": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.vCost.eq_2": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossBounds.mk._flat_ctor": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowCost.eq_1": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.allowed.eq_6": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowFinish.eq_1": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters.i0": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters._sizeOf_1": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.vCost.eq_def": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Geometry.hRows": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters.rec": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.vCost._sunfold": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Geometry.mk._flat_ctor": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossBounds.casesOn": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.instDecidableAllowed._proof_6": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.colPre.eq_1": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters.casesOn": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters.hSize": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.vStart": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.runtimeBudget": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters.S": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters.split": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.instDecidableAllowed._proof_2": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters.mk.inj": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.cache": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.vPre.eq_1": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.advance": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.allowed.eq_5": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Geometry.recOn": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Geometry.rec": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.vCost.eq_1": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters.noConfusion": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Geometry.widthE": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowCost.eq_def": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Geometry.codeBound": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters.H": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Geometry.outputBound": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.vIterationCost": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowCost.eq_2": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.colFinish": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters.G": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.zeroBody": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Geometry.gSplit": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.allowed.eq_2": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters.e": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossBounds": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Geometry.hFresh": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Geometry.masterFresh": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.vIterationCost.eq_1": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters.mk._flat_ctor": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters._sizeOf_inst": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.cache.eq_1": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.instDecidableAllowed._proof_7": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Geometry.widthA": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.colFinish.eq_1": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.rowCost._unsafe_rec": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossBounds.hEnd": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters.mk.noConfusion": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.allowed.eq_4": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters.gSize": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.advance.eq_1": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossBounds.code": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Geometry.mk": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters.mk.sizeOf_spec": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossBounds.columnBound": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.crossTerm": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.instDecidableAllowed._proof_5": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.CrossBounds.rowBound": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.Parameters.noConfusionType": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.allowed": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.crossTerm.eq_1": [],
+    "ExactFourierCircuits.UniformRankKernelMachine.runtime": []
   },
   "components_verified": true,
   "uniform_algorithm_verified": false,

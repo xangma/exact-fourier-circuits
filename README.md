@@ -85,10 +85,14 @@ coordinates to the complete tensor schedule and executing the fast scheduler rem
 The 154-instruction convolution printer constructs every typed five-field graph
 record from its integer height, with lossless coefficient decoding and bounded words.
 An 11-instruction contiguous power writer produces a prepared bank in exactly
-`6*N+6` steps from one physical prepared root. Six-kernel production, shared spectra
-and corrected-cross graph assembly remain active obligations.
+`6*N+6` steps from one physical prepared root. The 90-instruction kernel producer
+constructs all six padded rank kernels from actual prepared H/G cells, including
+zero coefficients, with a proved quadratic preparation bound. Shared spectra and
+corrected-cross graph assembly remain active obligations.
 The mathematical block traversal now has an exact ordered-list identity with the
-sector directory; its physical metadata producer and scalar packing remain separate.
+sector directory. Its 92-instruction physical metadata producer now derives that
+ordered directory and suffix volumes from the original width rows in at most
+`130*L+16` steps. Scalar packing and the full recursive scheduler remain open.
 
 
 ## Run
@@ -120,7 +124,11 @@ typed/rational tapes, checking derived conjugates, shifts, all dependency tags,
 dirty-bank frames and seven expected guard failures. Their receipt is
 `logs/uniform-bytecode/prepared-zero-free-fixtures.json`.
 The contiguous power writer adds 126 exact cases and three guard controls, written
-to `logs/uniform-bytecode/contiguous-power-fixtures.json`.
+to `logs/uniform-bytecode/contiguous-power-fixtures.json`. Another 30 physical
+metadata cases check all 92 PCs against Lean sector lists, and 24 exact kernel
+cases check all 90 PCs against independent Gaussian-rational formulas. Their
+receipts are `sector-metadata-fixtures.json` and `rank-kernel-fixtures.json`
+in the same directory.
 
 For a fresh checkout, `./scripts/setup.sh` installs the Python environment,
 the pinned Lean toolchain, and the pinned Mathlib dependencies/cache, then

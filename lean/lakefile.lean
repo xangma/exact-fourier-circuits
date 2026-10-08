@@ -378,3 +378,9 @@ lean_lib CheckUniformConvolutionTopologyMachineAxioms
 
 lean_lib UniformContiguousPowerBankMachine
 lean_lib CheckUniformContiguousPowerBankMachineAxioms
+
+lean_lib UniformSectorMetadataMachine
+lean_lib CheckUniformSectorMetadataMachineAxioms
+
+lean_lib UniformRankKernelMachine
+lean_lib CheckUniformRankKernelMachineAxioms
