@@ -467,3 +467,35 @@ lean_lib CheckUniformSeedChunkPreparationAxioms
 
 lean_lib UniformMatchingPackingPreparation
 lean_lib CheckUniformMatchingPackingPreparationAxioms
+
+lean_lib UniformSeedConjugateRetention
+
+lean_lib UniformSeedChunkAllocation
+
+lean_lib UniformPackedPairRoundMachine
+
+lean_lib CheckUniformSeedConjugateRetentionAxioms
+
+lean_lib CheckUniformSeedChunkAllocationAxioms
+
+lean_lib CheckUniformPackedPairRoundMachineAxioms
+
+lean_lib UniformSeedChunkPackingPreparation
+
+lean_lib CheckUniformSeedChunkPackingPreparationAxioms
+
+lean_lib UniformScalarScatterMachine
+
+lean_lib CheckUniformScalarScatterMachineAxioms
+
+lean_lib UniformCanonicalSeedChunkPreparation
+
+lean_lib CheckUniformCanonicalSeedChunkPreparationAxioms
+
+lean_lib UniformPackedPairScatterPreparation
+
+lean_lib CheckUniformPackedPairScatterPreparationAxioms
+
+lean_lib UniformAllAxisConjugatePreparation
+
+lean_lib CheckUniformAllAxisConjugatePreparationAxioms

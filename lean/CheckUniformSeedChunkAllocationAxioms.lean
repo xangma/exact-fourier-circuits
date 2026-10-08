@@ -1,0 +1,114 @@
+import UniformSeedChunkAllocation
+import Lean
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.Sizes
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.Sizes.casesOn
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.Sizes.convolution
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.Sizes.count
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.Sizes.exponent
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.Sizes.gates
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.Sizes.mk
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.Sizes.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.Sizes.rec
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.Sizes.recOn
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.Sizes.source
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.Sizes.target
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.Sizes.width
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_1
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_10
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_11
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_12
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_13
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_14
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_15
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_16
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_17
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_18
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_19
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_2
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_20
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_21
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_22
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_23
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_24
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_25
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_26
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_27
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_28
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_29
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_3
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_30
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_31
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_32
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_33
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_34
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_35
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_4
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_5
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_6
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_7
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_8
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate_layout._proof_1_9
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocated_gates
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.capacity_sizes
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.capacity_sizes._proof_1_1
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.capacity_sizes._proof_1_2
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.capacity_sizes._proof_1_3
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.capacity_sizes._proof_1_4
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.capacity_sizes._proof_1_5
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.capacity_sizes._proof_1_6
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.capacity_sizes._proof_1_7
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.capacity_sizes._proof_1_8
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.chunk
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.chunk_layout
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.chunk_layout._proof_1_1
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.exists_selected_unit_layout
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.exists_selected_unit_layout._proof_1_1
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.exists_selected_unit_layout._proof_1_2
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.exists_selected_unit_layout._proof_1_3
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.exists_selected_unit_layout._proof_1_4
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.extend
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.extend_same_budget
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.extend_same_budget._proof_1_1
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.extend_same_budget._proof_1_10
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.extend_same_budget._proof_1_11
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.extend_same_budget._proof_1_2
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.extend_same_budget._proof_1_3
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.extend_same_budget._proof_1_4
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.extend_same_budget._proof_1_5
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.extend_same_budget._proof_1_6
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.extend_same_budget._proof_1_7
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.extend_same_budget._proof_1_8
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.extend_same_budget._proof_1_9
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.heightEnd
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.height_headroom
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.height_headroom._proof_1_1
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.height_headroom._proof_1_2
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.sizes_arithmetic
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.sizes_arithmetic._proof_1_1
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.sizes_arithmetic._proof_1_2
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.sizes_arithmetic._proof_1_3
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.sizes_arithmetic._proof_1_4
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.sizes_arithmetic._proof_1_5
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.slot
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.slot_canonical
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.slot_canonical._proof_1_1
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.slot_canonical._proof_1_2
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.slot_global
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.slot_global._proof_1_1
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.slot_global._proof_1_2
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.slot_global._proof_1_3
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformSeedChunkAllocation.".isPrefixOf name.toString then
+   let axioms ← collectAxioms name
+   logInfo m!"'{name}' depends on axioms: {axioms.toList}"
+   for ax in axioms do
+    unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
+     throwError m!"Forbidden axiom {ax} in {name}"

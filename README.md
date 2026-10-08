@@ -135,19 +135,29 @@ coordinates to the actual borrowed bank and source/target allocation.
 `UniformMachineConjugation` is a semantic transport theorem. Actual fresh
 five-lane conjugate preparation is proved by the 301-instruction
 `UniformConjugateLocalPreparation` and its 466-instruction selected-axis caller,
-`UniformSeedConjugatePreparation`; an all-axis conjugate directory is still open.
+`UniformSeedConjugatePreparation`. `UniformSeedConjugateRetention` supplies the high-bank frame needed by the 524-instruction all-axis driver; its 1460-instruction wrapper starts from empty heaps and retains both original and conjugate directories, operands and one root request.
 The 361-instruction `UniformMatchingPackingPreparation` joins matching-table
 production to physical packing, deriving inverse addresses and exact tagged pair
-coordinates. Each packed pair has a proved C2 sector identity; six-C matching
-rounds and unpack/restoration are not executed by this program.
+coordinates. `UniformSeedChunkPackingPreparation` consumes the actual seed/chunk
+result in a 152-instruction continuation or derives it internally in 1438
+instructions. It retains the produced coefficient banks and derives the physical
+inverse addresses. `UniformScalarScatterMachine` executes inverse scatter in
+12 instructions and exactly `9*L+4` steps. `UniformPackedPairRoundMachine` runs
+one C round in 23 instructions and `17*M+7` steps; the 45-instruction
+`UniformPackedPairScatterPreparation` joins charged header setup, that round
+and inverse scatter in exactly `17*M+9*L+21` steps. Its native-coordinate
+values, tail entries and actual OR flags are proved. Matching count remains
+an ordinary caller input; six-C matching execution and its numeric workspace
+restoration remain open.
 
-Seven new modules are integrated. The three joined modules passed default normal
-Lean builds; the complete fresh audit verified 160 modules and
-17,840 permitted axiom closures. The fresh 32-suite diagnostic run passed
-12,408 exact cases. Selected-radix capacity and nonempty chunk geometry are kernel-checked, but the
-constructive allocation enlarges the word bound; instantiation with the global
-`(n+2)^19` budget remains open. Next are charged six-C rounds and unpack/restoration,
-then the all-axis conjugate directory, per-axis assembly and recursive scheduler.
+Eight new modules are integrated and passed default normal
+Lean builds; the complete fresh audit verified 168 modules and
+19,540 permitted axiom closures. The fresh 38-suite diagnostic run passed
+15,613 exact cases. Canonical selected seed/chunk allocation now fits the unchanged
+`(n+2)^19` budget. The 1317-instruction canonical caller computes its allocation
+headers from the actual saved length and executes SeedChunk continuously.
+Next are conjugate spectra, six-C matching execution, fiber movement, per-axis
+assembly and the recursive scheduler.
 The stronger uniform theorem remains unproved and has no registered proof.
 
 
@@ -192,7 +202,7 @@ The depth writer adds 76 cases (30 pinned typed examples and eight fresh small
 examples, each in two layouts); packing adds 270 cases, including local
 permutations whose inverse differs from the forward permutation. Their receipts
 are `dag-depth/fixtures.json` and `sector-packing/bytecode-results.json`.
-The complete command passed **12,408 exact diagnostic cases in 32 suites**. Receipts in
+The complete command passed **15,613 exact diagnostic cases in 38 suites**. Receipts in
 `color-layer`, `cross-depth` and `rank-cross-replay` add 1,665, 484 and 32 cases.
 The last suite runs the continuous 799-instruction program from original
 H/G/master cells with exact cyclotomic arithmetic and freshly exported formal

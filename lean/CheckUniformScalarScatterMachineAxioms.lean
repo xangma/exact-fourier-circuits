@@ -1,0 +1,117 @@
+import UniformScalarScatterMachine
+import Lean
+set_option linter.auxLemma false
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.Disjoint
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.Frame
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.Frame.trans
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.Invariant
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.Invariant.casesOn
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.Invariant.copied
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.Invariant.destination
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.Invariant.index
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.Invariant.length
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.Invariant.mk
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.Invariant.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.Invariant.one
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.Invariant.outside
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.Invariant.permutation
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.Invariant.rec
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.Invariant.recOn
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.Invariant.source
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.Invariant.table
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.Outside
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.Outside.eq_1
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.Source
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.advanced
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.advanced.eq_1
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.destinationAddress
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.destinationAddress.eq_1
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.disjoint_source
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.disjoint_source._proof_1_1
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.execution
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.execution._proof_1_9
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.execution_budget
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.execution_budget._proof_1_1
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.execution_budget._proof_1_2
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.execution_budget._proof_1_3
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.execution_budget._proof_1_4
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.initialize_frame
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.initialize_frame._proof_1_3
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.initialize_frame._proof_1_4
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.initialize_invariant
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.initialized
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.initialized.eq_1
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration._proof_1_1
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration._proof_1_10
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration._proof_1_11
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration._proof_1_12
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration._proof_1_13
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration._proof_1_14
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration._proof_1_2
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration._proof_1_3
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration._proof_1_4
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration._proof_1_5
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration._proof_1_6
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration._proof_1_7
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration._proof_1_8
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration._proof_1_9
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iterationEnd
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iterationEnd.eq_1
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration_frame
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration_frame._proof_1_10
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration_frame._proof_1_11
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration_frame._proof_1_12
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration_frame._proof_1_13
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration_frame._proof_1_9
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration_heap
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration_invariant
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration_invariant._proof_1_10
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration_invariant._proof_1_11
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.iteration_invariant._proof_1_9
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.loop
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.loop._proof_1_1
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.loop._proof_1_2
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.loop._proof_1_3
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.program
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.program.eq_1
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.program_length
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.runtime_bound
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.runtime_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.scalarLoaded
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.scalarLoaded.eq_1
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.scatter_coordinates
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.sourceAddress
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.sourceAddress.eq_1
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.store_bound
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.stored
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.stored.eq_1
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.tableAddress
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.tableAddress.eq_1
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.tableLoaded
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.tableLoaded.eq_1
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.unpack_execution
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.unpack_execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.unpack_execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.unpack_tag
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.wordBudget
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.wordBudget_polynomial
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.wordBudget_polynomial._proof_1_1
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.zeroState
+#print axioms ExactFourierCircuits.UniformScalarScatterMachine.zeroState.eq_1
+-- Private/generated declarations are also checked from the actual environment.
+open Lean Elab Command in
+run_cmd do
+ let env←getEnv
+ for (name,_) in env.constants.toList do
+  if "_private.UniformScalarScatterMachine.".isPrefixOf name.toString then
+   let axioms←collectAxioms name
+   logInfo m!"'{name}' depends on axioms: {axioms.toList}"
+   for ax in axioms do
+    unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
+     throwError m!"Forbidden axiom {ax} in {name}"

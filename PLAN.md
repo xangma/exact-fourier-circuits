@@ -219,33 +219,55 @@ producer to packing with computed inverse addresses, exact tagged pair
 coordinates and the C2 sector identity. It does not execute the six-C rounds
 or unpack/restore the workspace.
 
-This integration milestone adds seven modules. The three new joined modules
-passed default normal builds; the complete fresh audit verified 160 modules and 17,840
-permitted axiom closures. The fresh 32-suite diagnostic run passed 12,408 exact
+This integration milestone adds eight modules, all with default normal
+Lean builds; the complete fresh audit verified 168 modules and 19,540
+permitted axiom closures. The fresh 38-suite diagnostic run passed 15,613 exact
 cases. The portable runner hashes stable inputs.
 The 60 seed-chunk fixtures use generic synthetic radix-256 H/G banks; the 408
 packing cases include 336 actual K0 `Height.Processed` entries and 72 generic
 logical layers. The 21 conjugate cases include nine actual startup935 origins.
 These are component-boundary tests, not a complete selected-axis FFT run.
 
-Selected-radix capacity and nonempty chunk geometry are kernel-checked. Their constructive
-allocation enlarges B; the global `(n+2)^19` placement is still open. The next
-step is actual charged six-C matching execution followed by unpack/restoration,
-then all-axis conjugate retention, complete per-axis assembly and the recursive
-scheduler. `uniform_algorithm_verified` remains false; no full uniform proof
-is registered.
+Canonical allocation now fits the original `(n+2)^19` word budget.
+`UniformSeedChunkAllocation` proves the selected seed-height and chunk layouts,
+including a genuine nonempty capacity witness. The 1317-instruction
+`UniformCanonicalSeedChunkPreparation` calculates allocation headers from the
+actual saved length, derives the helper arguments and executes SeedChunk
+continuously; its cost is the old seed/chunk budget plus 31.
 
-The next bounded proof can reuse the generated SeedChunk axis directly: five
-charged packing-header installations, the existing eight setup instructions,
-Packing137 and halt give a 151-instruction continuation. It needs an actual
-contiguous data source and scalar destinations disjoint from coefficient banks;
-tensor fibers therefore need a charged gather or stride-aware packing. Then
-execute one C round on each ordered destination/source pair and scatter back
-through the generated inverse addresses. Six-C execution additionally needs
-physical conjugate spectrum and zero-free split/scale banks; signed coefficients
-alone do not supply conjugates. Numeric restoration can retain larger dependency
-tags. A separate next lemma can derive same-budget chunk allocation from the
-existing height word envelope; its headroom argument is not yet kernel-checked.
-The larger allocation obligation is an explicit SeedHeight layout within the
-canonical budget, followed by charged calculation of its caller headers.
-Small axes below chunk capacity require the direct fallback.
+The actual seed/chunk result feeds a 152-instruction packing continuation,
+including five address copies, a charged zero initialization, the existing
+eight setup instructions, Packing137 and halt. Its 1438-instruction full caller
+derives the seed/chunk result internally. Both retain actual coefficient banks
+and compute the inverse addresses. An honest contiguous source below the
+preserved seed prefix remains an input; tensor fibers still need charged gather
+or stride-aware packing.
+
+The fixed 23-instruction C-round loop executes every ordered destination/source
+pair in `17*M+7` steps. Inverse scatter reads the generated table in 12
+instructions and `9*L+4` steps. Their 45-instruction joined caller computes both
+sets of helper headers and proves the native-coordinate C action, exact OR tags
+and untouched tail, in `17*M+9*L+21` steps. It consumes the actual generated
+inverse through a packing-result bridge. Matching count remains an ordinary
+caller input. These proofs execute one C round, not the six-C shear.
+
+The conjugate retention proof supplies the full high-bank frame of the unchanged
+466-instruction producer. The 524-instruction all-axis driver writes a second
+address/width directory and retains every earlier bank under `(n+2)^19`. Its
+cost is `29 + sum_j(completeRuntime(r_j)+75*r_j+172)`. A charged
+1460-instruction wrapper starts from empty heaps, retaining both directories,
+metadata, operands and the single specified master-root request.
+
+Next, produce actual conjugate frequency coefficients. Reuse Rank90 and
+Spectrum297 on the retained conjugate H/G lanes, then prove and execute frequency
+reversal within each of the seven dyadic blocks. Retained time-domain conjugates
+alone do not prove this spectrum bank. Gather each actual matching coefficient
+and its conjugate with charged reads, covering signed and normalization cases.
+The existing ZeroFreeDiagonal30 can then prepare a shared nonzero shift and
+shifted inverses; prove the two-three-C split and physically prepare all four
+scales using the retained 5/4 and 4/5 constants. Execute six packed rounds and
+scatter, proving numeric source/workspace restoration with conservative tags.
+Then assemble fiber iteration, the corrected saving network, per-axis execution,
+recursive batching and chirp/output routing, including the direct small-axis
+fallback. `uniform_algorithm_verified` remains false; the stronger theorem
+has no registered proof.

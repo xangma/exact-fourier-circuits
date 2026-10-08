@@ -6,6 +6,30 @@ from datetime import datetime, timezone
 p=argparse.ArgumentParser(description=__doc__)
 p.add_argument('--skip-build',action='store_true',help='Use already built Lean component libraries')
 a=p.parse_args();root=Path(__file__).resolve().parents[1]
+extra_suites = [
+    ('UniformPackedPairRoundMachine', 'PackedPairRound',
+     'logs/uniform-packed-c-round-agent-20261008/bytecode-fixtures.json',
+     'uniform-packed-pair-round-bytecode-fixtures.py'),
+    ('UniformSeedChunkPackingPreparation', 'SeedChunkPacking',
+     'logs/uniform-bytecode/seed-chunk-packing/fixtures.json',
+     'uniform-seed-chunk-packing-bytecode-fixtures.py'),
+    ('UniformScalarScatterMachine', 'ScalarScatter',
+     'logs/uniform-bytecode/scalar-scatter/fixtures.json',
+     'uniform-scalar-scatter-bytecode-fixtures.py'),
+    ('UniformCanonicalSeedChunkPreparation', 'CanonicalSeedChunk',
+     'logs/uniform-bytecode/canonical-seed-chunk/fixtures.json',
+     'uniform-canonical-seed-chunk-bytecode-fixtures.py'),
+    ('UniformAllAxisConjugatePreparation', 'AllAxisConjugate',
+     'logs/uniform-bytecode/all-axis-conjugate/fixtures.json',
+     'uniform-all-axis-conjugate-bytecode-fixtures.py'),
+    ('UniformPackedPairScatterPreparation', 'PackedPairScatter',
+     'logs/uniform-bytecode/packed-pair-scatter/fixtures.json',
+     'uniform-packed-pair-scatter-bytecode-fixtures.py'),
+]
+for _, _, relative, _ in extra_suites:
+    receipt_path = root/relative
+    receipt_path.parent.mkdir(parents=True, exist_ok=True)
+    receipt_path.unlink(missing_ok=True)
 # Bind the run to its exact inputs, including the Lean program definitions.
 inputs = set(root.glob('scripts/uniform*.py')) | set(root.glob('scripts/check-uniform*.py'))
 inputs |= set(root.glob('verification/Export*Bytecode.lean'))
@@ -34,6 +58,7 @@ for name,receipt in [('machine-conjugation','fixtures.json'),('conjugate-local',
     (root/'logs/uniform-bytecode'/name).mkdir(parents=True,exist_ok=True)
     (root/'logs/uniform-bytecode'/name/receipt).unlink(missing_ok=True)
 if not a.skip_build:
+    subprocess.run(['lake','build',*[suite[0] for suite in extra_suites]],cwd=root/'lean',check=True,stdout=subprocess.DEVNULL)
     subprocess.run(['lake','build','UniformDyadicConvolutionMachine','UniformInitialTraversalPreparation','UniformCRTTransferMachine','UniformZeroFreeDiagonalMachine','UniformPreparedZeroFreeDAGMachine','UniformContiguousPowerBankMachine','UniformSectorMetadataMachine','UniformRankKernelMachine','UniformKernelSpectrumMachine','UniformToeplitzCrossTopologyMachine','UniformDAGDepthMachine','UniformSectorPackingMachine','UniformDAGBucketMachine','UniformReplayCoefficientMachine','UniformGreedyColorMachine','UniformCrossShearTableMachine','UniformMatchingAxisTableMachine','UniformRankCrossPreparationMachine','UniformColorLayerTableMachine','UniformCrossDepthReplayPreparation','UniformRankCrossReplayPreparationMachine','UniformInverseShearTableMachine','UniformCrossHeightPreparationMachine','UniformScalarReplayMachine','UniformChunkPortMachine','UniformChunkRowTableMachine','UniformSeedRankCrossPreparation','UniformDirtyReplayMachine','UniformMachineConjugation','UniformConjugateLocalPreparation','UniformChunkMatchingPreparation','UniformSeedHeightPreparation','UniformSeedConjugatePreparation','UniformSeedChunkPreparation','UniformMatchingPackingPreparation'],cwd=root/'lean',check=True,stdout=subprocess.DEVNULL)
 subprocess.run(['lake','env','lean','../verification/ExportUniformBytecode.lean'],cwd=root/'lean',check=True)
 subprocess.run([sys.executable,str(root/'scripts/uniform-bytecode-fixtures.py')],cwd=root,check=True)
@@ -63,6 +88,11 @@ for module,name in [('MachineConjugation','machine-conjugation'),('ConjugateLoca
     with (root/'logs/uniform-bytecode'/name/'export.log').open('w') as log:
         subprocess.run(['lake','env','lean',f'../verification/Export{module}Bytecode.lean'],cwd=root/'lean',check=True,stdout=log)
     subprocess.run([sys.executable,str(root/'scripts'/f'uniform-{name}-bytecode-fixtures.py')],cwd=root,check=True)
+
+for _, module, relative, script in extra_suites:
+    with (root/relative).with_name('export.log').open('w') as log:
+        subprocess.run(['lake','env','lean',f'../verification/Export{module}Bytecode.lean'],cwd=root/'lean',check=True,stdout=log)
+    subprocess.run([sys.executable,str(root/'scripts'/script)],cwd=root,check=True)
 
 receipt_paths = [
     'logs/uniform-bytecode/fixtures.json',
@@ -98,6 +128,7 @@ receipt_paths = [
     'logs/uniform-bytecode/seed-chunk/fixtures.json',
     'logs/uniform-bytecode/matching-packing/fixtures.json',
 ]
+receipt_paths.extend(suite[2] for suite in extra_suites)
 records = []
 for relative in receipt_paths:
     f=root/relative
@@ -109,6 +140,8 @@ for relative in receipt_paths:
         count=d['actual_prepared_source_cases']
     elif '/conjugate-local/' in relative:
         count=d['successful_cases']
+    elif '/uniform-packed-c-round-agent-' in relative:
+        count=d['success_count']
     elif '/seed-conjugate/' in relative:
         count=d['successfulCases']
     else:
