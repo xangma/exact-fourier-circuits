@@ -1,7 +1,7 @@
 {
   "schema": "lean-uniform-components/v1",
   "passed": true,
-  "finished_utc": "2026-10-08T07:40:23.394202+00:00",
+  "finished_utc": "2026-10-08T07:55:50.206685+00:00",
   "lean_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
   "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
   "upstream_files_verified": 51,
@@ -76,6 +76,7 @@
     "CheckUniformInitialTraversalPreparationAxioms.lean": "f3eab6cfe26c4b9159c5336902e8f692c4ce9b6de789be7d07f7b570661d1e95",
     "CheckUniformInputPermutationPreparationAxioms.lean": "971a97a661296e487e38b59006058315411fa728e3ed1f357d8a1d9206e46921",
     "CheckUniformIntegerScalarMachineAxioms.lean": "e9912fc70e79d7f844241dd22bcbd41e97b8c2d19070c4e8eb5f08a98c3b7571",
+    "CheckUniformInverseShearTableMachineAxioms.lean": "99572981434d3e53f57f89a85ec7b2b46d32685bf776ac030b33a02a9ba79bca",
     "CheckUniformKernelSpectrumMachineAxioms.lean": "a4ad2df04878f3337409482953e75d3a11732c2e71c9d2010354bbbaa09f03d8",
     "CheckUniformKernelSpectrumPreparationAxioms.lean": "2c9ae4c6886ae7aa93898b34be694a95a5f98be3193a56d9844e6b71bd01fe25",
     "CheckUniformLayeredReplayAxioms.lean": "b7b4f6b1d54b7c3c706c25dfe49ba6845c0f3dc2ad9fc5af20b743003cb94cb0",
@@ -245,7 +246,7 @@
     "TripleSchedule.lean": "4a971ec67830b3802a15edb8deae8b90c3173333beb0a0ee6420ef3bb1edbd9c",
     "TripleStageAction.lean": "a889724eb6c4261e6215b28ddeb430b67e7b9a3c2341cb395d910661bfcff09d",
     "TypedKernelWords.lean": "71338589b396abdfdf98a318d7b8dff9b00a6f83739346f681564daaa7269fca",
-    "UNIFORM_CHECKS.json": "e354a825e40b63cc99b9bc21fcddde5f4e31fb1f61d340ddbe2480504d76527a",
+    "UNIFORM_CHECKS.json": "214e06a396bed4d4c9b9dff86901f797c81466f7a3cea5e79a2ca8062e4e938c",
     "UPSTREAM_MANIFEST.json": "164f39279317c670920956d5260da95c02dad03acd140329fc503dc263cd2251",
     "UniformAllAxisDiagonalPreparation.lean": "247cff2c9d23f44d0852bb5f0e2941fb6a5deacfacc64a9fa9dd9e7299691d45",
     "UniformAllAxisSeedCost.lean": "8a100c2795665c66444599d651f1b6582613029452830970321d96f05d528cb2",
@@ -309,6 +310,7 @@
     "UniformInitialTraversalPreparation.lean": "c3bf7b38c830ddded62b2c8faf16f00bef65a7cf9df782319e7cd2d0f1751c92",
     "UniformInputPermutationPreparation.lean": "05f7c7ee51a9c267d32f9c673f3ed60e55d6d7c92cefdc8c76cd6ee02983876a",
     "UniformIntegerScalarMachine.lean": "10a1be104690c43b834c644e7bb64b185ab952af6da9f2a7ada0e46bfed85155",
+    "UniformInverseShearTableMachine.lean": "837c8a3848ece5251aa91dc4cb05054ff03711d193eff588fa1c96eb3e2d1a31",
     "UniformKernelSpectrumMachine.lean": "80f0b362363f3c591bf2b4c785b6f15f3e7545a651821a7f7560af6dafb7b7bb",
     "UniformKernelSpectrumPreparation.lean": "14988de583508b40ac2f95e2a3eae3cd942401f60ccc71f3cbddd53a7581d8eb",
     "UniformLayeredReplay.lean": "346605da452cd88cfbacf589a37e26f22d468d270e94353e9477d347dbc65394",
@@ -393,7 +395,7 @@
     "UniformWorkspaceSearchMachine.lean": "25e5da89ba3201d64615441f01ae021d44e13f5109e7e8759757bc495fe44af7",
     "UniformZeroFreeDiagonalMachine.lean": "a26e26fdbac93c15235dd87aac68184d71bf1136540d974d9a72da6273731fb3",
     "lake-manifest.json": "7b626f9e30d660141cb94e48851728dd8a1bd2b65028ba765bae7de0e2582639",
-    "lakefile.lean": "e8d9ad31f62a615444f2cd4e5627969570734daf56376b74424ec5771315cc68",
+    "lakefile.lean": "246605205444ebfde4317c6a8ae67b57b156de9ba6b16d55ebe7bd6dc187eb7a",
     "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
   },
   "verification_script_sha256": "b02436f218755e8246ea970546d49a664542ff2c142307e0cc3fa91f49913497",
@@ -55979,6 +55981,382 @@
       "Quot.sound",
       "propext"
     ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.boot_code": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.reads_code": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.positive_code": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.offset_code": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.positiveUnit_code": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.negativeUnit_code": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.normalization_code": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.stores_code": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.outer_at": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.prepared_at": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.prepared_jump": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.unit_at": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.positive_jump": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.negative_at": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.negative_jump": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.next_at": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.halt_at": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.inverseAddress_prepared": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.inverseAddress_unit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.inverseAddress_negativeUnit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.inverseAddress_normalization": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.inverseRows_length": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.inverse_coefficient": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.Header": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.Fixed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.Cursor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.Rows": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.Frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.Outside": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.frame_refl": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.frame_trans": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.readState": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.Fixed.withPC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.boot_cursor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.boot_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.read_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.read_heap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.read_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.branch_runs": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.jump_runs": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.read_bounded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.mapState": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.mapCost_bound": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.readState_setPC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.setPC_heap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.mapState_heap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.mapState_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.StoreCursor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.Fixed.ofPC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.mapState_cursor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.inverseAddress_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.map_bounded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.storeEnd": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.storeEnd_heap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.storeEnd_cursor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.storeEnd_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.storeEnd_bounded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.iteration": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.iteration_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.inverseRows_get": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.iteration_bounded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.Prefix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.prefix_step": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.outside_trans": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.rows_transport": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.iteration_outside": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.loop": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.execution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.inverseRows_coefficients": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.emit_domain": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.rational_address_domain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.directRows_domain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.typed_orderedRows_domain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.cross_orderedRows_domain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.rowAction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.rowsAction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.rowAction_inverse": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.rowsAction_inverse": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.heapCoefficient": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.heapCoefficient_negative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.physical_inverse_action": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.Frame.saved": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.execution_signed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
     "ExactFourierCircuits.UniformMachine.NatOp": [],
     "ExactFourierCircuits.UniformMachine.FieldOp": [],
     "ExactFourierCircuits.UniformMachine.Instruction": [],
@@ -57524,7 +57902,23 @@
     "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucketSetup_length": [],
     "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficientSetup": [],
     "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficientSetup.eq_1": [],
-    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficientSetup_length": []
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficientSetup_length": [],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.boot": [],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.reads": [],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.positive": [],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.offset": [],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.positiveUnit": [],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.negativeUnit": [],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.normalization": [],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.stores": [],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.program": [],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.program_length": [],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.Domain": [],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.inverseAddress": [],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.inverseRow": [],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.inverseRows": [],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.runtimeBudget": [],
+    "ExactFourierCircuits.UniformInverseShearTableMachine.mapCost": []
   },
   "components_verified": true,
   "uniform_algorithm_verified": false,

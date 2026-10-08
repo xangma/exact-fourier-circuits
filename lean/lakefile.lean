@@ -425,3 +425,6 @@ lean_lib CheckUniformCrossDepthReplayPreparationAxioms
 lean_lib UniformRankCrossReplayPreparationMachine
 
 lean_lib CheckUniformRankCrossReplayPreparationMachineAxioms
+
+lean_lib UniformInverseShearTableMachine
+lean_lib CheckUniformInverseShearTableMachineAxioms

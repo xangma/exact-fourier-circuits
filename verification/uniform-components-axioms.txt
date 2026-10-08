@@ -26908,3 +26908,212 @@ Note: This linter can be disabled with `set_option linter.auxLemma false`
 'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_execution_enriched._proof_1_4' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.boot' does not depend on any axioms
+'ExactFourierCircuits.UniformInverseShearTableMachine.reads' does not depend on any axioms
+'ExactFourierCircuits.UniformInverseShearTableMachine.positive' does not depend on any axioms
+'ExactFourierCircuits.UniformInverseShearTableMachine.offset' does not depend on any axioms
+'ExactFourierCircuits.UniformInverseShearTableMachine.positiveUnit' does not depend on any axioms
+'ExactFourierCircuits.UniformInverseShearTableMachine.negativeUnit' does not depend on any axioms
+'ExactFourierCircuits.UniformInverseShearTableMachine.normalization' does not depend on any axioms
+'ExactFourierCircuits.UniformInverseShearTableMachine.stores' does not depend on any axioms
+'ExactFourierCircuits.UniformInverseShearTableMachine.program' does not depend on any axioms
+'ExactFourierCircuits.UniformInverseShearTableMachine.program_length' does not depend on any axioms
+'ExactFourierCircuits.UniformInverseShearTableMachine.boot_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformInverseShearTableMachine.reads_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformInverseShearTableMachine.positive_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformInverseShearTableMachine.offset_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformInverseShearTableMachine.positiveUnit_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformInverseShearTableMachine.negativeUnit_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformInverseShearTableMachine.normalization_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformInverseShearTableMachine.stores_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformInverseShearTableMachine.outer_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformInverseShearTableMachine.prepared_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformInverseShearTableMachine.prepared_jump' depends on axioms: [propext]
+'ExactFourierCircuits.UniformInverseShearTableMachine.unit_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformInverseShearTableMachine.positive_jump' depends on axioms: [propext]
+'ExactFourierCircuits.UniformInverseShearTableMachine.negative_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformInverseShearTableMachine.negative_jump' depends on axioms: [propext]
+'ExactFourierCircuits.UniformInverseShearTableMachine.next_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformInverseShearTableMachine.halt_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformInverseShearTableMachine.Domain' does not depend on any axioms
+'ExactFourierCircuits.UniformInverseShearTableMachine.inverseAddress' does not depend on any axioms
+'ExactFourierCircuits.UniformInverseShearTableMachine.inverseRow' does not depend on any axioms
+'ExactFourierCircuits.UniformInverseShearTableMachine.inverseRows' does not depend on any axioms
+'ExactFourierCircuits.UniformInverseShearTableMachine.runtimeBudget' does not depend on any axioms
+'ExactFourierCircuits.UniformInverseShearTableMachine.inverseAddress_prepared' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.inverseAddress_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.inverseAddress_negativeUnit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.inverseAddress_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.inverseRows_length' depends on axioms: [propext]
+'ExactFourierCircuits.UniformInverseShearTableMachine.inverse_coefficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.Header' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.Fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.Cursor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.Rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.Frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.Outside' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.frame_refl' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.frame_trans' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.readState' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.Fixed.withPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.boot_cursor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.boot_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.read_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.read_heap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.read_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.branch_runs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.jump_runs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.read_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.mapState' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.mapCost' does not depend on any axioms
+'ExactFourierCircuits.UniformInverseShearTableMachine.mapCost_bound' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.readState_setPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.setPC_heap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.mapState_heap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.mapState_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.StoreCursor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.Fixed.ofPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.mapState_cursor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.inverseAddress_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.map_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.storeEnd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.storeEnd_heap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.storeEnd_cursor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.storeEnd_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.storeEnd_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.iteration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.iteration_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.inverseRows_get' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.iteration_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.Prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.prefix_step' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.outside_trans' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.rows_transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.iteration_outside' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.loop' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.inverseRows_coefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.emit_domain' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.rational_address_domain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.directRows_domain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.typed_orderedRows_domain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.cross_orderedRows_domain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.rowAction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.rowsAction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.rowAction_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.rowsAction_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.heapCoefficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.heapCoefficient_negative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.physical_inverse_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.Frame.saved' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformInverseShearTableMachine.execution_signed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

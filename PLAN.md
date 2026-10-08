@@ -190,8 +190,9 @@ The 799-instruction caller now also derives stable ordering and signed banks.
 A 132-instruction caller derives and colors one actual depth bucket, and a
 30-instruction filter prints selected matching rows without a supplied selected
 table. Whole-height calling, physical port embedding and dirty replay are the
-next links. The inverse-table generator has passed its focused audit; integrated
-registration is next. Retained seed-to-H/G linkage remains under investigation.
+next links. The 36-instruction inverse-table generator has passed the integrated
+147-component audit and reproducible exact tests. Continuous scalar replay
+assembly and retained seed-to-H/G linkage are in progress.
 The block traversal's reversed cons output is proved equal to the exact ordered
 sector directory. Its physical 92-instruction metadata scan/DFS derives this
 directory and every stack read from original width rows in linear time. The continuous

@@ -112,8 +112,11 @@ typed tape and gate-order bank. A 51-instruction program derives greedy colors
 from actual endpoints; degree six implies eleven colors with disjoint same-color
 rows. A 55-instruction producer converts actual matching rows into ordered
 forward permutations, widths and a physical axis header in exactly
-`17*r+8*M+21` steps. Port embedding, full per-axis assembly and the recursive
-scheduler remain open.
+`17*r+8*M+21` steps. A 36-instruction inverse-table producer reverses the
+actual rows and derives exact negative coefficient addresses in at most
+`25*M+6` steps, including normalization aliases. Its dirty inverse-action
+contract is algebraic; continuous scalar replay remains to be connected. Port
+embedding, full per-axis assembly and the recursive scheduler remain open.
 
 
 ## Run
@@ -157,12 +160,16 @@ The depth writer adds 76 cases (30 pinned typed examples and eight fresh small
 examples, each in two layouts); packing adds 270 cases, including local
 permutations whose inverse differs from the forward permutation. Their receipts
 are `dag-depth/fixtures.json` and `sector-packing/bytecode-results.json`.
-The complete command currently passes **5,346 cases**. Receipts in
+The complete command currently passes **7,002 cases**. Receipts in
 `color-layer`, `cross-depth` and `rank-cross-replay` add 1,665, 484 and 32 cases.
 The last suite runs the continuous 799-instruction program from original
 H/G/master cells with exact cyclotomic arithmetic and freshly exported formal
 runtime budgets. It exercises 788 of 799 PCs, including every new caller
-instruction; the 132-instruction bucket caller exercises 131 of 132 PCs. The [diagnostic manifest](verification/uniform-bytecode-components.json)
+instruction; the 132-instruction bucket caller exercises 131 of 132 PCs.
+`inverse-shear` adds 1,656 cases, every one of its 36 instructions, nine guard
+checks and 1,602 exact dirty-array restoration checks. These tests execute the
+actual signed-coefficient producer at its component boundary; continuous scalar
+replay caller composition remains separate. The [diagnostic manifest](verification/uniform-bytecode-components.json)
 records source and receipt hashes; the universal Lean proofs remain the primary evidence.
 
 For a fresh checkout, `./scripts/setup.sh` installs the Python environment,

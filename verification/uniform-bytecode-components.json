@@ -1,9 +1,9 @@
 {
   "schema": "exact-uniform-bytecode-diagnostics/v1",
   "status": "PASS",
-  "created_utc": "2026-10-08T07:40:07.768398+00:00",
+  "created_utc": "2026-10-08T07:55:02.182983+00:00",
   "command": "python3 scripts/check-uniform-bytecode.py",
-  "exact_cases": 5346,
+  "exact_cases": 7002,
   "records": [
     {
       "receipt": "logs/uniform-bytecode/fixtures.json",
@@ -118,10 +118,16 @@
       "sha256": "7ad0f6ae60f2ee145dc6cb466b3799796c5b4280abc03bf014338583989c86ed",
       "cases": 32,
       "status": "PASS"
+    },
+    {
+      "receipt": "logs/uniform-bytecode/inverse-shear/fixtures.json",
+      "sha256": "0f9c32127cb66a391fec613f600986d19f8bc693b967b759808f9f370019e5f3",
+      "cases": 1656,
+      "status": "PASS"
     }
   ],
   "source_sha256": {
-    "scripts/check-uniform-bytecode.py": "d1f31d384b33e7d0ff098f73ab5559cdd97bcbbfe2335ce70689cf4d9be6e9bd",
+    "scripts/check-uniform-bytecode.py": "f8450b4a7bc546d0c50740b02a608473378c42ca3b12cdb77c05901ed09458a0",
     "scripts/uniform-bytecode-fixtures.py": "ac223f2b089b5f5c205f40c285042c7e5f2055884b109b589a5471b369c6b6d1",
     "scripts/uniform-color-layer-bytecode-fixtures.py": "41f4847e3c6a15dbf83d5d4d3e00b8f3d674768dc65ba5a986defe3029d1390d",
     "scripts/uniform-contiguous-power-bytecode-fixtures.py": "3b2807d98a1b67ecdf2449d6dc73aedbc6de2601384069c461e5d2f614b9e564",
@@ -131,6 +137,7 @@
     "scripts/uniform-dag-bucket-bytecode-fixtures.py": "c58aaca51d2c913bb331a79747b0b5e7045dfe73168a5981ecbd250181f61f67",
     "scripts/uniform-dag-depth-bytecode-fixtures.py": "1e8fa9fa1e4629b5cc730c212f438146c8d97350fda49042c9784517ece4027d",
     "scripts/uniform-greedy-color-bytecode-fixtures.py": "423e2f9baa51a91ca9a114740f181f485ac25b282ce0319e6dd3febb09a9266a",
+    "scripts/uniform-inverse-shear-bytecode-fixtures.py": "bcff8acda1efb7e2f028bc009442851b784db42c51bc20ec5ae2dfd59ab813e7",
     "scripts/uniform-kernel-spectrum-bytecode-fixtures.py": "165783baa6f96cdf8c69c933c8ab194d02b7b29bc34cbbe4e720e57d2835950b",
     "scripts/uniform-matching-axis-bytecode-fixtures.py": "baac77e833a669584ec585cb691ab1bceea048db0ddeae736fd6c8e2bf3b2fea",
     "scripts/uniform-prepared-zero-free-bytecode-fixtures.py": "4bd01de6abd785a4cdb93de77907eeeee6d16126fbf031ec6503a6787eafeeae",
@@ -150,6 +157,7 @@
     "verification/ExportDAGBucketBytecode.lean": "5e789ca6fd9a8908ae95b2608cb292ea86aeed78175cfea3fab8cc12bc8913f2",
     "verification/ExportDAGDepthBytecode.lean": "1bd115ab037a084e73f1b35024e1276e7b8ae23dcf324a8a0cfeb9ca0f0a0962",
     "verification/ExportGreedyColorBytecode.lean": "ae1bc78f7bef4a73acdc9d2869966d57690c77ec254ac38cf8cc429e74d10de6",
+    "verification/ExportInverseShearBytecode.lean": "855d7a4d916e4583b7a1968196cd0532118d3b604f62864649b58fc00748e22f",
     "verification/ExportKernelSpectrumBytecode.lean": "600c8b9cbf7be38d93c1cb19f24c4dab05138188b9ad80af35ea84335d69f299",
     "verification/ExportMatchingAxisBytecode.lean": "203881afbf548b19e9e52c4ddb6a69b7ae69b42bcee1989dd771139f67ac55f2",
     "verification/ExportRankCrossPreparationBytecode.lean": "949146a88fcca65d2a7ffa5e812975a789904ecbc069546c02770d7f888ed41d",
