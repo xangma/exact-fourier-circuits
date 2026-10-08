@@ -1,0 +1,47 @@
+import UniformSixCCorrectedReplay
+import Lean
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.BodyResult
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.BodyResult.casesOn
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.BodyResult.context
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.BodyResult.cost
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.BodyResult.cursorRegs
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.BodyResult.heap
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.BodyResult.mk
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.BodyResult.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.BodyResult.numeric
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.BodyResult.pc
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.BodyResult.rec
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.BodyResult.recOn
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.BodyResult.run
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.Context
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.Context.casesOn
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.Context.constants
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.Context.high
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.Context.mk
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.Context.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.Context.outputs
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.Context.present
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.Context.preserved
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.Context.rec
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.Context.recOn
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.Context.roots
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.Context.sources
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.Context.static
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.Context.transport
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.Context.withPC
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.actual_body
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.actual_body._proof_1_1
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.actual_body._proof_1_2
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.actual_body._proof_1_3
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.actual_body._proof_1_4
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.processed_prefix
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.processed_prefix._proof_1_1
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.processed_prefix._proof_1_2
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.processed_prefix._proof_1_3
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.processed_prefix._proof_1_4
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.processed_prefix._proof_1_5
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.processed_prefix._proof_1_6
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.processed_prefix._proof_1_7
+#print axioms ExactFourierCircuits.UniformSixCLayerStep.processed_prefix._proof_1_8

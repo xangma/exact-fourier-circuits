@@ -545,3 +545,45 @@ lean_lib UniformXorWordBounds
 lean_lib UniformXorCallerInterface
 
 lean_lib UniformBinaryXorCoordinates
+
+lean_lib UniformMultiAxisSectorMetadataPreparation
+
+lean_lib UniformBlockXorMachine
+
+lean_lib UniformXorTranslationMachine
+
+lean_lib UniformRepeatedMaskMachine
+
+lean_lib UniformPreparedYTranslationMachine
+
+lean_lib UniformSixCPhysicalAction
+
+lean_lib UniformAllAxisMatchingTablePreparation
+
+lean_lib UniformFixedNetworkYRecordMachine
+
+lean_lib UniformFixedNetworkYRecordLoopMachine
+
+lean_lib UniformSixCDepthColorController
+
+lean_lib UniformSixCTraversal
+
+lean_lib UniformSixCBroadcast
+
+lean_lib UniformSixCFullProgram
+
+lean_lib UniformSixCPhaseContext
+
+lean_lib UniformSixCLayerStep
+
+lean_lib UniformSixCPhaseLoop
+
+lean_lib UniformSixCReplayDescriptor
+
+lean_lib UniformSixCContinuousReplay
+
+lean_lib UniformSixCPreparationFrames
+
+lean_lib UniformSixCWholeReplay
+
+lean_lib UniformSixCCorrectedReplay

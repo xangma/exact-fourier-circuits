@@ -1,0 +1,16 @@
+import UniformSixCCorrectedReplay
+import Lean
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformSixCReplayDescriptor.enabledMatching
+#print axioms ExactFourierCircuits.UniformSixCReplayDescriptor.enabledPacking
+#print axioms ExactFourierCircuits.UniformSixCReplayDescriptor.enabledPacking._proof_1
+#print axioms ExactFourierCircuits.UniformSixCReplayDescriptor.enabledPacking.eq_1
+#print axioms ExactFourierCircuits.UniformSixCReplayDescriptor.enabledParameters
+#print axioms ExactFourierCircuits.UniformSixCReplayDescriptor.enabledParameters.eq_1
+#print axioms ExactFourierCircuits.UniformSixCReplayDescriptor.fullWord
+#print axioms ExactFourierCircuits.UniformSixCReplayDescriptor.geometry
+#print axioms ExactFourierCircuits.UniformSixCReplayDescriptor.geometry._proof_1
+#print axioms ExactFourierCircuits.UniformSixCReplayDescriptor.geometry.congr_simp
+#print axioms ExactFourierCircuits.UniformSixCReplayDescriptor.halfWord
+#print axioms ExactFourierCircuits.UniformSixCReplayDescriptor.halfWord.eq_1

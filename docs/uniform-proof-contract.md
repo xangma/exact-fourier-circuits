@@ -31,14 +31,16 @@ instruction. Rational literals belong to the fixed program.
 
 ## Dependencies and status
 
-The checked programs now include charged seed/conjugate/matching composition,
-forward/inverse matching, complete ordinary binary C tensor execution, actual
-output-broadcast tables, and runtime decoding of fixed-network records.
-The registry contains 211 modules and 27,154 public/generated/private
-axiom closures. The [latest checkpoint](uniform-closeout.md) records fresh audit
-results and exact entry boundaries. Scratch follow-on prototypes are retained
-separately from these certified components. `uniform_algorithm_verified=false` remains
-in receipts; no proof of the stronger theorem is registered.
+The checked programs include the complete fixed5375 physical cross replay and
+corrected numeric restoration, the fixed116 translation child and fixed197/535
+record callers, the fixed79 all-axis matching-table producer and fixed124 sector
+metadata caller. Earlier startup, seed/conjugate/matching composition, ordinary
+binary C tensor and metadata decoder components remain verified.
+The registry contains 232 modules and 30,079 public/generated/private
+axiom closures. The [latest checkpoint](uniform-closeout.md) records fresh audits,
+exact entry boundaries and outstanding global links.
+`uniform_algorithm_verified=false` remains in receipts; no proof of the stronger
+theorem is registered.
 
 | Obligation | Evidence and remaining link |
 |---|---|
@@ -70,7 +72,7 @@ in receipts; no proof of the stronger theorem is registered.
 | Physical tensor monomials | `UniformTensorMonomialMachine` executes 66 fixed instructions with carried original/permuted ordinals and prepared coefficient prefixes. Physical banks, disjoint layouts and ordinary word bounds imply the actual tensor action, without a per-node safety certificate or supplied action theorem. Dirty stacks, unit radices and zero coefficients are covered; protected state is retained. The selected bound is `153*L+10`. `UniformTensorDiagonalBankMachine` produces the physical row, identity permutation and prepared diagonal coefficients in 20 instructions and `9*r+12` steps, from an actual prepared coefficient source. `UniformAllAxisDiagonalPreparation` reads the actual retained directory and compact lanes to construct all selected-axis banks. Its single 108-instruction producer/tensor assembly derives the tensor action without a ready-bank or action premise. `UniformInitialDiagonalTensorMachine` closes caller-header setup and physical gathered input from the empty state in 1084 instructions, preserving all startup evidence and proving a linear runtime budget. The output uses literal Horner tensor coordinates; CRT-coordinate conversion, every remaining local monomial bank and the global scheduler remain |
 | Shifted scalar preparation | `UniformOffsetPreparationMachine` executes a typed DAG through 32 fixed instructions, preserving fresh leaf banks and certified division guards. `UniformDAGLiteralBankMachine` constructs prepared zero and signed rational leaves from actual Nat triples in 49 fixed instructions, charging `O(k*(log B+1))`. `UniformDAGLeafPreparationMachine` joins root copies and rational production in 70 fixed instructions and derives the consumed `RootsReady`/`LiteralsReady` contracts. `UniformPreparationRowTableMachine` prints relocated rows from actual typed node fields in 39 instructions and at most `24*k+7` steps. `UniformPreparedDAGMachine` joins leaves, row printing and evaluation in one continuous 157-instruction run, with no prebuilt interpreter tables or host writes between phases. `UniformPreparedDAGConjugateMachine` charges actual master inversion and two evaluations of the same tapes in 336 instructions, deriving original and exact conjugate result banks with prepared tags. `UniformZeroFreeDiagonalMachine` computes `lambda`, its inverse, every coefficient-minus-lambda and its inverse in 30 instructions and exactly `20*k+12` steps. All its division guards follow from the explicit zero-free lemmas and actual prepared coefficient/conjugate banks; it does not assume a supplied nonzero certificate. The continuous 374-instruction `UniformPreparedZeroFreeDAGMachine` closes this assembly: the preceding phases derive the consumed coefficient/conjugate banks and guards, with exactly conjugate-runtime plus `20*k+20` charged steps and no interphase host writes. The root source and typed rational/topology tapes remain honest physical entry requirements; the balanced compiler must print them. `UniformContiguousPowerBankMachine` constructs a contiguous prepared power bank from one actual prepared root in 11 instructions and exactly `6*N+6` steps, retaining earlier writes, metadata and unrelated banks. The root extraction and six-spectrum assembly are separate remaining phases |
 | Borrowed workspace coordinates | `UniformBorrowedCoordinateMachine` executes a 17-instruction ascending scan, printing distinct coordinates outside both source/target intervals in at most `11*v+7` steps. Its explicit embedding agrees with the physical Nat table. For selected chunks, capacity follows from the actual planner's measured `gateCount` bound, including overlapping intervals. Capacity is a proved entry requirement; the scan itself does not test it. `UniformWorkspaceSearchMachine` closes the measured search in 58 instructions: all ragged pairs and gate-size arithmetic are charged, and only an ordinary word budget and width header are inputs. It computes exactly `selected v` in polynomial preparation time, including the vacuous unit-width case. Actual topology producers are proved separately. `UniformSeedChunkAllocation` proves canonical selected seed-height/chunk placement within `(n+2)^19`, with actual measured capacity and ordinary geometry. `UniformCanonicalSeedChunkPreparation` computes its addresses from the saved input length and runs SeedChunk in 1317 instructions without supplied allocation/table readiness |
-| Physical sector metadata | `UniformSectorMetadataMachine` computes suffix volumes and the exact ordered three-field sector directory in 92 instructions from original physical axis/width rows. Its whole execution charges at most `130*L+16` steps and has a linear word envelope, retaining all scalar banks and saved state. Physical packing and selected matching-table production are joined by MatchingPacking361. Generated matching422 supplies an actual six-C matching loop; complete local replay/restoration and the recursive scheduler remain open |
+| Physical sector metadata | `UniformSectorMetadataMachine` computes suffix volumes and the exact ordered three-field sector directory in 92 instructions from original physical axis/width rows. Its whole execution charges at most `130*L+16` steps and has a linear word envelope, retaining all scalar banks and saved state. Physical packing and selected matching-table production are joined by MatchingPacking361. Generated matching422 supplies an actual six-C matching loop; local replay/restoration is now proved by WholeReplay5375; its global caller and recursive scheduler remain open |
 | Repeated transform transfer | `UniformCRTTransferMachine` computes both permutation headers from saved metadata and executes two actual gathers in 41 fixed instructions and exactly `18*L+25` steps. Native beta-ordered output becomes the next alpha input, retaining exact scalars and their actual tags. It consumes an actual inverse bank and source array, retains Metadata and the entire Nat heap, and uses the unchanged selected word budget. No relation identifying alpha and beta, ready composed table or host permutation is assumed |
 | Helper assembly | `UniformAssembly` relocates literal branch/jump targets and replaces a helper halt with a charged continuation jump. Actual execution counts and intermediate word bounds are preserved. `UniformBoundedAssembly` sharpens placement to retain the same data/address budget when only the placed instruction interval must fit; repeated helper calls do not accumulate a word-budget shift. `UniformAssembledDirect` applies this to the complete DFT fallback at every positive length |
 | Fixed saving network | `UniformFixedNetwork` prints the corrected fixed metadata, literal stage-major residual calls and padding completion, proves the exact C tensor action and actual residual/pointwise totals, and exposes the paper's lambda. `UniformPairMachine` verifies an eleven-instruction exact C pair kernel with prepared coefficients, input-dependence guards, heap updates and frame preservation. `UniformResidualFibers` proves the actual fixed-pivot copied residual group is a complete disjoint direct sum of q-bit C tensor transforms, one forward call per fiber. The inverse uses a literal simultaneous translation, and the signed bridge retains weight-mod-four orientation. `UniformPairDiagonalMachine` verifies a literal seven-instruction pair diagonal operation. `UniformHadamardPairMachine` assembles the prepared bank loads, C pair kernel and diagonals into one literal forty-instruction Hadamard program, proving exact sum/difference, prepared/data guards, intermediate words, bank preservation and outside-pair framing. Its consumed bank is linked to the actual initial-state preparation. Network table preparation, movement and the recursive RAM schedule remain |
@@ -116,25 +118,35 @@ inverse from actual SeedChunk/Packed postconditions and scatters native values.
 The fixed55 whole-fiber gather/scatter derives axis products once and moves every
 Scalar, with linear charged cost and the same canonical word budget.
 
-The actual continuous coefficient/conjugate-to-matching caller, coefficient-value
-bridge and inverse matching caller are now registered and checked. The inverse
-`-1/N` uses the negative normalization slot, including the N=1 pointer exception.
-The fixed4306 branch begins from the empty initial state, retains the prepared
-single root and executes a direct small-length fallback or selected large-length
-matching preparation. The fixed335 record loop executes actual scalar, signed
-exchange and padding children. Charged XOR-table preparation/lookup and explicit
-binary translation coordinates are also registered.
+The actual coefficient/conjugate-to-matching caller, coefficient-value bridge and
+inverse matching caller are registered and checked. The inverse `-1/N` uses the
+negative normalization slot, including the N=1 pointer exception. The fixed4306
+branch begins from empty initial state, retains the prepared single root and
+executes a direct small-length fallback or selected large-length matching
+preparation. The fixed5375 program now proves the complete local six-phase cross
+update and numeric workspace restoration from original typed tape and the actual
+rank-kernel coefficient banks, with nonempty dimensions, `2*(a+e)<=2^K` and the
+stated displacement recurrence. Generic banks establish the literal-word action.
+Its formal frames exclude the protected global CRT prefix and saved
+Nat100..106; their later caller proof remains required.
 
-Complete six-phase physical cross replay, residual recursive C geometry, the
-remaining saving-network opcodes, recursive batching, all-axis scheduling and
+The fixed535 record loop executes actual scalar, translation, signed-exchange
+and padding records, including charged XOR table/mask construction. The fixed79
+producer constructs physical Rows/Widths/FORWARD Permutations for every selected
+CRT axis from actual per-axis matching edges. The fixed124 metadata caller derives
+suffix volumes and the complete sector directory without ready-table premises.
+Neither proves the upstream all-axis edge directory or final tensor saving action.
+
+Residual recursive C geometry, opcode0/2/6 execution, recursive batching,
+compatible global allocation/retention, all-axis scalar scheduling and
 chirp/output routing remain open. A selected one-axis two-slot sector has k=1,
 hence q=0 for the fixed m=1000000 network; its FFT exponent is not a saving-sector
-exponent. The global compiler needs genuine simultaneous per-axis rows. Its
+exponent. The global compiler needs genuine simultaneous per-axis edges. The
 positive-length working selection has radix at least2 on every axis; radix1 is
-not an obstruction for this startup. Their common word bound,
-exact global action and fast runtime must be proved for the same final program.
-The fixed network's five-value scalar codec preserves its actual chronology;
-partial child execution does not establish this final bound.
+not an obstruction. The common word bound, exact global action and fast runtime
+must be proved for the same final program. The fixed network's five-value scalar
+codec preserves actual chronology; the partial record loop does not establish
+this final bound.
 
 ## Reuse boundary
 

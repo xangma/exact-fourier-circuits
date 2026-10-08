@@ -1,0 +1,31 @@
+import UniformSixCCorrectedReplay
+import Lean
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.body_numeric
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.body_numeric._proof_1_2
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.cursor_transport
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.decoded_context
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.execution
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.iteration
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.iteration._proof_1_2
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.iteration._proof_1_3
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.iteration._proof_1_4
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.iteration._proof_1_5
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.layerWord_range
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.numeric_heap
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.placed_reset
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.range_dest
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.remaining
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.remaining._proof_1_1
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.remaining._proof_1_2
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.remaining._proof_1_3
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.reverse_dest
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.runShears_outside
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.runShears_outside._proof_1_1
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.suffixWord
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.suffixWord_cons
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.suffixWord_last
+#print axioms ExactFourierCircuits.UniformSixCPhaseLoop.tick_context

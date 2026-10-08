@@ -27,9 +27,8 @@ The [uniform proof contract](docs/uniform-proof-contract.md) distinguishes the
 checked components from the remaining program and cost obligations. The
 [component receipt](verification/uniform-components.json) explicitly records
 `uniform_algorithm_verified=false`. The [latest checkpoint](docs/uniform-closeout.md)
-records the physical conjugate-spectrum, generated-count six-C matching and
-complete tensor-fiber implementations, with their remaining caller and global
-scheduler obligations.
+records the complete local cross replay, translation records, all-axis matching
+tables and sector metadata, with the remaining recursive and global obligations.
 
 The current uniform work includes one fixed 465-instruction startup program.
 Lean proves that it constructs the chirped padded input, signed convolution
@@ -154,20 +153,24 @@ an ordinary caller input for that earlier C-round wrapper. The new 422-instructi
 six-C matching loop instead reads generated Nat894 and derives its table and
 inverse from actual packing. A 2669-instruction caller now joins seed/chunk,
 conjugate preparation and matching with charged header setup. It consumes
-ordinary physical input/layout headers. The complete local replay remains open.
+ordinary physical input/layout headers. The new fixed5375 caller proves the
+complete local cross replay; original tape/banks and compatible layout remain inputs.
 
-The registry contains 211 modules. The [latest checkpoint](docs/uniform-closeout.md) records full audit
-results and exact component boundaries. Canonical selected seed/chunk allocation
-fits the unchanged `(n+2)^19` budget; its 1317-instruction caller derives allocation
-headers from the actual saved length and executes SeedChunk continuously.
-Physical conjugate spectra, forward/inverse matching, a complete ordinary
-binary C tensor loop, output-broadcast tables and scalar/exchange/padding record
-execution are checked in fixed programs. A fixed4306 branch starts from empty
-heaps and supplies a genuine direct small-length fallback or selected-axis
-matching preparation. Charged XOR tables and their exact binary coordinates are
-verified. Complete local replay, remaining recursive saving-network children,
-all-axis packing and final Fourier routing remain.
-The stronger uniform theorem is still unproved and has no registered proof.
+The registry contains 232 modules. The [latest checkpoint](docs/uniform-closeout.md)
+records full audits and exact entry boundaries. With the required rank-kernel
+banks, size and displacement identities, the fixed5375 local program adds `M*x`
+to the target and restores numeric source/workspace values. The fixed535
+record loop executes actual scalar, translation, signed-exchange and padding
+children. Fixed79 constructs matching tables across all selected CRT axes from
+physical edge inputs; fixed124 derives their suffix volumes and sector directory.
+A fixed4306 branch starts from empty heaps and supplies a direct small-length
+fallback or single-axis matching preparation. Canonical selected seed/chunk
+allocation fits the unchanged `(n+2)^19` budget.
+
+Recursive residual C execution, the all-axis edge producer, compatible global
+allocation/metadata retention, final Fourier routing and the fast runtime bound
+remain open. The stronger uniform theorem is still unproved and has no registered
+proof. Earlier CUDA/JAX experiments and plots keep their existing scope.
 
 
 ## Run

@@ -7,6 +7,12 @@ p=argparse.ArgumentParser(description=__doc__)
 p.add_argument('--skip-build',action='store_true',help='Use already built Lean component libraries')
 a=p.parse_args();root=Path(__file__).resolve().parents[1]
 extra_suites = [
+    ('UniformSixCCorrectedReplay', 'SixCContinuousReplay', 'logs/uniform-bytecode/six-c-continuous/fixtures.json', 'uniform-six-c-continuous-replay-bytecode-fixtures.py'),
+    ('UniformPreparedYTranslationMachine', 'Y', 'logs/uniform-bytecode/y-translation/fixtures.json', 'uniform-y-translation-bytecode-fixtures.py'),
+    ('UniformFixedNetworkYRecordMachine', 'YRecord', 'logs/uniform-bytecode/y-record/record-fixtures.json', 'uniform-y-record-bytecode-fixtures.py'),
+    ('UniformFixedNetworkYRecordLoopMachine', 'YRecord', 'logs/uniform-bytecode/y-record/mixed-fixtures.json', 'uniform-mixed-y-record-bytecode-fixtures.py'),
+    ('UniformMultiAxisSectorMetadataPreparation', 'MultiAxisSectorMetadata', 'logs/uniform-bytecode/multi-axis-sector-metadata/fixtures.json', 'uniform-multi-axis-sector-metadata-bytecode-fixtures.py'),
+    ('UniformAllAxisMatchingTablePreparation', 'AllAxisMatching', 'logs/uniform-bytecode/all-axis-matching-table/fixtures.json', 'uniform-all-axis-matching-table-bytecode-fixtures.py'),
     ('UniformXorCallerInterface', 'XorTable',
      'logs/uniform-bytecode/xor-table/fixtures.json',
      'uniform-xor-table-bytecode-fixtures.py'),

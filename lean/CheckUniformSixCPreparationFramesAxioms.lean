@@ -1,0 +1,13 @@
+import UniformSixCCorrectedReplay
+import Lean
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformSixCPreparationFrames.constants_heap
+#print axioms ExactFourierCircuits.UniformSixCPreparationFrames.enabledAllocation
+#print axioms ExactFourierCircuits.UniformSixCPreparationFrames.enabledHeightLayout
+#print axioms ExactFourierCircuits.UniformSixCPreparationFrames.flagBaseHeader
+#print axioms ExactFourierCircuits.UniformSixCPreparationFrames.flagHeightHeader
+#print axioms ExactFourierCircuits.UniformSixCPreparationFrames.heightBaseHeader
+#print axioms ExactFourierCircuits.UniformSixCPreparationFrames.initialContext
+#print axioms ExactFourierCircuits.UniformSixCPreparationFrames.present_heap
+#print axioms ExactFourierCircuits.UniformSixCPreparationFrames.sources_heap
