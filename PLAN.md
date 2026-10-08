@@ -131,10 +131,10 @@ links. The full uniform theorem is not yet proved.
 The tensor monomial interpreter now has a physical-bank-to-action proof with a
 linear selected-length instruction bound. The shifted scalar-DAG interpreter,
 signed-rational leaf producer and assembled root/rational leaf preparation are
-checked. Next, assemble actual topology printing and DAG execution, finish the
-integer workspace scan, and connect emitted local layers to the global saving
-scheduler. Physical topology/rational tapes remain honest entry premises until
-their producers are proved.
+checked. Actual topology printing, DAG execution and integer workspace search
+now have component proofs. Connecting their physical local layers to the global
+saving scheduler remains; generic topology/rational tapes are entry premises
+until the corresponding producer is joined.
 
 The fixed global startup has a composed 465-instruction execution proof;
 a 766-instruction extension now prepares the first axis from the empty state. It initializes and protects the actual CRT permutations while retaining
@@ -177,9 +177,9 @@ Measured workspace selection now executes all ragged pair checks with actual
 integer instructions. Original/conjugate coefficient preparation and the explicit
 zero-free shift now compose into one charged 374-instruction execution from the
 original master root and typed/rational tapes. The next local
-compiler milestone now has a verified 154-instruction convolution topology printer
-from integer height. The next step joins six corrected-cross graphs, layers and
-dirty replay. The all-axis diagonal pass installs its own caller headers from
+compiler milestone has a verified 154-instruction convolution topology printer
+from integer height; corrected-cross topology, spectra and height preparation
+now have charged joined callers. The all-axis diagonal pass installs its own caller headers from
 actual empty startup in 1084 instructions and has a proved linear runtime bound.
 An actual contiguous power writer charges every bank store, and the fixed
 90-instruction kernel producer derives all six physical kernels from H/G. The
@@ -200,11 +200,52 @@ table. The whole-height caller now runs all `8*K+7` actual buckets. Logical
 ports and physical row relocation are proved from the actual borrowed bank.
 The retained seed caller derives H/G from the compact directory, and continuous
 scalar dirty replay proves numeric restoration with exact dependency tags.
-Connecting these callers, producing conjugate coefficient banks, and closing
-the complete per-axis and recursive schedules remain required.
+The 1046-instruction `UniformSeedHeightPreparation` now joins retained-seed
+preparation to all-height production with charged chunk sizing. The
+215-instruction `UniformChunkMatchingPreparation` joins physical selection,
+borrowed coordinates, mapped rows and matching-axis tables. Their continuous
+1286-instruction `UniformSeedChunkPreparation` reads the actual selected radix
+from the retained directory. `UniformMachineConjugation` supplies semantic
+transport only; fresh five-lane conjugate banks are now produced by actual
+301-instruction local preparation and the 466-instruction selected-axis caller.
+The all-axis conjugate directory remains required.
 The block traversal's reversed cons output is proved equal to the exact ordered
 sector directory. Its physical 92-instruction metadata scan/DFS derives this
 directory and every stack read from original width rows in linear time. The continuous
 137-instruction scalar packing DFS/gather is verified, including inverse-address
 production and exact dependency tags. Matching table production is now checked from actual matching rows. The
-complete per-axis assembly and full recursive caller remain open.
+361-instruction `UniformMatchingPackingPreparation` now joins the matching
+producer to packing with computed inverse addresses, exact tagged pair
+coordinates and the C2 sector identity. It does not execute the six-C rounds
+or unpack/restore the workspace.
+
+This integration milestone adds seven modules. The three new joined modules
+passed default normal builds; the complete fresh audit verified 160 modules and 17,840
+permitted axiom closures. The fresh 32-suite diagnostic run passed 12,408 exact
+cases. The portable runner hashes stable inputs.
+The 60 seed-chunk fixtures use generic synthetic radix-256 H/G banks; the 408
+packing cases include 336 actual K0 `Height.Processed` entries and 72 generic
+logical layers. The 21 conjugate cases include nine actual startup935 origins.
+These are component-boundary tests, not a complete selected-axis FFT run.
+
+Selected-radix capacity and nonempty chunk geometry are kernel-checked. Their constructive
+allocation enlarges B; the global `(n+2)^19` placement is still open. The next
+step is actual charged six-C matching execution followed by unpack/restoration,
+then all-axis conjugate retention, complete per-axis assembly and the recursive
+scheduler. `uniform_algorithm_verified` remains false; no full uniform proof
+is registered.
+
+The next bounded proof can reuse the generated SeedChunk axis directly: five
+charged packing-header installations, the existing eight setup instructions,
+Packing137 and halt give a 151-instruction continuation. It needs an actual
+contiguous data source and scalar destinations disjoint from coefficient banks;
+tensor fibers therefore need a charged gather or stride-aware packing. Then
+execute one C round on each ordered destination/source pair and scatter back
+through the generated inverse addresses. Six-C execution additionally needs
+physical conjugate spectrum and zero-free split/scale banks; signed coefficients
+alone do not supply conjugates. Numeric restoration can retain larger dependency
+tags. A separate next lemma can derive same-budget chunk allocation from the
+existing height word envelope; its headroom argument is not yet kernel-checked.
+The larger allocation obligation is an explicit SeedHeight layout within the
+canonical budget, followed by charged calculation of its caller headers.
+Small axes below chunk capacity require the direct fallback.

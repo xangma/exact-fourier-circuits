@@ -101,7 +101,14 @@ prints each selected matching layer. The 186-instruction height caller prepares 
 `8*K+7` iterations and records each row/color bank. The 835-instruction
 seed caller reads the retained axis directory and actual compact inverse-H/G
 lanes before executing the 799-instruction preparation; it retains those banks.
-These are proved component executions; their continuous composition is pending. The 35-instruction depth writer
+The 1046-instruction `UniformSeedHeightPreparation` joins retained-seed preparation
+to all-height bucket production and computes the chunk exponent with charged
+integer instructions. `UniformChunkMatchingPreparation` joins selection, borrowed
+coordinate production, row mapping and matching-axis printing in 215 instructions.
+The 1286-instruction `UniformSeedChunkPreparation` joins those phases continuously
+from retained selected-axis banks and ordinary caller geometry. No generated
+cross tape, selected-row table or ready matching axis is an entry premise.
+The 35-instruction depth writer
 derives every typed longest-path label from its physical tape in at most
 `5*(N+1)+22*G+10` charged steps. A 24-instruction printer then constructs
 a stable complete gate permutation and bucket directory from those actual labels;
@@ -125,8 +132,23 @@ production, forward replay and inverse replay continuously in at most
 `57*M+21` steps, restoring all numeric cells while tracking possible tag growth.
 A 14-instruction port mapper and 59-instruction row mapper connect logical
 coordinates to the actual borrowed bank and source/target allocation.
-Full per-axis assembly, conjugate coefficient production and the recursive
-scheduler remain open.
+`UniformMachineConjugation` is a semantic transport theorem. Actual fresh
+five-lane conjugate preparation is proved by the 301-instruction
+`UniformConjugateLocalPreparation` and its 466-instruction selected-axis caller,
+`UniformSeedConjugatePreparation`; an all-axis conjugate directory is still open.
+The 361-instruction `UniformMatchingPackingPreparation` joins matching-table
+production to physical packing, deriving inverse addresses and exact tagged pair
+coordinates. Each packed pair has a proved C2 sector identity; six-C matching
+rounds and unpack/restoration are not executed by this program.
+
+Seven new modules are integrated. The three joined modules passed default normal
+Lean builds; the complete fresh audit verified 160 modules and
+17,840 permitted axiom closures. The fresh 32-suite diagnostic run passed
+12,408 exact cases. Selected-radix capacity and nonempty chunk geometry are kernel-checked, but the
+constructive allocation enlarges the word bound; instantiation with the global
+`(n+2)^19` budget remains open. Next are charged six-C rounds and unpack/restoration,
+then the all-axis conjugate directory, per-axis assembly and recursive scheduler.
+The stronger uniform theorem remains unproved and has no registered proof.
 
 
 ## Run
@@ -170,7 +192,7 @@ The depth writer adds 76 cases (30 pinned typed examples and eight fresh small
 examples, each in two layouts); packing adds 270 cases, including local
 permutations whose inverse differs from the forward permutation. Their receipts
 are `dag-depth/fixtures.json` and `sector-packing/bytecode-results.json`.
-The complete command currently passes **8,702 cases**. Receipts in
+The complete command passed **12,408 exact diagnostic cases in 32 suites**. Receipts in
 `color-layer`, `cross-depth` and `rank-cross-replay` add 1,665, 484 and 32 cases.
 The last suite runs the continuous 799-instruction program from original
 H/G/master cells with exact cyclotomic arithmetic and freshly exported formal
@@ -187,7 +209,13 @@ and radix 4, using the true cyclotomic fields for master orders 128 and 24,576.
 Its auxiliary arithmetic check independently constructs both cyclotomic
 polynomials and compares 250 dyadic operations with the prior exact engine.
 The [diagnostic manifest](verification/uniform-bytecode-components.json)
-records source and receipt hashes; the universal Lean proofs remain the primary evidence.
+records source and receipt hashes; the portable main runner hashes its stable
+inputs automatically. The new seed-chunk suite has 60 generic synthetic radix-256
+H/G fixtures, not an actual giant selected-startup witness. The 408 packing
+fixtures comprise 336 actual K0 typed-cross `Height.Processed` entry cases and
+72 generic logical-layer cases; earlier Height/startup execution is not replayed
+by that suite. The 21 conjugate fixtures include nine from actual 935-instruction
+startup. These component diagnostics complement the universal Lean proofs.
 
 For a fresh checkout, `./scripts/setup.sh` installs the Python environment,
 the pinned Lean toolchain, and the pinned Mathlib dependencies/cache, then
