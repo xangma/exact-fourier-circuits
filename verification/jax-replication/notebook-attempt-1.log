@@ -1,0 +1,35 @@
+Traceback (most recent call last):
+  File "/home/xangma/miniconda3/envs/pycbc3g/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 623, in backends
+    backend = _init_backend(platform)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xangma/miniconda3/envs/pycbc3g/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 734, in _init_backend
+    backend = registration.factory()
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xangma/miniconda3/envs/pycbc3g/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 284, in make_gpu_client
+    return xla_client.make_gpu_client(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xangma/miniconda3/envs/pycbc3g/lib/python3.11/site-packages/jaxlib/xla_client.py", line 107, in make_gpu_client
+    return _xla.get_gpu_client(
+           ^^^^^^^^^^^^^^^^^^^^
+jaxlib.xla_extension.XlaRuntimeError: NOT_FOUND: Could not find registered platform with name: "rocm". Available platform names are: CUDA
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xangma/repos/exact-fourier-jax/scripts/check-paper-playground.py", line 59, in <module>
+    main()
+  File "/home/xangma/repos/exact-fourier-jax/scripts/check-paper-playground.py", line 38, in main
+    exec(compile(source, f"playground cell {i}", "exec"), namespace)
+  File "playground cell 2", line 25, in <module>
+  File "/home/xangma/miniconda3/envs/pycbc3g/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 845, in devices
+    return get_backend(backend).devices()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/xangma/miniconda3/envs/pycbc3g/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 779, in get_backend
+    return _get_backend_uncached(platform)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xangma/miniconda3/envs/pycbc3g/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 759, in _get_backend_uncached
+    bs = backends()
+         ^^^^^^^^^^
+  File "/home/xangma/miniconda3/envs/pycbc3g/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 639, in backends
+    raise RuntimeError(err_msg)
+RuntimeError: Unable to initialize backend 'rocm': NOT_FOUND: Could not find registered platform with name: "rocm". Available platform names are: CUDA (set JAX_PLATFORMS='' to automatically choose an available backend)

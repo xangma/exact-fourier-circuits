@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checked_utc": "2026-10-08T10:04:54.063032+00:00",
+  "local_python_tests": 98,
+  "cuda_tests": 25,
+  "default_notebook_code_cells": 11,
+  "notebook_platforms": [
+    "cpu",
+    "gpu"
+  ],
+  "original_lean_theorems": 3,
+  "kernel_declarations": 5,
+  "newton_component_declarations": 48,
+  "constructive_declarations": 1101,
+  "benchmark_rows": {
+    "fft": 82,
+    "projection_dyadic": 12,
+    "projection_random": 12,
+    "shear": 244,
+    "newton": 32
+  },
+  "full_saving_seed_executed": false,
+  "python_producer_formally_verified": false,
+  "full_uniform_theorem_verified": false,
+  "diagnostics_can_fail_accuracy": true
+}

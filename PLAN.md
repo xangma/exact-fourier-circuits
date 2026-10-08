@@ -6,6 +6,13 @@ and whether that construction remains accurate in floating-point arithmetic.
 The deliverables are a checked constructive argument and a reproducible
 numerical assessment, with their remaining limitations stated explicitly.
 
+The current replication and plotting work follows the
+[JAX experiment contract](docs/jax-investigation.md). It checks the original
+Lean theorem afresh, executes feasible projected components in JAX/CUDA,
+compares true DFTs with standard FFT methods, and plots exact saving scale,
+numerical error and synchronized runtime. The enormous saving witness remains
+symbolic; the stronger uniform proof is a separate unfinished milestone.
+
 Lean's theorem concerns exact mathematical operations and a particular cost
 model. CUDA tests concrete finite-precision implementations. Our specialized
 kernel is `C = [[(1+i)/2,(1-i)/2],[(1-i)/2,(1+i)/2]]`; its tensor-power saving

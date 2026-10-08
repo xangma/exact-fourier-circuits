@@ -1,0 +1,13 @@
+Projection 1 complex64 independent_target: 7.72662e-05s L2=0
+Projection 1 complex64 compiled_three_C: 3.59219s L2=0
+Projection 1 complex64 direct_shear: 3.40071s L2=0
+Projection 1 complex128 independent_target: 8.00514e-05s L2=0
+Projection 1 complex128 compiled_three_C: 3.55213s L2=0
+Projection 1 complex128 direct_shear: 3.35654s L2=0
+Projection 4 complex64 independent_target: 6.97123e-05s L2=0
+Projection 4 complex64 compiled_three_C: 3.33666s L2=0
+Projection 4 complex64 direct_shear: 3.29554s L2=0
+Projection 4 complex128 independent_target: 8.15443e-05s L2=0
+Projection 4 complex128 compiled_three_C: 3.45293s L2=0
+Projection 4 complex128 direct_shear: 3.04161s L2=0
+PASS: /home/xangma/repos/exact-fourier-jax/results/20261008/projection.json

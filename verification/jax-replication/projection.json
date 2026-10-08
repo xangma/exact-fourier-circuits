@@ -1,0 +1,507 @@
+{
+  "schema": "exact-fourier-jax-replication/v1",
+  "passed": true,
+  "started_utc": "2026-10-08T09:35:48.115206+00:00",
+  "host": "len",
+  "pid": 3730341,
+  "cwd": "/home/xangma/repos/exact-fourier-jax",
+  "command": [
+    "scripts/benchmark-jax.py",
+    "--require-gpu",
+    "--suite",
+    "projection",
+    "--output",
+    "/home/xangma/repos/exact-fourier-jax/results/20261008/projection.json"
+  ],
+  "python": "3.11.9 | packaged by conda-forge | (main, Apr 19 2024, 18:36:13) [GCC 12.3.0]",
+  "jax": "0.4.20",
+  "jaxlib": "0.4.20",
+  "numpy": "1.26.4",
+  "devices": [
+    "cuda:0"
+  ],
+  "platforms": [
+    "gpu"
+  ],
+  "repeats": 7,
+  "timing": "First call includes JIT compilation; warm samples fence every result; transfers excluded.",
+  "convention": "DFT: sum_j x[j] exp(+2*pi*i*j*k/n), unnormalized.",
+  "scope": "Small projected tensor identities and classical DFTs; no full saving-instance execution or paper-DFT speedup claim.",
+  "fft": [],
+  "projection": [
+    {
+      "bits": 1,
+      "dtype": "complex64",
+      "method": "independent_target",
+      "metadata": {
+        "h": 4,
+        "m": 64,
+        "columns": 1,
+        "seed": 130,
+        "address_bits": 1,
+        "ambient_bits": 64,
+        "width": 2,
+        "roles": 1024,
+        "original_roles": 944,
+        "bank_size": 64,
+        "role_bits": 10,
+        "include_padding": true,
+        "original_directional_steps": 62208,
+        "original_pointwise_shears": 5376,
+        "record_count": 72842,
+        "zero_direction_records": 30128,
+        "status": "exact algebraic projection; no saving or full-word verification claim",
+        "coordinate_layout": "(role << address_bits) | reduced_address; column c starts at original bit c*m"
+      },
+      "input_family": "random",
+      "error": {
+        "finite": true,
+        "relative_l2": 1.29188190751536e-07,
+        "maximum_absolute": 6.306073898593384e-07
+      },
+      "first_call_seconds": 0.5002138228155673,
+      "warm_median_seconds": 7.472187280654907e-05,
+      "warm_min_seconds": 7.472187280654907e-05,
+      "warm_max_seconds": 7.472187280654907e-05,
+      "warm_samples_seconds": [
+        7.472187280654907e-05
+      ]
+    },
+    {
+      "bits": 1,
+      "dtype": "complex64",
+      "method": "compiled_three_C",
+      "metadata": {
+        "h": 4,
+        "m": 64,
+        "columns": 1,
+        "seed": 130,
+        "address_bits": 1,
+        "ambient_bits": 64,
+        "width": 2,
+        "roles": 1024,
+        "original_roles": 944,
+        "bank_size": 64,
+        "role_bits": 10,
+        "include_padding": true,
+        "original_directional_steps": 62208,
+        "original_pointwise_shears": 5376,
+        "record_count": 72842,
+        "zero_direction_records": 30128,
+        "status": "exact algebraic projection; no saving or full-word verification claim",
+        "coordinate_layout": "(role << address_bits) | reduced_address; column c starts at original bit c*m"
+      },
+      "input_family": "random",
+      "error": {
+        "finite": true,
+        "relative_l2": 1.0494264264182835e-06,
+        "maximum_absolute": 4.647181025711101e-06
+      },
+      "first_call_seconds": 4.455406848341227,
+      "warm_median_seconds": 3.586183567997068,
+      "warm_min_seconds": 3.586183567997068,
+      "warm_max_seconds": 3.586183567997068,
+      "warm_samples_seconds": [
+        3.586183567997068
+      ]
+    },
+    {
+      "bits": 1,
+      "dtype": "complex64",
+      "method": "direct_shear",
+      "metadata": {
+        "h": 4,
+        "m": 64,
+        "columns": 1,
+        "seed": 130,
+        "address_bits": 1,
+        "ambient_bits": 64,
+        "width": 2,
+        "roles": 1024,
+        "original_roles": 944,
+        "bank_size": 64,
+        "role_bits": 10,
+        "include_padding": true,
+        "original_directional_steps": 62208,
+        "original_pointwise_shears": 5376,
+        "record_count": 72842,
+        "zero_direction_records": 30128,
+        "status": "exact algebraic projection; no saving or full-word verification claim",
+        "coordinate_layout": "(role << address_bits) | reduced_address; column c starts at original bit c*m"
+      },
+      "input_family": "random",
+      "error": {
+        "finite": true,
+        "relative_l2": 2.2905333017731482e-07,
+        "maximum_absolute": 9.113656240165477e-07
+      },
+      "first_call_seconds": 4.056610681116581,
+      "warm_median_seconds": 3.366003338713199,
+      "warm_min_seconds": 3.366003338713199,
+      "warm_max_seconds": 3.366003338713199,
+      "warm_samples_seconds": [
+        3.366003338713199
+      ]
+    },
+    {
+      "bits": 1,
+      "dtype": "complex128",
+      "method": "independent_target",
+      "metadata": {
+        "h": 4,
+        "m": 64,
+        "columns": 1,
+        "seed": 130,
+        "address_bits": 1,
+        "ambient_bits": 64,
+        "width": 2,
+        "roles": 1024,
+        "original_roles": 944,
+        "bank_size": 64,
+        "role_bits": 10,
+        "include_padding": true,
+        "original_directional_steps": 62208,
+        "original_pointwise_shears": 5376,
+        "record_count": 72842,
+        "zero_direction_records": 30128,
+        "status": "exact algebraic projection; no saving or full-word verification claim",
+        "coordinate_layout": "(role << address_bits) | reduced_address; column c starts at original bit c*m"
+      },
+      "input_family": "random",
+      "error": {
+        "finite": true,
+        "relative_l2": 2.40548398132387e-16,
+        "maximum_absolute": 9.930136612989092e-16
+      },
+      "first_call_seconds": 0.45456167170777917,
+      "warm_median_seconds": 7.316889241337776e-05,
+      "warm_min_seconds": 7.316889241337776e-05,
+      "warm_max_seconds": 7.316889241337776e-05,
+      "warm_samples_seconds": [
+        7.316889241337776e-05
+      ]
+    },
+    {
+      "bits": 1,
+      "dtype": "complex128",
+      "method": "compiled_three_C",
+      "metadata": {
+        "h": 4,
+        "m": 64,
+        "columns": 1,
+        "seed": 130,
+        "address_bits": 1,
+        "ambient_bits": 64,
+        "width": 2,
+        "roles": 1024,
+        "original_roles": 944,
+        "bank_size": 64,
+        "role_bits": 10,
+        "include_padding": true,
+        "original_directional_steps": 62208,
+        "original_pointwise_shears": 5376,
+        "record_count": 72842,
+        "zero_direction_records": 30128,
+        "status": "exact algebraic projection; no saving or full-word verification claim",
+        "coordinate_layout": "(role << address_bits) | reduced_address; column c starts at original bit c*m"
+      },
+      "input_family": "random",
+      "error": {
+        "finite": true,
+        "relative_l2": 2.0100004998247406e-15,
+        "maximum_absolute": 7.562566735475685e-15
+      },
+      "first_call_seconds": 4.360954898409545,
+      "warm_median_seconds": 3.6081358762457967,
+      "warm_min_seconds": 3.6081358762457967,
+      "warm_max_seconds": 3.6081358762457967,
+      "warm_samples_seconds": [
+        3.6081358762457967
+      ]
+    },
+    {
+      "bits": 1,
+      "dtype": "complex128",
+      "method": "direct_shear",
+      "metadata": {
+        "h": 4,
+        "m": 64,
+        "columns": 1,
+        "seed": 130,
+        "address_bits": 1,
+        "ambient_bits": 64,
+        "width": 2,
+        "roles": 1024,
+        "original_roles": 944,
+        "bank_size": 64,
+        "role_bits": 10,
+        "include_padding": true,
+        "original_directional_steps": 62208,
+        "original_pointwise_shears": 5376,
+        "record_count": 72842,
+        "zero_direction_records": 30128,
+        "status": "exact algebraic projection; no saving or full-word verification claim",
+        "coordinate_layout": "(role << address_bits) | reduced_address; column c starts at original bit c*m"
+      },
+      "input_family": "random",
+      "error": {
+        "finite": true,
+        "relative_l2": 4.319591386534125e-16,
+        "maximum_absolute": 2.0358293740687926e-15
+      },
+      "first_call_seconds": 4.077751537784934,
+      "warm_median_seconds": 3.407704396173358,
+      "warm_min_seconds": 3.407704396173358,
+      "warm_max_seconds": 3.407704396173358,
+      "warm_samples_seconds": [
+        3.407704396173358
+      ]
+    },
+    {
+      "bits": 4,
+      "dtype": "complex64",
+      "method": "independent_target",
+      "metadata": {
+        "h": 4,
+        "m": 64,
+        "columns": 1,
+        "seed": 130,
+        "address_bits": 4,
+        "ambient_bits": 64,
+        "width": 16,
+        "roles": 1024,
+        "original_roles": 944,
+        "bank_size": 64,
+        "role_bits": 10,
+        "include_padding": true,
+        "original_directional_steps": 62208,
+        "original_pointwise_shears": 5376,
+        "record_count": 72842,
+        "zero_direction_records": 5157,
+        "status": "exact algebraic projection; no saving or full-word verification claim",
+        "coordinate_layout": "(role << address_bits) | reduced_address; column c starts at original bit c*m"
+      },
+      "input_family": "random",
+      "error": {
+        "finite": true,
+        "relative_l2": 1.4236035898505587e-07,
+        "maximum_absolute": 6.675074764253349e-07
+      },
+      "first_call_seconds": 0.5361648737452924,
+      "warm_median_seconds": 7.337797433137894e-05,
+      "warm_min_seconds": 7.337797433137894e-05,
+      "warm_max_seconds": 7.337797433137894e-05,
+      "warm_samples_seconds": [
+        7.337797433137894e-05
+      ]
+    },
+    {
+      "bits": 4,
+      "dtype": "complex64",
+      "method": "compiled_three_C",
+      "metadata": {
+        "h": 4,
+        "m": 64,
+        "columns": 1,
+        "seed": 130,
+        "address_bits": 4,
+        "ambient_bits": 64,
+        "width": 16,
+        "roles": 1024,
+        "original_roles": 944,
+        "bank_size": 64,
+        "role_bits": 10,
+        "include_padding": true,
+        "original_directional_steps": 62208,
+        "original_pointwise_shears": 5376,
+        "record_count": 72842,
+        "zero_direction_records": 5157,
+        "status": "exact algebraic projection; no saving or full-word verification claim",
+        "coordinate_layout": "(role << address_bits) | reduced_address; column c starts at original bit c*m"
+      },
+      "input_family": "random",
+      "error": {
+        "finite": true,
+        "relative_l2": 1.1675064702286233e-06,
+        "maximum_absolute": 5.5330698033821375e-06
+      },
+      "first_call_seconds": 4.095171992667019,
+      "warm_median_seconds": 3.3188541270792484,
+      "warm_min_seconds": 3.3188541270792484,
+      "warm_max_seconds": 3.3188541270792484,
+      "warm_samples_seconds": [
+        3.3188541270792484
+      ]
+    },
+    {
+      "bits": 4,
+      "dtype": "complex64",
+      "method": "direct_shear",
+      "metadata": {
+        "h": 4,
+        "m": 64,
+        "columns": 1,
+        "seed": 130,
+        "address_bits": 4,
+        "ambient_bits": 64,
+        "width": 16,
+        "roles": 1024,
+        "original_roles": 944,
+        "bank_size": 64,
+        "role_bits": 10,
+        "include_padding": true,
+        "original_directional_steps": 62208,
+        "original_pointwise_shears": 5376,
+        "record_count": 72842,
+        "zero_direction_records": 5157,
+        "status": "exact algebraic projection; no saving or full-word verification claim",
+        "coordinate_layout": "(role << address_bits) | reduced_address; column c starts at original bit c*m"
+      },
+      "input_family": "random",
+      "error": {
+        "finite": true,
+        "relative_l2": 4.861974587581485e-07,
+        "maximum_absolute": 2.0377790012768287e-06
+      },
+      "first_call_seconds": 7.13254330214113,
+      "warm_median_seconds": 3.0052506257779896,
+      "warm_min_seconds": 3.0052506257779896,
+      "warm_max_seconds": 3.0052506257779896,
+      "warm_samples_seconds": [
+        3.0052506257779896
+      ]
+    },
+    {
+      "bits": 4,
+      "dtype": "complex128",
+      "method": "independent_target",
+      "metadata": {
+        "h": 4,
+        "m": 64,
+        "columns": 1,
+        "seed": 130,
+        "address_bits": 4,
+        "ambient_bits": 64,
+        "width": 16,
+        "roles": 1024,
+        "original_roles": 944,
+        "bank_size": 64,
+        "role_bits": 10,
+        "include_padding": true,
+        "original_directional_steps": 62208,
+        "original_pointwise_shears": 5376,
+        "record_count": 72842,
+        "zero_direction_records": 5157,
+        "status": "exact algebraic projection; no saving or full-word verification claim",
+        "coordinate_layout": "(role << address_bits) | reduced_address; column c starts at original bit c*m"
+      },
+      "input_family": "random",
+      "error": {
+        "finite": true,
+        "relative_l2": 2.710331617856683e-16,
+        "maximum_absolute": 1.4895204919483639e-15
+      },
+      "first_call_seconds": 0.5418051229789853,
+      "warm_median_seconds": 8.35382379591465e-05,
+      "warm_min_seconds": 8.35382379591465e-05,
+      "warm_max_seconds": 8.35382379591465e-05,
+      "warm_samples_seconds": [
+        8.35382379591465e-05
+      ]
+    },
+    {
+      "bits": 4,
+      "dtype": "complex128",
+      "method": "compiled_three_C",
+      "metadata": {
+        "h": 4,
+        "m": 64,
+        "columns": 1,
+        "seed": 130,
+        "address_bits": 4,
+        "ambient_bits": 64,
+        "width": 16,
+        "roles": 1024,
+        "original_roles": 944,
+        "bank_size": 64,
+        "role_bits": 10,
+        "include_padding": true,
+        "original_directional_steps": 62208,
+        "original_pointwise_shears": 5376,
+        "record_count": 72842,
+        "zero_direction_records": 5157,
+        "status": "exact algebraic projection; no saving or full-word verification claim",
+        "coordinate_layout": "(role << address_bits) | reduced_address; column c starts at original bit c*m"
+      },
+      "input_family": "random",
+      "error": {
+        "finite": true,
+        "relative_l2": 2.077836030439286e-15,
+        "maximum_absolute": 9.421863071635671e-15
+      },
+      "first_call_seconds": 7.46198753034696,
+      "warm_median_seconds": 3.2753883143886924,
+      "warm_min_seconds": 3.2753883143886924,
+      "warm_max_seconds": 3.2753883143886924,
+      "warm_samples_seconds": [
+        3.2753883143886924
+      ]
+    },
+    {
+      "bits": 4,
+      "dtype": "complex128",
+      "method": "direct_shear",
+      "metadata": {
+        "h": 4,
+        "m": 64,
+        "columns": 1,
+        "seed": 130,
+        "address_bits": 4,
+        "ambient_bits": 64,
+        "width": 16,
+        "roles": 1024,
+        "original_roles": 944,
+        "bank_size": 64,
+        "role_bits": 10,
+        "include_padding": true,
+        "original_directional_steps": 62208,
+        "original_pointwise_shears": 5376,
+        "record_count": 72842,
+        "zero_direction_records": 5157,
+        "status": "exact algebraic projection; no saving or full-word verification claim",
+        "coordinate_layout": "(role << address_bits) | reduced_address; column c starts at original bit c*m"
+      },
+      "input_family": "random",
+      "error": {
+        "finite": true,
+        "relative_l2": 8.959362024809457e-16,
+        "maximum_absolute": 4.218847493575595e-15
+      },
+      "first_call_seconds": 3.9313722932711244,
+      "warm_median_seconds": 3.241181997116655,
+      "warm_min_seconds": 3.241181997116655,
+      "warm_max_seconds": 3.241181997116655,
+      "warm_samples_seconds": [
+        3.241181997116655
+      ]
+    }
+  ],
+  "shear": [],
+  "source_sha256": {
+    "src/exact_fourier/__init__.py": "7c34c62f50f5b2c2e8385c2fa19a43446df8d210a50f1e0b9195753c7d3b0b9c",
+    "src/exact_fourier/circuit.py": "9312b974aaf4028f0afa34bae2ddbacce7ecf88bae5744765a581555b518ca7c",
+    "src/exact_fourier/cli.py": "80721480d3ee8802c30a0194ccb76cd682e5bff66ecdca6eeb7a07e3d5abe078",
+    "src/exact_fourier/directional.py": "ee6c5314ea939b4af97cee504c855852daa750c3e8bd50bc57f23765008f375b",
+    "src/exact_fourier/dyadic.py": "67532392a31dbb8386671a1758f18dfc7239d791178a1ecc0481240a2b20d5d8",
+    "src/exact_fourier/examples.py": "ab1b7c84a4af81ce2ea40612446429dc26060f6d2206b05e1067fc1632864ea1",
+    "src/exact_fourier/gf2.py": "9a870a9fd8f01ff717fdb0f3536b490025550a11270879f59176378b1bfcd748",
+    "src/exact_fourier/jax_backend.py": "d079a7371cfe126793bd43f4b9e04cae8cf7e0e7ff19c7f83de575c7fd245815",
+    "src/exact_fourier/jax_fft.py": "0ccd021d8985a5762690c8162a257edc54029677a0d53272911c272e26ac5161",
+    "src/exact_fourier/network.py": "9ac063ac7df936d2f05621cb012d18ab56e2da98b4dab395d4da70db0edb4f09",
+    "src/exact_fourier/projection.py": "ea192474854c670e1ead569f407ceef54a48f8624a1d4932368be3a0d097bfb7",
+    "src/exact_fourier/scalars.py": "cceab698dd089a23c1d91f46a28bd199f44b63c447c106c25bf2ead621309a4f",
+    "src/exact_fourier/words.py": "4e8dd700a7c80c9985989600bfe4e5c50a53f440df15ff24d81da0ececa3a8d6",
+    "scripts/benchmark-jax.py": "decf8b8f1ae7a0a60bf193ed9190c3d465b60f39ea250b1ef2433c9fee1e5f07"
+  },
+  "finished_utc": "2026-10-08T09:37:47.383292+00:00"
+}

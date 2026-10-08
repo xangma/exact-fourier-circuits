@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "platform": "cpu",
+  "code_cells_executed": 11,
+  "seconds": 1.3482833339949138,
+  "notebook_sha256": "39777992dfa342e10a8c1bd5fe2b71e21d449268ad0f12d7ae13f4e7e5f3119d",
+  "source_sha256": {
+    "src/exact_fourier/jax_backend.py": "d079a7371cfe126793bd43f4b9e04cae8cf7e0e7ff19c7f83de575c7fd245815",
+    "src/exact_fourier/jax_fft.py": "0ccd021d8985a5762690c8162a257edc54029677a0d53272911c272e26ac5161",
+    "src/exact_fourier/jax_newton.py": "714fec281c2904bf1b61e0d015de107e56c2b560b813f1c22dfa992e8e25f385"
+  }
+}

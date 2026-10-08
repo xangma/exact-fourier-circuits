@@ -1,0 +1,5 @@
+'ExactFourierCircuits.C_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.C_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.Hprime_eq_H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.K_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.upper_shear_formula' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,58 @@
+FFT 16 complex64 jax_fft: 7.27372e-05s L2=6.37e-08
+FFT 16 complex64 bluestein: 9.3597e-05s L2=2.96e-07
+FFT 16 complex64 radix2: 9.59611e-05s L2=8.92e-08
+FFT 16 complex64 dense_dft: 6.67572e-05s L2=6.35e-08
+FFT 16 complex128 jax_fft: 7.79168e-05s L2=6.22e-17
+FFT 16 complex128 bluestein: 9.68529e-05s L2=2.49e-16
+FFT 16 complex128 radix2: 5.58659e-05s L2=1.38e-16
+FFT 16 complex128 dense_dft: 4.83114e-05s L2=2.26e-15
+FFT 64 complex64 jax_fft: 6.878e-05s L2=1.16e-07
+FFT 64 complex64 bluestein: 0.000113525s L2=2.8e-07
+FFT 64 complex64 radix2: 6.58347e-05s L2=1.45e-07
+FFT 64 complex64 dense_dft: 6.83791e-05s L2=7.71e-08
+FFT 64 complex128 jax_fft: 8.81469e-05s L2=2.01e-16
+FFT 64 complex128 bluestein: 0.000116871s L2=4.65e-16
+FFT 64 complex128 radix2: 8.95699e-05s L2=2.2e-16
+FFT 64 complex128 dense_dft: 5.0806e-05s L2=6.83e-15
+FFT 256 complex64 jax_fft: 7.01919e-05s L2=1.84e-07
+FFT 256 complex64 bluestein: 0.000102914s L2=3.69e-07
+FFT 256 complex64 radix2: 7.19056e-05s L2=1.86e-07
+FFT 256 complex64 dense_dft: 6.79381e-05s L2=9.12e-08
+FFT 256 complex128 jax_fft: 8.7325e-05s L2=2.47e-16
+FFT 256 complex128 bluestein: 9.99486e-05s L2=5.22e-16
+FFT 256 complex128 radix2: 7.93003e-05s L2=3.26e-16
+FFT 256 complex128 dense_dft: 5.9593e-05s L2=3.49e-14
+FFT 1024 complex64 jax_fft: 8.1534e-05s L2=2.89e-07
+FFT 1024 complex64 bluestein: 0.000106271s L2=5.16e-07
+FFT 1024 complex64 radix2: 7.22171e-05s L2=2.32e-07
+FFT 1024 complex128 jax_fft: 8.33971e-05s L2=3.39e-16
+FFT 1024 complex128 bluestein: 0.00015822s L2=6.72e-16
+FFT 1024 complex128 radix2: 0.000123223s L2=4.53e-16
+FFT 4096 complex64 jax_fft: 7.93198e-05s L2=2.72e-07
+FFT 4096 complex64 bluestein: 0.000101221s L2=7.71e-07
+FFT 4096 complex64 radix2: 7.75061e-05s L2=2.73e-07
+FFT 4096 complex128 jax_fft: 0.000119436s L2=5.28e-16
+FFT 4096 complex128 bluestein: 0.00043886s L2=7.19e-16
+FFT 4096 complex128 radix2: 0.000148781s L2=5.26e-16
+FFT 16384 complex64 jax_fft: 8.94088e-05s L2=3.46e-07
+FFT 16384 complex64 bluestein: 0.000123102s L2=5.67e-07
+FFT 16384 complex64 radix2: 9.3617e-05s L2=3.2e-07
+FFT 16384 complex128 jax_fft: 9.9137e-05s L2=4.11e-16
+FFT 16384 complex128 bluestein: 0.000237069s L2=7.6e-16
+FFT 16384 complex128 radix2: 0.00017998s L2=5.94e-16
+FFT 65536 complex64 jax_fft: 8.61129e-05s L2=3.14e-07
+FFT 65536 complex64 bluestein: 0.000126469s L2=5.86e-07
+FFT 65536 complex64 radix2: 7.42301e-05s L2=3.66e-07
+FFT 65536 complex128 jax_fft: 8.00514e-05s L2=4.76e-16
+FFT 65536 complex128 bluestein: 0.000270932s L2=8.22e-16
+FFT 65536 complex128 radix2: 0.000336406s L2=6.69e-16
+FFT 17 complex64 jax_fft: 8.13338e-05s L2=6.57e-08
+FFT 17 complex64 bluestein: 0.000111601s L2=3.43e-07
+FFT 17 complex64 dense_dft: 6.7628e-05s L2=8.7e-08
+Traceback (most recent call last):
+  File "/home/xangma/repos/exact-fourier-jax/scripts/benchmark-jax.py", line 174, in <module>
+    main()
+  File "/home/xangma/repos/exact-fourier-jax/scripts/benchmark-jax.py", line 109, in main
+    assert error["finite"] and error["relative_l2"] < (3e-5 if dtype == np.complex64 else 3e-11), (name, n, error)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('jax_fft', 17, {'finite': True, 'relative_l2': 3.7252902244869856e-09, 'maximum_absolute': 6.598099262388135e-08})

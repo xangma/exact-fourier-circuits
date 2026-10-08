@@ -1,0 +1,91 @@
+{
+  "passed": true,
+  "host": "client-3792.default.vpn.port.ac.uk",
+  "jax": "0.11.2",
+  "jaxlib": "0.11.2",
+  "finished_utc": "2026-10-08T09:29:49.471001+00:00",
+  "rows": [
+    {
+      "n": 16,
+      "method": "ifft_forward",
+      "platform": "cpu",
+      "dtype": "complex128",
+      "first_real": 16.0,
+      "relative_l2": 0.0,
+      "signed_dc_relative_error": 0.0,
+      "binary32_reciprocal_predicted_error": 0.0
+    },
+    {
+      "n": 16,
+      "method": "conjugate_fft",
+      "platform": "cpu",
+      "dtype": "complex128",
+      "first_real": 16.0,
+      "relative_l2": 0.0,
+      "signed_dc_relative_error": 0.0,
+      "binary32_reciprocal_predicted_error": 0.0
+    },
+    {
+      "n": 17,
+      "method": "ifft_forward",
+      "platform": "cpu",
+      "dtype": "complex128",
+      "first_real": 17.0,
+      "relative_l2": 1.0367202434033306e-16,
+      "signed_dc_relative_error": 0.0,
+      "binary32_reciprocal_predicted_error": 3.725290298461914e-09
+    },
+    {
+      "n": 17,
+      "method": "conjugate_fft",
+      "platform": "cpu",
+      "dtype": "complex128",
+      "first_real": 17.0,
+      "relative_l2": 1.0367202434033306e-16,
+      "signed_dc_relative_error": 0.0,
+      "binary32_reciprocal_predicted_error": 3.725290298461914e-09
+    },
+    {
+      "n": 257,
+      "method": "ifft_forward",
+      "platform": "cpu",
+      "dtype": "complex128",
+      "first_real": 257.0,
+      "relative_l2": 3.667434056527752e-16,
+      "signed_dc_relative_error": 0.0,
+      "binary32_reciprocal_predicted_error": -2.3283064365386963e-10
+    },
+    {
+      "n": 257,
+      "method": "conjugate_fft",
+      "platform": "cpu",
+      "dtype": "complex128",
+      "first_real": 257.0,
+      "relative_l2": 3.7580122977963283e-16,
+      "signed_dc_relative_error": 0.0,
+      "binary32_reciprocal_predicted_error": -2.3283064365386963e-10
+    },
+    {
+      "n": 4093,
+      "method": "ifft_forward",
+      "platform": "cpu",
+      "dtype": "complex128",
+      "first_real": 4093.000000000001,
+      "relative_l2": 4.750450728173084e-16,
+      "signed_dc_relative_error": 2.220446049250313e-16,
+      "binary32_reciprocal_predicted_error": 5.916808731853962e-08
+    },
+    {
+      "n": 4093,
+      "method": "conjugate_fft",
+      "platform": "cpu",
+      "dtype": "complex128",
+      "first_real": 4093.0000000000005,
+      "relative_l2": 4.3202923185201376e-16,
+      "signed_dc_relative_error": 2.220446049250313e-16,
+      "binary32_reciprocal_predicted_error": 5.916808731853962e-08
+    }
+  ],
+  "source_sha256": "ceb228095b1b3e461c3cc23f8e9e047825706b2252d9263b0734e573c580f214",
+  "interpretation": "The constant-input exact DFT is (n,0,...,0). Agreement with the binary32 reciprocal prediction supports a GPU inverse-normalization precision explanation; this is an inference, not an audit of XLA C++."
+}

@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "host": "client-3792.default.vpn.port.ac.uk",
+  "cwd": "/Users/xangma/repos/exact-fourier-circuits",
+  "python": "3.14.6",
+  "jax": "0.11.2",
+  "jaxlib": "0.11.2",
+  "test_platform": "cpu (JAX_PLATFORMS=cpu)",
+  "command": "JAX_PLATFORMS=cpu .venv/bin/python -m unittest discover -s tests -p test_jax_backend.py -v",
+  "test_count": 11,
+  "elapsed_seconds": 10.819,
+  "log": "logs/jax-backend-agent/test-3.log",
+  "sources": {
+    "src/exact_fourier/jax_backend.py": "d079a7371cfe126793bd43f4b9e04cae8cf7e0e7ff19c7f83de575c7fd245815",
+    "tests/test_jax_backend.py": "ad14da4e3c9dd1e89ac974dff56e4cffe72a8d5430d2bc8356ba0614ca15eee0"
+  },
+  "interfaces": [
+    "compile_projected",
+    "compile_projected_target",
+    "compile_c_tensor",
+    "compile_shear"
+  ],
+  "covered": [
+    "all five projected opcodes",
+    "compiled and direct shears",
+    "inverse and zero direction",
+    "zero shear literal no-op",
+    "exact Q(i) opcode checks",
+    "dirty full h4/bits1 padded replay and exact direct replay",
+    "h4/bits2 unpadded and bits4 padded independent exact target",
+    "complex64 and complex128",
+    "batched C tensor exact words",
+    "optional import",
+    "shape/type/materialization guards",
+    "one scan graph"
+  ],
+  "limits": [
+    "CPU verification only; GPU benchmarks owned by parent",
+    "JAX x64 setting is caller-controlled",
+    "XLA fusion can change floating-point rounding",
+    "Projected target is a Walsh-phase quotient, not generally ordinary C^address_bits",
+    "No full saving-word, speedup, or Lean-native numerical evaluation claim"
+  ]
+}

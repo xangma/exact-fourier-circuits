@@ -1,0 +1,24 @@
+test_empty_tape_and_unit_address_width (test_jax_backend.JaxBackendTests.test_empty_tape_and_unit_address_width) ... ok
+test_every_opcode_compiled_and_direct_against_exact (test_jax_backend.JaxBackendTests.test_every_opcode_compiled_and_direct_against_exact) ... ok
+test_full_dirty_network_both_precisions_and_shear_modes (test_jax_backend.JaxBackendTests.test_full_dirty_network_both_precisions_and_shear_modes) ... ok
+test_projected_target_has_the_actual_walsh_spectrum (test_jax_backend.JaxBackendTests.test_projected_target_has_the_actual_walsh_spectrum) ... ok
+test_shape_dtype_and_materialization_guards (test_jax_backend.JaxBackendTests.test_shape_dtype_and_materialization_guards) ... ok
+test_shear_source_restore_and_complex_coefficients (test_jax_backend.JaxBackendTests.test_shear_source_restore_and_complex_coefficients) ... ok
+test_tape_is_one_scan_not_record_unrolling (test_jax_backend.JaxBackendTests.test_tape_is_one_scan_not_record_unrolling) ... ok
+test_tensor_baseline_matches_exact_words_with_batches (test_jax_backend.JaxBackendTests.test_tensor_baseline_matches_exact_words_with_batches) ... ok
+test_unpadded_and_sixteen_address_networks (test_jax_backend.JaxBackendTests.test_unpadded_and_sixteen_address_networks) ... ok
+test_zero_direction_and_compiled_zero_shear_are_literal_noops (test_jax_backend.JaxBackendTests.test_zero_direction_and_compiled_zero_shear_are_literal_noops) ... ok
+test_backend_import_does_not_import_jax (test_jax_backend.OptionalImportTests.test_backend_import_does_not_import_jax) ... ok
+test_bluestein_convolution_uses_fft_and_ifft (test_jax_fft.JAXDFTTests.test_bluestein_convolution_uses_fft_and_ifft) ... ok
+test_bluestein_prime_and_composite_lengths (test_jax_fft.JAXDFTTests.test_bluestein_prime_and_composite_lengths) ... ok
+test_radix2_against_independent_dense_dft (test_jax_fft.JAXDFTTests.test_radix2_against_independent_dense_dft) ... ok
+test_radix2_never_calls_library_fft (test_jax_fft.JAXDFTTests.test_radix2_never_calls_library_fft) ... ok
+test_shape_validation_and_real_promotion (test_jax_fft.JAXDFTTests.test_shape_validation_and_real_promotion) ... ok
+test_import_is_lazy (test_jax_fft.OptionalBackendTests.test_import_is_lazy) ... ok
+test_invalid_lengths_before_backend_loading (test_jax_fft.OptionalBackendTests.test_invalid_lengths_before_backend_loading) ... ok
+test_missing_backend_has_clear_error (test_jax_fft.OptionalBackendTests.test_missing_backend_has_clear_error) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 92.804s
+
+OK

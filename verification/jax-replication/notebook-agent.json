@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "path": "notebooks/paper-playground.ipynb",
+  "syntax_python": "3.10+",
+  "cells": 19,
+  "code_cells": 11,
+  "empty_saved_outputs": true,
+  "execution_platform": "cpu",
+  "default_execution_seconds": 1.9130056669819169,
+  "full_projected_enabled": false,
+  "widgets_enabled": false,
+  "newton_module_available": true,
+  "device": "cpu:0",
+  "dtype": "complex128",
+  "sources": {
+    "notebooks/paper-playground.ipynb": "39777992dfa342e10a8c1bd5fe2b71e21d449268ad0f12d7ae13f4e7e5f3119d",
+    "notebooks/README.md": "99c943aa8fa03228db144ec746a5f51f89ae61ff08845b6e8dd50fe8025d1ae4"
+  },
+  "scope": [
+    "notebooks/paper-playground.ipynb",
+    "notebooks/README.md",
+    "logs/jax-notebook-agent"
+  ],
+  "boundaries": [
+    "No saved executed outputs",
+    "CPU default run only",
+    "Full projected replay disabled by default",
+    "No remote jobs or installs",
+    "Companion all-length uniform theorem unfinished",
+    "Dense Newton is not the shallow compiler",
+    "Full saving seed remains symbolic"
+  ]
+}

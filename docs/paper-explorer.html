@@ -1,0 +1,168 @@
+<div id="fourier-paper-explorer">
+  <h3>Explore the two paper models</h3>
+  <div class="viz-controls">
+    <label class="form-label">Model
+      <select id="fourier-model" class="form-select">
+        <option value="finite">Original: finite saving seed</option>
+        <option value="uniform">Companion: all-length bound shape</option>
+      </select>
+    </label>
+    <label class="form-label">Network parameter h
+      <select id="fourier-h" class="form-select">
+        <option>24</option><option>28</option><option>40</option><option>60</option><option>80</option><option selected>100</option>
+      </select>
+    </label>
+    <label id="fourier-f-field" class="form-label">Columns f
+      <input id="fourier-f" class="form-control" type="text" inputmode="numeric" value="6544863">
+    </label>
+    <label id="fourier-range-field" class="form-label" hidden>Size range
+      <select id="fourier-range" class="form-select">
+        <option value="40">Moderate log sizes</option><option value="1e16">Asymptotic scale</option>
+      </select>
+    </label>
+  </div>
+  <div id="fourier-error" role="alert" class="text-destructive"></div>
+  <div class="viz-grid" aria-live="polite">
+    <div class="card viz-stat"><div id="fourier-value-label">Address bits b</div><div id="fourier-value" class="viz-stat-value tabular-nums"></div></div>
+    <div class="card viz-stat"><div id="fourier-gain-label">Exact saved fraction</div><div id="fourier-gain" class="viz-stat-value tabular-nums"></div></div>
+  </div>
+  <div id="fourier-chart" class="fourier-chart"></div>
+  <div id="fourier-status" class="text-small" aria-live="polite"></div>
+</div>
+<style>
+  #fourier-paper-explorer .fourier-chart {width:100%; min-width:0; margin-top:16px}
+  #fourier-paper-explorer .fourier-chart svg {display:block; width:100%}
+  #fourier-paper-explorer .fourier-chart svg text {fill:var(--foreground); font-size:12px; font-weight:400}
+  #fourier-paper-explorer .fourier-chart svg .domain,
+  #fourier-paper-explorer .fourier-chart svg .tick line {stroke:var(--border)}
+  #fourier-paper-explorer [hidden] {display:none}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script>
+(() => {
+  const root = document.getElementById('fourier-paper-explorer');
+  const find = id => root.querySelector('#fourier-' + id);
+  const model = find('model'), hSelect = find('h'), columns = find('f'), range = find('range');
+  const chart = find('chart');
+  const choose = (n,k) => {let a=1n; for(let j=1n;j<=k;j++) a=a*(n-j+1n)/j; return a;};
+  const scientific = x => x === 0 ? '0' : x.toExponential(4);
+  const ratio = (a,b) => Number(a)/Number(b);
+  const parameters = () => {
+    const h = BigInt(hSelect.value), v = choose(h,3n), d=choose(h-3n,3n)+3n*(h-3n), I=3n*v*v, m=h**3n;
+    const W=2n*v**3n+I*(v*d+h+1n), delta=2n*v**3n-2n*I*(h+1n)*h, H=3n*I*(4n*v*d+16n*v);
+    let r=0n, star=1n; while(star<W){star*=2n;r++;}
+    return {h,m,W,delta,H,r,star,minimum:2n*H/delta+1n};
+  };
+  let oldPath = null;
+  function draw() {
+    const p = parameters(), finite = model.value==='finite';
+    find('f-field').hidden=!finite; find('range-field').hidden=finite;
+    find('error').textContent='';
+    let observations, xLabel, yLabel, xLog=false;
+    if(finite) {
+      if(!/^[1-9][0-9]{0,39}$/.test(columns.value)) {find('error').textContent='Enter a positive integer with at most 40 digits.';return;}
+      const f=BigInt(columns.value), b=p.m*f+p.r, margin=p.delta*f-2n*p.H;
+      find('value-label').textContent='Address bits b (array length 2ᵇ)';
+      find('value').textContent=b.toString().length<18 ? b.toLocaleString('en-US') : scientific(Number(b));
+      find('value').setAttribute('data-tooltip',b.toString()+' address bits');
+      find('gain-label').textContent='Exact-derived saved fraction';
+      find('gain').textContent=scientific(ratio(margin,p.star*b));
+      const span=f>20n?8n:1n;
+      observations=[];
+      for(let k=-8n;k<=8n;k++) {
+        const other=f+k*span; if(other<1n) continue;
+        observations.push({x:Number(k*span), y:ratio(p.delta*other-2n*p.H,p.star*(p.m*other+p.r)),
+                           detail:'f='+other.toString()});
+      }
+      xLabel='Columns relative to selected f'; yLabel='Saved C-call fraction (positive = saving)';
+      find('status').textContent = p.h===100n && f===6544863n ?
+        'Closed Lean witness · first strict saving choice · exact counts, symbolic width' :
+        'Derived counting formula · first strict saving f='+p.minimum.toLocaleString('en-US')+' · not a separately checked witness';
+    } else {
+      const epsilon=-Math.log1p(-ratio(p.delta,p.star*p.m))/Math.log(Number(p.m));
+      find('value-label').textContent='Exponent improvement 1 − θ';
+      find('value').textContent=scientific(epsilon);
+      find('value').removeAttribute('data-tooltip');
+      find('gain-label').textContent='Tensor block width m';
+      find('gain').textContent=p.m.toLocaleString('en-US');
+      const max=Number(range.value), logMin=Math.log(4), logMax=Math.log(max);
+      observations=Array.from({length:121},(_,i)=>{
+        const x=Math.exp(logMin+(logMax-logMin)*i/120);
+        const loglogn=x*Math.LN2+Math.log(Math.LN2);
+        const y=(-epsilon*loglogn+(3+epsilon)*Math.log(loglogn))/Math.LN2;
+        return {x,y,detail:'log₂(log₂ n)='+scientific(x)};
+      });
+      xLog=true; xLabel='log₂(log₂ n) · logarithmic axis';
+      yLabel='log₂ of bound-shape ratio to n log n';
+      find('status').textContent='Paper’s all-length model · unknown constants · no measured runtime prediction · full uniform Lean theorem unfinished';
+    }
+    const width=chart.getBoundingClientRect().width, height=300;
+    if(width<=0) return;
+    const left=74, right=18, top=18, bottom=58;
+    const svg=d3.select(chart).selectAll('svg').data([0]).join('svg').attr('viewBox',`0 0 ${width} ${height}`).attr('height',height)
+      .attr('role','img').attr('aria-label',yLabel+' as '+xLabel+' changes');
+    svg.selectAll('*').remove();
+    svg.append('title').text(yLabel);
+    const xd=d3.extent(observations,d=>d.x), yd=d3.extent([...observations.map(d=>d.y),0]);
+    const pad=(yd[1]-yd[0])*.09 || 1;
+    const x=(xLog?d3.scaleLog():d3.scaleLinear()).domain(xd).range([left+4,width-right-4]);
+    const y=d3.scaleLinear().domain([yd[0]-pad,yd[1]+pad]).range([height-bottom-4,top+4]);
+    svg.append('rect').attr('data-chart-frame','').attr('x',left).attr('y',top).attr('width',width-left-right)
+      .attr('height',height-top-bottom).attr('fill','none').attr('stroke','var(--border)');
+    const tickCount=width<480?3:5;
+    // Log-scale tick counts are advisory in D3; choose bounded labels explicitly.
+    const logTicks=xLog?Array.from({length:tickCount},(_,i)=>Math.exp(Math.log(xd[0])+(Math.log(xd[1])-Math.log(xd[0]))*i/(tickCount-1))):null;
+    const xAxis=svg.append('g').attr('transform',`translate(0,${height-bottom})`).call(d3.axisBottom(x).ticks(tickCount).tickValues(logTicks).tickFormat(xLog?d3.format('.1e'):d3.format('~g')));
+    if(xLog) {
+      const tickLabels=xAxis.selectAll('.tick text');
+      tickLabels.filter((d,i)=>i===0).attr('text-anchor','start');
+      tickLabels.filter((d,i,nodes)=>i===nodes.length-1).attr('text-anchor','end');
+    }
+    svg.append('g').attr('transform',`translate(${left},0)`).call(d3.axisLeft(y).ticks(4).tickFormat(finite?d3.format('.1e'):d3.format('.2~g')));
+    svg.append('text').attr('class','axis-title').attr('data-axis','x').attr('x',(left+width-right)/2).attr('y',height-12)
+      .attr('text-anchor','middle').text(width<480 && !finite?'log₂(log₂ n) · log axis':xLabel);
+    svg.append('text').attr('class','axis-title').attr('data-axis','y').attr('transform',`translate(16,${(top+height-bottom)/2}) rotate(-90)`)
+      .attr('text-anchor','middle').text(width<480 && finite?'Saved C-call fraction':yLabel);
+    svg.append('line').attr('x1',left).attr('x2',width-right).attr('y1',y(0)).attr('y2',y(0)).attr('stroke','var(--border)');
+    const line=d3.line().x(d=>x(d.x)).y(d=>y(d.y));
+    const path=svg.append('path').attr('fill','none').attr('stroke','var(--viz-series-1)').attr('stroke-width',2);
+    const current=line(observations);
+    if(oldPath && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) path.attr('d',oldPath).transition().duration(180).attr('d',current);
+    else path.attr('d',current);
+    oldPath=current;
+    if(finite) {
+      const selected=observations.find(d=>d.x===0);
+      svg.append('circle').attr('cx',x(0)).attr('cy',y(selected.y)).attr('r',5).attr('fill','var(--viz-series-1)')
+        .attr('data-tooltip',selected.detail+'; saved fraction='+scientific(selected.y));
+    }
+    // Measure labels after drawing; omit optional ticks if they collide.
+    const labelBounds=Array.from(svg.node().querySelectorAll('.tick text,.axis-title'),el=>({el,box:el.getBoundingClientRect()}));
+    let previousRight=-Infinity;
+    for(const el of xAxis.node().querySelectorAll('.tick text')) {
+      const box=labelBounds.find(label=>label.el===el).box;
+      if(box.left<previousRight+4) el.parentNode.remove();
+      else previousRight=box.right;
+    }
+  }
+  function restore(state) {
+    const values=state?.modelContent;
+    if(!values) return;
+    if(['finite','uniform'].includes(values.model)) model.value=values.model;
+    if(['24','28','40','60','80','100'].includes(values.h)) hSelect.value=values.h;
+    if(/^[1-9][0-9]{0,39}$/.test(values.columns || '')) columns.value=values.columns;
+    if(['40','1e16'].includes(values.range)) range.value=values.range;
+    oldPath=null;draw();
+  }
+  function remember() {
+    if(!find('error').textContent && window.openai?.setWidgetState)
+      window.openai.setWidgetState({modelContent:{model:model.value,h:hSelect.value,columns:columns.value,range:range.value}}).catch(()=>{});
+  }
+  hSelect.addEventListener('change',()=>{columns.value=parameters().minimum.toString();draw();remember();});
+  [model,range].forEach(el=>el.addEventListener('change',()=>{oldPath=null;draw();remember();}));
+  columns.addEventListener('input',()=>{draw();remember();});
+  window.addEventListener('openai:set_globals',event=>restore(event.detail?.globals?.widgetState));
+  new ResizeObserver(()=>{oldPath=null;draw();}).observe(chart);
+  restore(window.openai?.widgetState);
+  draw();
+})();
+</script>

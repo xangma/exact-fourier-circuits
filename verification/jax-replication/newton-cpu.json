@@ -1,0 +1,126 @@
+{
+  "status": "PASS",
+  "api": {
+    "compile_newton(n, *, max_n=64)": "Jitted positive unnormalized dense Newton DFT experiment",
+    "newton_factors(n, dtype=\"complex64\", *, max_n=64)": "Returns eager JAX (N, diagonal) arrays"
+  },
+  "formula": "N[i,k]=(-1)^k*u^(k*(k-1)/2)*H[i]/H[i-k] for i>=k; H[j]=prod(s=1..j)(1-u^s); u=exp(+2*pi*i/n); transform=N@((N.T@x)/diagonal)",
+  "transpose": "ordinary transpose, without conjugation",
+  "limits": {
+    "defaultMaxLength": 64,
+    "override": "Explicit max_n required above default guard",
+    "dtype": "c64/c128 and matching real promotion; c128 factors require caller-enabled x64"
+  },
+  "primarySource": "/Users/xangma/repos/math/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/local.tex:57",
+  "tests": {
+    "status": "PASS",
+    "count": 6,
+    "denseInputComparisons": 48,
+    "factorCases": 16,
+    "lengths": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "precisions": [
+      "complex64",
+      "complex128"
+    ],
+    "families": [
+      "shifted impulse",
+      "tone",
+      "seeded random"
+    ],
+    "extraChecks": [
+      "direct Newton polynomial factors",
+      "ordinary transpose identity",
+      "wrong conjugate transpose/sign/normalization guards",
+      "no FFT calls",
+      "dtype/x64/shape/length/materialization guard",
+      "lazy import/missing dependency"
+    ],
+    "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -p test_jax_newton.py -v",
+    "log": "logs/jax-newton-agent/tests-final.log"
+  },
+  "diagnostics": {
+    "status": "OBSERVATIONS",
+    "path": "logs/jax-newton-agent/diagnostics.json",
+    "command": "PYTHONPATH=src .venv/bin/python logs/jax-newton-agent/diagnose.py",
+    "rows": [
+      {
+        "n": 16,
+        "dtype": "complex64",
+        "compiledMatrixRelativeL2": 0.0002826640064590359,
+        "randomRelativeL2": 0.0002938534192056039,
+        "maxAbsN": 179.41094970703125
+      },
+      {
+        "n": 16,
+        "dtype": "complex128",
+        "compiledMatrixRelativeL2": 4.792083428906764e-13,
+        "randomRelativeL2": 7.768614548589065e-13,
+        "maxAbsN": 179.41106643252482
+      },
+      {
+        "n": 32,
+        "dtype": "complex64",
+        "compiledMatrixRelativeL2": 3.549360494556183,
+        "randomRelativeL2": 6.013712304814896,
+        "maxAbsN": 31165.470703125
+      },
+      {
+        "n": 32,
+        "dtype": "complex128",
+        "compiledMatrixRelativeL2": 5.958111023219068e-09,
+        "randomRelativeL2": 1.150345418546603e-08,
+        "maxAbsN": 31165.480420045988
+      },
+      {
+        "n": 64,
+        "dtype": "complex64",
+        "compiledMatrixRelativeL2": 425262961.2356083,
+        "randomRelativeL2": 287842639.2941741,
+        "maxAbsN": 958672448.0
+      },
+      {
+        "n": 64,
+        "dtype": "complex128",
+        "compiledMatrixRelativeL2": 0.6666635183496473,
+        "randomRelativeL2": 0.6180396680638437,
+        "maxAbsN": 958673105.1537254
+      }
+    ]
+  },
+  "environment": {
+    "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "jax": "0.11.2",
+    "numpy": "2.5.3",
+    "platform": "macOS-26.6-arm64-arm-64bit-Mach-O",
+    "devices": [
+      "cpu:0"
+    ]
+  },
+  "checks": [
+    "AST syntax",
+    "no trailing whitespace"
+  ],
+  "hashes": {
+    "src/exact_fourier/jax_newton.py": "714fec281c2904bf1b61e0d015de107e56c2b560b813f1c22dfa992e8e25f385",
+    "tests/test_jax_newton.py": "3b56323ea8a2558e5c1e5ae76b3c261e572b2dfd907f0a923c8f609e1445e479",
+    "logs/jax-newton-agent/diagnose.py": "e8d1beee8efa63828f10bd8653ce1cd0838016a8c278a402461272cfc5ecfed3",
+    "logs/jax-newton-agent/diagnostics.json": "838dcf6cb71718106ed8f507245c3d36708fbdc69e9b9ba42ea125331a18739d"
+  },
+  "limitations": [
+    "Dense O(n^2) explanatory factorization, not the paper low-depth Toeplitz compiler or uniform fast algorithm",
+    "Roundoff/cancellation measured at n16/32/64; no large-n stability assertion",
+    "Eager factors and compiled JIT constants can differ numerically",
+    "Local JAX0.11.2 CPU; basic public APIs used for remote0.4.20 compatibility, not executed remotely",
+    "No remotes, dependency edits, unrelated source edits or performance claim"
+  ],
+  "runningJobs": []
+}

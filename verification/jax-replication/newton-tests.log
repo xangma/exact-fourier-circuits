@@ -1,0 +1,11 @@
+test_factor_entries_and_ordinary_transpose_identity (test_jax_newton.NewtonFactorTests.test_factor_entries_and_ordinary_transpose_identity) ... ok
+test_factor_precision_guard (test_jax_newton.NewtonFactorTests.test_factor_precision_guard) ... ok
+test_no_fft_calls_and_shape_real_promotion (test_jax_newton.NewtonFactorTests.test_no_fft_calls_and_shape_real_promotion) ... ok
+test_small_dfts_impulse_tone_random_and_precision (test_jax_newton.NewtonFactorTests.test_small_dfts_impulse_tone_random_and_precision) ... ok
+test_lazy_import_and_missing_backend (test_jax_newton.OptionalNewtonTests.test_lazy_import_and_missing_backend) ... ok
+test_materialization_guard_before_backend_loading (test_jax_newton.OptionalNewtonTests.test_materialization_guard_before_backend_loading) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 23.194s
+
+OK

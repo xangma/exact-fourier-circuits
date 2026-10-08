@@ -1,0 +1,171 @@
+{
+  "passed": true,
+  "host": "len",
+  "jax": "0.4.20",
+  "jaxlib": "0.4.20",
+  "finished_utc": "2026-10-08T09:30:54.699891+00:00",
+  "rows": [
+    {
+      "n": 16,
+      "method": "ifft_forward",
+      "platform": "gpu",
+      "dtype": "complex128",
+      "first_real": 16.0,
+      "relative_l2": 0.0,
+      "signed_dc_relative_error": 0.0,
+      "binary32_reciprocal_predicted_error": 0.0
+    },
+    {
+      "n": 16,
+      "method": "conjugate_fft",
+      "platform": "gpu",
+      "dtype": "complex128",
+      "first_real": 16.0,
+      "relative_l2": 0.0,
+      "signed_dc_relative_error": 0.0,
+      "binary32_reciprocal_predicted_error": 0.0
+    },
+    {
+      "n": 17,
+      "method": "ifft_forward",
+      "platform": "gpu",
+      "dtype": "complex128",
+      "first_real": 17.000000063329935,
+      "relative_l2": 3.725290298461914e-09,
+      "signed_dc_relative_error": 3.725290298461914e-09,
+      "binary32_reciprocal_predicted_error": 3.725290298461914e-09
+    },
+    {
+      "n": 17,
+      "method": "conjugate_fft",
+      "platform": "gpu",
+      "dtype": "complex128",
+      "first_real": 17.0,
+      "relative_l2": 2.956910905061357e-17,
+      "signed_dc_relative_error": 0.0,
+      "binary32_reciprocal_predicted_error": 3.725290298461914e-09
+    },
+    {
+      "n": 257,
+      "method": "ifft_forward",
+      "platform": "gpu",
+      "dtype": "complex128",
+      "first_real": 256.9999999401625,
+      "relative_l2": 2.328306436541237e-10,
+      "signed_dc_relative_error": -2.3283064365386963e-10,
+      "binary32_reciprocal_predicted_error": -2.3283064365386963e-10
+    },
+    {
+      "n": 257,
+      "method": "conjugate_fft",
+      "platform": "gpu",
+      "dtype": "complex128",
+      "first_real": 257.0,
+      "relative_l2": 3.352916379244635e-16,
+      "signed_dc_relative_error": 0.0,
+      "binary32_reciprocal_predicted_error": -2.3283064365386963e-10
+    },
+    {
+      "n": 4093,
+      "method": "ifft_forward",
+      "platform": "gpu",
+      "dtype": "complex128",
+      "first_real": 4093.0002421749814,
+      "relative_l2": 5.916808731853962e-08,
+      "signed_dc_relative_error": 5.916808731853962e-08,
+      "binary32_reciprocal_predicted_error": 5.916808731853962e-08
+    },
+    {
+      "n": 4093,
+      "method": "conjugate_fft",
+      "platform": "gpu",
+      "dtype": "complex128",
+      "first_real": 4093.0,
+      "relative_l2": 5.834167668767976e-16,
+      "signed_dc_relative_error": 0.0,
+      "binary32_reciprocal_predicted_error": 5.916808731853962e-08
+    },
+    {
+      "n": 16,
+      "method": "ifft_forward",
+      "platform": "cpu",
+      "dtype": "complex128",
+      "first_real": 16.0,
+      "relative_l2": 0.0,
+      "signed_dc_relative_error": 0.0,
+      "binary32_reciprocal_predicted_error": 0.0
+    },
+    {
+      "n": 16,
+      "method": "conjugate_fft",
+      "platform": "cpu",
+      "dtype": "complex128",
+      "first_real": 16.0,
+      "relative_l2": 0.0,
+      "signed_dc_relative_error": 0.0,
+      "binary32_reciprocal_predicted_error": 0.0
+    },
+    {
+      "n": 17,
+      "method": "ifft_forward",
+      "platform": "cpu",
+      "dtype": "complex128",
+      "first_real": 17.0,
+      "relative_l2": 1.0367202434033306e-16,
+      "signed_dc_relative_error": 0.0,
+      "binary32_reciprocal_predicted_error": 3.725290298461914e-09
+    },
+    {
+      "n": 17,
+      "method": "conjugate_fft",
+      "platform": "cpu",
+      "dtype": "complex128",
+      "first_real": 17.0,
+      "relative_l2": 1.0367202434033306e-16,
+      "signed_dc_relative_error": 0.0,
+      "binary32_reciprocal_predicted_error": 3.725290298461914e-09
+    },
+    {
+      "n": 257,
+      "method": "ifft_forward",
+      "platform": "cpu",
+      "dtype": "complex128",
+      "first_real": 257.0,
+      "relative_l2": 3.8738068971192207e-16,
+      "signed_dc_relative_error": 0.0,
+      "binary32_reciprocal_predicted_error": -2.3283064365386963e-10
+    },
+    {
+      "n": 257,
+      "method": "conjugate_fft",
+      "platform": "cpu",
+      "dtype": "complex128",
+      "first_real": 257.0,
+      "relative_l2": 4.09219727328107e-16,
+      "signed_dc_relative_error": 0.0,
+      "binary32_reciprocal_predicted_error": -2.3283064365386963e-10
+    },
+    {
+      "n": 4093,
+      "method": "ifft_forward",
+      "platform": "cpu",
+      "dtype": "complex128",
+      "first_real": 4093.0,
+      "relative_l2": 4.507689827540209e-16,
+      "signed_dc_relative_error": 0.0,
+      "binary32_reciprocal_predicted_error": 5.916808731853962e-08
+    },
+    {
+      "n": 4093,
+      "method": "conjugate_fft",
+      "platform": "cpu",
+      "dtype": "complex128",
+      "first_real": 4093.0,
+      "relative_l2": 4.485791271868464e-16,
+      "signed_dc_relative_error": 0.0,
+      "binary32_reciprocal_predicted_error": 5.916808731853962e-08
+    }
+  ],
+  "source_sha256": "ceb228095b1b3e461c3cc23f8e9e047825706b2252d9263b0734e573c580f214",
+  "interpretation": "The constant-input exact DFT is (n,0,...,0). Agreement with the binary32 reciprocal prediction supports a GPU inverse-normalization precision explanation; this is an inference, not an audit of XLA C++."
+}

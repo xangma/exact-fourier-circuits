@@ -5,6 +5,8 @@ pinned Lean verification project for the result described in `math/lean/docs/130
 
 The [conclusion](docs/conclusion.md) records the completed proof and numerical
 assessment. The [investigation plan](PLAN.md) tracks their evidence and scope.
+The [JAX investigation](docs/jax-investigation.md) adds fresh Lean replication,
+CUDA execution on len, exact-reference checks, FFT comparisons and explanatory plots.
 
 The [proof contract](docs/proof-contract.md) specifies the exact cost models,
 coordinate conventions, admissible parameters and proved witness lemmas.
@@ -281,6 +283,10 @@ factorization at larger lengths. It does not refute an exact-complex theorem
 or establish instability of every permitted circuit.
 
 ## Provenance
+
+The [paper playground](notebooks/paper-playground.ipynb) lets you change both
+papers' parameters, numerical precision and transform sizes. See its
+[launch notes](notebooks/README.md) and the [measured CUDA investigation](docs/jax-investigation.md).
 
 The upstream theorem is from [openai/math](https://github.com/openai/math),
 commit `adc7f1241b42e322a6451854ab7e4b4c146bf78a`.

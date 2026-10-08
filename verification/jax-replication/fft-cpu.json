@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "api": [
+    "compile_radix2(n)",
+    "compile_bluestein(n)"
+  ],
+  "convention": "y[k]=sum_j x[j]*exp(+2*pi*i*j*k/n), unnormalized",
+  "implementation": {
+    "radix2": "Jitted iterative butterflies with JAX twiddle exponential arithmetic, static bit reversal, no FFT calls.",
+    "bluestein": "Jitted chirp convolution padded to power-of-two >=2*n-1,2 FFTs+1 IFFT; exact integer phase residues before JAX chirp arithmetic.",
+    "import": "Lazy optional JAX; module import does not initialize device.",
+    "dtype": "Complex64/128 retained (caller must enable x64 for128); real32/64 promoted to matching complex."
+  },
+  "tests": {
+    "status": "PASS",
+    "unittestCount": 8,
+    "denseFamilyComparisons": 120,
+    "families": [
+      "shifted impulse",
+      "negative-sign input tone with positive output peak",
+      "seeded random complex"
+    ],
+    "precisions": [
+      "complex64",
+      "complex128"
+    ],
+    "radix2Lengths": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "bluesteinLengths": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      9,
+      11,
+      12,
+      17,
+      25,
+      31,
+      64
+    ],
+    "reference": "Independent numpy complex128 positive dense matrix DFT.",
+    "extraGuards": [
+      "wrong sign and normalization",
+      "radix2 no FFT calls",
+      "Bluestein2 FFT+1 IFFT trace",
+      "shape/length checks",
+      "lazy import",
+      "missing optional dependency",
+      "real precision promotion"
+    ],
+    "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -p test_jax_fft.py -v",
+    "log": "logs/jax-fft-agent/tests-final.log"
+  },
+  "environment": {
+    "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "jax": "0.11.2",
+    "numpy": "2.5.3",
+    "platform": "macOS-26.6-arm64-arm-64bit-Mach-O",
+    "devices": [
+      "cpu:0"
+    ]
+  },
+  "hashes": {
+    "src/exact_fourier/jax_fft.py": "0ccd021d8985a5762690c8162a257edc54029677a0d53272911c272e26ac5161",
+    "tests/test_jax_fft.py": "2f0402e8b65c9bc8542dcb9413b042fb5aa7b7aefb08f46cb8be849e57375377"
+  },
+  "limitations": [
+    "Tested locally on JAX0.11.2 CPU;0.4.20 compatibility uses basic public APIs but was not locally executed.",
+    "These are classical explanatory baselines, not the published saving network or a speedup claim.",
+    "No remote execution, benchmark, plotting or dependency edits in this scope."
+  ],
+  "runningJobs": []
+}

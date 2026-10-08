@@ -1,0 +1,54 @@
+notebook cell 8:31: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+{'repo': '/Users/xangma/repos/exact-fourier-circuits', 'jax': '0.11.2', 'device': 'cpu:0', 'dtype': 'complex128', 'x64_enabled': True}
+{
+  "h": 100,
+  "v": 161700,
+  "degree": 147731,
+  "m": 1000000,
+  "W": 1873807244643542670000,
+  "W_star": 2361183241434822606848,
+  "r": 71,
+  "Delta": 6871402692000000,
+  "H_calls": 22486194194905980000000,
+  "f": 6544863,
+  "minimal_saving_f": 6544863,
+  "b": 6544863000071,
+  "width": "2^6544863000071",
+  "common_factor": "2^6544862999999",
+  "actual_coefficient": 15453620833254481400417734993086208,
+  "ordinary_coefficient": 15453620833254481401264894229086208,
+  "saved_coefficient": 847159236000000,
+  "saved_fraction": "5.4819465621740058488724206539691978884535981953701689157784842871393530491949344E-20",
+  "epsilon": "2.910152236987946679225292001547131803818047046661376953125E-12",
+  "one_minus_theta": "2.1064384300401810834416405036955125721501141606446923032195464068647270508315352E-13",
+  "theta": "0.99999999999978935615699598189165583594963044874278498858393553076967804535931353"
+}
+Strict call saving: True
+{'h': '4', 'f': '1', 'b': '74', 'saved_fraction': '-0.44932432432432432432432432432432432432432432432432432432432432432432432432432432', 'one_minus_theta': 'None'}
+{'h': '20', 'f': '1', 'b': '8042', 'saved_fraction': '-0.0022167270995729904667235997979601234145734891817955732404874409350907734394429246', 'one_minus_theta': 'None'}
+{'h': '24', 'f': '454425', 'b': '6281971245', 'saved_fraction': '7.1171561067726000439501325272303120833530653959559791012701459762890079895614040E-15', 'one_minus_theta': '3.9576100238591133749179063009666716505625628736256878027665600804203959437457024E-10'}
+{'h': '100', 'f': '6544863', 'b': '6544863000071', 'saved_fraction': '5.4819465621740058488724206539691978884535981953701689157784842871393530491949344E-20', 'one_minus_theta': '2.1064384300401810834416405036955125721501141606446923032195464068647270508315352E-13'}
+{'n': 1000, 'unit_constant_shape': '49864.678872656109366259776647761837037825435090732573174897728787488228532414721', 'shape_over_n_log_n': '7.2186516254240708118874313948926175336829387937108786805275591240706619950403857'}
+{'n': 1000000, 'unit_constant_shape': '250119676.97834237056010732497325537854006229307094091694184430174114862393919600', 'shape_over_n_log_n': '18.104265921186317237484871752360797063038296556806336731629726363869249341252767'}
+{'n': 1000000000000, 'unit_constant_shape': '1010170736467600.2350930357728862750724806583256903740856693387169568076292016080', 'shape_over_n_log_n': '36.559298052335231780771231325902674635505022389057802334931444786179907325252818'}
+{'log2_target': 20, 'mode': 'three_C', 'source': (1+0j), 'source_absolute_error': 0.0, 'relative_l2': 2.7755575615616292e-17}
+{'log2_target': 20, 'mode': 'direct', 'source': (1+0j), 'source_absolute_error': 0.0, 'relative_l2': 0.0}
+{'operator': 'C tensor 6', 'finite': True, 'relative_l2': 2.8264022431835205e-16, 'maximum_absolute': 8.005932084973443e-16, 'first_call_seconds': 0.07497879199218005, 'warm_median_seconds': 3.7874997360631824e-05}
+Full projected replay disabled. Set RUN_FULL_PROJECTED=True to run it.
+{'n': 32, 'method': 'jax_conjugate_forward', 'finite': True, 'relative_l2': 6.046639695034434e-15, 'maximum_absolute': 1.2499356074575257e-13, 'first_call_seconds': 0.019256583007518202, 'warm_median_seconds': 7.499998901039362e-06}
+{'n': 32, 'method': 'jax_ifft_times_n', 'finite': True, 'relative_l2': 6.040294905447869e-15, 'maximum_absolute': 1.2499356074575257e-13, 'first_call_seconds': 0.013243624998722225, 'warm_median_seconds': 6.082991603761911e-06}
+{'n': 32, 'method': 'Bluestein', 'finite': True, 'relative_l2': 6.003252326980719e-15, 'maximum_absolute': 1.1885672505457096e-13, 'first_call_seconds': 0.023925834015244618, 'warm_median_seconds': 3.1041010515764356e-05}
+{'n': 32, 'method': 'radix_two', 'finite': True, 'relative_l2': 6.000631790435262e-15, 'maximum_absolute': 1.2353345381515273e-13, 'first_call_seconds': 0.04616891700425185, 'warm_median_seconds': 5.875015631318092e-06}
+{'normalization_control_ifft_only': {'finite': True, 'relative_l2': 0.96875, 'maximum_absolute': 15.81814660230572}}
+{'sign_control_fft': {'finite': True, 'relative_l2': 1.414285500967847, 'maximum_absolute': 24.380286254706526}}
+{'n': 8, 'Newton_factor_matrix_error': {'finite': True, 'relative_l2': 3.24693485563831e-15, 'maximum_absolute': 1.4467445692591826e-14}, 'maximum_factor_entry': 13.656854249492383, 'Newton_action_error': {'finite': True, 'relative_l2': 2.3850077045733703e-15, 'maximum_absolute': 1.3322676295501878e-14}, 'first_call_seconds': 0.0337021249870304, 'warm_median_seconds': 6.708985893055797e-06}
+{'conjugate_transpose_control': {'finite': True, 'relative_l2': 14.88305603719218, 'maximum_absolute': 55.599915893488095}}
+{'method': 'Bluestein_same_DFT', 'finite': True, 'relative_l2': 6.769288425115214e-16, 'maximum_absolute': 4.265337574760008e-15, 'first_call_seconds': 0.02163058301084675, 'warm_median_seconds': 3.666599513962865e-05}
+{'receipt': 'fft.json', 'passed': True, 'host': 'len', 'devices': ['cuda:0'], 'started_utc': '2026-10-08T09:30:40.794275+00:00'}
+{'receipt': 'projection.json', 'passed': True, 'host': 'len', 'devices': ['cuda:0'], 'started_utc': '2026-10-08T09:35:48.115206+00:00'}
+{'receipt': 'shear.json', 'passed': True, 'host': 'len', 'devices': ['cuda:0'], 'started_utc': '2026-10-08T09:30:55.701615+00:00'}
+{'receipt': 'normalization.json', 'passed': True, 'host': 'len', 'devices': None, 'started_utc': None}
+{'source': 'src/exact_fourier/jax_backend.py', 'sha256': 'd079a7371cfe126793bd43f4b9e04cae8cf7e0e7ff19c7f83de575c7fd245815', 'matches_recorded_snapshot': True}
+{'source': 'src/exact_fourier/jax_fft.py', 'sha256': '0ccd021d8985a5762690c8162a257edc54029677a0d53272911c272e26ac5161', 'matches_recorded_snapshot': True}
+{'source': 'src/exact_fourier/jax_newton.py', 'sha256': '714fec281c2904bf1b61e0d015de107e56c2b560b813f1c22dfa992e8e25f385', 'matches_recorded_snapshot': 'not recorded'}
+{'passed': True, 'platform': 'cpu', 'code_cells_executed': 11, 'seconds': 1.3482833339949138, 'notebook_sha256': '39777992dfa342e10a8c1bd5fe2b71e21d449268ad0f12d7ae13f4e7e5f3119d', 'source_sha256': {'src/exact_fourier/jax_backend.py': 'd079a7371cfe126793bd43f4b9e04cae8cf7e0e7ff19c7f83de575c7fd245815', 'src/exact_fourier/jax_fft.py': '0ccd021d8985a5762690c8162a257edc54029677a0d53272911c272e26ac5161', 'src/exact_fourier/jax_newton.py': '714fec281c2904bf1b61e0d015de107e56c2b560b813f1c22dfa992e8e25f385'}}

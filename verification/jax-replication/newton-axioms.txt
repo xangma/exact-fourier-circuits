@@ -1,0 +1,90 @@
+'ExactFourierCircuits.UniformNewton.Hvalue_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformNewton.scaleValue_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformNewton.diagonalValue_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformNewton.N_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformNewton.P_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformNewton.N_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformNewton.triangular_middle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformNewton.fourier_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformNewton.N_toeplitz_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformNewton.specified_fourier_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.eval_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.admissible_step' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.productCount_formula' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.productCount_lower' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.rootRef_succ' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.oneRef_succ' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.minusRef_succ' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.powerRef_succ' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.HRef_succ' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.scaleRef_succ' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.productProgram_values' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.productProgram_admissible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.productCount_mono' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.productLift_succ' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.productProgram_old' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.productProgram_preserves' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.productProgram_table' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.inverseCount_formula' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.inverseCount_base' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.baseLift_succ' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.inverseProgram_old' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.inverseProgram_base' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.inverseProgram_inputs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.inverseProgram_admissible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.inverseCount_mono' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.inverseLift_succ' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.inverseProgram_preserves' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.inverseProgram_new' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.finalProgram_values' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.table_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.table_admissible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.table_run' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.fourier_factorization_prepared' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.preparedToeplitz_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.N_toeplitz_prepared' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.diagonal_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.fourier_factorization_prepared_reciprocal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformNewton.Preparation.specified_factorization_prepared' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
