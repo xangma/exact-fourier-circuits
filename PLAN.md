@@ -178,7 +178,10 @@ An actual contiguous power writer charges every bank store, and the fixed
 90-instruction kernel producer derives all six physical kernels from H/G. The
 297-instruction FFT/copy spectrum assembly and 271-instruction corrected-cross
 topology printer are verified. A 35-instruction physical depth writer now derives every typed label. Their
-continuous caller, bucket ordering and dirty replay remain to be completed.
+24-instruction bucket printer derives the complete stable gate order from those
+labels. The 42-instruction signed coefficient producer computes negative entries
+and reciprocal constants from the original positive bank. The continuous caller,
+physical coloring and dirty replay remain to be completed.
 The block traversal's reversed cons output is proved equal to the exact ordered
 sector directory. Its physical 92-instruction metadata scan/DFS derives this
 directory and every stack read from original width rows in linear time. The continuous

@@ -90,9 +90,13 @@ constructs all six padded rank kernels from actual prepared H/G cells, including
 zero coefficients, with a proved quadratic preparation bound. The 297-instruction spectrum
 producer charges its six FFT/copy passes and root-power bank. The 271-instruction
 corrected-cross printer derives all six remapped graphs and final additions from
-height and ragged dimensions. Their continuous caller, physical replay remain active obligations. The 35-instruction depth writer
+height and ragged dimensions. Their continuous caller and physical replay remain active obligations. The 35-instruction depth writer
 derives every typed longest-path label from its physical tape in at most
-`5*(N+1)+22*G+10` charged steps.
+`5*(N+1)+22*G+10` charged steps. A 24-instruction printer then constructs
+a stable complete gate permutation and bucket directory from those actual labels;
+its quadratic allocation and instruction cost are explicit. A 42-instruction
+producer derives the signed coefficient bank and six normalization constants from
+the original prepared positive bank in exactly `5*K+56*2^K+31` steps.
 The mathematical block traversal now has an exact ordered-list identity with the
 sector directory. Its 92-instruction physical metadata producer now derives that
 ordered directory and suffix volumes from the original width rows in at most

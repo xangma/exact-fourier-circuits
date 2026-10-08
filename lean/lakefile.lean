@@ -396,3 +396,9 @@ lean_lib CheckUniformDAGDepthMachineAxioms
 
 lean_lib UniformSectorPackingMachine
 lean_lib CheckUniformSectorPackingMachineAxioms
+
+lean_lib UniformDAGBucketMachine
+lean_lib CheckUniformDAGBucketMachineAxioms
+
+lean_lib UniformReplayCoefficientMachine
+lean_lib CheckUniformReplayCoefficientMachineAxioms
