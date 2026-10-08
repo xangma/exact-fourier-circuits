@@ -26,13 +26,16 @@ checked components from the remaining program and cost obligations. The
 [component receipt](verification/uniform-components.json) explicitly records
 `uniform_algorithm_verified=false`.
 
-The current uniform work includes one fixed 418-instruction startup program.
+The current uniform work includes one fixed 465-instruction startup program.
 Lean proves that it constructs the chirped padded input, signed convolution
 kernel, normalization factor and both CRT permutations, copies the complete
-index metadata out of local workspace, and preserves the prepared banks.
+index metadata out of local workspace, gathers the input through alpha,
+and constructs the inverse beta output table while preserving the prepared banks.
 All startup work is charged and bounded by `O(n)`, with polynomial integer
 words. Concrete local Fourier layers and the pointwise multiplication loop
-are also checked; the fast transform printer and scheduler remain open.
+are also checked. A literal FFT instruction decoder, a shared recursive
+coefficient DAG and tensor-fiber addressing are verified components; their
+remaining producers and the global fast transform scheduler remain open.
 
 ## Run
 

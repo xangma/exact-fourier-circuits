@@ -13,6 +13,7 @@ import UniformInitialPreparation
 #print axioms ExactFourierCircuits.UniformInitialPreparation.copyBase
 #print axioms ExactFourierCircuits.UniformInitialPreparation.alphaBase
 #print axioms ExactFourierCircuits.UniformInitialPreparation.betaBase
+#print axioms ExactFourierCircuits.UniformInitialPreparation.protectedView
 #print axioms ExactFourierCircuits.UniformInitialPreparation.Operands
 #print axioms ExactFourierCircuits.UniformInitialPreparation.Operands.transport
 #print axioms ExactFourierCircuits.UniformInitialPreparation.Ready

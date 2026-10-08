@@ -48,6 +48,8 @@ abbrev len (n : ℕ) := UniformWorkingLength.workingLength n
 abbrev copyBase (n : ℕ) := UniformGlobalNatPreparation.destination (ell n) (len n)
 abbrev alphaBase (n : ℕ) := UniformCRTTraversalMachine.alphaBase (ell n)
 abbrev betaBase (n : ℕ) := UniformCRTTraversalMachine.betaBase (ell n) (len n)
+def protectedView (n : ℕ) (s : State) : State :=
+  {s with natHeap:=fun a=>s.natHeap (copyBase n+a)}
 
 structure Operands (n : ℕ) (x : Fin n→ℂ) (s : State) : Prop where
   constants : ∀j:Fin 6,s.scalarHeap j.val=some (prepared (UniformCConstantsMachine.bank n j))
@@ -83,6 +85,10 @@ structure Ready (n : ℕ) (x : Fin n→ℂ) (s : State) : Prop where
     s.natHeap (UniformCRTTraversalCycle.alphaPermutation n)
   protectedBeta : UniformGlobalNatPreparation.PermutationBank (len n) (copyBase n+betaBase n)
     s.natHeap (UniformCRTTraversalCycle.betaPermutation n)
+  protectedPrimes : UniformWorkingMachine.PrimeTable (ell n) (protectedView n s)
+  protectedCRT : UniformCRTHeaderMachine.CRTTable n (protectedView n s)
+  protectedFilled : ∀a,a<UniformGlobalNatPreparation.amount (ell n) (len n)→
+    ∃v,s.natHeap (copyBase n+a)=some v
   oneRoot : s.rootOrders=[UniformMasterRootMachine.order n]
   outputs : s.outputs=initial.outputs
 
@@ -167,6 +173,25 @@ theorem preparation_execution {n : ℕ} (hn:0<n) (x : Fin n→ℂ) : ∃t u,
     exact ⟨(hrow 0 (by decide)).trans (hC i).1,(hrow 1 (by decide)).trans (hC i).2.1,
       (hrow 2 (by decide)).trans (hC i).2.2.1,(hrow 3 (by decide)).trans (hC i).2.2.2⟩
   have hperms:=UniformCRTTraversalCycle.tables_permutations n w hT
+  have hprotcrt:UniformCRTHeaderMachine.CRTTable n (protectedView n u):=by
+    intro i
+    have hrow (f : ℕ) (hf:f≤3):(protectedView n u).natHeap
+        (UniformCRTHeaderMachine.tableAddress (ell n) i.val f)=
+        w.natHeap (UniformCRTHeaderMachine.tableAddress (ell n) i.val f):=by
+      apply hprotected
+      have hi:i.val<ell n+1:=i.isLt
+      unfold UniformCRTHeaderMachine.tableAddress UniformGlobalNatPreparation.amount;omega
+    exact ⟨(hrow 0 (by decide)).trans (hC i).1,(hrow 1 (by decide)).trans (hC i).2.1,
+      (hrow 2 (by decide)).trans (hC i).2.2.1,(hrow 3 (by decide)).trans (hC i).2.2.2⟩
+  have hprotprime:UniformWorkingMachine.PrimeTable (ell n) (protectedView n u):=by
+    intro i hi
+    exact (hprotected i (by unfold UniformGlobalNatPreparation.amount;omega)).trans
+      (hh.2.2.2.2.2.2 i hi)
+  have hprotfilled:∀a,a<UniformGlobalNatPreparation.amount (ell n) (len n)→
+      ∃v,u.natHeap (copyBase n+a)=some v:=by
+    intro a ha
+    obtain ⟨v,hv⟩:=hsource a ha
+    exact ⟨v,(hprotected a ha).trans hv⟩
   have hap:UniformGlobalNatPreparation.PermutationBank (len n) (alphaBase n) w.natHeap
       (UniformCRTTraversalCycle.alphaPermutation n):=fun j=>(hperms j).1
   have hbp:UniformGlobalNatPreparation.PermutationBank (len n) (betaBase n) w.natHeap
@@ -192,6 +217,7 @@ theorem preparation_execution {n : ℕ} (hn:0<n) (x : Fin n→ℂ) : ∃t u,
   · refine ⟨huheader,hucrt,hheaders.masterRoot,hheaders.inputLength,
       (hregs 27 (by decide)).trans ((hnats 27 (by decide)).trans h27),
       hops.transport (hframe.1.trans hf.2.1),hsaved.withPC,ha',hb',?_,?_,
+      hprotprime,hprotcrt,hprotfilled,
       hframe.2.2.2.trans (hf.2.2.2.1.trans hroot),hframe.2.2.1.trans (hf.2.2.1.trans hout)⟩
     · exact UniformGlobalNatPreparation.protected_permutation (ell n) (len n) (alphaBase n)
         (len n) w.natHeap u (UniformCRTTraversalCycle.alphaPermutation n) hprotected ha hap

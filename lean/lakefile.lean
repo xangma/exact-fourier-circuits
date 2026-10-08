@@ -257,3 +257,17 @@ lean_lib UniformGlobalNatPreparation
 lean_lib UniformLocalFourierLayers
 
 lean_lib UniformInitialPreparation
+
+lean_lib UniformPermutationMachine
+
+lean_lib UniformPermutationInverseMachine
+
+lean_lib UniformInputPermutationPreparation
+
+lean_lib UniformLocalPreparationDAG
+
+lean_lib UniformRadixInstructionMachine
+
+lean_lib UniformTensorAddressMachine
+
+lean_lib UniformPermutationInversePreparation
