@@ -23674,3 +23674,2041 @@ Note: This linter can be disabled with `set_option linter.auxLemma false`
 'ExactFourierCircuits.UniformReplayCoefficientMachine.runtime_zero' does not depend on any axioms
 'ExactFourierCircuits.UniformReplayCoefficientMachine.runtime_one' does not depend on any axioms
 'ExactFourierCircuits.UniformReplayCoefficientMachine.runtime_two' does not depend on any axioms
+'ExactFourierCircuits.UniformGreedyColorMachine.boot' does not depend on any axioms
+'ExactFourierCircuits.UniformGreedyColorMachine.clearStart' does not depend on any axioms
+'ExactFourierCircuits.UniformGreedyColorMachine.clearBody' does not depend on any axioms
+'ExactFourierCircuits.UniformGreedyColorMachine.current' does not depend on any axioms
+'ExactFourierCircuits.UniformGreedyColorMachine.previous' does not depend on any axioms
+'ExactFourierCircuits.UniformGreedyColorMachine.advance' does not depend on any axioms
+'ExactFourierCircuits.UniformGreedyColorMachine.mark' does not depend on any axioms
+'ExactFourierCircuits.UniformGreedyColorMachine.chooseStart' does not depend on any axioms
+'ExactFourierCircuits.UniformGreedyColorMachine.chooseRead' does not depend on any axioms
+'ExactFourierCircuits.UniformGreedyColorMachine.chooseNext' does not depend on any axioms
+'ExactFourierCircuits.UniformGreedyColorMachine.commit' does not depend on any axioms
+'ExactFourierCircuits.UniformGreedyColorMachine.program' does not depend on any axioms
+'ExactFourierCircuits.UniformGreedyColorMachine.program_length' does not depend on any axioms
+'ExactFourierCircuits.UniformGreedyColorMachine.boot_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.clearStart_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.clearBody_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.current_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.previous_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.advance_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.mark_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.chooseStart_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.chooseRead_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.chooseNext_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.commit_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.outer_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.clear_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.clear_jump' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.scan_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.scan_jump' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.mark_jump' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.choose_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.available_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.choose_jump' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.outer_jump' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.halt_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.runtimeBudget' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.Header' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.Fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.Edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.Colors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.Frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.Outside' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.frame_refl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.frame_trans' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.firstFree_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.greedy_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.firstFree_of_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.scanned' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.scanned_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.scanned_end' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.scanned_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.Allowed' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.op_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.block_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.frame_setPC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.branch_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.jump_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.outside_trans' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.edges_transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.colors_palette_transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.OuterCursor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.ClearCursor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.Palette' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.Zeros' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.clearStep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.clearStep_cursor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.clearStep_heap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.clearStep_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.clearStep_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.clear_loop' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.testLeft' does not depend on any axioms
+'ExactFourierCircuits.UniformGreedyColorMachine.testRight' does not depend on any axioms
+'ExactFourierCircuits.UniformGreedyColorMachine.matchesFrom' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.matchesFrom_decidable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.matches_pc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.test_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformGreedyColorMachine.eqTest_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.tests_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.ScanCursor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.startup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.clear_begin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.current_begin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.scanStep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.scanStep_cursor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.scanStep_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.scanStep_heap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.scanStep_palette' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.scanStep_outside' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.scanStep_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.scan_loop' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.ChoiceCursor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.choose_begin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.inspected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.inspect_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.choiceNext' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.choiceNext_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.choose_loop' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.committed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.commit_cursor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.commit_heap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.commit_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.commit_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.commit_colors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.one_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.outer_loop' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.execution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.execution_degree_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformGreedyColorMachine.frame_saved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Cache' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Cache.casesOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Cache.destination' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Cache.gateIndex' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Cache.kind' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Cache.left' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Cache.mk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Cache.mk._flat_ctor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Cache.opcode' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Cache.payload' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Cache.rec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Cache.recOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Cache.right' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Cache.setPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Cache.writeNat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Cache.writeNat._proof_1_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Cache.writeNat._proof_1_2' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Cache.writeNat._proof_1_3' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Cache.writeNat._proof_1_4' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Cache.writeNat._proof_1_5' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Cache.writeNat._proof_1_6' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Cache.writeNat._proof_1_7' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fields' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.casesOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.header' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.inputsSucc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.mk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.mk._flat_ctor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.rec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.recOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.setPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.transport._proof_1_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.transport._proof_1_10' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.transport._proof_1_11' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.transport._proof_1_12' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.transport._proof_1_13' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.transport._proof_1_14' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.transport._proof_1_15' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.transport._proof_1_16' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.transport._proof_1_2' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.transport._proof_1_3' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.transport._proof_1_4' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.transport._proof_1_5' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.transport._proof_1_6' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.transport._proof_1_7' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.transport._proof_1_8' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.transport._proof_1_9' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.writeNat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.writeNat._proof_1_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Fixed.zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.GoodCoefficient' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.GoodCoefficient.eq_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.GoodExpr' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.GoodExpr.eq_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.GoodExpr.eq_2' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.GoodExpr.eq_3' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.GoodExpr.match_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.casesOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.coefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.constants' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.dataBase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.enabled' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.inputs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.mk' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.mk._flat_ctor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.order' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.output' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.rec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.recOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.tape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.transport._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.transport._proof_1_10' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.transport._proof_1_2' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.transport._proof_1_3' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.transport._proof_1_4' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.transport._proof_1_5' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.transport._proof_1_6' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.transport._proof_1_7' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.transport._proof_1_8' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.transport._proof_1_9' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Header.width' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.OrderBank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Outside' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.RowFields' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.RowFields.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.RowsBound' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.Table' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.Tape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.add_runs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.advance' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.advance.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.advance_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.block_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.block_frame._proof_1_9' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.boot' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.boot.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.boot_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.branch_runs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.coefficientAddress' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.coefficientAddress.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.convolution_gate_good' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.convolution_instruction_good' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.coreScratch' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.coreScratch.eq_1' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.coreScratch.eq_2' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.coreScratch.eq_3' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.coreScratch.eq_4' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.coreScratch.eq_5' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.coreScratch.eq_6' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.coreScratch.eq_7' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.core_registers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.core_registers._proof_1_9' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.cross_execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.cross_good' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.cross_records_good' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.cross_records_good._simp_1_1' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.directRows' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.directRows.eq_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.directRows.eq_2' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.directRows.eq_3' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.directRows.match_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.emit' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.emit.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.emit_length' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.emitted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.emitted.eq_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.execution._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.execution._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.execution._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.execution._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.execution._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.expansion' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.expansion.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.expansion_length' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.expansion_typed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.exprAt' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.exprAt.eq_1' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.exprAt_mem' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.exprAt_present' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.exprAt_present._proof_1_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.frame_trans' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gateEnd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gateEnd.eq_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gateSweep' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gateSweep._f' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gateSweep._proof_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gateSweep._proof_3' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gateSweep._proof_4' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gateSweep._sunfold' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gateSweep._unsafe_rec' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gateSweep.eq_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gateSweep.eq_2' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gateSweep.eq_def' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gateSweep.match_1' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gateSweep_all' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gateSweep_dst' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gateSweep_filter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gateSweep_rows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gateSweep_rows._proof_1_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gateSweep_rows._proof_1_2' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gateSweep_step' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gateSweep_step_old' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gateSweep_step_old._proof_1_4' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gate_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gate_bounded._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gate_bounded._proof_1_10' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gate_bounded._proof_1_11' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gate_bounded._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gate_bounded._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gate_bounded._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gate_bounded._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gate_bounded._proof_1_6' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gate_bounded._proof_1_7' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gate_bounded._proof_1_8' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gate_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gate_spec._proof_1_17' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.gate_spec._proof_1_18' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.goodExpr_map' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.goodExpr_remap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.jump_runs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.left' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.left_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.loaded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.loaded.eq_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.loaded_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.loaded_bounded._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.loaded_bounded._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.loaded_bounded._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.loaded_bounded._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.loaded_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.locations' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.locations.eq_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.master_retained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.natScratch' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.natScratch._sparseCasesOn_1' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.natScratch._sparseCasesOn_1.else_eq' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.natScratch.eq_1' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.natScratch.eq_2' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.natScratch.eq_3' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.natScratch.eq_4' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.natScratch.eq_5' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.natScratch.eq_6' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.natScratch.eq_7' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.natScratch.match_1' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.orderedRows' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.orderedRows.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.orderedRows_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.orderedRows_length._proof_1_2' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.orderedRows_typed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.orderedSweep' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.orderedSweep.eq_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.orderedSweep_buckets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.orderedSweep_levels' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.orderedSweep_levels._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.orderedSweep_levels._proof_1_2' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.orderedSweep_perm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.positive' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.positive_again_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.positive_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.prepared' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.prepared_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.program' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.program_length' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.putRow' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.putRow.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.putRow_outside' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.putRow_outside._proof_1_2' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.putRow_outside._proof_1_3' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.putRow_outside._proof_1_4' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.putRows' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.putRows._f' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.putRows._sunfold' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.putRows._unsafe_rec' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.putRows.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.putRows.eq_2' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.putRows.eq_def' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.putRows.match_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.putRows_append' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.putRows_append._proof_1_4' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.putRows_fields' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.putRows_fields._proof_1_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.putRows_fields._proof_1_2' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.putRows_fields._proof_1_3' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.putRows_outside' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.putRows_outside._proof_1_4' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.putRows_outside._proof_1_5' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.reads' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.reads.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.reads_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.reciprocal' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.reciprocal_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.reciprocal_eq_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.reciprocal_location' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.reciprocal_location._proof_1_2' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.reciprocal_location._proof_1_3' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.reciprocal_location._proof_1_4' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.reciprocal_location._proof_1_5' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.referenceMap_sourceRef' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.referenceMap_sourceRef._proof_1_3' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.referenceMap_sourceRef._proof_1_4' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.reference_rows' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.right' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.right.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.right_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.rowAt' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.rowAt.eq_1' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.rowAt_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.rowAt_bounds._proof_1_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.rowAt_bounds._proof_1_2' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.rowAt_bounds._proof_1_3' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.rowAt_bounds._proof_1_4' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.rowAt_bounds._proof_1_5' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.rowAt_bounds._proof_1_6' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.rowAt_bounds._proof_1_7' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.rowAt_bounds._proof_1_8' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates._f' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates._sunfold' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates._unsafe_rec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates.eq_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates.eq_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates.eq_def' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates.match_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_10' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_11' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_12' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_13' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_14' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_15' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_16' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_17' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_18' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_19' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_20' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_21' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_22' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_23' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_24' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_25' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_26' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_27' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_28' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_29' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_30' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_8' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.runGates_bounded._proof_1_9' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.saved_headers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.saved_headers._proof_1_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected.eq_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_10' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_11' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_12' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_13' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_14' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_16' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_17' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_18' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_19' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_20' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_21' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_23' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_24' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_25' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_26' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_27' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_28' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_29' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_30' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_31' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_33' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_34' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_35' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_6' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_7' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_8' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_bounded._proof_1_9' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_gateSweeps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_spec._proof_1_11' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_spec._proof_1_12' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_spec._proof_1_13' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_spec._proof_1_14' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_spec._proof_1_15' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_spec._proof_1_16' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_spec._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_spec._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_spec._proof_1_4' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_spec._proof_1_5' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_spec._proof_1_6' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.selected_spec._proof_1_7' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.setPC_eq_of' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.shiftedRow' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.shiftedRow.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.slotActive' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.slotActive.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.slotCoefficient' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.slotCoefficient.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.slotEnd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.slotRows' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.slotRows.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.slotRows_length' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.slotSource' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.slotSource.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.slot_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.slot_bounded._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.slot_bounded._proof_1_10' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.slot_bounded._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.slot_bounded._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.slot_bounded._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.slot_bounded._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.slot_bounded._proof_1_7' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.slot_bounded._proof_1_8' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.slot_bounded._proof_1_9' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.slot_rows_good' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.slot_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.slots_expansion' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.sourceRef' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.sourceRef.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.started' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.started.eq_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.started_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.startup_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.startup_bounded._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.startup_bounded._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.stored_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.stored_bounded._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.stored_bounded._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.stored_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.stores' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.stores.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.stores_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.tape_of_typed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.tick' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.tick.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.tick_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.tick_bounded._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.tick_bounded._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.tick_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossShearTableMachine.tick_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.typed_execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.visibility_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.visibility_bounded._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.visibility_bounded._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.visibility_bounded._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.visibility_bounded._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.visibility_bounded._proof_1_6' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.visibility_bounded._proof_1_7' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.visible' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.visible.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.wordBudget' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossShearTableMachine.wordBudget_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossShearTableMachine.wordBudget_bounds._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.natScratch.match_1.eq_7' depends on axioms: [propext]
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.natScratch.match_1.splitter' depends on axioms: [propext]
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.gateSweep.match_1.eq_2' depends on axioms: [propext]
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.gateSweep.match_1.eq_1' depends on axioms: [propext]
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.directRows.match_1.eq_2' depends on axioms: []
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.GoodExpr.match_1.splitter' depends on axioms: []
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.directRows.match_1.eq_1' depends on axioms: []
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.runGates.match_1.splitter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.natScratch.match_1.eq_1' depends on axioms: [propext]
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.directRows.match_1.splitter' depends on axioms: []
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.putRows.match_1.eq_2' depends on axioms: []
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.natScratch.match_1.eq_6' depends on axioms: [propext]
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.putRows.match_1.splitter' depends on axioms: []
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.GoodExpr.match_1.eq_2' depends on axioms: []
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.GoodExpr.match_1.eq_3' depends on axioms: []
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.runGates.match_1.eq_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.natScratch.match_1.eq_2' depends on axioms: [propext]
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.putRows.match_1.eq_1' depends on axioms: []
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.gateSweep.match_1.splitter' depends on axioms: [propext]
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.natScratch.match_1.eq_3' depends on axioms: [propext]
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.directRows.match_1.eq_3' depends on axioms: []
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.natScratch.match_1.eq_4' depends on axioms: [propext]
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.GoodExpr.match_1.eq_1' depends on axioms: []
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.natScratch.match_1.eq_5' depends on axioms: [propext]
+'_private.UniformCrossShearTableMachine.0.ExactFourierCircuits.UniformCrossShearTableMachine.runGates.match_1.eq_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.boot' does not depend on any axioms
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.clear' does not depend on any axioms
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.pairStart' does not depend on any axioms
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.pairBody' does not depend on any axioms
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singletonStart' does not depend on any axioms
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singletonRead' does not depend on any axioms
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singletonBody' does not depend on any axioms
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.advance' does not depend on any axioms
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.finish' does not depend on any axioms
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.program' does not depend on any axioms
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.program_length' does not depend on any axioms
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.boot_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.clear_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.pairStart_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.pairBody_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singletonStart_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singletonRead_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singletonBody_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.advance_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.finish_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.clear_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.clear_jump' depends on axioms: [propext]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.pair_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.pair_jump' depends on axioms: [propext]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singleton_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.used_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singleton_jump' depends on axioms: [propext]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.halt_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.paired' does not depend on any axioms
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singletons' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.ordered' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.widths' does not depend on any axioms
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.Matching' does not depend on any axioms
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.InRange' does not depend on any axioms
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.paired_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.paired_mem' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singleton_mem' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.ordered_mem' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.paired_nodup' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.ordered_nodup' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.ordered_perm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.matching_capacity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singletons_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.widths_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.widths_sum' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.widths_one_two' depends on axioms: [propext]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.runtime' does not depend on any axioms
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.runtime_linear' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.ordered_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.forward' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.forward_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.inverse_forward' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.originalPermutation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.geometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.geometry_permutation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.Header' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.Fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.ClearCursor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.MarkerZero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.Frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.frame_refl' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.frame_trans' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.Frame.saved' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.branch_runs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.jump_runs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.Fixed.withPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.clearStep' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.boot_cursor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.boot_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.clearStep_heap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.clearStep_cursor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.clearStep_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.clearStep_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.clearStep_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.clear_loop' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.initialized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.PairCursor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.Edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.PairBank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.PairWidths' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.Visited' does not depend on any axioms
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.instDecidableVisited' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.Markers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.pairStep' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.pairStart_cursor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.pairStart_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.pairStep_cursor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.pairStep_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.pairStep_heap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.pairStep_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.Bank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.pairedPrefix' does not depend on any axioms
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.pairedPrefix_zero' does not depend on any axioms
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.pairedPrefix_end' depends on axioms: [propext]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.pairedPrefix_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.pairedPrefix_succ' depends on axioms: [propext]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.pairBank_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.pairWidths_bank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.Outside' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.outside_trans' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.visited_zero' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.visited_succ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.visited_end' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.pairStep_banks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.pairStep_outside' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.edges_transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.pair_loop' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singletonPrefix' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singletonPrefix_zero' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singletonPrefix_end' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singletonPrefix_succ' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singletonPrefix_le' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.permutationPrefix' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.widthPrefix' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.prefix_lengths' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.prefix_capacity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.bank_heap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.bank_append_write' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.SingletonCursor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singletonStep' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singletonStart_cursor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singletonStart_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singletonStep_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singletonStep_cursor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singletonStep_heap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singletonStep_banks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singletonStep_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.singleton_loop' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.AxisRow' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.finished' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.finished_pc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.finished_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.finished_heap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.finished_banks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.finished_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.physicalAxis' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.physical_axis' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformMatchingAxisTableMachine.execution_axis' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Frame.master' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Frame.refl' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Frame.source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Frame.source._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Frame.source._proof_1_2' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Frame.trans' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Frame.withPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Header' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Header.transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Header.withPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Layout' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.A' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.C' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.D' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.G' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.H' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.K' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.S' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters._sizeOf_1' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters._sizeOf_inst' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.a' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.casesOn' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.conv' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.ctorIdx' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.d' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.depth' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.e' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.gSize' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.hSize' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.i0' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.j0' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.mk' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.mk._flat_ctor' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.mk.inj' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.mk.injEq' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.mk.noConfusion' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.mk.sizeOf_spec' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.noConfusion' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.noConfusionType' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.rank' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.rec' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.recOn' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.register' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.register.match_1' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.split' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.tape' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Preserved' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Preserved.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.ReadyHeader' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.ReadyHeader.rank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.ReadyHeader.spectrum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.ReadyHeader.transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.ReadyHeader.withPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Shape' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Shape.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Sizing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Sizing.casesOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Sizing.height' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Sizing.index' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Sizing.mk' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Sizing.mk._flat_ctor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Sizing.one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Sizing.rec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Sizing.recOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Sizing.two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Sizing.width' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Sizing.withPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Sizing.zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.SizingFrame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.SizingFrame.frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.SizingFrame.refl' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.SizingFrame.trans' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.SizingFrame.withPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Working' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.Working.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.block_of_segment' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.block_of_segment._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.block_of_segment._proof_1_2' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.block_of_segment._proof_1_3' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_10' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_11' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_12' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_13' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_14' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_15' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_16' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_17' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_18' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_19' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_20' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_21' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_22' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_23' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_24' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_25' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_26' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_27' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_28' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_29' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_30' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_31' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_32' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_33' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_34' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_35' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_36' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_37' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_38' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_39' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_40' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_41' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_42' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_43' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_44' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_45' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_46' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_47' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_48' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_49' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_50' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_51' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_52' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_53' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_54' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_55' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_56' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_7' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_8' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._proof_1_9' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._simp_1_3' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.caller_frame._simp_1_4' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.conv_size' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.crossSetup' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.crossSetup.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.crossSetup_at' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.crossSetup_length' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.crossSetup_safe' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.crossSetup_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.crossSetup_spec._proof_1_10' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.crossSetup_spec._proof_1_11' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.crossSetup_spec._proof_1_12' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.crossSetup_spec._proof_1_13' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.crossSetup_spec._proof_1_14' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.crossSetup_spec._proof_1_7' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.crossSetup_spec._proof_1_8' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.crossSetup_spec._proof_1_9' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.crossSetup_spec._simp_1_4' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.crossSetup_spec._simp_1_5' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.cross_call' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.cross_call._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.cross_call._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.cross_call._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.cross_code' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.cross_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.cross_size' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.cross_working' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_at' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_length' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_safe' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_safe._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_safe._proof_1_2' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_safe._proof_1_3' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_safe._proof_1_4' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_10' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_11' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_12' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_13' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_14' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_15' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_16' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_17' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_18' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_19' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_20' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_21' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_22' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_23' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_24' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_25' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_26' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_27' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_28' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_29' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_30' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_31' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_32' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_33' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_34' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_35' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_36' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_37' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_38' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_39' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_40' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_41' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_42' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_43' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_44' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_45' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_46' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_47' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_48' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_7' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_8' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._proof_1_9' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._simp_1_4' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depthSetup_spec._simp_1_5' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depth_call' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depth_call._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depth_call._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depth_call._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depth_call._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depth_code' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depth_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.depth_working' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.execution._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.execution._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.execution._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.execution._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.final_halt' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.final_halt._proof_1_2' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.headerRegisters' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.headerRegisters.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.header_preserved' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.kernelValues' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.kernel_bank_spectrum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.preserved_ranges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.preserved_ranges._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.preserved_ranges._simp_1_3' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.preserved_ranges._simp_1_4' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.program' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.program.eq_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.program_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.rank_call' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.rank_call._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.rank_call._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.rank_call._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.rank_code' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.rank_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.rank_working' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.runtimeBudget' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.segment_code' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.segment_code._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.segment_code._proof_1_2' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.segment_code._proof_1_3' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizingBoot' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizingBoot.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizingBoot_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizingFinish' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizingFinish.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizingFinish_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizingGrow' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizingGrow.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizingGrow_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizingGrow_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizingGrow_spec._proof_1_2' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_blocks_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_blocks_frame._proof_1_10' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_blocks_frame._proof_1_11' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_blocks_frame._proof_1_12' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_blocks_frame._proof_1_4' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_blocks_frame._proof_1_5' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_blocks_frame._proof_1_6' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_blocks_frame._proof_1_7' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_blocks_frame._proof_1_8' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_blocks_frame._proof_1_9' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_branch' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_call' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_call._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_call._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_code' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_execution._proof_1_10' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_execution._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_execution._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_execution._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_execution._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_execution._proof_1_6' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_execution._proof_1_7' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_execution._proof_1_9' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_halt' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_jump' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_length' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_loop' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_loop._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_loop._proof_1_10' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_loop._proof_1_11' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_loop._proof_1_12' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_loop._proof_1_13' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_loop._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_loop._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_loop._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_loop._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_loop._proof_1_6' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_loop._proof_1_7' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_loop._proof_1_9' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.spectrum_call' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.spectrum_call._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.spectrum_call._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.spectrum_call._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.spectrum_code' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.spectrum_execution_root' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.spectrum_execution_root._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.spectrum_execution_root._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.spectrum_execution_root._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.spectrum_execution_root._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.spectrum_execution_root._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.spectrum_execution_root._proof_1_6' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.spectrum_execution_root._proof_1_7' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.spectrum_execution_root._proof_1_8' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.spectrum_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.spectrum_working' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.working_cross_range' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.working_cross_range._proof_1_6' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.working_cross_range._simp_1_4' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.working_cross_range._simp_1_5' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.working_depth_range' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.working_depth_range._proof_1_6' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.working_depth_range._simp_1_4' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.working_depth_range._simp_1_5' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.working_rank_range' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.working_rank_range._proof_1_6' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.working_rank_range._simp_1_4' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.working_rank_range._simp_1_5' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.working_spectrum_range' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.working_spectrum_range._proof_1_6' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.working_spectrum_range._simp_1_4' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossPreparationMachine.working_spectrum_range._simp_1_5' depends on axioms: [propext]

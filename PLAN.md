@@ -180,11 +180,17 @@ An actual contiguous power writer charges every bank store, and the fixed
 topology printer are verified. A 35-instruction physical depth writer now derives every typed label. Their
 24-instruction bucket printer derives the complete stable gate order from those
 labels. The 42-instruction signed coefficient producer computes negative entries
-and reciprocal constants from the original positive bank. The continuous caller,
-physical coloring and dirty replay remain to be completed.
+and reciprocal constants from the original positive bank. The continuous 722-instruction caller derives these intermediate banks, tape
+and depth labels from original H/G/master cells through charged setup instructions.
+A 60-instruction printer derives ordered forward shear triples from the actual
+tape/order bank; a 51-instruction program produces physical greedy colors.
+Degree six is scoped to one depth bucket. A 55-instruction program derives
+matching permutations, width rows and physical axis headers in linear time.
+Port embedding, the complete depth/color caller, inverse row production and
+dirty replay are the next links; global H/G production remains separate.
 The block traversal's reversed cons output is proved equal to the exact ordered
 sector directory. Its physical 92-instruction metadata scan/DFS derives this
 directory and every stack read from original width rows in linear time. The continuous
 137-instruction scalar packing DFS/gather is verified, including inverse-address
-production and exact dependency tags. Original per-axis tables and the full
-recursive caller remain open.
+production and exact dependency tags. Matching table production is now checked from actual matching rows. The
+complete per-axis assembly and full recursive caller remain open.

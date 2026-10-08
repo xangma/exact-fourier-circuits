@@ -90,7 +90,10 @@ constructs all six padded rank kernels from actual prepared H/G cells, including
 zero coefficients, with a proved quadratic preparation bound. The 297-instruction spectrum
 producer charges its six FFT/copy passes and root-power bank. The 271-instruction
 corrected-cross printer derives all six remapped graphs and final additions from
-height and ragged dimensions. Their continuous caller and physical replay remain active obligations. The 35-instruction depth writer
+height and ragged dimensions. A continuous 722-instruction caller now derives kernels, spectra, typed tape and
+depth labels from original H/G/master cells, installing every helper header
+through charged instructions. Global H/G production and physical replay remain
+open. The 35-instruction depth writer
 derives every typed longest-path label from its physical tape in at most
 `5*(N+1)+22*G+10` charged steps. A 24-instruction printer then constructs
 a stable complete gate permutation and bucket directory from those actual labels;
@@ -101,8 +104,13 @@ The mathematical block traversal now has an exact ordered-list identity with the
 sector directory. Its 92-instruction physical metadata producer now derives that
 ordered directory and suffix volumes from the original width rows in at most
 `130*L+16` steps. The 137-instruction packing DFS derives inverse addresses and gathers exact tagged
-values in at most `213*L+20` steps. Per-axis physical table production and the full
-recursive scheduler remain open.
+values in at most `213*L+20` steps. A 60-instruction producer prints ordered forward shear triples from the actual
+typed tape and gate-order bank. A 51-instruction program derives greedy colors
+from actual endpoints; degree six implies eleven colors with disjoint same-color
+rows. A 55-instruction producer converts actual matching rows into ordered
+forward permutations, widths and a physical axis header in exactly
+`17*r+8*M+21` steps. Port embedding, full per-axis assembly and the recursive
+scheduler remain open.
 
 
 ## Run
@@ -146,6 +154,13 @@ The depth writer adds 76 cases (30 pinned typed examples and eight fresh small
 examples, each in two layouts); packing adds 270 cases, including local
 permutations whose inverse differs from the forward permutation. Their receipts
 are `dag-depth/fixtures.json` and `sector-packing/bytecode-results.json`.
+The complete command currently passes **3,165 cases**. New receipts in
+`greedy-color`, `cross-shear`, `matching-axis` and `rank-cross-preparation`
+cover 162, 128, 1,575 and 52 cases respectively. The last suite runs one
+continuous 722-instruction program from original H/G/master cells with exact
+cyclotomic arithmetic and freshly exported formal runtime budgets; 711 of 722
+PCs are exercised. The [diagnostic manifest](verification/uniform-bytecode-components.json)
+records source and receipt hashes; the universal Lean proofs remain the primary evidence.
 
 For a fresh checkout, `./scripts/setup.sh` installs the Python environment,
 the pinned Lean toolchain, and the pinned Mathlib dependencies/cache, then
