@@ -1,0 +1,123 @@
+import UniformBinaryTensorCMachine
+import Lean
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Changed
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Changed.eq_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Frame
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Frame.casesOn
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Frame.mk
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Frame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Frame.natHeap
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Frame.natReg
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Frame.of_stage
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Frame.of_stage._proof_1_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Frame.outputs
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Frame.pc
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Frame.rec
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Frame.recOn
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Frame.refl
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Frame.roots
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Frame.scalarHeap
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Frame.scalarReg
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Frame.trans
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Header
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Header.axis
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Header.base
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Header.bits
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Header.casesOn
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Header.dataBase
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Header.mk
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Header.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Header.one
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Header.pc
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Header.rec
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Header.recOn
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Header.size
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Header.stride
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Header.two
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Header.upper
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Present
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.Present.eq_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.advance
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.advance.eq_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.advance_header
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.advance_runs
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.advance_runs._proof_1_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.advance_runs._proof_1_2
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.advance_runs._proof_1_3
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.advance_runs._proof_1_4
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.advance_runs._proof_1_6
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.advance_runs._proof_1_7
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.advance_runs._proof_1_8
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.binary_upper
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.boot
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.boot.eq_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.bootState
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.bootState.eq_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.boot_code
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.boot_div_at
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.boot_header
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.boot_runs
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.boot_runs._proof_1_2
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.boot_runs._proof_1_3
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.boot_runs._proof_1_4
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.boot_runs._proof_1_5
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.boot_runs._proof_1_6
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.boot_runs._proof_1_7
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.branch_at
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.canonical_execution
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.canonical_execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.divided
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.divided.eq_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.execution
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.frame_advance
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.frame_advance._simp_1_2
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.frame_boot
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.frame_boot._simp_1_2
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.halt_at
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.header_transport
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.header_transport._proof_1_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.header_transport._proof_1_2
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.header_transport._proof_1_3
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.header_transport._proof_1_4
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.header_transport._proof_1_5
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.header_transport._proof_1_6
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.header_transport._proof_1_7
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.header_transport._proof_1_8
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.header_transport._proof_1_9
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.jump_at
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.loop_execution
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.loop_execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.loop_execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.loop_execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.pair_count
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.pair_count._proof_1_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.program
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.program_length
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.round_runs
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.round_runs._proof_1_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.round_runs._proof_1_2
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.round_runs._proof_1_3
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.round_runs._proof_1_4
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.round_runs._proof_1_5
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.round_runs._proof_1_6
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.stage_code
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.suffix_cons
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.update_div_at
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.updates
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.updates.eq_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCMachine.updates_code
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformBinaryTensorCMachine.".isPrefixOf name.toString then
+   let axioms ← collectAxioms name
+   logInfo m!"'{name}' depends on axioms: {axioms.toList}"
+   for ax in axioms do
+    unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
+     throwError m!"Forbidden axiom {ax} in {name}"

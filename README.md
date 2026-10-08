@@ -152,18 +152,19 @@ and inverse scatter in exactly `17*M+9*L+21` steps. Its native-coordinate
 values, tail entries and actual OR flags are proved. Matching count remains
 an ordinary caller input for that earlier C-round wrapper. The new 422-instruction
 six-C matching loop instead reads generated Nat894 and derives its table and
-inverse from actual packing. Continuous producer composition and full local
-workspace restoration remain open.
+inverse from actual packing. A 2669-instruction caller now joins seed/chunk,
+conjugate preparation and matching with charged header setup. It consumes
+ordinary physical input/layout headers. The complete local replay remains open.
 
-Nine new modules pass default normal Lean builds and extend the registry to
-177 modules. The [latest checkpoint](docs/uniform-closeout.md) records full audit
+The registry contains 193 modules. The [latest checkpoint](docs/uniform-closeout.md) records full audit
 results and exact component boundaries. Canonical selected seed/chunk allocation
 fits the unchanged `(n+2)^19` budget; its 1317-instruction caller derives allocation
 headers from the actual saved length and executes SeedChunk continuously.
-Physical conjugate spectra, six-C matching and complete fiber movement are now
-checked in separate programs. Continuous local replay, per-axis assembly and the
-recursive scheduler remain. The stronger uniform theorem is still unproved and
-has no registered proof.
+Physical conjugate spectra, forward/inverse matching, a complete ordinary
+binary C tensor loop, output-broadcast tables and a runtime network-opcode
+decoder are checked in fixed programs. Complete local replay, saving-network
+child dispatch, recursive scheduling and final Fourier routing remain.
+The stronger uniform theorem is still unproved and has no registered proof.
 
 
 ## Run

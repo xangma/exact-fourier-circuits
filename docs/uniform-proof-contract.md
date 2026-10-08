@@ -31,12 +31,13 @@ instruction. Rational literals belong to the fixed program.
 
 ## Dependencies and status
 
-Nine new modules extend the checked physical programs: conjugate spectra,
-charged row-coefficient loading, internally prepared six-C pair and matching
-execution, complete tensor-fiber movement, and a finite fixed-network scalar
-codec. The registry now contains 177 modules and 21,585 public/generated/private
+The checked programs now include charged seed/conjugate/matching composition,
+forward/inverse matching, complete ordinary binary C tensor execution, actual
+output-broadcast tables, and runtime decoding of fixed-network records.
+The registry contains 193 modules and 24,644 public/generated/private
 axiom closures. The [latest checkpoint](uniform-closeout.md) records fresh audit
-results and exact entry boundaries. `uniform_algorithm_verified=false` remains
+results and exact entry boundaries. Scratch follow-on prototypes are retained
+separately from these certified components. `uniform_algorithm_verified=false` remains
 in receipts; no proof of the stronger theorem is registered.
 
 | Obligation | Evidence and remaining link |

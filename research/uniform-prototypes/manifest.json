@@ -1,0 +1,33 @@
+{
+  "scope": "Follow-on prototypes, outside UNIFORM_CHECKS and aggregate certification. Receipts retain original scratch paths; copied Lean sources are byte-identical. No complete uniform algorithm.",
+  "files": {
+    "UniformFixedNetworkShearChildMachine.lean": {
+      "original": "logs/uniform-fixed-network-child-agent/UniformFixedNetworkShearChildMachine.lean",
+      "sha256": "5244a5522edac0126e3592c93e20e25a79b22bb51ac799d4ca633a8ce638f1e5"
+    },
+    "shear-child-receipt.json": {
+      "original": "logs/uniform-fixed-network-child-agent/receipt.json",
+      "sha256": "317b50909c431269c7b8408f5f03288b6a01be3ac119b77a398aa2ec1aad353c"
+    },
+    "shear-child-handoff.md": {
+      "original": "logs/uniform-fixed-network-child-agent/HANDOFF.md",
+      "sha256": "a2caa7dc4b43c57df5e22e5d76bdb512db154288819abaff5f9b3092d3a325ad"
+    },
+    "UniformEmptyStartupMatchingPreparation.lean": {
+      "original": "logs/uniform-empty-startup-matching-agent/UniformEmptyStartupMatchingPreparation.lean",
+      "sha256": "4b03cc7e3e745e6b6f447553cc60d7c71f951996231dbecfe1c0fa7ca6218a6d"
+    },
+    "UniformSixCDepthColorController.lean": {
+      "original": "logs/uniform-six-c-dirty-replay-agent/controller/UniformSixCDepthColorController.lean",
+      "sha256": "6bdf5e32e97764db2984f668424d5ab8b2634ad9687409b83b18741bbf4183af"
+    },
+    "forward-body-receipt.json": {
+      "original": "logs/uniform-six-c-dirty-replay-agent/controller/receipt.json",
+      "sha256": "1eee60111143151494edaa530d2338335fb95e7d11b65d0f3b3bf35229039143"
+    },
+    "forward-body-handoff.md": {
+      "original": "logs/uniform-six-c-dirty-replay-agent/controller/HANDOFF.md",
+      "sha256": "29bd1d52e910538bc23ff0f915398e60a5fe06e7b89c9dae1f68747de764b013"
+    }
+  }
+}

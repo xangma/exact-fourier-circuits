@@ -1,0 +1,129 @@
+{
+  "status": "FROZEN_PROTOTYPE_PASS",
+  "host": "client-3792.default.vpn.port.ac.uk",
+  "cwd": "/Users/xangma/repos/exact-fourier-circuits/lean",
+  "source": "UniformFixedNetworkShearChildMachine.lean",
+  "hashes": {
+    "UniformFixedNetworkShearChildMachine.lean": "5244a5522edac0126e3592c93e20e25a79b22bb51ac799d4ca633a8ce638f1e5",
+    "CheckUniformFixedNetworkShearChildMachineAxioms.lean": "8603c17abd0f88e760b3741f085944728d8d585d918f67f02e26a4496eecba61",
+    "Census.lean": "922f0ecdd0ffcbe218d9074e777249c7e2299ad92afade123bed78dee1799e38",
+    "census.json": "06891aa6380337c780146b33407699d9f9696b89f945c8d9670f9389d6d9a2a7",
+    "Export.lean": "1d227bced73a26e495a40b0f72ea1a1e91df81b1a8fb071952966c4e1b6e9a33",
+    "program.json": "7ef15617151c8d078e6e9b72e0b22f7841ad55bbdc1a0b20110481e79e30f881",
+    "decode-program.json": "e05432a080a6f3deb1b1db1d9e15dc5d71f78c0d6dafb69626fdff5337e00a9b",
+    "fixtures.py": "36d18636aa538d108edb3cf2c4a0f1b85395a23733686de6cdb65c6539b71820",
+    "fixtures.json": "8e37a7a2aadde224b5ca6e7e96444a738aa54116bc7b123dedc15356b8549e7a",
+    "compile-final.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axioms.log": "f8b2d434799363376064ff10499210e1f4e3dda169bab3363c0b82dcc23967be",
+    "export.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "fixtures.log": "eea06fb836e155e21a9e68bdffb701c45b69b5ed9501933a708d0d0dcce4849e"
+  },
+  "defaultCompile": {
+    "log": "compile-final.log",
+    "exitCode": 0,
+    "command": "lake env lean -R ../logs/uniform-fixed-network-child-agent -o ../logs/uniform-fixed-network-child-agent/UniformFixedNetworkShearChildMachine.olean ../logs/uniform-fixed-network-child-agent/UniformFixedNetworkShearChildMachine.lean"
+  },
+  "axiomAudit": {
+    "log": "axioms.log",
+    "publicAndGenerated": 194,
+    "private": 6,
+    "total": 200,
+    "allowed": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ]
+  },
+  "exactFixtures": {
+    "log": "fixtures.log",
+    "cases": 900,
+    "chargedSteps": 43200,
+    "coveredPCs": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "intentionalInvalidCodeGuardPC": 11,
+    "negativeControls": 5,
+    "scope": "standalone original-role-bank child component; no physical dispatcher join"
+  },
+  "program": {
+    "instructions": 40,
+    "runtime": "10*V+k.val+18",
+    "registers": {
+      "readonly": [
+        2900,
+        2901,
+        2854,
+        2855,
+        2858
+      ],
+      "natScratch": "2905..2916",
+      "scalarScratch": [
+        100,
+        101,
+        102,
+        104
+      ]
+    }
+  },
+  "provedAPIs": [
+    "decode_execution",
+    "loop_execution",
+    "execution",
+    "shearValues_pointwise",
+    "macro_execution"
+  ],
+  "entryContract": [
+    "pc=0",
+    "Nat2900=A, Nat2901=V, Nat2854=dest, Nat2855=source, Nat2858=Fin5 code",
+    "dest and source distinct Fin R",
+    "actual entire original role-major scalar bank Present A R V f, arbitrary dependency flags",
+    "WordBound B, 40<=B, A+R*V<=B"
+  ],
+  "remaining": [
+    "continuous physical printed-header reader/opcode dispatcher to child call and return",
+    "charged installation of base and tensor volume from actual printed q,width fields",
+    "opcode5 ordinary tensor child composition",
+    "whole corrected fixed-network interpreter, recursive child calls and global canonical budget",
+    "unconditional UniformDFTStatement"
+  ],
+  "boundary": "Standalone prototype outside certified normal-library inputs; no six-C implementation/call-count, full interpreter or stronger uniform theorem claim.",
+  "noActiveOwnJobs": true
+}

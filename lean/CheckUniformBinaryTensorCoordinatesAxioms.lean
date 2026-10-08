@@ -1,0 +1,56 @@
+import UniformBinaryTensorCoordinates
+import Lean
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.abstract_axis_mulVec
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.abstract_bridge
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.address_parts
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.address_parts._proof_1_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.all_axes
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.all_axes_reverse
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.applyAxes
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.applyAxes.eq_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.applyAxes_tensor
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.applyAxes_values
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.axisAction
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.axisAction._proof_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.axisAction.eq_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.axisCoordinates_update
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.axisMatrix
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.axisMatrix.eq_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.axisMatrix_fiber
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.axisMatrix_mulVec
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.axis_execution
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.axis_execution._simp_1_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.axis_volume
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.axis_volume._proof_1_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.binary_place
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.coordinates
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.coordinates._proof_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.coordinates._proof_2
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.coordinates.eq_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.coordinates_inverse
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.coordinates_value
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.fiber
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.fiber_address
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.fiber_digit
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.fiber_update
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.physicalMatrix
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.physicalMatrix.eq_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.physicalMatrix_apply
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.toAbstract
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.toAbstract.eq_1
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.update_address
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.update_balance
+#print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.update_balance._proof_1_1
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformBinaryTensorCoordinates.".isPrefixOf name.toString then
+   let axioms ← collectAxioms name
+   logInfo m!"'{name}' depends on axioms: {axioms.toList}"
+   for ax in axioms do
+    unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
+     throwError m!"Forbidden axiom {ax} in {name}"

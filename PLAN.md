@@ -268,10 +268,18 @@ computes axis products once, with linear movement cost and the same canonical
 word bound. Fixed network coefficients have a five-value static codec.
 
 The [latest checkpoint](docs/uniform-closeout.md) records exact interfaces,
-entry boundaries, focused diagnostics and the final audit. Next are a continuous
-conjugate-producer-to-matching caller, complete forward/inverse local replay,
-the corrected saving-network RAM implementation, recursive batches and
-all-axis/chirp/output routing. The actual full program must realize the count
-majorant and a common polynomial word bound before `UniformDFTStatement` can
-close. `uniform_algorithm_verified` remains false; there is no registered
-stronger theorem.
+entry boundaries, diagnostics and the aggregate audit. Seed/chunk, conjugate
+preparation and high-data matching now compose in a fixed2669 caller. Actual
+inverse matching and per-layer numeric cancellation are proved, as are a
+complete fixed42 ordinary binary C tensor loop, its explicit coordinate bridge,
+fixed20 output-broadcast tables, and runtime fixed-network record decoding.
+
+Next are the complete six-phase local schedule, saving-network child dispatch,
+recursive batches and all-axis/chirp/output routing. The registered instruction
+decoder does not execute its children. Per-layer cancellation does not perform
+the cross update. Ordinary header/layout entry conditions still need a complete
+charged startup. The final cost proof must bound the instructions actually
+executed; the older ordinary-base charge is smaller than the new measured
+addressing cost and needs a constant-factor allowance. All phases must retain
+one common polynomial word bound and root request before an unconditional
+`UniformDFTStatement` can close. `uniform_algorithm_verified` remains false.

@@ -50,13 +50,37 @@ while IFS= read -r module; do mapfile_modules+=("$module"); done < <(
 )
 lake build "${mapfile_modules[@]}"
 : > "$log_dir/lean-uniform-axioms.log"
-for module in "${mapfile_modules[@]}"; do
-  lake env lean "Check${module}Axioms.lean" | tee -a "$log_dir/lean-uniform-axioms.log"
-done
+python3 - "$log_dir" <<'PY_CHECKERS'
+from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
+import json, os, subprocess, sys
+log_dir = Path(sys.argv[1])
+jobs = int(os.environ.get('UNIFORM_AXIOM_JOBS', '1'))
+if not 1 <= jobs <= 8:
+    raise SystemExit('UNIFORM_AXIOM_JOBS must be between 1 and 8')
+modules = list(json.loads(Path('UNIFORM_CHECKS.json').read_text())['modules'])
+individual = log_dir / 'lean-uniform-checkers'
+individual.mkdir(exist_ok=True)
+print(f'Auditing {len(modules)} checkers with {jobs} workers.', flush=True)
+def check(module):
+    result = subprocess.run(['lake', 'env', 'lean', f'Check{module}Axioms.lean'],
+                            stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+    path = individual / f'{module}.log'
+    path.write_text(result.stdout)
+    if result.returncode:
+        raise RuntimeError(f'{module} failed; see {path}')
+    return result.stdout
+with ThreadPoolExecutor(max_workers=jobs) as pool, (log_dir / 'lean-uniform-axioms.log').open('w') as log:
+    # Keep registry order; the same exact declaration/axiom validation follows.
+    for output in pool.map(check, modules):
+        log.write(output)
+        log.flush()
+        print(output, end='', flush=True)
+PY_CHECKERS
 python3 - "$log_dir" <<'PY_AXIOMS'
 from pathlib import Path
 from datetime import datetime, timezone
-import hashlib, json, re, subprocess, sys
+import hashlib, json, os, re, subprocess, sys
 log_dir = Path(sys.argv[1])
 text = (log_dir / 'lean-uniform-axioms.log').read_text()
 allowed = {'propext', 'Quot.sound', 'Classical.choice'}
@@ -113,6 +137,7 @@ receipt = {
     'verification_script_sha256': hashlib.sha256(Path('../scripts/verify-uniform.sh').read_bytes()).hexdigest(),
     'axioms': {name: sorted(axioms) for name, axioms in results.items()},
     'components_verified': True,
+    'axiom_check_jobs': int(os.environ.get('UNIFORM_AXIOM_JOBS', '1')),
     'uniform_algorithm_verified': False,
     'scope': registry['scope'],
 }
