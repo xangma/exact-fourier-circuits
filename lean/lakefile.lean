@@ -271,3 +271,15 @@ lean_lib UniformRadixInstructionMachine
 lean_lib UniformTensorAddressMachine
 
 lean_lib UniformPermutationInversePreparation
+
+lean_lib UniformRadixRowTableMachine
+
+lean_lib UniformRadixPowerBankMachine
+
+lean_lib UniformRootExtractionMachine
+
+lean_lib UniformGlobalLocalPreparation
+
+lean_lib UniformLocalPreparationReferences
+
+lean_lib UniformScalarCopyMachine

@@ -33,9 +33,10 @@ index metadata out of local workspace, gathers the input through alpha,
 and constructs the inverse beta output table while preserving the prepared banks.
 All startup work is charged and bounded by `O(n)`, with polynomial integer
 words. Concrete local Fourier layers and the pointwise multiplication loop
-are also checked. A literal FFT instruction decoder, a shared recursive
-coefficient DAG and tensor-fiber addressing are verified components; their
-remaining producers and the global fast transform scheduler remain open.
+are also checked. A literal FFT row printer, sparse prepared-power loop, local Newton/reciprocal
+producer and one shared coefficient bank are verified components. Canonical
+root extraction preserves the sole master-root request. Whole local compiler
+execution and the global fast transform scheduler remain open.
 
 ## Run
 

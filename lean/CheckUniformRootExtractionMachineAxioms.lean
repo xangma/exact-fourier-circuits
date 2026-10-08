@@ -1,0 +1,21 @@
+import UniformRootExtractionMachine
+
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.head
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.program
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.program_length
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.prefix_code
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.power_code
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.store_at
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.halt_at
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.zero
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.ratio
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.loaded
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.store
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.Frame
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.loaded_frame
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.startup
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.execution
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.runtime_log_bound
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.Frame.saved
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.Frame.metadata
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.selected_execution
