@@ -25712,3 +25712,1199 @@ Note: This linter can be disabled with `set_option linter.auxLemma false`
  Quot.sound]
 'ExactFourierCircuits.UniformRankCrossPreparationMachine.working_spectrum_range._simp_1_4' depends on axioms: [propext]
 'ExactFourierCircuits.UniformRankCrossPreparationMachine.working_spectrum_range._simp_1_5' depends on axioms: [propext]
+'ExactFourierCircuits.UniformColorLayerTableMachine.boot' does not depend on any axioms
+'ExactFourierCircuits.UniformColorLayerTableMachine.read' does not depend on any axioms
+'ExactFourierCircuits.UniformColorLayerTableMachine.copy' does not depend on any axioms
+'ExactFourierCircuits.UniformColorLayerTableMachine.tick' does not depend on any axioms
+'ExactFourierCircuits.UniformColorLayerTableMachine.program' does not depend on any axioms
+'ExactFourierCircuits.UniformColorLayerTableMachine.program_length' does not depend on any axioms
+'ExactFourierCircuits.UniformColorLayerTableMachine.boot_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformColorLayerTableMachine.read_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformColorLayerTableMachine.copy_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformColorLayerTableMachine.tick_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformColorLayerTableMachine.outer_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformColorLayerTableMachine.less_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformColorLayerTableMachine.greater_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformColorLayerTableMachine.tick_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformColorLayerTableMachine.halt_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformColorLayerTableMachine.selected' does not depend on any axioms
+'ExactFourierCircuits.UniformColorLayerTableMachine.selected_mem' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.selected_length' depends on axioms: [propext]
+'ExactFourierCircuits.UniformColorLayerTableMachine.selected_nodup' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.selected_succ' depends on axioms: [propext]
+'ExactFourierCircuits.UniformColorLayerTableMachine.rowCost' does not depend on any axioms
+'ExactFourierCircuits.UniformColorLayerTableMachine.rowCost_bound' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.runtimeBudget' does not depend on any axioms
+'ExactFourierCircuits.UniformColorLayerTableMachine.Header' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.Fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.Cursor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.Colors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.Rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.Frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.Outside' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.readState' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.copyState' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.tickState' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.iteration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.frame_refl' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.frame_trans' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.Frame.saved' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.branch_runs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.jump_runs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.Fixed.withPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.boot_cursor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.boot_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.read_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.read_heap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.read_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.read_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.copy_cursor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.copy_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.tick_cursor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.tick_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.tick_heap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.OutputRows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.Ordinals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.outside_trans' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.rows_transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.colors_transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.copy_heap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.copy_outside' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.copy_banks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.copy_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.tick_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.readState_setPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.copyState_setPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.tickState_setPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.setPC_heap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.setPC_self' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.iteration_cursor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.iteration_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.iteration_banks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.iteration_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.scanCost' does not depend on any axioms
+'ExactFourierCircuits.UniformColorLayerTableMachine.scanCost_bound' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.loop' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.selectedRow' does not depend on any axioms
+'ExactFourierCircuits.UniformColorLayerTableMachine.selected_rows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.selectionIndex' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.selectionIndex_color' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.selectionIndex_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.selectedEdges' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.selected_matching' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.selected_inRange' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.selected_physical_edges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformColorLayerTableMachine.execution_matching' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Frame.trans' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.casesOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.coefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.colors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.constants' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.dataBase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.depth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.destination' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.directory' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.enabled' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.gates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.inputs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.mk' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.mk._flat_ctor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.order' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.palette' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.rec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.recOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.tape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.width' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.OutsideNat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Protected' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.Protected.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeBuckets' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeBuckets.eq_1' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeBuckets_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeBuckets_length' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeDepths' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeDepths.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeDepths_length' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeLayers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeLayers.eq_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeLayers_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeLayers_action._proof_1_2' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeLayers_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeLayers_length._proof_1_2' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeLayers_matching' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeLayers_matching._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeReplay' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeReplay.eq_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeReplay_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeReplay_action._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeReplay_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeReplay_length._proof_1_2' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeReplay_matching' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeReplay_matching._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeReplay_matching._simp_1_3' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.active_bucket_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.active_bucket_degree._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_14' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_15' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_16' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_17' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_18' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_19' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_20' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_21' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_22' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_23' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_24' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_26' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_28' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_29' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_30' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_31' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_32' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_33' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_34' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_35' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_36' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_37' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_38' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_39' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_40' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_41' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_42' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_43' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_44' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_45' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_46' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_47' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_6' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_8' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_9' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_onLevel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_rows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucketsFrom_ofFn' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucketsFrom_ofFn._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucketsFrom_ofFn._proof_1_2' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.colorOps' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.colorOps.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.color_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.color_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.color_frame._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.color_header_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.color_header_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.color_header_heap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.cross_activeReplay_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.cross_activeReplay_bound._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.cross_activeReplay_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.cross_bucket_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.cross_bucket_degree._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.cross_bucket_execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.cross_height_le_size' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.depthBuckets_ofFn' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.directoryOps' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.directoryOps.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.directory_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.directory_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.directory_heap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.directory_runs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.directory_runs._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.directory_runs._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.directory_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.filter_later' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.halt_at' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.master_retained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.natBlock_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.natBlock_heap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.natDest' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.natDest.eq_1' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.natDest.eq_2' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.natDest.eq_3' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.natDest.eq_4' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.natDest.eq_5' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly._sparseCasesOn_1' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly._sparseCasesOn_1.else_eq' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly.eq_1' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly.eq_2' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly.eq_3' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly.eq_4' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly.eq_5' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly.match_1' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOp_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.ofFn_action_congr' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.ofFn_nat' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.offset_span' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.offset_span._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.order_decomposition' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.order_decomposition._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.order_decomposition._proof_1_2' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.order_slice' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.order_slice_bank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.order_slice_bank._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.orderedSweep_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.orderedSweep_action._proof_1_2' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.orderedSweep_action._proof_1_3' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.power_ge_successor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.power_ge_successor._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.program' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.program.eq_1' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.program_length' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.reset_placed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.saved_headers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.saved_headers._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.selected_expansion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.shearOps' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.shearOps.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.shear_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.shear_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.shear_frame._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.shear_header_changePC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.shear_header_code' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.shear_header_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.shear_header_heap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.shear_header_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.shiftedEdges' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.shiftedEdges._proof_1' depends on axioms: [propext]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.shiftedEdges_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.shiftedEdges_degree._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.shiftedEdges_degree._proof_1_6' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.shiftedEdges_degree._proof_1_7' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.shiftedEdges_degree._simp_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.shiftedEdges_degree._simp_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.shiftedEdges_degree._simp_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.table_edges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformCrossDepthReplayPreparation.wordBudget' does not depend on any axioms
+'_private.UniformCrossDepthReplayPreparation.0.ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly.match_1.eq_1' depends on axioms: [propext]
+'_private.UniformCrossDepthReplayPreparation.0.ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly.match_1.splitter' depends on axioms: [propext]
+'_private.UniformCrossDepthReplayPreparation.0.ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly.match_1.eq_2' depends on axioms: [propext]
+'_private.UniformCrossDepthReplayPreparation.0.ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly.match_1.eq_4' depends on axioms: [propext]
+'_private.UniformCrossDepthReplayPreparation.0.ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly.match_1.eq_3' depends on axioms: [propext]
+'_private.UniformCrossDepthReplayPreparation.0.ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly.match_1.eq_5' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.casesOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.congr_simp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.depths' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.extra' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.height' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.master' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.mk' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.mk._flat_ctor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.ready' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.rec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.recOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.root' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.shape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.sourceG' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.sourceH' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.tape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.withPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost.bank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost.casesOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost.directory' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost.heap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost.length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost.mk' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost.mk._flat_ctor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost.permutation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost.rec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost.recOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost.stable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost.withPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExternalFrame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExternalFrame.headers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExternalFrame.nat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExternalFrame.outputs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExternalFrame.roots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExternalFrame.saved' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExternalFrame.saved._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExternalFrame.scalar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExtraHeader' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExtraHeader.casesOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExtraHeader.constants' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExtraHeader.directory' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExtraHeader.mk' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExtraHeader.mk._flat_ctor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExtraHeader.negative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExtraHeader.order' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExtraHeader.rec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExtraHeader.recOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExtraHeader.withPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.PreparedReplay' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.PreparedReplay.buckets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.PreparedReplay.casesOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.PreparedReplay.constants' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.PreparedReplay.mk' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.PreparedReplay.mk._flat_ctor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.PreparedReplay.negative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.PreparedReplay.rec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.PreparedReplay.recOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.PreparedReplay.signed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.PreparedReplay.toBasePost' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.casesOn' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.codeBound' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.constantsBound' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.constantsFresh' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.depthFresh' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.directoryBound' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.directoryFresh' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.fftFresh' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.mk' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.mk._flat_ctor' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.negativeFresh' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.original' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.rec' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.recOn' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters._sizeOf_1' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters._sizeOf_inst' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.base' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.casesOn' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.constants' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.ctorIdx' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.directory' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.mk' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.mk._flat_ctor' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.mk.inj' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.mk.injEq' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.mk.noConfusion' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.mk.sizeOf_spec' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.negative' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.noConfusion' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.noConfusionType' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.order' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.rec' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.recOn' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.extra' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.nat_before' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.nat_before._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.nat_before._proof_1_2' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.post' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.post._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.post._proof_1_11' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.post._proof_1_12' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.post._proof_1_13' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.post._proof_1_2' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.post._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.post._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.post._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.post._proof_1_6' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.post._proof_1_7' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.post._proof_1_9' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.ready' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.refl' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.scalar_before' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.scalar_before._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.scalar_before._proof_1_2' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.trans' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.withPC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailPreserved' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bankValues' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bankValues.eq_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bank_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bank_source._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.beforeBucket' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.beforeBucket.eq_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.beforeBucket_length' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.beforeCoefficient' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.beforeCoefficient.eq_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.beforeCoefficient_length' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucketSetup' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucketSetup.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucketSetup_at' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucketSetup_at._proof_1_4' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucketSetup_at._proof_1_5' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucketSetup_length' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucketSetup_safe' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucketSetup_safe._proof_1_22' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucketSetup_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucket_call' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucket_call._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucket_call._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucket_call._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucket_call._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucket_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucket_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucket_frame._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_10' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_11' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_12' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_13' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_14' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_15' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_16' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_17' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_18' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_19' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_20' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_21' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_22' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_23' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_24' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_25' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_26' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_27' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_28' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_29' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_3' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_30' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_31' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_32' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_33' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_34' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_4' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_5' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_6' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_7' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_8' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_9' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficientSetup' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficientSetup.eq_1' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficientSetup_at' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficientSetup_at._proof_1_3' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficientSetup_at._proof_1_4' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficientSetup_at._proof_1_5' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficientSetup_length' does not depend on any axioms
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficientSetup_safe' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficientSetup_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficient_call' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficient_call._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficient_call._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficient_call._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficient_call._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficient_call._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficient_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficient_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficient_frame._proof_1_1' depends on axioms: [propext,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.cross' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.cross._proof_1' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.cross._proof_2' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.cross.congr_simp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.cross_shape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.depth_call_enriched' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.depth_call_enriched._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.depth_call_enriched._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.depth_call_enriched._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.depth_call_enriched._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.execution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.execution._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.execution._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.execution._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.execution._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.final_halt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.gateDepth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.header_range' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.header_range._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.header_range._simp_1_1' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.header_range._simp_1_2' depends on axioms: [propext]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.program' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.program.eq_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.program_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.runtimeBudget' depends on axioms: [propext, Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_call' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_call._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_call._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_call._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_call._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_call._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_call._proof_1_6' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_execution_enriched' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_execution_enriched._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_execution_enriched._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_execution_enriched._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_execution_enriched._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -186,8 +186,12 @@ A 60-instruction printer derives ordered forward shear triples from the actual
 tape/order bank; a 51-instruction program produces physical greedy colors.
 Degree six is scoped to one depth bucket. A 55-instruction program derives
 matching permutations, width rows and physical axis headers in linear time.
-Port embedding, the complete depth/color caller, inverse row production and
-dirty replay are the next links; global H/G production remains separate.
+The 799-instruction caller now also derives stable ordering and signed banks.
+A 132-instruction caller derives and colors one actual depth bucket, and a
+30-instruction filter prints selected matching rows without a supplied selected
+table. Whole-height calling, physical port embedding and dirty replay are the
+next links. The inverse-table generator has passed its focused audit; integrated
+registration is next. Retained seed-to-H/G linkage remains under investigation.
 The block traversal's reversed cons output is proved equal to the exact ordered
 sector directory. Its physical 92-instruction metadata scan/DFS derives this
 directory and every stack read from original width rows in linear time. The continuous

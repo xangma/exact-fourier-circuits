@@ -413,3 +413,15 @@ lean_lib CheckUniformMatchingAxisTableMachineAxioms
 
 lean_lib UniformRankCrossPreparationMachine
 lean_lib CheckUniformRankCrossPreparationMachineAxioms
+
+lean_lib UniformColorLayerTableMachine
+
+lean_lib CheckUniformColorLayerTableMachineAxioms
+
+lean_lib UniformCrossDepthReplayPreparation
+
+lean_lib CheckUniformCrossDepthReplayPreparationAxioms
+
+lean_lib UniformRankCrossReplayPreparationMachine
+
+lean_lib CheckUniformRankCrossReplayPreparationMachineAxioms

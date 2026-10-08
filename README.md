@@ -92,8 +92,11 @@ producer charges its six FFT/copy passes and root-power bank. The 271-instructio
 corrected-cross printer derives all six remapped graphs and final additions from
 height and ragged dimensions. A continuous 722-instruction caller now derives kernels, spectra, typed tape and
 depth labels from original H/G/master cells, installing every helper header
-through charged instructions. Global H/G production and physical replay remain
-open. The 35-instruction depth writer
+through charged instructions. Its 799-instruction extension also derives the stable
+order/directory and signed coefficient banks continuously. A 132-instruction
+caller prepares and colors one actual depth bucket; a 30-instruction filter
+prints each selected matching layer. The whole height loop, port embedding and
+physical replay remain open; the retained seed-to-H/G connection is under investigation. The 35-instruction depth writer
 derives every typed longest-path label from its physical tape in at most
 `5*(N+1)+22*G+10` charged steps. A 24-instruction printer then constructs
 a stable complete gate permutation and bucket directory from those actual labels;
@@ -154,12 +157,12 @@ The depth writer adds 76 cases (30 pinned typed examples and eight fresh small
 examples, each in two layouts); packing adds 270 cases, including local
 permutations whose inverse differs from the forward permutation. Their receipts
 are `dag-depth/fixtures.json` and `sector-packing/bytecode-results.json`.
-The complete command currently passes **3,165 cases**. New receipts in
-`greedy-color`, `cross-shear`, `matching-axis` and `rank-cross-preparation`
-cover 162, 128, 1,575 and 52 cases respectively. The last suite runs one
-continuous 722-instruction program from original H/G/master cells with exact
-cyclotomic arithmetic and freshly exported formal runtime budgets; 711 of 722
-PCs are exercised. The [diagnostic manifest](verification/uniform-bytecode-components.json)
+The complete command currently passes **5,346 cases**. Receipts in
+`color-layer`, `cross-depth` and `rank-cross-replay` add 1,665, 484 and 32 cases.
+The last suite runs the continuous 799-instruction program from original
+H/G/master cells with exact cyclotomic arithmetic and freshly exported formal
+runtime budgets. It exercises 788 of 799 PCs, including every new caller
+instruction; the 132-instruction bucket caller exercises 131 of 132 PCs. The [diagnostic manifest](verification/uniform-bytecode-components.json)
 records source and receipt hashes; the universal Lean proofs remain the primary evidence.
 
 For a fresh checkout, `./scripts/setup.sh` installs the Python environment,

@@ -1,7 +1,7 @@
 {
   "schema": "lean-uniform-components/v1",
   "passed": true,
-  "finished_utc": "2026-10-08T07:17:40.058460+00:00",
+  "finished_utc": "2026-10-08T07:40:23.394202+00:00",
   "lean_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
   "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
   "upstream_files_verified": 51,
@@ -39,12 +39,14 @@
     "CheckUniformChirpPointwiseMachineAxioms.lean": "857a64c37738fe965dd9c6be69b925321a425bcbb42c1935ee91e6f9d86bf249",
     "CheckUniformChirpPreparationAxioms.lean": "47225d9a4500072ad85456217c6be5b550c1aa84de3d819c174de966f5f5aa8e",
     "CheckUniformChirpTableMachineAxioms.lean": "adb28cfb19964bf3a109fcb89f68cd08f5ff69be518f66b51d0a7e319f20a3b1",
+    "CheckUniformColorLayerTableMachineAxioms.lean": "950a41e97c71f4cf5f5c2368dfd1acaafb1cb23a8bcee02cd23f2593e7cbc689",
     "CheckUniformColoringAxioms.lean": "191fe50ea25ffe7bf245a90c78ca282931a7799a7bfbd716aaebbd3a1000427c",
     "CheckUniformCommonSlotsAxioms.lean": "834c6a470fb10cd3bf347bdf7ae6c77ec21ed4a487ffe68e06093d46e4dae920",
     "CheckUniformContextAxioms.lean": "a1e85795d323da9750b45eff2841718b03244300f01f5f119b83bad96e24f608",
     "CheckUniformContiguousPowerBankMachineAxioms.lean": "f00f12fd78d84831bb5476e4cd7953bebdbf78898c9b78b04de2cf1b5f9b5692",
     "CheckUniformConvolutionDAGAxioms.lean": "b1bbc31fe5fa5d11c725fe6e4fce33ea71edf495d7ff2d616371271d17dae3cd",
     "CheckUniformConvolutionTopologyMachineAxioms.lean": "77dbc0070e0cb8678bd756016fc674d6c8cccfc7db3a5b3bfb959f284ffe349a",
+    "CheckUniformCrossDepthReplayPreparationAxioms.lean": "94144257fb1c53a74e807c65dc564bdee78cff6cab7c7235019edf6a0f579dde",
     "CheckUniformCrossShearTableMachineAxioms.lean": "d5dcd68643a0c2875a7c41645d404dc7196e4c00d138bd7b3cb54b7164089b90",
     "CheckUniformCyclicAxioms.lean": "12b3bbc65dc977ae5d35edad21634053523ad95a26c9b84c2683f502614c8f28",
     "CheckUniformDAGBucketMachineAxioms.lean": "e4ea35048bfe1ba2343a2102b4efa7875a5e1335dceaa381992c046e280a7d4c",
@@ -119,6 +121,7 @@
     "CheckUniformRadixTwoDAGAxioms.lean": "76c201de16bcfa4b0e2c8cfee27870a8200191563099b3d40877354500f7661b",
     "CheckUniformRadixTwoMachineAxioms.lean": "57397fa98130768c251f0df1e74d350cc9fad1b59666832963623781b0ec482d",
     "CheckUniformRankCrossPreparationMachineAxioms.lean": "9d832e4ab3a68f331637982089f9a9204ca6e7eb9be026331b0c5e69a9a00d43",
+    "CheckUniformRankCrossReplayPreparationMachineAxioms.lean": "146ed9de61d5c008c17f85ab89f504db58a2bb92fe0784033cefc24541715eec",
     "CheckUniformRankKernelMachineAxioms.lean": "d06017e4e0030e817118d861522884a578f8a25a2902d5bacca4dbd56e6680c4",
     "CheckUniformRankKernelPreparationAxioms.lean": "6e1a686cb005c8f3a1210eed476af08780e6bd076e9d0a1ba6da04087b858d77",
     "CheckUniformReciprocalMachineAxioms.lean": "795bca43d68594a65259f8456493c63f3009fca6a60a46b04eb1d75d766d97af",
@@ -242,7 +245,7 @@
     "TripleSchedule.lean": "4a971ec67830b3802a15edb8deae8b90c3173333beb0a0ee6420ef3bb1edbd9c",
     "TripleStageAction.lean": "a889724eb6c4261e6215b28ddeb430b67e7b9a3c2341cb395d910661bfcff09d",
     "TypedKernelWords.lean": "71338589b396abdfdf98a318d7b8dff9b00a6f83739346f681564daaa7269fca",
-    "UNIFORM_CHECKS.json": "2835912e656020d7d48e9a9d27ee105bea1c0455d824aa418844a19d5d391a7d",
+    "UNIFORM_CHECKS.json": "e354a825e40b63cc99b9bc21fcddde5f4e31fb1f61d340ddbe2480504d76527a",
     "UPSTREAM_MANIFEST.json": "164f39279317c670920956d5260da95c02dad03acd140329fc503dc263cd2251",
     "UniformAllAxisDiagonalPreparation.lean": "247cff2c9d23f44d0852bb5f0e2941fb6a5deacfacc64a9fa9dd9e7299691d45",
     "UniformAllAxisSeedCost.lean": "8a100c2795665c66444599d651f1b6582613029452830970321d96f05d528cb2",
@@ -269,12 +272,14 @@
     "UniformChirpPointwiseMachine.lean": "19c33066e983794353986687a8a6eb37e65f9f2c5aed2f56f33e2d3aedcc8619",
     "UniformChirpPreparation.lean": "849686caff9c6133b5f278411c92b2bcbc41b1ebc8149a6c5f61a02a81da7e17",
     "UniformChirpTableMachine.lean": "51dd2d08924463a112e20cdbea0996805419b322059d49e99147d2dab7a34c2d",
+    "UniformColorLayerTableMachine.lean": "985f742b8dd964c2bde6e81e5240129d18f00e3483c1dc307aa66abebce71fa0",
     "UniformColoring.lean": "786fd824fc300e2e9993d057292092972d00defb5cd75ae0e487dd2b9deb693f",
     "UniformCommonSlots.lean": "9f4204175fd26ef550bce34f12f8500e1db8a1dce237bbbc4b633b590814fa43",
     "UniformContext.lean": "fb0677a27c45c576550b520bc73e64c5844b6d230aa9a3e942a9b368aa34e3f2",
     "UniformContiguousPowerBankMachine.lean": "7d6cc5fee1dde3bce88823c421c18f2572e3a361cfadb6eeb89091bd858af301",
     "UniformConvolutionDAG.lean": "e9c0309a651a1371f2d6e037c84f9ba0738d3b5f15e01b7a8d0c24e48bd149bd",
     "UniformConvolutionTopologyMachine.lean": "a72d583d131edab9342a3fd83b12f1bf401ef6996e8ee97db8c58fad107a1a6a",
+    "UniformCrossDepthReplayPreparation.lean": "5630326f62b0949301490cf4810e7b81fb7b4ec59e25be20aec21b60e6edeb0e",
     "UniformCrossShearTableMachine.lean": "8348c03262758294bad9293d9ea81c11bf9ccb43dd9012afaf08b8cf14625878",
     "UniformCyclic.lean": "409a8c4a4d3571d926f45623c89d10b057184820c7f2e04a71aed39b8c016f48",
     "UniformDAGBucketMachine.lean": "21a10f08274c2a57df3bf1f404c00478323949db13e904dc8f297c933c662d80",
@@ -349,6 +354,7 @@
     "UniformRadixTwoDAG.lean": "9a225d57d884b8388c6f7e80e1548508268c2c11f5563b08780af889a82a0062",
     "UniformRadixTwoMachine.lean": "c0e21a56d30f3bf40447aea7e312ea921e63dd343231e0526e39761ba3b6f27c",
     "UniformRankCrossPreparationMachine.lean": "430fe556b8f5d5e600dad6ad82e956861bbc939ce759a4ab7dfb882939dd408b",
+    "UniformRankCrossReplayPreparationMachine.lean": "0a8441ade45cfc9767e15b629dfb1ac9032d253a34eb39d45263d6072b0b612c",
     "UniformRankKernelMachine.lean": "76a5c4ca49b4f17468962b402e9246e3e7c3e34da675a6981406ed193e008910",
     "UniformRankKernelPreparation.lean": "3eb5e228e02a65412ca1c622675d12d29b81b068b998312a78da9e76d0de33db",
     "UniformReciprocalMachine.lean": "9253768442da6f6b2091d40c9abb1ebe300a7566cf90d84e08b4a3c417ed5e4f",
@@ -387,7 +393,7 @@
     "UniformWorkspaceSearchMachine.lean": "25e5da89ba3201d64615441f01ae021d44e13f5109e7e8759757bc495fe44af7",
     "UniformZeroFreeDiagonalMachine.lean": "a26e26fdbac93c15235dd87aac68184d71bf1136540d974d9a72da6273731fb3",
     "lake-manifest.json": "7b626f9e30d660141cb94e48851728dd8a1bd2b65028ba765bae7de0e2582639",
-    "lakefile.lean": "4dbb0bf68f20f40bf93b637fa0829f3988882c4effa128a0f830fa00f7b1fc4f",
+    "lakefile.lean": "e8d9ad31f62a615444f2cd4e5627969570734daf56376b74424ec5771315cc68",
     "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
   },
   "verification_script_sha256": "b02436f218755e8246ea970546d49a664542ff2c142307e0cc3fa91f49913497",
@@ -53851,6 +53857,2128 @@
     "ExactFourierCircuits.UniformRankCrossPreparationMachine.working_spectrum_range._simp_1_5": [
       "propext"
     ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.boot_code": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.read_code": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.copy_code": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.tick_code": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.outer_at": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.less_at": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.greater_at": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.tick_at": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.halt_at": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.selected_mem": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.selected_length": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.selected_nodup": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.selected_succ": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.rowCost_bound": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.Header": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.Fixed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.Cursor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.Colors": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.Rows": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.Frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.Outside": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.readState": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.copyState": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.tickState": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.iteration": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.frame_refl": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.frame_trans": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.Frame.saved": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.branch_runs": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.jump_runs": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.Fixed.withPC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.boot_cursor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.boot_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.read_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.read_heap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.read_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.read_bounded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.copy_cursor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.copy_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.tick_cursor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.tick_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.tick_heap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.OutputRows": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.Ordinals": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.outside_trans": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.rows_transport": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.colors_transport": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.copy_heap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.copy_outside": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.copy_banks": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.copy_bounded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.tick_bounded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.readState_setPC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.copyState_setPC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.tickState_setPC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.setPC_heap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.setPC_self": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.iteration_cursor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.iteration_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.iteration_banks": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.iteration_bounded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.scanCost_bound": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.loop": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.execution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.selected_rows": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.selectionIndex": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.selectionIndex_color": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.selectionIndex_injective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.selectedEdges": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.selected_matching": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.selected_inRange": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.selected_physical_edges": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.execution_matching": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Frame.trans": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.coefficients": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.colors": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.constants": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.dataBase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.depth": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.destination": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.directory": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.enabled": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.gates": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.inputs": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.order": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.palette": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.tape": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.transport": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header.width": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.OutsideNat": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeBuckets": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeBuckets.eq_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeBuckets_action": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeBuckets_length": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeDepths_length": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeLayers": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeLayers.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeLayers_action": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeLayers_action._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeLayers_length": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeLayers_length._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeLayers_matching": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeLayers_matching._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeReplay": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeReplay.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeReplay_action": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeReplay_action._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeReplay_length": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeReplay_length._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeReplay_matching": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeReplay_matching._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeReplay_matching._simp_1_3": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.active_bucket_degree": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.active_bucket_degree._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_degree": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_14": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_15": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_16": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_17": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_18": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_19": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_20": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_21": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_22": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_23": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_24": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_26": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_28": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_29": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_30": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_31": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_32": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_33": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_34": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_35": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_36": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_37": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_38": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_39": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_40": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_41": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_42": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_43": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_44": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_45": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_46": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_47": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_execution._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_onLevel": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucket_rows": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucketsFrom_ofFn": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucketsFrom_ofFn._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.bucketsFrom_ofFn._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.color_code": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.color_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.color_frame._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.color_header_code": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.color_header_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.color_header_heap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.cross_activeReplay_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.cross_activeReplay_bound._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.cross_activeReplay_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.cross_bucket_degree": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.cross_bucket_degree._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.cross_bucket_execution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.cross_height_le_size": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.depthBuckets_ofFn": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.directory_code": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.directory_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.directory_heap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.directory_runs": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.directory_runs._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.directory_runs._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.directory_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.filter_later": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.halt_at": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.master_retained": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.natBlock_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.natBlock_heap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.natDest": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.natDest.eq_1": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.natDest.eq_2": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.natDest.eq_3": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.natDest.eq_4": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.natDest.eq_5": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly._sparseCasesOn_1": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly._sparseCasesOn_1.else_eq": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly.eq_1": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly.eq_2": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly.eq_3": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly.eq_4": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly.eq_5": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly.match_1": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOp_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.ofFn_action_congr": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.ofFn_nat": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.offset_span": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.offset_span._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.order_decomposition": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.order_decomposition._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.order_decomposition._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.order_slice": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.order_slice_bank": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.order_slice_bank._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.orderedSweep_action": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.orderedSweep_action._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.orderedSweep_action._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.power_ge_successor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.power_ge_successor._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.program": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.program.eq_1": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.program_length": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.reset_placed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.saved_headers": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.saved_headers._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.selected_expansion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.shear_code": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.shear_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.shear_frame._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.shear_header_changePC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.shear_header_code": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.shear_header_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.shear_header_heap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.shear_header_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.shiftedEdges": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.shiftedEdges._proof_1": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.shiftedEdges_degree": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.shiftedEdges_degree._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.shiftedEdges_degree._proof_1_6": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.shiftedEdges_degree._proof_1_7": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.shiftedEdges_degree._simp_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.shiftedEdges_degree._simp_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.shiftedEdges_degree._simp_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.table_edges": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.UniformCrossDepthReplayPreparation.0.ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly.match_1.eq_1": [
+      "propext"
+    ],
+    "_private.UniformCrossDepthReplayPreparation.0.ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly.match_1.splitter": [
+      "propext"
+    ],
+    "_private.UniformCrossDepthReplayPreparation.0.ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly.match_1.eq_2": [
+      "propext"
+    ],
+    "_private.UniformCrossDepthReplayPreparation.0.ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly.match_1.eq_4": [
+      "propext"
+    ],
+    "_private.UniformCrossDepthReplayPreparation.0.ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly.match_1.eq_3": [
+      "propext"
+    ],
+    "_private.UniformCrossDepthReplayPreparation.0.ExactFourierCircuits.UniformCrossDepthReplayPreparation.natOnly.match_1.eq_5": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.congr_simp": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.depths": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.extra": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.height": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.master": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.ready": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.root": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.shape": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.sourceG": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.sourceH": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.tape": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.withPC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost.bank": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost.directory": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost.heap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost.length": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost.permutation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost.stable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BucketPost.withPC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExternalFrame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExternalFrame.headers": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExternalFrame.nat": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExternalFrame.outputs": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExternalFrame.roots": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExternalFrame.saved": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExternalFrame.saved._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExternalFrame.scalar": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExtraHeader": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExtraHeader.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExtraHeader.constants": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExtraHeader.directory": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExtraHeader.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExtraHeader.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExtraHeader.negative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExtraHeader.order": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExtraHeader.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExtraHeader.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ExtraHeader.withPC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.PreparedReplay": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.PreparedReplay.buckets": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.PreparedReplay.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.PreparedReplay.constants": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.PreparedReplay.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.PreparedReplay.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.PreparedReplay.negative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.PreparedReplay.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.PreparedReplay.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.PreparedReplay.signed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.PreparedReplay.toBasePost": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.casesOn": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.codeBound": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.constantsBound": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.constantsFresh": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.depthFresh": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.directoryBound": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.directoryFresh": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.fftFresh": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.mk": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.mk._flat_ctor": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.negativeFresh": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.original": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.rec": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayLayout.recOn": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.mk.injEq": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.extra": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.nat_before": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.nat_before._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.nat_before._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.post": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.post._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.post._proof_1_11": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.post._proof_1_12": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.post._proof_1_13": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.post._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.post._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.post._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.post._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.post._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.post._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.post._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.ready": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.refl": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.scalar_before": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.scalar_before._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.scalar_before._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.trans": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailFrame.withPC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bankValues": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bankValues.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bank_source": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bank_source._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.beforeBucket": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.beforeBucket.eq_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.beforeBucket_length": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.beforeCoefficient": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.beforeCoefficient.eq_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.beforeCoefficient_length": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucketSetup_at": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucketSetup_at._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucketSetup_at._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucketSetup_safe": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucketSetup_safe._proof_1_22": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucketSetup_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucket_call": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucket_call._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucket_call._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucket_call._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucket_call._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucket_code": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucket_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucket_frame._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_10": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_11": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_12": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_13": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_14": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_15": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_16": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_17": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_18": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_19": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_20": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_21": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_22": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_23": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_24": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_25": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_26": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_27": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_28": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_29": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_30": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_31": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_32": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_33": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_34": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_6": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_7": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_8": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.caller_frame._proof_1_9": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficientSetup_at": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficientSetup_at._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficientSetup_at._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficientSetup_at._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficientSetup_safe": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficientSetup_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficient_call": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficient_call._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficient_call._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficient_call._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficient_call._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficient_call._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficient_code": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficient_frame": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficient_frame._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.cross": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.cross._proof_1": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.cross._proof_2": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.cross.congr_simp": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.cross_shape": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.depth_call_enriched": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.depth_call_enriched._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.depth_call_enriched._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.depth_call_enriched._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.depth_call_enriched._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.execution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.execution._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.execution._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.execution._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.execution._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.final_halt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.gateDepth": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.header_range": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.header_range._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.header_range._simp_1_1": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.header_range._simp_1_2": [
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.program": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.program.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.program_length": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.runtimeBudget": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_call": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_call._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_call._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_call._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_call._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_call._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_call._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_code": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_execution_enriched": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_execution_enriched._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_execution_enriched._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_execution_enriched._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_execution_enriched._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
     "ExactFourierCircuits.UniformMachine.NatOp": [],
     "ExactFourierCircuits.UniformMachine.FieldOp": [],
     "ExactFourierCircuits.UniformMachine.Instruction": [],
@@ -55348,7 +57476,55 @@
     "ExactFourierCircuits.UniformRankCrossPreparationMachine.sizingFinish.eq_1": [],
     "ExactFourierCircuits.UniformRankCrossPreparationMachine.sizingGrow": [],
     "ExactFourierCircuits.UniformRankCrossPreparationMachine.sizingGrow.eq_1": [],
-    "ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_length": []
+    "ExactFourierCircuits.UniformRankCrossPreparationMachine.sizing_length": [],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.boot": [],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.read": [],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.copy": [],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.tick": [],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.program": [],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.program_length": [],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.selected": [],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.rowCost": [],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.runtimeBudget": [],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.scanCost": [],
+    "ExactFourierCircuits.UniformColorLayerTableMachine.selectedRow": [],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Protected": [],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.Protected.eq_1": [],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeDepths": [],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.activeDepths.eq_1": [],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.colorOps": [],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.colorOps.eq_1": [],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.directoryOps": [],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.directoryOps.eq_1": [],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.shearOps": [],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.shearOps.eq_1": [],
+    "ExactFourierCircuits.UniformCrossDepthReplayPreparation.wordBudget": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters._sizeOf_1": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters._sizeOf_inst": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.base": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.casesOn": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.constants": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.ctorIdx": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.directory": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.mk": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.mk._flat_ctor": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.mk.inj": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.mk.noConfusion": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.mk.sizeOf_spec": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.negative": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.noConfusion": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.noConfusionType": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.order": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.rec": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.ReplayParameters.recOn": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.TailPreserved": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucketSetup": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucketSetup.eq_1": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.bucketSetup_length": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficientSetup": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficientSetup.eq_1": [],
+    "ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.coefficientSetup_length": []
   },
   "components_verified": true,
   "uniform_algorithm_verified": false,
