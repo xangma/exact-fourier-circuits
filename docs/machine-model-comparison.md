@@ -56,6 +56,10 @@ affine programs. Equivalence of the two complete languages is a stronger claim
 than either algorithm needs. A cost-preserving translation of the actual DFT
 algorithms or an appropriate common fragment remains unproved.
 
+The follow-on [actual DFT translation](dft-model-translation.md) uses separate
+prepared-offset and homogeneous-data channels, with a matching zero-input
+execution. Its component proofs do not yet close the whole-program bridge.
+
 ## Positive primitive translations
 
 The investigation also checks concrete translations rather than assuming a

@@ -55,6 +55,11 @@ the entire languages differ under their declared data interface: ours can
 compute `x + 1`, while upstream typed data stay zero on zero input. This does
 not refute either DFT theorem. Concrete primitive translations are checked;
 a cost-preserving translation of a common DFT fragment remains open.
+The [actual DFT translation work](docs/dft-model-translation.md) now checks
+paired affine operations, the closed root-order producer, preparation tables
+and complete local stages. Its component receipt explicitly leaves the
+whole-program compiler open; cache generation and the synchronized recursive
+clock still need concrete typed implementations and cost proofs.
 
 ## Run
 
