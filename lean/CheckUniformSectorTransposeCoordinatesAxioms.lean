@@ -1,0 +1,9 @@
+import UniformSectorTransposeCoordinates
+
+-- Include generated declarations in the closure audit.
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformSectorTransposeCoordinates.canonical_cover
+#print axioms ExactFourierCircuits.UniformSectorTransposeCoordinates.canonical_cover._simp_1_1
+#print axioms ExactFourierCircuits.UniformSectorTransposeCoordinates.canonical_width
+#print axioms ExactFourierCircuits.UniformSectorTransposeCoordinates.reverse_complete

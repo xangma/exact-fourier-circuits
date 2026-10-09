@@ -1,0 +1,102 @@
+{
+  "schema": "uniform-operational-modules/v1",
+  "modules": [
+    "UniformBinarySpectatorCMachine",
+    "UniformNativeScalarRecordMachine",
+    "UniformNativeExchangeRecordMachine",
+    "UniformDirectLeafDescriptorMachine",
+    "UniformTransposeDescriptorMachine",
+    "UniformDirectLeafOrientationsMachine",
+    "UniformPhysicalBinaryInverse",
+    "UniformNativeCopiedInverse",
+    "UniformGlobalTensorDiagonalMachine",
+    "UniformGlobalTensorDiagonalLoop",
+    "UniformSectorTransposeMachine",
+    "UniformSectorChildEntryPreparation",
+    "UniformSectorRestoringScatterPreparation",
+    "UniformAllSectorTransposeMachine",
+    "UniformSectorTransposeCoordinates",
+    "UniformProducedSectorTransposePreparation",
+    "UniformSectorPhysicalBinaryAction"
+  ],
+  "uniform_algorithm_verified": false,
+  "promoted_sources": {
+    "UniformGlobalTensorDiagonalMachine": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformGlobalTensorDiagonalMachine.lean",
+      "sha256": "c3af85f132a398dd6637a26cdbb4016e86018ae7ad3fcf84923fb0a4d905d396",
+      "receipt": "logs/uniform-global-saving-agent-20261008/tensor-receipt.json"
+    },
+    "UniformGlobalTensorDiagonalLoop": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformGlobalTensorDiagonalLoop.lean",
+      "sha256": "fa2b9c0df5100b5d506db907210e9082c0218f03a5c3a9c9398d3d10244c8955",
+      "receipt": "logs/uniform-global-saving-agent-20261008/tensor-receipt.json"
+    },
+    "UniformSectorTransposeMachine": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformSectorTransposeMachine.lean",
+      "sha256": "6f79289659cc55c633fcb6fe69a3a83bd813c62b647ad0607fb6474208d571eb",
+      "receipt": "logs/uniform-global-saving-agent-20261008/transpose-receipt.json"
+    },
+    "UniformSectorChildEntryPreparation": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformSectorChildEntryPreparation.lean",
+      "sha256": "69aeb919f02811405f6f4a35ca217bbacf041b93211689252ab6df5e0d6490a6",
+      "receipt": "logs/uniform-global-saving-agent-20261008/transpose-receipt.json"
+    },
+    "UniformSectorRestoringScatterPreparation": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformSectorRestoringScatterPreparation.lean",
+      "sha256": "6ca53bb9fb5430e08c07e1ce7c7ac5b5b005090c5d9d2d8114caa90f8d5ea0be",
+      "receipt": "logs/uniform-global-saving-agent-20261008/transpose-receipt.json"
+    },
+    "UniformAllSectorTransposeMachine": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformAllSectorTransposeMachine.lean",
+      "sha256": "4b8db63cfdf3c9b8243407778c96af1e92daebaa619f3f0fccb910a2421ea56c",
+      "receipt": "logs/uniform-global-saving-agent-20261008/transpose-receipt.json"
+    },
+    "UniformSectorTransposeCoordinates": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformSectorTransposeCoordinates.lean",
+      "sha256": "9afc788481e765acbacaedb61a48ce7bcf335065518faf6b88474be221429409",
+      "receipt": "logs/uniform-global-saving-agent-20261008/transpose-receipt.json"
+    },
+    "UniformProducedSectorTransposePreparation": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformProducedSectorTransposePreparation.lean",
+      "sha256": "f3a537adffba25fc72fbe09087b1c58968ddf779abdbfbec1f69d050f4d8503f",
+      "receipt": "logs/uniform-global-saving-agent-20261008/produced-transpose-receipt.json"
+    },
+    "UniformSectorPhysicalBinaryAction": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformSectorPhysicalBinaryAction.lean",
+      "sha256": "c3d1bc7e283196ff2f6a20e6d3fc957381207d89a26c4bdf0f49e5ffd94b4fa3",
+      "receipt": "logs/uniform-global-saving-agent-20261008/produced-transpose-receipt.json"
+    },
+    "UniformBinarySpectatorCMachine": {
+      "source": "lean/UniformBinarySpectatorCMachine.lean",
+      "sha256": "ecc43e3ee6bbd518c0e693864de948b316c3f823e3693069f07b27975554efa7"
+    },
+    "UniformNativeScalarRecordMachine": {
+      "source": "lean/UniformNativeScalarRecordMachine.lean",
+      "sha256": "659bf1162f31bc63efa1915a70502c682d11f22993c9ac1124feff46da24d634"
+    },
+    "UniformNativeExchangeRecordMachine": {
+      "source": "lean/UniformNativeExchangeRecordMachine.lean",
+      "sha256": "b35b8e9112b2fdb9a87879cfa519da9987a3e07b36f1f094e5da7093dbaa5b2f"
+    },
+    "UniformDirectLeafDescriptorMachine": {
+      "source": "lean/UniformDirectLeafDescriptorMachine.lean",
+      "sha256": "b781b5750dc5327c046ece37ed189339a0b43e402e1e6c07bc6cd0466addc678"
+    },
+    "UniformTransposeDescriptorMachine": {
+      "source": "lean/UniformTransposeDescriptorMachine.lean",
+      "sha256": "5c78739d3f68b272ade11750c232ee3544110e6483da16c9edd4fc02f0dca1d4"
+    },
+    "UniformDirectLeafOrientationsMachine": {
+      "source": "lean/UniformDirectLeafOrientationsMachine.lean",
+      "sha256": "94b9f66e2ea22037263e312074b1e94e35f1e890e6e06e6bec5c265cf3e2e40c"
+    },
+    "UniformPhysicalBinaryInverse": {
+      "source": "lean/UniformPhysicalBinaryInverse.lean",
+      "sha256": "b37ba97f3486fa7be2cb94659a21197254811a918ae3066326ae75d58a9ea2f0"
+    },
+    "UniformNativeCopiedInverse": {
+      "source": "lean/UniformNativeCopiedInverse.lean",
+      "sha256": "167f5fa81c0ffe960aa3d6408b7a7a80e9b9941dd86b3a1b4b9e3ec5c0656336"
+    }
+  }
+}

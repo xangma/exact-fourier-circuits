@@ -1,0 +1,62 @@
+import UniformProducedSectorTransposePreparation
+import Lean
+
+-- Include generated declarations in the closure audit.
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.execution
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.execution._proof_1_10
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.execution._proof_1_11
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.execution._proof_1_12
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.execution._proof_1_13
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.execution._proof_1_14
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.execution._proof_1_15
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.execution._proof_1_16
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.execution._proof_1_17
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.execution._proof_1_18
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.execution._proof_1_19
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.execution._proof_1_20
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.execution._proof_1_9
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.execution_arguments
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.halt_at
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.producer_arguments
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.producer_code
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.producer_keeps_argument
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.program
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.programFor
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.programFor.eq_1
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.program_length
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.relocate_arguments
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.setup
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.setup.eq_1
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.setup_code
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.transpose_code
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.writesArguments
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.writesArguments._sparseCasesOn_1
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.writesArguments._sparseCasesOn_1.else_eq
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.writesArguments.eq_1
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.writesArguments.eq_2
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.writesArguments.eq_3
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.writesArguments.eq_4
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.writesArguments.eq_5
+#print axioms ExactFourierCircuits.UniformProducedSectorTransposePreparation.writesArguments.match_1
+#print axioms ExactFourierCircuits.UniformSectorBatchDirectoryMachine.programFor.eq_1
+
+-- Private names require direct environment lookup.
+open Lean Elab Command in
+run_cmd do
+  let env ← getEnv
+  for (name, _) in env.constants.toList do
+    if "_private.UniformProducedSectorTransposePreparation.".isPrefixOf name.toString then
+      let axioms ← collectAxioms name
+      logInfo m!"'{name}' depends on axioms: {axioms.toList}"
+      for ax in axioms do
+        unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
+          throwError m!"Unexpected axiom {ax} in {name}"

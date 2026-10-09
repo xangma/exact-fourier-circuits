@@ -636,3 +636,37 @@ lean_lib UniformSectorPaddingMachine
 lean_lib UniformSectorPaddingPreparation
 lean_lib UniformAllSectorPaddingMachine
 lean_lib UniformProducedSectorPaddingPreparation
+
+lean_lib UniformBinarySpectatorCMachine
+
+lean_lib UniformNativeScalarRecordMachine
+
+lean_lib UniformNativeExchangeRecordMachine
+
+lean_lib UniformDirectLeafDescriptorMachine
+
+lean_lib UniformTransposeDescriptorMachine
+
+lean_lib UniformDirectLeafOrientationsMachine
+
+lean_lib UniformPhysicalBinaryInverse
+
+lean_lib UniformNativeCopiedInverse
+
+lean_lib UniformGlobalTensorDiagonalMachine
+
+lean_lib UniformGlobalTensorDiagonalLoop
+
+lean_lib UniformSectorTransposeMachine
+
+lean_lib UniformSectorChildEntryPreparation
+
+lean_lib UniformSectorRestoringScatterPreparation
+
+lean_lib UniformAllSectorTransposeMachine
+
+lean_lib UniformSectorTransposeCoordinates
+
+lean_lib UniformProducedSectorTransposePreparation
+
+lean_lib UniformSectorPhysicalBinaryAction

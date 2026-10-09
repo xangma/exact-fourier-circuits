@@ -36,9 +36,11 @@ corrected numeric restoration, the fixed116 translation child and fixed197/535
 record callers, the fixed79 all-axis matching-table producer and fixed124 sector
 metadata caller. Earlier startup, seed/conjugate/matching composition, ordinary
 binary C tensor and metadata decoder components remain verified.
-The registry contains 278 modules. The previous aggregate audit covered 232
+The registry contains 295 modules. The previous aggregate audit covered 232
 modules and 30,079 public/generated/private axiom closures; a fresh focused audit
-of the 46 added modules covers 4,720 closures. These are separate audit scopes,
+of the 46 added modules covers 4,720 closures. A further defining-module census
+and focused audit cover 17 operational modules and 1,798 closures (36 private),
+with 16,320 exact execution cases and 21,845 independent inverse entries. These are separate audit scopes,
 not an updated aggregate declaration count. The [latest checkpoint](uniform-closeout.md)
 records their source hashes, exact entry boundaries and outstanding global links.
 `uniform_algorithm_verified=false` remains in receipts; no proof of the stronger

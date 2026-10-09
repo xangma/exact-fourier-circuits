@@ -1,0 +1,28 @@
+import UniformPhysicalBinaryInverse
+
+-- Include generated declarations in the closure audit.
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformPhysicalBinaryInverse.coordinates_flip
+#print axioms ExactFourierCircuits.UniformPhysicalBinaryInverse.flip
+#print axioms ExactFourierCircuits.UniformPhysicalBinaryInverse.flip._proof_1
+#print axioms ExactFourierCircuits.UniformPhysicalBinaryInverse.flip._proof_2
+#print axioms ExactFourierCircuits.UniformPhysicalBinaryInverse.flip.eq_1
+#print axioms ExactFourierCircuits.UniformPhysicalBinaryInverse.flip_bit
+#print axioms ExactFourierCircuits.UniformPhysicalBinaryInverse.flip_flip
+#print axioms ExactFourierCircuits.UniformPhysicalBinaryInverse.inverse_mulVec
+#print axioms ExactFourierCircuits.UniformPhysicalBinaryInverse.mask
+#print axioms ExactFourierCircuits.UniformPhysicalBinaryInverse.mask.eq_1
+#print axioms ExactFourierCircuits.UniformPhysicalBinaryInverse.mask_value
+#print axioms ExactFourierCircuits.UniformPhysicalBinaryInverse.mask_value._proof_1_2
+#print axioms ExactFourierCircuits.UniformPhysicalBinaryInverse.physicalHom
+#print axioms ExactFourierCircuits.UniformPhysicalBinaryInverse.physicalHom_apply
+#print axioms ExactFourierCircuits.UniformPhysicalBinaryInverse.physical_inverse
+#print axioms ExactFourierCircuits.UniformPhysicalBinaryInverse.physical_square
+#print axioms ExactFourierCircuits.UniformPhysicalBinaryInverse.sum_two_pow
+#print axioms ExactFourierCircuits.UniformPhysicalBinaryInverse.sum_two_pow._proof_1_1
+#print axioms ExactFourierCircuits.UniformPhysicalBinaryInverse.swapPhysical
+#print axioms ExactFourierCircuits.UniformPhysicalBinaryInverse.swapPhysical_apply
+#print axioms ExactFourierCircuits.UniformPhysicalBinaryInverse.swapPhysical_mulVec
+#print axioms ExactFourierCircuits.UniformPhysicalBinaryInverse.swap_flip
+#print axioms ExactFourierCircuits.UniformPhysicalBinaryInverse.swap_square

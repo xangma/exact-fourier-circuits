@@ -1,0 +1,15 @@
+import UniformNativeCopiedInverse
+
+-- Include generated declarations in the closure audit.
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformNativeCopiedInverse.copied_spectator_inverse_forward_xor
+#print axioms ExactFourierCircuits.UniformNativeCopiedInverse.native_inverse_array
+#print axioms ExactFourierCircuits.UniformNativeCopiedInverse.native_inverse_blocks
+#print axioms ExactFourierCircuits.UniformNativeCopiedInverse.native_inverse_forward_xor
+#print axioms ExactFourierCircuits.UniformNativeCopiedInverse.spectatorMatrix
+#print axioms ExactFourierCircuits.UniformNativeCopiedInverse.spectatorMatrix.eq_1
+#print axioms ExactFourierCircuits.UniformNativeCopiedInverse.spectatorSplit
+#print axioms ExactFourierCircuits.UniformNativeCopiedInverse.spectatorSplit._proof_1
+#print axioms ExactFourierCircuits.UniformNativeCopiedInverse.spectator_inverse
+#print axioms ExactFourierCircuits.UniformNativeCopiedInverse.spectator_inverse_array
