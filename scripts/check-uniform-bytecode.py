@@ -7,6 +7,16 @@ p=argparse.ArgumentParser(description=__doc__)
 p.add_argument('--skip-build',action='store_true',help='Use already built Lean component libraries')
 a=p.parse_args();root=Path(__file__).resolve().parents[1]
 extra_suites = [
+    ('UniformHeapDirectFourier', 'HeapDirectFourier', 'logs/uniform-bytecode/closeout-kernels/direct-fixtures.json', 'uniform-heap-direct-fourier-bytecode-fixtures.py'),
+    ('UniformBinaryBatchCMachine', 'BinaryBatchC', 'logs/uniform-bytecode/closeout-kernels/batch-fixtures.json', 'uniform-binary-batch-c-bytecode-fixtures.py'),
+    ('UniformHeapDirectBatch', 'HeapDirectBatch', 'logs/uniform-bytecode/closeout-kernels/direct-batch-fixtures.json', 'uniform-heap-direct-batch-bytecode-fixtures.py'),
+    ('UniformTranslatedMatchingRows', 'TranslatedMatchingRows', 'logs/uniform-bytecode/closeout-kernels/translated-rows-fixtures.json', 'uniform-translated-matching-rows-bytecode-fixtures.py'),
+    ('UniformSmallAxisFourierMachine', 'SmallAxisFourier', 'logs/uniform-bytecode/closeout-kernels/small-axis-fixtures.json', 'uniform-small-axis-fourier-bytecode-fixtures.py'),
+    ('UniformSmallAxesMachine', 'SmallAxesFourier', 'logs/uniform-bytecode/closeout-kernels/small-axes-fixtures.json', 'uniform-small-axes-fourier-bytecode-fixtures.py'),
+    ('UniformGlobalMatchingDiagonalPreparation', 'MatchingScalePreparation', 'logs/uniform-bytecode/matching-scale-preparation/bytecode/fixtures.json', 'uniform-matching-scale-preparation-bytecode-fixtures.py'),
+    ('UniformProducedSectorPaddingPreparation', 'SectorPaddingPreparation', 'logs/uniform-bytecode/sector-padding-preparation/sector-bytecode/fixtures.json', 'uniform-sector-padding-preparation-bytecode-fixtures.py'),
+    ('UniformResidualGatherPreparation', 'ResidualGatherPreparation', 'logs/uniform-bytecode/residual-gather-preparation/fixtures.json', 'uniform-residual-gather-preparation-bytecode-fixtures.py'),
+
     ('UniformSixCCorrectedReplay', 'SixCContinuousReplay', 'logs/uniform-bytecode/six-c-continuous/fixtures.json', 'uniform-six-c-continuous-replay-bytecode-fixtures.py'),
     ('UniformPreparedYTranslationMachine', 'Y', 'logs/uniform-bytecode/y-translation/fixtures.json', 'uniform-y-translation-bytecode-fixtures.py'),
     ('UniformFixedNetworkYRecordMachine', 'YRecord', 'logs/uniform-bytecode/y-record/record-fixtures.json', 'uniform-y-record-bytecode-fixtures.py'),
@@ -205,7 +215,7 @@ records = []
 for relative in receipt_paths:
     f=root/relative
     d=json.loads(f.read_text())
-    d=d.get('summary',d)
+    d=d.get('summary',d.get('receipt',d))
     assert d['status']=='PASS',relative
     if relative.endswith('/uniform-bytecode/fixtures.json'):
         count=len(d['cases'])+len(d['empty_startup_cases'])+len(d['transfer_cases'])

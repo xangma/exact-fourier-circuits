@@ -1,0 +1,17 @@
+import UniformSmallAxesBudget
+import Lean
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformSmallAxesBudget.actual_small_axes_cost
+#print axioms ExactFourierCircuits.UniformSmallAxesBudget.actual_small_axes_cost._proof_1_1
+#print axioms ExactFourierCircuits.UniformSmallAxesBudget.odd_axis_index
+#print axioms ExactFourierCircuits.UniformSmallAxesBudget.odd_axis_index._proof_1_1
+#print axioms ExactFourierCircuits.UniformSmallAxesBudget.odd_axis_index._proof_1_2
+#print axioms ExactFourierCircuits.UniformSmallAxesBudget.small
+#print axioms ExactFourierCircuits.UniformSmallAxesBudget.small.eq_1
+#print axioms ExactFourierCircuits.UniformSmallAxesBudget.small_card
+#print axioms ExactFourierCircuits.UniformSmallAxesBudget.small_card._proof_1_1
+#print axioms ExactFourierCircuits.UniformSmallAxesBudget.small_card._proof_1_2
+#print axioms ExactFourierCircuits.UniformSmallAxesBudget.small_card._proof_1_3
+#print axioms ExactFourierCircuits.UniformSmallAxesBudget.small_card._proof_1_4
+#print axioms ExactFourierCircuits.UniformSmallAxesBudget.small_card._proof_1_5

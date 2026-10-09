@@ -27,8 +27,11 @@ The [uniform proof contract](docs/uniform-proof-contract.md) distinguishes the
 checked components from the remaining program and cost obligations. The
 [component receipt](verification/uniform-components.json) explicitly records
 `uniform_algorithm_verified=false`. The [latest checkpoint](docs/uniform-closeout.md)
-records the complete local cross replay, translation records, all-axis matching
-tables and sector metadata, with the remaining recursive and global obligations.
+records 46 additional checked modules, 4,720 audited declaration closures and nine
+exact-bytecode suites with 12,329 cases. It includes the actual small-axis loop and
+its tensor action, physical matching/sector preparation, and native residual
+gathering. The complete cache compiler, recursive self-calls and global fast
+dispatcher remain open.
 
 The current uniform work includes one fixed 465-instruction startup program.
 Lean proves that it constructs the chirped padded input, signed convolution

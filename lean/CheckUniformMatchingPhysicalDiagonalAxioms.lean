@@ -1,0 +1,7 @@
+import UniformMatchingPhysicalDiagonal
+import Lean
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformMatchingPhysicalDiagonal.nativeCoefficient_eq
+#print axioms ExactFourierCircuits.UniformMatchingPhysicalDiagonal.nativeCoefficient_eq._simp_1_1
+#print axioms ExactFourierCircuits.UniformMatchingPhysicalDiagonal.nativePhase_actual_diagonal

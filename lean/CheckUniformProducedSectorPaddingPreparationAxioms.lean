@@ -1,0 +1,59 @@
+import UniformProducedSectorPaddingPreparation
+import Lean
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.execution
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.execution._proof_1_10
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.execution._proof_1_11
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.execution._proof_1_12
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.execution._proof_1_13
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.execution._proof_1_14
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.execution._proof_1_15
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.execution._proof_1_16
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.execution._proof_1_17
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.execution._proof_1_18
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.execution._proof_1_19
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.execution._proof_1_20
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.execution._proof_1_9
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.execution_arguments
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.halt_at
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.halt_at._proof_1_1
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.metadata_arguments
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.metadata_code
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.metadata_keeps_argument
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.padding_code
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.program
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.programFor
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.programFor.eq_1
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.program_length
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.relocate_argument
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.setup
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.setup.eq_1
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.setup_code
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.writesArgument
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.writesArgument._sparseCasesOn_1
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.writesArgument._sparseCasesOn_1.else_eq
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.writesArgument.eq_1
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.writesArgument.eq_2
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.writesArgument.eq_3
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.writesArgument.eq_4
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.writesArgument.eq_5
+#print axioms ExactFourierCircuits.UniformProducedSectorPaddingPreparation.writesArgument.match_1
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformProducedSectorPaddingPreparation.".isPrefixOf name.toString then
+   let axioms ← collectAxioms name
+   for ax in axioms do
+    unless ax == ``propext || ax == ``Quot.sound || ax == ``Classical.choice do
+     throwError m!"Nonstandard axiom {ax} in {name}"
+   logInfo m!"{name} depends on axioms: {axioms.toList}"

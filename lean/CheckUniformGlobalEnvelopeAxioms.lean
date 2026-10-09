@@ -1,0 +1,13 @@
+import UniformGlobalEnvelope
+import Lean
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformGlobalEnvelope.conjugateBudget_isLittleO_input
+#print axioms ExactFourierCircuits.UniformGlobalEnvelope.execution_mono
+#print axioms ExactFourierCircuits.UniformGlobalEnvelope.fullPreparationBudget_isBigO_input
+#print axioms ExactFourierCircuits.UniformGlobalEnvelope.polynomial_envelope
+#print axioms ExactFourierCircuits.UniformGlobalEnvelope.polynomial_envelope._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalEnvelope.polynomial_envelope._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalEnvelope.positive_degree
+#print axioms ExactFourierCircuits.UniformGlobalEnvelope.positive_degree._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalEnvelope.runs_mono

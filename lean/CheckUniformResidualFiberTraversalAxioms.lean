@@ -1,0 +1,154 @@
+import UniformResidualFiberTraversal
+import Lean
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Effect
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Effect.casesOn
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Effect.count
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Effect.depth
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Effect.header
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Effect.mk
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Effect.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Effect.native
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Effect.outputs
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Effect.outside
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Effect.pc
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Effect.rec
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Effect.recOn
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Effect.roots
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Effect.scalarHeap
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Effect.scalarReg
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Effect.written
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Frame
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Frame.casesOn
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Frame.mk
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Frame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Frame.natReg
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Frame.outputs
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Frame.rec
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Frame.recOn
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Frame.refl
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Frame.roots
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Frame.scalarHeap
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Frame.scalarReg
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Frame.trans
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Inputs
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Inputs.bits
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Inputs.casesOn
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Inputs.images
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Inputs.mk
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Inputs.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Inputs.output
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Inputs.rec
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Inputs.recOn
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Inputs.size
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Inputs.stack
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Inputs.table
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Inputs.width
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Safe
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Safe._sparseCasesOn_1
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.Safe.match_1
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.address
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.address._f
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.address._sunfold
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.address._unsafe_rec
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.address.eq_1
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.address.eq_2
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.address.eq_def
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.address.match_1
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.address_small
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.address_small._proof_1_4
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.address_small._proof_1_5
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.entry_runs
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.entry_runs._proof_1_1
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.entry_runs._proof_1_3
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.execution
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.execution_frame
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.exhausted_runs
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.exhausted_runs._proof_1_1
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.instDecidableSafe
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.instDecidableSafe._proof_1
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.instDecidableSafe._proof_10
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.instDecidableSafe._proof_11
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.instDecidableSafe._proof_12
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.instDecidableSafe._proof_13
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.instDecidableSafe._proof_14
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.instDecidableSafe._proof_2
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.instDecidableSafe._proof_3
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.instDecidableSafe._proof_4
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.instDecidableSafe._proof_5
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.instDecidableSafe._proof_6
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.instDecidableSafe._proof_7
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.instDecidableSafe._proof_8
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.instDecidableSafe._proof_9
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.program_safe
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.step_frame
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_10
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_11
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_12
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_13
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_14
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_15
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_16
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_17
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_18
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_19
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_20
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_21
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_22
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_23
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_24
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_25
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_26
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_27
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_28
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_29
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_30
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_31
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_32
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_33
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_34
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_35
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_36
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_37
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_38
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_39
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_40
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_41
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_42
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_43
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_44
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_45
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_46
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_47
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_48
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_49
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_50
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_51
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_52
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_53
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.tree_execution._proof_1_9
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.write_frame
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.write_frame._proof_1_1
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformResidualFiberTraversal.".isPrefixOf name.toString then
+   let axioms ← collectAxioms name
+   for ax in axioms do
+    unless ax == ``propext || ax == ``Quot.sound || ax == ``Classical.choice do
+     throwError m!"Nonstandard axiom {ax} in {name}"
+   logInfo m!"{name} depends on axioms: {axioms.toList}"

@@ -1,0 +1,10 @@
+import UniformTensorPhaseFusion
+import Lean
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformTensorPhaseFusion.chronological
+#print axioms ExactFourierCircuits.UniformTensorPhaseFusion.chronological.congr_simp
+#print axioms ExactFourierCircuits.UniformTensorPhaseFusion.chronological.eq_1
+#print axioms ExactFourierCircuits.UniformTensorPhaseFusion.shear_chronological
+#print axioms ExactFourierCircuits.UniformTensorPhaseFusion.tensor_chronological
+#print axioms ExactFourierCircuits.UniformTensorPhaseFusion.tensor_chronological_congr

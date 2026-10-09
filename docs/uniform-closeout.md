@@ -1,110 +1,84 @@
 # Uniform proof checkpoint
 
-The original selected-length theorem is verified. The stronger single-program,
-every-positive-length theorem is **still open**. There is no registered closed
-proof of `UniformDFTStatement`; aggregate receipts retain
-`uniform_algorithm_verified=false`.
+The original selected-length theorem is verified. The stronger single fixed
+algorithm for every positive length is **still open**. The registry has 278
+modules and `closed_uniform_algorithm=null`; receipts retain
+`uniform_algorithm_verified=false`. The required final result is the
+unconditional `UniformMachine.UniformDFTStatement UniformExponent.theta`.
 
-Final source-stable audits passed on 2026-10-08: **232 modules and 30,079 distinct declaration axiom closures**, plus **66 exact-bytecode suites and 48,870 cases**. The receipts bind 561 Lean inputs and 366 bytecode inputs; every hash was independently checked again after both runs completed.
+## Current verified work
 
-The component audit permits only `propext`, `Quot.sound` and `Classical.choice`,
-checks the 51 unchanged upstream sources and pinned toolchain, and includes
-public, generated and private declarations. The 21 new modules have a fresh
-combined environment census: **2,925 declarations**, including two equation
-lemmas created when the translation caller is imported. Counts describe checked
-components, not completed global algorithm obligations. The original three
-theorem checks, five kernel identities and all 1,101 construction declaration
-checks retain their previously verified baseline receipts.
+On 2026-10-09, a source-stable focused audit of **46 newly registered modules**
+passed, including **4,720 public, generated and private declaration axiom
+closures**. Only `propext`, `Quot.sound` and `Classical.choice` occur. The receipt
+binds 381 inputs, verifies the 51 unchanged upstream files and pinned
+Lean/Mathlib, and records default proof limits. See
+[the module list](../verification/uniform-closeout-modules.json) and
+[the foundation receipt](../verification/uniform-closeout-foundations.json).
 
-## Implemented and checked
+**Nine new normal-path exact-bytecode suites passed 12,329 cases**. They execute
+freshly exported literal Lean instructions with exact cyclotomic arithmetic,
+checking guards, data tags, frames and bounded integer words. There are no
+host-side writes between assembled phases. See
+[the bytecode receipt](../verification/uniform-closeout-bytecode.json).
 
-This checkpoint adds 21 registered modules to the previous 211-module checkpoint.
-Their normal Lake build and complete declaration checks passed under default
-proof limits. The six new suites also passed from their normal repository paths
-before the aggregate audits.
+From the repository root, reproduce these focused checks with
+`python3 scripts/check-uniform-closeout-foundations.py` and
+`python3 scripts/check-uniform-closeout-bytecode.py`. Both freeze their relevant
+inputs and reject source changes during verification. The combined environment
+census is saved in `verification/UniformCloseoutCensus.lean`.
 
-| Component | Actual behavior and entry boundary |
+The previous 2026-10-08 aggregate audits remain historical evidence: 232 modules,
+30,079 distinct declaration closures, and 66 bytecode suites with 48,870 cases.
+Their [Lean](../verification/uniform-components.json) and
+[bytecode](../verification/uniform-bytecode-components.json) receipts bind 561
+and 366 inputs respectively. Neither is an aggregate audit of the current
+278-module registry; overlapping declaration scopes must not be added together.
+
+| Component | Proved execution and boundary |
 |---|---|
-| Complete local cross replay | `UniformSixCWholeReplay.execution` executes one fixed **5,375-instruction** program: true Height generation, ascending traversal, positive broadcast, descending traversal, false Height generation, ascending traversal, negative broadcast and descending traversal. It internally produces rows, colors, matching tables, permutations and inverse phases. Actual original typed tape/order/directory, physical coefficient/data banks, compatible allocation and word bounds remain entry requirements. |
-| Corrected physical cross action | `UniformSixCPhysicalAction.fullWord_action` identifies the literal physical six-phase word with the logical replay. `UniformSixCCorrectedReplay.execution_cross_matrix` proves the actual program adds `M*x` to the target, restores every numeric source/gate value and leaves non-port coordinates unchanged. This matrix conclusion requires nonempty dimensions, `2*(a+e)<=2^K`, the stated displacement recurrence and coefficient banks equal to `sharedBank(rankKernels)`. Generic coefficient banks establish the literal-word action, not an arbitrary matrix update. Dependency flags remain conservative; numeric restoration does not imply flag restoration. Formal frames retain coefficient sources, constants, data presence, outputs, roots, Nat3001..3020 and scalar cells outside both child footprints. Saved Nat100..106 and the global CRT prefix are not formal frames of this caller. |
-| Charged translation | `UniformPreparedYTranslationMachine` is a fixed **116-instruction** program. From original q, width, data and binary direction it constructs the ordinary-integer XOR table and repeated mask, then performs exact translation. It assumes no produced table, mask or action postcondition. Its cost is `tableCost(q)+9*q*width+(17*width+25)*2^(q*width)+31`, at most `(17*width+90)*2^(q*width)` when original width is at least3. Four modules prove the actual block XOR, translation, mask and combined caller. |
-| Translation records and mixed chronology | `UniformFixedNetworkYRecordMachine` fixed **197** reads an actual opcode3 tape record, computes sizes/role offsets, executes the 116 child for every row and returns the cursor. `UniformFixedNetworkYRecordLoopMachine` fixed **535** continuously executes arbitrary chronological opcode1/3/4/5 scalar, translation, signed-exchange and padding records, with actual values, tags, frames and charged transitions. Original printed tape, arbitrary-tag role data, prepared C constants and ordinary disjoint layout remain inputs. Opcode0/2/6 and recursive calls remain open. |
-| All-axis matching tables | `UniformAllAxisMatchingTablePreparation` fixed **79** reads actual retained selected CRT radices and a physical per-axis matching-edge directory. It executes Matching55 for each axis and derives `SectorPacking.Rows`, `Widths` and forward `Permutations` across every axis. It retains metadata, operands, scalar state, outputs, roots and the protected prefix. Exact cost is `8+sum_j(17*r_j+8*M_j+38)`, at most `axisCount*(21*L+38)+8`. The input matching edges, physical layout and word envelope remain honest entry requirements. This program does not produce the edge directory or prove global tensor action. |
-| Multi-axis sector metadata | `UniformMultiAxisSectorMetadataPreparation` fixed **124** reads the saved axis count, executes the actual four-field to three-field projection, computes its own headers and runs SectorMetadata92. Suffix volumes and the complete sector directory follow from real rows; no ready directory or execution result is an input. Cost is `treeCost(counts)+43*axisCount+31 <= 163*volume+31`. Original matching rows/widths/forward permutations and a fresh physical layout remain inputs. All scalar state, saved Nat100..106, source tables, outputs and roots are formally retained. |
+| Small CRT axes | The actual fixed182 loop reads the retained CRT metadata and original935 root bank, executes every selected small axis through fixed161 gather/direct-transform/scatter, and preserves roots, metadata and external cells. Native mixed-radix address lemmas identify the output with the corresponding partial tensor of DFTs. For fixed threshold T, actual runtime is at most `(17+(T+1)*(8*T+165))*L`. Large-axis execution is separate. |
+| Primitive transforms | Fixed22 computes a direct Fourier array from an actual prepared root; fixed34 batches it. Fixed54 batches the ordinary binary C tensor. These prove exact numeric output, tags, frames and charged costs, but the ordinary binary algorithm does not establish recursive power saving. |
+| Physical matching preparation | Fixed23 translates actual row endpoints while retaining coefficient references. Fixed172 produces physical coefficient pools and diagonal banks from real rows and source coefficients. The native diagonal equals the proved matching-phase factor. The complete balanced cache and synchronized phase dispatcher are still required. |
+| Sector padding | Fixed205 derives counts and directories from actual rows, then copies the tagged source into role0 and prepares zero cells in all other W roles. It retains startup metadata, roots and unrelated storage and charges all transitions. It does not execute a recursive child transform. |
+| Residual movement | Fixed188 derives the residual permutation from the original nonzero direction descriptor. Fixed210 gathers through that produced permutation, with exact address coverage, value/tag preservation and outside frames. The general-k remainder controller and large-q recursive return are not part of this frozen bundle. |
+| Edge prototype | Fixed1410 constructs one unit matching across retained axes. At r=196 its chosen depth1 matching is empty. It is not the complete Fourier schedule; actual nonempty depth2 chunks require the full balanced compiler. |
 
-The earlier checkpoint verified empty startup and its direct small-length
-fallback, scalar/exchange/padding records, charged XOR construction, actual
-forward/inverse matching, a complete ordinary binary C tensor, and the physical
-matching/broadcast action bridges. Those modules remain registered and checked.
+| Exact suite | Cases |
+|---|---:|
+| Direct Fourier22 | 1,008 |
+| Binary batch54 | 480 |
+| Direct batch34 | 1,152 |
+| Translated rows23 | 208 |
+| Small axis161 | 624 |
+| Small axes182 | 384 |
+| Matching preparation172 | 2,916 |
+| Sector padding205 | 5,317 |
+| Residual gather210 | 240 |
 
-## Exact diagnostic evidence
+The small-axis suite uses genuine roots of orders3/5/8 in exact cyclotomic fields,
+including Phi60/Phi120. Sector diagnostics use physical W=1/2/3/5; fixed W=2^71
+is tested only through the Nat producers. They do not allocate the astronomical
+saving arrays. Prepared local coefficient banks and layouts remain the stated
+entry conditions. These are instruction-level diagnostics, not a full
+empty-state all-length Fourier execution or a CUDA speedup measurement.
 
-All diagnostics use freshly exported current Lean programs and exact arithmetic.
-They exercise actual instruction guards and bounded words, including dirty
-scratch/data and tagged scalar values. No host writes occur between child phases.
+## What must close next
 
-| New suite | Successful diagnostic cases | Separate negative controls |
-|---|---:|---:|
-| Continuous six-phase5375 | 13, totaling 92,013,084 charged steps | 6 |
-| Prepared translation116 | 114, totaling 372,873 charged steps | 5 |
-| Translation record197 | 241, totaling 1,086,094 charged steps | 5 |
-| Mixed record535 | 1,326, totaling 2,823,930 charged steps | 9 |
-| Multi-axis metadata124 | 38 | 7 |
-| All-axis matching79 | 160 | 9 |
-
-The aggregate case count includes guards for the metadata and all-axis suites;
-the other new suites report guards separately. The full replay visits 5,288 of its
-5,375 PCs. Twelve K0/K1 cases consume actual typed cross tapes and disclosed
-generic coefficient banks; one K2 case consumes the actual rank-kernel shared
-bank for `M=[2+i]`, with the required size inequality, and independently checks
-that cross-matrix identity. Its typed rows use the proved `crossRows_typed` export
-and cached depth array. These are local execution diagnostics, not an
-empty-startup/global DFT trace. They check saved Nat100..106 retention empirically;
-the formal replay theorem does not yet export that frame.
-
-No new floating-point CUDA/JAX or FFT performance validation was performed in
-this checkpoint. Earlier notebook/plot results keep their existing scope.
-
-## Required before the stronger theorem can close
-
-1. Execute the remaining saving-network operations. Copied opcode0 residual C
-has q orthogonal column directions; one repeated-mask direction implements Y,
-not this C transform. It needs actual q-bit C fibers and recursive calls, plus
-opcode2 boundaries, opcode6 layout movement and recursive batching, composed
-with the completed scalar/translation/exchange/padding children.
-2. Produce genuine matching edges across all selected CRT axes and connect the
-actual79 and124 producers to physical tensor packing and the saving action.
-The selected startup currently packs one axis with two-slot sectors, so its
-sector exponent is `k=1` and `q=floor(k/1000000)=0`. Its convolution FFT exponent
-is not that sector exponent. The positive-length selection already guarantees
-radix at least2 on every axis, including the binary factor; radix1 is not an
-obstruction.
-3. Derive one compatible global allocation and the missing retained metadata
-frames. Then assemble every axis, chirp/convolution, transfer and output routing
-from empty initial state in one fixed program, with one root request and a common
-polynomial word bound.
-4. Prove the claimed fast runtime for that same actual program. The new ordinary
-addressing cost needs a constant-factor allowance in the final majorant;
-a mathematical saving word alone does not bound the executed RAM program.
-5. Register the unconditional `UniformDFTStatement`. Only then may
+1. Finish the physical balanced-tree cache compiler, including every rectangle,
+ragged chunk, depth, color, direct leaf and diagonal. Prove its complete schedule
+and charge the local preparation once.
+2. Finish the actual recursive return controller and opcode0/5 interpreter.
+For k=q*m+r, each saving node must call the same fixed q-bit child entry on all
+W arrays together, with q(m-1)+r spectator bits retained. W=2^71 and m=1,000,000
+remain symbolic. Replacing a large child by the ordinary binary transform does
+not yield the claimed exponent.
+3. Assemble synchronized tensor phases across all axes, sector movement,
+recursive calls, chirp/convolution, CRT transfer and output routing from the
+empty initial state. Derive one compatible allocation, polynomial word bound,
+exact DFT output and fast runtime for that same finite program.
+4. Register and audit the unconditional `UniformDFTStatement`. Only then may
 `uniform_algorithm_verified` become true.
 
-The [proof contract](uniform-proof-contract.md) and source-bound
-[Lean](../verification/uniform-components.json) and
-[exact-bytecode](../verification/uniform-bytecode-components.json) receipts
-keep these obligations separate from verified components. Agent proof sources were
-promoted byte-for-byte from frozen packets; all normal-path checks were repeated.
-Graph generation `2026-10-07T17:50:28Z` does not cover the new Lean symbols;
-material claims use exact source, complete declaration inventories and kernel
-checks, with no graph completeness claim.
-
-To reproduce the audits on this Mac, explicitly use macOS Bash. Homebrew
-Bash5.3.9 reproducibly stalls on a large embedded Python heredoc; the scripts run
-with `/bin/bash`.
-
-```sh
-/bin/bash scripts/verify-lean.sh --skip-cache
-/bin/bash scripts/verify-construction.sh
-UNIFORM_AXIOM_JOBS=4 /bin/bash scripts/verify-uniform.sh
-python3 scripts/check-uniform-bytecode.py
-```
+No new CUDA/JAX or FFT timing result is claimed by this checkpoint. Earlier
+numerical replication and plots keep their documented scope.
