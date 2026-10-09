@@ -1,6 +1,13 @@
 import UniformLocalFourierWord
 import OAI.Computability.FourierCircuit.PairFamilies
 
+/-!
+Paper correspondence: An explicit power saving for the exact discrete Fourier
+transform, OpenAI math revision adc7f1241b42e322a6451854ab7e4b4c146bf78a,
+§3, Proposition 3.1, PDF p. 12; §3.3–3.4, Lemmas 3.4–3.5 and equations (3.12)–(3.14), pp. 15–18.
+Mixed rounds preserve exact width; disjoint ordered pairs carry the fixed six-C replacement. Layer semantics is distinct from scalar-table preparation and physical RAM execution.
+-/
+
 set_option autoImplicit false
 /-! Explicit mixed-layer data, preserving every forward C call.
 Parallel nodes contain their disjoint coordinate maps. RAM printing is separate. -/
@@ -9,6 +16,7 @@ open OAI.ExactFourier TypedKernelWords
 open scoped BigOperators
 noncomputable section
 
+/- Paper: Proposition 3.1, p. 12 and Lemma 3.4, p. 17: mixed rounds on disjoint coordinate regions, with identity padding of shorter children. -/
 inductive Layer : ℕ → Type
   | step {n : ℕ} (s : WordStep C n) : Layer n
   | parallel {a b n : ℕ} (e : (Fin a ⊕ Fin b) ≃ Fin n) (L : Layer a) (R : Layer b) : Layer n
@@ -203,6 +211,7 @@ theorem localShear_length (mu : ℂ) : (UniformLocalShear.word mu).length=28 := 
   simp [UniformLocalShear.word,TypedKernelWords.shearWord,hadamardWord]
 
 /-- Every coefficient reference survives; in particular zero coefficients retain six calls. -/
+/- Paper: Equations (3.12)–(3.14), pp. 17–18: parallel ordered pairs use the same 28 instruction phases and exactly six C calls per shear, including coefficient zero. -/
 def matchingLayers {v r : ℕ} (bank : Fin r → ℂ) (W : List (ShearCode (Fin v) r)) (hW : Matching W) :
     List (Layer v) :=
   batchWords 28 (pairPosition W hW)
@@ -258,6 +267,7 @@ theorem shearLayers_length {v r : ℕ} (bank : Fin r → ℂ) (L : List (List (S
 open UniformWorkspacePlanner UniformDAGLayers
 variable {v r e a : ℕ}
 
+/- Paper: Lemma 3.3, pp. 14–15 and (3.11), p. 16: colored dirty replay fits its source, gate and target placements inside the parent coordinates. -/
 def chunkSchedule {H delta : ℕ} (D : UniformToeplitzCrossDAG.DAG r e a) (bank : Fin r → ℂ)
     (he : 0<e) (P : Placement e D.size a v) (hD : UniformToeplitzCrossDAG.DepthBound D H)
     (hd : 2≤delta) (huse : ∀ p,UniformToeplitzCrossDAG.physicalUseCount D p≤delta) : List (Layer v) :=
@@ -340,6 +350,7 @@ theorem pairSchedule_length (n : ℕ) (hv : 0<selected n) (f : PowerSeries ℂ)
     (q : Fin (chunkCount (n-n/2) (selected n)) × Fin (chunkCount (n/2) (selected n))) :
     (pairSchedule n hv f q).length≤1848*(8*Nat.clog 2 n+23) := selectedSchedule_length ..
 
+/- Paper: Lemma 3.4, p. 17: chunk pairs are processed serially, with restored borrowed coordinates reused between pairs. -/
 def correctionSchedule (n : ℕ) (hv : 0<selected n) (f : PowerSeries ℂ) : List (Layer n) :=
   ((pairs n).map (pairSchedule n hv f)).flatten
 
@@ -546,6 +557,7 @@ theorem symmetric_calls {n : ℕ} (L : List (Layer n)) (d : Fin n → ℂ) (hd :
 theorem symmetric_length {n : ℕ} (L : List (Layer n)) (d : Fin n → ℂ) (hd : ∀ j,d j≠0) :
     (symmetric L d hd).length=2*L.length+1 := by simp [symmetric];omega
 
+/- Paper: Lemma 3.5, p. 17 and (3.1)–(3.2), p. 13: compile the two Newton diagonals and exact-width Toeplitz factor, then compose N^T, D_N^(-1), N. -/
 def Nschedule {n : ℕ} (hn : 0<n) {omega : ℂ} (hroot : IsPrimitiveRoot omega n) : List (Layer n) :=
   sandwich (fun j=>NewtonFourier.H omega j.val) (fun j=>scale omega j.val)
     (UniformNewton.Hvalue_ne_zero hroot) (UniformNewton.scaleValue_ne_zero hn hroot) (invH omega) (by simp)
@@ -611,6 +623,7 @@ theorem step_card {n : ℕ} (s : WordStep C n) : Fintype.card (stepIndex s)=s.ca
   | call e => exact (Fintype.card_congr (Equiv.refl (Fin 1))).trans (by simp [WordStep.calls])
 
 /-- Actual finite call labels, including all branches of a parallel layer. -/
+/- Paper: No separate paper lemma: finite call labels and injective pair positions make the “disjoint ordered pairs” requirement of Proposition 3.1, p. 12 explicit. -/
 def Layer.Index {n : ℕ} : Layer n → Type
   | .step s => stepIndex s
   | .parallel _ L R => L.Index ⊕ R.Index
@@ -712,6 +725,7 @@ theorem preparedBatch_length {b s n : ℕ} (d : UniformScalarPreparation.DAG b s
     (position : (Σ _ : Fin s,Fin 2) ↪ Fin n) : (preparedBatch d roots unit hd position).length=28 := batchWords_length ..
 
 /-- Concrete Newton bank adapter; recursive cross-bank production is a separate phase. -/
+/- Paper: Lemma 3.2, p. 13 and Lemma 3.5, p. 17: substitute actual Newton-table outputs into the same factorization. PreparedOutputs is an intermediate source contract, not a hidden complex literal. -/
 def preparedNschedule {n a : ℕ} (hn : 0<n) {omega : ℂ} (hroot : IsPrimitiveRoot omega n)
     (s : UniformMachine.State) (hp : UniformNewtonTableMachine.PreparedOutputs n omega a s) : List (Layer n) :=
   sandwich (fun j=>UniformLocalFourierWord.preparedValue a s j 0)
@@ -783,6 +797,7 @@ theorem scaleReference_bound {b s : ℕ} (d : UniformScalarPreparation.DAG b s) 
     (scaleReference d j q).val<7*(d.length+b+s+1) := UniformShearPreparation.table_output_bound d _
 
 /-- Canonical positive Fourier schedule, including the empty axis. -/
+/- Paper: Proposition 3.1, p. 12: the canonical positive root fixes the Fourier convention. The empty axis is a formal bookkeeping extension; the paper’s compiler assumes r >= 1. -/
 def specifiedSchedule (n : ℕ) : List (Layer n) :=
   if hn:0<n then schedule hn (Complex.isPrimitiveRoot_exp _ (Nat.ne_of_gt hn)) else []
 

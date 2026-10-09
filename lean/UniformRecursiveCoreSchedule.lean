@@ -1,4 +1,11 @@
 import UniformRecursiveTypedBody
+
+/-!
+Paper correspondence: An explicit power saving for the exact discrete Fourier
+transform, OpenAI math revision adc7f1241b42e322a6451854ab7e4b4c146bf78a,
+§2.1–2.4, equations (2.3), (2.6)–(2.7), PDF pp. 5–10; §2.6, Theorem 2.6, pp. 11–12.
+The typed chronological core includes initial boundary, all fixed invocations, terminal translation and signed-exchange correction. It consumes actual printed records and counts every dispatch; no matrix-action premise is supplied.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformRecursiveCoreSchedule
 open UniformMachine UniformFixedNetwork UniformFixedNetworkScheduleMachine
@@ -54,6 +61,7 @@ lemma printedRecords_append (T:ℕ)(rs ts:List Record)(s:State)(h:PrintedRecords
 
 /-- Actual common Program executes the entire nonpadding fixed network from
 its real printer output. No record-loop or matrix-action premise remains. -/
+/- Paper: §2.1–2.4, equations (2.3), (2.6)–(2.7), PDF pp. 5–10; §2.6, Theorem 2.6, pp. 11–12. The typed chronological core includes initial boundary, all fixed invocations, terminal translation and signed-exchange correction. It consumes actual printed records and counts every dispatch; no matrix-action premise is supplied. -/
 theorem execution (n B T A F q rest stack depth stackTop reserve:ℕ)(cost:ℕ→ℕ)(x:Fin n→ℂ)
  (s:State)(f:Fin W→Fin (2^(q*m+rest))→Scalar)
  (childIH:UniformRecursiveGroupExecution.SmallerBodies (q*m+rest) n B reserve stack stackTop cost x)

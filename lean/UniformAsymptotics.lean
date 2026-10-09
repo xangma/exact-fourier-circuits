@@ -4,6 +4,17 @@ import UniformWorkingLength
 import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
 import Mathlib.Analysis.SpecialFunctions.Stirling
 
+/-!
+# The final logarithmic shape and decimal consequence
+
+*An explicit power saving for the exact discrete Fourier transform*, OpenAI
+math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`, §5.1 Lemma 5.1,
+PDF p. 21 (`lem:prime-lengths`), and §5.4, PDF p. 23, proof of Theorem 1.1
+and Corollary 1.2 (`thm:main`, `cor:decimal`). These are numerical asymptotic
+lemmas. `cost_bound_transfer` must be combined with the final actual-execution
+budget; this module does not itself assert a terminating machine run.
+-/
+
 /- Numeric asymptotic implications only; no operational algorithm is asserted here. -/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformAsymptotics
@@ -22,6 +33,8 @@ theorem paper_exponent_lt_decimal : UniformExponent.theta < decimalExponent := b
   linarith
 
 /-- Every strict exponent gap absorbs the entire iterated-logarithm factor. -/
+/- §5.4, PDF p. 23: every positive gap in the log exponent absorbs the
+entire fixed power of log log n; specialize to beta=1-10^(-13) below. -/
 theorem realCost_isLittleO (theta beta : ℝ) (hgap : theta < beta) :
     (realCost theta) =o[atTop] (fun x : ℝ => x * (Real.log x) ^ beta) := by
   have hlog := (isLittleO_log_rpow_rpow_atTop (4 - theta) (sub_pos.mpr hgap)).comp_tendsto
@@ -50,11 +63,15 @@ theorem paperCost_isBigO_decimal :
     UniformMachine.asymptoticCost UniformExponent.theta =O[atTop] decimalCost :=
   paperCost_isLittleO_decimal.isBigO
 
+/- Corollary 1.2, PDF p. 2, proved in §5.4, p. 23: transfer a supplied
+paper-shaped budget. Actual finalBudget's Big-O proof is separate. -/
 theorem cost_bound_transfer (T : ℕ → ℝ)
     (hT : T =O[atTop] UniformMachine.asymptoticCost UniformExponent.theta) :
     T =o[atTop] decimalCost := hT.trans_isLittleO paperCost_isLittleO_decimal
 
 /-- A clearly conditional transfer from the two working-axis estimates used in the paper. -/
+/- §5.2 (5.6), PDF p. 22, followed by §5.4, p. 23: combine L=O(n),
+ell=O(log n/log log n) and log ell=O(log log n), retaining theta exactly. -/
 theorem shape_transfer (theta : ℝ) (htheta : 0 ≤ theta) (L a b : ℕ → ℝ)
     (hL : L =O[atTop] (fun n : ℕ => (n : ℝ)))
     (ha : a =O[atTop] (fun n : ℕ => Real.log (n : ℝ) / Real.log (Real.log (n : ℝ))))
@@ -328,6 +345,8 @@ theorem axisRatio_isBigO :
   nlinarith [hb.2.2]
 
 /-- The actual computably selected axis count has the paper's critical shape. -/
+/- Lemma 5.1, PDF p. 21: factorial lower/product upper bounds establish
+the actual selected odd-axis count's two-sided logarithmic shape. -/
 theorem axisCount_isTheta :
     (fun n : ℕ => (UniformWorkingLength.axisCount n : ℝ)) =Θ[atTop]
       (fun n : ℕ => Real.log (n : ℝ) / Real.log (Real.log (n : ℝ))) :=

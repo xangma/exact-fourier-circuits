@@ -1,5 +1,13 @@
 import UniformAxisCacheForestExecution
 import UniformAxisCacheRectangleTransport
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§3.4, final preparation accounting in Lemma 3.4, PDF p. 17 (`loc:toeplitz`); §4.3, local preparation in Proposition 4.2 proof, p. 20; §5.3, shared arithmetic DAGs, p. 23.
+
+Persistent leaf/rectangle factors retain actual coefficient semantics and allocated cells. This internal cache predicate is produced by axis-cache execution and transported through exact heap frames; a final caller must obtain it from charged axis-cache execution.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformAxisCacheContents
 open UniformMachine UniformAxisCacheStartupMachine UniformJointCacheAllocation

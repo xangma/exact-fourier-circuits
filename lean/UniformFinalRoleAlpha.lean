@@ -1,5 +1,15 @@
 import UniformFinalRoleRetention
 import UniformPhysicalCRTConsumerMachine
+
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.2 (5.5)-(5.6), PDF p.22, and §5.3 three-transform chirp
+construction, PDF pp.22-23 (`eq:crt-fourier`, `eq:working-transform`, `eq:chirp`).
+
+Role-bank, prepared-spectrum and movement bookkeeping refines the actual
+three-transform algorithm. The paper does not specify these cells or registers;
+all desired values must be obtained from the same actual producing executions.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformFinalRoleAlpha
 open UniformMachine UniformTensorMonomialMachine UniformFinalRoleModel

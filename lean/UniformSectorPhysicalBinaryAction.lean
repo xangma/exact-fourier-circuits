@@ -1,5 +1,13 @@
 import UniformSectorTransposeCoordinates
 import UniformBinaryTensorCoordinates
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§4.3, proof of Proposition 4.2, PDF p. 20, and §4.2, Lemma 4.1, p. 19 (`prop:tensor-fourier`, `lem:sector-address`).
+
+The paper does not name these integer bit codecs. They discharge the implementation obligation that each packed sector carries the child matrix in the literal within-sector order, including singleton axes and role-major batching.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformSectorPhysicalBinaryAction
 open UniformMachine UniformSectorPacking UniformSectorTensor
@@ -29,6 +37,7 @@ lemma physicalMatrix_zero (x y:Fin (2^0)):physicalMatrix 0 x y=1:=by
  apply Finset.prod_eq_one
  intro i _
  exact Fin.elim0 i
+/- Lemma 4.1, (4.3), p. 19, plus Proposition 4.2 proof, p. 20: within-sector mixed-radix ordinals must agree with the recursive child’s binary coordinates. Bit-order equality is additional implementation bookkeeping. -/
 /-- This is the actual mixed-radix within-sector ordinal, merely with its
 proved width rewritten as2^q. There is no chosen/host permutation. -/
 def physicalSector (axes:List Axis) (c:BlockChoices axes):Positions axes c ≃ Fin (2^sectorPairCount axes c):=
@@ -98,6 +107,7 @@ theorem sectorMatrix_physical (axes:List Axis) (c:BlockChoices axes):
  change sectorTensor axes c ((physicalSector axes c).symm i) ((physicalSector axes c).symm j)=_
  rw[sectorTensor_physical]
  simp only[Equiv.apply_symm_apply]
+/- Theorem 2.6, pp. 11–12: recursion batches a fixed number of arbitrary arrays. These numeric coordinates implement that role-major batch ABI rather than adding a new matrix assumption. -/
 /-- Literal role-major coordinates consumed by the4120..4123 child ABI. -/
 def batchCoordinate (W:ℕ) (axes:List Axis) (c:BlockChoices axes):
  (Fin W×Positions axes c) ≃ Fin (W*2^sectorPairCount axes c):=

@@ -1,6 +1,13 @@
 import UniformConvolutionDAG
 import OAI.Computability.FourierCircuit.ToeplitzCross
 
+/-!
+Paper correspondence: An explicit power saving for the exact discrete Fourier
+transform, OpenAI math revision adc7f1241b42e322a6451854ab7e4b4c146bf78a,
+§3.3, Lemma 3.4, equations (3.5)–(3.10), PDF pp. 15–16 (loc:cross, loc:displacement-entry, loc:displacement, loc:reconstruction, loc:two-convolutions, loc:chunk-bounds).
+This is the actual six-convolution displacement DAG, with coefficients read from a shared bank. Bank production and physical replay are separately proved; generic recurrence hypotheses are discharged for the Toeplitz specialization.
+-/
+
 set_option autoImplicit false
 
 /-! Actual prepared-reference rank-three displacement compiler. Preparation of
@@ -38,6 +45,7 @@ def emitProgram {r n t : ℕ} (p : UniformReplayPrint.Program r n t) :
   | 0,_ => p
   | a+1,g => .step (emitProgram p (g ∘ Fin.castSucc)) (mapGate id keepIndex (g (Fin.last a)))
 
+/- Paper: Lemma 3.4, pp. 16–17: shared inputs, serial composition and three-branch addition preserve an explicit DAG. Reference relocation is implementation bookkeeping. -/
 structure DAG (r n a : ℕ) where
   size : ℕ
   program : UniformReplayPrint.Program r n size
@@ -174,6 +182,7 @@ theorem runDepth_emit {r n t a : ℕ} (p : UniformReplayPrint.Program r n t)
       · simpa only [emitProgram,runDepth,gateIndex_castSucc,Fin.snoc_castSucc,Function.comp_apply] using ih.2 j
 
 /-- Bound every register of the literal program, not only its selected outputs. -/
+/- Paper: Equation (3.10), p. 16: bound every actual gate level, including intermediate composition registers. -/
 def DepthBound {r n a : ℕ} (D : DAG r n a) (d : ℕ) : Prop :=
   ∀ i, runDepth D.program (fun _ => 0) i ≤ d
 
@@ -1169,6 +1178,7 @@ theorem kernelDAG_bounds (k a e : ℕ) (ha : a ≤ width k) (he : e ≤ width k)
 end
 
 /-- Parallel concatenation shares all original data ports. -/
+/- Paper: Equation (3.10), p. 16: bounded fan-out is retained under explicit graph combination, including output references; no coefficient is inspected. -/
 def DAG.join {r n a b : ℕ} (A : DAG r n a) (B : DAG r n b) : DAG r n (a+b) :=
   let f : Fin (n+1) → Fin (n+1+A.size) := fun i => ⟨i.val,by have := i.isLt; omega⟩
   ⟨A.size+B.size,appendProgram A.program f B.program,
@@ -1436,6 +1446,7 @@ theorem sharedBank_embedding (k : ℕ) (kernels : Fin 6 → Fin (width k) → �
       Fin.addCases_right,Equiv.symm_apply_apply,UniformConvolutionDAG.coefficientBank,Fin.addCases_right]
 
 /-- The exact triangular convolution computed by a single printed block. -/
+/- Paper: Equations (3.3) and (3.9), pp. 14, 16: no-alias padded convolution is the actual lower-Toeplitz action. -/
 theorem convolutionDAG_eval (k n t m : ℕ) (hsize : n+t ≤ width k) (hm : m ≤ width k)
     (v : Fin t → ℂ) (x : Fin n → ℂ) :
     (convolutionDAG k n m hm).eval (UniformConvolutionDAG.coefficientBank k
@@ -1488,6 +1499,7 @@ theorem kernelDAG_eval (k a e : ℕ) (ha : a ≤ width k) (he : e ≤ width k)
   rw [convolutionDAG_eval k e a a (by omega) ha v]
   rw [Matrix.mulVec_mulVec,← OAI.ExactFourier.Displacement.kernel_eq_mul]
 
+/- Paper: Equations (3.6)–(3.8), pp. 15–16: one interior outer product plus first-row and first-column corrections. All three branches remain present if entries vanish. -/
 def leftFactor (M : ℕ → ℕ → ℂ) (v w : ℕ → ℂ) (b : Fin 3) : ℕ → ℂ :=
   if b.val=0 then v else if b.val=1 then OAI.ExactFourier.Displacement.delta
     else fun i => if i=0 then 0 else M i 0-v i*w 0
@@ -1537,6 +1549,7 @@ theorem rankBranch_eval (k a e : ℕ) (ha : a ≤ width k) (he : e ≤ width k)
 
 /-- Closed action of the literal six-convolution graph, obtained from the
 actual rank-three displacement recurrence rather than an action certificate. -/
+/- Paper: Equations (3.7)–(3.9), p. 16: the six literal convolutions reconstruct the rank-three displacement matrix. The recurrence assumption is specialized below. -/
 theorem crossDAG_eval (k a e : ℕ) (ha : 0<a) (he : 0<e) (hsize : 2*(a+e) ≤ width k)
     (M : ℕ → ℕ → ℂ) (v w : ℕ → ℂ)
     (hrec : ∀ i j, i+1<a → j+1<e → M (i+1) (j+1)=M i j+v (i+1)*w (j+1))
@@ -1559,6 +1572,7 @@ theorem crossDAG_eval (k a e : ℕ) (ha : 0<a) (he : 0<e) (hsize : 2*(a+e) ≤ w
 
 /-- The actual paper Toeplitz-cross recurrence supplies all matrix-action
 hypotheses. Reciprocals and spectra still belong to scalar preparation. -/
+/- Paper: Equations (3.5)–(3.6), p. 15: ToeplitzLayers.cross_interior supplies the displacement recurrence for every admissible source/target rectangle. -/
 theorem toeplitz_cross_eval (k s a e i₀ j₀ : ℕ) (ha : 0<a) (he : 0<e)
     (hsize : 2*(a+e) ≤ width k) (h g : ℕ → ℂ) (hi : s ≤ i₀) (hj : j₀+e ≤ s)
     (x : Fin e → ℂ) :
@@ -1577,6 +1591,7 @@ theorem crossReplay_length (k a e : ℕ) (ha : a ≤ width k) (he : e ≤ width 
   have hs := crossDAG_size k a e ha he
   exact h.trans (by omega)
 
+/- Paper: Lemma 3.3, pp. 14–15, composed with Lemma 3.4’s cross DAG: dirty gate contents are arbitrary and restored after the target update. -/
 theorem crossReplay_spec (k a e : ℕ) (ha : 0<a) (he : 0<e) (hsize : 2*(a+e) ≤ width k)
     (M : ℕ → ℕ → ℂ) (v w : ℕ → ℂ)
     (hrec : ∀ i j, i+1<a → j+1<e → M (i+1) (j+1)=M i j+v (i+1)*w (j+1))

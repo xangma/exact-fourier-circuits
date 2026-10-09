@@ -1,5 +1,13 @@
 import OAI.Computability.FourierCircuit.Core
 
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.3, paragraph after (5.9), PDF p.23 (`eq:root-size`).
+
+Algebraic extraction of the specified canonical roots by integer powers.
+The exponential definition fixes the phase; runtime extraction is separately
+charged by the root and power machines.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformRoots
 open OAI.ExactFourier

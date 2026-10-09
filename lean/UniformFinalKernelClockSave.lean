@@ -2,6 +2,15 @@ import UniformActualCompleteClockResult
 import UniformFinalClockOuterRuntime
 import UniformFinalClockHeapTransform
 
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.3, charged transform of the fixed operand, PDF p.23
+(`eq:chirp`).
+
+Derives the first run's kernel spectrum and prepared tags, then executes its
+real copy. The saved values refer to that same clock endpoint; there is no
+independently supplied spectrum or uncharged preparation transform.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformFinalKernelClockSave
 open UniformMachine UniformFinalNumericJoin UniformSelectedPhysicalCRT UniformSequentialExecution
@@ -31,6 +40,7 @@ structure Result {n:ℕ}[NeZero (volume n)](hn:0<n)(x:Fin n→ℂ)(s kernelOut u
 
 /-- Join the same actual complete-clock run to the real copy15. Spectrum
 values, prepared tags and every retained input are derived from that run. -/
+/- Paper stage: §5.3, charged kernel transform, PDF p.23: prepared tags and numeric spectrum are conclusions of this same actual first run, then copied by real instructions. -/
 theorem execution {n ticks:ℕ}[NeZero (volume n)](hn:0<n)(x:Fin n→ℂ)
  (v:ℕ→Fin (volume n)→Scalar)(s kernelOut:State)
  (pc:s.pc=0)

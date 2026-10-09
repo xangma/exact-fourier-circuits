@@ -3,11 +3,20 @@ import UniformNetworkCost
 
 /- Canonical sector packing from ordered width-one/two local block tables.
    Reference decoding is explicit; charged array traversal is a separate implementation. -/
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§4.2, Lemma 4.1, (4.2)–(4.3), PDF p. 19 (`lem:sector-address`, `eq:sector-start`, `eq:sector-updates`), using the prefix bound (4.1), p. 18.
+
+Explicit local block codecs give packing/unpacking, contiguous disjoint sectors, and a prefix enumeration. Matrix/cost geometry here does not by itself execute a RAM traversal.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformSectorPacking
 open UniformTraversal
 open scoped BigOperators
 
+/- Lemma 4.1, p. 19: ordered local blocks are decoded by preceding width and within-block position. The explicit inverses below define the mathematical permutation, not an uncharged runtime inverse search. -/
 abbrev BlockPosition (ws : List ℕ) := (b : Fin ws.length) × Fin (ws.get b)
 
 def blockEncode (ws : List ℕ) (x : BlockPosition ws) : Fin ws.sum :=
@@ -244,6 +253,7 @@ theorem sectorIndex_cons (a : Axis) (axes : List Axis) (b : Fin a.widths.length)
   rw [sectorWidths_length]
   ring
 
+/- Equation (4.2), p. 19: classify earlier sectors by the first differing axis. The recursive formula is later identified with `startSummands` by `sectorStart_paper_sum`. -/
 def sectorStart : (axes : List Axis) → BlockChoices axes → ℕ
   | [], _ => 0
   | a :: axes, (b, bs) => blockBefore a.widths b * (radices axes).prod + a.widths.get b * sectorStart axes bs
@@ -292,6 +302,7 @@ theorem packedEquiv_value (axes : List Axis) (x : SectorPosition axes) :
     (mixedEquiv (sectorRadices axes x.1) x.2).val = _
   exact congrArg₂ (fun a b => a + b) (sectorStart_before axes x.1) (mixedEquiv_value _ x.2)
 
+/- Lemma 4.1, p. 19: lexicographic block choices followed by internal positions give a bijective packing and disjoint, covering contiguous sector intervals. -/
 /-- The actual permutation and its inverse, derived from local tables and explicit codecs. -/
 def packingPermutation (axes : List Axis) : Equiv.Perm (Fin (radices axes).prod) :=
   (originalEquiv axes).symm.trans (packedEquiv axes)
@@ -355,6 +366,7 @@ theorem sector_interval (axes : List Axis) (b : BlockChoices axes) (j : Fin (rad
     change sectorStart axes b + (j.val - sectorStart axes b) = j.val
     omega
 
+/- Equation (4.3), p. 19: the carried S,Q,o,I updates compute these exact original and packed addresses, including nonconsecutive local pair positions. -/
 def packingDigits : (axes : List Axis) → SectorPosition axes → List PackingDigit
   | [], _ => []
   | a :: axes, ⟨(b, bs), (t, ts)⟩ =>
@@ -435,6 +447,7 @@ theorem sectorRadices_length (axes : List Axis) (b : BlockChoices axes) :
     rcases b with ⟨b, bs⟩
     exact congrArg Nat.succ (ih bs)
 
+/- Proposition 4.2 proof, p. 20: sector width is 2^k, k is at most the number of axes, and all sector widths sum to R. This supplies geometry to the cost bound; the literal recursive execution is separate. -/
 def sectorPairCount (axes : List Axis) (b : BlockChoices axes) : ℕ :=
   (sectorRadices axes b).countP (fun q => q == 2)
 
@@ -483,6 +496,7 @@ theorem actual_sector_cost_bound (axes : List Axis) :
       UniformNetworkCost.layerCount (radices axes).prod axes.length :=
   UniformNetworkCost.sector_partition_bound _ _ _ (pairCounts_axes_bound axes) (pairCounts_sum_widths axes)
 
+/- Lemma 4.1 proof, p. 19: traverse block choices while carrying only start, width and pair count; block prefixes are bounded by digit prefixes even when an axis has one block. -/
 structure BlockState where
   start : ℕ
   width : ℕ
@@ -619,6 +633,7 @@ theorem generated_sector_states_nodup (axes : List Axis) :
   exact (Multiset.toFinset_card_eq_card_iff_nodup
     (m := ((run (blockLayers axes) initialBlockState).output : Multiset BlockState))).mp hc
 
+/- Lemma 4.1, p. 19: packing and unpacking are inverse array actions. The final theorem exposes precisely the paper’s sum (4.2). -/
 def packArray {α : Type*} (axes : List Axis) (x : Fin (radices axes).prod → α) :=
   fun i => x (unpackingPermutation axes i)
 def unpackArray {α : Type*} (axes : List Axis) (x : Fin (radices axes).prod → α) :=

@@ -1,5 +1,15 @@
 import UniformFinalPhysicalTableInputs
 import UniformFastPhysicalCRTCycle
+
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.2, linear CRT permutations after (5.5), PDF p.22
+(`eq:crt-fourier`), and §5.4 integer/address bounds, PDF p.24.
+
+The produced physical CRT table and its protected-bank geometry refine the
+paper's costed index permutations. Allocation addresses, headers and frames are
+implementation bookkeeping rather than a separate paper argument.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformFinalPhysicalTableExecution
 open UniformMachine UniformFastPhysicalCRTMachine UniformSelectedPhysicalCRT UniformCRTTraversalCycle
@@ -9,6 +19,7 @@ noncomputable section
 
 /-- The actual selected fast converter derives every digit and prefix weight
 from the retained seed directory. Its two output banks use physical MSB order. -/
+/- Paper stage: §5.2, linear CRT permutations after (5.5), PDF p.22: use actual retained radix/source tables and the proved <2L carry-visit bound. -/
 theorem execution(c:UniformJointAllocation.Constants){n:ℕ}(hn:0<n)(x:Fin n→ℂ)(s:State)
  (pc:s.pc=0)(args:Args (UniformAllAxisSeedPreparation.axisCount n) (len n) (addresses c n) s)
  (core:Core n x s)(wb:WordBound (UniformJointAllocation.envelope c n) s):∃ticks u,

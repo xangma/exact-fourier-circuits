@@ -1,5 +1,13 @@
 import UniformProducedCalendarMatrix
 import UniformCalendarAxisAction
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§3.5, proof of Proposition 3.1, PDF pp. 17–18, especially (3.12)–(3.14); §4.3, Proposition 4.2 proof, p. 20 (`loc:three-kernel`, `loc:nonzero-shear`, `loc:nonzero-split`).
+
+The common fixed C/diagonal word is represented by ordered calendar events. A local `Action` supplies both the dispatch order and matrix identity; the complete clock constructs this input from its retained cache, rather than assuming a desired Fourier output.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformProducedCalendarAction
 open UniformAllAxisSeedPreparation UniformGlobalCalendarDispatch

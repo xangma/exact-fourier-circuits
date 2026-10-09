@@ -1,4 +1,14 @@
 import UniformFastPhysicalCRTArithmetic
+
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.2, linear CRT index enumeration after (5.5), PDF p.22
+(`eq:crt-fourier`), and prefix bound (4.1), PDF p.18.
+
+Mixed-radix carry enumeration is an implementation refinement of the paper's
+linear traversal. Initialization, carry visits, frames and instruction counts
+have no one-to-one paper lemma; the final caller charges this actual producer.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformFastPhysicalCRTArithmetic
 open UniformCRTTraversalCycle UniformCRTTraversalMachine
@@ -24,6 +34,7 @@ lemma reverse_valid {a:ℕ}(r:Fin a→ℕ)(hr:∀i,2≤r i):CarryRadices (List.o
  exact hr i.rev
 /-- The actual physical odometer visits the rightmost axis first. All selected
 positive-length radices are at least two, so the full finite count is <2V. -/
+/- Paper stage: §4.1 (4.1), PDF p.18, used by §5.2, PDF p.22: all selected positive-length radices >=2 give fewer than 2L odometer visits. -/
 lemma reverse_totalVisits {a:ℕ}(r:Fin a→ℕ)(hr:∀i,2≤r i):
  totalVisits (reverse r) (∏i,r i)<2*(∏i,r i):=by
  have positive:∀i,0<r i:=fun i=>lt_of_lt_of_le (by decide) (hr i)

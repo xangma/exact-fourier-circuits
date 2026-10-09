@@ -1,9 +1,17 @@
 import SavingBudget
 
+/-!
+Paper correspondence: An explicit power saving for the exact discrete Fourier
+transform, OpenAI math revision adc7f1241b42e322a6451854ab7e4b4c146bf78a,
+§2.1–2.3, equations (2.2), (2.4), (2.8)–(2.9), PDF pp. 5–9; §2.6, equation (2.10), p. 11; Appendix A, Lemma A.1, p. 25.
+Arithmetic only: `residuals` is the padded S of (2.10), not the unpadded s of (2.8). The chosen column count specializes Lemma A.1; it does not materialize the astronomical word.
+-/
+
 /- The paper's h=100 arithmetic budget, with exponentials retained symbolically.
    This verifies a proposed count formula, not an actual circuit or word. -/
 namespace ExactFourierCircuits.ExplicitSeedBudget
 
+/- Paper: The fixed network parameters and signed dimension saving are (2.2), (2.4), (2.8)–(2.9), pp. 5–9. Padding changes s to S as in (2.10), p. 11. -/
 def h : ℕ := 100
 def v : ℕ := 161700
 def degree : ℕ := 147731
@@ -15,6 +23,7 @@ def paddedRoles : ℕ := 2361183241434822606848
 def margin : ℕ := 6871402692000000
 def residuals : ℕ := 2361183241427951204156000000
 def pointwiseCalls : ℕ := 22486194194905980000000
+/- Paper: Lemma A.1, p. 25: choose f > 2H/Delta. Here pointwiseCalls is an explicit H bound and floor division selects a closed sufficient f. -/
 def columns : ℕ := 2 * pointwiseCalls / margin + 1
 def bits : ℕ := m * columns + roleBits
 -- Keep the address exponent a parameter, preventing eager evaluation of 2^6544862999999.
@@ -59,6 +68,7 @@ theorem ordinary_factorization (n : ℕ) (hn : 0 < n) :
   exact he.trans hw.symm
 
 /-- The proposed call formula is strictly below the ordinary tensor-axis budget. -/
+/- Paper: Lemma A.1, p. 25: factor out 2^(mf-1) and use Delta*f > 2H. This is only the arithmetic margin; ExplicitSeed.word_saves connects it to the actual word. -/
 theorem proposed_count_saves (n : ℕ) (hn : n = m * columns) : calls n < ordinaryCalls n := by
   have hp : 0 < n := by
     have hm : 0 < m * columns := by rw [columns_value]; norm_num [m]

@@ -1,5 +1,13 @@
 import UniformGenericPhysicalCoordinate
 import UniformProducedAllAxisGeometry
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§4.1, mixed-radix traversal and (4.1), PDF p. 18; §5.2, CRT permutations and (5.5), p. 22 (`eq:prefix-nodes`, `eq:crt-fourier`).
+
+The increasing printed axis order induces one fixed most-significant-digit physical coordinate map. This is codec bookkeeping; conversion to CRT input/output order requires the separate charged permutation stages.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformProducedPhysicalCoordinate
 open UniformSectorPacking

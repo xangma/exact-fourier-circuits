@@ -2,11 +2,20 @@ import UniformLocalFourierLayers
 import UniformCommonSlots
 import OAI.Computability.FourierCircuit.PiTensor
 
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§4.3, Proposition 4.2, PDF pp. 19–20, especially (4.5) (`prop:tensor-fourier`, `eq:tensor-multiply`).
+
+Identity padding and multiplicativity identify the synchronized slot product on arbitrary local data. This module proves matrix semantics; charged physical traversal and execution are separate.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformSynchronizedLayers
 open OAI.ExactFourier UniformLocalFourierLayers
 noncomputable section
 
+/- Proposition 4.2, proof, p. 20: append singleton/identity idle slots without changing a local word’s product or C-call count. -/
 /-- Chronological local layers, with actual identity layers appended. -/
 def padded {r : ℕ} (T : ℕ) (L : List (Layer r)) : List (Layer r) :=
   L ++ List.replicate (T-L.length) (Layer.idle r)
@@ -50,6 +59,7 @@ omit [DecidableEq ι] in
 theorem tensorSchedule_length (L : ∀i,List (Layer (r i))) (h : ∀i,(L i).length≤T) :
     (tensorSchedule L h).length=T := by simp [tensorSchedule]
 
+/- Equation (4.5), p. 20: the chronological tensor-slot product equals the tensor of the local chronological products, on arbitrary values in every coordinate. -/
 /-- Multiplicativity proves synchronization on arbitrary values, including all
 borrowed coordinates; no intermediate restoration across other axes is assumed. -/
 theorem tensorSchedule_product (L : ∀i,List (Layer (r i))) (h : ∀i,(L i).length≤T) :
@@ -65,6 +75,7 @@ theorem tensorSchedule_product (L : ∀i,List (Layer (r i))) (h : ∀i,(L i).len
   rw [List.map_reverse,List.map_ofFn] at he
   exact he.trans (slot_product (L i) (h i))
 
+/- Specialization to the selected working-length factors of §5.2, p. 22. Local Fourier correctness enters through the exact-width compiler (Proposition 3.1, pp. 12, 17–18). -/
 abbrev axes (n : ℕ) := Fin (UniformWorkingLength.axisCount n+1)
 abbrev radix (n : ℕ) := UniformSelectedCRT.radices n
 def localSchedules (n : ℕ) (i : axes n) := specifiedSchedule (radix n i)

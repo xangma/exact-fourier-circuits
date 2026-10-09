@@ -1,4 +1,14 @@
 import UniformFinalClockCost
+
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.4 proof of Theorem 1.1, PDF pp.23-24 (`thm:main`,
+`eq:main-bound`), with the model in §1.1, PDF p.2 (`sec:model`).
+
+Logical conversion of a proved charged Big-O majorant and actual execution
+into positive constants, an eventual threshold and a polynomial word envelope.
+This conditional adapter does not independently construct the algorithm.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformFinalStatementBridge
 open UniformMachine Filter Asymptotics

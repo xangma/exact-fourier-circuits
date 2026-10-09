@@ -1,0 +1,125 @@
+{
+  "revision": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "files": [
+    {
+      "path": "preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/README.md",
+      "git_blob": "2ce95850aa146a242502a4c20c295fa73e81bb7d",
+      "sha256": "dd9405ab717a224bdec887aba3b4296a771eb78dec7a08f84e987e3e4081d464"
+    },
+    {
+      "path": "preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/figures/proof-map.tex",
+      "git_blob": "2e1f8d3c14298b4edf64c74a0ded695d750a4315",
+      "sha256": "86c5d9c70adef1c6262b6399aaefe3bf900453e0efbb8c82996e5869c847338e"
+    },
+    {
+      "path": "preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/figures/sectors.pdf",
+      "git_blob": "bd979b5ebce0732e42e77383c945077623b81038",
+      "sha256": "268c5adab6ff676d5cd8726cba8e9ae167666bfb9ef8ec232744212ceee7f05b"
+    },
+    {
+      "path": "preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/main.tex",
+      "git_blob": "6bf05b75afbd613796a40ebaf7f8b1d39c462b81",
+      "sha256": "7c4fc69f11b77c56c9177d6285165ddedb20bcea75ed0845dca0b187368130bd"
+    },
+    {
+      "path": "preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/references.bib",
+      "git_blob": "aafd3724963d27571393c6b507b571088aaaf7da",
+      "sha256": "19c8b77639a9f441b8f046d9661e03e8d1fdf103d3e24407f7850f20f5f0851b"
+    },
+    {
+      "path": "preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/all-lengths.tex",
+      "git_blob": "8e2281f08c336865025a3dc10b6c790e9bfc68ed",
+      "sha256": "9dfb302812971062af2990918c4b02190e3ad0ca8f271dc207241976b23c45c7"
+    },
+    {
+      "path": "preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/introduction.tex",
+      "git_blob": "22171e11e7c43a367b823725514c7f424527217d",
+      "sha256": "341e2b3f2fad1db94305d7b5efc4eb29cc7bd3c6ec69ea68cf9775840ebc3523"
+    },
+    {
+      "path": "preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/local.tex",
+      "git_blob": "260a19bd8f7189afbe89b0af0508d979cd1e1ca6",
+      "sha256": "616e2707aabf2f7591a687331d4cb0f2fa486f92c3f7fe96a133b90faff60561"
+    },
+    {
+      "path": "preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/network.tex",
+      "git_blob": "991c7706b7a03f45fbf3ba22bfb4372bf111fb4a",
+      "sha256": "7218f4312afb772bde87c5e1c64eabe7ab3524be090ea5621afb5608a4b10350"
+    },
+    {
+      "path": "preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/synchronization.tex",
+      "git_blob": "cdc0f6bfb8224fcdb25b08552612522555cd5f3f",
+      "sha256": "4c461713ce43d5d2dd8fca84f3260925b8fb69b819e96067bc2a76e3d75c306c"
+    },
+    {
+      "path": "preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/synthesis.tex",
+      "git_blob": "c339f25a7645aba17e1c478712b536e4d0e9b28e",
+      "sha256": "601067c49c2d61c56d0d42ab4a35d4c3d4b2c95d5428e61e44fda71c3dce1d39"
+    },
+    {
+      "path": "preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/main.pdf",
+      "git_blob": "aa2790a4addefbaea542e5be40739ca7c645b090",
+      "sha256": "670d0115ea2553e65f22167c176d2f31218d4d41726fe4e5702e2b149cad0896"
+    },
+    {
+      "path": "preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/README.md",
+      "git_blob": "4e90deb28f9ae9418f6967ebb2c477b3833d7239",
+      "sha256": "87f2088fb02c24eb9a304786fad9e6a6da5033f6dab009b671453ed96deff2d2"
+    },
+    {
+      "path": "preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/main.tex",
+      "git_blob": "b246bd2aa82a6b84782054fa2b3bb4e1d73904d8",
+      "sha256": "081de539120f6e9b90e2cd45c624e654347946a7c033a65b9a65b8e6152791af"
+    },
+    {
+      "path": "preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/references.bib",
+      "git_blob": "0ea477b23c388ed50437325d159f5ef0e2710582",
+      "sha256": "64108fb813794ce71ab9bc7f64dd18f18b755d76d27159f0e9a583064f65d80b"
+    },
+    {
+      "path": "preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/01-introduction.tex",
+      "git_blob": "2f95210b98f4157658aaa494a218cbddccb35b94",
+      "sha256": "7d7df83a197091ab04737eca2ddbe5f97e99d02b7a133f2710ee69c00bd3cad7"
+    },
+    {
+      "path": "preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/02-generation.tex",
+      "git_blob": "be0d10bcdc985140c36d764267bcd01438f48fc2",
+      "sha256": "26813305e1cc8768198cfc3ed4501b1a059f47fbd501ea1e2ac9a40cd1379169"
+    },
+    {
+      "path": "preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/03-fourier-transfer.tex",
+      "git_blob": "0b247e885bf3391db94848d7800fca26209039f1",
+      "sha256": "27d252f63ad9a1562466495c5a08893d1923851fe3e29544ec8320bc4e73f535"
+    },
+    {
+      "path": "preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/04-packing-prices.tex",
+      "git_blob": "f03044fea29598170e9276a05f59c843807b0b7a",
+      "sha256": "b9dbde917c789fdd0f323ce5fbdbc5167c8d717a9ff584ed98356ab5ecdf9d0a"
+    },
+    {
+      "path": "preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/05-corners.tex",
+      "git_blob": "e7ffa078ecb9ba3200d4b9652406567b65084d23",
+      "sha256": "6a1ade4ca65404b3b879cde3f59472a6327b3cf4dcd2ffef32d5b8ef44ee742d"
+    },
+    {
+      "path": "preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/06-feedback.tex",
+      "git_blob": "c30473849e8f7d91fb6eefb94ff2ba103721737c",
+      "sha256": "89c7956917f279b3e8598a005fe8c6ca700b08c606ca3b9be13f5c7c437f1a6c"
+    },
+    {
+      "path": "preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/07-pivots.tex",
+      "git_blob": "102bde0832d36503f42a343eef87d754544ec5a0",
+      "sha256": "16cd5149c2af877f3ac3e04b55ac0b6589df964c48910dcc266f26f02ca742a2"
+    },
+    {
+      "path": "preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/08-reflection.tex",
+      "git_blob": "53c95e2728809fd6d753716abd1f62ada151d011",
+      "sha256": "9add66e1caaa8aae78e6469287b2b7e5779f524314e1ae7c6514a57a73ec250d"
+    },
+    {
+      "path": "preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/main.pdf",
+      "git_blob": "502242e4b5079187e46d4c991360dca17063820b",
+      "sha256": "e2165b9f6796f0189292220c7edc0c6e19789bd8329a127a24d404da1e81e06b"
+    }
+  ]
+}

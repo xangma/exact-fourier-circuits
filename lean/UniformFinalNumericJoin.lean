@@ -2,6 +2,15 @@ import UniformChirpOutputMachine
 import UniformChirpPointwiseMachine
 import UniformCRTTraversalCycle
 
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.2 (5.5)-(5.6), PDF p.22, and §5.3 (5.7) and
+three-transform argument, PDF pp.22-23 (`eq:crt-fourier`, `eq:working-transform`, `eq:chirp`).
+
+Joins physical CRT coordinates, the actual fixed/data spectra and final
+normalized output. Conditional numeric helpers are discharged by the actual
+clock and movement executions in UniformFinalDFTExecution.execution.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformFinalNumericJoin
 open UniformMachine UniformPairMachine OAI.ExactFourier
@@ -9,6 +18,7 @@ open scoped BigOperators
 noncomputable section
 
 /-- Physical input and output coordinates of a positive transform. -/
+/- Paper stage: §5.2 (5.5), PDF p.22: physical input/output reindexing preserves sign and normalization. -/
 def physicalFourier {L : ℕ} (AP BP : Fin L ≃ Fin L) : Matrix (Fin L) (Fin L) ℂ :=
   (fourierMatrix L).submatrix BP AP
 
@@ -106,6 +116,7 @@ theorem reindex_product {L : ℕ} (AP BP : Fin L ≃ Fin L)
 
 /-- Numeric three-transform join. The reindexing equalities describe the actual
 CRT copies, and the transform premises are the three actual clock postconditions. -/
+/- Paper stage: §5.3, three-transform argument, PDF p.23: pure algebraic helper, conditional on three transform and movement postconditions. -/
 theorem three_transforms {n L : ℕ} [NeZero L] (AP BP : Fin L ≃ Fin L)
     (x : Fin n → ℂ) (kin din ks ds p standard next ts out : Fin L → Scalar)
     (kernelInput : ∀ i, (kin i).value = kernel (n:=n) (AP i))
@@ -151,6 +162,7 @@ theorem padded_input_value {n L : ℕ} [NeZero L] (AP : Fin L ≃ Fin L)
   UniformPaddedInputMachine.paddedScalar_cyclic _ _ _
 
 /-- Numeric projection of present physical cells, as used by the actual clock. -/
+/- Paper stage: Implementation heap bookkeeping for §5.3, PDF p.23: present scalar cells and their values, with no Fourier result assumed by the definition. -/
 def NumericValues {L : ℕ} (A : ℕ) (f : Fin L → ℂ) (s : State) : Prop :=
   ∀ i, (s.scalarHeap (A+i.val)).map Scalar.value = some (f i)
 def scalars (L A : ℕ) (s : State) (i : Fin L) : Scalar :=
@@ -215,6 +227,7 @@ theorem prepared_multiplication (v : Scalar) (c : ℂ) :
 /-- Pure heap join for the actual three transforms, saved prepared kernel,
 pointwise multiplication, two CRT copies before the third transform, and final
 CRT copy. Every source is an actual state; no final Fourier value is assumed. -/
+/- Paper stage: §5.3, PDF p.23: same-state heap join derives saved prepared spectrum and third output from actual producer postconditions. -/
 theorem three_transform_heaps {n L : ℕ} [NeZero L]
     (AP BP : Fin L ≃ Fin L) (x : Fin n → ℂ) (AK A DK Q T : ℕ)
     (kernelIn kernelOut dataIn dataOut productOut thirdIn thirdOut finalOut : State)
@@ -295,6 +308,7 @@ theorem output_of_numeric {n L : ℕ} [NeZero L] (hn : 0<n) (hL : 0<L)
 /-- Selected working volumes satisfy the chirp support condition for every
 positive input length. This closes the final numeric/output join, independently
 of the caller's still separate construction of the three finite clock runs. -/
+/- Paper stage: §5.1 (5.4), PDF p.21 and §5.3, PDF p.23: selected length closes the signed-support condition before the real output loop. -/
 theorem computesDFT_of_three_transform_heaps {n L : ℕ} [NeZero L]
     (hn : 0<n) (selected : L = UniformWorkingLength.workingLength n)
     (AP BP : Fin L ≃ Fin L) (x : Fin n → ℂ) (AK A DK Q T B a c : ℕ)

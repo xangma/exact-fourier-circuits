@@ -1,5 +1,15 @@
 import UniformFinalCacheAsymptotics
 import UniformGlobalEnvelope
+
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §4.3 Proposition 4.2, PDF pp.19-20 (`prop:tensor-fourier`),
+§5.2 (5.6), PDF p.22 (`eq:working-transform`), and §5.4, PDF pp.23-24 (`thm:main`).
+
+Charged-budget bookkeeping refines the paper's composition of local work,
+array movement and three transforms. Cache/register constants and conservative
+majorants are implementation details, without separate paper statements.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformFinalOuterCost
 open UniformMachine UniformAllAxisSeedPreparation UniformJointAllocation Filter Asymptotics
@@ -10,6 +20,7 @@ noncomputable section
 The table and complete-clock terms are separate so the obsolete O(V*ell)
 reference printer cannot silently be absorbed into the target bound. Header
 program costs include their charged halt/continuation instructions. -/
+/- Paper stage: §5.3 three transforms and §5.4 final estimate, PDF p.23: count all actual stages and their continuation/terminal halts. -/
 def stageCosts (c:Constants)(W:ℕ)(tableHeader table clock:ℕ→ℕ)(n:ℕ):List ℕ:=
  let V:=UniformInitialPreparation.len n
  [UniformAllAxisConjugatePreparation.fullBudget n,62,67,cacheBudget c n,
@@ -53,6 +64,7 @@ lemma input_isBigO_paper : (fun n:ℕ=>(n:ℝ)) =O[atTop] asymptoticCost Uniform
 /-- Final arithmetic join. The clock is the actual complete-clock majorant;
 the table premise must be discharged by the actual amortized replacement,
 not by the reference33 routine. No execution theorem is asserted here. -/
+/- Paper stage: §5.4 Theorem 1.1 proof, PDF p.23: arithmetic cost join is conditional on the actual table and clock bounds, which the final modules discharge. -/
 theorem totalBudget_isBigO_paper (c:Constants)(W:ℕ)(tableHeader table clock:ℕ→ℕ)
  (header:(fun n:ℕ=>(tableHeader n:ℝ)) =O[atTop] (fun n:ℕ=>(n:ℝ)))
  (tables:(fun n:ℕ=>(table n:ℝ)) =O[atTop] (fun n:ℕ=>(n:ℝ)))

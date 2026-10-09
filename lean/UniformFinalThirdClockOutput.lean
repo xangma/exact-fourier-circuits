@@ -2,6 +2,16 @@ import UniformActualCompleteClockExecution
 import UniformFinalRoleTableEntries
 import UniformFinalClockOuterTable
 import UniformConcreteFinalOutputTail
+
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.2 inverse formula after (5.6), PDF p.22, and §5.3
+three-transform conclusion, PDF p.23 (`eq:working-transform`, `eq:chirp`).
+
+The third actual clock's own numeric endpoint feeds actual CRT copies and
+the output loop. Earlier spectrum facts are linked to the genuine first and
+second runs, and no desired final DFT value is an entry assumption.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformFinalThirdClockOutput
 open UniformMachine UniformTensorMonomialMachine UniformFinalNumericJoin UniformSequentialExecution
@@ -26,6 +36,7 @@ lemma zero_numeric {L A:ℕ} (f:Fin L→ℂ) (s:State)
 /-- Join the same actual third clock endpoint to actual CRT and output stages.
 The only transform inputs are the earlier genuine clock heap postconditions;
 the third action is derived from this clock's own numeric output. -/
+/- Paper stage: §5.3 three transforms, PDF p.23, with §5.2 inverse formula, PDF p.22: third run -> actual final CRT -> ordered normalized output. -/
 theorem execution {n:ℕ} [NeZero (V n)] (hn:0<n) (x:Fin n→ℂ)
  (v:ℕ→Fin (V n)→Scalar) (s thirdOut:State) (ticks:ℕ)
  (clockRun:BoundedExecution UniformActualGlobalClockProgram.program n x (B n) (setPC s 0) ticks thirdOut)

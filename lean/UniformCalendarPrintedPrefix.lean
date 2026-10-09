@@ -1,5 +1,13 @@
 import UniformProducedCalendarBanks
 import UniformCalendarWorkspaceOrder
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§4.3, Proposition 4.2 proof, PDF p. 20, including local tables and scalar preparation (`prop:tensor-fourier`).
+
+The paper does not specify heap regions. This implementation invariant retains already printed axes during subsequent axis preparation, then assembles the exact banks required by the physical consumer.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformCalendarPrintedPrefix
 open UniformMachine UniformAllAxisSeedPreparation UniformGlobalCalendarDispatch
@@ -28,6 +36,7 @@ def Printed {n:ℕ} (hn:0<n) (es:Fin (axisCount n)→List Event)
  (position:∀i,(Σ _:Fin (callTotal (radix n i) (es i)),Fin 2) ↪ Fin (radix n i))
  (k:ℕ) (s:State):Prop:=∀i,i.val<k→AxisBanks hn es position i s
 
+/- Implementation bookkeeping around Proposition 4.2, p. 20: disjoint allocated regions preserve earlier axis tables and prepared coefficients during later local preparation. -/
 /-- Exactly the memory bands needed by earlier printed axes. -/
 structure StepFrame {n:ℕ} (j:Fin (axisCount n)) (s u:State):Prop where
  natLow:∀z,z<(axis constants n j).selected→(z<U n+2*j.val∨U n+2*j.val+2≤z)→
@@ -134,6 +143,7 @@ lemma step {n:ℕ} (hn:0<n) (es:Fin (axisCount n)→List Event)
    subst i
    exact current
 
+/- Proposition 4.2 proof, p. 20: after all local axes have been compiled, their actual rows, permutations and scalar pools supply the one synchronized physical consumer. -/
 lemma complete {n:ℕ} (hn:0<n) (es:Fin (axisCount n)→List Event)
  (position:∀i,(Σ _:Fin (callTotal (radix n i) (es i)),Fin 2) ↪ Fin (radix n i))
  (s:State) (done:Printed hn es position (axisCount n) s):

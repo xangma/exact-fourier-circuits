@@ -1,5 +1,15 @@
 import UniformPhysicalCRTCoordinates
 import Mathlib.Data.Fin.Rev
+
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.2, linear CRT index enumeration after (5.5), PDF p.22
+(`eq:crt-fourier`), and prefix bound (4.1), PDF p.18.
+
+Mixed-radix carry enumeration is an implementation refinement of the paper's
+linear traversal. Initialization, carry visits, frames and instruction counts
+have no one-to-one paper lemma; the final caller charges this actual producer.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformFastPhysicalCRTArithmetic
 open UniformCRTTraversalCycle

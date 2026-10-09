@@ -7,6 +7,13 @@ import UniformNativeExchangeRecordMachine
 import UniformBinarySpectatorCMachine
 import UniformFixedNetworkLiteralDecoderMachine
 import UniformFixedNetworkMarkerMachine
+
+/-!
+Paper correspondence: An explicit power saving for the exact discrete Fourier
+transform, OpenAI math revision adc7f1241b42e322a6451854ab7e4b4c146bf78a,
+§2.6, Theorem 2.6 and its proof, PDF pp. 11–12 (net:tensor-bound).
+The finite instruction linker, register numbers and return sites are implementation bookkeeping absent from the paper. They implement its serial recursion and charge literal printing; no runtime circuit callback is introduced.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformRecursiveSavingProgram
 open UniformMachine UniformAssembly
@@ -38,6 +45,7 @@ lemma linked_slice {α : Type*} [DecidableEq α] (size : α→ℕ) (code : α→
     exact ih tail i hi
 
 /-- Original seed payload, independent of the runtime column count. -/
+/- Paper: Theorem 2.6, pp. 11–12: all fixed-table construction is charged. The payload is fixed before k or the scalar input is known; it is not the fully expanded tensor seed. -/
 def seedLength : ℕ := (UniformFixedNetworkScheduleMachine.serialize UniformFixedNetworkScheduleMachine.baseSchedule).length
 def seedPrinterLength : ℕ := 3*seedLength+3*UniformFixedNetworkScheduleMachine.baseSchedule.length+7
 /-- The one unit-frame table is printed once per recursive node. No q-bit
@@ -49,8 +57,10 @@ def unitRecord : UniformFixedNetworkScheduleMachine.Record :=
 def unitLength : ℕ := 8+ExplicitSeedBudget.m*ExplicitSeedBudget.m
 def unitPrinterLength : ℕ := 3*unitLength+4
 
+/- Paper: Implementation choice: bits = 6,544,863,000,071 is a larger fixed base cutoff than K = m(71+1) in Theorem 2.6, p. 11. Runtime bounds absorb the enlarged finite base range. -/
 def threshold : ℕ := ExplicitSeedBudget.bits
 
+/- Paper: Linker metadata has no literal paper counterpart. The pieces implement Theorem 2.6’s fixed preparation, exact groups, strict recursive calls, inverse permutations and leftover bit factors (pp. 11–12). -/
 inductive Part where
  | entry | rootAllocate | readyEntry | smallSetup | base | largeSetup | seedPrinter | unitSetup | unitPrinter | nodeReady
  | loop | reader | dispatch | residualMark | residualInit | gather | bootGroups | groupTest | call

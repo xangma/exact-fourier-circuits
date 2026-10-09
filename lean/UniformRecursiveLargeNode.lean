@@ -1,5 +1,12 @@
 import UniformRecursivePrintedBody
 import UniformRecursiveNodeJoin
+
+/-!
+Paper correspondence: An explicit power saving for the exact discrete Fourier
+transform, OpenAI math revision adc7f1241b42e322a6451854ab7e4b4c146bf78a,
+§2.6, Theorem 2.6, PDF pp. 11–12 (net:tensor-bound).
+The actual large-branch prologue prints both fixed tables and then executes the complete record body. Only strictly smaller executions of the identical program remain as an induction motive; root/child induction discharges it.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformRecursiveLargeNode
 open UniformMachine UniformFixedNetwork UniformFixedNetworkScheduleMachine UniformNativeScheduleSemantics
@@ -28,6 +35,7 @@ lemma quotient_remainder (q rest:ℕ)(rp:rest < m):
 /-- Real large-branch prologue and both physical printers feed the complete
 proved record body. Only smaller executions of the identical Program remain
 as an induction hypothesis; no produced tape or action is assumed. -/
+/- Paper: §2.6, Theorem 2.6, PDF pp. 11–12 (net:tensor-bound). The actual large-branch prologue prints both fixed tables and then executes the complete record body. Only strictly smaller executions of the identical program remain as an induction motive; root/child induction discharges it. -/
 theorem execution (n B F M l A q rest stack depth stackTop reserve H:ℕ)(cost:ℕ→ℕ)
  (x:Fin n→ℂ)(s:State)(f:Fin W→Fin (2^(q*m+rest))→Scalar)
  (eqM:M=P.seedLength)(eql:l=P.unitLength)

@@ -1,6 +1,15 @@
 import UniformReciprocalMachine
 import UniformPairMachine
 
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.3, pointwise multiplication by the transformed fixed operand,
+PDF p.23 (`eq:chirp`).
+
+Refines the paper's linear pointwise step with prepared coefficients.
+Heap layouts, tags and frames are implementation bookkeeping; the coefficient
+transform is supplied separately and is not assumed free.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformChirpPointwiseMachine
 open UniformMachine UniformPairMachine

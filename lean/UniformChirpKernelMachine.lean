@@ -1,6 +1,15 @@
 import UniformChirpTableMachine
 import UniformCyclic
 
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.3, signed fixed convolution operand after (5.7),
+PDF p.22, and linear preparation, PDF p.23 (`eq:chirp`).
+
+Writes positive support, negative support and literal zeros using the inverse
+chirp bank. The 2n <= L condition proves the two signed supports do not overlap;
+integer guards do not inspect complex input data.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformChirpKernelMachine
 open UniformMachine UniformPairMachine
@@ -8,6 +17,7 @@ noncomputable section
 
 /-- Nat0=n, Nat1=L, Nat2=inverse chirp bank base, Nat9=kernel base.
 The entire signed kernel is written by one integer-controlled pass. -/
+/- Paper stage: §5.3, signed fixed operand following (5.7), PDF p.22: integer-controlled support selection, inverse-chirp load, literal zero and store. -/
 def program : Program :=
   [.natLiteral 3 1,.natLiteral 4 2,.natLiteral 5 0,
    .branchLT 5 1 4 19,.branchLT 5 0 5 7,.natBinary .mul 7 5 3,.jump 9,
@@ -300,6 +310,7 @@ theorem loopCost_bound (n L j t : ℕ) : loopCost n L j t≤13*t+2 := by
     simp only [loopCost,Nat.mul_succ]
     split_ifs <;> omega
 
+/- Paper stage: §5.3, linear operand preparation, PDF p.23: actual per-coordinate machine transitions and preserved source-bank reads. -/
 theorem loop_execution (N : ℕ) (x : Fin N → ℂ) (B n L a d : ℕ) (eta : ℂ)
     (hB : 20≤B) (ha : a+2*n≤d) (hdB : d+L≤B) (t : ℕ) : ∀ j s,
     j+t=L → Data n L a d j s → Coefficients n a eta s → Partial d j n L eta s →
@@ -362,6 +373,7 @@ theorem inverse_chirp_zpow (eta : ℂ) (j : ℕ) :
     UniformChirp.chirp eta⁻¹ j=eta^(-((j:ℤ)^2)) := by
   simp [UniformChirp.chirp,zpow_neg,←zpow_natCast]
 
+/- Paper stage: §5.3, signed support following (5.7), PDF p.22: identify the printed positive/end-of-array values with the cyclic signed kernel. -/
 theorem kernelScalar_value (eta : ℂ) (n L : ℕ) [NeZero L] (_hL : 2*n≤L) (z : ZMod L) :
     (kernelScalar eta n L z.val).value=UniformCyclic.chirpKernel eta n z := by
   have hz:=ZMod.val_lt z
@@ -406,6 +418,7 @@ theorem signed_kernel_execution (N : ℕ) (x : Fin N → ℂ) (B n L a d : ℕ) 
   intro z
   rw [ht z.val z.isLt,kernelScalar_fin eta n L hpadding z]
 
+/- Paper stage: §5.3, operand preparation, PDF pp.22-23: the literal kernel producer supplies every scalar cell with a prepared tag. -/
 theorem specified_kernel_execution (n : ℕ) (x : Fin n → ℂ) (B L a d : ℕ) [NeZero L]
     (s : State) (hp : s.pc=0) (hn : s.natReg 0=n) (hL : s.natReg 1=L)
     (ha : s.natReg 2=a) (hd : s.natReg 9=d)

@@ -1,5 +1,13 @@
 import UniformAsymptotics
 
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.1, Lemma 5.1, PDF p.21 (`lem:prime-lengths`).
+
+Counted trial-division and candidate/doubling loops refine the paper's
+polynomial preparation argument. Their fixed-program lowering is supplied by
+UniformWorkingMachine and UniformWorkingCompletion, not by these functional counts.
+-/
 /- Counted functional integer loops. These are not a lowering to a fixed RAM program.
    Counts charge integer arithmetic, comparisons, state assignments and control transfers.
    No primality oracle or `Nat.find` is executed by the preparation functions. -/
@@ -14,6 +22,7 @@ structure Counted (α : Type) where
 
 /-- Zero fuel: guard and return. Nonzero: guard, decrement, modulo, comparison;
     rejection returns, continuation also increments divisor and transfers control. -/
+/- Paper stage: §5.1, Lemma 5.1, PDF p.21: trial division implements prime testing; fuel and counted return/guard assignments are implementation details. -/
 def trialLoop (p d : ℕ) : ℕ → Counted Bool
   | 0 => ⟨true, 2⟩
   | f + 1 =>
@@ -91,6 +100,7 @@ structure Prefix where
 
 /-- Candidate scan. The increments, product test and updates are explicitly charged.
     Fuel is only a termination guard; a successful run stops at the first excess product. -/
+/- Paper stage: §5.1, Lemma 5.1, PDF p.21: scan successive candidates and stop at the first excess product, with the preparation cost explicitly counted. -/
 def selectLoop (n p j R : ℕ) : ℕ → Counted (Option Prefix)
   | 0 => ⟨none, 2⟩
   | f + 1 =>
@@ -237,6 +247,7 @@ structure Doubling where
 
 /-- Each continuation charges the guard, fuel decrement, comparison, two doublings,
     exponent increment, state assignments and control transfer. -/
+/- Paper stage: §5.1, (5.3)-(5.4), PDF p.21: counted minimal doubling. This functional specification is not the final RAM witness. -/
 def doubleLoop (n e B L : ℕ) : ℕ → Counted (Option Doubling)
   | 0 => ⟨none, 2⟩
   | f + 1 =>
@@ -364,6 +375,7 @@ theorem axisCount_plus_two_isBigO_log :
     nlinarith
   exact hadd.trans (UniformAsymptotics.axisCount_isBigO.trans hratio)
 
+/- Paper stage: §5.1, Lemma 5.1, PDF p.21 and §5.4, PDF p.23: fixed polylogarithmic preparation is negligible compared with linear input size. -/
 theorem preparation_isBigO_log_four :
     (fun n : ℕ => ((prepare n).cost : ℝ)) =O[atTop]
       (fun n : ℕ => Real.log (n : ℝ) ^ 4) :=

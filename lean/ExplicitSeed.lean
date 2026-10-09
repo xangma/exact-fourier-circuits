@@ -1,6 +1,13 @@
 import MasterBudget
 import TripleColumnAction
 
+/-!
+Paper correspondence: An explicit power saving for the exact discrete Fourier
+transform, OpenAI math revision adc7f1241b42e322a6451854ab7e4b4c146bf78a,
+§2.4, Proposition 2.4, PDF p. 10; Appendix A, Lemma A.1, p. 25 (net:finite-interface, syn:local-certificate).
+This is a symbolic finite word and a proved existential finite win. Its matrix identity and count concern the same chronological word; this file alone is not a running uniform machine.
+-/
+
 set_option autoImplicit false
 
 /- A closed witness assembled from the actual chronological network word.
@@ -20,6 +27,7 @@ def word (f : ℕ) : List (WordStep C (2 ^ bits f)) :=
     (TripleColumnAction.globalDirection f)
 
 /-- Correctness is proved for every column count, on the same literal word used for the count. -/
+/- Paper: Proposition 2.4, p. 10: terminal translations and signed exchange are corrected on every arbitrary physical role. Lemma A.1, p. 25 then pads roles and applies the 71 role axes. -/
 theorem word_matrix (f : ℕ) : wordMatrix (word f) = tensorPower C (bits f) := by
   unfold word MasterBudget.actualSeedWord bits
   apply PaddingWords.extendedWord_matrix
@@ -51,6 +59,7 @@ theorem bits_at_least_two (f : ℕ) (hf : f = ExplicitSeedBudget.columns) : 2 �
   exact ExplicitSeedBudget.bits_at_least_two
 
 /-- A closed existential seed, with no circuit-action or call-count hypotheses. -/
+/- Paper: Lemma A.1, p. 25, supplies the finite certificate. Companion Finite tensor savings and exact Fourier circuits, Definition 2.1 and (2.1), p. 6, define this finite-win interface. -/
 theorem witness : ∃ f : ℕ, f = ExplicitSeedBudget.columns ∧ 2 ≤ bits f ∧
     ∃ W : List (WordStep C (2 ^ bits f)), wordMatrix W = tensorPower C (bits f) ∧
       wordCalls W < bits f * 2 ^ (bits f - 1) :=
@@ -63,6 +72,7 @@ theorem finiteWin_at_columns (f : ℕ) (hf : f = ExplicitSeedBudget.columns) : F
 theorem finiteWin : FiniteWinStatement := finiteWin_at_columns ExplicitSeedBudget.columns rfl
 
 /-- Apply the upstream exact transfer to this constructed witness. -/
+/- Paper: Companion Finite tensor savings and exact Fourier circuits, §3, pp. 10–15: the upstream finite-win transfer is a nonuniform circuit-existence result. Uniform operational execution is established in separate modules. -/
 theorem main : MainStatement := win_to_fourier finiteWin
 
 end

@@ -2,6 +2,14 @@ import UniformRoots
 import OAI.Computability.FourierCircuit.ToeplitzCross
 import Mathlib.Data.Nat.GCD.BigOperators
 
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.2, (5.5), PDF p.22 (`eq:crt-fourier`).
+
+Certifies the idempotent sum, its inverse, local output units and exact
+Fourier factorization. Ring equivalences are proof devices; actual table
+preparation and traversal are supplied by the machine modules.
+-/
 set_option autoImplicit false
 
 /- Explicit integer CRT tables and their standard-root phase. The tables are
@@ -13,6 +21,7 @@ open OAI.ExactFourier
 
 variable {ι : Type} [Fintype ι] [DecidableEq ι]
 
+/- Paper stage: §5.2, PDF p.22 before (5.5): cofactor L/q, inverse digit d_q and idempotent E_q. -/
 def cofactor (r : ι → ℕ) (i : ι) : ℕ := ∏ j ∈ Finset.univ.erase i, r j
 def inverseDigit (r : ι → ℕ) (i : ι) : ℕ := ((cofactor r i : ZMod (r i))⁻¹).val
 def idempotent (r : ι → ℕ) (i : ι) : ℕ := cofactor r i * inverseDigit r i
@@ -98,6 +107,7 @@ theorem idempotent_projection (r : ι → ℕ)
 
 noncomputable section
 
+/- Paper stage: §5.2 (5.5), PDF p.22 (`eq:crt-fourier`): identify each local character with the specified root raised to d_q. -/
 theorem component_specified_root (r : ι → ℕ) (hr : ∀ i, 0 < r i)
     (hc : Pairwise (fun i j => Nat.Coprime (r i) (r j))) (i : ι) :
     letI : NeZero (∏ j, r j) := ⟨(Finset.prod_pos (fun j _ => hr j)).ne'⟩
@@ -194,6 +204,7 @@ theorem encode_decode (r : ι → ℕ) (hr : ∀ i, 0 < r i)
     Nat.mod_eq_of_lt j.isLt] using hv
 
 /-- The permutation is computed by the printed idempotent sum, with residue decoding. -/
+/- Paper stage: §5.2, PDF p.22: the idempotent sum and residue decoding are mutually inverse index permutations. -/
 def permutation (r : ι → ℕ) (hr : ∀ i, 0 < r i)
     (hc : Pairwise (fun i j => Nat.Coprime (r i) (r j))) :
     (∀ i, Fin (r i)) ≃ Fin (∏ i, r i) where
@@ -204,6 +215,7 @@ def permutation (r : ι → ℕ) (hr : ∀ i, 0 < r i)
 
 noncomputable section
 
+/- Paper stage: §5.2 (5.5), PDF p.22: exact phase factorization; matrix_factorization retains the local d_q output unit. -/
 theorem fourier_phase (r : ι → ℕ) (hr : ∀ i, 0 < r i)
     (hc : Pairwise (fun i j => Nat.Coprime (r i) (r j)))
     (j k : ∀ i, Fin (r i)) :

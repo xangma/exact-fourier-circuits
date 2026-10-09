@@ -1,6 +1,13 @@
 import UniformScalarPreparation
 import OAI.Computability.FourierCircuit.ToeplitzCross
 
+/-!
+Paper correspondence: An explicit power saving for the exact discrete Fourier
+transform, OpenAI math revision adc7f1241b42e322a6451854ab7e4b4c146bf78a,
+§3.1, Lemma 3.2, equations (3.1)–(3.2), PDF p. 13 (loc:newton-reduction, loc:newton, loc:fourier-factorization).
+The symmetry/triangular proof below is an equivalent derivation of the Newton factorization. Shared preparation registers implement the polynomial preparation argument; each inverse has a separate nonzero proof.
+-/
+
 /-! Explicit local Newton coefficients and factorization.  No `Layered` theorem
 or chosen complex scalar enters these identities. -/
 set_option autoImplicit false
@@ -41,6 +48,7 @@ theorem N_unit {n : ℕ} (hn : 0 < n) {omega : ℂ} (hroot : IsPrimitiveRoot ome
   rw [N_diagonal]
   exact diagonalValue_ne_zero hn hroot j
 
+/- Paper: Lemma 3.2, p. 13: a symmetric lower triangular middle product is diagonal. This replaces the paper’s uniqueness-of-unit-LDU step with an equivalent matrix argument. -/
 theorem triangular_middle (n : ℕ) (omega : ℂ) :
     (P n omega).transpose * N n omega =
       Matrix.diagonal (fun j : Fin n => diagonalValue omega j.val) := by
@@ -75,6 +83,7 @@ theorem triangular_middle (n : ℕ) (omega : ℂ) :
     · have h := hlow hgt
       exact (congrFun (congrFun hsym i) j).symm.trans h
 
+/- Paper: Equation (3.2), p. 13 (loc:fourier-factorization): F = N D_N^(-1) N^T, with N and P invertibility proved before taking nonsingular inverses. -/
 theorem fourier_factorization {n : ℕ} (hn : 0 < n) {omega : ℂ}
     (hroot : IsPrimitiveRoot omega n) :
     RadixTwo.dft n omega = N n omega *
@@ -170,6 +179,7 @@ theorem scaleRef_succ (j : ℕ) : scaleRef (j + 1) =
 
 /-- One supplied root and two rational literals; five shared-register operations
 per step prepare the next power, H product, and signed Newton scale. -/
+/- Paper: Equation (3.1), p. 13 (loc:newton): one shared root/power/H/scale table. The five appended operations are concrete preparation bookkeeping. -/
 def productProgram : (j : ℕ) → ScalarProgram 1 (productCount j)
   | 0 => .step (.step (.step .nil (.root 0)) (.rational 1)) (.rational (-1))
   | j + 1 =>
@@ -293,6 +303,7 @@ theorem baseLift_succ (n j : ℕ) (i : Fin (productCount n)) :
 
 /-- Three further registers per coefficient: inverse H, D, inverse D.  The
 construction tests only its natural loop bound; roots/coefficients are never tested. -/
+/- Paper: Lemma 3.2, p. 13: only H_j and D_j for j < n are inverted. inverseProgram_admissible proves their nonzero denominators from primitivity. -/
 def inverseProgram (n : ℕ) : (j : ℕ) → j ≤ n → ScalarProgram 1 (inverseCount n j)
   | 0, _ => productProgram n
   | j + 1, h =>
@@ -415,6 +426,7 @@ theorem finalProgram_values (omega : ℂ) (n : ℕ) (j : Fin n) :
     finalInvDiagonal, inverseProgram_preserves] using ⟨hH,hs,hiH,hD,hiD⟩
 
 /-- Shared output table: (H_j, scale_j, H_j⁻¹, D_j, D_j⁻¹), in row-major order. -/
+/- Paper: Lemma 3.2, p. 13: polynomial preparation is realized as one shared output bank; row ordering and register references are implementation details. -/
 def table (n : ℕ) : UniformScalarPreparation.DAG 1 (n*5) where
   length := inverseCount n n
   program := finalProgram n
@@ -487,6 +499,7 @@ theorem preparedToeplitz_eq {n : ℕ} (hn : 0 < n) {omega : ℂ}
   · rfl
 
 /-- The actual shared table supplies every diagonal and Toeplitz entry. -/
+/- Paper: Lemma 3.2, (3.1)–(3.2), p. 13: the prepared H, inverse-H and scale outputs give the actual diagonal/Toeplitz factorization. -/
 theorem N_toeplitz_prepared {n : ℕ} (hn : 0 < n) {omega : ℂ}
     (hroot : IsPrimitiveRoot omega n) :
     N n omega =

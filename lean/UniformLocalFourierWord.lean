@@ -2,6 +2,13 @@ import UniformBalancedToeplitz
 import UniformNewton
 import UniformNewtonTableMachine
 
+/-!
+Paper correspondence: An explicit power saving for the exact discrete Fourier
+transform, OpenAI math revision adc7f1241b42e322a6451854ab7e4b4c146bf78a,
+§3.1, equation (3.2), PDF p. 13; §3.4, Lemma 3.5, p. 17 (loc:fourier-factorization, loc:fourier).
+Words are stored in execution order, so matrix transposition reverses their list. This composes the Newton/Toeplitz factors and preserves all forward C calls; physical production is separate.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformLocalFourierWord
 open OAI.ExactFourier TypedKernelWords
@@ -60,6 +67,7 @@ theorem transposeStep_calls {n : ℕ} (s : WordStep C n) :
     (transposeStep s).calls=s.calls := by cases s <;> rfl
 
 /-- Reversal is required because words are stored in execution order. -/
+/- Paper: Lemma 3.5 proof, p. 17: transposition preserves layer types and reverses factor order. The reversed list is essential because words use execution order. -/
 def transposeWord {n : ℕ} (W : List (WordStep C n)) : List (WordStep C n) :=
   (W.map transposeStep).reverse
 

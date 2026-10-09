@@ -5,6 +5,13 @@ import UniformWorkspacePlanner
 import UniformRankKernelPreparation
 import OAI.Computability.FourierCircuit.CircuitCost
 
+/-!
+Paper correspondence: An explicit power saving for the exact discrete Fourier
+transform, OpenAI math revision adc7f1241b42e322a6451854ab7e4b4c146bf78a,
+§3.2–3.3, Lemmas 3.3–3.4, equations (3.10)–(3.11), PDF pp. 14–17; §3.4, equations (3.12)–(3.14), pp. 17–18.
+Borrowed coordinates are embedded inside the parent width and restored by replay. Integer placements and six-C occurrence expansion make the paper’s exact-width implementation explicit.
+-/
+
 set_option autoImplicit false
 
 /-! Exact-width literal six-C compilation. Topology contains only integer ports
@@ -16,6 +23,7 @@ open scoped BigOperators
 variable {r v e g a : ℕ}
 
 /-- Explicit disjoint source, dirty gate, and target assignments. -/
+/- Paper: Lemma 3.3, pp. 14–15 and (3.11), p. 16: source, dirty gate and target coordinates must be disjoint and fit in the exact parent width. -/
 structure Placement (e g a v : ℕ) where
   source : Fin e ↪ Fin v
   gates : Fin g ↪ Fin v
@@ -46,6 +54,7 @@ def Placement.embedding (P : Placement e g a v) : Fin (e+g+a) ↪ Fin v :=
   (flatten e g a).symm.toEmbedding.trans P.coordinates
 
 /-- Every retained occurrence has its own six-call word, even when it evaluates to zero. -/
+/- Paper: Equations (3.12)–(3.14), pp. 17–18: an ordered pair is (target, source), and every retained coefficient receives its six-C word. -/
 noncomputable def shearWord (bank : Fin r → ℂ) (s : ShearCode (Fin v) r) :
     List (WordStep C v) :=
   UniformDirectToeplitz.shear s.dst ⟨s.src,s.different.symm⟩ (s.coefficient.eval bank)

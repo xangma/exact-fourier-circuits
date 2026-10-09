@@ -2,6 +2,15 @@ import UniformFinalCallerFacts
 import UniformFinalKernelClockSave
 import UniformActualCompleteClockExecution
 
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.3, charged fixed-kernel transform and three transforms,
+PDF p.23 (`eq:chirp`).
+
+Executes the first complete clock on prepared roles, saves its actual spectrum,
+and constructs the later data-clock entry from the same retained states.
+Role-bank offsets and readiness transport are implementation bookkeeping.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformFinalKernelAndDataEntry
 open UniformMachine UniformFinalNumericJoin UniformSelectedPhysicalCRT UniformSequentialExecution
@@ -37,6 +46,7 @@ structure Result {n:ℕ}[NeZero (V n)](hn:0<n)(x:Fin n→ℂ)(kernelIn kernelOut
 
 /-- Execute the actual kernel loader, first complete clock, save15, data loader
 and physical AP gather. The saved spectrum refers to that same first run. -/
+/- Paper stage: §5.3, charged kernel transform, PDF p.23: first actual clock -> spectrum save -> data entry on the same retained machine history. -/
 theorem execution {n:ℕ}[NeZero (V n)](hn:0<n)(x:Fin n→ℂ)(cacheEntry start s:State)
  (old:UniformFinalOuterStartup.Result n hn x cacheEntry start)
  (table:UniformFinalPhysicalTablePrefix.Result n x s)

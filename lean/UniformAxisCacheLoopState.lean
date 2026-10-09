@@ -2,6 +2,14 @@ import UniformAxisCacheAxisExecution
 import UniformAxisCacheTail
 import UniformAxisCacheAdvanceInputs
 import UniformAxisCacheFinalEnds
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§4.3, local preparation accounting in Proposition 4.2 proof, PDF p. 20 (`prop:tensor-fourier`); §5.3, shared local scalar preparation, p. 23.
+
+The paper does not prescribe cache heap layouts. Prefix retention, output/root preservation and final frontiers are implementation invariants for preparing all axes once before repeated synchronized slots.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformAxisCacheLoopState
 open UniformMachine UniformAxisCacheStartupMachine UniformAxisCacheSelectedPreparation UniformAxisCacheInputs

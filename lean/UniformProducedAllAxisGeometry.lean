@@ -1,5 +1,13 @@
 import UniformActualGlobalTickContext
 import UniformPhysicalTensorFamily
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§4.2, Lemma 4.1, PDF p. 19; §4.3, Proposition 4.2, pp. 19–20 (`lem:sector-address`, `prop:tensor-fourier`).
+
+Produced axis records determine the physical shape and allocation. These structures describe ordinary finite data and layout bounds; their cell contents are supplied later by producer executions, not by the geometry definition.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformProducedAllAxisGeometry
 open UniformSectorPackingMachine UniformAllAxisSeedPreparation

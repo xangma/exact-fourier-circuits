@@ -1,5 +1,13 @@
 import UniformPrimeMachine
 
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.1, Lemma 5.1, PDF p.21 (`lem:prime-lengths`).
+
+Literal trial-division selection and accepted-prime table writes implement
+the stopping-product argument. Registers, frames and relocation are additional
+implementation bookkeeping, without a separate paper lemma.
+-/
 set_option autoImplicit false
 
 namespace ExactFourierCircuits.UniformWorkingMachine
@@ -9,6 +17,7 @@ noncomputable section
 /- Prime helper workspace0..7; n=8, zero=9, selected count=10,
    selected product=11, two=12, twice n=13, tested product=14, one=15.
    The only table writes are the accepted primes at consecutive addresses0,1,... . -/
+/- Paper stage: §5.1, Lemma 5.1, PDF p.21: literal integer selection program. Register allocation and relocation have no direct paper counterpart. -/
 def header : Program :=
   [.length 8, .natLiteral 0 3, .natLiteral 10 0, .natLiteral 11 1,
    .natLiteral 12 2, .natBinary .mul 13 8 12, .natLiteral 9 0,
@@ -26,6 +35,7 @@ theorem prime_code : UniformAssembly.CodeAt UniformPrimeMachine.program program 
 
 theorem program_length : program.length = 33 := by decide
 
+/- Paper stage: Implementation bookkeeping for §5.1, Lemma 5.1, PDF p.21: maintained candidate/product state and accepted-prime directory. -/
 def Invariant (n p j R : ℕ) (s : State) : Prop :=
   s.pc = 9 ∧ s.natReg 0 = p ∧ s.natReg 8 = n ∧ s.natReg 9 = 0 ∧
     s.natReg 10 = j ∧ s.natReg 11 = R ∧ s.natReg 12 = 2 ∧
@@ -408,6 +418,7 @@ theorem wordBound_ge (n : ℕ) : 33 ≤ wordBound n ∧ n ≤ wordBound n ∧
 
 /-- The prefix-only fixed program, started by the actual length instruction.
     Its initialized Nat heap contains exactly the selected initial odd-prime table. -/
+/- Paper stage: §5.1, Lemma 5.1, PDF p.21: actual empty-state execution supplies the selected product and prime table, rather than executing Nat.find. -/
 theorem prefix_execution {n : ℕ} (hn : 0 < n) (x : Fin n → ℂ) : ∃ t u,
     BoundedExecution program n x (wordBound n + 9) initial t u ∧ u.pc = 32 ∧
       u.natReg 8 = n ∧ u.natReg 0 = UniformWorkingLength.nextPrime n ∧

@@ -1,4 +1,12 @@
 import UniformProducedClockTickAtEntry
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§4.3, Proposition 4.2 proof, PDF p. 20; §5.3, fixed-kernel preparation, p. 23.
+
+Collective prepared-tag tracking is proof bookkeeping over the same literal program. The proof-level case split on `tagged` does not add a machine test on complex values or choose another executable program.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformProducedClockTickTracked
 open UniformMachine UniformSynchronizedLayers UniformGlobalCalendarDispatch UniformAllAxisSeedPreparation

@@ -1,6 +1,15 @@
 import UniformFinalDataClockProductResult
 import UniformActualCompleteClockExecution
 
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.3, variable transform, prepared pointwise multiplication
+and third transform, PDF p.23 (`eq:chirp`).
+
+Connects the same actual data-clock endpoint to multiplication and BI/AP
+gathers. Retained cache, root and scalar-bank frames construct the next entry;
+these state-management details have no separate paper counterpart.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformFinalDataClockProduct
 open UniformMachine UniformFinalNumericJoin UniformSelectedPhysicalCRT UniformSequentialExecution
@@ -22,6 +31,7 @@ lemma stages_beforePC {n B ticks p:ℕ}{x:Fin n→ℂ}{q:Program}{qs:List Progra
 
 /-- Same actual data-clock run, real pointwise multiplication and both CRT
 moves; its third entry is derived from generated physical banks and frames. -/
+/- Paper stage: §5.3, pointwise multiplication and third transform, PDF p.23: actual data clock -> prepared multiply -> both CRT gathers -> generated third entry. -/
 theorem execution {n ticks:ℕ}(hn:0<n)(x:Fin n→ℂ)
  (v:ℕ→Fin (volume n)→Scalar)(y:Fin (volume n)→ℂ)(s dataOut:State)
  (pc:s.pc=0)

@@ -1,6 +1,13 @@
 import UniformScalarPreparation
 import OAI.Computability.FourierCircuit.RectStableAlgebra
 
+/-!
+Paper correspondence: An explicit power saving for the exact discrete Fourier
+transform, OpenAI math revision adc7f1241b42e322a6451854ab7e4b4c146bf78a,
+§3.4, equation (3.14) and inverse-root conjugate evaluation, PDF p. 18 (loc:nonzero-split).
+The sum-of-squares shift extends the paper’s single-coefficient choice to a finite diagonal. It is preparation algebra, not an operation conjugating variable data or a complete machine compiler.
+-/
+
 set_option autoImplicit false
 
 /- An explicit replacement for the finite-forbidden-set choice in the existing
@@ -13,6 +20,7 @@ open OAI.ExactFourier
 
 variable {α : Type} [Fintype α]
 
+/- Paper: Finite-diagonal variant of (3.14), p. 18: a common sum-of-squares shift keeps both diagonal summands invertible, even for zero coefficients. -/
 def shift (c : α → ℂ) : ℂ := 1 + ∑ j, c j * starRingEnd ℂ (c j)
 
 theorem shift_re (c : α → ℂ) :
@@ -77,6 +85,7 @@ theorem diagonal_sumLayered [DecidableEq α] (c : α → ℂ) :
 open UniformScalarPreparation
 
 /-- Same DAG at roots and inverse roots; no conjugation of array data. -/
+/- Paper: Equation (3.14) and the following paragraph, p. 18: conjugate only prepared coefficient evaluations; unit roots may be replaced by their inverses. -/
 def preparedShift {r a : ℕ} (d : DAG r a) (roots : Fin r → ℂ)
     (valid : d.Admissible roots) : ℂ :=
   1 + ∑ j, d.run roots valid j *

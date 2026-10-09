@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "finished_utc": "2026-10-09T12:25:00.569618+00:00",
+  "canonical_receipt_sha256": "2ac6d22ee5292260ab17217619c2ea19f9ef488013696a8174bb22ed52ab637b",
+  "rehash_counts": {
+    "source_sha256": 1271,
+    "config_sha256": 13,
+    "artifact_sha256": 8,
+    "normal_project_artifact_sha256": 1271,
+    "external_artifact_sha256": 11265
+  },
+  "fresh_project_modules": 1271,
+  "project_artifacts_reused": 0,
+  "declaration_closures": 82513,
+  "private_closures": 3483,
+  "standard_axioms_only": true,
+  "annotated_source_hashes_checked": 175,
+  "held_inventory_valid": true,
+  "legacy_check": {
+    "receipt_sha256": "f1abd36efb3587d9a8f2eaadb5ed9432fcc0057e547bbce0327dff28922ec7f5",
+    "fresh_modules": 2,
+    "declaration_closures": 146,
+    "private_closures": 0,
+    "source_artifact_driver_hashes_valid": true,
+    "standard_axioms_only": true
+  }
+}

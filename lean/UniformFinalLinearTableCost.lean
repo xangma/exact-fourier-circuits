@@ -1,4 +1,14 @@
 import UniformFinalActualClockCost
+
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §4.3 Proposition 4.2, PDF pp.19-20 (`prop:tensor-fourier`),
+§5.2 (5.6), PDF p.22 (`eq:working-transform`), and §5.4, PDF pp.23-24 (`thm:main`).
+
+Charged-budget bookkeeping refines the paper's composition of local work,
+array movement and three transforms. Cache/register constants and conservative
+majorants are implementation details, without separate paper statements.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformFinalLinearTableCost
 open UniformMachine UniformAllAxisSeedPreparation UniformFinalOuterCost UniformFinalClockCost
@@ -7,6 +17,7 @@ noncomputable section
 
 /-- The certified amortized table allowance; axisCount includes the binary
 axis, unlike the saved odd-prime count in register102. -/
+/- Paper stage: §5.2, linear CRT permutations, PDF p.22: actual fast table allowance is O(L+axis count), not an O(L*axis count) rescanning bound. -/
 def tableBudget(n:ℕ):ℕ:=60*(UniformInitialPreparation.len n+axisCount n+1)
 lemma tableBudget_bound(n:ℕ)(hn:0<n):tableBudget n ≤ 480*n:=by
  have count:UniformInitialPreparation.ell n ≤ 2*n:=by
@@ -26,6 +37,7 @@ lemma tableBudget_isBigO_input:
 
 /-- Closed arithmetic majorant for the actual20 stages, using the amortized
 printer and the proved complete-clock envelope. -/
+/- Paper stage: §5.4 Theorem 1.1 proof, PDF pp.23-24: closed preparation+three-clocks+table majorant; constants include actual continuations. -/
 def finalBudget(c:Constants)(W n:ℕ):ℝ:=
  (overhead c W n:ℝ)+3*clockEnvelope W n+(tableBudget n:ℝ)+20
 lemma finalBudget_isBigO_paper(c:Constants)(W:ℕ):
@@ -46,6 +58,7 @@ lemma totalBudget_le_finalBudget(c:Constants)(W n:ℕ)(table clock:ℕ→ℕ)
 /-- The final machine-statement adapter has no supplied asymptotic estimate:
 only the concrete fixed algorithm's real initial-state execution remains to
 be supplied. Its word envelope and one-root order bounds stay explicit. -/
+/- Paper stage: §5.4, PDF pp.23-24: logical adapter supplies the proved asymptotic cost and leaves only the actual fixed-program run to its caller. -/
 theorem of_execution(c:Constants)(W C:ℕ)(p:Program)(order:ℕ→ℕ)
  (orders:∀n,0<n→0<order n∧order n<1024*n^3)
  (execution:∀n,0<n→∀x:Fin n→ℂ,∃t:ℕ,∃s:State,

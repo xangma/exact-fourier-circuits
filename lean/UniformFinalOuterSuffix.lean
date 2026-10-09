@@ -1,6 +1,15 @@
 import UniformFinalOuterProgram
 import UniformSequentialExecution
 
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.3 three-transform construction and §5.4 Theorem 1.1 proof,
+PDF pp.22-24 (`eq:chirp`, `thm:main`), with the model in §1.1, PDF p.2 (`sec:model`).
+
+Startup, header, continuation and output bookkeeping refines the fixed
+deterministic program. There is no separate paper counterpart for these state
+layouts; the surrounding paper argument requires their preparation/index cost.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformFinalOuterSuffix
 open UniformMachine UniformAssembly UniformSequentialAssembly UniformSequentialExecution
@@ -38,6 +47,7 @@ lemma code_fit(n:ℕ):(p).length≤B n:=by
 
 /-- Join the genuinely executed preparation prefix to the genuinely executed
 remaining fourteen stages and the sole final halt. -/
+/- Paper stage: Implementation sequential join for §5.4 deterministic algorithm, PDF pp.23-24: prefix and suffix share their endpoint; relocation charges the actual continuation and sole final halt. -/
 theorem execution{n ti ts:ℕ}{x:Fin n→ℂ}{s u:State}
  (prefixRun:BoundedRuns p n x (B n) initial ti s)(pc:s.pc=6316)
  (tailRun:LocalStages n (B n) x suffix s ts u):

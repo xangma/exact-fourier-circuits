@@ -1,4 +1,11 @@
 import UniformRecursiveActualLocalAllowance
+
+/-!
+Paper correspondence: An explicit power saving for the exact discrete Fourier
+transform, OpenAI math revision adc7f1241b42e322a6451854ab7e4b4c146bf78a,
+§2.6, Theorem 2.6 recurrence and geometric-series argument, PDF pp. 11–12 (net:tensor-bound).
+The fixed operational threshold is larger than the paper’s K. The proof enlarges the finite base constant while retaining exactly S, lambda and theta. Opaque reserve values are defined constants with proved bounds, not new axioms.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformRecursiveActualRuntime
 open UniformNetworkCost
@@ -7,6 +14,7 @@ namespace R
 export UniformRecursiveRuntimeBridge (actualThreshold baseTicks baseUnit costWithUnit)
 end R
 
+/- Paper: Concrete constant bounding the fixed work A in Theorem 2.6, pp. 11–12. Its value has an explicit defining witness; opacity prevents unnecessary expansion of gigantic fixed tables. -/
 private opaque stepReserve : {A : ℕ //
  UniformRecursiveActualLocalAllowance.localUnit+169*ExplicitSeedBudget.residuals ≤ A} :=
  ⟨UniformRecursiveActualLocalAllowance.localUnit+169*ExplicitSeedBudget.residuals,le_rfl⟩
@@ -38,6 +46,7 @@ lemma actual_base {k : ℕ} (hk:k < UniformBatching.threshold) :
 
 /-- Unconditional asymptotic bound for the actual-printer-compatible arithmetic cost.
 A whole Program execution proof is still required. -/
+/- Paper: Theorem 2.6, p. 12: the normalized recurrence t(k) <= A + lambda*t(floor(k/m)) is unrolled geometrically at the critical exponent log_m(lambda). -/
 theorem actual_critical_bound (k : ℕ) :
  (R.costWithUnit stepUnit k:ℝ) ≤
  criticalConstant*(k+1:ℝ)^UniformExponent.theta*(volume k:ℝ) :=
@@ -65,6 +74,7 @@ theorem actual_node_call_charge {k : ℕ} (hk:R.actualThreshold ≤ k) (workTick
   (UniformRecursiveRuntimeBridge.costWithUnit_step stepUnit hk).symm
 
 /-- Exact named printers, actual tape and terminal controls fit the chosen recurrence. -/
+/- Paper: Theorem 2.6, pp. 11–12: actual table printing, local tape, spectator arithmetic and call/return overhead all enter the recurrence; this lemma is exact implementation accounting. -/
 theorem actual_static_node_charge (q k b : ℕ) (hk:R.actualThreshold ≤ k)
  (hb:b ≤ k) (hr:k-b < UniformFixedNetwork.m) :
  (UniformRecursiveSavingProgram.seedPrinterLength+12+

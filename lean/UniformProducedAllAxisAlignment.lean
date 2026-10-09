@@ -1,6 +1,14 @@
 import UniformProducedAllAxisGeometry
 import UniformKernelDiagonalTensorAction
 import Mathlib.Data.List.Forall2
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§4.3, Proposition 4.2 proof and tensor identity (4.5), PDF p. 20 (`prop:tensor-fourier`, `eq:tensor-multiply`).
+
+This implementation-only alignment ties each lane-zero diagonal coefficient to the same ordered physical axis record used by the common-C kernel. It prevents a separately chosen diagonal from supplying the desired global action.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformProducedAllAxisAlignment
 open UniformSectorPacking UniformPhysicalTensorCoefficient

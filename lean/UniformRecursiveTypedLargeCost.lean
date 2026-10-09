@@ -2,6 +2,13 @@ import UniformRecursiveTypedCostAllowance
 import UniformRecursiveTypedNodeArithmetic
 import UniformRecursivePrintedBody
 
+/-!
+Paper correspondence: An explicit power saving for the exact discrete Fourier
+transform, OpenAI math revision adc7f1241b42e322a6451854ab7e4b4c146bf78a,
+§2.6, Theorem 2.6 cost recurrence, PDF pp. 11–12 (net:tensor-bound).
+Concrete instruction accounting for printers, typed records, spectator bits and recursive calls. These exact tick constants are implementation bookkeeping for the paper’s O(W_* 2^k) local allowance.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformRecursiveTypedLargeCost
 open UniformFixedNetwork UniformFixedNetworkScheduleMachine UniformRecursiveCoreSchedule UniformRecursiveTypedBody
@@ -20,6 +27,7 @@ lemma actual_body_value (q rest : ℕ) (cost : ℕ→ℕ) :
 /-- Exact actual large-child prologue, real printers, full typed body and
 spectator terminal fit the existing opaque recurrence unit. The only inputs
 are quotient/remainder arithmetic and the actual large-branch threshold. -/
+/- Paper: Theorem 2.6, pp. 11–12: local work is linear in W_* 2^k, and the S exact batches carry all recursive costs. The numerical tick constants are implementation bookkeeping. -/
 theorem large_node_bound (q rest : ℕ) (hq : 1 ≤ q) (hr : rest < m)
  (hk : UniformRecursiveRuntimeBridge.actualThreshold ≤ q*m+rest) :
  20+(UniformRecursiveSavingProgram.seedPrinterLength+12+

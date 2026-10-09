@@ -1,0 +1,1241 @@
+{
+  "baseline": "29fad6d4d3a68fbd806525034e8d07cd373f3d4c",
+  "changed_lean_modules": 175,
+  "all_normalized_noncomment_code_equal": true,
+  "historical_limit_files_byte_identical": [
+    "GateFrames",
+    "TripleInvocationFrames",
+    "TripleSchedule",
+    "UniformAllAxisSeedPreparation",
+    "UniformGlobalLocalPreparation",
+    "UniformLocalSeedTableMachine",
+    "UniformNewtonTableMachine"
+  ],
+  "files": [
+    {
+      "path": "lean/ExplicitSeed.lean",
+      "baseline_sha256": "fae35c06e4eb0d6e4371048b3043c019d83b40ad5a02ef67587c743ca414263e",
+      "annotated_sha256": "52819d2ca92a8262aaf8b526ffbc30c3d57adc3f6b6b8775f4eeba0355a30c15",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/ExplicitSeedBudget.lean",
+      "baseline_sha256": "f9cfd81cb636ff2043f8a19b83395f3d6928547b53584f3cb94c3c9cb397c268",
+      "annotated_sha256": "0c319a8e9fe02cde8a4643167fd4b86afb9ff00d8e840ae774513149c5234a96",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformActualCompleteClockExecution.lean",
+      "baseline_sha256": "e00aab67fbae89e21965ef0addae09ff4b8157abe2d49d4e082c50f557e30b7b",
+      "annotated_sha256": "6d67060e17f56cfc4a8a03c30d3faa3c66a3853226aacbff3ad680392ee3cdfd",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformActualCompleteClockResult.lean",
+      "baseline_sha256": "5f24bb774a6e66257775d5e9525f7581c807d26f14ef599d8db3896a97dca46f",
+      "annotated_sha256": "4ffbffa4d6f2f8249d175a0b56bc771560238e4e2c6d0b829ee898093210c94d",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformActualCompleteClockTick.lean",
+      "baseline_sha256": "cc3ddeb82a06d6f0b049b3eee9406edd45790fcfb888288af32cf13ee869aa80",
+      "annotated_sha256": "c9aadce3b7215765a7bd623d69b23f613e692eae34b1631e9df8e17b1a60421f",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformActualGlobalClockProgram.lean",
+      "baseline_sha256": "89230a456ff15827e356f59b189b558df0064c6d53798aa1ef17902c5297423a",
+      "annotated_sha256": "d0c66dd6b7220ddeefe83941e9bdf6f92d5f32d710cc4138df285c478f2ac7c5",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformAsymptotics.lean",
+      "baseline_sha256": "1dd60620e1600fd216f4d9b9246d2ee7c5a40f700a4d5b4b71374b676923f8f6",
+      "annotated_sha256": "9776a1f4064d0a758c2a0a56c0bbda8485f407bf2e89536ac91bd71f1afc4f25",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformAxisCacheContents.lean",
+      "baseline_sha256": "03bc431f1ee6d62e3549df11a2391dd80bc6216d92a3178e48ee2b7b9912e1e8",
+      "annotated_sha256": "8fdea531265b693e22bc5e486ef2953518c6972b788369ca8d79d8468daa11a3",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformAxisCacheLoopState.lean",
+      "baseline_sha256": "047b50b220cff4757ab3b2a7a141b8d80f3dcf90485410088063fa34519ccb3c",
+      "annotated_sha256": "40314774ebc2ed1ecdaeee3d80a56e961502ce7041ab6fdb58ac3fb5f40262af",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformCRT.lean",
+      "baseline_sha256": "5e6235624e195f1ca8f0845a4e5e7c2ed2890b38be597817523e7828c66f0e0c",
+      "annotated_sha256": "eb184b72a12c899db9ee86c50a170431b2b49af5253ad0acd2c81e267cfb4f36",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformCRTHeaderMachine.lean",
+      "baseline_sha256": "11b9f3a994b31c971e2cb95a20e95a4b39392571fd22c2863ccab5833a0aca51",
+      "annotated_sha256": "30d33fc9d4b93237a040bedfaa565da9171e64d8b45c8055c5cb99e682a3bda9",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformCRTMachine.lean",
+      "baseline_sha256": "b55123ad21b77dbf5250c75046fe6a9c6d5953d168698393ca22af5844b6e039",
+      "annotated_sha256": "41a206d027bfc607ce1b8802647fe144dd1b91e43319fbba8c58146b5bc7d6e7",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformCRTTransferMachine.lean",
+      "baseline_sha256": "33d28af9a5c236b17684a0092a9ada9db2e922ecc9f6cebe26c0640e72036a3e",
+      "annotated_sha256": "ed8fc79e5b77e28e527cdb97e4fd86955916a1b1d6625efe7659a59f7d077d0c",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": false
+    },
+    {
+      "path": "lean/UniformCRTTraversalCycle.lean",
+      "baseline_sha256": "063d8e289ae91fd3031554bdb7c9352c9c4d00cddf188be666eb73f29d696ee2",
+      "annotated_sha256": "c4bf46df5888abf7882fb8b02e5dbdd49324f8505ca52a4e46d79c9152e7da96",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformCRTTraversalMachine.lean",
+      "baseline_sha256": "3d8da7fa7dd88f5409062d764b8cc33306e6bc0b20343394caa5236477e8c5d4",
+      "annotated_sha256": "5b9d7b37849d4d93c684af74494b200799eb3072ee5a46dd09982c890d0956aa",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformCalendarAxisAction.lean",
+      "baseline_sha256": "1dbe6c52a2c874890999bf23af812d848c753bf9916b5d0e2766c6a4c557c1d1",
+      "annotated_sha256": "1530c7f61b51cea71a0849931a5c1d284acff74f0998a4ec3c44b7c40d912d8f",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformCalendarPrintedPrefix.lean",
+      "baseline_sha256": "c01034a451090b72debac75524bf84c2defd9bb8bc4e6cf2c585ce28873cc6e1",
+      "annotated_sha256": "2e07f118e55ed769a67e7a05f4944aecd2f78110eab9cbcabbab16795dc123f0",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformChirp.lean",
+      "baseline_sha256": "0886a97459cfdd152e3c8988b58f12e4d276035691dcf6b2ff31c6d2f2b2f726",
+      "annotated_sha256": "c6761be4205e6990cf030a4db4b77cac8c87743da5cc078469957c06c132fcc8",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformChirpKernelMachine.lean",
+      "baseline_sha256": "d467ceeb9beae1711943c3f95ac3e06c3708a4f4d2a2b632d4908fcd336872b0",
+      "annotated_sha256": "7fda7af8612ec0bc5b0a88956c7b0778b9d6b5b29db01c05bdf1d3ce48bb7e3b",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformChirpKernelPreparation.lean",
+      "baseline_sha256": "8c6b087fb36e22811e3891b6d52a36ff74cebee6789e6497acd4118177ca204b",
+      "annotated_sha256": "1dcfeaf76d02866d030088bb6bd1fca8b18c8549de83c9448a04abfcb52cced9",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformChirpOutputMachine.lean",
+      "baseline_sha256": "c075993bea5e903ee706bcad4e96c91e1f1434024759acbfff8f3b79163859bc",
+      "annotated_sha256": "5df24d00dad7d337c8636e9f680142bb071c2863a3c32e52c4cc811c3a5be4db",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformChirpPointwiseMachine.lean",
+      "baseline_sha256": "19c33066e983794353986687a8a6eb37e65f9f2c5aed2f56f33e2d3aedcc8619",
+      "annotated_sha256": "0ea00adf24bc08fa7eb66fbaafd6fb422a4b4241dc05257517fbbcb471bb44ec",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformChirpPreparation.lean",
+      "baseline_sha256": "849686caff9c6133b5f278411c92b2bcbc41b1ebc8149a6c5f61a02a81da7e17",
+      "annotated_sha256": "695fee69fd18b27681c218ac75ee7e67f75a96f8abf16faba4fcf8b31ba2ac87",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformChirpTableMachine.lean",
+      "baseline_sha256": "51dd2d08924463a112e20cdbea0996805419b322059d49e99147d2dab7a34c2d",
+      "annotated_sha256": "fa75d72b67e773515f472f683a46ae94d1f672f1ab14241c42961f445e6abd10",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformCyclic.lean",
+      "baseline_sha256": "409a8c4a4d3571d926f45623c89d10b057184820c7f2e04a71aed39b8c016f48",
+      "annotated_sha256": "297bbbf6f8e6845d93331a391d8dae84235241541db0969467f2dfeabef28e56",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformDiagonal.lean",
+      "baseline_sha256": "086011b40e23c9ee3b895a4a66d13a7cc453043385db10d8671753aa9ddd002a",
+      "annotated_sha256": "9109c7695ffaee1667104008e3e8e18aa938ffda8eda29e407ad935c2dcdbd35",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": false
+    },
+    {
+      "path": "lean/UniformExponent.lean",
+      "baseline_sha256": "b1e82683f307cbbcd4aa98621277c87dd06d07dfebb80013a06849fc6d4d8ce0",
+      "annotated_sha256": "70acc242f7f549ecb63f20db9133a0de8298717ee08471a9646c1b13bdb10366",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFastPhysicalCRTArithmetic.lean",
+      "baseline_sha256": "9a1d799f4a65ff38b32866e839a5492457de08cf7bac411443a85959b89cc4c6",
+      "annotated_sha256": "f083627cb496eedd1434217927b02b302930e654d85ee15a1e83e0625524c35d",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFastPhysicalCRTCarry.lean",
+      "baseline_sha256": "2583d72eebe1f6d50eec0dfc1cb36437f77a328582fb746a87d5cdaac1b36565",
+      "annotated_sha256": "f8d171f9c4cfae165d623a178acaefff6c1d289a0c8be61584efd0b68b31cc17",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFastPhysicalCRTCarryLoop.lean",
+      "baseline_sha256": "7a6b59bb0dabc3e2cca34090719e981e71c5dc9530688e1f3c4d182b3921ddc1",
+      "annotated_sha256": "e07a35c42231e962e959f3a5a91e7f76f5e8f555f5352da8a38a070e06faef78",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFastPhysicalCRTCycle.lean",
+      "baseline_sha256": "bfac445784672c481ce5478a565ee5fb8f1518d7e6f387c1afca4a330b40e35a",
+      "annotated_sha256": "f133af409ea44392442506d19033edf906c6f819474a4ec5e7302c05c438a00d",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFastPhysicalCRTEmission.lean",
+      "baseline_sha256": "a961ec28db45805115e5d2818c1bafffc7a99c2c5323f4dcf8ca4abbc4d7cf55",
+      "annotated_sha256": "3ac698483f8c7d4b86c8cc31664adc16acf0ae79e9180a3b9019fd5b4464e302",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFastPhysicalCRTInitialization.lean",
+      "baseline_sha256": "c4d983f6bb7c89c68353a884b34e78b1d113876b377024cdc5130d2074aaf7d3",
+      "annotated_sha256": "22d946827ded874a2474c8eaa19d171f73399c73f6dc276eadd30803b5b04f2a",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFastPhysicalCRTMachine.lean",
+      "baseline_sha256": "1eeea85088f052b73d6fe56e32f8b57b5399da7fb80cd4cf3a99c2e7830d34eb",
+      "annotated_sha256": "d7546788afd054cf7a1a375f624a5bd79ed90e089daae74d3304aa7b3e02b72a",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFastPhysicalCRTProgress.lean",
+      "baseline_sha256": "d5fd8d9c0e3d47438521fa91aefec2a2ed09e53118e8555bfdfcd08d26332110",
+      "annotated_sha256": "8cbd0b9a9e6ad30a00f75a63509add37bb77309175dbb69796502d637c6be7a5",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFastPhysicalCRTVisits.lean",
+      "baseline_sha256": "278f1ce185da7e539b8136b6675fe5e91549ae5a2e060b67dce1164dec41d05f",
+      "annotated_sha256": "a5214bcb71227ec4c67de0e4f817fd6933e4a206066eafb91a198f811fedc75b",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalActualClockCost.lean",
+      "baseline_sha256": "4e34fcf453c328e41059097a9cd407a5f2a4062dba9f5a4977ece51348d0b102",
+      "annotated_sha256": "5a6fe1e1bc95be4fc8cc11df98bb703991d01485b3c11c5f6a6525cca2bf8479",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalAllocationStride.lean",
+      "baseline_sha256": "901b273c7cd4ae63c875970c5c445bfdd595aab2c9f95dab314a20f0d2ba521e",
+      "annotated_sha256": "1ac70302a7f56cf6bf56b1724aadd1be205615eeb4ad0e9037fdf3424e753b6a",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalAxisCacheBundle.lean",
+      "baseline_sha256": "ff2a869b51aa81a26a26d2a59aee809f1aec77673cbe9a447d3b877a5611b5f8",
+      "annotated_sha256": "3748b2f4397e751fc8e2d488f89b09bd3fddbd4a925ec31609dbb461e93b2089",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalAxisCacheIntervalRetention.lean",
+      "baseline_sha256": "ce76efe90049c9d6dc5678f0c18a89234542141ce78087ecab328c1d51844fc0",
+      "annotated_sha256": "f8c7fb4f7f32913949c3dc5b5900c2696604ff73f92820828ba656d116a1be54",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalAxisCacheRectangle.lean",
+      "baseline_sha256": "c913e02f9412601d3d382813aef156047376b67367ecd56607ea7ef0032bb0b3",
+      "annotated_sha256": "3838133521027a139d20cabe4fd07c425c6a53c4b3765cc4114c55ddfa106e46",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalAxisCacheRetention.lean",
+      "baseline_sha256": "0609eaed96bcd2a7430e5cde0970277a26599b09b7e78c0cf49530f11d498476",
+      "annotated_sha256": "6d1b712d91777b183da55943ba26573986971fbd6803d4572693656ff0d878c4",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalAxisCacheSource.lean",
+      "baseline_sha256": "df46313aa410631bb48ebfc15d348420b7eef7752c56e154d852920821737f8e",
+      "annotated_sha256": "5ded7e8474fd2c6a338152fb8c921a87483a09b021a485a125bc2ec12e893eb2",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalAxisCacheTransfer.lean",
+      "baseline_sha256": "a68da6c295337885c7e3b2517f8fbde071f08e7a0a0b98b8e7a03ff9c21e225c",
+      "annotated_sha256": "dbd273934563a0d2278a10322881cbf57796742802b30b772abde98ffa644f45",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalAxisDispatchOutside.lean",
+      "baseline_sha256": "3d0c7a7b46b6327e4db62b203e0858a241e975b02b8df935d8d526d2f804c1ed",
+      "annotated_sha256": "02856797c48944a6d23bb9bfcdf827867e593fd981c184d78deab16fc1a513bf",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalAxisIterationOutside.lean",
+      "baseline_sha256": "4af87cc3688ad5b11b6836dcbea0f63d0e7750855122b0bf522bea0cd5f3134b",
+      "annotated_sha256": "951a770d61ece50ca7451fe9262e6d92a0790218677d43f0c20f7f54e756434d",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalAxisPrinted.lean",
+      "baseline_sha256": "e346bc13cad386cca2b585caf064c440984419394ea12197bc125d7ff391e6c3",
+      "annotated_sha256": "1d5f09d39d9704339db53e6f8b5e975f436a9c821477a6bd1bdb04d142ce61db",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalAxisReadyTransport.lean",
+      "baseline_sha256": "73764f1d51ba790b157f3a20a0b4fac4fc4c74d11b473bf4211e666589f99267",
+      "annotated_sha256": "aba7d8c13ef21ef8f387d5eb4cf46f772b82bc6db0c025b2c59cc3348a1daeef",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalAxisRetention.lean",
+      "baseline_sha256": "34e9d1a4ad40bfdcebf2b9193fea47718cd2c0ba888d136e8eb7e95d6a64a9ce",
+      "annotated_sha256": "2ef45ea47a6a5e8816c287b9871dba745929e01e52aaa993a57221d4538a2fc0",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalAxisStartupFrame.lean",
+      "baseline_sha256": "860abc61b6d2dcb1026f44c931eb5692c1b5e75708ae7c38b881b681ef1ccfe8",
+      "annotated_sha256": "ea9c04fe5ab12e894ecaa58e30e13eee33bb0b1d9f1258f3b3c8ba815a78be53",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalAxisSuffix.lean",
+      "baseline_sha256": "7b7ee8bb2ad3d06936d07f569b254a64cbd200cecb487f07cf2b5a596641902f",
+      "annotated_sha256": "7666a41fb4719b8556c2df304cd2e38c5ea14a5566ca78f4333607ef2957d099",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalCRTMovement.lean",
+      "baseline_sha256": "4916eb01b9933e8cc8d9fc2300e1c754dc08514eb2be61e7815e427270bd93d3",
+      "annotated_sha256": "abc99328a8b9aab9c32799aabde46a8f84029d0afc2ad38878aab10d309c1e86",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalCRTRoleSource.lean",
+      "baseline_sha256": "3ee9aeae570958f63825fa2102dcb8124f6388bb7d34a993123cac56748afbc2",
+      "annotated_sha256": "63cec94c7b06c8192fffef103a1d50916f767ee15277de9037fc0beda1f41cec",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalCacheAsymptotics.lean",
+      "baseline_sha256": "37d16e9ecc047be6e2f324f9c204537cd1bbe896357a1f0cdbe68379aad56db3",
+      "annotated_sha256": "10e666831105d1fd5edd04934fc11d9011a7d985e97d99216ea3e1a8ecd00bd1",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalCacheRegisters.lean",
+      "baseline_sha256": "71b53f974cac82d38bf29457ff7f0e71d5698d77d1233aadf24cd1f3da0cab62",
+      "annotated_sha256": "da75bd85c503c5f987692ced6629764bccfc2e88c99dbad0b7514c13220260f1",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalCacheRuntime.lean",
+      "baseline_sha256": "2ade472c0124c95b871e7373e3d66a539d69e0513da55cbd57389c3eabeb5cb7",
+      "annotated_sha256": "db85685659ba74907e26cdabe3488012c0785c7709c5455bfab533b97cf792de",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalCacheSource.lean",
+      "baseline_sha256": "32d733c223689822383747d6d6cb28b8ae000a7d0b8e636a44f642ef2a7b459c",
+      "annotated_sha256": "2b247b659f341c65157111d109fa355375cd3eeb06b7f0416a367273d18e4b03",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalCacheSourceLoop.lean",
+      "baseline_sha256": "c217295361e3ca58cbcc0eab5cc00a1d7820efa8450ecef67313006859afd4cb",
+      "annotated_sha256": "2d1f647c01c40b90f7031cd231b910aa8afe1ec76925449f1255ad80744e0ec4",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalCallerFacts.lean",
+      "baseline_sha256": "3f98bf4401224e5f0012f23c807390b7c7090430d3bb9282654d4a2436f2497c",
+      "annotated_sha256": "8e5fce66922021e0e82d041a3140b47304a5868761369eeee400f1b9d535a556",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalClockCache.lean",
+      "baseline_sha256": "b9fae49d0c8f6c8537f6b4617a8d65131790bfdc420a0522957befcea7b08637",
+      "annotated_sha256": "f9909a4f806d60f08085ababb603238eb981eba479d4b286a7edf1699317a13d",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalClockCaller.lean",
+      "baseline_sha256": "013c6a77c4a913fc2ab31fc13d263c7e3020a369db9659fb18db250c20713ef7",
+      "annotated_sha256": "32d1821dfb9f8afdab4473ed479d988d6e09e20a3ce12ab5cd18b9fc9d36f71b",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalClockCost.lean",
+      "baseline_sha256": "abdc820eab2abdae88d6fcdae93c90fca26e31de8038dba9f430695988dd9d40",
+      "annotated_sha256": "b153dbb40d443b1ce81c809bd645b968fe87c8b74cd7eb1f41a0fced49c615c5",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalClockEntries.lean",
+      "baseline_sha256": "d797546180992b560d56e052efb2bcedb2e6ec6bc38f1e3f93495f1fb1de36c5",
+      "annotated_sha256": "40aca8b5f747839e403f6c6d75be170ed75cf73965dadfc587fe8ce9c352c96f",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalClockHeapTransform.lean",
+      "baseline_sha256": "e70bde56d6d261b67ce574ff2bd92fc79fe42b12d2d4808b3fef72a9f0f39ecf",
+      "annotated_sha256": "8376356926af69668f9ab475ecaa1a5f498a1d2df462bf7846dad7d81819acf6",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalClockLength.lean",
+      "baseline_sha256": "6e3f74657f4000f34a4a7b1756ad40778567a0ff53eed9e81cee0a54e7091fdf",
+      "annotated_sha256": "caff0dd120d09f55964102d3ac7cb7176c1da6d0a487e18b64a630a5f80d7e66",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalClockOuterCore.lean",
+      "baseline_sha256": "7d64fb1b67c7c8980a9066986b48c40269ef955931c26c30669b8aeb0ffe5e9a",
+      "annotated_sha256": "370da5b2fd75814de2509ba3287506a85e1b0dc924a58823a8b9bc5c943e2a80",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalClockOuterDerivations.lean",
+      "baseline_sha256": "9d1ac03cc1d0c6e56313fbebfef7e368edd9b52bd3be708cff334aaf5b7febc0",
+      "annotated_sha256": "27bba7802c6ffc36010149bccb8b812f0cbd3ad1c86766453e12ec0f5db51b1a",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalClockOuterFrame.lean",
+      "baseline_sha256": "ab20b6b9241d4eb427227cf16bb2e3e8c695e3f492bdb2109089e6be793334b4",
+      "annotated_sha256": "466e7c1043d591786da4f9acea1a4c68c858d26794cde48e07c7d50a0654fc3b",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalClockOuterRuntime.lean",
+      "baseline_sha256": "d31e2572338df0a72c7324c61fc78be4abeb09971e858d78496d9adf11e02a3a",
+      "annotated_sha256": "4b1d8e11cbe8eaaa5b7fc689c3c63924f5ea75e6cb13c8bf56252c5353e008b8",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalClockOuterTable.lean",
+      "baseline_sha256": "887cd2b81b20b9c8b86c7267e1792470b7b3b233765cf6aec8cbfa6dd44a28e1",
+      "annotated_sha256": "49afeefa7f8de57fb4bfa5123ad7601b09a6a7df608fbe0a556ffde9c8cd7f95",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalClockOverhead.lean",
+      "baseline_sha256": "8e955b3f9d326d4769b432fe1096e28c5de23c1c3f6e780be079025157c0143e",
+      "annotated_sha256": "8aee27a03e5f94fe47b092a0113ae3ebd3cc24dbd0c8dd1cded81f9c9e7b5db2",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalClockRuntime.lean",
+      "baseline_sha256": "52d2fdc0f17387a7462adb7ab3e3864b97bd6906f870087f1a7a033cd34146ab",
+      "annotated_sha256": "232f26701b5f4d5f9ecbee850a5278a7599eb259d1c25c0e6f3babc10e55a507",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalDFTExecution.lean",
+      "baseline_sha256": "95a3536293de1cfbe7689f8a91b352edc97b8d7b3c77be38e3e2e835f4dcc0d1",
+      "annotated_sha256": "e2100bb5c3c25fef36542e4d9351070bc29882165f2905a6f62bc5145420b47d",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalDataClockProductExecution.lean",
+      "baseline_sha256": "20df4ecd4d10ef7c2bc5d19a8ae2b582e9a02c3dc7a0b59a56f143fc6e15a14a",
+      "annotated_sha256": "4f382a099fe7c401898a6038a5916694736bf321faa3b0fc0d03859c2f8af8c2",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalDataClockProductLocal.lean",
+      "baseline_sha256": "18d4503d11b7d0a2a19feddba42648bcbf16afb5b998404a49c67df86d0bae9b",
+      "annotated_sha256": "f31b9ab5844a5e8e131d217d15daa31726ede1d03d968c75ba92a48f3c967112",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalDataClockProductResult.lean",
+      "baseline_sha256": "8a58998611a1f2a6fe817ee696757e00d3a2079009cde450832af685b92b715a",
+      "annotated_sha256": "88f16fa39dd6fbee0de5235a38fd7320273154ea10aaf960024214483d95a7fa",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalFiniteAxes.lean",
+      "baseline_sha256": "33893f7a2b9aac650aaf6162818978a37474a69aed74a2cb166e6cf330cdafff",
+      "annotated_sha256": "8735840600e7f971fe0168abd2ce88bb6a5afae53eba965c2e7d4193490686c7",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalFiniteAxisAdvance.lean",
+      "baseline_sha256": "440efffc58b6a0d88c112484caa1af2bfab25e7f0562fb9bedf119db91c70a17",
+      "annotated_sha256": "611e12c1a13a22f16788750aa4e32faba9affbfd57619048c8a7f75607045f96",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalFiniteAxisState.lean",
+      "baseline_sha256": "fe792539cacae980cfe44b4d338331c45b9f86b7ad29012cec79a3d7520b54c3",
+      "annotated_sha256": "0b25dfaf15f0bb90dfde2f2b7c4830a80ddeeb544f82ce417607fa785179656a",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalKernelAndDataEntry.lean",
+      "baseline_sha256": "b31dca10fc79a12dc5b65bfd9f909e1560c7aeb42896b632ff467215f5fa50f9",
+      "annotated_sha256": "af0248d1fbe814b555fcd1a40f994f86ad4191f397f735e89ea3b9b0a015fe94",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalKernelClockSave.lean",
+      "baseline_sha256": "2a19158e1e67a72da2fda987d850200caf1f950ac4fb9df762bf2a7fe21ca28d",
+      "annotated_sha256": "a704dd4e386cec761ca3d436289123fa6d31adcf1f3b21e36f077810ffa536bd",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalLinearTableCost.lean",
+      "baseline_sha256": "c324b88289dcbd531c034eeeb5ef37ebdd7f30f64866f13f122519b0cdf17534",
+      "annotated_sha256": "0a224947897e319cc779b777e500f07a156ea33a3596a2a518705bd540091420",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalMovementCaller.lean",
+      "baseline_sha256": "cb6d3772cd9de67415424e30adfd69ac62d43e1315b58cd95609235bfbad0f96",
+      "annotated_sha256": "b58f0ec5560a3860ff6ca633d504a46626c0c9a61747409a02c58e16bce83070",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalMovementFrame.lean",
+      "baseline_sha256": "3e8c952fd72178937f6aa7207990449c4626c1c5ff55b5c05143f38eb5a459a6",
+      "annotated_sha256": "6d093c4bac3c5d39fe21e7bac43ddd8aaf80d1572b12afd08e16f522900e1119",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalMovementGeometry.lean",
+      "baseline_sha256": "d48d85a0ce7b2481397f55489e9f6a0dbc0bcb38375abb0a3d9c67c50d624283",
+      "annotated_sha256": "1824987b122f52786ae0f8b94efe4d5de49d43371cddd55a47d5909919aa3ed8",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalNumericJoin.lean",
+      "baseline_sha256": "e2a3c74280afc61241dff04021ea8a5e72c24f1bf50e33c31b20bdb92c8c119b",
+      "annotated_sha256": "bbaba86514e0e967eab3b62930d6bfd3ee1e016eac7a8e74541c042de3168f8c",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalOuterCost.lean",
+      "baseline_sha256": "7ba1cc4462b110ed4e159d43c25b9f802e65e73642adb4c3252c7e2d0026e3d1",
+      "annotated_sha256": "d552c349af01bdc11b34f7fd6de6f6bcc12f3de63848646ddf8f576618f87764",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalOuterCostJoin.lean",
+      "baseline_sha256": "9b331916c0dae36413e41a5f0c4ad1eea379cf319754f65934f617b3d34f142c",
+      "annotated_sha256": "8164dbad05689eeb03f35337098883b810b75a433578e0db5c4e582ad25fc176",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalOuterEnvelope.lean",
+      "baseline_sha256": "f24a3eaf9a65cbf2792d2e779359aa4837a6fbb699f0d9dd1d6a704ac77db9d1",
+      "annotated_sha256": "7887510d42d730c0e8eec50307119809b6f3c080f2da5784a0aa4c5f41fb32d4",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalOuterHeaders.lean",
+      "baseline_sha256": "1319f1ceb8b4bf2bd514243d52318fa0bf73d5520af8e2d264f792bb8160f643",
+      "annotated_sha256": "24f21f5ae2e2ad3d3f8557482f57d48a664ded60f0dd2827aa838dea615a66da",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalOuterProgram.lean",
+      "baseline_sha256": "1669897c8d14e58034a6881d01f22c18f0348532d332cd4782862241f7e2e4ef",
+      "annotated_sha256": "606cfbe51c418e3b7226c237e12cfbd16c869345eff9fbcd480502e3bde4bc9e",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalOuterStartup.lean",
+      "baseline_sha256": "8aff027bde3646818f3aa2e00b39f059abf738bb7611b26a4dd09bbafe84992e",
+      "annotated_sha256": "6e23ff3ad282434337990cb7cec56b7d01f45fcf0f2b3990258307c6e9d75d87",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalOuterSuffix.lean",
+      "baseline_sha256": "1a4ceae7e05b0f39b72fe23a10b7039b26b14cb5127a5160e522c3fca83eaece",
+      "annotated_sha256": "24e15be7621e6b325e3000599e63d47edff1c8888f5301918cd646edea72b57a",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalOutputTail.lean",
+      "baseline_sha256": "7872b5607ebbd6c61c709cf98d15242c9f362d8670138cbdbcb7416d5ee0a63e",
+      "annotated_sha256": "e62e255835d1f81e02fc6a159642a7af9cf3ec9331a67165a07def65ef13f171",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalPhysicalTableExecution.lean",
+      "baseline_sha256": "d689b3a13e2bfbdb481884ab645d5a5c8b93198ed92db3cbc00d514e6325f9e6",
+      "annotated_sha256": "10d6447c2719be89e3a2e31f99b548e37cbb2730ce8c52098f29af3c8f13b8c6",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalPhysicalTableGeometry.lean",
+      "baseline_sha256": "08c24f18d507cf0a2572d84f906b6dc937ccee7204972f64846b11403fee7727",
+      "annotated_sha256": "61a47d390d360907c6dfe222f9f6a30f7fd9aac3b3e55e463e00cce1fb4367d0",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalPhysicalTableInputs.lean",
+      "baseline_sha256": "2ca62b65cd29405730d204b92f70d88ff6c0f19d27e3a50176c369d36388b245",
+      "annotated_sha256": "4784028b8cadd763edf4d6b331d4d84834748b7e98c1b008f770af86431533a5",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalPhysicalTablePrefix.lean",
+      "baseline_sha256": "aaeb92de51117c3b5ab9a3583a9347f9cec75086f2f474494c2de35aa93b16b4",
+      "annotated_sha256": "f337c742e8ac612f3a066a4ef6bae0a5b36b849bb09afa549c5f441c3475147c",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalPointwiseCRTCaller.lean",
+      "baseline_sha256": "db36a27639bfb9f74750f87d66bae3fc183158792d9df3cee71d19264fbcc534",
+      "annotated_sha256": "479c749a9e1045c8e44630e64c2fd45a82abd995f1accba16ec008163f353fda",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalPointwiseExecution.lean",
+      "baseline_sha256": "92b5e78b881a7e6a09f15fdbafbbee9f735a5a80b9d80ed7e3fb180266ab177d",
+      "annotated_sha256": "ab71b2e459fa890b84adeab97a3852b59b311c7c1e9c9b5d95ccc51d19719f50",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalPreparedCellValue.lean",
+      "baseline_sha256": "fce1a976bfb395ba611270bb433df7e1eca29fae497c5f2cff389c46f50ca3f0",
+      "annotated_sha256": "f1cdfa58ece7a7536fae04ea947bab56185a4c8b25a822b855dbdee4ee41f23f",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalPreparedSpectrumSave.lean",
+      "baseline_sha256": "17fbd641ef5da293c9402167895fc50fd47157e77e1e16a6ef1ebd9aa912036f",
+      "annotated_sha256": "b7fb7e1f0ee714d3cf9941b697b961dabb5aed12db678d7807e380462afdb45b",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalRoleAlpha.lean",
+      "baseline_sha256": "78836d5ff5045994b33e98b8f99caae14f707906f3f805d937d985db75b953c9",
+      "annotated_sha256": "5d6e8697b45533c007f12e190099ad7306006c0b7a47c21e7627b2fcceab2550",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalRoleCaller.lean",
+      "baseline_sha256": "77ef282ecf6594e38623c0f83012e638d29f9a8023517767de9e72895ffb2b57",
+      "annotated_sha256": "c3777474be42f9fe7955487026fc62bd49a89827e375e95142f303dea1da4804",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalRoleClockValues.lean",
+      "baseline_sha256": "bf41288834e6e712bb906ac723c267e83c9a0422a4efeb998955bea8a8fe5785",
+      "annotated_sha256": "aa64eae53534674498efac319cdce1accfc9c331e30ecfb4d5cbc8e7baf4e7cf",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalRoleExecution.lean",
+      "baseline_sha256": "852a97024181b196c8815c01ca376b33faabc1c95a61be7145eb526a2d015611",
+      "annotated_sha256": "f0213af6b18a9dfde77da0f720ec5ef7930f726876c9b3c547bad2cf9ad94541",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalRoleGeometry.lean",
+      "baseline_sha256": "fd3999bca4e4ee7f5efb6d6b4d618a6b6137334a334d3a103898afd64f6356ed",
+      "annotated_sha256": "e9f16cfe224fdef26e48f1bf5dd114c938934c4f10f624a2dad07f817580c6b6",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalRoleModel.lean",
+      "baseline_sha256": "2150cf4855fb841bb435e69644742abe0e912f640b0217cd4c3701504bd56735",
+      "annotated_sha256": "274e85ffa0a9ce20168a70125be8180fbd758d01f7e092de3bd6e7e8909755d5",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalRoleRetention.lean",
+      "baseline_sha256": "fddac7405b0d7357ee1e9a082ffb65a6bb10e1ac5b8d48f96a51b8cd237f1d1b",
+      "annotated_sha256": "c4d6205b49502dc39d01d450a039074c4295fa4b1d3c707bb9ba65951f1f0cdb",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalRoleStorageAlpha.lean",
+      "baseline_sha256": "268b1ec82dd0728a1ac64bdcc2735d8e02b4bf68d59c20c57bb759ed643298ea",
+      "annotated_sha256": "b08923d99d13f59b4410499c85de3edf66ae4b9690f81d36c85d196e69c435ff",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalRoleStorageCaller.lean",
+      "baseline_sha256": "1a269728ec87ad0e1f0febab0905f48e3099a28a66e8c5d008385a412d151776",
+      "annotated_sha256": "40a552361442e5ac7ebab8c454c2dce65dcebf18cc33e9b8c58f18a0b4c27377",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalRoleStorageEntries.lean",
+      "baseline_sha256": "5f77db8efc01862147839e90c1f7c93db4279f9271055f5069646105c810ec6a",
+      "annotated_sha256": "839561e096804523f5ccec269fda56ad63a1ebc77672fd4bddbeb25b78749e54",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalRoleTableEntries.lean",
+      "baseline_sha256": "7804c94b8032d5520443eadee634d845f22dccd96b71a6208a51d40572a520ba",
+      "annotated_sha256": "bd9e3c61b6c2dee3ced06ea85618734e3b79c251734435a3a9d2e987f5b29605",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalStartupCode.lean",
+      "baseline_sha256": "afb4c78f34b415497f12eecd933497f7ef0da758c84fab968b39b52f95b97af7",
+      "annotated_sha256": "e3b683f8fe7ee65849f88decba3f60c6fa82b410a69f03a3d95e4f81075c5892",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalStartupData.lean",
+      "baseline_sha256": "6171222b2ad73a40cabf5d8ab271c0d282af3e9ee268fc30c11c279d54a8d06d",
+      "annotated_sha256": "a5524933d0566ad2adb7ae6beb24923763e7628d8ab637550962c064e0a13c6b",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalStartupFrames.lean",
+      "baseline_sha256": "59cae5e59d7a4760bc70c544f8bf38e3f7739d32ac2a2e71520211855c18a741",
+      "annotated_sha256": "98407224fbc057b40c05b8dcb0a6358cfc56097819d393ed84fb864efde8b495",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalStartupPrefix.lean",
+      "baseline_sha256": "608d9f5a6932e770296f46c5ef3a94ef241bc03a866321a70c9b793d4f35a8a9",
+      "annotated_sha256": "17f9eb4e573bc8696cc9b09d7765b23ea42d093660337312d589d757d51a4488",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalStartupSource.lean",
+      "baseline_sha256": "def4928a55dfd89bae4a8653508654024e67fd3ebe112239436f86021d29d0f4",
+      "annotated_sha256": "2b6fc6e3527c389e086c4cfc25618cc1684a8ce6553dd4f899f2ef333ce1cd6c",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalStatementBridge.lean",
+      "baseline_sha256": "7c94b4d53fd43a753057f30938891a978564dd417948023b4cd1dcdc013d4e58",
+      "annotated_sha256": "038a2801b015781d532138caa5cd83d9dd5502e24266c2175e284ffd6ea4bb67",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformFinalThirdClockOutput.lean",
+      "baseline_sha256": "174624243a0a562bb6fb915e52f4dd04ba374877e8fe1d96dc1d4dfdf6304b67",
+      "annotated_sha256": "66c4a7dc2d36c545edfe32dd76614d30cd83323370822410848a6055fd2c02bc",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformGlobalEnvelope.lean",
+      "baseline_sha256": "442e8b02ba68b43bacbd148ba3d8dde2a2f87ba58b571076228492c87fe15440",
+      "annotated_sha256": "141d1d2cfb14e7f298f1e0d9697c3d964f3b0eb541d41abc7518c32e850bb517",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformJointAllocation.lean",
+      "baseline_sha256": "c6ffdf513a9491b2a7afe3dc36829fa24057334f5206350e6f40c19c354037fa",
+      "annotated_sha256": "8f2cea494c55675c678a737b0a8610c09254a10a906dff151d96ace1b5656cb4",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformLocalFactorDispatchExecution.lean",
+      "baseline_sha256": "fccbba78762415fdca663bfd3fa5a27637c1658cfce52fbef4325035d9857733",
+      "annotated_sha256": "dcf53a1af0a814ac84a82b33083a3af16314c781f0636ea2da28234ca2b390ea",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformLocalFourierLayers.lean",
+      "baseline_sha256": "4de976f09d2d9b165a6d83ae13deef25418db18de98a25d13f2a8d066adf943b",
+      "annotated_sha256": "567e0fbc70bf85cf3a54aa30486d0b99fb445d5e16a517211a668c937c109745",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformLocalFourierWord.lean",
+      "baseline_sha256": "222e19ce404275cab697eab0084e44d47813fd6a24d11360783f689cb741ccce",
+      "annotated_sha256": "6de00e763ff4f3f24acc430246103a25c78aa1e4c9b75d5a0183714cdb2bf8d6",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformLocalPreparationDAG.lean",
+      "baseline_sha256": "fec762c5618f562640beb51cc8e73e05b83e27cc6b6117c186cd46a6b3adb02a",
+      "annotated_sha256": "c909bd69beed083d4671f7d7ffee1f42aecf4d522acc9140fddcb581823d4807",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformLocalPreparationReferences.lean",
+      "baseline_sha256": "1f8d362f100a15bc4df011c2d4a53a90054d3dd4451547c78cb30b3ec90fe71d",
+      "annotated_sha256": "617be9cb536da9e93db57647defee895e20f1f9afc34c8be79719afd24ba9517",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformLocalShear.lean",
+      "baseline_sha256": "fdcf79275ddde64a367513d9665cd3e98a01d6238506f3575728bd249716cb43",
+      "annotated_sha256": "9e2d87b3b053c602b90854cade229e16a11dc3f69266be420325f92c72bf60e2",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformMachine.lean",
+      "baseline_sha256": "e5a01e304c504c8863c76e7b7c31d2196387cf1d9a5f2d80520606abe6f0f2e1",
+      "annotated_sha256": "b3527f9d4f0997fd1e5da09f2895b44b9561ed530971c7c57e88bba237f2f833",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformMasterRootMachine.lean",
+      "baseline_sha256": "4371c81cf53887c98951f07cfd28e7a70aa80bc0396e67dbb2a98f7f2a011842",
+      "annotated_sha256": "f4ab644e115e1abac9ea6a7465385963e03ceb78174183f61156f04bb2a350c1",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformMasterSynchronizedLayers.lean",
+      "baseline_sha256": "444c7062d979279d5e8f734f0bba5a6cd8a2ac169620326edb3e8335dee52e55",
+      "annotated_sha256": "8ad778e9c0aca28fc0ca221f5a84452908ad235400b8f9f3f3d92911055bd6de",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformNewton.lean",
+      "baseline_sha256": "4f777ec6677b753242ccf16d99257ab92d6ac0ca4845706f4110f1ac3a45dbd5",
+      "annotated_sha256": "279826f471e60240906a1df7bc7345be69fabeaeefc242445d430f63ea74bb86",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformPhysicalClockPrefix.lean",
+      "baseline_sha256": "d1d65060023ad6dfb244fa72e34e41dd3b290bff4db8306e9eb0eac582010057",
+      "annotated_sha256": "07a9bf45d19c8e629535c934a43d38871e4df687528858917a149b8e117df2ef",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformPhysicalSynchronizedSchedule.lean",
+      "baseline_sha256": "bb714b4ede4f563996e0fd91092ac1fa6310776fee52c9b97b57cdfad058d947",
+      "annotated_sha256": "f85d621a67da82a6ccb2ecee74678cfd895876b0bd3707deb5c6f65ad9230a38",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformProducedAllAxisAlignment.lean",
+      "baseline_sha256": "7039ea33f497099c0412b78f56f377018a7d6f7fdc5fb5331f2f23805f87fc77",
+      "annotated_sha256": "cad618bc44575d0fcfbf942485ba8db311a5ac8bd29e321d0ee204cdbe7b2383",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformProducedAllAxisGeometry.lean",
+      "baseline_sha256": "62e8dca8739052aeea005584af5c60bbb65e187589d69ea4633eb9dad7f06d71",
+      "annotated_sha256": "ac311002369b58ea960e2731bacabc3cdc87b9392bf4ee977c22bfcf22f178e9",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformProducedCalendarAction.lean",
+      "baseline_sha256": "df010666bc63c40e08fbee59c86e249996a7d5c4c5f355c5731acc995ff7e202",
+      "annotated_sha256": "819aec185f6bca9b537e7e5f13b0b760b967328d621d7d1df8f78e5415d9ada1",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformProducedCalendarBanks.lean",
+      "baseline_sha256": "a7c66e3806a9fda6d6eea57173f65d546418ebd54c2d72eade36d2f3ffeac043",
+      "annotated_sha256": "9c3e9d776885178ddfe455784bedea350dc232ec6b11ede5d32da523cf3eb319",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformProducedCalendarMatrix.lean",
+      "baseline_sha256": "42bfc7b7892d1fcda7412559eaa37cda62ad15dc5f146b6b1986e15aecaa8362",
+      "annotated_sha256": "31103d0b80e8abe94af4e13f8ae1ba70a9b7dce2973a698e6289481752b7a0e5",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformProducedClockTick.lean",
+      "baseline_sha256": "68bfc088e28a52a0170cc977e2cd9ce5b265151a0f7f041f0d09242414833600",
+      "annotated_sha256": "e6a4a4593e963947bd9d4c9b673eef77d66c7b324ad3ed8ef5205bc94e3baa64",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformProducedClockTickAtEntry.lean",
+      "baseline_sha256": "d45312eaee9f7cf28eb746b4d3569da423d5ab56bee5c7a91552466c3d074bf0",
+      "annotated_sha256": "1564d1e53ae1a6bb1537c26af137b8e7d656e002a259e7c48f98336be7273e53",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformProducedClockTickPrepared.lean",
+      "baseline_sha256": "ef0efbf082bca1084cb11bbbf3cfc4bb8457660dac8c112675e487057ae4c592",
+      "annotated_sha256": "51e3b3596ed257c4b7d78ec4a3b529a534c383b121fb3fdc04420aa49a3cc817",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformProducedClockTickTracked.lean",
+      "baseline_sha256": "dcba385b076be5ebcb9378a559cb7b9c519fb1b1bf807f441c4552fce3dfa387",
+      "annotated_sha256": "63bf126d475e2bb22a1f915996a127b04ee0d4e280232ef4631c51ba689a3d74",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformProducedPhysicalCoordinate.lean",
+      "baseline_sha256": "1020cef6160d86feb1249af6bb7b73cfb85d72928a298012115b5b32fe5a369e",
+      "annotated_sha256": "cfde1d392cfaa3f86b07a42dec11af2a89fd93624bcc52928abebc64dc7ec3b2",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformProducedSectorChildABI.lean",
+      "baseline_sha256": "26314bea70096097b40a1766eb340147069b525fdb536e6aa9669cbb31bf80e7",
+      "annotated_sha256": "c5a1db12b1456b229a163d50265998512ee77bd2d6de8bcf3805278648256f33",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformProducedSynchronizedAction.lean",
+      "baseline_sha256": "cd01158626e58ee49eafc5e268f346bb14606c72b24666f202c8e7eca1889c5f",
+      "annotated_sha256": "39ca3ceba5081ccb69869a1a5c359aa42cab1fef87071a4c0645e59a09442775",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformRadixTwoDAG.lean",
+      "baseline_sha256": "9a225d57d884b8388c6f7e80e1548508268c2c11f5563b08780af889a82a0062",
+      "annotated_sha256": "da135925fc0f37df553d2da7d4d1af7748cbfc48faff51df7ac376a0c0c472bf",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformRecursiveActualRuntime.lean",
+      "baseline_sha256": "3f3a1adc0fa30bc523870a195bce9d9da954732cd4b863e8d3f06943f422fe95",
+      "annotated_sha256": "a8342d4e13ab73758fbd90f6e7a9e93df4007434401dbf20285028b436fa6819",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformRecursiveChildInduction.lean",
+      "baseline_sha256": "9427ae0a8963c07ce27acf0c2dcd91a95696563a13c23f54c53a0d6f78417baf",
+      "annotated_sha256": "837e53e93e3ece669dfdc122eec9c1b513b4cdc09715ce4108a4f3d044b49e8d",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformRecursiveCoreSchedule.lean",
+      "baseline_sha256": "991c237acfe1938d09e7056df60585716958ffdf2ff9493b2945d6dc499c13c2",
+      "annotated_sha256": "3315bd671bb681d4255a1ad28b2c209aede8f8a9afddbad2a0bc5c0c79753972",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformRecursiveLargeNode.lean",
+      "baseline_sha256": "5856cc31a06a813c2519e720fa4d4f46bd09556f69f5443ddbfd740ccf42766d",
+      "annotated_sha256": "62594e753bf8da5d4e076e1abe2affe4b718a008dcd0a0d30bb5a41313e2bab2",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformRecursivePreparedChildInduction.lean",
+      "baseline_sha256": "be42c94660c0808658e234ffee156516d736ab0e9bd9521918da326bf25ad128",
+      "annotated_sha256": "1181068f256d65792f5593795ac0a4116bbec5a1e95cf3790384c072bcd9749c",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformRecursivePreparedExecution.lean",
+      "baseline_sha256": "4398da8ca3129bd17629ad1f0d0fd80101ee3ccf8c782b3d44a833d3ed0e8f0b",
+      "annotated_sha256": "0f38da5bb65a125136958338d72c35962257504ef37cb3b479ef97d6ca905fe8",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformRecursivePreparedRootExecution.lean",
+      "baseline_sha256": "7f3831eb23d081249664eae70d271d68869c53abc0f83fd7075a5142c58c4450",
+      "annotated_sha256": "560b2b48e68b9b34f68c7a9448ecd59a98f06d2c2416e81b14f4fd609d2a536c",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformRecursivePrintedBody.lean",
+      "baseline_sha256": "d80b4d9b2b4415d4c382031d29385b8b3b08d213abbabf4afb9a44d321ce402e",
+      "annotated_sha256": "fcc8e657e4f908b0056fa068e87a0ab4f768eb36c7975927cbb2e26d272d80f1",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformRecursiveRootExecution.lean",
+      "baseline_sha256": "7b66190550a19d9711d5e1c3b8970b4399a48354d620cd0360847172b106db5d",
+      "annotated_sha256": "a9e77cba8b14fec5ed42a5993fcc293c9e1943d9255d3e58e70c8b749eedd83a",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformRecursiveSavingProgram.lean",
+      "baseline_sha256": "245f94facb900a167e633dd545fb1233d32b86b07f035b0057de28b2a2f421a6",
+      "annotated_sha256": "56385482b3e46b0bd50479474a3efc11060073ba19df1466d8c41b5ed5e8d6ba",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformRecursiveTypedLargeCost.lean",
+      "baseline_sha256": "3681af11bbc4faaf08d95e4f863a9328055bcc87c3e3c6779685aaa0207016bb",
+      "annotated_sha256": "8408a85823a172eba9b12f6e0ebc8ed1e9a04fa9f01f8df36c4e1a3fa0664562",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformRecursiveWholeValues.lean",
+      "baseline_sha256": "7c73163d7ee43e778f38cb129ca7d0e151cc94fdf418ce65a2984f0143916f64",
+      "annotated_sha256": "e16607c5c3920888a2c7d3470d5472fee8ecbc39a58b9aa219d80038ae986c71",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformRoots.lean",
+      "baseline_sha256": "98f2d4b40377d61f3de5f7b924124d8b56a97bd08f541db837b37d606aeef676",
+      "annotated_sha256": "23e79c9fb334509b2f990cac829ba9771b3d30f9967788c6089031868b201dd2",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformSectorMetadataMachine.lean",
+      "baseline_sha256": "75ef899325a7b86b9e6d3e06faddd0f045200d81e3ede8a44f55f2033b866188",
+      "annotated_sha256": "57af3211423c8078c9b3498197efa7d5f281a780e6c13a399e52894194a02503",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformSectorNumericTensorBridge.lean",
+      "baseline_sha256": "ed8e8832cfa5f688a40e0be18d8c87898321b461cb2f9019b1f7974dd3e2d665",
+      "annotated_sha256": "7b73e133a91e87ce5e42edd01748e19ebeb7c1e55ee353b778c336de19d46bfc",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformSectorPacking.lean",
+      "baseline_sha256": "fe776952d7258bf8c0384315e2e4b1ad19744f61c348fd2d78fae74cca79e659",
+      "annotated_sha256": "3f410dd88ad3b36a8a1dd572aa559509f6bcf2eb9a8bd053b885d97958c308b6",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformSectorPackingMachine.lean",
+      "baseline_sha256": "edcc70440a43b62b95ad0c6398acb774cab7b5ea039b256dc4ab89e58dc8605e",
+      "annotated_sha256": "edfe132243ae409f4982631082b0ea404f0312cf336a0e0a47e337b292f9d09a",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformSectorPhysicalBinaryAction.lean",
+      "baseline_sha256": "c3d1bc7e283196ff2f6a20e6d3fc957381207d89a26c4bdf0f49e5ffd94b4fa3",
+      "annotated_sha256": "8b60119443d7c770d4622b6b38d8179b20728eea710a656e0e97d61fe300a3aa",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformSectorTensor.lean",
+      "baseline_sha256": "ab35b383b4e914e2b6294461b7e82c6992d11276bff696532a0fdb21607864fa",
+      "annotated_sha256": "9e6ba52fdf118121989386e37f523416e0fbf12d0fb4b0071fd0d6e59a0578c8",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformSelectedCRT.lean",
+      "baseline_sha256": "a26edd4fca53c0964a79407e033799125606d44c4368fbd876c29ca7623800e1",
+      "annotated_sha256": "c4412bdbfeaac2638848b436ec3713cf94eab92c637715afc68fbd4b4e7445cd",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformSelectedPhysicalCRT.lean",
+      "baseline_sha256": "41e28d1e4363a253a0b319eb21c99af835a25620bda5a7279dc6ce919764d244",
+      "annotated_sha256": "ad9348cd2f8ee37fc6b7ee75fed8867b85de1733e34f93a87c6b25d0a033e888",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformSynchronizedLayers.lean",
+      "baseline_sha256": "fa8cb6656741cb0c0ebea3b1d528fc9a43c9bb32b1b2e5f8df4c5439523ec609",
+      "annotated_sha256": "eba5cd4e0472d39d4df4f98746b0bc1b50b83745e34e080f76021b3df4f5e3e7",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformToeplitzChunkWord.lean",
+      "baseline_sha256": "57a8fb277d1bb96a51f8037eb8f5a20f0e82a73d9cc6958d6a955aea093953da",
+      "annotated_sha256": "9f6dcbd941a16466171e177a73ab063e8ac5a9274d287a337ef8ca6cbff46ebc",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformToeplitzCrossDAG.lean",
+      "baseline_sha256": "d3ded85c428a4ca01e18377261974d93418dfac5bc614eed5858932262c194b5",
+      "annotated_sha256": "d4f043b0beedba5cec4b81e55e4b18020e71d991e9f5ed9cee42a423a5ce190e",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformWorkingCompletion.lean",
+      "baseline_sha256": "92f3069baafdbbcac4a53cf2f38b78327efd67828b2a7179ad4bef7b4c6ab6e6",
+      "annotated_sha256": "8c4d08c592e59a81f742ccd102919802f539c1f6f00b26992ff2436f7b6c6b62",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformWorkingLength.lean",
+      "baseline_sha256": "9962ad1920724f19a836aa7a189ba9eaedf7fe1d7bad61fa8f4aedd1dcc31203",
+      "annotated_sha256": "f5d97e1bd652712ba4c8babd8c1bd8a0164dfa32e95d3f0f27ec0fa66bba1eea",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformWorkingMachine.lean",
+      "baseline_sha256": "34799c3e9bf105cbb3ff42b7edaf9715cfd087847681e724b571ce5de33c5b0b",
+      "annotated_sha256": "278687af75363a195d9eb7babe35cd8723551d59be8617af5991be7e3ae3fd98",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    },
+    {
+      "path": "lean/UniformWorkingPreparation.lean",
+      "baseline_sha256": "060da6dacf00de1a6002af31f1ae9416e6be0a38e354d24617e1d474407bee97",
+      "annotated_sha256": "b6f845f4247bf9ba38454ab0c89397c46358bf1d50a5edd4d01e2a6a3bd4e294",
+      "normalized_noncomment_code_equal": true,
+      "in_final_import_closure": true
+    }
+  ]
+}

@@ -1,6 +1,13 @@
 import UniformRecursiveWholeSchedule
 import UniformRecursiveWholeValues
 import UniformRecursiveSpectatorFinish
+
+/-!
+Paper correspondence: An explicit power saving for the exact discrete Fourier
+transform, OpenAI math revision adc7f1241b42e322a6451854ab7e4b4c146bf78a,
+§2.4, Proposition 2.4, PDF p. 10; §2.6, Theorem 2.6, pp. 11–12.
+This joins the printed network, padded roles and remaining spectator factors through the same physical states. Concrete tape cursors, stack frames and return sites are implementation bookkeeping, not extra paper hypotheses.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformRecursivePrintedBody
 open UniformMachine UniformFixedNetwork UniformFixedNetworkScheduleMachine UniformNativeScheduleSemantics
@@ -20,6 +27,7 @@ def bodyTicks (q rest:ℕ)(cost:ℕ→ℕ):ℕ:=
 
 /-- Whole physically printed large-node body, including the actual expired
 record comparison and spectator suffix. No supplied matrix action enters. -/
+/- Paper: §2.4, Proposition 2.4, PDF p. 10; §2.6, Theorem 2.6, pp. 11–12. This joins the printed network, padded roles and remaining spectator factors through the same physical states. Concrete tape cursors, stack frames and return sites are implementation bookkeeping, not extra paper hypotheses. -/
 theorem execution (n B T U A F H q rest stack depth stackTop reserve:ℕ)
  (cost:ℕ→ℕ)(x:Fin n→ℂ)(s:State)(f:Fin W→Fin (2^(q*m+rest))→Scalar)
  (childIH:UniformRecursiveGroupExecution.SmallerBodies (q*m+rest) n B reserve stack stackTop cost x)

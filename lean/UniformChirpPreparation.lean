@@ -3,6 +3,15 @@ import UniformCRTHeaderMachine
 import UniformBoundedAssembly
 import UniformRootTableMachine
 
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.3 (5.7)-(5.9), PDF pp.22-23
+(`eq:chirp`, `eq:master-root`, `eq:root-size`).
+
+Extracts eta from the already supplied master root by charged binary powering,
+then executes the linear chirp-table producer. Header restoration and heap
+frames are implementation details of the paper's charged preparation.
+-/
 set_option autoImplicit false
 set_option linter.unusedSimpArgs false
 set_option linter.unnecessarySeqFocus false
@@ -12,6 +21,7 @@ noncomputable section
 
 /-- Save the header, extract the canonical half-angle root from the existing
 master root, generate the chirp table above the axis-root slots, and restore it. -/
+/- Paper stage: §5.3 (5.8)-(5.9), PDF p.23: load the existing master root and use charged binary powering before generating chirps. -/
 def program : Program :=
   [.natLiteral 34 0,.natBinary .add 44 0 34,.natLiteral 32 2,
    .natBinary .mul 31 8 32,.natBinary .div 0 24 31,.natLiteral 33 0,.loadScalar 1 33] ++
@@ -71,6 +81,7 @@ theorem setup_frame (s : State) (n D : ℕ) : SetupFrame s (rootLoaded s n D) :=
     h0,h31,h32,h33,h34,h44]
 
 /-- The only supplied root is the already requested master root. -/
+/- Paper stage: §5.3, root extraction after (5.9), PDF p.23: D_*/(2n) powers recover the specified half-angle root without another request. -/
 theorem halfAngle_execution {n : ℕ} (hn : 0<n) (x : Fin n → ℂ) (B D : ℕ) (s : State)
     (hp : s.pc=0) (h8 : s.natReg 8=n) (hDreg : s.natReg 24=D)
     (hroot : s.scalarHeap 0=some (prepared (OAI.ExactFourier.zeta D)))
@@ -267,6 +278,7 @@ theorem full_wordBound_setup {n : ℕ} (hn : 0<n) :
 
 /-- Closed actual initial-state preparation of all selected roots and the chirp
 coefficients; no initialized table, value, inverse or action premise is supplied. -/
+/- Paper stage: §5.3, charged preparation, PDF p.23: join actual CRT/root and chirp-table runs from the initial state. -/
 theorem preparation_execution {n : ℕ} (hn : 0<n) (x : Fin n → ℂ) : ∃ t u,
     BoundedExecution fullProgram n x ((n+2)^17) initial t u ∧
     UniformCRTHeaderMachine.Header n u ∧ UniformCRTHeaderMachine.CRTTable n u ∧

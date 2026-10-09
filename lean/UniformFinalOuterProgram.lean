@@ -13,6 +13,15 @@ import UniformKernelSpectrumCopy
 import UniformRolePointwiseMachine
 import UniformChirpOutputMachine
 
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.3 three-transform algorithm and §5.4 proof of Theorem 1.1,
+PDF p.23 (`eq:chirp`, `thm:main`).
+
+One fixed list of twenty stages refines the deterministic all-length
+construction. Startup already reads the padded input; the prepared kernel
+transform is saved before data are loaded into the active role bank.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformFinalOuterProgram
 open UniformMachine UniformAssembly UniformSequentialAssembly
@@ -20,8 +29,9 @@ noncomputable section
 attribute [local irreducible] Nat.add Nat.mul UniformRecursiveSavingProgram.program UniformActualGlobalClockProgram.program
 
 /-- One literal program, independent of n and x. The prepared kernel transform
-is saved before input data are loaded; the three complete clock traversals use
+is saved before input data enter the active role bank; the three clock traversals use
 identical fixed code. Every helper halt becomes a charged continuation jump. -/
+/- Paper stage: §5.3 three-transform argument, PDF p.23: fixed twenty-stage realization. Startup has already produced padded input; only the active role bank is loaded later. -/
 def stagesFor(table:Program):List Program:=[
  UniformAllAxisConjugatePreparation.fullProgram,
  UniformJointAllocationMachine.program UniformActualGlobalConstants.constants,
@@ -71,6 +81,7 @@ lemma halt_at(table:Program):(programFor table)[size (stagesFor table)]?=some .h
 
 /-- The actual finite code fits the same conservative shared slab. Neither
 its enormous recursive printer nor its role enumeration is evaluated. -/
+/- Paper stage: Implementation bound for §5.4 integer/address accounting, PDF p.24: fixed code size is an absolute constant; do not evaluate its enormous printer. -/
 lemma code_slab(table:Program)(n:ℕ)(tableFit:table.length≤
  UniformJointAllocation.fixed UniformActualGlobalConstants.constants):
  (programFor table).length≤UniformJointAllocation.slab UniformActualGlobalConstants.constants n:=by

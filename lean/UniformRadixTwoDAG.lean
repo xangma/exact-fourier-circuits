@@ -1,6 +1,13 @@
 import UniformNewton
 import OAI.Computability.FourierCircuit.FFTCircuit
 
+/-!
+Paper correspondence: An explicit power saving for the exact discrete Fourier
+transform, OpenAI math revision adc7f1241b42e322a6451854ab7e4b4c146bf78a,
+§3.2, equation (3.3) and its radix-two convolution proof, PDF p. 14 (loc:convolution-bounds).
+The printed topology makes gates, designated outputs, fan-out and scalar references explicit. Its noncomputable complex evaluation is semantics; integer topology printing and later RAM execution are separate objects.
+-/
+
 /-! A computable printed radix-two topology. Scale instructions contain prepared
 power-table references, never complex literals. Node equations determine its
 semantics uniquely; their natural addresses are strictly topological. -/
@@ -21,6 +28,7 @@ theorem width_pos (k : ℕ) : 0 < width k := by
   rw [width_eq]
   positivity
 
+/- Paper: Equation (3.3), p. 14: recurse on even/odd data and combine a,b into a+omega*b and a-omega*b. The explicit intermediate scale node charges the scalar multiplication. -/
 inductive Node : ℕ → Type where
   | even {k : ℕ} (child : Node k) : Node (k+1)
   | odd {k : ℕ} (child : Node k) : Node (k+1)
@@ -216,6 +224,7 @@ theorem values_unique (k : ℕ) (omega : ℂ) (x : Fin (width k) → ℂ)
               simp only [gate,Op.eval,hscale,values]
               exact congrArg (fun z => z - _) (congrFun he (output k i))
 
+/- Paper: Equation (3.3), p. 14: longest-path depth is tracked independently of semantic scalar values; there is no coefficient-dependent topology pruning. -/
 def depth : {k : ℕ} → Ref k → ℕ
   | _, .inl _ => 0
   | _, .inr (.even j) => depth (.inr j)
@@ -685,6 +694,7 @@ theorem gate_refs_nodup {k : ℕ} (j : Node k) : (gate j).refs.Nodup := by
   | @sub k i => simp [gate,Op.refs,@evenRef_ne_scale k]
 
 /-- Output ports are included, once each, in the bound. No input-copy gates are needed. -/
+/- Paper: Equation (3.3) and its DAG convention, p. 14: fan-out includes designated output reads. This bound is used later by dirty replay. -/
 def fanout (k : ℕ) (r : Ref k) : ℕ :=
   (successors k r).length + if (outputIndex k r).isSome then 1 else 0
 
@@ -731,6 +741,7 @@ def emptyNode : Node 0 ≃ Fin 0 where
   left_inv j := by cases j
   right_inv j := Fin.elim0 j
 
+/- Paper: No separate paper counterpart: integer serialization of the radix-two skeleton used in the polynomial preparation argument of Lemma 3.4, p. 17. -/
 def nodeFin : (k : ℕ) → Node k ≃ Fin (count k)
   | 0 => emptyNode
   | k+1 => (splitNodes k).trans
@@ -894,6 +905,7 @@ theorem gate_count (k : ℕ) : (records k).length = 3*k*2^k/2 := by
 theorem outputs_length (k : ℕ) : (outputs k).length = width k := by simp [outputs]
 
 /-- The coefficient bank is an actual shared root/rational arithmetic DAG. -/
+/- Paper: Equation (3.3), p. 14: fixed FFT powers are prepared separately and referenced by printed scale instructions. -/
 def powers (k : ℕ) : UniformScalarPreparation.DAG 1 (width k) where
   length := UniformNewton.Preparation.productCount (width k)
   program := UniformNewton.Preparation.productProgram (width k)
@@ -1015,6 +1027,7 @@ noncomputable def run (k : ℕ) (omega : ℂ) (x : Fin (width k) → ℂ) :
     Fin (width k) → ℂ := fun i =>
   runPrefix k omega x (count k) (le_refl _) (refNat (output k i))
 
+/- Paper: Equation (3.3), p. 14: the printed topological instruction stream computes the same positive-exponent Fourier map, rather than merely satisfying node equations. -/
 theorem run_fft (k : ℕ) (omega : ℂ) (hroot : IsPrimitiveRoot omega (width k))
     (x : Fin (width k) → ℂ) : run k omega x = RadixTwo.eval (width k) omega x := by
   have heq : run k omega x = eval k omega x := by

@@ -2,6 +2,17 @@ import UniformSectorPacking
 import UniformSectorTraversalOrder
 import UniformTensorMonomialMachine
 
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§4.2, Lemma 4.1 proof, PDF p. 19 (`lem:sector-address`), using the digit-prefix bound (4.1), p. 18.
+
+The block-choice DFS maintains start, width and pair count and emits the
+lexicographic sector directory. Literal stack/directory layout and instruction
+counts are implementation bookkeeping for the paper’s O(R) enumeration; the
+execution theorem constructs suffixes and directory rather than assuming them.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformSectorMetadataMachine
 open UniformMachine
@@ -1198,6 +1209,7 @@ def OutsideAllocation (L:Layout) (sectors:ℕ) (s t:State) : Prop :=
    (j<L.stack ∨L.stack+L.ell*5 ≤ j)→
    (j<L.directory ∨L.directory+sectors*3 ≤ j)→t.natHeap j=s.natHeap j
 
+/- Lemma 4.1 proof, p. 19: enumerate block prefixes and emit one contiguous sector per leaf without rescanning the axis tuple. The suffix preparation is charged before the traversal. -/
 /-- The single literal program computes suffix volumes, traverses the physical
 block tables, emits the exact lexicographic sector directory, and halts.
 No computed suffix, sector directory, traversal safety or action certificate

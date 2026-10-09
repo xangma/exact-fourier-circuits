@@ -2,6 +2,13 @@ import UniformLocalFactorDispatchControl
 import UniformForwardMatchingFactorHeaderRetention
 import UniformInverseMatchingFactorReloadRetention
 import UniformLocalBroadcastPoolRetention
+
+/-!
+Paper correspondence: An explicit power saving for the exact discrete Fourier
+transform, OpenAI math revision adc7f1241b42e322a6451854ab7e4b4c146bf78a,
+§3.3, Lemma 3.4 preparation argument, PDF p. 17; §3.4, Proposition 3.1 conclusion, p. 18.
+The three stored-slot branches and register retention are implementation bookkeeping for preparing fixed replay factors. All branches use integer metadata; supplied coefficient/source facts remain explicit intermediate contracts.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformLocalFactorDispatchMachine
 open UniformMachine UniformAssembly UniformTensorMonomialMachine
@@ -10,6 +17,7 @@ variable {B n:ℕ}
 /-- A real stored slot selects one of three fixed physical producers. The
 Processed/coefficients entry is the earlier rectangle/Height producer's bank;
 there is no generated row, count, permutation or factor-pool entry premise. -/
+/- Paper: Lemma 3.4 preparation argument, p. 17: physical factor production is charged and branches only on stored integer slot metadata. The Processed/Sources contracts must be produced by earlier stages. -/
 theorem execution (c:H.Parameters) (q:Rectangle) (slot:Slot)
  (l:F.Layout (H.forward c q slot) B) (bl:BroadcastLayout c q B)
  (ha:q.a≤UniformCrossHeightPreparationMachine.widthOf (H.forward c q slot).chunk.height)

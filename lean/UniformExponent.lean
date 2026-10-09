@@ -1,6 +1,17 @@
 import ExplicitSeedBudget
 import Mathlib.Analysis.SpecialFunctions.Log.Base
 
+/-!
+# Exact recurrence exponent
+
+*An explicit power saving for the exact discrete Fourier transform*, OpenAI
+math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`: (1.1), PDF p. 2
+(`eq:main-constants`), §2.6, (2.10) and Theorem 2.6, PDF pp. 11–12,
+and §5.4, PDF p. 23. This module verifies constants and generic recurrence
+estimates; it does not by itself construct an all-length algorithm or prove
+the log-log absorption needed for Corollary 1.2.
+-/
+
 /- Exact exponent constants from the paper's padded network budget.
    This module proves constants and generic estimates, not an all-length algorithm. -/
 set_option autoImplicit false
@@ -8,6 +19,9 @@ namespace ExactFourierCircuits.UniformExponent
 open scoped BigOperators
 noncomputable section
 
+/- (1.1), PDF p. 2, and (2.10), PDF p. 11: residuals=S=W_*m-Delta,
+so lambda=S/W_*=m-Delta/W_*. The seed budget stores W_*=2^71 and
+Delta=6871402692000000 exactly, rather than the illustrative decimal theta. -/
 def m : ℝ := ExplicitSeedBudget.m
 def lambda : ℝ := (ExplicitSeedBudget.residuals : ℝ) / (ExplicitSeedBudget.paddedRoles : ℝ)
 def theta : ℝ := Real.logb m lambda
@@ -53,6 +67,8 @@ theorem epsilon_exact : epsilon = (1717850673 : ℝ) / 590295810358705651712 := 
 theorem epsilon_pos : 0 < epsilon := by rw [epsilon_exact]; norm_num
 theorem epsilon_lt_one : epsilon < 1 := by rw [epsilon_exact]; norm_num
 
+/- §5.4, PDF p. 23: epsilon>28/10^13 and log m<14 establish the
+strict gap theta<1-2/10^13 entirely with exact inequalities. -/
 theorem epsilon_lower : (28 : ℝ) / 10 ^ 13 < epsilon := by rw [epsilon_exact]; norm_num
 
 theorem lambda_eq_mul : lambda = m * (1 - epsilon) := by
@@ -102,6 +118,10 @@ theorem theta_decimal_gap : theta < 1 - 2 * (10 : ℝ) ^ (-(13 : ℤ)) := by
   norm_num at h ⊢
   exact h
 
+/- Theorem 2.6's unnumbered recurrence unrolling, PDF p. 11: after a
+separately supplied finite base bound, sum the affine geometric chain.
+The function u, step inequalities and endpoint are premises here; the
+machine construction must discharge them before applying this helper. -/
 /-- A finite affine recurrence, with its endpoint bound supplied explicitly. -/
 theorem affine_chain_bound (l A B : ℝ) (hl : 1 < l) (hA : 0 ≤ A)
     (u : ℕ → ℝ) (d : ℕ)
@@ -145,6 +165,9 @@ theorem lambda_rpow_logb (x : ℝ) (hx : 0 < x) : lambda ^ Real.logb m x = x ^ t
     _ = (m ^ Real.logb m x) ^ theta := Real.rpow_mul m_pos.le _ _
     _ = x ^ theta := by rw [Real.rpow_logb m_pos one_lt_m.ne' hx]
 
+/- Theorem 2.6, PDF pp. 11–12: d≤ceil(log_m(k+1)) yields
+lambda^d≤lambda*(k+1)^theta. The abstract x below will be k+1;
+the caller supplies the actual quotient-chain depth estimate. -/
 /-- The supplied logarithmic recursion-depth bound gives the critical exponent, without loss. -/
 theorem critical_depth_bound (d : ℕ) (x : ℝ) (hx : 0 < x)
     (hd : (d : ℝ) ≤ Real.logb m x + 1) :

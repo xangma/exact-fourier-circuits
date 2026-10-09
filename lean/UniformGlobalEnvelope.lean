@@ -1,6 +1,17 @@
 import UniformBoundedAssembly
 import UniformAllAxisConjugatePreparation
 
+/-!
+# Polynomial words and charged scalar preparation
+
+*An explicit power saving for the exact discrete Fourier transform*, OpenAI
+math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`, §5.4, PDF pp. 23–24
+(`thm:main`, `eq:main-bound`). Polynomial envelope enlargement is implementation
+bookkeeping for the paper's O(log(n+2))-bit address words; it preserves every
+transition and tick. The preparation estimates use the local polynomial
+compiler of Proposition 3.1, PDF p. 12, at the small selected radices.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformGlobalEnvelope
 open UniformMachine UniformAssembly Filter Asymptotics
@@ -20,6 +31,8 @@ theorem polynomial_envelope (C d n : ℕ) (hn : 0<n) :
 
 theorem positive_degree (C : ℕ) : 0<2*C+19 := by omega
 
+/- §5.4, PDF p. 24: changing the proof's upper bound changes neither
+the actual program nor its execution states. -/
 theorem execution_mono {p : Program} {n B B' t : ℕ} {x : Fin n→ℂ}
     {s u : State} (h : BoundedExecution p n x B s t u) (hle : B≤B') :
     BoundedExecution p n x B' s t u := by
@@ -34,6 +47,8 @@ theorem runs_mono {p : Program} {n B B' t : ℕ} {x : Fin n→ℂ}
   | refl hb=>exact .refl (UniformAssembly.wordBound_mono hle hb)
   | next hb hh _ ih=>exact .next (UniformAssembly.wordBound_mono hle hb) hh ih
 
+/- §5.4, PDF p. 23: the prepared scalars and their schedule compilation
+cost only a fixed power of log n, absorbed by the total charged bound. -/
 theorem conjugateBudget_isLittleO_input :
     (fun n : ℕ=>(UniformAllAxisConjugatePreparation.preparationBudget n:ℝ)) =o[atTop]
       (fun n : ℕ=>(n:ℝ)) := by

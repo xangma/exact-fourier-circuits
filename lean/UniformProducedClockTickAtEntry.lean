@@ -1,6 +1,14 @@
 import UniformProducedClockTick
 import UniformProducedClockTickPrepared
 import UniformActualAxisPreparedCycle
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§4.3, Proposition 4.2 proof, PDF p. 20 (`prop:tensor-fourier`).
+
+This entry-point adapter equates the placed kernel state with the caller’s current state. The paper has no register/PC counterpart; the equality ensures proof-level PC relocation does not splice unrelated heap executions.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformProducedClockTickAtEntry
 open UniformMachine UniformSynchronizedLayers UniformGlobalCalendarDispatch UniformAllAxisSeedPreparation

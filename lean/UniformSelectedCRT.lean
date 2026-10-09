@@ -1,6 +1,14 @@
 import UniformCRT
 import UniformWorkingLength
 
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.1 (5.3)-(5.4), PDF p.21, and §5.2 (5.5), PDF p.22
+(`eq:working-length`, `eq:working-bounds`, `eq:crt-fourier`).
+
+Instantiates CRT with the selected odd primes and the binary fill, retaining
+a harmless width-one factor. The factor bounds apply to every positive length.
+-/
 set_option autoImplicit false
 
 namespace ExactFourierCircuits.UniformSelectedCRT
@@ -8,6 +16,7 @@ open scoped BigOperators
 open UniformWorkingLength
 
 /-- The harmless width-one binary factor is retained when no binary fill is needed. -/
+/- Paper stage: §5.1 (5.3)-(5.4), PDF p.21 and §5.2 (5.5), PDF p.22: specialize the abstract coprime CRT factors to the actual selected length. -/
 def radices (n : ℕ) : Fin (axisCount n + 1) → ℕ :=
   Fin.snoc (fun i => oddPrime i.val) (binaryFactor n)
 
@@ -62,6 +71,7 @@ theorem permutation_address (n : ℕ) (j : ∀ i, Fin (radices n i)) :
 
 noncomputable section
 
+/- Paper stage: §5.2 (5.5), PDF p.22: exact matrix result with selected local phases. Physical all-axis correction is proved in UniformSelectedPhysicalCRT. -/
 theorem matrix_factorization (n : ℕ) :
     Matrix.reindex (permutation n).symm (permutation n).symm
       (OAI.ExactFourier.fourierMatrix (workingLength n)) =

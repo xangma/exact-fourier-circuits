@@ -1,5 +1,14 @@
 import UniformPaddedInputMachine
 
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.2 inverse formula after (5.6), PDF p.22, and §5.3
+(5.7), PDF pp.22-23 (`eq:working-transform`, `eq:chirp`).
+
+The final literal loop reverses frequency, multiplies by the prepared 1/L,
+applies the final chirp and emits coordinates 0,...,n-1. Its Fourier-value
+premise must come from the actual three-transform caller.
+-/
 set_option autoImplicit false
 set_option linter.unusedSimpArgs false
 namespace ExactFourierCircuits.UniformChirpOutputMachine
@@ -9,6 +18,7 @@ noncomputable section
 
 /-- Nat8=n,17=L,25=chirp base,26=transform base,27=normalization
 address. Reverse the cyclic frequency index, normalize, apply the chirp and emit. -/
+/- Paper stage: §5.2 inverse formula after (5.6), PDF p.22 and §5.3 (5.7), PDF p.22: negative-frequency lookup, 1/L, final chirp and ordered emission. -/
 def program : Program :=
   [.natLiteral 31 1,.natLiteral 32 2,.natLiteral 30 0,.loadScalar 1 27,
    .branchLT 30 8 5 17,.natBinary .sub 33 17 30,.natBinary .mod 33 33 17,
@@ -165,6 +175,7 @@ theorem row_partial {L : ℕ} (hL : 0<L) (s : State) (a d j : ℕ) (eta kappa : 
   · rw [Function.update_of_ne he]
     exact hp k (by omega)
 
+/- Paper stage: Implementation loop refinement of §5.3 output reconstruction, PDF pp.22-23: every output coordinate is written by charged instructions. -/
 theorem loop_execution {n L : ℕ} (x : Fin n → ℂ) (hL : 0<L) (B a d : ℕ)
     (eta kappa : ℂ) (v : Fin L → Scalar) (hB : 64≤B) (ha : a+2*n≤B)
     (hdB : d+L≤B) (hnB : n≤B) (t : ℕ) : ∀ j s,
@@ -256,6 +267,7 @@ def FinalSpectrum {n L : ℕ} [NeZero L] (x : Fin n → ℂ) (v : Fin L → Scal
     UniformCyclic.positiveDFT (UniformCyclic.chirpKernel (OAI.ExactFourier.zeta (2*n)) n) t)
     (OAI.ExactFourier.FourierCRT.finZMod L j)
 
+/- Paper stage: §5.3 (5.7) and three transforms, PDF pp.22-23: substitute the actual third spectrum into Bluestein reconstruction. -/
 theorem value_fourier {n L : ℕ} [NeZero L] (hn : 0<n) (hL : 0<L) (hnL : 2*n≤L)
     (x : Fin n → ℂ) (v : Fin L → Scalar) (hv : FinalSpectrum x v) (k : Fin n) :
     (value hL (OAI.ExactFourier.zeta (2*n)) (L:ℂ)⁻¹ v k.val).value=
@@ -271,6 +283,7 @@ theorem value_fourier {n L : ℕ} [NeZero L] (hn : 0<n) (hL : 0<L) (hnL : 2*n≤
 /-- The final loop closes the standard DFT output contract from the actual last
 transform's value postcondition. Preparation and transform executions remain
 separate obligations of the caller. -/
+/- Paper stage: §5.3, PDF pp.22-23: join the algebraic output identity to the actual emitting run; the caller must supply its real spectrum. -/
 theorem output_execution_dft {n L : ℕ} [NeZero L] (hn : 0<n) (hL : 0<L)
     (hnL : 2*n≤L) (x : Fin n → ℂ) (B a d c : ℕ) (v : Fin L → Scalar) (s : State)
     (hp : s.pc=0) (hcount : s.natReg 8=n) (hwidth : s.natReg 17=L)

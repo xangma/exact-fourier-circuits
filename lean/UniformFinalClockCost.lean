@@ -1,5 +1,15 @@
 import UniformFinalClockOverhead
 import UniformFinalOuterCost
+
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §4.3 Proposition 4.2, PDF pp.19-20 (`prop:tensor-fourier`),
+§5.2 (5.6), PDF p.22 (`eq:working-transform`), and §5.4, PDF pp.23-24 (`thm:main`).
+
+Charged-budget bookkeeping refines the paper's composition of local work,
+array movement and three transforms. Cache/register constants and conservative
+majorants are implementation details, without separate paper statements.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformFinalClockCost
 open UniformMachine UniformAllAxisSeedPreparation UniformFinalClockOverhead
@@ -42,6 +52,7 @@ lemma diagonalBudget_isBigO_paper(W:ℕ):
 
 /-- Complete-clock majorant: actual recursive kernel envelope plus proved
 linear diagonal cost and the real axis-scan allowance. -/
+/- Paper stage: §4.3 Proposition 4.2, PDF pp.19-20 and §5.2 (5.6), PDF p.22: complete synchronized-clock cost, including recursive kernels and real axis scans. -/
 def clockEnvelope(W n:ℕ):ℝ:=(clockScanBudget n:ℝ)+
  UniformActualCalendarAsymptotics.kernelEnvelope W n+(diagonalBudget W n:ℝ)
 lemma clockEnvelope_nonneg(W n:ℕ):0 ≤ clockEnvelope W n:=by
@@ -85,6 +96,7 @@ lemma loopBudget_bound(n:ℕ)
 /-- Real selected geometry instantiates the frozen actual recursive-kernel
 bound. Only the independently measured axis and diagonal allowances remain
 as hypotheses; no desired asymptotic estimate is assumed. -/
+/- Paper stage: §4.3 Proposition 4.2 proof, PDF p.20: dimension-weighted real kernel budgets plus independently measured axis/diagonal overheads. -/
 theorem actual_loop_bound(c:Constants){n:ℕ}(hn:0<n)(roles:0<c.roles)
  (physical:Fin (UniformFourierClockBounds.horizon n)→List UniformSectorPackingMachine.PhysicalAxis)
  (shape:∀t,PhysicalGeometry c n (physical t))
@@ -114,6 +126,7 @@ theorem actual_loop_bound(c:Constants){n:ℕ}(hn:0<n)(roles:0<c.roles)
 /-- Once the actual amortized table printer supplies its linear bound, the
 final twenty-stage majorant has the paper cost. The clock estimate is proved
 above rather than passed in as a desired final Big-O premise. -/
+/- Paper stage: §5.4 Theorem 1.1 proof, PDF p.23: the three actual complete clocks use the proved envelope, with table production separately charged. -/
 theorem total_with_clockEnvelope_isBigO_paper(c:Constants)(W:ℕ)
  (tableHeader table:ℕ→ℕ)
  (headers:(fun n:ℕ=>(tableHeader n:ℝ)) =O[atTop] (fun n:ℕ=>(n:ℝ)))

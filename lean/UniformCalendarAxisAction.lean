@@ -1,5 +1,13 @@
 import UniformCalendarPreparationOrder
 
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§3.5, common word and identity padding in the proof of Proposition 3.1, PDF pp. 17–18; §4.3, Proposition 4.2 proof, p. 20.
+
+This semantic interface ties an injection of ordered disjoint C pairs to the actual dispatcher row list and to a diagonal-times-kernel matrix. It is an internal premise, closed by the canonical calendar action in the complete-clock proof.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformCalendarAxisAction
 noncomputable section

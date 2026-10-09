@@ -2,6 +2,15 @@ import UniformWorkingCompletion
 import UniformRoots
 import Mathlib.Data.Nat.GCD.BigOperators
 
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.3, (5.8)-(5.9), PDF p.23
+(`eq:master-root`, `eq:root-size`).
+
+Constructs D_* from the actual selected length and requests one specified
+positive-phase root. Divisor-root identities certify later charged powering;
+they are not additional root requests or free execution steps.
+-/
 set_option autoImplicit false
 
 namespace ExactFourierCircuits.UniformMasterRootMachine
@@ -9,6 +18,7 @@ open UniformMachine OAI.ExactFourier
 noncomputable section
 
 /-- Lcm of precisely the odd-prime entries of the selected table. -/
+/- Paper stage: §5.2 coprime factors, PDF p.22 and §5.3 (5.8), PDF p.23: the lcm equals their product; it is not an extra root primitive. -/
 def oddLcm : ℕ → ℕ
   | 0 => 1
   | j + 1 => Nat.lcm (oddLcm j) (UniformWorkingLength.oddPrime j)
@@ -39,6 +49,7 @@ theorem oddPrime_binary_coprime (n j : ℕ) :
 /- Root workspace: target=19, power factor=20, exponent=21,
    twice-n=22, partial product=23, root order=24; constants16/2/1=25/26/27.
    Scalar register0 receives the only requested root. -/
+/- Paper stage: §5.3 (5.8), PDF p.23 (`eq:master-root`): compute the least power of two >=16L, form D_*, and issue the one root instruction. -/
 def suffix : Program :=
   [.natLiteral 25 16, .natBinary .mul 19 17 25, .natLiteral 20 1, .natLiteral 21 0,
    .natLiteral 26 2, .natLiteral 27 1, .branchLT 20 19 53 56,
@@ -159,6 +170,7 @@ theorem rootFactor_minimal (L e : ℕ) (he : e < UniformBatching.rootBits L) : 2
   omega
 
 /-- Proof-only induction fuel is absent from the bytecode. -/
+/- Paper stage: Implementation loop proof for §5.3 (5.8), PDF p.23: proof-induction fuel is not machine state or uncharged computation. -/
 theorem factor_bounded (B n L : ℕ) (x : Fin n → ℂ) (fuel e : ℕ) (s : State)
     (hB : 61 ≤ B) (hLB : 32 * L ≤ B) (he : e ≤ UniformBatching.rootBits L)
     (hf : UniformBatching.rootBits L - e + 1 ≤ fuel)
@@ -296,6 +308,7 @@ theorem Frame.trans {s u v : State} (h : Frame s u) (h' : Frame u v) : Frame s v
   ⟨h'.1.trans h.1,h'.2.1.trans h.2.1,h'.2.2.1.trans h.2.2.1,
     fun r hr => (h'.2.2.2 r hr).trans (h.2.2.2 r hr)⟩
 
+/- Paper stage: §5.3 (5.8)-(5.9), PDF p.23: selected root order, exact ceiling-log formula and strict 1024*n^3 bound. -/
 def order (n : ℕ) : ℕ := UniformBatching.masterRootOrder n (UniformWorkingLength.workingLength n)
 
 theorem order_bounds {n : ℕ} (hn : 0 < n) : 0 < order n ∧ order n < 1024 * n ^ 3 :=
@@ -318,6 +331,7 @@ def preparationBudget (n : ℕ) : ℕ := UniformWorkingCompletion.preparationBud
 
 /-- One fixed program prepares the actual working length/table and requests exactly
     one root of the paper's specified order. No input scalars have been read. -/
+/- Paper stage: §5.3 (5.8)-(5.9), PDF p.23: one actual initial-state run with rootOrders=[D_*]; it joins the actual length preparation. -/
 theorem master_execution {n : ℕ} (hn : 0 < n) (x : Fin n → ℂ) : ∃ t u,
     BoundedExecution program n x ((n+2)^12) initial t u ∧ MasterState n u ∧
       u.pc=60 ∧ u.natReg 8=n ∧ u.scalarHeap=initial.scalarHeap ∧ u.outputs=initial.outputs ∧
@@ -373,6 +387,7 @@ theorem root_factor_bounds {n : ℕ} (hn : 0 < n) {u : State} (hu : MasterState 
   rw [hu.2.2.1]
   exact ⟨UniformBatching.rootFactor_lower _,UniformBatching.rootFactor_upper (UniformWorkingLength.workingLength_pos hn)⟩
 
+/- Paper stage: §5.3, paragraph following (5.8), PDF p.23: every chirp/factor/local initial root order divides D_*. -/
 theorem divisor_orders (n : ℕ) : 2*n ∣ order n ∧ UniformWorkingLength.workingLength n ∣ order n ∧
     UniformWorkingLength.binaryFactor n ∣ order n ∧
     ∀ i, i<UniformWorkingLength.axisCount n → UniformWorkingLength.oddPrime i ∣ order n := by
@@ -391,6 +406,7 @@ theorem localPowerOrder_dvd {n r e : ℕ} (hr : r ≤ UniformWorkingLength.worki
 
 /-- Exact specified phase, not merely an arbitrary primitive root.
     Executing this power is a separate charged PowerMachine phase. -/
+/- Paper stage: §5.3, paragraph after (5.9), PDF p.23: canonical phase extraction is algebraic here; PowerMachine charges its actual evaluation. -/
 theorem specified_divisor_root {n : ℕ} (hn : 0<n) {u : State} (hu : MasterState n u)
     (d : ℕ) (hd : 0<d) (hdiv : d ∣ order n) :
     (u.scalarReg 0).value ^ (order n/d)=zeta d ∧ (u.scalarReg 0).dependent=false := by

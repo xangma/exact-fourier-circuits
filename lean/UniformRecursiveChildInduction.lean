@@ -1,6 +1,13 @@
 import UniformRecursiveLargeChild
 import UniformRecursiveSmallBody
 import UniformRecursiveTypedLargeCost
+
+/-!
+Paper correspondence: An explicit power saving for the exact discrete Fourier
+transform, OpenAI math revision adc7f1241b42e322a6451854ab7e4b4c146bf78a,
+§2.6, Theorem 2.6 proof, PDF pp. 11–12 (net:tensor-bound).
+Strong induction on the exponent supplies executions of this same program at the strictly smaller quotient. Stack/frontier/frame contracts are implementation details of the paper’s serial recursive batches.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformRecursiveChildInduction
 open UniformMachine UniformFixedNetwork
@@ -22,6 +29,7 @@ lemma large_cost (q rest:ℕ)(large:P.threshold ≤ q*m+rest)(qp:1 ≤ q)(rp:res
 
 /-- Every positive-depth call executes the same fixed literal program. The
 strict induction supplies its own smaller calls; no child action is assumed. -/
+/- Paper: Theorem 2.6, p. 11: correctness is induction on k because q = floor(k/m) < k. The SmallerBodies argument passed to large execution is constructed from this induction hypothesis. -/
 theorem execution (n B stack stackTop:ℕ)(x:Fin n→ℂ):
  ∀(k A F depth:ℕ)(input:Fin W→Fin (2^k)→Scalar)(s:State),
  s.pc=0→s.natReg 4120=k→s.natReg 4121=A→s.natReg 4122=2^k→s.natReg 4123=F→
@@ -55,6 +63,7 @@ theorem execution (n B stack stackTop:ℕ)(x:Fin n→ℂ):
      (large_cost q rest large qp rp)
 
 /-- The induction motive is now discharged for every parent exponent. -/
+/- Paper: Implementation closure of the induction motive; this removes the child-execution premise before the root theorem is applied (Theorem 2.6, pp. 11–12). -/
 theorem smaller (parent n B stack stackTop:ℕ)(x:Fin n→ℂ):
  SmallerBodies parent n B R.reserve stack stackTop cost x:=by
  intro k _

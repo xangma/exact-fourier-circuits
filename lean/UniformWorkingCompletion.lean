@@ -1,5 +1,14 @@
 import UniformWorkingMachine
 
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.1, (5.3)-(5.4), PDF p.21
+(`eq:working-length`, `eq:working-bounds`).
+
+The charged minimal-doubling suffix completes the actual selected working
+length. Frame and instruction proofs refine the paper's integer-size and
+preparation argument; the paper does not specify these register addresses.
+-/
 set_option autoImplicit false
 
 namespace ExactFourierCircuits.UniformWorkingCompletion
@@ -9,6 +18,7 @@ noncomputable section
 /- The prefix halt becomes a charged jump to33. Added workspace:
    binary exponent=16, working length=17, binary factor=18.
    Constants and twice-n are explicitly initialized by charged instructions. -/
+/- Paper stage: §5.1, (5.3), PDF p.21: actual repeated doubling after the prime-selection prefix; each continuation is charged. -/
 def suffix : Program :=
   [.natLiteral 12 2, .natLiteral 15 1, .natLiteral 9 0, .natBinary .mul 13 8 12,
    .natLiteral 16 0, .natLiteral 18 1, .natBinary .add 17 11 9,
@@ -42,6 +52,7 @@ def initialized (s : State) : State :=
   writeNat (writeNat (writeNat (writeNat (writeNat (writeNat (writeNat s 12 2) 15 1) 9 0)
     13 (2 * s.natReg 8)) 16 0) 18 1) 17 (s.natReg 11)
 
+/- Paper stage: Implementation invariant for §5.1, (5.3)-(5.4), PDF p.21: current exponent, binary factor and product share the same state. -/
 def Invariant (n e : ℕ) (s : State) : Prop :=
   s.pc = 40 ∧ s.natReg 12 = 2 ∧ s.natReg 15 = 1 ∧ s.natReg 13 = 2 * n ∧
     s.natReg 16 = e ∧ s.natReg 18 = 2 ^ e ∧
@@ -224,6 +235,7 @@ theorem completion_cost_bound {n : ℕ} (hn : 0 < n) :
 
 /-- One literal fixed program performs prime selection/table writes followed by the
     minimal doubling loop. Every transition, including the phase jump, is charged. -/
+/- Paper stage: §5.1, Lemma 5.1 and (5.3)-(5.4), PDF p.21: join actual selection and doubling, including their phase jump and integer-value bounds. -/
 theorem preparation_execution {n : ℕ} (hn : 0 < n) (x : Fin n → ℂ) : ∃ t u,
     BoundedExecution program n x ((n + 2) ^ 9) initial t u ∧ PreparedState n u ∧
       u.pc = 45 ∧ u.natReg 8 = n ∧
@@ -272,6 +284,7 @@ theorem working_length_bounds {n : ℕ} (hn : 0 < n) {u : State} (hu : PreparedS
 def preparationBudget (n : ℕ) : ℕ := 40000 * (UniformWorkingLength.axisCount n + 2) ^ 4
 
 /-- The actual execution budget is sublinear in the input length. -/
+/- Paper stage: §5.4, Theorem 1.1 proof, PDF p.23 (`thm:main`): absorb fixed powers of log n into the final array cost. -/
 theorem preparationBudget_isLittleO_input :
     (fun n : ℕ => (preparationBudget n : ℝ)) =o[Filter.atTop] (fun n : ℕ => (n : ℝ)) := by
   have hbudget : (fun n : ℕ => (preparationBudget n : ℝ)) =O[Filter.atTop]

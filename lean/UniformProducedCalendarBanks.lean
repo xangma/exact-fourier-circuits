@@ -1,5 +1,13 @@
 import UniformProducedCalendarFamily
 import UniformGlobalProducedAxisBanks
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§4.2, Lemma 4.1, PDF p. 19; §4.3, Proposition 4.2 proof, p. 20 (`lem:sector-address`, `prop:tensor-fourier`).
+
+Actual per-axis heap cells are assembled into the banks, diagonal directory and prepared coefficient pools consumed by the global kernel. No execution or target matrix is supplied by this adapter alone.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformProducedCalendarBanks
 open UniformMachine UniformAllAxisSeedPreparation UniformGlobalCalendarDispatch

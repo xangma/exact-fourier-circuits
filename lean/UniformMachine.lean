@@ -1,5 +1,20 @@
 import OAI.Computability.FourierCircuit.Core
 
+/-!
+# Charged exact-arithmetic machine
+
+Model interface for *An explicit power saving for the exact discrete Fourier
+transform*, OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§1.1, PDF p. 2 (`sec:model`, Theorem 1.1 / `thm:main`). The instruction
+syntax, initialization, taint flags and inductive execution relations below
+are formal implementation bookkeeping, not separately numbered paper claims.
+The sole supplied complex primitive is the specified root; §5.3, (5.8)–(5.9),
+PDF p. 23 (`eq:master-root`, `eq:root-size`), accounts for its order.
+
+The paper's supplementary synthesis route (§A, PDF pp. 24–30) is not an
+oracle or a premise of this model or of the final quantitative execution.
+-/
+
 set_option autoImplicit false
 
 /- A finite RAM program for the stronger paper's operational claim.
@@ -26,6 +41,9 @@ structure Scalar where
 
 def Scalar.zero : Scalar := ⟨0, false⟩
 
+/- §1.1, PDF p. 2: a finite instruction set with rational literals, integer
+control and charged random access. There is no complex-valued branch or
+instruction carrying an arbitrary function/complex coefficient. -/
 inductive Instruction where
   | natLiteral (dst value : ℕ)
   | length (dst : ℕ)
@@ -73,6 +91,10 @@ def evalNat : NatOp → ℕ → ℕ → Option ℕ
   | .div, a, b => if b = 0 then none else some (a / b)
   | .mod, a, b => if b = 0 then none else some (a % b)
 
+/- §1.1 and Proposition 3.1, PDF pp. 2, 12: input computations remain
+linear. Multiplication permits at most one tainted operand, and division
+requires two prepared operands and a nonzero denominator. These tests only
+reject invalid execution; they supply no program-visible complex branch. -/
 def evalField : FieldOp → Scalar → Scalar → Option Scalar
   | .add, a, b => some ⟨a.value + b.value, a.dependent || b.dependent⟩
   | .sub, a, b => some ⟨a.value - b.value, a.dependent || b.dependent⟩
@@ -132,6 +154,10 @@ def step (p : Program) (n : ℕ) (x : Fin n → ℂ) (s : State) : StepResult :=
       { s with pc := if s.natReg left < s.natReg right then yes else no }
   | some (.jump target) => .running { s with pc := target }
 
+/- Theorem 1.1, PDF p. 2, demands a terminating algorithm with preparation,
+index work and movement charged. These relations require actual successful
+instruction transitions from the caller's state; no desired-output transition
+or preinitialized heap is provided. Each halt is charged as well. -/
 /-- A checked finite execution; its instruction count includes the halt. -/
 inductive Executes (p : Program) (n : ℕ) (x : Fin n → ℂ) : State → ℕ → State → Prop where
   | halt {s : State} (h : step p n x s = .halted s) : Executes p n x s 1 s
@@ -146,6 +172,10 @@ def WordBound (B : ℕ) (s : State) : Prop :=
   (∀ a v, s.outputs a = some v → a ≤ B) ∧
   (∀ d ∈ s.rootOrders, d ≤ B)
 
+/- §5.4, PDF p. 24: polynomially bounded integer values and addresses give
+a fixed number of O(log(n+2))-bit words. Register identifiers are literals
+of a fixed finite program; WordBound constrains their contents and all
+allocated heap/output addresses, without bounding complex magnitudes. -/
 /-- The bound covers intermediate states, including before each instruction. -/
 inductive BoundedExecution (p : Program) (n : ℕ) (x : Fin n → ℂ) (B : ℕ) :
     State → ℕ → State → Prop where
@@ -171,6 +201,8 @@ theorem Executes.positive {p : Program} {n t : ℕ} {x : Fin n → ℂ}
     {s v : State} (h : Executes p n x s t v) : 0 < t := by
   cases h <;> omega
 
+/- Determinism is bookkeeping for Theorem 1.1's "single deterministic
+algorithm" (PDF p. 2), rather than a separate paper lemma. -/
 theorem Executes.deterministic {p : Program} {n t u : ℕ} {x : Fin n → ℂ}
     {s v w : State} (h : Executes p n x s t v) (h' : Executes p n x s u w) :
     t = u ∧ v = w := by
@@ -210,6 +242,9 @@ theorem evalField_div_prepared (a b c : Scalar) (h : evalField .div a b = some c
       subst c
       exact ⟨hdeps.1, hdeps.2, hb, rfl⟩
 
+/- Introduction, PDF p. 1: `fourierMatrix n` uses zeta_n^(j*k), with
+zeta_n = exp(2*pi*i/n). Thus the output is positive-exponent, unnormalized,
+and in the original Fin n index order after all physical permutations. -/
 def ComputesDFT (n : ℕ) (x : Fin n → ℂ) (s : State) : Prop :=
   ∀ j : Fin n, s.outputs j.val = some ((fourierMatrix n).mulVec x j)
 
@@ -217,6 +252,12 @@ def asymptoticCost (theta : ℝ) (n : ℕ) : ℝ :=
   (n : ℝ) * (Real.log (n : ℝ)) ^ theta *
     (Real.log (Real.log (n : ℝ))) ^ (4 - theta)
 
+/- Theorem 1.1, (1.2), PDF p. 2, and §5.4, PDF pp. 23–24. The fixed
+program, cost constant, threshold and word degree precede n and x; the root
+order precedes x. Only the time inequality is eventual: termination and
+correctness are required at every positive n. Corollary 1.2's simpler
+decimal power bound requires the additional log-log absorption argument
+in §5.4, PDF p. 23; it is not a conjunct of this target. -/
 /-- One finite program, all input lengths, one specified root, and every charged
     preparation/field/address operation. This is a target, not a proved theorem. -/
 def UniformDFTStatement (theta : ℝ) : Prop :=

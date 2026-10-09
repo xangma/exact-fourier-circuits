@@ -2,6 +2,13 @@ import UniformRecursiveChildInduction
 import UniformRecursivePreparedLargeChild
 import UniformRecursivePreparedSmallBody
 import UniformRecursiveTypedLargeCost
+
+/-!
+Paper correspondence: An explicit power saving for the exact discrete Fourier
+transform, OpenAI math revision adc7f1241b42e322a6451854ab7e4b4c146bf78a,
+§2.6, Theorem 2.6 proof, PDF pp. 11–12; §3.4, prepared-scalar discussion, p. 18.
+The extra dependency-tag invariant is implementation bookkeeping: prepared inputs remain prepared through the same recursive execution. It is additional to the numerical matrix identity.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformRecursiveChildInduction
 open UniformMachine UniformFixedNetwork
@@ -14,6 +21,7 @@ export UniformRecursiveReserve (reserve)
 end R
 noncomputable section
 
+/- Paper: Prepared-tag analogue of the same strict induction in Theorem 2.6, p. 11. No input-dependent branch or assumed child oracle is added by the stronger invariant. -/
 theorem execution_prepared (n B stack stackTop:ℕ)(x:Fin n→ℂ):
  ∀(k A F depth:ℕ)(input:Fin W→Fin (2^k)→Scalar)(s:State),
  s.pc=0→s.natReg 4120=k→s.natReg 4121=A→s.natReg 4122=2^k→s.natReg 4123=F→

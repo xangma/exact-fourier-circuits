@@ -1,5 +1,12 @@
 import UniformLocalPreparationDAG
 
+/-!
+Paper correspondence: An explicit power saving for the exact discrete Fourier
+transform, OpenAI math revision adc7f1241b42e322a6451854ab7e4b4c146bf78a,
+§3.3–3.4, Lemmas 3.4–3.5, PDF pp. 17–18; Proposition 3.1, p. 12.
+Occurrence substitution replaces semantic coefficients with finite shared-bank references. Inputs, cache correctness and Newton-reference assumptions are intermediate contracts, not by themselves an unconditional whole-machine theorem.
+-/
+
 set_option autoImplicit false
 
 /-! Literal occurrence references for the balanced schedule.  Rational replay
@@ -47,6 +54,7 @@ theorem cacheRef_value {r N o : ℕ} (b : State r N o) (q : Request N)
     (hc _ (cacheFor_mem _ _ _)) j
 
 /-- Syntax for each actual coefficient occurrence; it never contains ℂ literals. -/
+/- Paper: Implementation reference syntax for Lemma 3.4’s shared arithmetic DAG preparation, p. 17. A prepared atom is an address, not an arbitrary complex literal. -/
 inductive Atom (l : ℕ) where
   | literal (q : ℚ)
   | register (j : Fin l) (negative : Bool)
@@ -205,6 +213,7 @@ def pairRefs {r N o n : ℕ} (b : State r N o) (hn : 2≤n) (hv : 0<selected n) 
       (exponent (size (n-n/2) (selected n) q.1) (size (n/2) (selected n) q.2))) → Fin b.length :=
   cacheRef b (pairRequest hn hv hN q) hq
 
+/- Paper: Lemma 3.4, pp. 16–17: each fitted rectangle uses its actual prepared six-kernel bank and its exact borrowed placement. -/
 def pairMacro {r N o n : ℕ} (b : State r N o) (hn : 2≤n) (hv : 0<selected n) (hN : n≤N)
     (q : Fin (chunkCount (n-n/2) (selected n)) × Fin (chunkCount (n/2) (selected n)))
     (hq : pairRequest hn hv hN q∈b.cache.map Cached.request) : Macro b.length n :=
@@ -301,6 +310,7 @@ theorem directMacro_expand {n l : ℕ} (refs : Fin n → Fin l) (values : Fin l 
   rfl
 
 /-! Literal scalars are appended once to the same register program. -/
+/- Paper: Lemma 3.4, p. 17: rational constants are appended as explicit arithmetic-program literals; binding preserves prior references. -/
 structure LiteralExtension (r l : ℕ) where
   length : ℕ
   program : UniformScalarPreparation.Program r length
@@ -431,6 +441,7 @@ theorem Covered.pair {r N o n : ℕ} (b : State r N o) (hn : 2≤n) (hv : 0<sele
 def axisRefs {r N o n : ℕ} (b : State r N o) (hN : n≤N) : Fin n → Fin b.length :=
   fun j => b.h ⟨j.val,j.isLt.trans_le hN⟩
 
+/- Paper: Lemma 3.4, p. 17: recursive diagonal blocks are parallel, followed by serial cross updates; validity and expansion are separate theorems. -/
 def renderMacro {r N o n : ℕ} (b : State r N o) (P : Plan n) (hN : n≤N) (hc : Covered b P hN) : Macro b.length n :=
   match P with
   | .direct n _ => if hn : 0<n then directMacro (axisRefs b hN) else .nil n
@@ -744,6 +755,7 @@ theorem Macro.literals_bound {l n : ℕ} (s : Macro l n) : s.literals.length ≤
   | seq L R ihL ihR => simpa only [literals,cost,List.length_append] using Nat.add_le_add ihL ihR
   | nil n => rfl
 
+/- Paper: Lemma 3.4, p. 17: prepare the selected plan and bind its rational literals before data transformation. -/
 def planState {r N o : ℕ} (b : State r N o) (P : Plan N) : State r N o :=
   let raw := preparePlan b P
   literalState raw (renderMacro raw P (le_refl _) (preparePlan_covered b P)).literals
@@ -814,6 +826,7 @@ theorem planState_length {r N o : ℕ} (b : State r N o) (P : Plan N)
 
 /-- Concrete all-register balanced schedule, with a single shared scale bank.
 Inputs/seed-root facts are coefficient-table facts, never action premises. -/
+/- Paper: Lemma 3.4, p. 17: one shared register bank supplies all coefficients of the balanced exact-width schedule. Inputs/CachesGood/Admissible are explicit intermediate invariants. -/
 noncomputable def balancedSchedule {r N o : ℕ} (b : State r N o) (P : Plan N)
     (rr : Fin r → Fin o) (roots : Fin r → ℂ) (unit : ∀ j,‖roots j‖=1)
     (hr : ∀ j,b.program.eval roots (b.original (rr j))=roots j)
@@ -972,6 +985,7 @@ theorem newtonSchedule_eq {r N o : ℕ} (b : State r N o) (rr : Fin r → Fin o)
 
 /-- Transposition is the actual reversed layer list and uses the same bank.
 All scalar inputs to the Newton diagonals are explicit finite seed refs. -/
+/- Paper: Lemma 3.5, p. 17 and (3.2), p. 13: reverse/transposed N schedule, prepared inverse diagonal, then N. The same reference bank is reused. -/
 noncomputable def fourierSchedule {r N o : ℕ} (b : State r N o) (rr : Fin r → Fin o)
     (roots : Fin r → ℂ) (unit : ∀ j,‖roots j‖=1)
     (hr : ∀ j,b.program.eval roots (b.original (rr j))=roots j)
@@ -1040,6 +1054,7 @@ theorem fourierSchedule_length {r N o : ℕ} (b : State r N o) (rr : Fin r → F
 
 
 /-- The literal finite scale addresses for an occurrence, including zero μ. -/
+/- Paper: Equation (3.14), p. 18: each retained occurrence reads six proved nonzero scales; no zero test removes an occurrence. -/
 def scaleReferences {r N o : ℕ} (b : State r N o) (rr : Fin r → Fin b.length)
     (t : Atom b.length) (ht : t.literals=[]) : Fin 6 → Fin (finish b rr).env.length :=
   (finish b rr).rows (finishIndex b (scalarIndex t ht).1 (scalarIndex t ht).2)

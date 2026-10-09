@@ -5,6 +5,14 @@ import UniformProducedSynchronizedAction
 import UniformActualTickCallerFrame
 import UniformPreparedGlobalClockTick
 import UniformPreparedKernelAnyExecution
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§4.3, Proposition 4.2 proof, PDF p. 20; §5.3, charged fixed-kernel transform and prepared scalars, p. 23.
+
+The prepared-data specialization proves numerical values and dependency tags on the same returned execution. Tags are implementation bookkeeping for the paper’s restriction that variable data are multiplied only by prepared scalars.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformProducedClockTickPrepared
 open UniformMachine UniformSynchronizedLayers UniformGlobalCalendarDispatch UniformAllAxisSeedPreparation
@@ -62,6 +70,7 @@ theorem execution {n H:ℕ} (hn:0<n) (es:Fin (axisCount n)→List Event)
  let g:=kernel hn a
  let d:=UniformActualGlobalTickContext.diagonal hn a
  let links:=UniformActualGlobalTickContext.links hn a
+ /- Proposition 4.2, p. 20, and §5.3, p. 23: the same actual kernel/diagonal run provides numerical values and collective prepared tags for the fixed convolution operand. -/
  obtain ⟨banks,directory,pools⟩:=UniformCalendarPrintedPrefix.complete hn es (fun i=>(actual i).position) s printed
  have kernelInput:=UniformActualClockHeaderInputs.kernel_input hn a s volume count allocated
  have diagonalInput:=UniformActualClockHeaderInputs.diagonal_input hn a s volume count allocated

@@ -2,6 +2,15 @@ import UniformChirp
 import OAI.Computability.FourierCircuit.ToeplitzCross
 import Mathlib.Analysis.Fourier.ZMod
 
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.2 inverse formula after (5.6), PDF p.22, and §5.3
+(5.7) and three-transform reduction, PDF pp.22-23 (`eq:working-transform`, `eq:chirp`).
+
+Connects Mathlib's opposite-sign DFT to the paper's positive convention,
+proves disjoint signed support, cyclic convolution and Bluestein reconstruction.
+These semantic identities do not by themselves supply machine executions.
+-/
 /-! Positive-exponent standard-root cyclic Fourier semantics.  Mathlib's `dft`
 uses the opposite sign, so the sign change is made explicit before connecting to
 the OAI finite-index matrix.  These are semantic components, not a RAM compiler. -/
@@ -13,6 +22,7 @@ open OAI.ExactFourier
 
 variable {N : ℕ} [NeZero N]
 
+/- Paper stage: §5.2 inverse identity after (5.6), PDF p.22: explicitly change Mathlib sign and certify inverse normalization. -/
 def positiveDFT (f : ZMod N → ℂ) (k : ZMod N) : ℂ := ZMod.dft f (-k)
 def inversePositiveDFT (f : ZMod N → ℂ) (k : ZMod N) : ℂ :=
   (N : ℂ)⁻¹ * ZMod.dft f k
@@ -39,6 +49,7 @@ theorem positiveDFT_inversePositiveDFT (f : ZMod N → ℂ) :
   rw [ZMod.dft_const_mul, ZMod.dft_dft]
   simp [NeZero.ne (N : ℂ)]
 
+/- Paper stage: §5.3, three-transform convolution argument, PDF pp.22-23: exact cyclic convolution and Fourier multiplication identity. -/
 def convolution (f g : ZMod N → ℂ) (k : ZMod N) : ℂ :=
   ∑ j : ZMod N, f j * g (k - j)
 
@@ -99,6 +110,7 @@ section Padding
 variable {n L : ℕ} [NeZero L]
 
 /-- Positive support is printed at the start; negative support is at the end. -/
+/- Paper stage: §5.3, signed fixed operand after (5.7), PDF p.22: 2n<=L makes -(n-1),...,n-1 distinct and the two supports disjoint. -/
 def signedRepresentative (n : ℕ) (z : ZMod L) : ℤ :=
   if z.val < n then z.val else (z.val : ℤ) - L
 
@@ -181,6 +193,7 @@ theorem convolution_pad (hnL : n ≤ L) (x : Fin n → ℂ) (g : ZMod L → ℂ)
 def paddedChirp (eta : ℂ) (x : Fin n → ℂ) : ZMod L → ℂ :=
   pad (fun j => eta ^ ((j.val : ℤ) ^ 2) * x j)
 
+/- Paper stage: §5.3 (5.7), PDF p.22: signed support and zero padding instantiate the exact chirp convolution. -/
 theorem bluestein_convolution (hn : 0 < n) (hL : 2 * n ≤ L)
     (x : Fin n → ℂ) (k : Fin n) :
     (fourierMatrix n).mulVec x k =
@@ -208,6 +221,7 @@ theorem bluestein_three_transforms (hn : 0 < n) (hL : 2 * n ≤ L)
   rw [convolution_via_fourier]
   exact bluestein_convolution hn hL x k
 
+/- Paper stage: §5.2 inverse formula, PDF p.22 and §5.3 three transforms, PDF p.23: execute the inverse as a positive transform followed by negation and 1/L. -/
 theorem bluestein_positive_transforms (hn : 0 < n) (hL : 2 * n ≤ L)
     (x : Fin n → ℂ) (k : Fin n) :
     (fourierMatrix n).mulVec x k =

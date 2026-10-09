@@ -3,6 +3,14 @@ import UniformCalendarPrintedPrefix
 import UniformProducedCalendarAction
 import UniformProducedSynchronizedAction
 import UniformActualTickCallerFrame
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§4.3, proof of Proposition 4.2, PDF p. 20 (`prop:tensor-fourier`), using §2.6, Theorem 2.6, pp. 11–12 (`net:tensor-bound`).
+
+One literal kernel/diagonal tick consumes already produced axis banks and returns actual heap values with the synchronized matrix action. Its local Action/printed-bank premises are internal; `UniformActualCompleteClockTick.execution` constructs them.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformProducedClockTick
 open UniformMachine UniformSynchronizedLayers UniformGlobalCalendarDispatch UniformAllAxisSeedPreparation
@@ -58,6 +66,7 @@ theorem execution {n H:ℕ} (hn:0<n) (es:Fin (axisCount n)→List Event)
  let g:=kernel hn a
  let d:=UniformActualGlobalTickContext.diagonal hn a
  let links:=UniformActualGlobalTickContext.links hn a
+ /- Proposition 4.2 proof, p. 20: consume the actual printed axis banks; the kernel’s former child obligation is closed by the fixed recursive program through `UniformActualGlobalTickContext.execution`. -/
  obtain ⟨banks,directory,pools⟩:=UniformCalendarPrintedPrefix.complete hn es (fun i=>(actual i).position) s printed
  have kernelInput:=UniformActualClockHeaderInputs.kernel_input hn a s volume count allocated
  have diagonalInput:=UniformActualClockHeaderInputs.diagonal_input hn a s volume count allocated
@@ -66,6 +75,7 @@ theorem execution {n H:ℕ} (hn:0<n) (es:Fin (axisCount n)→List Event)
   UniformActualGlobalTickContext.execution hn a UniformFourierAxisPrepareMachine.program v x s kernelInput diagonalInput
    banks rawSource directory pools constantsReady (UniformActualGlobalClockProgram.code_bound n) pc wb one
    (by rw[clock,horizon];exact t.isLt)
+ /- Equation (4.5), p. 20: derive the slot matrix from the same printed pair order and lane-zero factors, then read values from the returned physical heap. -/
  have localMatrices:=UniformProducedCalendarAction.local_matrices hn es length t actual
  have numeric:∀r,r<UniformActualClockEntry.roles→∀j:Fin (UniformActualClockEntry.volume n),
   (u.scalarHeap (UniformActualClockEntry.sourceBase n+r*UniformActualClockEntry.volume n+j.val)).map Scalar.value=

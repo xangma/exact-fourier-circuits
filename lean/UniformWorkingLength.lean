@@ -2,6 +2,15 @@ import UniformBatching
 import Mathlib.NumberTheory.PrimeCounting
 import Mathlib.NumberTheory.Chebyshev
 
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.1, Lemma 5.1 and (5.3)-(5.4), PDF p.21
+(`lem:prime-lengths`, `eq:working-length`, `eq:working-bounds`).
+
+Defines the maximal odd-prime product and minimal binary fill. The explicit
+quadratic prime bound uses Mathlib's Chebyshev estimate, an alternative to the
+paper's binomial-coefficient argument; this module alone makes no RAM cost claim.
+-/
 /- Computable prime/product/doubling selections. No preparation-cost bound is asserted. -/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformWorkingLength
@@ -10,6 +19,7 @@ theorem oddPrime_exists (j : ℕ) : ∃ p, Nat.Prime p ∧ Nat.primeCounting' p 
   ⟨Nat.nth Nat.Prime (j + 1), Nat.prime_nth_prime _, Nat.primeCounting'_nth_eq _⟩
 
 /-- Decidable search; the noncomputable `Nat.nth` appears only in its termination proof. -/
+/- Paper stage: §5.1, Lemma 5.1, PDF p.21 (`lem:prime-lengths`): zero-based odd primes. Nat.find specifies the value; charged selection is proved in the machine modules. -/
 def oddPrime (j : ℕ) : ℕ := Nat.find (oddPrime_exists j)
 
 theorem oddPrime_prime (j : ℕ) : Nat.Prime (oddPrime j) := (Nat.find_spec (oddPrime_exists j)).1
@@ -81,6 +91,7 @@ theorem primeProduct_strictMono : StrictMono primeProduct := by
 theorem product_exceeds_exists (n : ℕ) : ∃ j, 2 * n < primeProduct j :=
   ⟨2 * n, (Nat.lt_pow_self (by norm_num : 1 < 3)).trans_le (primeProduct_lower (2 * n))⟩
 
+/- Paper stage: §5.1, Lemma 5.1, PDF p.21: maximal product R_ell <= 2n < R_ell*r_(ell+1). -/
 def firstExceed (n : ℕ) : ℕ := Nat.find (product_exceeds_exists n)
 def axisCount (n : ℕ) : ℕ := firstExceed n - 1
 def oddProduct (n : ℕ) : ℕ := primeProduct (axisCount n)
@@ -115,6 +126,7 @@ theorem oddProduct_pos (n : ℕ) : 0 < oddProduct n := primeProduct_pos _
 theorem axisCount_log_bound {n : ℕ} (hn : 0 < n) : axisCount n ≤ Nat.log 3 (2 * n) :=
   Nat.le_log_of_pow_le (by norm_num) ((primeProduct_lower _).trans (maximal_product hn).1)
 
+/- Paper stage: §5.1, (5.3)-(5.4), PDF p.21 (`eq:working-length`, `eq:working-bounds`): least doubling and the linear working-volume bounds. -/
 theorem doubling_exists (n : ℕ) : ∃ e, 2 * n ≤ oddProduct n * 2 ^ e := by
   refine ⟨2 * n, ?_⟩
   have hpow := (Nat.lt_pow_self (by norm_num : 1 < 2) (n := 2 * n)).le
@@ -175,6 +187,7 @@ theorem log_two_upper : Real.log 2 ≤ 1 := by
   exact h
 
 /-- A conservative explicit quadratic count bound from Mathlib's elementary Chebyshev bound. -/
+/- Paper stage: §5.1, Lemma 5.1, PDF p.21: alternative library proof of the quadratic prime bound. The constant 64 is implementation slack, not a printed paper constant. -/
 theorem primeCounting_quadratic (j : ℕ) : j + 2 ≤ Nat.primeCounting (64 * (j + 2) ^ 2) := by
   let a : ℕ := j + 2
   let N : ℕ := 64 * a ^ 2

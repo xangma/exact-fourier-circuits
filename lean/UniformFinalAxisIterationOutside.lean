@@ -1,5 +1,15 @@
 import UniformFinalAxisDispatchOutside
 import UniformGlobalClockAdvanceExecution
+
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §4.3 Proposition 4.2, PDF pp.19-20 (`prop:tensor-fourier`),
+and §5.2 (5.6), PDF p.22 (`eq:working-transform`); integer/address accounting is §5.4, PDF p.24.
+
+Retained physical-axis, cache and clock bookkeeping implements the costed
+synchronized transform. These state/layout facts have no separate paper lemma;
+their role is to discharge the actual caller's initialization and frame premises.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformFinalAxisIterationOutside
 open UniformMachine UniformAssembly UniformGlobalCalendarDispatch

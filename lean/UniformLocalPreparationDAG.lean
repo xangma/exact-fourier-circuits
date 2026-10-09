@@ -2,6 +2,13 @@ import UniformLocalFourierLayers
 import UniformRankKernelPreparation
 import UniformShearPreparation
 
+/-!
+Paper correspondence: An explicit power saving for the exact discrete Fourier
+transform, OpenAI math revision adc7f1241b42e322a6451854ab7e4b4c146bf78a,
+§3.3, Lemma 3.4 preparation argument, PDF p. 17; §3.4, equation (3.14) and inverse-root evaluation, p. 18.
+Append-only registers preserve shared Newton, reciprocal, root and spectrum references. These explicit reference/cache invariants implement shared arithmetic DAGs; this module alone does not prove a RAM producer.
+-/
+
 set_option autoImplicit false
 
 /-! Append-only scalar preparation for the actual balanced partition.  Existing
@@ -13,6 +20,7 @@ open UniformBalancedToeplitz UniformWorkspacePlanner
 open scoped BigOperators
 
 /-- One literal ragged cross rectangle; all coefficient/root indices are finite. -/
+/- Paper: Lemma 3.4, pp. 15–17: a request records one ragged source/target rectangle and its no-alias convolution length; bounds are integer-only. -/
 structure Request (N : ℕ) where
   a : ℕ
   e : ℕ
@@ -80,6 +88,7 @@ structure Cached (N l : ℕ) where
   refs : Fin (UniformToeplitzCrossDAG.bankSize request.k) → Fin l
 
 /-- All persistent inputs and already emitted spectra live in the SAME program. -/
+/- Paper: Lemma 3.4 preparation paragraph, p. 17: shared arithmetic subexpressions remain shared. Persistent input/root and newly prepared spectrum references inhabit the same append-only program. -/
 structure State (r N origin : ℕ) where
   length : ℕ
   program : Program r length
@@ -200,6 +209,7 @@ theorem State.extend_length {r N o : ℕ} (b : State r N o) (q : Request N) :
   nlinarith
 
 /-- Concrete repeated append; no recursive ancestry is recompiled. -/
+/- Paper: Lemma 3.4, p. 17: evaluate only the selected chunk kernels, retaining earlier outputs and proving all required bank entries. -/
 def compileRequests {r N o : ℕ} (b : State r N o) : List (Request N) → State r N o
   | [] => b
   | q::qs => compileRequests (b.extend q) qs
@@ -290,6 +300,7 @@ theorem preparePlan_length {r N o : ℕ} (b : State r N o) (P : Plan N) :
 It never appends another `.root` instruction. -/
 open UniformShearPreparation
 
+/- Paper: Paragraph following (3.14), p. 18: a second shared evaluation replaces each unit root by its inverse to prepare conjugate coefficients. -/
 structure RootEnv (r a : ℕ) where
   env : Env r a
   supplied : Fin r → Fin env.length
@@ -494,6 +505,7 @@ def signedExpr (l : ℕ) (j : Fin ((l+2)*2)) : Expr (l+2) :=
   let q := (finProdFinEquiv : Fin (l+2) × Fin 2 ≃ Fin ((l+2)*2)).symm j
   if q.2.val=0 then .ref q.1 else .sub (.ref (zeroRef l)) (.ref q.1)
 
+/- Paper: Implementation bookkeeping around (3.14), p. 18: signed scalar references are appended without re-expanding arithmetic expression trees. -/
 def signedDAG {r l : ℕ} (p : Program r l) : DAG r ((l+2)*2) :=
   family (initialProgram p) id (signedExpr l)
 
@@ -546,6 +558,7 @@ theorem rootCount_eq {r l : ℕ} (p : Program r l) : programCount .rootRead p=p.
   | step p i ih => cases i <;> simp [programCount,instructionCount,Program.rootReads,Instruction.rootReads,ih]
 
 /-- One joint signed bank, one conjugate replay, one set of six-C scale rows. -/
+/- Paper: Equation (3.14), p. 18: prepare the common nonzero shear scales and their references; the resulting six-scale rows include zero original coefficients. -/
 def finish {r N o : ℕ} (b : State r N o) (roots : Fin r → Fin b.length) :
     ScaleEnv r ((b.length+2)*2) :=
   suppliedComplete (signedDAG b.program) (fun j => signedRetained b.program (roots j))
@@ -706,6 +719,7 @@ theorem finish_seed_length {r n : ℕ} (d : DAG r (n+1))
 /-- The Newton `1/H_j` table and its SERIES reciprocal share one actual prefix.
 The FFT references below must already exist in that prefix; extracting them
 from a larger master-root prefix is a separate adapter obligation. -/
+/- Paper: Lemma 3.2, p. 13 and Lemma 3.4, p. 17: connect Newton, reciprocal and compatible power-of-two-root outputs to the local preparation seed. -/
 def newtonSeed (n : ℕ)
     (omega : Fin (Nat.clog 2 (n+1)+3) →
       Fin (UniformReciprocalPreparation.build (UniformReciprocalPreparation.newtonInput n) n (le_refl _)).length) :=

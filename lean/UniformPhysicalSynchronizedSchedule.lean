@@ -1,5 +1,13 @@
 import UniformGenericPhysicalCoordinate
 import UniformSynchronizedLayers
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§4.3, Proposition 4.2 and tensor multiplication identity (4.5), PDF pp. 19–20 (`prop:tensor-fourier`, `eq:tensor-multiply`).
+
+Synchronized matrices are reindexed by the fixed physical most-significant-digit codec. Their full product is the tensor Fourier map in that physical order; charged CRT correction is still required for the usual one-dimensional Fourier order.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformPhysicalSynchronizedSchedule
 open OAI.ExactFourier UniformSynchronizedLayers UniformLocalFourierLayers

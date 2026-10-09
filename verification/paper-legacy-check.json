@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "scope": "Two annotated legacy modules outside final theorem closure; fresh builds and all defining-module closures, including private. Dependencies bound to the separately fresh final receipt.",
+  "finished_utc": "2026-10-09T12:25:51.501310+00:00",
+  "source_sha256": {
+    "UniformDiagonal": "9109c7695ffaee1667104008e3e8e18aa938ffda8eda29e407ad935c2dcdbd35",
+    "UniformCRTTransferMachine": "ed8fc79e5b77e28e527cdb97e4fd86955916a1b1d6625efe7659a59f7d077d0c"
+  },
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "canonical_receipt_sha256": "2ac6d22ee5292260ab17217619c2ea19f9ef488013696a8174bb22ed52ab637b",
+  "driver_sha256": "9f55aecb17304f712d0598f94ce7d51795740f5ba4096c62c5c720b27b6be864",
+  "artifact_sha256": {
+    "logs/paper-audit/legacy/UniformDiagonal.olean": "a3f4f0e67492f518606f78b73f80a6d0c245543d5a8648cae3f7932d52e56449",
+    "logs/paper-audit/legacy/UniformCRTTransferMachine.olean": "cae8e938082ceed9a6afc92c4a9864eaca78a5c8d39b7a7aa60ed3b4461856d2",
+    "logs/paper-audit/legacy/census.json": "def6e17bc2ec7deadbaa3a5b96dc19d4bad730e36b9f37a51eaeb1c92b3d3cf2",
+    "logs/paper-audit/legacy/census.log": "a4c0ba12a48c1768a60ca0d802aadc210b50b808998180dce7de19f3d2eb7ba0"
+  },
+  "declarations": 146,
+  "private_declarations": 0,
+  "standard_axioms_only": true
+}

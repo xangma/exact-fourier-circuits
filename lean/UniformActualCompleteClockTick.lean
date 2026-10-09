@@ -4,6 +4,14 @@ import UniformProducedClockTickTracked
 import UniformActualClockReadyAfterKernel
 import UniformActualClockNumericInvariant
 import UniformActualClockOuterFrameConstruction
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§4.3, Proposition 4.2 proof, PDF p. 20 (`prop:tensor-fourier`), and §2.6, Theorem 2.6, pp. 11–12 (`net:tensor-bound`).
+
+This closes local Action and printed-bank inputs with actual finite-axis preparation, then joins the actual recursive kernel/diagonal execution through the same intermediate state. Integral instruction counts are compared to a uniform real theta allowance.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformActualCompleteClockTick
 open UniformMachine UniformAllAxisSeedPreparation UniformSynchronizedLayers
@@ -43,6 +51,7 @@ theorem execution {n t:ℕ}(hn:0<n)(x:Fin n→ℂ)
  Frame n s u∧Spectrum n s u∧
  u.natReg 6819=UniformGlobalCalendarArena.natBase constants n∧
  u.natReg 6821=UniformGlobalCalendarArena.scalarBase constants n:=by
+ /- Proposition 4.2 proof, p. 20: retained cache contents determine each local compiled action; finite-axis execution physically prints those exact actions at this clock. -/
  let cache:=UniformFinalFiniteAxes.cache ready
  let time:Fin (UniformFourierClockBounds.horizon n):=⟨t,unfinished⟩
  let actual:=UniformCanonicalClockCost.action hn cache time
@@ -50,6 +59,7 @@ theorem execution {n t:ℕ}(hn:0<n)(x:Fin n→ℂ)
   UniformFinalFiniteAxes.execution hn x v s ready unfinished
  have printed':UniformCalendarPrintedPrefix.Printed hn
   (UniformFinalAxisPrinted.events hn cache t) (fun i=>(actual i).position) (axisCount n) a:=printed
+ /- Proposition 4.2 proof, p. 20: the real intermediate state `a` from axis printing is the kernel’s entry. `axes.trans kernel` joins these actual executions and charges both. -/
  obtain ⟨u,kt,kernel,kernelCheap,pc,clock,source,numeric,tags,nat,scalar,outputs,roots,clockFrame,high,startup⟩:=
   UniformProducedClockTickTracked.execution hn (UniformFinalAxisPrinted.events hn cache t)
    (UniformCanonicalClockCost.length hn) time actual v x a printed' atReady.source
@@ -64,6 +74,7 @@ theorem execution {n t:ℕ}(hn:0<n)(x:Fin n→ℂ)
   (UniformProducedClockTick.stored n u) time a u before atReady.source source numeric
  have axesFrame:=UniformActualClockOuterFrameConstruction.axis axes retained
  have kernelFrame:=UniformActualClockOuterFrameConstruction.low_two hn kernel nat scalar outputs roots
+ /- Equation (4.4), pp. 19–20: sector widths and pair counts discharge the kernel theta bound; concrete per-axis preparation and control ticks are added before comparing to the uniform real allowance. -/
  have cost:=UniformCanonicalClockStepCost.actual_step_bound hn cache (UniformCanonicalClockCost.length hn) time actual
  have axisEq:=axis_cost hn cache t
  have wholeCheap:axisTicks+kt≤6+(∑j:Fin (axisCount n),UniformCanonicalAxisCost.axisCost hn cache t j)+

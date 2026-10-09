@@ -1,4 +1,12 @@
 import UniformSectorPayloadValues
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§4.3, proof of Proposition 4.2, PDF p. 20 (`prop:tensor-fourier`); §4.2, Lemma 4.1, p. 19.
+
+This implementation bridge reads actual completed child output cells, identifies the block-diagonal packed tensor, and applies actual inverse stores. The `Completed` premise is internal and must be produced by the same recursive sector loop.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformSectorNumericTensorBridge
 open UniformMachine UniformSectorPacking UniformSectorTensor
@@ -11,6 +19,7 @@ instance positionsFintype (axes:List Axis) (c:BlockChoices axes):Fintype (Positi
  Fintype.ofEquiv (Fin (2^sectorPairCount axes c)) (physicalSector axes c).symm
 instance choicesFintype (axes:List Axis):Fintype (BlockChoices axes):=
  Fintype.ofEquiv (Fin (sectorWidths axes).length) (sectorIndexEquiv axes).symm
+/- Proposition 4.2 proof, p. 20: summing within one block of the packed tensor removes all off-sector contributions. -/
 lemma packed_mulVec (axes:List Axis) (v:Fin (radices axes).prod → ℂ)
  (c:BlockChoices axes) (x:Positions axes c):
  (packedTensor axes).mulVec v (packedEquiv axes ⟨c,x⟩)=
@@ -45,6 +54,7 @@ lemma choice_state (axes:List Axis) (c:BlockChoices axes):
  simp only[sectorStates,List.getElem_ofFn]
  change expectedBlockState axes ((sectorIndexEquiv axes).symm (sectorIndexEquiv axes c))=_
  rw[Equiv.symm_apply_apply]
+/- Proposition 4.2 proof, p. 20: actual `Completed` cells are identified with the sector operator in exactly the child’s binary order. This is a consequence of completed execution, not an entry assumption in the closed clock. -/
 lemma payload_at_coordinate {W B F reserve A E:ℕ} (axes:List Axis)
  (g:Geometry W B F reserve A E (sectorStates axes)) (cover:Cover (sectorStates axes) g.volume)
  (v:ℕ → ℕ → Scalar) (s:State) (done:Completed W A (sectorStates axes) v (sectorStates axes).length s)
@@ -85,6 +95,7 @@ lemma unpack_mulVec (axes:List Axis) (v:Fin (radices axes).prod → ℂ) (j:Fin 
  unfold Matrix.mulVec dotProduct
  simp only[Matrix.reindex_apply,Matrix.submatrix_apply,Equiv.symm_apply_apply]
  exact Fintype.sum_equiv (unpackingPermutation axes) _ _ (by intro k;rfl)
+/- Lemma 4.1 and Proposition 4.2, pp. 19–20: the inverse packing stores conjugate the completed block-diagonal action back to the original physical tensor coordinates. -/
 /-- Concrete numeric consequence of actual Completed plus actual inverse stores:
 the physical native output is the literal original tensor pair-slot operator. -/
 theorem native_tensor {W B F reserve A E:ℕ} (axes:List Axis)

@@ -1,6 +1,16 @@
 import UniformFinalCRTMovement
 import UniformActualClockEntry
 import UniformSelectedPhysicalCRT
+
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §4.3 Proposition 4.2, PDF pp.19-20 (`prop:tensor-fourier`),
+and §5.2 (5.5), PDF p.22 (`eq:crt-fourier`).
+
+Converts the actual synchronized physical matrix and same-run heap output
+into the Fourier transform contract. This bridge supplies no independent
+action oracle; the numeric premise is the complete clock's postcondition.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformFinalClockHeapTransform
 open UniformMachine UniformFinalNumericJoin

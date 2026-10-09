@@ -2,6 +2,14 @@ import UniformFourierAxisPrepareMachine
 import UniformActualGlobalConstants
 import UniformGlobalClockPlacement
 
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§4.3, Proposition 4.2 proof, PDF p. 20 (`prop:tensor-fourier`).
+
+This is the fixed literal assembly implementing repeated synchronized slots and the fixed recursive kernel. Program offsets, relocation and code-size inequalities are implementation bookkeeping without a separate paper formula.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformActualGlobalClockProgram
 open UniformMachine UniformAssembly UniformActualGlobalConstants

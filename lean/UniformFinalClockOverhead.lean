@@ -1,5 +1,15 @@
 import UniformFinalCacheAsymptotics
 import UniformGlobalDiagonalChildPrefix
+
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §4.3 Proposition 4.2, PDF pp.19-20 (`prop:tensor-fourier`),
+§5.2 (5.6), PDF p.22 (`eq:working-transform`), and §5.4, PDF pp.23-24 (`thm:main`).
+
+Charged-budget bookkeeping refines the paper's composition of local work,
+array movement and three transforms. Cache/register constants and conservative
+majorants are implementation details, without separate paper statements.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformFinalClockOverhead
 open UniformAllAxisSeedPreparation UniformFinalCacheAsymptotics Filter Asymptotics

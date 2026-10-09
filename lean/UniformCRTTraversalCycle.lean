@@ -1,5 +1,14 @@
 import UniformCRTTraversalMachine
 
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.2, CRT tables and linear index traversal surrounding (5.5),
+PDF p.22 (`eq:crt-fourier`), using the prefix bound (4.1), PDF p.18.
+
+Literal integer/table/traversal bookkeeping refines that argument. The paper
+does not specify this register layout or these frames; semantic and charged
+execution obligations are separate declarations below.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformCRTTraversalCycle
 open UniformMachine UniformAssembly UniformCRTTraversalMachine

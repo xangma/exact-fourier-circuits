@@ -6,6 +6,18 @@ import UniformGlobalTensorDiagonalPreparation
 import UniformProducedSectorTransposePreparation
 import UniformRecursiveNodePreparation
 
+/-!
+# A shared polynomial address envelope
+
+*An explicit power saving for the exact discrete Fourier transform*, OpenAI
+math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`, §4.2, PDF pp. 19–20
+(Lemma 4.1 and Proposition 4.2), and the final word-bound argument in §5.4,
+PDF p. 24 (`thm:main`). The concrete slabs, bank headers, stack frames and
+very conservative polynomial degree are machine bookkeeping, with no
+one-to-one numbered paper lemma. These formulas alone do not assert execution;
+actual callers prove the bounded transitions using the constructed layouts.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformJointAllocation
 open UniformMachine UniformAssembly
@@ -16,6 +28,8 @@ structure Constants where
  unitTape : ℕ
  roles : ℕ
 /-- The actual held code, seed printer payload, unit table and native width. -/
+/- §5.4, PDF p. 24: code, fixed network width and printer payloads are
+absolute constants, fixed before n. Their sizes are kept symbolic here. -/
 def actualConstants : Constants :=
  ⟨UniformRecursiveSavingProgram.program.length,UniformRecursiveSavingProgram.seedLength,
   UniformRecursiveSavingProgram.unitLength,ExplicitSeedBudget.paddedRoles⟩
@@ -57,6 +71,8 @@ def allocate (n : ℕ) : Addresses :=
 
 def envelope (n : ℕ) : ℕ := 40*slab c n+fixed c
 /-- One fixed degree suffices at every positive n, including n=1. -/
+/- §5.4, PDF p. 24: absorb the fixed multiplicative constants into a
+single degree. This need not be the paper's sharpest space exponent. -/
 def degree : ℕ := 2*(4000000*(fixed c+1)+fixed c)+19
 lemma degree_pos : 0<degree c := by unfold degree;omega
 lemma cover (C z:ℕ):
@@ -327,6 +343,9 @@ lemma descend_formula (F k:ℕ):descendFrontier c F k=F+payload c+5*2^k:=by
 
 /-- Literal same-child quotient chain, every step enabled by the actual large
 branch. This predicate says nothing about whether the program has executed. -/
+/- The quotient recursion in §2.5–§2.6, PDF pp. 10–12, and the
+word bound in §5.4, p. 24. The descent/frontier proofs below bound live
+child frames; they do not supply child executions or costs. -/
 inductive Descent (k:ℕ):ℕ→ℕ→Prop
  | root:Descent k 0 k
  | child {d j:ℕ}:Descent k d j→UniformBatching.threshold≤j→

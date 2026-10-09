@@ -1,4 +1,12 @@
 import UniformPhysicalSynchronizedSchedule
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§4.3, tensor multiplication identity (4.5) and proof of Proposition 4.2, PDF p. 20 (`eq:tensor-multiply`, `prop:tensor-fourier`).
+
+Chronological prefix products provide the loop’s mathematical invariant. The induction is implementation bookkeeping; it records multiplication order explicitly so the complete literal clock has the tensor Fourier endpoint.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformPhysicalClockPrefix
 open UniformSynchronizedLayers

@@ -2,6 +2,14 @@ import UniformSynchronizedLayers
 import UniformMasterRootSeedDAG
 import UniformGlobalLocalPreparation
 
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§4.3, Proposition 4.2 and (4.5), PDF pp. 19–20; §5.2, (5.5), p. 22; §5.3, (5.8)–(5.9), p. 23 (`eq:crt-fourier`, `eq:master-root`, `eq:root-size`).
+
+This separate typed schedule obtains every local coefficient from the specified master root, then applies CRT permutations. It is an algebraic bridge, not the literal clock execution proof; the latter uses `UniformSynchronizedLayers.localSchedules` and produced calendar actions.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformMasterSynchronizedLayers
 open OAI.ExactFourier UniformLocalFourierLayers UniformSynchronizedLayers
@@ -17,6 +25,7 @@ theorem radix_divides (n : ℕ) (i : axes n) : radix n i∣UniformWorkingLength.
   rw [←UniformSelectedCRT.radices_product]
   exact Finset.dvd_prod_of_mem _ (Finset.mem_univ i)
 
+/- Section 5.3, (5.8)–(5.9), p. 23: compatible local roots are powers of one specified master root. These schedules use that scalar-preparation DAG. -/
 def localSchedules (n : ℕ) (hn : 0<n) (i : axes n) : List (Layer (size n i)) :=
   UniformMasterRootSeedDAG.selectedSchedule n (UniformWorkingLength.workingLength n) (radix n i-1) hn
     (by change size n i≤_;rw [size_eq];exact UniformGlobalLocalPreparation.radix_le_length n i)
@@ -52,6 +61,7 @@ def schedule (n : ℕ) (hn : 0<n) :=
 theorem schedule_length (n : ℕ) (hn : 0<n) :
     (schedule n hn).length=UniformCommonSlots.slotCount n := tensorSchedule_length _ _
 
+/- Proposition 4.2, (4.5), p. 20: synchronization is a typed matrix identity; this theorem does not establish the machine printer or its cost. -/
 /-- All axis coefficient schedules derive from the SAME specified master-root
 input. No assumed prepared table, root-reference list or Fourier action remains.
 This is a typed schedule identity; its RAM printer and execution remain separate. -/
@@ -80,6 +90,7 @@ theorem schedule_action (n : ℕ) (hn : 0<n) (x : (∀i : axes n,Fin (radix n i)
       (PiTensor.matrix (fun i : axes n=>fourierMatrix (radix n i))).mulVec x := by
   rw [schedule_radices]
 
+/- Section 5.2, (5.5), p. 22: two CRT permutations are needed. The alpha input gather and beta output map are independent, and inversion of beta restores the ordinary Fourier output order. -/
 /-- The slot product on the actual mixed-radix ordinal array. -/
 def ordinalMatrix (n : ℕ) (hn : 0<n) :
     Matrix (Fin (UniformWorkingLength.workingLength n)) (Fin (UniformWorkingLength.workingLength n)) ℂ :=

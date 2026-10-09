@@ -1,5 +1,15 @@
 import UniformFastPhysicalCRTProgress
 import UniformFastPhysicalCRTCarryLoop
+
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.2, linear CRT index enumeration after (5.5), PDF p.22
+(`eq:crt-fourier`), and prefix bound (4.1), PDF p.18.
+
+Mixed-radix carry enumeration is an implementation refinement of the paper's
+linear traversal. Initialization, carry visits, frames and instruction counts
+have no one-to-one paper lemma; the final caller charges this actual producer.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformFastPhysicalCRTCycle
 open UniformMachine UniformNatBlockMachine UniformFastPhysicalCRTMachine UniformCRTTraversalCycle
@@ -35,6 +45,7 @@ lemma enter_carry{a V n B:ℕ}(L:Addresses)(x:Fin n→ℂ)(s:State)(args:Args a 
 
 /-- Every actual emission is followed by the necessary physical carry only.
 The potential is the exact sum of odometer visit counts. -/
+/- Paper stage: §5.2, linear digit traversal, PDF p.22 and (4.1), PDF p.18: actual odometer carries are amortized by the exact visit potential. -/
 theorem loop{a n B:ℕ}(r:Fin a→ℕ)(hr:∀i,0<r i)(L:Addresses)
  (rho alpha beta:Fin (∏i,r i)≃Fin (∏i,r i))
  (normalEq:∀j:Fin (∏i,r i),normal r j.val=(rho j).val)
@@ -101,6 +112,7 @@ theorem loop{a n B:ℕ}(r:Fin a→ℕ)(hr:∀i,0<r i)(L:Addresses)
 
 /-- The literal53 produces the two complete physical CRT tables from the real
 normal tables, deriving all prefix weights/digits internally. -/
+/- Paper stage: §5.2, PDF p.22: literal complete table production with linear total cost; directory/source readability is an explicit discharged caller obligation. -/
 theorem execution{a n B:ℕ}(r:Fin a→ℕ)(hr:∀i,2≤r i)(L:Addresses)
  (rho alpha beta:Fin (∏i,r i)≃Fin (∏i,r i))
  (normalEq:∀j:Fin (∏i,r i),normal r j.val=(rho j).val)

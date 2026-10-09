@@ -1,6 +1,14 @@
 import UniformSectorPacking
 import KernelIdentities
 
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§4.3, proof of Proposition 4.2, PDF p. 20 (`prop:tensor-fourier`), following Lemma 4.1, p. 19.
+
+The tensor pair layer is conjugated by the explicit packing permutation into independent sectors. Singleton blocks contribute identity; the remaining factors are precisely copies of C. This is matrix semantics, not an assumed recursive execution.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformSectorTensor
 open UniformSectorPacking OAI.ExactFourier UniformTraversal
@@ -72,6 +80,7 @@ instance blockChoiceDecEq (axes : List Axis) : DecidableEq (BlockChoices axes) :
 
 /-- The tensor pair slot in the original coordinate order, derived from the
 actual local permutation/block codecs. This is a matrix identity, not RAM work. -/
+/- Proposition 4.2 proof, p. 20: tensoring ordered local pair/singleton blocks is block diagonal on sectors before applying the explicit packed-coordinate conjugation. -/
 def originalTensor (axes : List Axis) : Matrix (Fin (radices axes).prod) (Fin (radices axes).prod) ℂ :=
   fun i j=>localTensor axes
     ((localDigitsEquiv axes).symm ((mixedEquiv (radices axes)).symm i))
@@ -112,6 +121,7 @@ theorem packing_tensor (axes : List Axis) :
   ext i j
   simp [packedTensor,Matrix.reindex_apply,Matrix.submatrix_apply,packingPermutation]
 
+/- Proposition 4.2 proof, p. 20: every width-one factor is identity and can be removed; the remaining ordered factors are C^{⊗k}. -/
 /-- Remove singleton positions and keep the ordered binary coordinates. -/
 def binaryDigits : (axes : List Axis) → (c : BlockChoices axes) → Positions axes c → List ℕ
   | [],_,_=>[]

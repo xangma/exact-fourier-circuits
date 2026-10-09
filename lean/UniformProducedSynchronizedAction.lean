@@ -2,6 +2,14 @@ import UniformProducedAllAxisAlignment
 import UniformProducedPhysicalCoordinate
 import UniformPhysicalSynchronizedSchedule
 import UniformKernelDiagonalSynchronizedAction
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§4.3, Proposition 4.2 proof and (4.5), PDF p. 20 (`prop:tensor-fourier`, `eq:tensor-multiply`).
+
+The actual common-C kernel followed by its produced diagonal is one simultaneous local slot in a fixed physical coordinate map. Matching partitions may change between clocks; equality of local matrices and physical coordinates closes that obligation.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformProducedSynchronizedAction
 open UniformMachine UniformKernelDiagonalBanks

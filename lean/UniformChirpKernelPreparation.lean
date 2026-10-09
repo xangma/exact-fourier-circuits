@@ -1,6 +1,15 @@
 import UniformPaddedInputPreparation
 import UniformChirpKernelMachine
 
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.3, operand preparation and three-transform argument,
+PDF pp.22-23 (`eq:chirp`).
+
+Composes actual root/chirp, padded-input and fixed-kernel preparation.
+This prepares operands only; the fixed operand's Fourier transform remains a
+separately charged stage of the final program.
+-/
 set_option autoImplicit false
 set_option linter.unusedSimpArgs false
 namespace ExactFourierCircuits.UniformChirpKernelPreparation
@@ -13,6 +22,7 @@ def head : Program :=
    .natLiteral 36 2,.natBinary .mul 37 8 36,.natBinary .add 9 2 37,.natBinary .add 9 9 17]
 
 /-- The literal signed-kernel producer consumes the inverse chirp bank and restores the header. -/
+/- Paper stage: §5.3, operand construction, PDF p.22: actual header restoration and signed-kernel producer; addresses are implementation details. -/
 def program : Program := embed head UniformChirpKernelMachine.program
   [.natBinary .add 0 40 34,.halt] 30
 
@@ -200,6 +210,7 @@ theorem full_wordBound_setup {n : ℕ} (hn : 0<n) :
 /-- Initial-state execution prepares both actual convolution operands, all root
 and CRT banks, with every input read, store, branch and halt charged. Transforms
 and the final output phase remain separate. -/
+/- Paper stage: §5.3, preparation and three-transform discussion, PDF p.23: actual operand production is charged; this theorem does not include their transforms. -/
 theorem preparation_execution {n : ℕ} (hn : 0<n) (x : Fin n → ℂ) : ∃ t u,
     BoundedExecution fullProgram n x ((n+2)^19) initial t u ∧
     UniformCRTHeaderMachine.Header n u ∧ UniformCRTHeaderMachine.CRTTable n u ∧

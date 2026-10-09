@@ -1,5 +1,13 @@
 import UniformProducedCalendarFamily
 import UniformProducedSynchronizedAction
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§3.5, (3.12)–(3.14), PDF pp. 17–18; §4.3, Proposition 4.2 proof, p. 20 (`loc:three-kernel`, `loc:nonzero-shear`, `loc:nonzero-split`).
+
+This matrix adapter identifies the actual ordered union of local C pairs and the lane-zero diagonal with the native slot. Cast and record-equality lemmas are implementation bookkeeping with no distinct paper theorem.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformProducedCalendarMatrix
 open UniformAllAxisSeedPreparation UniformGlobalCalendarDispatch

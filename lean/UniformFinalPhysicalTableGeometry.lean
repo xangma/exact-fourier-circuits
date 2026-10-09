@@ -1,6 +1,16 @@
 import UniformPhysicalCRTTableHeaders
 import UniformFastSelectedPhysicalCRT
 import UniformFastPhysicalCRTMachine
+
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.2, linear CRT permutations after (5.5), PDF p.22
+(`eq:crt-fourier`), and §5.4 integer/address bounds, PDF p.24.
+
+The produced physical CRT table and its protected-bank geometry refine the
+paper's costed index permutations. Allocation addresses, headers and frames are
+implementation bookkeeping rather than a separate paper argument.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformFinalPhysicalTableGeometry
 open UniformJointAllocation UniformInitialPreparation UniformFastPhysicalCRTMachine

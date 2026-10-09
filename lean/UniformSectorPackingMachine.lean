@@ -1,6 +1,17 @@
 import UniformSectorPacking
 import UniformTensorMonomialMachine
 
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§4.1, prefix traversal (4.1), PDF p. 18; §4.2, Lemma 4.1 and (4.2)–(4.3), p. 19 (`eq:prefix-nodes`, `lem:sector-address`, `eq:sector-updates`).
+
+The literal program computes suffix products, performs the fixed-state DFS,
+writes the inverse-address bank and gathers actual scalar values. Stack fields,
+registers and exact instruction constants are implementation bookkeeping;
+`execution` charges preparation, traversal, movement and the halt.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformSectorPackingMachine
 open UniformMachine UniformTraversal UniformSectorPacking
@@ -1813,6 +1824,7 @@ theorem packed_target_bound (as:List PhysicalAxis) (ds:LocalDigits (physicalAxes
  obtain ⟨_,h⟩:=target_bounds (physicalAxes as) initialPacking ds (by decide)
  simpa only[initialPacking,Nat.zero_add,Nat.one_mul] using h
 
+/- Lemma 4.1, (4.3), p. 19: suffix preparation, physical DFS and scalar gather are joined through their actual intermediate states; the final count includes every branch and halt. -/
 /-- End-to-end literal execution: computed suffixes, actual forward table
 reads, generated inverse-address bank, continuous scalar gather and halt.
 Physical input rows/permutation/scalar presence are the only source-bank premises. -/

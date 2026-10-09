@@ -1,6 +1,15 @@
 import UniformChirp
 import UniformPairMachine
 
+/-!
+Paper: An explicit power saving for the exact discrete Fourier transform, OpenAI math revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. §5.3, chirp-ratio preparation paragraph, PDF p.23
+following (5.7) (`eq:chirp`).
+
+Literal table generation uses successive ratios and their inverses.
+The eta nonzero premise justifies the initial division; each later transition,
+store and final halt is charged.
+-/
 set_option autoImplicit false
 set_option linter.unusedSimpArgs false
 set_option linter.unnecessarySeqFocus false
@@ -10,6 +19,7 @@ noncomputable section
 
 /-- Nat0 is the count, Nat9 the table base; Scalar0 is a prepared nonzero root.
 Each iteration writes the next chirp and its inverse, with two ratio updates. -/
+/- Paper stage: §5.3, linear chirp-table argument, PDF p.23: literal writes and ratio updates. Initial inversion requires eta != 0. -/
 def program : Program :=
   [.natLiteral 2 1,.natLiteral 1 0,.scalarLiteral 1 1,.scalarLiteral 2 1,
    .scalarLiteral 3 1,.fieldBinary .div 3 3 0,
@@ -178,6 +188,7 @@ theorem row_partial (r a j : ℕ) (eta : ℂ) (s : State) (h : Data r a j eta s)
     rw [Function.update_of_ne (by omega),Function.update_of_ne (by omega)]
     exact hp k hkj
 
+/- Paper stage: §5.3, PDF p.23: induction over the actual loop charges every branch, store and update; Partial and Frame are implementation bookkeeping. -/
 theorem loop_execution (n : ℕ) (x : Fin n → ℂ) (B r a : ℕ) (eta : ℂ)
     (hB : 20≤B) (ha : a+2*r≤B) (t : ℕ) : ∀ j s,
     j+t=r → Data r a j eta s → Partial a j eta s → WordBound B s → ∃ u,
@@ -223,6 +234,7 @@ theorem inverse_chirp_value (eta : ℂ) (j : ℕ) :
   simp [UniformChirp.chirp,inv_pow]
 
 /-- The standard half-angle root is supplied from the one master-root bank. -/
+/- Paper stage: §5.3 (5.7), PDF pp.22-23: the produced table has exactly eta^(j^2) and eta^(-j^2) at every original coordinate. -/
 theorem specified_table_execution (n : ℕ) (x : Fin n → ℂ) (B a : ℕ) (s : State)
     (hp : s.pc=0) (hr : s.natReg 0=n) (ha : s.natReg 9=a)
     (he : s.scalarReg 0=prepared (OAI.ExactFourier.zeta (2*n))) (hB : 20≤B)

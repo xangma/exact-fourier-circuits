@@ -1,4 +1,11 @@
 import UniformRecursiveRootPackage
+
+/-!
+Paper correspondence: An explicit power saving for the exact discrete Fourier
+transform, OpenAI math revision adc7f1241b42e322a6451854ab7e4b4c146bf78a,
+§2.6, Theorem 2.6 proof, PDF pp. 11–12 (net:tensor-bound).
+This closes the root call, including actual stack allocation, fixed-table printers, return/halting instructions, numerical action and a charged cost. Its entry headers and initialized data are ordinary subroutine preconditions.
+-/
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformRecursiveRootExecution
 open UniformMachine UniformFixedNetwork UniformFixedNetworkScheduleMachine UniformRecursiveNodePreparation
@@ -19,6 +26,7 @@ lemma small_cost (k:ℕ)(small:k < P.threshold):
  change (10+(W*UniformBinaryBatchCMachine.arrayCost k+12))+1 ≤ W*UniformBinaryBatchCMachine.arrayCost k+4*k+500
  omega
 
+/- Paper: Theorem 2.6, p. 11: direct tensor-axis work in the fixed finite base range, including k = 0. finalize also charges the actual halt instruction. -/
 lemma small_execution (n B k A F:ℕ)(x:Fin n→ℂ)(input:Fin W→Fin (2^k)→Scalar)(s:State)
  (small:k < P.threshold)(pc:s.pc=0)(bits:s.natReg 4120=k)(base:s.natReg 4121=A)
  (size:s.natReg 4122=2^k)(frontier:s.natReg 4123=F)(dp:s.natReg 4151=0)
@@ -53,6 +61,7 @@ lemma small_execution (n B k A F:ℕ)(x:Fin n→ℂ)(input:Fin W→Fin (2^k)→S
 /-- The root large branch computes and allocates its actual stack before the
 same whole-node execution. Strict child executions are supplied by the proved
 well-founded theorem, not by a caller premise. -/
+/- Paper: Theorem 2.6, pp. 11–12: allocate stack, produce fixed tables, execute whole node, and supply strictly smaller bodies from the closed induction theorem. -/
 lemma large_execution (n B A F q rest:ℕ)(x:Fin n→ℂ)(input:Fin W→Fin (2^(q*m+rest))→Scalar)(s:State)
  (large:P.threshold ≤ q*m+rest)(qp:1 ≤ q)(rp:rest < m)(smaller:q < q*m+rest)
  (pc:s.pc=0)(bits:s.natReg 4120=q*m+rest)(base:s.natReg 4121=A)
@@ -100,6 +109,7 @@ lemma large_execution (n B A F q rest:ℕ)(x:Fin n→ℂ)(input:Fin W→Fin (2^(
 /-- The complete actual corrected recursive saving program, for every binary
 exponent. Only physically supplied raw headers/data/constants and ordinary
 allocation/word bounds are assumptions; no produced tape or child action is. -/
+/- Paper: Quotient/remainder split k = qm + rest and the finite/large branches are Theorem 2.6, p. 11. This endpoint retains raw initialization/word-bound contracts, not caller-provided transform correctness. -/
 theorem execution (n B k A F:ℕ)(x:Fin n→ℂ)(input:Fin W→Fin (2^k)→Scalar)(s:State)
  (pc:s.pc=0)(bits:s.natReg 4120=k)(base:s.natReg 4121=A)(size:s.natReg 4122=2^k)
  (frontier:s.natReg 4123=F)(dp:s.natReg 4151=0)

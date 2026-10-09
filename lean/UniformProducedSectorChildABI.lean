@@ -2,6 +2,14 @@ import UniformProducedSectorTransposePreparation
 import UniformSectorChildEntryPreparation
 import UniformSectorPhysicalBinaryAction
 
+/-!
+Paper correspondence (audit): *An explicit power saving for the exact discrete Fourier transform*,
+OpenAI math revision `adc7f1241b42e322a6451854ab7e4b4c146bf78a`,
+§4.2, Lemma 4.1, PDF p. 19, and §4.3, proof of Proposition 4.2, p. 20; recursive batching is §2.6, Theorem 2.6, pp. 11–12 (`net:tensor-bound`).
+
+Literal producer, gather and argument-loader instructions implement contiguous sector/role batches. Register numbers and the child ABI are implementation bookkeeping without a separate paper lemma; this theorem ends at child entry and does not assume the child transform.
+-/
+
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformProducedSectorChildABI
 open UniformMachine UniformAssembly UniformTensorMonomialMachine
