@@ -14,6 +14,10 @@ models nor equality of their programs. It does not establish priority or a
 fresh upstream kernel check. The separate semantics comparison and local
 verification report remain necessary.
 
+Follow-up: the [separate unchanged upstream reproduction](upstream-dft-reproduction.md)
+now supplies the fresh 89-module kernel check and complete declaration audit.
+The historical comparison below retains its original source-review scope.
+
 ## Source identity and chronology
 
 The solution is

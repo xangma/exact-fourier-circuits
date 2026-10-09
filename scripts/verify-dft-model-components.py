@@ -30,6 +30,24 @@ def sha(path):
         return hashlib.file_digest(handle, "sha256").hexdigest()
 
 
+def optional_parts(olean):
+    """Lean can import split artifacts as well as the main .olean file."""
+    base = str(olean)[:-len(".olean")]
+    candidates = [Path(str(olean) + suffix) for suffix in (".server", ".private")]
+    candidates += [Path(base + suffix) for suffix in (".ir", ".ir.sig")]
+    return {
+        "present": {str(p): sha(p) for p in candidates if p.is_file()},
+        "absent": [str(p) for p in candidates if not p.exists()],
+    }
+
+
+def check_parts(snapshot):
+    for path, digest in snapshot["present"].items():
+        assert sha(path) == digest, f"Artifact part changed: {path}"
+    for path in snapshot["absent"]:
+        assert not Path(path).exists(), f"Artifact part appeared: {path}"
+
+
 def output(*args):
     return subprocess.check_output(args, cwd=LEAN, text=True).strip()
 
@@ -137,11 +155,18 @@ def main():
               for p in lean_path.split(os.pathsep)]
     # Only certified old project modules are visible. A missing fresh component
     # must fail instead of loading an old DFTModel artifact from shared BUILD.
+    reused_parts = {}
     for module in artifacts:
         relative = Path(module.replace(".", "/") + ".olean")
         link = stage / relative
         link.parent.mkdir(parents=True, exist_ok=True)
         link.symlink_to(BUILD / relative)
+        parts = optional_parts(BUILD / relative)
+        reused_parts["project:" + module] = parts
+        for source in parts["present"]:
+            part_link = stage / Path(source).relative_to(BUILD)
+            part_link.symlink_to(source)
+        reused_parts["stage:" + module] = optional_parts(link)
     isolated_paths = [stage] + [p.resolve() for p in search if p.resolve() != BUILD.resolve()]
     build_env = dict(os.environ, LEAN_PATH=os.pathsep.join(map(str, isolated_paths)))
     for module, entry in baseline["external_artifact_sha256"].items():
@@ -149,8 +174,10 @@ def main():
         path = next((p / rel for p in search if (p / rel).is_file()), None)
         assert path, f"Missing external artifact: {module}"
         external[module] = (path, entry["sha256"])
+        reused_parts["external:" + module] = optional_parts(path)
     files = {p.stem: p for p in LEAN.glob("DFTModel*.lean")}
     assert files, "No translation components"
+    assert not (files.keys() & artifacts.keys()), "Fresh component overlaps certified reuse"
     dependencies = {}
     for name, path in files.items():
         text = strip_comments(path.read_text())
@@ -162,7 +189,12 @@ def main():
         dependencies[name] = set(re.findall(r"^\s*(?:public\s+)?import\s+(\S+)", text, re.M)) & files.keys()
         sources[str(path.relative_to(ROOT))] = sha(path)
     for path in ["scripts/verify-dft-model-components.py", "scripts/check-dft-model-bridge.sh",
-                 "docs/dft-model-translation.md", "docs/machine-model-comparison.md"]:
+                 "scripts/verify-upstream-dft.py", "README.md", "PLAN.md",
+                 "docs/dft-model-translation.md", "docs/machine-model-comparison.md",
+                 "docs/upstream-dft-reproduction.md", "docs/audit-upstream-semantics.md",
+                 "docs/audit-upstream-structure.md", "docs/paper-proof-map.md",
+                 "verification/upstream-dft-baseline-manifest.json",
+                 "verification/upstream-dft-baseline-result.json"]:
         sources[path] = sha(ROOT / path)
     ordered, pending = [], set(files)
     while pending:
@@ -171,7 +203,7 @@ def main():
         ordered.extend(ready)
         pending.difference_update(ready)
 
-    fresh = {}
+    fresh, fresh_parts = {}, {}
 
     def check_inputs():
         assert {p.stem for p in LEAN.glob("DFTModel*.lean")} == set(files), "Module set changed"
@@ -180,10 +212,13 @@ def main():
             assert sha(ROOT / path) == digest, f"Source/config changed: {path}"
         for module, digest in artifacts.items():
             assert sha(BUILD / (module.replace(".", "/") + ".olean")) == digest, module
+            assert sha(stage / (module.replace(".", "/") + ".olean")) == digest, module
         for module, (path, digest) in external.items():
             assert sha(path) == digest, module
         for module, digest in fresh.items():
             assert sha(stage / (module+".olean")) == digest, f"Fresh artifact changed: {module}"
+        for parts in [*reused_parts.values(), *fresh_parts.values()]:
+            check_parts(parts)
 
     check_inputs()
     print(f"Certified reuse: {len(artifacts)} project and {len(external)} external artifacts.", flush=True)
@@ -191,6 +226,7 @@ def main():
         run_logged([str(compiler), "-o", str(stage / (name+".olean")), name+".lean"],
                    logs / (name+".log"), env=build_env)
         fresh[name] = sha(stage / (name+".olean"))
+        fresh_parts[name] = optional_parts(stage / (name+".olean"))
     check_inputs()
     census = "\n".join("import " + name for name in ordered) + """
 import Lean
@@ -225,6 +261,9 @@ run_cmd do
     census_temporary = census_destination.with_suffix(".json.tmp-" + uuid.uuid4().hex)
     census_temporary.write_bytes(census_bytes)
     census_temporary.replace(census_destination)
+    part_manifest = logs / "artifact-parts.json"
+    part_manifest.write_text(json.dumps({"reused": reused_parts, "fresh": fresh_parts},
+                                        indent=2, sort_keys=True) + "\n")
     receipt = {
         "schema": "dft-model-components/v1", "passed": True,
         "finished_utc": datetime.now(timezone.utc).isoformat(),
@@ -236,6 +275,10 @@ run_cmd do
         "axioms": sorted({ax for e in entries for ax in e["axioms"]}),
         "compiler_sha256": compiler_digest, "source_sha256": sources,
         "fresh_artifact_sha256": fresh,
+        "artifact_parts_manifest_path": str(part_manifest),
+        "artifact_parts_manifest_sha256": sha(part_manifest),
+        "artifact_parts_checked_before_after": True,
+        "artifact_parts_trust": "Reused main artifacts are pinned to the prior certificates. Optional split/IR parts are snapshotted from the installed caches and checked unchanged; this run does not rebuild those caches.",
         "reused_project_artifacts_checked": len(artifacts),
         "reused_external_artifacts_checked": len(external),
         "imported_reused_project_modules": sorted(imported & artifacts.keys()),
@@ -244,6 +287,8 @@ run_cmd do
         "census_path": str(census_destination.relative_to(ROOT)),
         "census_sha256": census_digest, "checker_sha256": sha(checker),
         "upstream_main_proof_rebuilt": False, "enormous_runtime_instance_executed": False,
+        "separate_upstream_reproduction_summary": "verification/upstream-dft-baseline-result.json",
+        "separate_upstream_reproduction_summary_sha256": sources["verification/upstream-dft-baseline-result.json"],
     }
     destination = ROOT / "verification/dft-model-components.json"
     temporary = destination.with_suffix(".json.tmp-" + uuid.uuid4().hex)

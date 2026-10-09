@@ -6,6 +6,10 @@ It does not prove a translation or equivalence between the two machines,
 and no upstream build or axiom-closure check was run here. All downstream
 Lean sources remained frozen; the existing full build was not disturbed.
 
+Follow-up: the [separate unchanged upstream reproduction](upstream-dft-reproduction.md)
+now freshly checks all 89 solution modules and their 4,247 declaration closures.
+That later kernel check does not establish a translation between the machines.
+
 The upstream uniform result is present in the **actual solution**:
 `OAI.Computability.FourierTransform.Main`, whose 151 lines contain
 `OAI.PowerSaving.transform_main_order` (122–127), `convolution_main_order`

@@ -149,3 +149,17 @@ normalizations on the retained inputs.
 Remote experiments retain explicit memory/work limits, deadlines, input and
 source hashes, logs and stop commands. Each result reports implementation,
 Lean verification and observed numerical behavior separately.
+
+The subsequent machine comparison proves that the complete languages are not
+equivalent under their declared data interface: our language permits affine
+outputs and upstream typed data preserve zero. Both DFT correctness theorems
+remain intact. The unchanged upstream all-length solution now also has a
+[fresh 89-module reproduction](docs/upstream-dft-reproduction.md).
+
+The [actual DFT translation](docs/dft-model-translation.md) is ongoing. Closed
+typed preparation now computes headers, primes, CRT permutations, chirps,
+normalization and C constants from the original length/root/data, with charged
+work and word bounds. Remaining milestones are the recursive cache forest,
+one-call paired recursive saving body, synchronized calendar, outer-stage
+assembly, and the resulting whole-program cost/storage certificate. Component
+verification does not mark those milestones complete.

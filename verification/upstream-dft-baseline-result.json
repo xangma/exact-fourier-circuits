@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "pin": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "moduleCount": 89,
+  "elapsedSeconds": 390.563,
+  "sourceBytesUnchanged": true,
+  "finalTheorems": [
+    "OAI.PowerSaving.transform_main",
+    "OAI.PowerSaving.transform_main_order",
+    "OAI.PowerSaving.convolution_main",
+    "OAI.PowerSaving.convolution_main_order"
+  ],
+  "finalAxioms": {
+    "OAI.PowerSaving.transform_main": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OAI.PowerSaving.transform_main_order": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OAI.PowerSaving.convolution_main": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OAI.PowerSaving.convolution_main_order": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "axiomCensus": {
+    "total": 4247,
+    "private": 221,
+    "permitted": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "driverSha256": "bda73e94ccf1c42f9f6187cca83f7052109840e8194e2d00c63bcf3d544252bc",
+  "leanVersion": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compilerSha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "externalArtifactsManifestSha256": "6049c69bbd16d515da2b96b86c1a66a49140166312c79e417388bf5789859a47",
+  "externalArtifactsSnapshotted": 11446,
+  "importedExternalArtifactsChecked": 10744,
+  "declarationsSha256": "ad1ff658f313efc1e4e5e85c345debdf49b9040955325e3b9920b75592c26eaf",
+  "receiptPath": "/Users/xangma/repos/exact-fourier-circuits-worktrees/dft-model-bridge/logs/upstream-dft-baseline-v3-20261009/receipt.json",
+  "receiptSha256": "dcd536f9deaf72d816f527745e3676b1accc4184053ea14c9de2cc65ad2e8ba9"
+}

@@ -56,10 +56,16 @@ compute `x + 1`, while upstream typed data stay zero on zero input. This does
 not refute either DFT theorem. Concrete primitive translations are checked;
 a cost-preserving translation of a common DFT fragment remains open.
 The [actual DFT translation work](docs/dft-model-translation.md) now checks
-paired affine operations, the closed root-order producer, preparation tables
-and complete local stages. Its component receipt explicitly leaves the
-whole-program compiler open; cache generation and the synchronized recursive
-clock still need concrete typed implementations and cost proofs.
+paired affine operations, closed root/header/CRT/chirp/normalization producers,
+and complete local stages. The preparation takes the original length, master
+root and data. Its component receipt explicitly leaves the whole-program
+compiler open; the cache forest, recursive saving body and synchronized
+schedule still need their complete typed implementations and cost proofs.
+
+The separate [unchanged upstream reproduction](docs/upstream-dft-reproduction.md)
+also passes: **89 freshly built modules and 4,247 declaration closures**,
+including all four final DFT/convolution theorems. OpenAI's sources and
+configuration were recovered byte-for-byte from the pinned Git revision.
 
 ## Run
 

@@ -60,6 +60,15 @@ The follow-on [actual DFT translation](dft-model-translation.md) uses separate
 prepared-offset and homogeneous-data channels, with a matching zero-input
 execution. Its component proofs do not yet close the whole-program bridge.
 
+The paper's §1.1 explicitly permits unit-cost random access on logarithmic
+integer words. Mutable memory is therefore not itself a departure from its
+model. Its arithmetic wording also does not explicitly require homogeneous
+intermediate additions, so the affine counterexample alone does not establish
+a paper violation. These are bounded source-review conclusions, not a formal
+adequacy theorem for every helper. The translation work tests whether our
+specific DFT can satisfy the stricter typed contract with its saving intact;
+it does not repair or replace the unchanged upstream baseline.
+
 ## Positive primitive translations
 
 The investigation also checks concrete translations rather than assuming a

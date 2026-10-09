@@ -1,4 +1,5 @@
 import DFTModelCostBounds
+import DFTModelDataIndependenceDFT
 import UniformFinalDFTExecution
 
 set_option autoImplicit false
@@ -46,8 +47,6 @@ structure ComputationalPremises (order : OrderProgram) (solve : SolveProgram)
   order_value : ∀ n, 0<n → (orderBill order n).val = UniformMasterRootMachine.order n
   order_valid : ∀ n, 0<n → (orderBill order n).valid
   order_peak : ∀ n, 0<n → (orderBill order n).peak ≤ (n+2)^spaceDegree
-  uniform_work : ∀ n, 0<n → ∀ x : Fin n → ℂ,
-    (solveBill order solve n x).work ≤ (solveBill order solve n (fun _ => 0)).work
   execution : ∀ n, 0<n → ∀ x : Fin n → ℂ, ∀ ticks u,
     BoundedExecution UniformFinalOuterProgram.program n x (sourceWordCap n) initial ticks u →
     (solveBill order solve n x).valid ∧
@@ -126,7 +125,9 @@ theorem dftProgram {order : OrderProgram} {solve : SolveProgram} {C space : ℕ}
     obtain ⟨ticks,u,execution,answer,_,_⟩ := actual_source_execution hn x
     obtain ⟨valid,peak,value,_⟩ := mapping.execution n hn x ticks u execution
     refine ⟨valid,peak.trans spaceCap,?_,value.trans (outputTape_dft answer)⟩
-    exact Nat.add_le_add_left (mapping.uniform_work n hn x) _
+    exact Nat.add_le_add_left
+      (DFTModelDataIndependence.dft_uniform_work solve n
+        (OAI.PowerSaving.root (orderBill order n).val) x) _
 
 /-- Conditional same-program bridge, with the programs and measured work
 fixed by the caller's computational certificate. No independent upstream

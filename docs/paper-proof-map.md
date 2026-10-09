@@ -138,6 +138,11 @@ records 92 checked files, both unchanged paper-tree identities, and the explicit
 fact that no upstream kernel build was performed here. This comparison did not
 alter the frozen Lean tree or interrupt the downstream rebuild.
 
+Follow-up: the [separate unchanged upstream reproduction](upstream-dft-reproduction.md)
+now freshly builds the solution's 89-module import cone and checks all 4,247
+declaration closures. The snapshot identity above remains the historical
+source-comparison receipt.
+
 ## Findings, variations and coverage
 
 No confirmed blocking theorem/model mismatch was found at the inspected
