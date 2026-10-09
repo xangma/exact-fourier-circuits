@@ -1,3 +1,14 @@
+import UniformForwardMatchingFactorPreparation
+import UniformForwardMatchingFactorGeometry
+import UniformForwardMatchingFactorSetup
+import UniformForwardMatchingFactorFrame
+import UniformForwardMatchingFactorChunk
+import UniformForwardMatchingFactorTranslation
+import UniformForwardMatchingFactorExecution
+import UniformForwardMatchingFactorValues
+import UniformForwardMatchingFactorHeaderPreparation
+import UniformForwardMatchingFactorHeaderExecution
+import UniformForwardMatchingFactorTensorBridge
 import UniformGlobalDiagonalRowsMachine
 import UniformGlobalDiagonalRowsIteration
 import UniformGlobalDiagonalRowsLoop
@@ -25,7 +36,7 @@ import Lean
 open Lean Elab Command in
 run_cmd do
  let env ← getEnv
- let mods := ["UniformBinarySpectatorCMachine", "UniformNativeScalarRecordMachine", "UniformNativeExchangeRecordMachine", "UniformDirectLeafDescriptorMachine", "UniformTransposeDescriptorMachine", "UniformDirectLeafOrientationsMachine", "UniformPhysicalBinaryInverse", "UniformNativeCopiedInverse", "UniformGlobalTensorDiagonalMachine", "UniformGlobalTensorDiagonalLoop", "UniformSectorTransposeMachine", "UniformSectorChildEntryPreparation", "UniformSectorRestoringScatterPreparation", "UniformAllSectorTransposeMachine", "UniformSectorTransposeCoordinates", "UniformProducedSectorTransposePreparation", "UniformSectorPhysicalBinaryAction", "UniformGlobalDiagonalRowsMachine", "UniformGlobalDiagonalRowsIteration", "UniformGlobalDiagonalRowsLoop", "UniformGlobalDiagonalRowsPreparation", "UniformGlobalTensorDiagonalPreparation", "UniformStoredDirectLeafOrientations"]
+ let mods := ["UniformBinarySpectatorCMachine", "UniformNativeScalarRecordMachine", "UniformNativeExchangeRecordMachine", "UniformDirectLeafDescriptorMachine", "UniformTransposeDescriptorMachine", "UniformDirectLeafOrientationsMachine", "UniformPhysicalBinaryInverse", "UniformNativeCopiedInverse", "UniformGlobalTensorDiagonalMachine", "UniformGlobalTensorDiagonalLoop", "UniformSectorTransposeMachine", "UniformSectorChildEntryPreparation", "UniformSectorRestoringScatterPreparation", "UniformAllSectorTransposeMachine", "UniformSectorTransposeCoordinates", "UniformProducedSectorTransposePreparation", "UniformSectorPhysicalBinaryAction", "UniformGlobalDiagonalRowsMachine", "UniformGlobalDiagonalRowsIteration", "UniformGlobalDiagonalRowsLoop", "UniformGlobalDiagonalRowsPreparation", "UniformGlobalTensorDiagonalPreparation", "UniformStoredDirectLeafOrientations", "UniformForwardMatchingFactorPreparation", "UniformForwardMatchingFactorGeometry", "UniformForwardMatchingFactorSetup", "UniformForwardMatchingFactorFrame", "UniformForwardMatchingFactorChunk", "UniformForwardMatchingFactorTranslation", "UniformForwardMatchingFactorExecution", "UniformForwardMatchingFactorValues", "UniformForwardMatchingFactorHeaderPreparation", "UniformForwardMatchingFactorHeaderExecution", "UniformForwardMatchingFactorTensorBridge"]
  let mut entries:Array Json:=#[]
  for (name, _) in env.constants.toList do
   let source := (env.getModuleIdxFor? name).map (fun idx => env.header.moduleNames[idx]!.toString)

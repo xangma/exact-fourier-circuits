@@ -1,14 +1,30 @@
 # Uniform proof checkpoint
 
 The original selected-length theorem is verified. The stronger single fixed
-algorithm for every positive length is **still open**. The registry has 301
+algorithm for every positive length is **still open**. The registry has 312
 modules and `closed_uniform_algorithm=null`; receipts retain
 `uniform_algorithm_verified=false`. The required final result is the
 unconditional `UniformMachine.UniformDFTStatement UniformExponent.theta`.
 
 ## Current verified work
 
-A further **23 operational modules** now pass a separate source-stable audit
+**Eleven forward-factor modules** pass a fresh normal-path audit of **671
+defining-module declarations** with only the standard three axioms, default
+proof limits and 283 frozen inputs. The actual 415/430-instruction producers
+read stored forward slots, derive translated matching endpoints and selected
+typed coefficients, and construct all nine diagonal pools for the tensor
+consumer. Their earlier physical `Processed`, coefficient-source and startup
+constant banks remain explicit entry conditions. This proves one factor
+producer; the complete cache loop and global execution remain open.
+
+Fresh exported bytecode passes **384 exact cases and 1,048,384 steps**, including
+320 positive matchings and all 415/430 instruction positions. There are 368
+typed K=0 cases and 16 generic K=1 diagnostics; the latter do not prove a typed
+K=1 producer. Seven negative controls also pass. Reproduce with
+`python3 scripts/check-uniform-forward-factor.py`; see the
+[forward-factor receipt](../verification/uniform-forward-factor-foundations.json).
+
+The preceding **23 operational modules** passed a separate source-stable audit
 of **2,274 declarations**, inventoried using Lean's defining-module metadata
 rather than namespace prefixes. This includes 49 private declarations and generated declarations outside the
 anticipated namespaces. The audit binds 284 inputs, permits only the same three standard axioms, verifies all
@@ -60,7 +76,7 @@ The previous 2026-10-08 aggregate audits remain historical evidence: 232 modules
 Their [Lean](../verification/uniform-components.json) and
 [bytecode](../verification/uniform-bytecode-components.json) receipts bind 561
 and 366 inputs respectively. Neither is an aggregate audit of the current
-301-module registry; overlapping declaration scopes must not be added together.
+312-module registry; overlapping declaration scopes must not be added together.
 
 | Component | Proved execution and boundary |
 |---|---|

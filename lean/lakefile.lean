@@ -689,3 +689,35 @@ lean_lib UniformGlobalTensorDiagonalPreparation where
 lean_lib UniformStoredDirectLeafOrientations where
   roots := #[`UniformStoredDirectLeafOrientations]
 
+lean_lib UniformForwardMatchingFactorPreparation where
+  roots := #[`UniformForwardMatchingFactorPreparation]
+
+lean_lib UniformForwardMatchingFactorGeometry where
+  roots := #[`UniformForwardMatchingFactorGeometry]
+
+lean_lib UniformForwardMatchingFactorSetup where
+  roots := #[`UniformForwardMatchingFactorSetup]
+
+lean_lib UniformForwardMatchingFactorFrame where
+  roots := #[`UniformForwardMatchingFactorFrame]
+
+lean_lib UniformForwardMatchingFactorChunk where
+  roots := #[`UniformForwardMatchingFactorChunk]
+
+lean_lib UniformForwardMatchingFactorTranslation where
+  roots := #[`UniformForwardMatchingFactorTranslation]
+
+lean_lib UniformForwardMatchingFactorExecution where
+  roots := #[`UniformForwardMatchingFactorExecution]
+
+lean_lib UniformForwardMatchingFactorValues where
+  roots := #[`UniformForwardMatchingFactorValues]
+
+lean_lib UniformForwardMatchingFactorHeaderPreparation where
+  roots := #[`UniformForwardMatchingFactorHeaderPreparation]
+
+lean_lib UniformForwardMatchingFactorHeaderExecution where
+  roots := #[`UniformForwardMatchingFactorHeaderExecution]
+
+lean_lib UniformForwardMatchingFactorTensorBridge where
+  roots := #[`UniformForwardMatchingFactorTensorBridge]

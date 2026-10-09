@@ -23,7 +23,18 @@
     "UniformGlobalDiagonalRowsLoop",
     "UniformGlobalDiagonalRowsPreparation",
     "UniformGlobalTensorDiagonalPreparation",
-    "UniformStoredDirectLeafOrientations"
+    "UniformStoredDirectLeafOrientations",
+    "UniformForwardMatchingFactorPreparation",
+    "UniformForwardMatchingFactorGeometry",
+    "UniformForwardMatchingFactorSetup",
+    "UniformForwardMatchingFactorFrame",
+    "UniformForwardMatchingFactorChunk",
+    "UniformForwardMatchingFactorTranslation",
+    "UniformForwardMatchingFactorExecution",
+    "UniformForwardMatchingFactorValues",
+    "UniformForwardMatchingFactorHeaderPreparation",
+    "UniformForwardMatchingFactorHeaderExecution",
+    "UniformForwardMatchingFactorTensorBridge"
   ],
   "uniform_algorithm_verified": false,
   "promoted_sources": {
@@ -133,6 +144,61 @@
       "source": "logs/uniform-stored-leaf-root-20261009/UniformStoredDirectLeafOrientations.lean",
       "sha256": "25005fa481f16099676217c696a81f856876c8828fcd4955f35f59c39a3f4906",
       "receipt": "logs/uniform-stored-leaf-root-20261009/receipt.json"
+    },
+    "UniformForwardMatchingFactorPreparation": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformForwardMatchingFactorPreparation.lean",
+      "sha256": "13517b34b3eed3a5a017f3d5af7dd5d9d8be9e4b23b9b81118d5925a400a613f",
+      "receipt": "logs/uniform-global-saving-agent-20261008/forward-factor-receipt.json"
+    },
+    "UniformForwardMatchingFactorGeometry": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformForwardMatchingFactorGeometry.lean",
+      "sha256": "9b85a9086448b3d28897c24a97e894cef7061a0a17d2540ffeac0fe36df06de9",
+      "receipt": "logs/uniform-global-saving-agent-20261008/forward-factor-receipt.json"
+    },
+    "UniformForwardMatchingFactorSetup": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformForwardMatchingFactorSetup.lean",
+      "sha256": "2a77bc02b198345018197aba750bf9d94c79d817703159d18a8a140bee6b2ca0",
+      "receipt": "logs/uniform-global-saving-agent-20261008/forward-factor-receipt.json"
+    },
+    "UniformForwardMatchingFactorFrame": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformForwardMatchingFactorFrame.lean",
+      "sha256": "434719fea4d31613e3febf9791d1d901e4c98d1a09284a031405680f5d49ecee",
+      "receipt": "logs/uniform-global-saving-agent-20261008/forward-factor-receipt.json"
+    },
+    "UniformForwardMatchingFactorChunk": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformForwardMatchingFactorChunk.lean",
+      "sha256": "d396f3e1b3e534bd3d46d97aa7a415dae99708b1a5b76a92ba40d6b1a351b5e2",
+      "receipt": "logs/uniform-global-saving-agent-20261008/forward-factor-receipt.json"
+    },
+    "UniformForwardMatchingFactorTranslation": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformForwardMatchingFactorTranslation.lean",
+      "sha256": "8a6fe7b91fced3401efc20a0c175c85ec547721fe1042babcc85b2a70a3a466d",
+      "receipt": "logs/uniform-global-saving-agent-20261008/forward-factor-receipt.json"
+    },
+    "UniformForwardMatchingFactorExecution": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformForwardMatchingFactorExecution.lean",
+      "sha256": "cb48997822db08ce5c2574c2f894038fa8e2f488fad5eff0877d093389d69e90",
+      "receipt": "logs/uniform-global-saving-agent-20261008/forward-factor-receipt.json"
+    },
+    "UniformForwardMatchingFactorValues": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformForwardMatchingFactorValues.lean",
+      "sha256": "77b297e8afcdc07ed50ed435ad9ba6ea38780f3ffa4e250b016ddbc5336f57e1",
+      "receipt": "logs/uniform-global-saving-agent-20261008/forward-factor-receipt.json"
+    },
+    "UniformForwardMatchingFactorHeaderPreparation": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformForwardMatchingFactorHeaderPreparation.lean",
+      "sha256": "86e4eb7bef43b32cfccb15578ded2680b8717adbf4483c0085840f632099a7e8",
+      "receipt": "logs/uniform-global-saving-agent-20261008/forward-factor-receipt.json"
+    },
+    "UniformForwardMatchingFactorHeaderExecution": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformForwardMatchingFactorHeaderExecution.lean",
+      "sha256": "f2032b9cd0bbfd4629d3dfcca384def1c059220b9442b2177f32cc411410d3e7",
+      "receipt": "logs/uniform-global-saving-agent-20261008/forward-factor-receipt.json"
+    },
+    "UniformForwardMatchingFactorTensorBridge": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformForwardMatchingFactorTensorBridge.lean",
+      "sha256": "4918736b28f2e5b6b958f550fedd49f66fea365022f969445c2cda49db83ea01",
+      "receipt": "logs/uniform-global-saving-agent-20261008/forward-factor-receipt.json"
     }
   }
 }

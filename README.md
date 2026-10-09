@@ -30,7 +30,11 @@ checked components from the remaining program and cost obligations. The
 records separate focused audits of 46 modules/4,720 declaration closures and
 23 operational modules/2,274 closures. Their exact-bytecode suites pass 12,329
 and 20,604 cases respectively; the new inverse tensor check covers 21,845 exact
-matrix entries. The current registry contains 301 modules. Actual native
+matrix entries. A further eleven forward-factor modules have a fresh normal
+audit of 671 declaration closures and 384 exact cases; their real 415/430-instruction
+programs produce typed forward matching coefficient pools for the tensor
+consumer. See the [forward-factor receipt](verification/uniform-forward-factor-foundations.json).
+The current registry contains 312 modules. Actual native
 spectators, direct-leaf orientations and sector/tensor movement are checked.
 The complete cache compiler, common recursive execution and global fast
 program remain open.

@@ -1,0 +1,12 @@
+import UniformForwardMatchingFactorTensorBridge
+
+-- Inventory uses the defining Lean module, including generated declarations.
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformForwardMatchingFactorPreparation.Layout.ambientPositive
+#print axioms ExactFourierCircuits.UniformForwardMatchingFactorPreparation.Layout.ambientPositive._proof_1_1
+#print axioms ExactFourierCircuits.UniformForwardMatchingFactorPreparation.Result.tensor_pool
+#print axioms ExactFourierCircuits.UniformForwardMatchingFactorPreparation.Result.tensor_pool._simp_1_1
+#print axioms ExactFourierCircuits.UniformForwardMatchingFactorPreparation.poolEntry
+#print axioms ExactFourierCircuits.UniformForwardMatchingFactorPreparation.poolEntry._proof_1
+#print axioms ExactFourierCircuits.UniformForwardMatchingFactorPreparation.poolEntry.congr_simp
