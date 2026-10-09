@@ -220,13 +220,24 @@ The [paper playground](notebooks/paper-playground.ipynb) lets you change both
 papers' parameters, numerical precision and transform sizes. See its
 [launch notes](notebooks/README.md) and the [measured CUDA investigation](docs/jax-investigation.md).
 
-The upstream theorem is from [openai/math](https://github.com/openai/math),
-commit `adc7f1241b42e322a6451854ab7e4b4c146bf78a`.
-[lean/UPSTREAM_MANIFEST.json](lean/UPSTREAM_MANIFEST.json) records all source
-hashes and dependency pins; [lean/UPSTREAM.md](lean/UPSTREAM.md) records licensing.
-The algorithm follows the companion preprint *An explicit power saving for the
-exact discrete Fourier transform*, September 25, 2026, from the same checkout.
-Original source headers are retained. Apache2.0: see [LICENSE](LICENSE).
+The underlying mathematics and both preprints are by **OpenAI (2026)**:
+
+- [Finite tensor savings and exact Fourier circuits](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/main.pdf).
+- [An explicit power saving for the exact discrete Fourier transform](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/main.pdf).
+
+The upstream source is [openai/math](https://github.com/openai/math) at commit
+`adc7f1241b42e322a6451854ab7e4b4c146bf78a`. [lean/UPSTREAM_MANIFEST.json](lean/UPSTREAM_MANIFEST.json)
+records its source hashes and dependency pins;
+[lean/UPSTREAM.md](lean/UPSTREAM.md) records licensing. Original source headers
+are retained. This repository adds the further Lean formalization and
+verification tooling, exact circuit software and bounded CUDA/JAX numerical
+investigation. Development of those additions used AI assistance.
+
+Use [CITATION.cff](CITATION.cff) to cite this software and
+[REFERENCES.bib](REFERENCES.bib) for the two upstream papers. Their BibTeX
+entries follow the upstream citation instructions, with links pinned to the
+source revision above. Apache-2.0: see [LICENSE](LICENSE), [NOTICE](NOTICE)
+and [lean/LICENSE.upstream](lean/LICENSE.upstream).
 
 Observed verification receipts live in `verification/`; generated circuits,
 large caches, Python environments and execution logs are ignored by Git.

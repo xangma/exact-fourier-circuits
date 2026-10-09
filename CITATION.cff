@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+type: software
+title: Exact Fourier circuits
+message: >-
+  Cite this software when using its added formalization, verification tooling
+  or numerical experiments. Cite the two OpenAI preprints in REFERENCES.bib
+  for the underlying mathematical results.
+authors:
+  - name: xangma
+    website: https://github.com/xangma
+repository-code: https://github.com/xangma/exact-fourier-circuits
+license: Apache-2.0
+abstract: >-
+  Added Lean formalization and verification of OpenAI's exact Fourier
+  algorithm, exact circuit tooling, and bounded CUDA/JAX numerical
+  investigations. The underlying mathematics is attributed to the two
+  OpenAI preprints from September 25, 2026.
+keywords:
+  - discrete Fourier transform
+  - Lean
+  - exact arithmetic
+  - numerical stability
+  - CUDA
+  - JAX
+references:
+  - type: unpublished
+    authors:
+      - name: OpenAI
+    title: Finite tensor savings and exact Fourier circuits
+    year: 2026
+    month: 9
+    url: https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/main.pdf
+    notes: OpenAI Math Release preprint, September 25, 2026; source revision adc7f1241b42e322a6451854ab7e4b4c146bf78a.
+  - type: unpublished
+    authors:
+      - name: OpenAI
+    title: An explicit power saving for the exact discrete Fourier transform
+    year: 2026
+    month: 9
+    url: https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/main.pdf
+    notes: OpenAI Math Release preprint, September 25, 2026; source revision adc7f1241b42e322a6451854ab7e4b4c146bf78a.
