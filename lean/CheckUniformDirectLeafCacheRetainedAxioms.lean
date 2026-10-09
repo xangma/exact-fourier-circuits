@@ -1,0 +1,13 @@
+import UniformDirectLeafCacheRetained
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheRetained.constants_of_operands
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheRetained.execution
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheRetained.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheRetained.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheRetained.leaf_scale_coefficient
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheRetained.operation_scale_coefficient
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheRetained.operation_scale_coefficient._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheRetained.scale_value

@@ -1,0 +1,13 @@
+import UniformCalendarPermutationActive
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarPermutationActive.activeEquiv
+#print axioms ExactFourierCircuits.UniformCalendarPermutationActive.activeEquiv._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarPermutationActive.activeEquiv._proof_2
+#print axioms ExactFourierCircuits.UniformCalendarPermutationActive.activeEquiv._proof_3
+#print axioms ExactFourierCircuits.UniformCalendarPermutationActive.activeEquiv._proof_4
+#print axioms ExactFourierCircuits.UniformCalendarPermutationActive.activeEquiv._proof_5
+#print axioms ExactFourierCircuits.UniformCalendarPermutationActive.activeEquiv._proof_6
+#print axioms ExactFourierCircuits.UniformCalendarPermutationActive.activeEquiv_get

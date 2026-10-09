@@ -1,0 +1,20 @@
+import UniformLayerSnapshotBlocks
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformLayerSnapshot.Calls.blocks
+#print axioms ExactFourierCircuits.UniformLayerSnapshot.Calls.blocks_matrix
+#print axioms ExactFourierCircuits.UniformLayerSnapshot.Snapshot.blocks
+#print axioms ExactFourierCircuits.UniformLayerSnapshot.Snapshot.blocks._proof_1
+#print axioms ExactFourierCircuits.UniformLayerSnapshot.Snapshot.blocks._proof_2
+#print axioms ExactFourierCircuits.UniformLayerSnapshot.Snapshot.blocks_matrix
+#print axioms ExactFourierCircuits.UniformLayerSnapshot.constant_blocks_reindex
+#print axioms ExactFourierCircuits.UniformLayerSnapshot.finite_snapshot
+#print axioms ExactFourierCircuits.UniformLayerSnapshot.flattenEquiv
+#print axioms ExactFourierCircuits.UniformLayerSnapshot.flattenEquiv._proof_1
+#print axioms ExactFourierCircuits.UniformLayerSnapshot.flattenEquiv._proof_2
+#print axioms ExactFourierCircuits.UniformLayerSnapshot.flattenEquiv.eq_1
+#print axioms ExactFourierCircuits.UniformLayerSnapshot.flatten_constant_blocks
+#print axioms ExactFourierCircuits.UniformLayerSnapshot.layer_snapshot
+#print axioms ExactFourierCircuits.UniformLayerSnapshot.render_finite_snapshot

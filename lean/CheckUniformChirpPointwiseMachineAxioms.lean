@@ -1,29 +1,88 @@
 import UniformChirpPointwiseMachine
+import Lean
 
-#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.rowOps
-#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.program
-#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.program_length
-#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_code
-#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.productScalar
-#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.adjusted
+set_option linter.auxLemma false
+
 #print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.Bank
-#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.Kernels
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.Bank.eq_1
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.Frame
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.Frame.trans
 #print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.Geometry
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.Geometry.casesOn
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.Geometry.data
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.Geometry.index
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.Geometry.kernel
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.Geometry.mk
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.Geometry.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.Geometry.one
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.Geometry.pc
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.Geometry.rec
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.Geometry.recOn
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.Geometry.width
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.Kernels
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.adjusted
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.adjusted.eq_1
 #print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.entered
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.entered.eq_1
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.frame_refl
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.initialized
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.initialized.eq_1
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.kernels_frame
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.kernels_frame._proof_1_1
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.kernels_frame._proof_1_2
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.loop_execution
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.loop_execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.loop_execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.loop_execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.loop_execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.one
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.one.eq_1
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.pointwise_cost_linear
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.pointwise_cost_linear._proof_1_1
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.pointwise_execution
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.pointwise_execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.pointwise_execution._proof_1_10
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.pointwise_execution._proof_1_11
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.pointwise_execution._proof_1_12
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.pointwise_execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.pointwise_execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.pointwise_execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.pointwise_execution._proof_1_9
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.productScalar
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.productScalar.eq_1
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.program
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.program.eq_1
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.program_length
 #print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.rowEnd
-#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_readable
-#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_peak
-#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_runs
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.rowEnd.eq_1
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.rowOps
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.rowOps.eq_1
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_bank
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_bank._proof_1_2
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_bank._proof_1_3
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_bank._proof_1_4
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_code
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_frame
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_frame._proof_1_1
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_frame._proof_1_5
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_frame._proof_1_6
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_frame._proof_1_7
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_frame._proof_1_8
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_frame._proof_1_9
 #print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_geometry
 #print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_heap
-#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.Frame
-#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.frame_refl
-#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.Frame.trans
-#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_frame
-#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_bank
-#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.kernels_frame
-#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.loop_execution
-#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.one
-#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.initialized
-#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.pointwise_execution
-#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.pointwise_cost_linear
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_peak
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_peak._proof_1_3
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_readable
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_runs
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_runs._proof_1_1
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_runs._proof_1_5
+#print axioms ExactFourierCircuits.UniformChirpPointwiseMachine.row_runs._proof_1_6
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformChirpPointwiseMachine.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

@@ -1,0 +1,39 @@
+import UniformDirectLeafCacheChronology
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheChronology.cacheKind
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheChronology.duration
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheChronology.duration.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheChronology.duration_transpose
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheChronology.elapsed
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheChronology.elapsed.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheChronology.elapsed_append
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheChronology.elapsed_cons
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheChronology.elapsed_transpose_reverse
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheChronology.leaf_elapsed
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheChronology.leaf_valid
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheChronology.operation_valid
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheChronology.operation_valid._proof_1_6
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheChronology.operation_valid._proof_1_7
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheChronology.operation_valid._proof_1_8
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheChronology.partial_elapsed
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheChronology.row_elapsed
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheChronology.starts
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheChronology.starts.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheChronology.starts_next
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheChronology.transpose_elapsed
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheChronology.transpose_valid
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheSource.InRange.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheSource.Legal.eq_1
+#print axioms ExactFourierCircuits.UniformTransposeDescriptorMachine.ofOperation.eq_1
+#print axioms ExactFourierCircuits.UniformTransposeDescriptorMachine.ofOperation.eq_2
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformDirectLeafCacheChronology.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

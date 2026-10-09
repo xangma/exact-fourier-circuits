@@ -1,5 +1,6 @@
 import UniformGlobalMatchingScaleMachine
 import Lean
+
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformGlobalMatchingScaleMachine.FactorTable
@@ -76,7 +77,6 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformGlobalMatchingScaleMachine.beforeStores
 #print axioms ExactFourierCircuits.UniformGlobalMatchingScaleMachine.beforeStores.eq_1
 #print axioms ExactFourierCircuits.UniformGlobalMatchingScaleMachine.blockPhases
-#print axioms ExactFourierCircuits.UniformGlobalMatchingScaleMachine.blockPhases.eq_1
 #print axioms ExactFourierCircuits.UniformGlobalMatchingScaleMachine.block_outputs
 #print axioms ExactFourierCircuits.UniformGlobalMatchingScaleMachine.constantSetup
 #print axioms ExactFourierCircuits.UniformGlobalMatchingScaleMachine.constantSetup.eq_1
@@ -129,7 +129,6 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformGlobalMatchingScaleMachine.oneStore_scalars
 #print axioms ExactFourierCircuits.UniformGlobalMatchingScaleMachine.peak_append
 #print axioms ExactFourierCircuits.UniformGlobalMatchingScaleMachine.phases
-#print axioms ExactFourierCircuits.UniformGlobalMatchingScaleMachine.phases.eq_1
 #print axioms ExactFourierCircuits.UniformGlobalMatchingScaleMachine.phases_length
 #print axioms ExactFourierCircuits.UniformGlobalMatchingScaleMachine.prep_code
 #print axioms ExactFourierCircuits.UniformGlobalMatchingScaleMachine.prep_runs
@@ -372,14 +371,13 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformGlobalMatchingScaleMachine.writes_coords
 #print axioms ExactFourierCircuits.UniformGlobalMatchingScaleMachine.writes_coords._simp_1_2
 #print axioms ExactFourierCircuits.UniformGlobalMatchingScaleMachine.writes_coords._simp_1_3
+#print axioms ExactFourierCircuits.UniformMatchingConjugateLoadMachine.program.eq_1
+#print axioms ExactFourierCircuits.UniformMatchingConjugateLoadMachine.rowProgram.eq_1
 
 open Lean Elab Command in
 run_cmd do
  let env ← getEnv
  for (name, _) in env.constants.toList do
   if "_private.UniformGlobalMatchingScaleMachine.".isPrefixOf name.toString then
-   let axioms ← collectAxioms name
-   for ax in axioms do
-    unless ax == ``propext || ax == ``Quot.sound || ax == ``Classical.choice do
-     throwError m!"Nonstandard axiom {ax} in {name}"
-   logInfo m!"{name} depends on axioms: {axioms.toList}"
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

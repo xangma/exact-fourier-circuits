@@ -1,0 +1,13 @@
+import UniformActualCalendarRectangleFamily
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleRegistry.assemble
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleRegistry.assemble._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleRegistry.assemble._proof_2
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleRegistry.assemble._proof_3
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleRegistry.assemble._proof_4
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleRegistry.assemble._proof_5
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleRegistry.entries
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleRegistry.wholeFamily

@@ -1,0 +1,11 @@
+import UniformFinalAxisPrinted
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFinalAxisPrinted.action
+#print axioms ExactFourierCircuits.UniformFinalAxisPrinted.banks
+#print axioms ExactFourierCircuits.UniformFinalAxisPrinted.capacity
+#print axioms ExactFourierCircuits.UniformFinalAxisPrinted.events
+#print axioms ExactFourierCircuits.UniformFinalAxisPrinted.position
+#print axioms ExactFourierCircuits.UniformFinalAxisPrinted.treeEvents

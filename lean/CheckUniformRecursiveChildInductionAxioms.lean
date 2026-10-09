@@ -1,0 +1,12 @@
+import UniformRecursiveChildInduction
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveChildInduction.cap13
+#print axioms ExactFourierCircuits.UniformRecursiveChildInduction.cap13._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveChildInduction.cost
+#print axioms ExactFourierCircuits.UniformRecursiveChildInduction.execution
+#print axioms ExactFourierCircuits.UniformRecursiveChildInduction.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveChildInduction.large_cost
+#print axioms ExactFourierCircuits.UniformRecursiveChildInduction.smaller

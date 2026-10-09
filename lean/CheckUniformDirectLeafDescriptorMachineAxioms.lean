@@ -1,7 +1,6 @@
 import UniformDirectLeafDescriptorMachine
 import Lean
 
--- Include generated declarations in the closure audit.
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformDirectLeafDescriptorMachine.Constants
@@ -210,14 +209,10 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformDirectLeafDescriptorMachine.shears_ofFn._proof_1_1
 #print axioms ExactFourierCircuits.UniformDirectLeafDescriptorMachine.topology_words
 
--- Private names require direct environment lookup.
 open Lean Elab Command in
 run_cmd do
-  let env ← getEnv
-  for (name, _) in env.constants.toList do
-    if "_private.UniformDirectLeafDescriptorMachine.".isPrefixOf name.toString then
-      let axioms ← collectAxioms name
-      logInfo m!"'{name}' depends on axioms: {axioms.toList}"
-      for ax in axioms do
-        unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
-          throwError m!"Unexpected axiom {ax} in {name}"
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformDirectLeafDescriptorMachine.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

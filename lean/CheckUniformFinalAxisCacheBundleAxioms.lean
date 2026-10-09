@@ -1,0 +1,38 @@
+import UniformFinalAxisCacheBundle
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.nodeIndex.eq_1
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.actual
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.actual._proof_1
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.actual._proof_2
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.actual._proof_3
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.actual._proof_4
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.actual._proof_5
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.actual._proof_6
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.actual._proof_7
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.actual._proof_8
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.actual.congr_simp
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.actual_node_make
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.actual_node_make._proof_1
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.events_eq
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.forest_bounds
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.forest_bounds._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.node_make_eq
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.nodes
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.nodes.eq_1
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.radix_fit
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.records
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.rectangle_make_eq
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.reference
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.reference._proof_1
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.reference._proof_2
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.reference._proof_3
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.reference._proof_4
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.reference._proof_5
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.reference._proof_6
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.reference._proof_7
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.reference.congr_simp
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.reference_node_make
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheBundle.rows

@@ -1,0 +1,31 @@
+import UniformGlobalClockConductor
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.adapterBase
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.adapterBase.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.adapter_code
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.advance
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.advanceBase
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.advanceBase.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.advance_length
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.axisBoot
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.axisBoot_length
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.boot
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.boot_length
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.dispatchBase
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.dispatchBase.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.dispatch_code
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.finalPC
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.kernelBase
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.kernelBase.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.kernel_code
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.prepare_code
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.programFor
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.programFor.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.program_length
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.program_length._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.tickAdvance
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.tickAdvance_length
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.tickBase

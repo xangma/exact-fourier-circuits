@@ -1,5 +1,51 @@
 import TripleCounting
-#print axioms ExactFourierCircuits.TripleCounting.splitTripleEquiv
-#print axioms ExactFourierCircuits.TripleCounting.neighboring_degree
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.TripleCounting.IntersectionTriples
+#print axioms ExactFourierCircuits.TripleCounting.Neighbors
+#print axioms ExactFourierCircuits.TripleCounting.Neighbors.congr_simp
+#print axioms ExactFourierCircuits.TripleCounting.Role
+#print axioms ExactFourierCircuits.TripleCounting.Subsets
+#print axioms ExactFourierCircuits.TripleCounting.ambient_card_ge_three
+#print axioms ExactFourierCircuits.TripleCounting.combineTriple
+#print axioms ExactFourierCircuits.TripleCounting.combineTriple._proof_1
+#print axioms ExactFourierCircuits.TripleCounting.combineTriple._proof_2
+#print axioms ExactFourierCircuits.TripleCounting.combineTriple._proof_3
+#print axioms ExactFourierCircuits.TripleCounting.edgeEquiv
+#print axioms ExactFourierCircuits.TripleCounting.edgeEquiv._proof_1
+#print axioms ExactFourierCircuits.TripleCounting.edgeEquiv._proof_2
+#print axioms ExactFourierCircuits.TripleCounting.edgeEquiv._proof_3
+#print axioms ExactFourierCircuits.TripleCounting.edgeEquiv._proof_4
+#print axioms ExactFourierCircuits.TripleCounting.edgeEquiv._proof_5
+#print axioms ExactFourierCircuits.TripleCounting.edgeEquiv._proof_6
 #print axioms ExactFourierCircuits.TripleCounting.edge_card
+#print axioms ExactFourierCircuits.TripleCounting.inside_union
+#print axioms ExactFourierCircuits.TripleCounting.inside_union._simp_1_1
+#print axioms ExactFourierCircuits.TripleCounting.inside_union._simp_1_2
+#print axioms ExactFourierCircuits.TripleCounting.intersection_triples_card
+#print axioms ExactFourierCircuits.TripleCounting.neighborDegree
+#print axioms ExactFourierCircuits.TripleCounting.neighborDegree.eq_1
+#print axioms ExactFourierCircuits.TripleCounting.neighboring_degree
+#print axioms ExactFourierCircuits.TripleCounting.neighboring_degree._proof_1_1
+#print axioms ExactFourierCircuits.TripleCounting.neighboring_degree._proof_1_2
+#print axioms ExactFourierCircuits.TripleCounting.neighboring_degree._proof_1_3
+#print axioms ExactFourierCircuits.TripleCounting.outside
+#print axioms ExactFourierCircuits.TripleCounting.outside.eq_1
+#print axioms ExactFourierCircuits.TripleCounting.outside_card
+#print axioms ExactFourierCircuits.TripleCounting.outside_union
+#print axioms ExactFourierCircuits.TripleCounting.outside_union._simp_1_1
+#print axioms ExactFourierCircuits.TripleCounting.outside_union._simp_1_2
 #print axioms ExactFourierCircuits.TripleCounting.role_card
+#print axioms ExactFourierCircuits.TripleCounting.splitTriple
+#print axioms ExactFourierCircuits.TripleCounting.splitTriple._proof_1
+#print axioms ExactFourierCircuits.TripleCounting.splitTriple._proof_2
+#print axioms ExactFourierCircuits.TripleCounting.splitTripleEquiv
+#print axioms ExactFourierCircuits.TripleCounting.splitTripleEquiv._proof_1
+#print axioms ExactFourierCircuits.TripleCounting.splitTripleEquiv._proof_2
+#print axioms ExactFourierCircuits.TripleCounting.splitTripleEquiv._simp_1
+#print axioms ExactFourierCircuits.TripleCounting.splitTripleEquiv._simp_2
+#print axioms ExactFourierCircuits.TripleCounting.splitTripleEquiv._simp_3
+#print axioms ExactFourierCircuits.TripleCounting.subsets_card
+#print axioms ExactFourierCircuits.TripleCounting.subsets_disjoint

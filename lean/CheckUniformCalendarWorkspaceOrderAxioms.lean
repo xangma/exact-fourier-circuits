@@ -1,0 +1,10 @@
+import UniformCalendarWorkspaceOrder
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarWorkspaceOrder.directory_before
+#print axioms ExactFourierCircuits.UniformCalendarWorkspaceOrder.nat_before
+#print axioms ExactFourierCircuits.UniformCalendarWorkspaceOrder.nat_before._proof_1_1
+#print axioms ExactFourierCircuits.UniformCalendarWorkspaceOrder.scalar_before
+#print axioms ExactFourierCircuits.UniformCalendarWorkspaceOrder.scalar_before._proof_1_1

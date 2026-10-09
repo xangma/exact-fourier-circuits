@@ -1,0 +1,8 @@
+import UniformCanonicalCacheSlotContext
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotGeometry.W.original
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotGeometry.W.stride
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotGeometry.context

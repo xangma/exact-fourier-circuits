@@ -1,6 +1,6 @@
 import UniformNativeCopiedInverse
+import Lean
 
--- Include generated declarations in the closure audit.
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformNativeCopiedInverse.copied_spectator_inverse_forward_xor

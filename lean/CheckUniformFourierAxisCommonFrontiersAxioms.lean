@@ -1,0 +1,7 @@
+import UniformFourierAxisCommonFrontiers
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonFrontiers.Branch.frontiers
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonFrontiers.frontiers

@@ -1,6 +1,6 @@
 import UniformPhysicalBinaryInverse
+import Lean
 
--- Include generated declarations in the closure audit.
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformPhysicalBinaryInverse.coordinates_flip

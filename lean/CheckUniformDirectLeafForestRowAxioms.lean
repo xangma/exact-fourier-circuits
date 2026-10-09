@@ -1,0 +1,29 @@
+import UniformDirectLeafForestRow
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafForestModel.operations.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRow.Done
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRow.Done.casesOn
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRow.Done.cursor
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRow.Done.events
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRow.Done.frame
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRow.Done.mk
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRow.Done.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRow.Done.pc
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRow.Done.range
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRow.Done.rec
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRow.Done.recOn
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRow.from_read
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRow.from_read._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRow.from_read._proof_1_10
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRow.from_read._proof_1_11
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRow.from_read._proof_1_12
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRow.from_read._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRow.from_read._proof_1_3
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRow.from_read._proof_1_4
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRow.from_read._proof_1_5
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRow.from_read._proof_1_7
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRow.from_read._proof_1_8
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRow.from_read._proof_1_9

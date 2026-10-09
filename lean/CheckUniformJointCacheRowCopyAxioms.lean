@@ -1,0 +1,30 @@
+import UniformJointCacheRowCopy
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.execution
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.iteration
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.iteration._proof_1_1
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.iteration._proof_1_10
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.iteration._proof_1_11
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.iteration._proof_1_2
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.iteration._proof_1_3
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.iteration._proof_1_4
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.iteration._proof_1_5
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.iteration._proof_1_6
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.iteration._proof_1_7
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.iteration._proof_1_8
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.iteration._proof_1_9
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.loop
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.loop._proof_1_1
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.loop._proof_1_2
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.loop._proof_1_3
+#print axioms ExactFourierCircuits.UniformJointCacheRowCopy.row_execution

@@ -1,0 +1,8 @@
+import UniformProducedPhysicalCoordinate
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformProducedPhysicalCoordinate.actual_family
+#print axioms ExactFourierCircuits.UniformProducedPhysicalCoordinate.family_eq
+#print axioms ExactFourierCircuits.UniformProducedPhysicalCoordinate.radices

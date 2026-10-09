@@ -1,0 +1,13 @@
+import UniformActualCalendarBroadcastSlots
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarBroadcastSlots.actual_gates
+#print axioms ExactFourierCircuits.UniformActualCalendarBroadcastSlots.codes
+#print axioms ExactFourierCircuits.UniformActualCalendarBroadcastSlots.codes.congr_simp
+#print axioms ExactFourierCircuits.UniformActualCalendarBroadcastSlots.codes.eq_1
+#print axioms ExactFourierCircuits.UniformActualCalendarBroadcastSlots.matching
+#print axioms ExactFourierCircuits.UniformActualCalendarBroadcastSlots.normal
+#print axioms ExactFourierCircuits.UniformActualCalendarBroadcastSlots.stored
+#print axioms ExactFourierCircuits.UniformActualCalendarTypedSlots.slotCodes.eq_1

@@ -1,0 +1,11 @@
+import UniformResidualOrientationBridge
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformResidualOrientationBridge.actual_direction_bound
+#print axioms ExactFourierCircuits.UniformResidualOrientationBridge.actual_direction_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformResidualOrientationBridge.effective_code
+#print axioms ExactFourierCircuits.UniformResidualOrientationBridge.effective_orientation
+#print axioms ExactFourierCircuits.UniformResidualOrientationBridge.range_weight
+#print axioms ExactFourierCircuits.UniformResidualOrientationBridge.residue_eq

@@ -1,0 +1,21 @@
+import UniformBoundaryDiagonalValues
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformBoundaryDiagonalMachine.axis_no_pairs
+#print axioms ExactFourierCircuits.UniformBoundaryDiagonalMachine.axis_widths
+#print axioms ExactFourierCircuits.UniformBoundaryDiagonalMachine.family
+#print axioms ExactFourierCircuits.UniformBoundaryDiagonalMachine.family._proof_1
+#print axioms ExactFourierCircuits.UniformBoundaryDiagonalMachine.family._proof_2
+#print axioms ExactFourierCircuits.UniformBoundaryDiagonalMachine.family.eq_1
+#print axioms ExactFourierCircuits.UniformBoundaryDiagonalMachine.family_H
+#print axioms ExactFourierCircuits.UniformBoundaryDiagonalMachine.family_inverseDiagonal
+#print axioms ExactFourierCircuits.UniformBoundaryDiagonalMachine.family_scale
+#print axioms ExactFourierCircuits.UniformBoundaryDiagonalMachine.ordered_empty
+#print axioms ExactFourierCircuits.UniformBoundaryDiagonalMachine.poolEntry
+#print axioms ExactFourierCircuits.UniformBoundaryDiagonalMachine.poolEntry._proof_1
+#print axioms ExactFourierCircuits.UniformBoundaryDiagonalMachine.poolEntry._proof_2
+#print axioms ExactFourierCircuits.UniformBoundaryDiagonalMachine.poolEntry.congr_simp
+#print axioms ExactFourierCircuits.UniformBoundaryDiagonalMachine.pools_of_written
+#print axioms ExactFourierCircuits.UniformBoundaryDiagonalMachine.pools_of_written._simp_1_1

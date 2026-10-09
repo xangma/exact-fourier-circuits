@@ -1,0 +1,14 @@
+import UniformSectorPayloadValues
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformSectorPayloadValues.native_numeric
+#print axioms ExactFourierCircuits.UniformSectorPayloadValues.packedValue
+#print axioms ExactFourierCircuits.UniformSectorPayloadValues.packedValue._proof_1
+#print axioms ExactFourierCircuits.UniformSectorPayloadValues.packedValue._proof_2
+#print axioms ExactFourierCircuits.UniformSectorPayloadValues.packedValue._proof_3
+#print axioms ExactFourierCircuits.UniformSectorPayloadValues.payload_value
+#print axioms ExactFourierCircuits.UniformSectorPayloadValues.payload_value._proof_1_1
+#print axioms ExactFourierCircuits.UniformSectorPayloadValues.payload_value._proof_1_2
+#print axioms ExactFourierCircuits.UniformSectorPayloadValues.payload_value_at

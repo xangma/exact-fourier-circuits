@@ -1,0 +1,37 @@
+import UniformFastPhysicalCRTProgress
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Outside
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.banks
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.casesOn
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.copied
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.heap
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.initialized
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.initialized._proof_1_1
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.inverted
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.mk
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.outside
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.rec
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.recOn
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.source
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.source._proof_1_1
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.source._proof_1_2
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.source._proof_1_3
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.step
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.step._proof_1_1
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.step._proof_1_2
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.step._proof_1_3
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.step._proof_1_4
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.step._proof_1_5
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.step._proof_1_6
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.step._proof_1_7
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.step._proof_1_8
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.work
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.work._proof_1_1
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.work._proof_1_2
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.zero
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTProgress.Progress.zero._proof_1_1

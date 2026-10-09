@@ -1,0 +1,13 @@
+import UniformRequestCanonicalPhase
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRequestCanonicalPhase.actualPackage
+#print axioms ExactFourierCircuits.UniformRequestCanonicalPhase.actualPackage._proof_1
+#print axioms ExactFourierCircuits.UniformRequestCanonicalPhase.phase_result
+#print axioms ExactFourierCircuits.UniformRequestCanonicalPhase.phase_result._proof_1
+#print axioms ExactFourierCircuits.UniformRequestCanonicalPhase.phase_result._proof_2
+#print axioms ExactFourierCircuits.UniformRequestCanonicalPhase.phase_result._proof_3
+#print axioms ExactFourierCircuits.UniformRequestCanonicalPhase.phase_result._proof_4
+#print axioms ExactFourierCircuits.UniformRequestCanonicalPhase.phase_result._proof_5

@@ -1,0 +1,23 @@
+import UniformRecursivePaddingArrays
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursivePaddingArrays.action
+#print axioms ExactFourierCircuits.UniformRecursivePaddingArrays.action.eq_1
+#print axioms ExactFourierCircuits.UniformRecursivePaddingArrays.action_indices
+#print axioms ExactFourierCircuits.UniformRecursivePaddingArrays.action_indices._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursivePaddingArrays.action_indices._proof_1_3
+#print axioms ExactFourierCircuits.UniformRecursivePaddingArrays.action_indices._proof_1_4
+#print axioms ExactFourierCircuits.UniformRecursivePaddingArrays.action_indices._proof_1_5
+#print axioms ExactFourierCircuits.UniformRecursivePaddingArrays.action_indices._proof_1_6
+#print axioms ExactFourierCircuits.UniformRecursivePaddingArrays.action_indices._proof_1_8
+#print axioms ExactFourierCircuits.UniformRecursivePaddingArrays.action_indices._proof_1_9
+#print axioms ExactFourierCircuits.UniformRecursivePaddingArrays.applyRole
+#print axioms ExactFourierCircuits.UniformRecursivePaddingArrays.applyRole.eq_1
+#print axioms ExactFourierCircuits.UniformRecursivePaddingArrays.lowMatrix
+#print axioms ExactFourierCircuits.UniformRecursivePaddingArrays.present_update
+#print axioms ExactFourierCircuits.UniformRecursivePaddingArrays.present_update._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursivePaddingArrays.values
+#print axioms ExactFourierCircuits.UniformRecursivePaddingArrays.values.eq_1
+#print axioms ExactFourierCircuits.UniformRecursivePaddingArrays.values_update

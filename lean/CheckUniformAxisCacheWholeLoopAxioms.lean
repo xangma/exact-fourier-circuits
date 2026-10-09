@@ -1,0 +1,42 @@
+import UniformAxisCacheWholeLoop
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisCacheLoopState.All.congr_simp
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.Completed
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.Completed.all
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.Completed.allocation
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.Completed.bank
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.Completed.casesOn
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.Completed.clock
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.Completed.control
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.Completed.input
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.Completed.mk
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.Completed.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.Completed.outputs
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.Completed.rec
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.Completed.recOn
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.Completed.roots
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.Completed.savedNat
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.Completed.savedScalar
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.Final.rebase
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.axis_tail
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.axis_tail._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.axis_tail._proof_1_2
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.axis_tail._proof_1_3
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.axis_tail._proof_1_4
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.axis_tail._proof_1_5
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.axis_tail._proof_1_6
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.axis_tail._proof_1_7
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.axis_tail._proof_1_8
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.remaining
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.remaining._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.remaining._proof_1_10
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.remaining._proof_1_2
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.remaining._proof_1_3
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.remaining._proof_1_5
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.remaining._proof_1_6
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.remaining._proof_1_7
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.remaining._proof_1_8
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeLoop.remaining._proof_1_9

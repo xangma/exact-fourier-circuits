@@ -1,0 +1,29 @@
+import UniformDiagonalReturnCore
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDiagonalReturnCore.Ready
+#print axioms ExactFourierCircuits.UniformDiagonalReturnCore.Ready.casesOn
+#print axioms ExactFourierCircuits.UniformDiagonalReturnCore.Ready.diagonalHeader
+#print axioms ExactFourierCircuits.UniformDiagonalReturnCore.Ready.directory
+#print axioms ExactFourierCircuits.UniformDiagonalReturnCore.Ready.mk
+#print axioms ExactFourierCircuits.UniformDiagonalReturnCore.Ready.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformDiagonalReturnCore.Ready.pools
+#print axioms ExactFourierCircuits.UniformDiagonalReturnCore.Ready.rec
+#print axioms ExactFourierCircuits.UniformDiagonalReturnCore.Ready.recOn
+#print axioms ExactFourierCircuits.UniformDiagonalReturnCore.Ready.source
+#print axioms ExactFourierCircuits.UniformDiagonalReturnCore.Ready.tensorHeader
+#print axioms ExactFourierCircuits.UniformDiagonalReturnCore.execution
+#print axioms ExactFourierCircuits.UniformDiagonalReturnCore.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformDiagonalReturnCore.execution._proof_1_10
+#print axioms ExactFourierCircuits.UniformDiagonalReturnCore.execution._proof_1_11
+#print axioms ExactFourierCircuits.UniformDiagonalReturnCore.execution._proof_1_12
+#print axioms ExactFourierCircuits.UniformDiagonalReturnCore.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformDiagonalReturnCore.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformDiagonalReturnCore.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformDiagonalReturnCore.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformDiagonalReturnCore.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformDiagonalReturnCore.execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformDiagonalReturnCore.execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformDiagonalReturnCore.execution._proof_1_9

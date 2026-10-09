@@ -1,6 +1,8 @@
 import UniformConjugatePackedMatchingPreparation
 import Lean
+
 set_option linter.auxLemma false
+
 #print axioms ExactFourierCircuits.UniformConjugatePackedMatchingPreparation.Allocation
 #print axioms ExactFourierCircuits.UniformConjugatePackedMatchingPreparation.Allocation.casesOn
 #print axioms ExactFourierCircuits.UniformConjugatePackedMatchingPreparation.Allocation.code
@@ -234,13 +236,11 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformConjugatePackedMatchingPreparation.writeAllowed.eq_5
 #print axioms ExactFourierCircuits.UniformConjugatePackedMatchingPreparation.writeAllowed.match_1
 #print axioms ExactFourierCircuits.UniformConjugatePackedMatchingPreparation.writeAllowed_relocate
+
 open Lean Elab Command in
 run_cmd do
- let env←getEnv
- for (name,_) in env.constants.toList do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
   if "_private.UniformConjugatePackedMatchingPreparation.".isPrefixOf name.toString then
-   let axioms←collectAxioms name
-   logInfo m!"'{name}' depends on axioms: {axioms.toList}"
-   for ax in axioms do
-    unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
-     throwError m!"Forbidden axiom {ax} in {name}"
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

@@ -1,5 +1,6 @@
 import UniformFixedNetworkPaddingChildMachine
 import Lean
+
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformFixedNetworkPaddingChildMachine.Changed
@@ -22,7 +23,6 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformFixedNetworkPaddingChildMachine.Frame.tensor._proof_1_1
 #print axioms ExactFourierCircuits.UniformFixedNetworkPaddingChildMachine.Frame.trans
 #print axioms ExactFourierCircuits.UniformFixedNetworkPaddingChildMachine.FullChanged
-#print axioms ExactFourierCircuits.UniformFixedNetworkPaddingChildMachine.FullChanged.eq_1
 #print axioms ExactFourierCircuits.UniformFixedNetworkPaddingChildMachine.FullFrame
 #print axioms ExactFourierCircuits.UniformFixedNetworkPaddingChildMachine.FullFrame.casesOn
 #print axioms ExactFourierCircuits.UniformFixedNetworkPaddingChildMachine.FullFrame.child

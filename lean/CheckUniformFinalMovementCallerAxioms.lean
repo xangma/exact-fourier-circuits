@@ -1,0 +1,65 @@
+import UniformFinalMovementCaller
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.alpha
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.casesOn
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.inverse
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.mk
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.rec
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.recOn
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.source
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.storage
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.target
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.transport
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.transport._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.transport._proof_1_10
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.transport._proof_1_11
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.transport._proof_1_12
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.transport._proof_1_13
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.transport._proof_1_14
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.transport._proof_1_15
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.transport._proof_1_16
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.transport._proof_1_17
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.transport._proof_1_2
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.transport._proof_1_3
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.transport._proof_1_4
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.transport._proof_1_5
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.transport._proof_1_6
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.transport._proof_1_7
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.transport._proof_1_8
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.transport._proof_1_9
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Header.volume
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Tables
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Tables.alpha
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Tables.casesOn
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Tables.inverse
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Tables.mk
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Tables.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Tables.rec
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Tables.recOn
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.Tables.transport
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.W
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.final_crt
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.final_crt._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.final_crt._proof_1_2
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.pointwise_crt
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.pointwise_crt._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.pointwise_crt._proof_1_2
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.save
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.save._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.save._proof_1_2
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.save._proof_1_3
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.sourceBase
+#print axioms ExactFourierCircuits.UniformFinalMovementCaller.targetBase
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformFinalMovementCaller.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

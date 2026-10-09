@@ -1,0 +1,8 @@
+import UniformRecursiveResidualSignedValues
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveResidualSignedValues.scatter_signed
+#print axioms ExactFourierCircuits.UniformRecursiveResidualSignedValues.signed_fiber
+#print axioms ExactFourierCircuits.UniformResidualFibers.signedColumnWord.congr_simp

@@ -1,0 +1,60 @@
+import UniformKernelSpectrumCopy
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.Changed
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.Frame
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.Frame.casesOn
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.Frame.mk
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.Frame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.Frame.natHeap
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.Frame.natReg
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.Frame.outputs
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.Frame.rec
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.Frame.recOn
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.Frame.roots
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.Frame.scalar
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.copy_code
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.execution
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.execution._proof_1_10
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.execution._proof_1_11
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.execution._proof_1_12
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.execution._proof_1_13
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.execution._proof_1_9
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.halt_at
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.program
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.program_length
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.safe
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.safe._proof_1_13
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.setup
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.setup.eq_1
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.setup_code
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.setup_kept
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.setup_kept._proof_1_10
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.setup_kept._proof_1_11
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.setup_kept._proof_1_12
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.setup_kept._proof_1_13
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.setup_kept._proof_1_14
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.setup_kept._proof_1_15
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.setup_kept._proof_1_16
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.setup_kept._proof_1_17
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.setup_kept._proof_1_5
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.setup_kept._proof_1_6
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.setup_kept._proof_1_7
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.setup_kept._proof_1_8
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.setup_kept._proof_1_9
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.setup_length
+#print axioms ExactFourierCircuits.UniformKernelSpectrumCopy.values
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformKernelSpectrumCopy.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

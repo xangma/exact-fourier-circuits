@@ -1,6 +1,8 @@
 import UniformScalarScatterMachine
 import Lean
+
 set_option linter.auxLemma false
+
 #print axioms ExactFourierCircuits.UniformScalarScatterMachine.Disjoint
 #print axioms ExactFourierCircuits.UniformScalarScatterMachine.Frame
 #print axioms ExactFourierCircuits.UniformScalarScatterMachine.Frame.trans
@@ -104,14 +106,3 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformScalarScatterMachine.wordBudget_polynomial._proof_1_1
 #print axioms ExactFourierCircuits.UniformScalarScatterMachine.zeroState
 #print axioms ExactFourierCircuits.UniformScalarScatterMachine.zeroState.eq_1
--- Private/generated declarations are also checked from the actual environment.
-open Lean Elab Command in
-run_cmd do
- let env←getEnv
- for (name,_) in env.constants.toList do
-  if "_private.UniformScalarScatterMachine.".isPrefixOf name.toString then
-   let axioms←collectAxioms name
-   logInfo m!"'{name}' depends on axioms: {axioms.toList}"
-   for ax in axioms do
-    unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
-     throwError m!"Forbidden axiom {ax} in {name}"

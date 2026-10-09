@@ -1,0 +1,13 @@
+import UniformCanonicalPairPhase
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCanonicalPairPhase.pairContext
+#print axioms ExactFourierCircuits.UniformCanonicalPairPhase.pairRow
+#print axioms ExactFourierCircuits.UniformCanonicalPairPhase.pairSource_interval
+#print axioms ExactFourierCircuits.UniformCanonicalPairPhase.pairTarget_interval
+#print axioms ExactFourierCircuits.UniformCanonicalPairPhase.pairTarget_interval._proof_1_1
+#print axioms ExactFourierCircuits.UniformCanonicalPairPhase.pair_chunkRender
+#print axioms ExactFourierCircuits.UniformCanonicalPairPhase.pair_piece_phase_tick
+#print axioms ExactFourierCircuits.UniformCanonicalPairPhase.selected_congr

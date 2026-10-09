@@ -1,0 +1,12 @@
+import UniformActualCalendarRectangleEvent
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.actualEvent
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.cached
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.edges
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.edges._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.ordinary_cached
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.values
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.values._proof_1

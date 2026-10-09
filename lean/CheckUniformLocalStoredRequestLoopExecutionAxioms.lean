@@ -1,0 +1,10 @@
+import UniformLocalStoredRequestLoopExecution
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.loop
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.loop._proof_1_1
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.loop._proof_1_2
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.loop._proof_1_3
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.loop._proof_1_4

@@ -1,7 +1,9 @@
 import UniformGlobalEnvelope
 import Lean
+
 set_option linter.auxLemma false
 
+#print axioms ExactFourierCircuits.UniformAllAxisConjugatePreparation.fullBudget.eq_1
 #print axioms ExactFourierCircuits.UniformGlobalEnvelope.conjugateBudget_isLittleO_input
 #print axioms ExactFourierCircuits.UniformGlobalEnvelope.execution_mono
 #print axioms ExactFourierCircuits.UniformGlobalEnvelope.fullPreparationBudget_isBigO_input

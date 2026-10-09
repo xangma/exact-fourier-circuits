@@ -1,0 +1,18 @@
+import UniformCalendarIntervalPartition
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarIntervalPartition.before_sum
+#print axioms ExactFourierCircuits.UniformCalendarIntervalPartition.partition
+#print axioms ExactFourierCircuits.UniformCalendarIntervalPartition.partition._proof_1_10
+#print axioms ExactFourierCircuits.UniformCalendarIntervalPartition.partition._proof_1_2
+#print axioms ExactFourierCircuits.UniformCalendarIntervalPartition.partition._proof_1_3
+#print axioms ExactFourierCircuits.UniformCalendarIntervalPartition.partition._proof_1_4
+#print axioms ExactFourierCircuits.UniformCalendarIntervalPartition.partition._proof_1_5
+#print axioms ExactFourierCircuits.UniformCalendarIntervalPartition.partition._proof_1_6
+#print axioms ExactFourierCircuits.UniformCalendarIntervalPartition.partition._proof_1_7
+#print axioms ExactFourierCircuits.UniformCalendarIntervalPartition.partition._proof_1_8
+#print axioms ExactFourierCircuits.UniformCalendarIntervalPartition.partition._proof_1_9
+#print axioms ExactFourierCircuits.UniformCalendarIntervalPartition.prefixDuration
+#print axioms ExactFourierCircuits.UniformCalendarIntervalPartition.prefixDuration.eq_1

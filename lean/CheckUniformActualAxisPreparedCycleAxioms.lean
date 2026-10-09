@@ -1,0 +1,9 @@
+import UniformActualAxisPreparedCycle
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualAxisPreparedCycle.join_preparation
+#print axioms ExactFourierCircuits.UniformActualAxisPreparedCycle.join_preparation._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualAxisPreparedCycle.kernel_entry
+#print axioms ExactFourierCircuits.UniformActualAxisPreparedCycle.placed_reset

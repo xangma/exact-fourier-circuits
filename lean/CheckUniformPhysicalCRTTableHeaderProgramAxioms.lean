@@ -1,0 +1,7 @@
+import UniformPhysicalCRTTableHeaderProgram
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.operations
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.operations_length

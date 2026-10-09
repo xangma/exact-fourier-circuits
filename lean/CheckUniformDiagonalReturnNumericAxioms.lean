@@ -1,0 +1,9 @@
+import UniformDiagonalReturnNumeric
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDiagonalReturnNumeric.execution
+#print axioms ExactFourierCircuits.UniformDiagonalReturnNumeric.multiplier
+#print axioms ExactFourierCircuits.UniformDiagonalReturnNumeric.multiplier._proof_1
+#print axioms ExactFourierCircuits.UniformDiagonalReturnNumeric.phase_value

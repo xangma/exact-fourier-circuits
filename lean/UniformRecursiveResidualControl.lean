@@ -226,7 +226,7 @@ theorem record_advance (n B work recordEnd:ℕ)(x:Fin n→ℂ)(s:State)
 lemma vector_zero (pc a b c d e f g:ℕ)(h:pc=(![a,b,c,d,e,f,g]) 0):pc=a:=h
 lemma residual_pc (pc:ℕ)(h:pc=UniformRecursiveRecordControl.targets 0):pc=P.address .residualMark:=
  vector_zero pc (P.address .residualMark) (P.address .scalar) (P.address .marker)
-  (P.address .translation) (P.address .exchange) (P.address .paddingInit) (P.address .marker) h
+  (P.address .yRestore) (P.address .exchange) (P.address .paddingInit) (P.address .marker) h
 lemma raw_entry_charge (r:UniformFixedNetworkScheduleMachine.Record)(opcode:r.opcode=0):
  4+UniformFixedNetworkOpcodeMachine.headCost r+UniformRecursiveRecordControl.dispatchCost r.opcode+4+5=46:=by
  simp [UniformFixedNetworkOpcodeMachine.headCost,UniformRecursiveRecordControl.dispatchCost,opcode]

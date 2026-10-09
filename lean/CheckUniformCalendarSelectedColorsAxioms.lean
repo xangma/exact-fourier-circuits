@@ -1,0 +1,11 @@
+import UniformCalendarSelectedColors
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarSelectedColors.chosen
+#print axioms ExactFourierCircuits.UniformCalendarSelectedColors.chosen_eq_color
+#print axioms ExactFourierCircuits.UniformCalendarSelectedColors.range_values
+#print axioms ExactFourierCircuits.UniformCalendarSelectedColors.selected_color
+#print axioms ExactFourierCircuits.UniformCalendarSelectedColors.selection_fins
+#print axioms ExactFourierCircuits.UniformCalendarSelectedColors.shifted_edges

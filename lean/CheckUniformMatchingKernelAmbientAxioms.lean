@@ -1,0 +1,18 @@
+import UniformMatchingKernelAmbient
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformMatchingKernelAmbient.coordinate
+#print axioms ExactFourierCircuits.UniformMatchingKernelAmbient.coordinate._proof_1
+#print axioms ExactFourierCircuits.UniformMatchingKernelAmbient.edges
+#print axioms ExactFourierCircuits.UniformMatchingKernelAmbient.edges._proof_1
+#print axioms ExactFourierCircuits.UniformMatchingKernelAmbient.edges._proof_2
+#print axioms ExactFourierCircuits.UniformMatchingKernelAmbient.edges.eq_1
+#print axioms ExactFourierCircuits.UniformMatchingKernelAmbient.kernel
+#print axioms ExactFourierCircuits.UniformMatchingKernelAmbient.matching
+#print axioms ExactFourierCircuits.UniformMatchingKernelAmbient.orderedPosition
+#print axioms ExactFourierCircuits.UniformMatchingKernelAmbient.ordered_position_value
+#print axioms ExactFourierCircuits.UniformMatchingKernelAmbient.printed_position
+#print axioms ExactFourierCircuits.UniformMatchingKernelAmbient.range
+#print axioms ExactFourierCircuits.UniformMatchingKernelAmbient.union_kernel

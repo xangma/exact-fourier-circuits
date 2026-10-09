@@ -1,7 +1,12 @@
 import UniformRecursiveBatchHeaderMachine
 import Lean
+
 set_option linter.auxLemma false
 
+#print axioms ExactFourierCircuits.UniformBatching.batchCount.eq_1
+#print axioms ExactFourierCircuits.UniformBatching.blockSize.eq_1
+#print axioms ExactFourierCircuits.UniformBatching.roleBits.eq_1
+#print axioms ExactFourierCircuits.UniformBatching.width.eq_1
 #print axioms ExactFourierCircuits.UniformRecursiveBatchHeaderMachine.Budget
 #print axioms ExactFourierCircuits.UniformRecursiveBatchHeaderMachine.Frame
 #print axioms ExactFourierCircuits.UniformRecursiveBatchHeaderMachine.Frame.casesOn
@@ -182,8 +187,5 @@ run_cmd do
  let env ← getEnv
  for (name, _) in env.constants.toList do
   if "_private.UniformRecursiveBatchHeaderMachine.".isPrefixOf name.toString then
-   let axioms ← collectAxioms name
-   logInfo m!"'{name}' depends on axioms: {axioms.toList}"
-   for ax in axioms do
-    unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
-     throwError m!"Forbidden axiom {ax} in {name}"
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

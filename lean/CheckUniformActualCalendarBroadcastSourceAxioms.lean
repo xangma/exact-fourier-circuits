@@ -1,0 +1,13 @@
+import UniformActualCalendarBroadcastSource
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarBroadcastSource.occurrences
+#print axioms ExactFourierCircuits.UniformActualCalendarBroadcastSource.placement
+#print axioms ExactFourierCircuits.UniformActualCalendarBroadcastSource.placement._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarBroadcastSource.placement._proof_2
+#print axioms ExactFourierCircuits.UniformActualCalendarBroadcastSource.placement._proof_3
+#print axioms ExactFourierCircuits.UniformActualCalendarBroadcastSource.source
+#print axioms ExactFourierCircuits.UniformActualCalendarBroadcastSource.typed
+#print axioms ExactFourierCircuits.UniformActualCalendarBroadcastSource.typed_matching

@@ -1,0 +1,18 @@
+import UniformCacheTimingEvents
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCacheTimingEvents.events
+#print axioms ExactFourierCircuits.UniformCacheTimingEvents.events.eq_1
+#print axioms ExactFourierCircuits.UniformCacheTimingEvents.nodeEvents
+#print axioms ExactFourierCircuits.UniformCacheTimingEvents.nodeEvents.eq_1
+#print axioms ExactFourierCircuits.UniformCacheTimingEvents.nodeEvents_split
+#print axioms ExactFourierCircuits.UniformCacheTimingEvents.nodeEvents_split._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheTimingEvents.numbered_events
+#print axioms ExactFourierCircuits.UniformCacheTimingEvents.requestStart_index
+#print axioms ExactFourierCircuits.UniformCacheTimingEvents.root_event_bounds
+#print axioms ExactFourierCircuits.UniformCacheTimingEvents.root_events
+#print axioms ExactFourierCircuits.UniformCacheTimingEvents.root_requestStart
+#print axioms ExactFourierCircuits.UniformCacheTimingEvents.sequenceRows_index
+#print axioms ExactFourierCircuits.UniformCacheTimingEvents.sequenceRows_index._proof_1_1

@@ -1,0 +1,32 @@
+import UniformFinalAxisCacheSource
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.Factual
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.Factual.casesOn
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.Factual.code
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.Factual.countFit
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.Factual.countWord
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.Factual.duration
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.Factual.durationWord
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.Factual.layout
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.Factual.mk
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.Factual.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.Factual.nodeValues
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.Factual.nodesFit
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.Factual.rec
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.Factual.recOn
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.Factual.rectangleValues
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.Factual.selectedEnd
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.Factual.source
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.bundle_of_all
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.bundle_of_all._proof_1
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.bundle_of_output
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.bundle_of_startup
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.of_all
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.of_contents
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.of_contents._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.of_output
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.of_startup
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheSource.transport

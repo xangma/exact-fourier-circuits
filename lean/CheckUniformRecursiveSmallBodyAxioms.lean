@@ -1,0 +1,16 @@
+import UniformRecursiveSmallBody
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBody.execution
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBody.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBody.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBody.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBody.reserve_le
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBody.reserve_le._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBody.reserve_le._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBody.stack_room
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBody.stack_room._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBody.ticks_fit
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBody.ticks_fit._proof_1_1

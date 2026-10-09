@@ -1,0 +1,73 @@
+import UniformCalendarRenderPieces
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece._sizeOf_1
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece._sizeOf_inst
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.at_embed
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.at_embed._simp_1_3
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.at_withStart
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.at_withStart._proof_1_6
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.casesOn
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.ctorIdx
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.descriptor
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.embed
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.embed.eq_1
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.globalLayers
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.globalLayers.eq_1
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.globalLayers_length
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.layers
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.length
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.mk
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.mk.congr_simp
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.mk.inj
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.mk.injEq
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.mk.noConfusion
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.mk.sizeOf_spec
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.noConfusion
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.noConfusionType
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.position
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.rec
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.recOn
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.restricted
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.value
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.value.eq_1
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.withStart
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.Piece.withStart.eq_1
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.stamp
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.stamp._f
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.stamp._sunfold
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.stamp._unsafe_rec
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.stamp.eq_1
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.stamp.eq_2
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.stamp.eq_def
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.stamp.match_1
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.stamp_tick
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.stamp_tick._abel_1_11
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.stamp_tick._abel_1_5
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.stamp_tick._abel_1_9
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.stamp_tick._proof_1_10
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.stamp_tick._proof_1_4
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.stamp_tick._proof_1_6
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.stamp_tick._proof_1_7
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.stamp_tick._proof_1_8
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.total
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.total.eq_1
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.total_append
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.total_append._abel_1_2
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.total_cons
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.total_cons._abel_1_2
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.total_embed
+#print axioms ExactFourierCircuits.UniformCalendarRenderPieces.total_nil
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.Active.eq_1
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformCalendarRenderPieces.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

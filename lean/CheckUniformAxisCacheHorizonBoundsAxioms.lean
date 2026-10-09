@@ -1,0 +1,10 @@
+import UniformAxisCacheHorizonBounds
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisCacheHorizonBounds.horizon_fits
+#print axioms ExactFourierCircuits.UniformAxisCacheHorizonBounds.horizon_fits._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCacheHorizonBounds.horizon_fits._proof_1_2
+#print axioms ExactFourierCircuits.UniformAxisCacheHorizonBounds.horizon_fits._proof_1_3
+#print axioms ExactFourierCircuits.UniformAxisCacheHorizonBounds.selected_horizon_fits

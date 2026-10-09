@@ -1,0 +1,11 @@
+import UniformNativeResidualSemantics
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformNativeResidualSemantics.nativeWordMatrix
+#print axioms ExactFourierCircuits.UniformNativeResidualSemantics.native_signed_columns
+#print axioms ExactFourierCircuits.UniformNativeResidualSemantics.native_signed_spectator_array
+#print axioms ExactFourierCircuits.UniformNativeResidualSemantics.originalToNative
+#print axioms ExactFourierCircuits.UniformNativeResidualSemantics.originalToNative.eq_1
+#print axioms ExactFourierCircuits.UniformNativeResidualSemantics.spectator_array

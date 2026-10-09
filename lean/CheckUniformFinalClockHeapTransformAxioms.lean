@@ -1,0 +1,12 @@
+import UniformFinalClockHeapTransform
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFinalClockHeapTransform.actualValues
+#print axioms ExactFourierCircuits.UniformFinalClockHeapTransform.data_spectrum
+#print axioms ExactFourierCircuits.UniformFinalClockHeapTransform.heap_transform
+#print axioms ExactFourierCircuits.UniformFinalClockHeapTransform.kernel_spectrum
+#print axioms ExactFourierCircuits.UniformFinalClockHeapTransform.matrix_eq
+#print axioms ExactFourierCircuits.UniformFinalClockHeapTransform.numeric_source
+#print axioms ExactFourierCircuits.UniformFinalClockHeapTransform.prepared_tags

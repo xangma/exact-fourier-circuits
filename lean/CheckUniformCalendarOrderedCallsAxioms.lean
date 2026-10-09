@@ -1,0 +1,17 @@
+import UniformCalendarOrderedCalls
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarOrderedCalls.allRows_get_order
+#print axioms ExactFourierCircuits.UniformCalendarOrderedCalls.allRows_get_order._proof_1_1
+#print axioms ExactFourierCircuits.UniformCalendarOrderedCalls.allRows_get_order._proof_1_2
+#print axioms ExactFourierCircuits.UniformCalendarOrderedCalls.allRows_get_records
+#print axioms ExactFourierCircuits.UniformCalendarOrderedCalls.eventRows_get
+#print axioms ExactFourierCircuits.UniformCalendarOrderedCalls.eventRows_get._proof_1_1
+#print axioms ExactFourierCircuits.UniformCalendarOrderedCalls.order
+#print axioms ExactFourierCircuits.UniformCalendarOrderedCalls.order._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarOrderedCalls.order_val
+#print axioms ExactFourierCircuits.UniformCalendarOrderedCalls.prefix_get
+#print axioms ExactFourierCircuits.UniformCalendarOrderedCalls.prefix_sum
+#print axioms ExactFourierCircuits.UniformCalendarOrderedCalls.sum_get

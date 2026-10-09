@@ -1,0 +1,10 @@
+import UniformAxisCacheAdvanceInputs
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisCacheAdvanceInputs.execution
+#print axioms ExactFourierCircuits.UniformAxisCacheAdvanceInputs.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformAxisCacheAdvanceInputs.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformAxisCacheAdvanceInputs.execution._simp_1_1
+#print axioms ExactFourierCircuits.UniformAxisCacheAdvanceInputs.execution._simp_1_2

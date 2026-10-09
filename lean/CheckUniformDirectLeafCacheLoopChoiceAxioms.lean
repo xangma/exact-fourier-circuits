@@ -1,0 +1,18 @@
+import UniformDirectLeafCacheLoopChoice
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopChoice.bank
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopChoice.bank.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopChoice.chosen
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopChoice.chosen.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopChoice.chosen_args
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopChoice.chosen_controls
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopChoice.chosen_nat
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopChoice.execution
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopChoice.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopChoice.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopChoice.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopChoice.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopChoice.execution._proof_1_7

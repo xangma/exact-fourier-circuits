@@ -1,0 +1,29 @@
+import UniformFourierCalendarSnapshot
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFourierCalendarSnapshot.full
+#print axioms ExactFourierCircuits.UniformFourierCalendarSnapshot.full_matrix
+#print axioms ExactFourierCircuits.UniformFourierCalendarSnapshot.idle
+#print axioms ExactFourierCircuits.UniformFourierCalendarSnapshot.idle._proof_1
+#print axioms ExactFourierCircuits.UniformFourierCalendarSnapshot.idle.eq_1
+#print axioms ExactFourierCircuits.UniformFourierCalendarSnapshot.idle_matrix
+#print axioms ExactFourierCircuits.UniformFourierCalendarSnapshot.join
+#print axioms ExactFourierCircuits.UniformFourierCalendarSnapshot.join_matrix
+#print axioms ExactFourierCircuits.UniformFourierCalendarSnapshot.selected
+#print axioms ExactFourierCircuits.UniformFourierCalendarSnapshot.selected._proof_1
+#print axioms ExactFourierCircuits.UniformFourierCalendarSnapshot.selected._proof_2
+#print axioms ExactFourierCircuits.UniformFourierCalendarSnapshot.selected.congr_simp
+#print axioms ExactFourierCircuits.UniformFourierCalendarSnapshot.selected_matrix
+#print axioms ExactFourierCircuits.UniformFourierCalendarSnapshot.single
+#print axioms ExactFourierCircuits.UniformFourierCalendarSnapshot.single.congr_simp
+#print axioms ExactFourierCircuits.UniformFourierCalendarSnapshot.single.eq_1
+#print axioms ExactFourierCircuits.UniformFourierCalendarSnapshot.single_matrix
+#print axioms ExactFourierCircuits.UniformFourierCalendarSnapshot.specified
+#print axioms ExactFourierCircuits.UniformFourierCalendarSnapshot.specified._proof_1
+#print axioms ExactFourierCircuits.UniformFourierCalendarSnapshot.specified._proof_2
+#print axioms ExactFourierCircuits.UniformFourierCalendarSnapshot.specified.eq_1
+#print axioms ExactFourierCircuits.UniformFourierCalendarSnapshot.specified_matrix
+#print axioms ExactFourierCircuits.UniformLayerSnapshot.Snapshot.ofDiagonal.congr_simp
+#print axioms ExactFourierCircuits.UniformTransposeCalendarSnapshot.axisSnapshot.congr_simp

@@ -1,0 +1,14 @@
+import UniformActualClockBoundaryExecution
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualClockBoundaryExecution.boot_execution
+#print axioms ExactFourierCircuits.UniformActualClockBoundaryExecution.boot_execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualClockBoundaryExecution.code_bound
+#print axioms ExactFourierCircuits.UniformActualClockBoundaryExecution.halt_execution
+#print axioms ExactFourierCircuits.UniformActualClockBoundaryExecution.halt_execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualClockBoundaryExecution.kernel_branch
+#print axioms ExactFourierCircuits.UniformActualClockBoundaryExecution.kernel_branch._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualClockBoundaryExecution.tick_start
+#print axioms ExactFourierCircuits.UniformActualClockBoundaryExecution.tick_start._proof_1_1

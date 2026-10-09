@@ -1,0 +1,11 @@
+import UniformDirectLeafCacheProducedSource
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProducedSource.records
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProducedSource.records.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProducedSource.records_at
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProducedSource.records_length
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProducedSource.records_valid
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheSource.At.eq_1

@@ -1,0 +1,21 @@
+import UniformDirectLeafForestCapture
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafForestCapture.captured
+#print axioms ExactFourierCircuits.UniformDirectLeafForestCapture.captured.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestCapture.core
+#print axioms ExactFourierCircuits.UniformDirectLeafForestCapture.execution
+#print axioms ExactFourierCircuits.UniformDirectLeafForestCapture.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestCapture.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirectLeafForestCapture.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformDirectLeafForestCapture.frame
+#print axioms ExactFourierCircuits.UniformDirectLeafForestCapture.heap
+#print axioms ExactFourierCircuits.UniformDirectLeafForestCapture.outputHeap
+#print axioms ExactFourierCircuits.UniformDirectLeafForestCapture.outputHeap.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestCapture.outside
+#print axioms ExactFourierCircuits.UniformDirectLeafForestCapture.outside._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirectLeafForestCapture.outside._proof_1_3
+#print axioms ExactFourierCircuits.UniformDirectLeafForestCapture.value
+#print axioms ExactFourierCircuits.UniformDirectLeafForestProgram.capture.eq_1

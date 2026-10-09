@@ -1,0 +1,7 @@
+import UniformFinalAllocationStride
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFinalStartupFrames.allocation_stride
+#print axioms ExactFourierCircuits.UniformFinalStartupFrames.scale_keeps6002

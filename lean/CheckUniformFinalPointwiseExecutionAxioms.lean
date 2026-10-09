@@ -1,0 +1,8 @@
+import UniformFinalPointwiseExecution
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFinalPointwiseExecution.execution
+#print axioms ExactFourierCircuits.UniformFinalPointwiseExecution.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalPointwiseExecution.execution._proof_1_2

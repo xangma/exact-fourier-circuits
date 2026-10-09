@@ -1,0 +1,35 @@
+import UniformLocalCacheSlotFrames
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.advance_protected
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.boot_protected
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.directory_protected
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.execution_nat
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.header_protected
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.program_keeps
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.program_keeps._proof_1_2
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.program_keeps._proof_1_3
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.program_keeps._proof_1_4
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.program_keeps._proof_1_5
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.protectedInstruction
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.protectedInstruction._sparseCasesOn_1
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.protectedInstruction._sparseCasesOn_1.else_eq
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.protectedInstruction.eq_1
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.protectedInstruction.eq_2
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.protectedInstruction.eq_3
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.protectedInstruction.eq_4
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.protectedInstruction.eq_5
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.protectedInstruction.match_1
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.protected_keeps
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.protected_keeps._proof_1_7
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.runs_keeps
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformLocalCacheSlotFrames.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

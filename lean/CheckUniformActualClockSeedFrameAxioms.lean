@@ -1,0 +1,13 @@
+import UniformActualClockSeedFrame
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualClockSeedFrame.bounded_execution
+#print axioms ExactFourierCircuits.UniformActualClockSeedFrame.bounded_runs
+#print axioms ExactFourierCircuits.UniformActualClockSeedFrame.conductor_safe
+#print axioms ExactFourierCircuits.UniformActualClockSeedFrame.conductor_safe._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualClockSeedFrame.diagonal_safe
+#print axioms ExactFourierCircuits.UniformActualClockSeedFrame.kernel_safe
+#print axioms ExactFourierCircuits.UniformActualClockSeedFrame.program_safe
+#print axioms ExactFourierCircuits.UniformActualClockSeedFrame.program_safe._proof_1_1

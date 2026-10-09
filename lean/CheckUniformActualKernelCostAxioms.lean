@@ -1,0 +1,15 @@
+import UniformActualKernelCost
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualKernelCost.clockConstant
+#print axioms ExactFourierCircuits.UniformActualKernelCost.clockConstant._proof_1
+#print axioms ExactFourierCircuits.UniformActualKernelCost.clockConstant._proof_2
+#print axioms ExactFourierCircuits.UniformActualKernelCost.clockConstant_nonneg
+#print axioms ExactFourierCircuits.UniformActualKernelCost.kernelTicks
+#print axioms ExactFourierCircuits.UniformActualKernelCost.kernelTicks_value
+#print axioms ExactFourierCircuits.UniformActualKernelCost.kernelTicks_value._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualKernelCost.kernel_ticks_bound
+#print axioms ExactFourierCircuits.UniformActualKernelCost.overhead
+#print axioms ExactFourierCircuits.UniformActualKernelCost.overhead_linear

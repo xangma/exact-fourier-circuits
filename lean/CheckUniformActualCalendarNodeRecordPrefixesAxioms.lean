@@ -1,0 +1,7 @@
+import UniformActualCalendarNodeRecordPrefixes
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarNodeRecordPrefixes.node_prefix
+#print axioms ExactFourierCircuits.UniformActualCalendarNodeRecordPrefixes.node_records

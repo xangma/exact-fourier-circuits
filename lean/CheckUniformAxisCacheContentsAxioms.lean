@@ -1,0 +1,20 @@
+import UniformAxisCacheContents
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisCacheContents.Contents
+#print axioms ExactFourierCircuits.UniformAxisCacheContents.Contents.casesOn
+#print axioms ExactFourierCircuits.UniformAxisCacheContents.Contents.leaves
+#print axioms ExactFourierCircuits.UniformAxisCacheContents.Contents.mk
+#print axioms ExactFourierCircuits.UniformAxisCacheContents.Contents.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformAxisCacheContents.Contents.rec
+#print axioms ExactFourierCircuits.UniformAxisCacheContents.Contents.recOn
+#print axioms ExactFourierCircuits.UniformAxisCacheContents.Contents.rectangles
+#print axioms ExactFourierCircuits.UniformAxisCacheContents.of_outcome
+#print axioms ExactFourierCircuits.UniformAxisCacheContents.transport
+#print axioms ExactFourierCircuits.UniformAxisCacheContents.transport._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCacheContents.transport._proof_1_2
+#print axioms ExactFourierCircuits.UniformAxisCacheContents.transport._proof_1_3
+#print axioms ExactFourierCircuits.UniformAxisCacheContents.transport._proof_1_4
+#print axioms ExactFourierCircuits.UniformAxisCacheContents.transport._proof_1_5

@@ -1,0 +1,36 @@
+import UniformLocalCacheHighRegisters
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformLocalCacheContextConductor.execution_nat_high
+#print axioms ExactFourierCircuits.UniformLocalCacheContextConductor.high_context
+#print axioms ExactFourierCircuits.UniformLocalCacheContextConductor.program_keeps_high
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.belowHigh
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.belowHigh._sparseCasesOn_1
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.belowHigh._sparseCasesOn_1.else_eq
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.belowHigh.eq_1
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.belowHigh.eq_2
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.belowHigh.eq_3
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.belowHigh.eq_4
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.belowHigh.eq_5
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.belowHigh.match_1
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.below_high_keeps
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.below_high_keeps._proof_1_7
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.high_advance
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.high_boot
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.high_directory
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.high_header
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.program_keeps_high
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.program_keeps_high._proof_1_2
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.program_keeps_high._proof_1_3
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.program_keeps_high._proof_1_4
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.program_keeps_high._proof_1_5
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformLocalCacheHighRegisters.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

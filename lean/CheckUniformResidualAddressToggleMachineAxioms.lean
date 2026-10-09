@@ -1,7 +1,9 @@
 import UniformResidualAddressToggleMachine
 import Lean
+
 set_option linter.auxLemma false
 
+#print axioms ExactFourierCircuits.UniformBlockXorMachine.Changed.eq_1
 #print axioms ExactFourierCircuits.UniformResidualAddressToggleMachine.Changed
 #print axioms ExactFourierCircuits.UniformResidualAddressToggleMachine.Frame
 #print axioms ExactFourierCircuits.UniformResidualAddressToggleMachine.Frame.casesOn

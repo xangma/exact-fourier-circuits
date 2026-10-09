@@ -1,0 +1,10 @@
+import UniformActualCalendarPhysicalRefinement
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarPhysicalRefinement.physicalRecords
+#print axioms ExactFourierCircuits.UniformActualCalendarPhysicalRefinement.physical_records
+#print axioms ExactFourierCircuits.UniformActualCalendarPhysicalRefinement.rootEnumeration
+#print axioms ExactFourierCircuits.UniformActualCalendarPhysicalRefinement.rootEnumeration._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarPhysicalRefinement.scan

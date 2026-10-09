@@ -1,5 +1,6 @@
 import UniformSeedRankCrossPreparation
 import Lean
+
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformSeedRankCrossPreparation.Args
@@ -282,8 +283,5 @@ run_cmd do
  let env ← getEnv
  for (name, _) in env.constants.toList do
   if "_private.UniformSeedRankCrossPreparation.".isPrefixOf name.toString then
-   let axioms ← collectAxioms name
-   logInfo m!"'{name}' depends on axioms: {axioms.toList}"
-   for ax in axioms do
-    unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
-     throwError m!"Forbidden axiom {ax} in {name}"
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

@@ -1,0 +1,12 @@
+import UniformClockCacheInputsRetention
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformClockCacheInputsRetention.inputs
+#print axioms ExactFourierCircuits.UniformClockCacheInputsRetention.inputs._proof_1_1
+#print axioms ExactFourierCircuits.UniformClockCacheInputsRetention.inputs._proof_1_2
+#print axioms ExactFourierCircuits.UniformClockCacheInputsRetention.inputs._proof_1_3
+#print axioms ExactFourierCircuits.UniformClockCacheInputsRetention.inputs._proof_1_4
+#print axioms ExactFourierCircuits.UniformClockCacheInputsRetention.inputs._proof_1_5
+#print axioms ExactFourierCircuits.UniformClockCacheInputsRetention.inputs._proof_1_6

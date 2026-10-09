@@ -19,171 +19,34 @@ finite-win witness and derives the Fourier theorem. All 1,101 registered
 declarations have axiom closures containing only `propext`, `Classical.choice`,
 and `Quot.sound`; see the [final receipt](verification/constructive-seed.json).
 
-This verifies the subsequential circuit theorem described in `130.md` and the
-explicit finite saving construction. The companion paper's stronger single
-algorithm for every length, with preparation and indexing costs included, has
-not yet been proved here. Work on that target is active on `codex/uniform-fourier`.
-The [uniform proof contract](docs/uniform-proof-contract.md) distinguishes the
-checked components from the remaining program and cost obligations. The
-[component receipt](verification/uniform-components.json) explicitly records
-`uniform_algorithm_verified=false`. The [latest checkpoint](docs/uniform-closeout.md)
-records separate focused audits of 46 modules/4,720 declaration closures and
-23 operational modules/2,274 closures. Their exact-bytecode suites pass 12,329
-and 20,604 cases respectively; the new inverse tensor check covers 21,845 exact
-matrix entries. A further eleven forward-factor modules have a fresh normal
-audit of 671 declaration closures and 384 exact cases; their real 415/430-instruction
-programs produce typed forward matching coefficient pools for the tensor
-consumer. See the [forward-factor receipt](verification/uniform-forward-factor-foundations.json).
-The current registry contains 341 modules. A fresh normal-path audit of 29
-recursive controller foundations checks 2,552 declaration closures and 5,640
-exact bytecode cases; see the [recursive receipt](verification/uniform-recursive-foundations.json).
-Actual native
-spectators, direct-leaf orientations and sector/tensor movement are checked.
-The complete cache compiler, common recursive execution and global fast
-program remain open.
+The stronger all-length theorem is now proved by
+[`UniformFinalDFTExecution.uniformDFT`](lean/UniformFinalDFTExecution.lean), of type
+`UniformMachine.UniformDFTStatement UniformExponent.theta`. One fixed finite
+program computes the standard unnormalized DFT at every positive length. Its
+actual 20-stage execution starts from empty heaps, prepares all caches, executes
+three complete Fourier clocks, performs the convolution/CRT transfers, and
+emits the final outputs. The same run has one specified root request,
+polynomially bounded integer words and a proved charged runtime.
 
-The current uniform work includes one fixed 465-instruction startup program.
-Lean proves that it constructs the chirped padded input, signed convolution
-kernel, normalization factor and both CRT permutations, copies the complete
-index metadata out of local workspace, gathers the input through alpha,
-and constructs the inverse beta output table while preserving the prepared banks.
-All startup work is charged and bounded by `O(n)`, with polynomial integer
-words. Concrete local Fourier layers and the pointwise multiplication loop
-are also checked. A literal FFT row printer, sparse prepared-power loop, local Newton/reciprocal
-producer and one shared coefficient bank are verified components. Canonical
-root extraction preserves the sole master-root request. A fixed 766-instruction program now joins startup to the first selected axis's
-local preparation. The shifted FFT interpreter handles the actual mixed input
-flags, including prepared padding. A fixed 199-instruction program now joins FFT row printing, canonical root
-extraction, prepared powers and mixed-tag interpretation. The one-master-root
-shared coefficient DAG and synchronized CRT Fourier identities are also checked.
-A fixed 35-instruction program computes the dyadic root table from that master
-root. A selected-axis copier retains the five actual Newton/reciprocal coefficient
-lanes above every local workspace. A fixed 221-instruction assembly now gathers
-strided inputs, writes prepared-zero padding and executes the FFT without
-host-side phase writes.
-A fixed 935-instruction program now prepares and retains every selected axis's
-local seed bank from empty heaps. The 53-instruction selected DFS copies its
-radices from protected metadata and enumerates all working addresses in at most
-84*L+6 charged steps. A fixed 989-instruction program joins these phases from
-empty heaps with charged transitions. A fixed 41-instruction transfer reads the independent beta
-inverse and alpha banks between transforms in exactly 18*L+25 steps.
-A fixed 769-instruction program now executes exact dyadic cyclic convolution,
-including all three FFTs, prepared-kernel multiplication, normalization and index
-reversal. All-axis preparation costs O(log^5 n)=o(n); the complete 989-instruction
-startup and traversal costs O(n).
-Printing the full balanced local compiler and executing the global fast scheduler
-remain open.
-A fixed 66-instruction tensor monomial interpreter now derives its action from
-physical permutation and coefficient banks, with at most 153*L+10 selected-length
-steps. A shifted 32-instruction scalar-DAG interpreter has certified divisions
-and fresh leaf/result placement. A 49-instruction producer constructs signed
-rational leaves from physical integer rows; a 70-instruction assembly copies
-root leaves and constructs the complete prepared leaf bank. A 39-instruction
-printer now builds interpreter rows from a physical typed DAG tape. One continuous
-157-instruction program constructs leaves, prints those rows and evaluates the DAG,
-charging every phase transition. A 17-instruction scan prints distinct borrowed
-coordinates outside both block intervals; its selected-block theorem derives
-capacity from the measured graph size. A 20-instruction producer constructs an
-identity permutation and diagonal coefficient bank for the tensor interpreter.
-Printing the actual balanced compiler tape remains an obligation.
-A 58-instruction measured workspace search now computes the paper's largest
-fitting ragged chunk, including the unit-width boundary. A 336-instruction program
-prepares the inverse master root and evaluates the same coefficient tapes twice,
-producing original and conjugate banks. A 30-instruction producer then constructs
-the explicit zero-free shift and reciprocal differences from those physical banks.
-The joined 374-instruction program derives those banks and division guards in one
-continuous run from the original master root and physical typed/rational tapes.
-An all-axis directory driver constructs complete diagonal banks; its continuous
-108-instruction producer/tensor assembly derives its action from actual banks.
-The joined 1084-instruction program derives its caller setup and gathered input
-from the empty state and has a proved linear runtime budget. Converting CRT
-coordinates to the complete tensor schedule and executing the fast scheduler remain open.
-The 154-instruction convolution printer constructs every typed five-field graph
-record from its integer height, with lossless coefficient decoding and bounded words.
-An 11-instruction contiguous power writer produces a prepared bank in exactly
-`6*N+6` steps from one physical prepared root. The 90-instruction kernel producer
-constructs all six padded rank kernels from actual prepared H/G cells, including
-zero coefficients, with a proved quadratic preparation bound. The 297-instruction spectrum
-producer charges its six FFT/copy passes and root-power bank. The 271-instruction
-corrected-cross printer derives all six remapped graphs and final additions from
-height and ragged dimensions. A continuous 722-instruction caller now derives kernels, spectra, typed tape and
-depth labels from original H/G/master cells, installing every helper header
-through charged instructions. Its 799-instruction extension also derives the stable
-order/directory and signed coefficient banks continuously. A 132-instruction
-caller prepares and colors one actual depth bucket; a 30-instruction filter
-prints each selected matching layer. The 186-instruction height caller prepares every actual depth bucket in
-`8*K+7` iterations and records each row/color bank. The 835-instruction
-seed caller reads the retained axis directory and actual compact inverse-H/G
-lanes before executing the 799-instruction preparation; it retains those banks.
-The 1046-instruction `UniformSeedHeightPreparation` joins retained-seed preparation
-to all-height bucket production and computes the chunk exponent with charged
-integer instructions. `UniformChunkMatchingPreparation` joins selection, borrowed
-coordinate production, row mapping and matching-axis printing in 215 instructions.
-The 1286-instruction `UniformSeedChunkPreparation` joins those phases continuously
-from retained selected-axis banks and ordinary caller geometry. No generated
-cross tape, selected-row table or ready matching axis is an entry premise.
-The 35-instruction depth writer
-derives every typed longest-path label from its physical tape in at most
-`5*(N+1)+22*G+10` charged steps. A 24-instruction printer then constructs
-a stable complete gate permutation and bucket directory from those actual labels;
-its quadratic allocation and instruction cost are explicit. A 42-instruction
-producer derives the signed coefficient bank and six normalization constants from
-the original prepared positive bank in exactly `5*K+56*2^K+31` steps.
-The mathematical block traversal now has an exact ordered-list identity with the
-sector directory. Its 92-instruction physical metadata producer now derives that
-ordered directory and suffix volumes from the original width rows in at most
-`130*L+16` steps. The 137-instruction packing DFS derives inverse addresses and gathers exact tagged
-values in at most `213*L+20` steps. A 60-instruction producer prints ordered forward shear triples from the actual
-typed tape and gate-order bank. A 51-instruction program derives greedy colors
-from actual endpoints; degree six implies eleven colors with disjoint same-color
-rows. A 55-instruction producer converts actual matching rows into ordered
-forward permutations, widths and a physical axis header in exactly
-`17*r+8*M+21` steps. A 36-instruction inverse-table producer reverses the
-actual rows and derives exact negative coefficient addresses in at most
-`25*M+6` steps, including normalization aliases. A 20-instruction scalar interpreter reads actual physical rows and prepared
-coefficients in `16*M+5` steps. Its 81-instruction caller executes inverse-table
-production, forward replay and inverse replay continuously in at most
-`57*M+21` steps, restoring all numeric cells while tracking possible tag growth.
-A 14-instruction port mapper and 59-instruction row mapper connect logical
-coordinates to the actual borrowed bank and source/target allocation.
-`UniformMachineConjugation` is a semantic transport theorem. Actual fresh
-five-lane conjugate preparation is proved by the 301-instruction
-`UniformConjugateLocalPreparation` and its 466-instruction selected-axis caller,
-`UniformSeedConjugatePreparation`. `UniformSeedConjugateRetention` supplies the high-bank frame needed by the 524-instruction all-axis driver; its 1460-instruction wrapper starts from empty heaps and retains both original and conjugate directories, operands and one root request.
-The 361-instruction `UniformMatchingPackingPreparation` joins matching-table
-production to physical packing, deriving inverse addresses and exact tagged pair
-coordinates. `UniformSeedChunkPackingPreparation` consumes the actual seed/chunk
-result in a 152-instruction continuation or derives it internally in 1438
-instructions. It retains the produced coefficient banks and derives the physical
-inverse addresses. `UniformScalarScatterMachine` executes inverse scatter in
-12 instructions and exactly `9*L+4` steps. `UniformPackedPairRoundMachine` runs
-one C round in 23 instructions and `17*M+7` steps; the 45-instruction
-`UniformPackedPairScatterPreparation` joins charged header setup, that round
-and inverse scatter in exactly `17*M+9*L+21` steps. Its native-coordinate
-values, tail entries and actual OR flags are proved. Matching count remains
-an ordinary caller input for that earlier C-round wrapper. The new 422-instruction
-six-C matching loop instead reads generated Nat894 and derives its table and
-inverse from actual packing. A 2669-instruction caller now joins seed/chunk,
-conjugate preparation and matching with charged header setup. It consumes
-ordinary physical input/layout headers. The new fixed5375 caller proves the
-complete local cross replay; original tape/banks and compatible layout remain inputs.
+The asymptotic bound is `O(n*(log n)^theta*(log log n)^(4-theta))`, with
+`0<theta<1` and `theta<1-2/10^13`. Complex arithmetic is exact and has unit cost
+per allowed operation; preparation, scheduling, indexing and heap movement
+are charged. The integer/address word bound does not bound complex precision.
+This gives no floating-point stability guarantee or measured FFT speedup.
+The existing [JAX/CUDA experiments](docs/jax-investigation.md) retain their
+bounded empirical scope and do not execute the full saving algorithm.
 
-The registry contains 301 modules. The [latest checkpoint](docs/uniform-closeout.md)
-records full audits and exact entry boundaries. With the required rank-kernel
-banks, size and displacement identities, the fixed5375 local program adds `M*x`
-to the target and restores numeric source/workspace values. The fixed535
-record loop executes actual scalar, translation, signed-exchange and padding
-children. Fixed79 constructs matching tables across all selected CRT axes from
-physical edge inputs; fixed124 derives their suffix volumes and sector directory.
-A fixed4306 branch starts from empty heaps and supplies a direct small-length
-fallback or single-axis matching preparation. Canonical selected seed/chunk
-allocation fits the unchanged `(n+2)^19` budget.
-
-Recursive residual C execution, the all-axis edge producer, compatible global
-allocation/metadata retention, final Fourier routing and the fast runtime bound
-remain open. The stronger uniform theorem is still unproved and has no registered
-proof. Earlier CUDA/JAX experiments and plots keep their existing scope.
-
+The [final normal verification](verification/uniform-final-algorithm.json)
+passes **1,271 modules and 82,513 declaration closures**, including 3,483
+private declarations, with only the three standard axioms and the exact
+closed-statement guard. The [independent Main audit](verification/uniform-final-independent-main-audit.json)
+also passes. The verifier freshly checks Main, the exact target and full
+census, reusing earlier proof artifacts only when their compiler, sources,
+bytes and complete dependency lineage match the certified audit.
+See the [checkpoint](docs/uniform-closeout.md) and
+[uniform machine contract](docs/uniform-proof-contract.md). Older component
+receipts record their historical boundaries; their overlapping counts are not
+an aggregate audit of this final source snapshot.
 
 ## Run
 
@@ -200,6 +63,13 @@ cd ~/repos/exact-fourier-circuits
 ./scripts/verify-uniform.sh
 python3 scripts/check-uniform-bytecode.py
 ```
+
+`./scripts/verify-uniform.sh` is the current final-theorem check; add
+`--rebuild-all` to freshly compile all 1,271 project modules. Historical
+component proof entrypoints now forward to this final verifier. Earlier
+bytecode counts below describe retained component diagnostics, which the
+final proof audit did not rerun. Reproducing the original checkpoint receipts
+requires the matching historical source/configuration snapshot.
 
 The bytecode check exports the current Lean programs and runs 84 exact convolution
 cases, three empty-heap startup cases and nine CRT-transfer cases, including

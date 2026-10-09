@@ -1,0 +1,12 @@
+import UniformActualCalendarLogBounds
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarLogBounds.horizonUnit
+#print axioms ExactFourierCircuits.UniformActualCalendarLogBounds.horizon_bound
+#print axioms ExactFourierCircuits.UniformActualCalendarLogBounds.horizon_cap
+#print axioms ExactFourierCircuits.UniformActualCalendarLogBounds.quadratic_clog
+#print axioms ExactFourierCircuits.UniformActualCalendarLogBounds.quadratic_clog._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualCalendarLogBounds.radix_clog
+#print axioms ExactFourierCircuits.UniformActualCalendarLogBounds.radix_clog._proof_1_1

@@ -1,0 +1,13 @@
+import UniformCalendarExplicitSourceTransport
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarExplicitSourceTransport.family
+#print axioms ExactFourierCircuits.UniformCalendarExplicitSourceTransport.family._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarExplicitSourceTransport.family._proof_2
+#print axioms ExactFourierCircuits.UniformCalendarExplicitSourceTransport.reindex
+#print axioms ExactFourierCircuits.UniformCalendarExplicitSourceTransport.reindex._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarExplicitSourceTransport.reindex._proof_2
+#print axioms ExactFourierCircuits.UniformCalendarExplicitSourceTransport.reindex._proof_3
+#print axioms ExactFourierCircuits.UniformCalendarExplicitSourceTransport.reindex_diagonal

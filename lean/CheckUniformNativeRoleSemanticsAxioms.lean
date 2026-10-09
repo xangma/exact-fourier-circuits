@@ -1,0 +1,12 @@
+import UniformNativeRoleSemantics
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformNativeRoleSemantics.bit_same
+#print axioms ExactFourierCircuits.UniformNativeRoleSemantics.coordinate_cancellation
+#print axioms ExactFourierCircuits.UniformNativeRoleSemantics.native_canonical_matrix
+#print axioms ExactFourierCircuits.UniformNativeRoleSemantics.native_canonical_role
+#print axioms ExactFourierCircuits.UniformNativeRoleSemantics.originalCoordinates
+#print axioms ExactFourierCircuits.UniformNativeRoleSemantics.originalCoordinates.eq_1
+#print axioms ExactFourierCircuits.UniformNativeRoleSemantics.originalCoordinates_role

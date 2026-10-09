@@ -1,0 +1,9 @@
+import UniformExecutedTaggedBank
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformExecutedTaggedBank.present
+#print axioms ExactFourierCircuits.UniformExecutedTaggedBank.source
+#print axioms ExactFourierCircuits.UniformExecutedTaggedBank.value
+#print axioms ExactFourierCircuits.UniformExecutedTaggedBank.values

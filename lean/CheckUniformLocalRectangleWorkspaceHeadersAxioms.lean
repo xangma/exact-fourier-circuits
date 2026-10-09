@@ -1,0 +1,55 @@
+import UniformLocalRectangleWorkspaceHeaders
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformJointCacheWorkspace.original.eq_1
+#print axioms ExactFourierCircuits.UniformJointCacheWorkspace.work.eq_1
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.Bank
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.C.Safe
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.args
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.args._proof_1_1
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.args._proof_1_2
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.block_code
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.boot
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.boot.eq_1
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.copied
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.copied.eq_1
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.copied_eq
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.copied_heap
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.copied_keep
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.copied_nat
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.copied_one
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.copied_output
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.copies
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.copies.eq_1
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.copies_length
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.execution
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.falseArgs
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.halt_at
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.nextArgs
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.nodup
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.operations
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.operations.eq_1
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.operations_eq
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.operations_length
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.operations_safe
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.output_bank
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.output_bank._proof_1_1
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.program
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.program_length
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.safe
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.slotAddress
+#print axioms ExactFourierCircuits.UniformLocalRectangleWorkspaceHeaders.z
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformLocalRectangleWorkspaceHeaders.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

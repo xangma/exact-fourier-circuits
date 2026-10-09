@@ -1,0 +1,42 @@
+import UniformGlobalCalendarDispatchTables
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CellRow
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CellRow.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.allRows
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.allRows.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.allRows_cons
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.allRows_length
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.eventRows
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.eventRows.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.eventRows.match_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.eventRows_length
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.foldRows.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.foldRows.eq_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.foldRows.eq_def
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.foldRows_before
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.foldRows_before._proof_1_4
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.foldRows_table
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.foldRows_table._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.foldRows_table._proof_1_4
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.foldRows_table._proof_1_5
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.foldRows_table._proof_1_6
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.foldRows_table._proof_1_7
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.foldRows_table._proof_1_8
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.foldRows_table._proof_1_9
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.rowAction.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.rowAction.eq_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.rowAction_get
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.rowAction_get._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.rowAction_get._proof_1_7
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.rowAction_get._proof_1_8
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformGlobalCalendarDispatchTables.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

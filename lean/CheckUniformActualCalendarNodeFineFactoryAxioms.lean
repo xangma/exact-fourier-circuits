@@ -1,0 +1,9 @@
+import UniformActualCalendarNodeFineFactory
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarNodeFineFactory.make
+#print axioms ExactFourierCircuits.UniformActualCalendarNodeFineFactory.operation_bound
+#print axioms ExactFourierCircuits.UniformActualCalendarNodeFineFactory.operation_bound._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarNodeFineFactory.operation_bound._proof_1_1

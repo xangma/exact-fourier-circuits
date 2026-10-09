@@ -1,0 +1,6 @@
+import UniformFourierAxisCommonIntervalInputs
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonInputs.of_interval

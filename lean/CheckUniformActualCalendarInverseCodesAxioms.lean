@@ -1,0 +1,16 @@
+import UniformActualCalendarInverseCodes
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarInverseCodes.F.Config
+#print axioms ExactFourierCircuits.UniformActualCalendarInverseCodes.F.Layout
+#print axioms ExactFourierCircuits.UniformActualCalendarInverseCodes.code_inverse
+#print axioms ExactFourierCircuits.UniformActualCalendarInverseCodes.negateValue
+#print axioms ExactFourierCircuits.UniformActualCalendarInverseCodes.negateValue.eq_1
+#print axioms ExactFourierCircuits.UniformActualCalendarInverseCodes.occurrences
+#print axioms ExactFourierCircuits.UniformActualCalendarInverseCodes.occurrences.eq_1
+#print axioms ExactFourierCircuits.UniformActualCalendarInverseCodes.occurrences_color
+#print axioms ExactFourierCircuits.UniformActualCalendarInverseCodes.occurrences_reverse
+#print axioms ExactFourierCircuits.UniformForwardMatchingFactorPreparation.selectedValue.eq_1
+#print axioms ExactFourierCircuits.UniformInverseMatchingFactorPreparation.selectedValue.eq_1

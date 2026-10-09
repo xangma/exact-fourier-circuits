@@ -1,0 +1,17 @@
+import UniformGlobalClockPlacement
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.finalPC.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.tickBase.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalClockPlacement.advance_code
+#print axioms ExactFourierCircuits.UniformGlobalClockPlacement.axis_backedge
+#print axioms ExactFourierCircuits.UniformGlobalClockPlacement.axis_branch
+#print axioms ExactFourierCircuits.UniformGlobalClockPlacement.axis_code
+#print axioms ExactFourierCircuits.UniformGlobalClockPlacement.boot_code
+#print axioms ExactFourierCircuits.UniformGlobalClockPlacement.clock_backedge
+#print axioms ExactFourierCircuits.UniformGlobalClockPlacement.clock_branch
+#print axioms ExactFourierCircuits.UniformGlobalClockPlacement.halt_at
+#print axioms ExactFourierCircuits.UniformGlobalClockPlacement.instruction_at
+#print axioms ExactFourierCircuits.UniformGlobalClockPlacement.tick_code

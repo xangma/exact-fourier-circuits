@@ -1,0 +1,34 @@
+import UniformActualCalendarRegistryFamily
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family._sizeOf_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family._sizeOf_inst
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.cached
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.cached._proof_1_2
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.casesOn
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.ctorIdx
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.entry
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.make
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.make.eq_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.mk
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.mk.inj
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.mk.injEq
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.mk.noConfusion
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.mk.sizeOf_spec
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.noConfusion
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.noConfusionType
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.pairs
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.pairs._proof_1_2
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.rec
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.recOn
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.selected
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Produced.cast
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Produced.cast._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Produced.cast._proof_2
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Produced.cast_event
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.defaultEvent
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.defaultEvent._proof_1

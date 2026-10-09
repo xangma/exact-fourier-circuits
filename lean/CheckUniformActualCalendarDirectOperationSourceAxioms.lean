@@ -1,0 +1,41 @@
+import UniformActualCalendarDirectOperationSource
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operationValue
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operationValue._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operationValue.congr_simp
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operationValue.eq_1
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operationValue.eq_2
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operationValue.match_1
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operation_source
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operation_source._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operation_source._proof_10
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operation_source._proof_11
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operation_source._proof_12
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operation_source._proof_13
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operation_source._proof_14
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operation_source._proof_15
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operation_source._proof_16
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operation_source._proof_17
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operation_source._proof_18
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operation_source._proof_19
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operation_source._proof_2
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operation_source._proof_20
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operation_source._proof_3
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operation_source._proof_4
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operation_source._proof_5
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operation_source._proof_6
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operation_source._proof_7
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operation_source._proof_8
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectSource.operation_source._proof_9
+#print axioms ExactFourierCircuits.UniformCanonicalDirectPhase.scalePhase.eq_1
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformActualCalendarDirectOperationSource.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

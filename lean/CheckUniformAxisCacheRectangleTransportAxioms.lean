@@ -1,0 +1,13 @@
+import UniformAxisCacheRectangleTransport
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisCacheRectangleTransport.complete
+#print axioms ExactFourierCircuits.UniformAxisCacheRectangleTransport.complete._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCacheRectangleTransport.complete._proof_1_2
+#print axioms ExactFourierCircuits.UniformAxisCacheRectangleTransport.complete._proof_1_3
+#print axioms ExactFourierCircuits.UniformAxisCacheRectangleTransport.complete._proof_1_4
+#print axioms ExactFourierCircuits.UniformAxisCacheRectangleTransport.complete._proof_1_5
+#print axioms ExactFourierCircuits.UniformAxisCacheRectangleTransport.complete._proof_1_6
+#print axioms ExactFourierCircuits.UniformAxisCacheRectangleTransport.complete._proof_1_7

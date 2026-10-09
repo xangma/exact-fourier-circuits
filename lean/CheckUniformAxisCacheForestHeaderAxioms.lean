@@ -1,0 +1,35 @@
+import UniformAxisCacheForestHeader
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.Prepared
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.Prepared.casesOn
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.Prepared.conjugate
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.Prepared.count
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.Prepared.durations
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.Prepared.mk
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.Prepared.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.Prepared.nodes
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.Prepared.original
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.Prepared.rec
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.Prepared.recOn
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.Prepared.rows
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.Prepared.starts
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.changed
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.changed.eq_1
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.execution
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.execution._proof_1_10
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.execution._proof_1_11
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.execution._simp_1_8
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.execution._simp_1_9
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.ops
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.ops.eq_1
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.ops_length
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.registers
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.registers._simp_1_2
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.registers._simp_1_3
+#print axioms ExactFourierCircuits.UniformAxisCacheForestHeader.registers._simp_1_4
+#print axioms ExactFourierCircuits.UniformJointCacheAllocation.axis.eq_1

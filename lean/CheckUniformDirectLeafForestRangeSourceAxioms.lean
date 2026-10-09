@@ -1,0 +1,15 @@
+import UniformDirectLeafForestRangeSource
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRangeSource.nodeRanges
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRangeSource.nodeRanges._proof_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRangeSource.nodeRanges._proof_2
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRangeSource.nodeRanges.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRangeSource.nodeRecords
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRangeSource.nodeRecords.congr_simp
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRangeSource.nodeRecords.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRangeSource.node_source
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRangeSource.node_source._proof_1_3
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRangeSource.range_source

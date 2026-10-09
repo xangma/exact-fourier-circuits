@@ -1,0 +1,15 @@
+import UniformActualCacheRangeSource
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCacheRangeSource.after_forest
+#print axioms ExactFourierCircuits.UniformActualCacheRangeSource.before
+#print axioms ExactFourierCircuits.UniformActualCacheRangeSource.before._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualCacheRangeSource.before._proof_1_2
+#print axioms ExactFourierCircuits.UniformActualCacheRangeSource.before._proof_1_3
+#print axioms ExactFourierCircuits.UniformActualCacheRangeSource.preconditions
+#print axioms ExactFourierCircuits.UniformActualCacheRangeSource.preconditions._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualCacheRangeSource.preconditions._proof_1_2
+#print axioms ExactFourierCircuits.UniformActualCacheRangeSource.range_source
+#print axioms ExactFourierCircuits.UniformActualCacheRangeSource.rectangles_after_forest

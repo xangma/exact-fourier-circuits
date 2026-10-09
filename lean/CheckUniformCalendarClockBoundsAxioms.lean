@@ -1,0 +1,18 @@
+import UniformCalendarClockBounds
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarClockBounds.clockCap
+#print axioms ExactFourierCircuits.UniformCalendarClockBounds.plan_duration
+#print axioms ExactFourierCircuits.UniformCalendarClockBounds.plan_events
+#print axioms ExactFourierCircuits.UniformCalendarClockBounds.plan_events._proof_1_1
+#print axioms ExactFourierCircuits.UniformCalendarClockBounds.radixCap
+#print axioms ExactFourierCircuits.UniformCalendarClockBounds.selected_clock
+#print axioms ExactFourierCircuits.UniformCalendarClockBounds.selected_clock._proof_1_1
+#print axioms ExactFourierCircuits.UniformCalendarClockBounds.selected_radix
+#print axioms ExactFourierCircuits.UniformCalendarClockBounds.synchronizedDepth
+#print axioms ExactFourierCircuits.UniformCalendarClockBounds.synchronized_bound
+#print axioms ExactFourierCircuits.UniformCalendarClockBounds.tree_duration
+#print axioms ExactFourierCircuits.UniformCalendarClockBounds.tree_events
+#print axioms ExactFourierCircuits.UniformCalendarClockBounds.tree_events._proof_1_1

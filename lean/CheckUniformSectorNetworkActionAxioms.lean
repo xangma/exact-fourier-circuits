@@ -1,4 +1,5 @@
 import UniformSectorNetworkAction
+import Lean
 
 set_option linter.auxLemma false
 

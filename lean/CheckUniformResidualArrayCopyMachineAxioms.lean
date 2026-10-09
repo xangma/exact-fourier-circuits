@@ -1,5 +1,6 @@
 import UniformResidualArrayCopyMachine
 import Lean
+
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformResidualArrayCopyMachine.Cursor
@@ -44,7 +45,6 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformResidualArrayCopyMachine.Header.source
 #print axioms ExactFourierCircuits.UniformResidualArrayCopyMachine.Header.table
 #print axioms ExactFourierCircuits.UniformResidualArrayCopyMachine.Outside
-#print axioms ExactFourierCircuits.UniformResidualArrayCopyMachine.Outside.eq_1
 #print axioms ExactFourierCircuits.UniformResidualArrayCopyMachine.body
 #print axioms ExactFourierCircuits.UniformResidualArrayCopyMachine.body.eq_1
 #print axioms ExactFourierCircuits.UniformResidualArrayCopyMachine.body_code

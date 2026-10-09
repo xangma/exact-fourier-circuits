@@ -1,0 +1,16 @@
+import UniformRecursiveGroupBank
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveGroupBank.W
+#print axioms ExactFourierCircuits.UniformRecursiveGroupBank.array
+#print axioms ExactFourierCircuits.UniformRecursiveGroupBank.array.eq_1
+#print axioms ExactFourierCircuits.UniformRecursiveGroupBank.array_present
+#print axioms ExactFourierCircuits.UniformRecursiveGroupBank.complete_array
+#print axioms ExactFourierCircuits.UniformRecursiveGroupBank.complete_present
+#print axioms ExactFourierCircuits.UniformRecursiveGroupBank.complete_values
+#print axioms ExactFourierCircuits.UniformRecursiveGroupBank.flatten
+#print axioms ExactFourierCircuits.UniformRecursiveGroupBank.flatten.congr_simp
+#print axioms ExactFourierCircuits.UniformRecursiveGroupBank.flatten.eq_1
+#print axioms ExactFourierCircuits.UniformRecursiveGroupBank.flatten_value

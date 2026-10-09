@@ -1,5 +1,6 @@
 import UniformGlobalMatchingScaleBankBridge
 import Lean
+
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformGlobalMatchingScaleBankBridge.incident_unique

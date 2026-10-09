@@ -1,0 +1,41 @@
+import UniformDirectLeafTransposeLayers
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.reverse_macros_matrix
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transposeLeafLayers
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transposeLeafLayers.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transposeLeafLayers_length
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transposeLeafLayers_matrix
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transposeLeafLayers_restricted
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transposeLeafWord
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transposeLeafWord.congr_simp
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transposeLeafWord.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transposeLeafWord_length
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transposeLeafWord_matrix
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transposeRender
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transposeRender._proof_1
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transposeRender._proof_2
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transposeRender.congr_simp
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transposeRender.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transposeRender.eq_2
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transposeRender.match_1
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transposeRender_duration
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transposeRender_length
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transposeRender_matrix
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transposeRender_matrix._simp_1_5
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transposeRender_matrix._simp_1_6
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transposeRender_restricted
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transposeRender_restricted._simp_1_5
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transpose_leaf_tick
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transpose_leaf_tick._simp_1_4
+#print axioms ExactFourierCircuits.UniformDirectLeafTransposeLayers.transpose_leaf_tick._simp_1_5
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformDirectLeafTransposeLayers.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

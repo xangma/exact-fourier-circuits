@@ -1,0 +1,9 @@
+import UniformAxisCacheRootDuration
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisCacheRootDuration.root_duration
+#print axioms ExactFourierCircuits.UniformAxisCacheRootDuration.root_positive
+#print axioms ExactFourierCircuits.UniformAxisCacheRootDuration.root_positive._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.taskDuration.eq_1

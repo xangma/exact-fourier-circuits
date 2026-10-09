@@ -1,0 +1,18 @@
+import UniformActualGlobalConstants
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualGlobalConstants.code_envelope
+#print axioms ExactFourierCircuits.UniformActualGlobalConstants.code_eq
+#print axioms ExactFourierCircuits.UniformActualGlobalConstants.code_le
+#print axioms ExactFourierCircuits.UniformActualGlobalConstants.constants
+#print axioms ExactFourierCircuits.UniformActualGlobalConstants.envelope_bound
+#print axioms ExactFourierCircuits.UniformActualGlobalConstants.envelope_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualGlobalConstants.reserve_code
+#print axioms ExactFourierCircuits.UniformActualGlobalConstants.reserve_envelope
+#print axioms ExactFourierCircuits.UniformActualGlobalConstants.reserve_le
+#print axioms ExactFourierCircuits.UniformActualGlobalConstants.roles_eq
+#print axioms ExactFourierCircuits.UniformActualGlobalConstants.roles_positive
+#print axioms ExactFourierCircuits.UniformActualGlobalConstants.seed_eq
+#print axioms ExactFourierCircuits.UniformActualGlobalConstants.unit_eq

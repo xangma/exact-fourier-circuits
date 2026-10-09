@@ -1,0 +1,11 @@
+import UniformFourierAxisCanonicalActionFactory
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFourierAxisCanonicalActionFactory.action
+#print axioms ExactFourierCircuits.UniformFourierAxisCanonicalActionFactory.action._proof_1
+#print axioms ExactFourierCircuits.UniformFourierAxisCanonicalActionFactory.action._proof_2
+#print axioms ExactFourierCircuits.UniformFourierAxisCanonicalActionFactory.action._proof_3
+#print axioms ExactFourierCircuits.UniformFourierAxisCanonicalActionFactory.action._proof_4
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonResult.events.eq_1

@@ -1,0 +1,17 @@
+import UniformRecursivePaddingSemantic
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursivePaddingSemantic.padding_array
+#print axioms ExactFourierCircuits.UniformRecursivePaddingSemantic.padding_values
+#print axioms ExactFourierCircuits.UniformRecursivePaddingSemantic.tailAddress
+#print axioms ExactFourierCircuits.UniformRecursivePaddingSemantic.tailAddress.eq_1
+#print axioms ExactFourierCircuits.UniformRecursivePaddingSemantic.tailAddress_role
+#print axioms ExactFourierCircuits.UniformRecursivePaddingSemantic.tailRole
+#print axioms ExactFourierCircuits.UniformRecursivePaddingSemantic.tailRole.eq_1
+#print axioms ExactFourierCircuits.UniformRecursivePaddingSemantic.tail_array
+#print axioms ExactFourierCircuits.UniformRecursivePaddingSemantic.tail_array.match_1
+#print axioms ExactFourierCircuits.UniformRecursivePaddingSemantic.tail_array_threshold
+#print axioms ExactFourierCircuits.UniformRecursivePaddingSemantic.tail_native
+#print axioms ExactFourierCircuits.UniformRecursivePaddingSemantic.tail_spectator_array

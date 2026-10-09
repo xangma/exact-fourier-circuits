@@ -1,0 +1,8 @@
+import UniformRecursiveWholeValues
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformNativeHandlerSemantics.arrayValues.eq_1
+#print axioms ExactFourierCircuits.UniformRecursiveWholeValues.suffix_congr
+#print axioms ExactFourierCircuits.UniformRecursiveWholeValues.suffix_values

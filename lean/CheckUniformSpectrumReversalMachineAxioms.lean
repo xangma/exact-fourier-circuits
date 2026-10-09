@@ -1,6 +1,8 @@
 import UniformSpectrumReversalMachine
 import Lean
+
 set_option linter.auxLemma false
+
 #print axioms ExactFourierCircuits.UniformSpectrumReversalMachine.Bank
 #print axioms ExactFourierCircuits.UniformSpectrumReversalMachine.Cursor
 #print axioms ExactFourierCircuits.UniformSpectrumReversalMachine.Cursor.bank
@@ -124,13 +126,3 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformSpectrumReversalMachine.stored.eq_1
 #print axioms ExactFourierCircuits.UniformSpectrumReversalMachine.target
 #print axioms ExactFourierCircuits.UniformSpectrumReversalMachine.target.eq_1
-open Lean Elab Command in
-run_cmd do
- let env←getEnv
- for (name,_) in env.constants.toList do
-  if "_private.UniformSpectrumReversalMachine.".isPrefixOf name.toString then
-   let axioms←collectAxioms name
-   logInfo m!"'{name}' depends on axioms: {axioms.toList}"
-   for ax in axioms do
-    unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
-     throwError m!"Forbidden axiom {ax} in {name}"

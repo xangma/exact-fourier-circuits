@@ -1,0 +1,12 @@
+import UniformInverseMatchingFactorWholeExecution
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformInverseMatchingFactorPreparation.Result.withPC
+#print axioms ExactFourierCircuits.UniformInverseMatchingFactorPreparation.translationWithPC
+#print axioms ExactFourierCircuits.UniformInverseMatchingFactorPreparation.whole_execution
+#print axioms ExactFourierCircuits.UniformInverseMatchingFactorPreparation.whole_execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformInverseMatchingFactorPreparation.whole_execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformInverseMatchingFactorPreparation.whole_execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformInverseMatchingFactorPreparation.whole_execution._proof_1_4

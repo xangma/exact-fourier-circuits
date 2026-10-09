@@ -8,6 +8,11 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime,timezone
 import os,re,json,hashlib,subprocess
 R=Path(__file__).resolve().parents[1];D=R/'logs/uniform-forward-factor-normal-agent-20261009';D.mkdir(parents=True,exist_ok=True)
+# Historical component reports remain archived; the current command verifies the closed normal theorem.
+import sys
+if json.loads((R/'lean/UNIFORM_CHECKS.json').read_text()).get('closed_uniform_algorithm') is not None:
+ print('Historical component report preserved; running the current closed-theorem verifier.',flush=True)
+ raise SystemExit(subprocess.call([sys.executable,str(R/'scripts/verify-uniform-final.py'),*sys.argv[1:]]))
 J=R/'logs/uniform-bytecode/forward-matching-factor';J.mkdir(parents=True,exist_ok=True)
 mods=[m for m in json.loads((R/'verification/uniform-operational-modules.json').read_text())['modules'] if m.startswith('UniformForwardMatchingFactor')];assert len(mods)==11
 reg=json.loads((R/'lean/UNIFORM_CHECKS.json').read_text());assert reg['closed_uniform_algorithm'] is None

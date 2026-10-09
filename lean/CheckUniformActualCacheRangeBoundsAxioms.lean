@@ -1,0 +1,25 @@
+import UniformActualCacheRangeBounds
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCacheRangeBounds.layout
+#print axioms ExactFourierCircuits.UniformActualCacheRangeBounds.layout._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualCacheRangeBounds.layout._proof_1_2
+#print axioms ExactFourierCircuits.UniformActualCacheRangeBounds.layout._proof_1_3
+#print axioms ExactFourierCircuits.UniformActualCacheRangeBounds.layout._proof_1_4
+#print axioms ExactFourierCircuits.UniformActualCacheRangeBounds.layout._proof_1_5
+#print axioms ExactFourierCircuits.UniformActualCacheRangeBounds.layout._proof_1_6
+#print axioms ExactFourierCircuits.UniformActualCacheRangeBounds.layout._proof_1_7
+#print axioms ExactFourierCircuits.UniformActualCacheRangeBounds.layout._proof_1_8
+#print axioms ExactFourierCircuits.UniformActualCacheRangeBounds.node_end
+#print axioms ExactFourierCircuits.UniformActualCacheRangeBounds.node_end._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualCacheRangeBounds.node_end._proof_1_2
+#print axioms ExactFourierCircuits.UniformActualCacheRangeBounds.node_end._proof_1_3
+#print axioms ExactFourierCircuits.UniformActualCacheRangeBounds.node_length
+#print axioms ExactFourierCircuits.UniformActualCacheRangeBounds.node_total
+#print axioms ExactFourierCircuits.UniformActualCacheRangeBounds.node_total._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualCacheRangeBounds.nodes_bound
+#print axioms ExactFourierCircuits.UniformActualCacheRangeBounds.total_capacity
+#print axioms ExactFourierCircuits.UniformActualCacheRangeBounds.total_capacity._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualCacheRangeBounds.total_eq_sum

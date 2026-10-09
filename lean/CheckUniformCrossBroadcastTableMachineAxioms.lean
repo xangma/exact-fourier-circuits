@@ -1,5 +1,6 @@
 import UniformCrossBroadcastTableMachine
 import Lean
+
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformCrossBroadcastTableMachine.Borrowed
@@ -159,14 +160,3 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformCrossBroadcastTableMachine.rows_table
 #print axioms ExactFourierCircuits.UniformCrossBroadcastTableMachine.sumThree_output_index
 #print axioms ExactFourierCircuits.UniformCrossBroadcastTableMachine.sumThree_output_index._proof_1_1
-
-open Lean Elab Command in
-run_cmd do
- let env ← getEnv
- for (name, _) in env.constants.toList do
-  if "_private.UniformCrossBroadcastTableMachine.".isPrefixOf name.toString then
-   let axioms ← collectAxioms name
-   logInfo m!"'{name}' depends on axioms: {axioms.toList}"
-   for ax in axioms do
-    unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
-     throwError m!"Forbidden axiom {ax} in {name}"

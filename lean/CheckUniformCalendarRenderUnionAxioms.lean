@@ -1,0 +1,7 @@
+import UniformCalendarRenderUnion
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarRenderUnion.blocks_perturbations
+#print axioms ExactFourierCircuits.UniformCalendarRenderUnion.embedded_blocks_perturbations

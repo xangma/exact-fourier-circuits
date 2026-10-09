@@ -1,0 +1,37 @@
+import UniformProducedAllAxisGeometry
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.Geometry.mk.congr_simp
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.Family
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.Family._sizeOf_1
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.Family._sizeOf_inst
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.Family.casesOn
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.Family.ctorIdx
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.Family.mk
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.Family.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.Family.mk.inj
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.Family.mk.injEq
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.Family.mk.noConfusion
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.Family.mk.sizeOf_spec
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.Family.noConfusion
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.Family.noConfusionType
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.Family.permutations
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.Family.physical
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.Family.pool
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.Family.pools
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.Family.radix_eq
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.Family.rec
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.Family.recOn
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.Family.value
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.Family.widths
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.axes_length
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.geometry
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.geometry._proof_1
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.geometry._proof_2
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.geometry.eq_1
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.index
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.placement
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.shape
+#print axioms ExactFourierCircuits.UniformProducedAllAxisGeometry.volume

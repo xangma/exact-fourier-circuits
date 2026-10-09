@@ -1,0 +1,9 @@
+import UniformActualClockRealInduction
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualClockRealInduction.clocks
+#print axioms ExactFourierCircuits.UniformActualClockRealInduction.segments
+#print axioms ExactFourierCircuits.UniformActualClockRealInduction.segments._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualClockRealInduction.segments._proof_1_2

@@ -1,0 +1,49 @@
+import UniformTransposeCalendar
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.calendar
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.calendar._f
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.calendar._sunfold
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.calendar._unsafe_rec
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.calendar.congr_simp
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.calendar.eq_1
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.calendar.eq_2
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.calendar.eq_def
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.calendar.match_1
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.calendar_tick
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.calendar_tick._abel_1_11
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.calendar_tick._abel_1_14
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.calendar_tick._abel_1_5
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.calendar_tick._abel_1_8
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.calendar_tick._proof_1_10
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.calendar_tick._proof_1_12
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.calendar_tick._proof_1_13
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.calendar_tick._proof_1_6
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.calendar_tick._proof_1_7
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.calendar_tick._proof_1_9
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.correctionPieces
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.correctionPieces.congr_simp
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.correctionPieces.eq_1
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.correction_tick
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.directPiece
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.directPiece._proof_1
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.directPiece.congr_simp
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.directPiece.eq_1
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.pairPiece
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.pairPiece._proof_1
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.pairPiece.congr_simp
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.pairPiece.eq_1
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.shifted_tick
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.shifted_tick._proof_1_1
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.shifted_tick._proof_1_2
+#print axioms ExactFourierCircuits.UniformTransposeCalendar.shifted_tick._proof_1_3
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformTransposeCalendar.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

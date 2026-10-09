@@ -1,0 +1,47 @@
+import UniformAxisCachePrepareProgram
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.allocator_code
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.destination
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.destinations
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.destinations._sparseCasesOn_1
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.destinations._sparseCasesOn_1.else_eq
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.destinations.eq_1
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.destinations.eq_2
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.destinations.eq_3
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.destinations.eq_4
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.destinations.match_1
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.halt_at
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.instDecidableDestination
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.instDecidableDestinations
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.instDecidableDestinations._proof_1
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.instDecidableDestinations._proof_10
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.instDecidableDestinations._proof_11
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.instDecidableDestinations._proof_12
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.instDecidableDestinations._proof_13
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.instDecidableDestinations._proof_14
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.instDecidableDestinations._proof_2
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.instDecidableDestinations._proof_3
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.instDecidableDestinations._proof_4
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.instDecidableDestinations._proof_5
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.instDecidableDestinations._proof_6
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.instDecidableDestinations._proof_7
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.instDecidableDestinations._proof_8
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.instDecidableDestinations._proof_9
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.installer_code
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.program
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.program.eq_1
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.program_destinations
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.program_keeps
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.program_length
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareProgram.program_natOnly
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformAxisCachePrepareProgram.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

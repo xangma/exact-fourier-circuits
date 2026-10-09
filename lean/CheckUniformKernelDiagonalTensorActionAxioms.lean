@@ -1,0 +1,13 @@
+import UniformKernelDiagonalTensorAction
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformKernelDiagonalTensorAction.Aligned
+#print axioms ExactFourierCircuits.UniformKernelDiagonalTensorAction.action
+#print axioms ExactFourierCircuits.UniformKernelDiagonalTensorAction.coordinate
+#print axioms ExactFourierCircuits.UniformKernelDiagonalTensorAction.coordinate._proof_1
+#print axioms ExactFourierCircuits.UniformKernelDiagonalTensorAction.monomial
+#print axioms ExactFourierCircuits.UniformKernelDiagonalTensorAction.multiplier
+#print axioms ExactFourierCircuits.UniformKernelDiagonalTensorAction.physical
+#print axioms ExactFourierCircuits.UniformKernelDiagonalTensorAction.stored

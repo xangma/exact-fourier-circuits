@@ -41,17 +41,32 @@ The Fourier conclusion applies at selected unbounded lengths, and supplies no
 floating-point error bound or practical faster FFT.
 
 This is the subsequential theorem documented in `math/lean/docs/130.md`, from
-the finite tensor paper. The explicit construction paper additionally claims a
-single deterministic algorithm at every length, with running time
-`O(n*(log n)^theta*(log log n)^(4-theta))`, including scalar preparation,
-schedule construction and indexing. That stronger theorem is not yet
-formalized here; only its finite saving construction feeds our checked bridge.
+the finite tensor paper. The companion's stronger all-length result is now
+proved by [UniformFinalDFTExecution.uniformDFT](../lean/UniformFinalDFTExecution.lean).
+One fixed finite program computes every positive-length DFT, with charged
+preparation, scheduling and indexing, in
+`O(n*(log n)^theta*(log log n)^(4-theta))` exact complex operations.
+The actual empty-state execution, final outputs, single root request and
+polynomial integer bound are joined in that proof. The coherent final audit,
+[independent Main audit](../verification/uniform-final-independent-main-audit.json)
+and [normal final verification](../verification/uniform-final-algorithm.json)
+pass. Reproduce the final theorem with `./scripts/verify-uniform.sh`.
 
 The word uses noncomputable finite coordinate and basis choices. The Python
 producer follows the paper but has no formal translation proof to this Lean
 word; its `kernel_verified=false` metadata therefore remains appropriate.
 Even the smaller `h=25` seed has billions of address bits. Materializing either
 saving seed or benchmarking its full Fourier implementation is infeasible.
+
+Relative to an O(n log n) FFT count, the uniform asymptotic factor is
+`(log log n)^(4-theta)/(log n)^(1-theta)`. The exact inequality
+`theta<1-2/10^13` proves a strict improvement with a very small certified gap.
+Enormous fixed constants prevent inferring a practical FFT crossover. Huge
+fixed role and recursion parameters remain symbolic in the uniform proof;
+none of our small benchmarks materializes its saving branch. Integer words
+are logarithmic in n, but exact complex arithmetic has unit cost in the model.
+The theorem supplies neither a complex bit-precision bound nor floating-point
+stability or GPU timing guarantees.
 
 ## What CUDA establishes
 

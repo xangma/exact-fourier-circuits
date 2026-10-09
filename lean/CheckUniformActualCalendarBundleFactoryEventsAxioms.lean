@@ -1,0 +1,11 @@
+import UniformActualCalendarBundleFactoryEvents
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.range_make_mpr
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.actual_node_make
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.actual_node_make._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.actual_rectangle_make
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.nodeIndex
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.nodeIndex._proof_1

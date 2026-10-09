@@ -1,0 +1,29 @@
+import UniformReplaySlotIndex
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformReplaySlotIndex.flatMap_get_offset
+#print axioms ExactFourierCircuits.UniformReplaySlotIndex.flatMap_get_offset._proof_1
+#print axioms ExactFourierCircuits.UniformReplaySlotIndex.flatMap_get_offset._proof_1_1
+#print axioms ExactFourierCircuits.UniformReplaySlotIndex.flatMap_get_offset._proof_2
+#print axioms ExactFourierCircuits.UniformReplaySlotIndex.ofFn_val
+#print axioms ExactFourierCircuits.UniformReplaySlotIndex.phaseSlots
+#print axioms ExactFourierCircuits.UniformReplaySlotIndex.phaseSlots.eq_1
+#print axioms ExactFourierCircuits.UniformReplaySlotIndex.phase_length
+#print axioms ExactFourierCircuits.UniformReplaySlotIndex.phases
+#print axioms ExactFourierCircuits.UniformReplaySlotIndex.phases.eq_1
+#print axioms ExactFourierCircuits.UniformReplaySlotIndex.phases_flatten
+#print axioms ExactFourierCircuits.UniformReplaySlotIndex.prefix_length
+#print axioms ExactFourierCircuits.UniformReplaySlotIndex.prefix_length._proof_1_3
+#print axioms ExactFourierCircuits.UniformReplaySlotIndex.prefix_length._proof_1_4
+#print axioms ExactFourierCircuits.UniformReplaySlotIndex.prefix_length._proof_1_5
+#print axioms ExactFourierCircuits.UniformReplaySlotIndex.prefix_length._proof_1_6
+#print axioms ExactFourierCircuits.UniformReplaySlotIndex.replay_get_phase
+#print axioms ExactFourierCircuits.UniformReplaySlotIndex.replay_get_phase._proof_1
+#print axioms ExactFourierCircuits.UniformReplaySlotIndex.replay_get_phase._proof_1_2
+#print axioms ExactFourierCircuits.UniformReplaySlotIndex.replay_get_phase._proof_2
+#print axioms ExactFourierCircuits.UniformReplaySlotIndex.slots_get
+#print axioms ExactFourierCircuits.UniformReplaySlotIndex.slots_ofFn
+#print axioms ExactFourierCircuits.UniformReplaySlotIndex.slots_ofFn._proof_1_1
+#print axioms ExactFourierCircuits.UniformReplaySlotIndex.slots_ofFn._proof_1_2

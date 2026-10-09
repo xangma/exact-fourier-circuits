@@ -1,0 +1,28 @@
+import UniformLocalStoredRequestLoopProgram
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.A.program
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.C.program
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.I.program
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.advance_code
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.axis_at
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.axis_at._proof_1_4
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.beforeAdvance
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.beforeAdvance.eq_1
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.beforeAdvance_length
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.beforeCache
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.beforeCache.eq_1
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.beforeCache_length
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.branch_at
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.branch_at._proof_1_4
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.cache_code
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.cursor_code
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.halt_at
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.halt_at._proof_1_2
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.program
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.program.eq_1
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.program_length
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.zero_at
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.zero_at._proof_1_4

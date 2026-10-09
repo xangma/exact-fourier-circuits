@@ -1,0 +1,15 @@
+import UniformDirectLeafCacheLeafProgram
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLeafProgram.halt_at
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLeafProgram.halt_at._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLeafProgram.loop_code
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLeafProgram.orientations_code
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLeafProgram.program
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLeafProgram.program.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLeafProgram.program_length
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLeafProgram.setup
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLeafProgram.setup_code
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLeafProgram.setup_length

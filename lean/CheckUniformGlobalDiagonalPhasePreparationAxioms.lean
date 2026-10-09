@@ -1,5 +1,6 @@
 import UniformGlobalDiagonalPhasePreparation
 import Lean
+
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformGlobalDiagonalPhasePreparation.Args

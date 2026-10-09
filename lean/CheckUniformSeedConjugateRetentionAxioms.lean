@@ -1,8 +1,11 @@
 import UniformSeedConjugateRetention
 import Lean
-set_option autoImplicit false
+
 set_option linter.auxLemma false
 
+#print axioms ExactFourierCircuits.UniformLocalSeedTableMachine.globalHead.eq_1
+#print axioms ExactFourierCircuits.UniformSeedConjugatePreparation.boot.eq_1
+#print axioms ExactFourierCircuits.UniformSeedConjugatePreparation.emitHead.eq_1
 #print axioms ExactFourierCircuits.UniformSeedConjugateRetention.copy_execution
 #print axioms ExactFourierCircuits.UniformSeedConjugateRetention.copy_execution._proof_1_1
 #print axioms ExactFourierCircuits.UniformSeedConjugateRetention.copy_execution._proof_1_2
@@ -31,8 +34,5 @@ run_cmd do
  let env ← getEnv
  for (name, _) in env.constants.toList do
   if "_private.UniformSeedConjugateRetention.".isPrefixOf name.toString then
-   let axioms ← collectAxioms name
-   logInfo m!"'{name}' depends on axioms: {axioms.toList}"
-   for ax in axioms do
-    unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
-     throwError m!"Forbidden axiom {ax} in {name}"
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

@@ -1,0 +1,33 @@
+import UniformActualClockEntry
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualClockEntry.Input
+#print axioms ExactFourierCircuits.UniformActualClockEntry.Input.allocator
+#print axioms ExactFourierCircuits.UniformActualClockEntry.Input.axisCount
+#print axioms ExactFourierCircuits.UniformActualClockEntry.Input.bound
+#print axioms ExactFourierCircuits.UniformActualClockEntry.Input.casesOn
+#print axioms ExactFourierCircuits.UniformActualClockEntry.Input.code
+#print axioms ExactFourierCircuits.UniformActualClockEntry.Input.constants
+#print axioms ExactFourierCircuits.UniformActualClockEntry.Input.horizon
+#print axioms ExactFourierCircuits.UniformActualClockEntry.Input.initialNat
+#print axioms ExactFourierCircuits.UniformActualClockEntry.Input.initialScalar
+#print axioms ExactFourierCircuits.UniformActualClockEntry.Input.length
+#print axioms ExactFourierCircuits.UniformActualClockEntry.Input.mk
+#print axioms ExactFourierCircuits.UniformActualClockEntry.Input.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformActualClockEntry.Input.natFrontier
+#print axioms ExactFourierCircuits.UniformActualClockEntry.Input.pc
+#print axioms ExactFourierCircuits.UniformActualClockEntry.Input.rec
+#print axioms ExactFourierCircuits.UniformActualClockEntry.Input.recOn
+#print axioms ExactFourierCircuits.UniformActualClockEntry.Input.scalarFrontier
+#print axioms ExactFourierCircuits.UniformActualClockEntry.Input.seed
+#print axioms ExactFourierCircuits.UniformActualClockEntry.Input.source
+#print axioms ExactFourierCircuits.UniformActualClockEntry.Input.volume
+#print axioms ExactFourierCircuits.UniformActualClockEntry.Numeric
+#print axioms ExactFourierCircuits.UniformActualClockEntry.Prepared
+#print axioms ExactFourierCircuits.UniformActualClockEntry.PreparedOutput
+#print axioms ExactFourierCircuits.UniformActualClockEntry.Source
+#print axioms ExactFourierCircuits.UniformActualClockEntry.roles
+#print axioms ExactFourierCircuits.UniformActualClockEntry.sourceBase
+#print axioms ExactFourierCircuits.UniformActualClockEntry.volume

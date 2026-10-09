@@ -1,0 +1,18 @@
+import UniformActualCacheRangeValues
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCacheRangeValues.canonical_values
+#print axioms ExactFourierCircuits.UniformActualCacheRangeValues.horizon_room
+#print axioms ExactFourierCircuits.UniformActualCacheRangeValues.horizon_room._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualCacheRangeValues.horizon_room._proof_1_2
+#print axioms ExactFourierCircuits.UniformActualCacheRangeValues.node_values
+#print axioms ExactFourierCircuits.UniformActualCacheRangeValues.node_values._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualCacheRangeValues.node_values._proof_1_2
+#print axioms ExactFourierCircuits.UniformActualCacheRangeValues.node_values._proof_1_3
+#print axioms ExactFourierCircuits.UniformActualCacheRangeValues.node_values._proof_1_5
+#print axioms ExactFourierCircuits.UniformActualCacheRangeValues.node_values._proof_1_6
+#print axioms ExactFourierCircuits.UniformActualCacheRangeValues.node_values._proof_1_7
+#print axioms ExactFourierCircuits.UniformActualCacheRangeValues.node_values._proof_1_8
+#print axioms ExactFourierCircuits.UniformDirectLeafForestLeafEnd.qs.eq_1

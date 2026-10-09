@@ -1,0 +1,8 @@
+import UniformCalendarScanAtoms
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarScanAtoms.atomEnumeration
+#print axioms ExactFourierCircuits.UniformCalendarScanAtoms.atom_event
+#print axioms ExactFourierCircuits.UniformCalendarScanAtoms.atom_index

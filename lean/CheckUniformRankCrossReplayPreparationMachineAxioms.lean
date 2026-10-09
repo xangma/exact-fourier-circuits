@@ -1,6 +1,29 @@
 import UniformRankCrossReplayPreparationMachine
+import Lean
+
 set_option linter.auxLemma false
 
+#print axioms ExactFourierCircuits.UniformDAGBucketMachine.Outside.eq_1
+#print axioms ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.rank.eq_1
+#print axioms ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.register.eq_1
+#print axioms ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.register.eq_10
+#print axioms ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.register.eq_11
+#print axioms ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.register.eq_12
+#print axioms ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.register.eq_13
+#print axioms ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.register.eq_14
+#print axioms ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.register.eq_15
+#print axioms ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.register.eq_16
+#print axioms ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.register.eq_17
+#print axioms ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.register.eq_18
+#print axioms ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.register.eq_19
+#print axioms ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.register.eq_2
+#print axioms ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.register.eq_3
+#print axioms ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.register.eq_4
+#print axioms ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.register.eq_5
+#print axioms ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.register.eq_6
+#print axioms ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.register.eq_7
+#print axioms ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.register.eq_8
+#print axioms ExactFourierCircuits.UniformRankCrossPreparationMachine.Parameters.register.eq_9
 #print axioms ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost
 #print axioms ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.casesOn
 #print axioms ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.BasePost.congr_simp
@@ -239,3 +262,11 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_execution_enriched._proof_1_2
 #print axioms ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_execution_enriched._proof_1_3
 #print axioms ExactFourierCircuits.UniformRankCrossReplayPreparationMachine.whole_execution_enriched._proof_1_4
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformRankCrossReplayPreparationMachine.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

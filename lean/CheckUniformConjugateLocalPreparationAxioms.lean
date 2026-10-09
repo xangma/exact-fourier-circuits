@@ -1,6 +1,6 @@
 import UniformConjugateLocalPreparation
 import Lean
-set_option autoImplicit false
+
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformConjugateLocalPreparation.ConjugateG

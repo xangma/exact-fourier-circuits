@@ -1,0 +1,19 @@
+import UniformLocalCacheRetainedPrefixes
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformLocalCacheContextConductor.Prefixes
+#print axioms ExactFourierCircuits.UniformLocalCacheContextConductor.Prefixes.bar
+#print axioms ExactFourierCircuits.UniformLocalCacheContextConductor.Prefixes.casesOn
+#print axioms ExactFourierCircuits.UniformLocalCacheContextConductor.Prefixes.mk
+#print axioms ExactFourierCircuits.UniformLocalCacheContextConductor.Prefixes.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformLocalCacheContextConductor.Prefixes.mu
+#print axioms ExactFourierCircuits.UniformLocalCacheContextConductor.Prefixes.nat
+#print axioms ExactFourierCircuits.UniformLocalCacheContextConductor.Prefixes.rec
+#print axioms ExactFourierCircuits.UniformLocalCacheContextConductor.Prefixes.recOn
+#print axioms ExactFourierCircuits.UniformLocalCacheContextConductor.Prefixes.scalar
+#print axioms ExactFourierCircuits.UniformLocalCacheContextConductor.prefix_frame
+#print axioms ExactFourierCircuits.UniformLocalCacheContextConductor.prefix_frame._proof_1_1
+#print axioms ExactFourierCircuits.UniformLocalCacheContextConductor.prefix_frame._proof_1_2
+#print axioms ExactFourierCircuits.UniformLocalCacheContextConductor.prefix_frame._proof_1_3

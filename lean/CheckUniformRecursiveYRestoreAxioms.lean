@@ -1,0 +1,36 @@
+import UniformRecursiveYRestore
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.Changed
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.Frame
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.Frame.casesOn
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.Frame.mk
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.Frame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.Frame.natHeap
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.Frame.natReg
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.Frame.outputs
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.Frame.rec
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.Frame.recOn
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.Frame.roots
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.Frame.scalarHeap
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.Frame.scalarReg
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.code
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.execution
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.generic_execution
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.generic_execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.jump
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.offset_append_of_mem
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.old_addresses
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.ops
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.ops.eq_1
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.order_append
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.previousOrder
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.previousOrder.eq_1
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.restore_frame
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.restore_frame._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.restore_frame._proof_1_3
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.restore_frame._proof_1_4
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.restore_frame._proof_1_5
+#print axioms ExactFourierCircuits.UniformRecursiveYRestore.restore_value

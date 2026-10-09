@@ -1,0 +1,6 @@
+import UniformJointInitializedKernelExecution
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformJointInitializedKernelExecution.execution

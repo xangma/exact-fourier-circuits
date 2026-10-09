@@ -1,0 +1,21 @@
+import UniformSelectedPhysicalCRT
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformPhysicalTensorFamily.coordinate.congr_simp
+#print axioms ExactFourierCircuits.UniformSelectedPhysicalCRT.ordinal_rho
+#print axioms ExactFourierCircuits.UniformSelectedPhysicalCRT.physicalAlpha
+#print axioms ExactFourierCircuits.UniformSelectedPhysicalCRT.physicalBeta
+#print axioms ExactFourierCircuits.UniformSelectedPhysicalCRT.physicalOrdinal
+#print axioms ExactFourierCircuits.UniformSelectedPhysicalCRT.physicalOrdinal.eq_1
+#print axioms ExactFourierCircuits.UniformSelectedPhysicalCRT.physical_action
+#print axioms ExactFourierCircuits.UniformSelectedPhysicalCRT.physical_fourier
+#print axioms ExactFourierCircuits.UniformSelectedPhysicalCRT.producedOrdinal
+#print axioms ExactFourierCircuits.UniformSelectedPhysicalCRT.producedOrdinal._proof_1
+#print axioms ExactFourierCircuits.UniformSelectedPhysicalCRT.producedOrdinal.eq_1
+#print axioms ExactFourierCircuits.UniformSelectedPhysicalCRT.producedOrdinal_eq
+#print axioms ExactFourierCircuits.UniformSelectedPhysicalCRT.retained_directory
+#print axioms ExactFourierCircuits.UniformSelectedPhysicalCRT.rho
+#print axioms ExactFourierCircuits.UniformSelectedPhysicalCRT.rho.eq_1
+#print axioms ExactFourierCircuits.UniformSelectedPhysicalCRT.rho_value

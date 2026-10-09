@@ -1,0 +1,14 @@
+import UniformActualCalendarAtomRecords
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarAtomRecords.forest_block
+#print axioms ExactFourierCircuits.UniformActualCalendarAtomRecords.forest_block._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualCalendarAtomRecords.leaf_durations
+#print axioms ExactFourierCircuits.UniformActualCalendarAtomRecords.leaf_prefix
+#print axioms ExactFourierCircuits.UniformActualCalendarAtomRecords.node_record
+#print axioms ExactFourierCircuits.UniformActualCalendarAtomRecords.node_record._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualCalendarAtomRecords.record_kind
+#print axioms ExactFourierCircuits.UniformActualCalendarAtomRecords.rectangle_records
+#print axioms ExactFourierCircuits.UniformCalendarActualAtoms.kind.eq_1

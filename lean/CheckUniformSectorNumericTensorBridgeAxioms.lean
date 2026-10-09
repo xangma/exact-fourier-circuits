@@ -1,0 +1,17 @@
+import UniformSectorNumericTensorBridge
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformSectorNumericTensorBridge.choiceIndex
+#print axioms ExactFourierCircuits.UniformSectorNumericTensorBridge.choiceIndex._proof_1
+#print axioms ExactFourierCircuits.UniformSectorNumericTensorBridge.choice_state
+#print axioms ExactFourierCircuits.UniformSectorNumericTensorBridge.choicesFintype
+#print axioms ExactFourierCircuits.UniformSectorNumericTensorBridge.native_tensor
+#print axioms ExactFourierCircuits.UniformSectorNumericTensorBridge.packed_mulVec
+#print axioms ExactFourierCircuits.UniformSectorNumericTensorBridge.payload_at_coordinate
+#print axioms ExactFourierCircuits.UniformSectorNumericTensorBridge.payload_packed
+#print axioms ExactFourierCircuits.UniformSectorNumericTensorBridge.physical_mulVec
+#print axioms ExactFourierCircuits.UniformSectorNumericTensorBridge.positionsFintype
+#print axioms ExactFourierCircuits.UniformSectorNumericTensorBridge.unpack_mulVec
+#print axioms ExactFourierCircuits.UniformSectorTensor.sectorMatrix.eq_1

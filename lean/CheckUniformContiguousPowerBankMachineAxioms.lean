@@ -1,6 +1,6 @@
 import UniformContiguousPowerBankMachine
+import Lean
 
--- This immutable audit includes generated auxiliary declarations.
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformContiguousPowerBankMachine.Cursor

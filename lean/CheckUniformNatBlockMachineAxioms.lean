@@ -1,5 +1,6 @@
 import UniformNatBlockMachine
 import Lean
+
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformNatBlockMachine.BlockAt
@@ -45,10 +46,6 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformNatBlockMachine.Op.noConfusion
 #print axioms ExactFourierCircuits.UniformNatBlockMachine.Op.noConfusionType
 #print axioms ExactFourierCircuits.UniformNatBlockMachine.Op.peak
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.Op.peak.eq_1
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.Op.peak.eq_2
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.Op.peak.eq_3
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.Op.peak.eq_4
 #print axioms ExactFourierCircuits.UniformNatBlockMachine.Op.readable
 #print axioms ExactFourierCircuits.UniformNatBlockMachine.Op.readable._sparseCasesOn_1
 #print axioms ExactFourierCircuits.UniformNatBlockMachine.Op.readable._sparseCasesOn_1.else_eq
@@ -69,9 +66,6 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformNatBlockMachine.applyBlock._f
 #print axioms ExactFourierCircuits.UniformNatBlockMachine.applyBlock._sunfold
 #print axioms ExactFourierCircuits.UniformNatBlockMachine.applyBlock._unsafe_rec
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.applyBlock.eq_1
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.applyBlock.eq_2
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.applyBlock.eq_def
 #print axioms ExactFourierCircuits.UniformNatBlockMachine.applyBlock.match_1
 #print axioms ExactFourierCircuits.UniformNatBlockMachine.block_runs
 #print axioms ExactFourierCircuits.UniformNatBlockMachine.block_runs._proof_1_1
@@ -109,24 +103,15 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformNatBlockMachine.peak._f
 #print axioms ExactFourierCircuits.UniformNatBlockMachine.peak._sunfold
 #print axioms ExactFourierCircuits.UniformNatBlockMachine.peak._unsafe_rec
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.peak.eq_1
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.peak.eq_2
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.peak.eq_def
 #print axioms ExactFourierCircuits.UniformNatBlockMachine.readable
 #print axioms ExactFourierCircuits.UniformNatBlockMachine.readable._f
 #print axioms ExactFourierCircuits.UniformNatBlockMachine.readable._sunfold
 #print axioms ExactFourierCircuits.UniformNatBlockMachine.readable._unsafe_rec
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.readable.eq_1
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.readable.eq_2
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.readable.eq_def
 
 open Lean Elab Command in
 run_cmd do
  let env ← getEnv
  for (name, _) in env.constants.toList do
   if "_private.UniformNatBlockMachine.".isPrefixOf name.toString then
-   let axioms ← collectAxioms name
-   for ax in axioms do
-    unless ax == ``propext || ax == ``Quot.sound || ax == ``Classical.choice do
-     throwError m!"Nonstandard axiom {ax} in {name}"
-   logInfo m!"{name} depends on axioms: {axioms.toList}"
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

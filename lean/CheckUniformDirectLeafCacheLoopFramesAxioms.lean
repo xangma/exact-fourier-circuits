@@ -1,0 +1,45 @@
+import UniformDirectLeafCacheLoopFrames
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.execution_nat
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.execution_saved
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.free
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.free._sparseCasesOn_1
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.free._sparseCasesOn_1.else_eq
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.free.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.free.eq_2
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.free.eq_3
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.free.eq_4
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.free.eq_5
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.free.match_1
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.free_body
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.free_body._proof_1_7
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.free_leaf
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.free_loop
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.free_orientations
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.free_relocate
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.keeps
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.keeps._proof_1_7
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.keeps_saved
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.keeps_saved._proof_1_7
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.savedFree
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.savedFree.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.savedFree.eq_2
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.savedFree.eq_3
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.savedFree.eq_4
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.savedFree.eq_5
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.saved_body
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.saved_free
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.saved_loop
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.saved_orientations
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopFrames.saved_relocate
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformDirectLeafCacheLoopFrames.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

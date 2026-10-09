@@ -1,0 +1,72 @@
+import UniformCacheTimingForwardRows
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.Cursor
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.Cursor.casesOn
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.Cursor.count
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.Cursor.mk
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.Cursor.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.Cursor.ordinal
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.Cursor.pc
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.Cursor.rec
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.Cursor.recOn
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.Cursor.rowIndex
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.Cursor.start
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.Cursor.toInit
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.Values
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.Values.head
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.Values.pc
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.loop
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.loop._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.loop._proof_1_10
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.loop._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.loop._proof_1_3
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.loop._proof_1_4
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.loop._proof_1_6
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.loop._proof_1_7
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.loop._proof_1_8
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.loop._proof_1_9
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.row_cursor
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.row_heap
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.row_regs
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.row_regs._proof_1_10
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.row_regs._proof_1_11
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.row_regs._proof_1_12
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.row_regs._proof_1_13
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.row_regs._proof_1_14
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.row_regs._proof_1_15
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.row_regs._proof_1_16
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.row_regs._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.row_regs._proof_1_3
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.row_regs._proof_1_4
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.row_regs._proof_1_5
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.row_regs._proof_1_6
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.row_regs._proof_1_7
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.row_regs._proof_1_8
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.row_regs._proof_1_9
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.row_tail
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.row_tail._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.writeStarts
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.writeStarts._f
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.writeStarts._sunfold
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.writeStarts._unsafe_rec
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.writeStarts.eq_1
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.writeStarts.eq_2
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.writeStarts.eq_def
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.writeStarts.match_1
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.writeStarts_outside
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.writeStarts_outside._proof_1_4
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.writeStarts_outside._proof_1_5
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.writeStarts_value
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardRows.writeStarts_value._proof_1_4
+#print axioms ExactFourierCircuits.UniformCacheTimingProgram.startRow.eq_1
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformCacheTimingForwardRows.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

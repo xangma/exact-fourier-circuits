@@ -1,0 +1,11 @@
+import UniformFourierAxisBoundaryBindings
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFourierAxisGeometry.boundary_arguments
+#print axioms ExactFourierCircuits.UniformFourierAxisGeometry.boundary_execution
+#print axioms ExactFourierCircuits.UniformFourierAxisGeometry.boundary_execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformFourierAxisGeometry.boundary_workspace
+#print axioms ExactFourierCircuits.UniformFourierAxisGeometry.natBase
+#print axioms ExactFourierCircuits.UniformFourierAxisGeometry.scalarBase

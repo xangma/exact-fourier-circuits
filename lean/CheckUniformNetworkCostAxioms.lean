@@ -1,50 +1,93 @@
 import UniformNetworkCost
+import Lean
 
-#print axioms ExactFourierCircuits.UniformNetworkCost.tableCharge
-#print axioms ExactFourierCircuits.UniformNetworkCost.layerUnit
-#print axioms ExactFourierCircuits.UniformNetworkCost.volume
-#print axioms ExactFourierCircuits.UniformNetworkCost.simultaneousCount
-#print axioms ExactFourierCircuits.UniformNetworkCost.recurrenceUnit
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformNetworkCost.axesFactor
+#print axioms ExactFourierCircuits.UniformNetworkCost.axesFactor.eq_1
+#print axioms ExactFourierCircuits.UniformNetworkCost.axesFactor_one_le
 #print axioms ExactFourierCircuits.UniformNetworkCost.baseUnit
-#print axioms ExactFourierCircuits.UniformNetworkCost.volume_pos
-#print axioms ExactFourierCircuits.UniformNetworkCost.simultaneousCount_base
-#print axioms ExactFourierCircuits.UniformNetworkCost.simultaneousCount_step
-#print axioms ExactFourierCircuits.UniformNetworkCost.simultaneousCount_recurrence
-#print axioms ExactFourierCircuits.UniformNetworkCost.simultaneousCount_base_bound
+#print axioms ExactFourierCircuits.UniformNetworkCost.binaryExponent_bound
+#print axioms ExactFourierCircuits.UniformNetworkCost.binaryExponent_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformNetworkCost.clog_nextPrime_bound
+#print axioms ExactFourierCircuits.UniformNetworkCost.clog_nextPrime_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformNetworkCost.clog_nextPrime_bound._proof_1_2
+#print axioms ExactFourierCircuits.UniformNetworkCost.clog_nextPrime_bound._proof_1_3
+#print axioms ExactFourierCircuits.UniformNetworkCost.clog_nextPrime_bound._proof_1_4
+#print axioms ExactFourierCircuits.UniformNetworkCost.exponentFactor_one_le
+#print axioms ExactFourierCircuits.UniformNetworkCost.input_isBigO_workingCost
+#print axioms ExactFourierCircuits.UniformNetworkCost.input_isBigO_workingCost._proof_1_1
+#print axioms ExactFourierCircuits.UniformNetworkCost.layerCount
+#print axioms ExactFourierCircuits.UniformNetworkCost.layerUnit
+#print axioms ExactFourierCircuits.UniformNetworkCost.logFactor
+#print axioms ExactFourierCircuits.UniformNetworkCost.logFactor.eq_1
+#print axioms ExactFourierCircuits.UniformNetworkCost.logFactor_one_le
+#print axioms ExactFourierCircuits.UniformNetworkCost.logFactor_one_le._proof_1_1
 #print axioms ExactFourierCircuits.UniformNetworkCost.networkConstant
 #print axioms ExactFourierCircuits.UniformNetworkCost.networkConstant_nonneg
-#print axioms ExactFourierCircuits.UniformNetworkCost.simultaneousCount_normalized_recurrence
-#print axioms ExactFourierCircuits.UniformNetworkCost.simultaneousCount_critical_bound
-#print axioms ExactFourierCircuits.UniformNetworkCost.singleCount
-#print axioms ExactFourierCircuits.UniformNetworkCost.singleConstant
-#print axioms ExactFourierCircuits.UniformNetworkCost.singleConstant_nonneg
-#print axioms ExactFourierCircuits.UniformNetworkCost.exponentFactor_one_le
-#print axioms ExactFourierCircuits.UniformNetworkCost.singleCount_bound
 #print axioms ExactFourierCircuits.UniformNetworkCost.perEntryCount
-#print axioms ExactFourierCircuits.UniformNetworkCost.perEntryMaximum
-#print axioms ExactFourierCircuits.UniformNetworkCost.singleCount_le_perEntry
-#print axioms ExactFourierCircuits.UniformNetworkCost.perEntryCount_le_maximum
 #print axioms ExactFourierCircuits.UniformNetworkCost.perEntryCount_bound
+#print axioms ExactFourierCircuits.UniformNetworkCost.perEntryCount_le_maximum
+#print axioms ExactFourierCircuits.UniformNetworkCost.perEntryCount_le_maximum._proof_1_1
+#print axioms ExactFourierCircuits.UniformNetworkCost.perEntryCount_le_maximum._proof_1_5
+#print axioms ExactFourierCircuits.UniformNetworkCost.perEntryMaximum
+#print axioms ExactFourierCircuits.UniformNetworkCost.perEntryMaximum._f
+#print axioms ExactFourierCircuits.UniformNetworkCost.perEntryMaximum._sunfold
+#print axioms ExactFourierCircuits.UniformNetworkCost.perEntryMaximum._unsafe_rec
+#print axioms ExactFourierCircuits.UniformNetworkCost.perEntryMaximum.eq_1
+#print axioms ExactFourierCircuits.UniformNetworkCost.perEntryMaximum.eq_2
+#print axioms ExactFourierCircuits.UniformNetworkCost.perEntryMaximum.eq_def
+#print axioms ExactFourierCircuits.UniformNetworkCost.perEntryMaximum.match_1
 #print axioms ExactFourierCircuits.UniformNetworkCost.perEntryMaximum_bound
-#print axioms ExactFourierCircuits.UniformNetworkCost.layerCount
-#print axioms ExactFourierCircuits.UniformNetworkCost.sector_partition_bound
-#print axioms ExactFourierCircuits.UniformNetworkCost.slotCount
-#print axioms ExactFourierCircuits.UniformNetworkCost.axesFactor
-#print axioms ExactFourierCircuits.UniformNetworkCost.logFactor
-#print axioms ExactFourierCircuits.UniformNetworkCost.axesFactor_one_le
-#print axioms ExactFourierCircuits.UniformNetworkCost.logFactor_one_le
-#print axioms ExactFourierCircuits.UniformNetworkCost.clog_nextPrime_bound
-#print axioms ExactFourierCircuits.UniformNetworkCost.slotCount_bound
-#print axioms ExactFourierCircuits.UniformNetworkCost.binaryExponent_bound
-#print axioms ExactFourierCircuits.UniformNetworkCost.workingCoreCount
 #print axioms ExactFourierCircuits.UniformNetworkCost.preparationCount
-#print axioms ExactFourierCircuits.UniformNetworkCost.workingCount
-#print axioms ExactFourierCircuits.UniformNetworkCost.workingConstant
-#print axioms ExactFourierCircuits.UniformNetworkCost.workingCost_nonneg
-#print axioms ExactFourierCircuits.UniformNetworkCost.workingCoreCount_bound
-#print axioms ExactFourierCircuits.UniformNetworkCost.workingCoreCount_isBigO
-#print axioms ExactFourierCircuits.UniformNetworkCost.input_isBigO_workingCost
+#print axioms ExactFourierCircuits.UniformNetworkCost.preparationCount.eq_1
 #print axioms ExactFourierCircuits.UniformNetworkCost.preparationCount_isLittleO_input
-#print axioms ExactFourierCircuits.UniformNetworkCost.workingCount_isBigO_workingCost
+#print axioms ExactFourierCircuits.UniformNetworkCost.recurrenceUnit
+#print axioms ExactFourierCircuits.UniformNetworkCost.sector_partition_bound
+#print axioms ExactFourierCircuits.UniformNetworkCost.simultaneousCount
+#print axioms ExactFourierCircuits.UniformNetworkCost.simultaneousCount._proof_1
+#print axioms ExactFourierCircuits.UniformNetworkCost.simultaneousCount._unsafe_rec
+#print axioms ExactFourierCircuits.UniformNetworkCost.simultaneousCount.eq_1
+#print axioms ExactFourierCircuits.UniformNetworkCost.simultaneousCount.eq_def
+#print axioms ExactFourierCircuits.UniformNetworkCost.simultaneousCount_base
+#print axioms ExactFourierCircuits.UniformNetworkCost.simultaneousCount_base_bound
+#print axioms ExactFourierCircuits.UniformNetworkCost.simultaneousCount_base_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformNetworkCost.simultaneousCount_critical_bound
+#print axioms ExactFourierCircuits.UniformNetworkCost.simultaneousCount_normalized_recurrence
+#print axioms ExactFourierCircuits.UniformNetworkCost.simultaneousCount_recurrence
+#print axioms ExactFourierCircuits.UniformNetworkCost.simultaneousCount_step
+#print axioms ExactFourierCircuits.UniformNetworkCost.singleConstant
+#print axioms ExactFourierCircuits.UniformNetworkCost.singleConstant._proof_1
+#print axioms ExactFourierCircuits.UniformNetworkCost.singleConstant_nonneg
+#print axioms ExactFourierCircuits.UniformNetworkCost.singleCount
+#print axioms ExactFourierCircuits.UniformNetworkCost.singleCount_bound
+#print axioms ExactFourierCircuits.UniformNetworkCost.singleCount_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformNetworkCost.singleCount_bound._proof_1_2
+#print axioms ExactFourierCircuits.UniformNetworkCost.singleCount_le_perEntry
+#print axioms ExactFourierCircuits.UniformNetworkCost.slotCount
+#print axioms ExactFourierCircuits.UniformNetworkCost.slotCount_bound
+#print axioms ExactFourierCircuits.UniformNetworkCost.tableCharge
+#print axioms ExactFourierCircuits.UniformNetworkCost.volume
+#print axioms ExactFourierCircuits.UniformNetworkCost.volume_pos
+#print axioms ExactFourierCircuits.UniformNetworkCost.workingConstant
+#print axioms ExactFourierCircuits.UniformNetworkCost.workingConstant._proof_1
+#print axioms ExactFourierCircuits.UniformNetworkCost.workingConstant._proof_2
+#print axioms ExactFourierCircuits.UniformNetworkCost.workingCoreCount
+#print axioms ExactFourierCircuits.UniformNetworkCost.workingCoreCount_bound
+#print axioms ExactFourierCircuits.UniformNetworkCost.workingCoreCount_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformNetworkCost.workingCoreCount_isBigO
+#print axioms ExactFourierCircuits.UniformNetworkCost.workingCoreCount_isBigO._proof_1_1
+#print axioms ExactFourierCircuits.UniformNetworkCost.workingCost_nonneg
+#print axioms ExactFourierCircuits.UniformNetworkCost.workingCount
+#print axioms ExactFourierCircuits.UniformNetworkCost.workingCount.eq_1
 #print axioms ExactFourierCircuits.UniformNetworkCost.workingCount_isBigO_paper
+#print axioms ExactFourierCircuits.UniformNetworkCost.workingCount_isBigO_workingCost
 #print axioms ExactFourierCircuits.UniformNetworkCost.workingCount_isLittleO_decimal
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformNetworkCost.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

@@ -1,0 +1,63 @@
+import UniformPhysicalCRTCoordinates
+import UniformFinalNumericJoin
+import UniformAllAxisSeedPreparation
+import UniformProducedPhysicalCoordinate
+set_option autoImplicit false
+namespace ExactFourierCircuits.UniformSelectedPhysicalCRT
+open UniformCRTTraversalCycle UniformGenericPhysicalCoordinate UniformMachine
+open OAI.ExactFourier
+open scoped BigOperators
+noncomputable section
+
+/-- The retained increasing selected-axis list is encoded in actual physical
+first-axis-most-significant tensor order. -/
+def physicalOrdinal (n:ℕ):((i:Fin (UniformAllAxisSeedPreparation.axisCount n))→Fin (radices n i))≃Fin (len n):=
+ (physical (radices n)).trans (finCongr (UniformSelectedCRT.radices_product n))
+/-- Coordinate of the genuine increasing-axis family, with only the proved
+volume cast; no independent axis-order or codec assumption. -/
+def producedOrdinal {n:ℕ} (f:UniformProducedAllAxisGeometry.Family n):
+ ((i:Fin (UniformAllAxisSeedPreparation.axisCount n))→Fin (radices n i))≃Fin (len n):=
+ (UniformPhysicalTensorFamily.coordinate
+  (UniformSectorPackingMachine.physicalAxes (UniformProducedAllAxisGeometry.geometry f).physical)
+  (UniformProducedAllAxisGeometry.index f) (UniformAllAxisSeedPreparation.radix n)
+  (UniformProducedAllAxisGeometry.shape f)).trans
+ (finCongr (((congrArg List.prod (UniformProducedPhysicalCoordinate.radices f)).trans
+  (by simp only[List.prod_ofFn])).trans (UniformSelectedCRT.radices_product n)))
+lemma producedOrdinal_eq {n:ℕ} (f:UniformProducedAllAxisGeometry.Family n):
+ producedOrdinal f=physicalOrdinal n:=by
+ ext ds
+ simpa only[producedOrdinal,physicalOrdinal,Equiv.trans_apply,finCongr_apply,Fin.val_cast]
+  using congrArg Fin.val (UniformProducedPhysicalCoordinate.actual_family f ds)
+def rho (n:ℕ):Fin (len n)≃Fin (len n):=
+ (physicalOrdinal n).symm.trans (ordinalEquiv n).symm
+def physicalAlpha (n:ℕ):Fin (len n)≃Fin (len n):=(rho n).trans (alphaPermutation n)
+def physicalBeta (n:ℕ):Fin (len n)≃Fin (len n):=(rho n).trans (betaPermutation n)
+lemma rho_value (n:ℕ) (p:Fin (len n)):
+ (rho n p).val=UniformPhysicalCRTArithmetic.normal (radices n) p.val:=by
+ change (UniformPhysicalCRTCoordinates.rho (radices n) (UniformSelectedCRT.radix_pos n)
+  ((finCongr (UniformSelectedCRT.radices_product n)).symm p)).val=_
+ exact UniformPhysicalCRTCoordinates.rho_value _ _ _
+lemma ordinal_rho (n:ℕ):(rho n).trans (ordinalEquiv n)=(physicalOrdinal n).symm:=by
+ ext p
+ simp only[rho,Equiv.trans_apply,Equiv.apply_symm_apply]
+lemma physical_fourier (n:ℕ):
+ UniformFinalNumericJoin.physicalFourier (physicalAlpha n) (physicalBeta n)=
+ Matrix.reindex (physicalOrdinal n) (physicalOrdinal n)
+  (PiTensor.matrix (fun i:Fin (UniformAllAxisSeedPreparation.axisCount n)=>fourierMatrix (radices n i))):=by
+ have h:=UniformFinalNumericJoin.crt_physical_matrix n (rho n)
+ rw[ordinal_rho] at h
+ exact h
+lemma physical_action (n:ℕ) (f:Fin (len n)→ℂ) (p:Fin (len n)):
+ (UniformFinalNumericJoin.physicalFourier (physicalAlpha n) (physicalBeta n)).mulVec
+  (fun q=>f (physicalAlpha n q)) p=(fourierMatrix (len n)).mulVec f (physicalBeta n p):=
+ UniformFinalNumericJoin.physicalFourier_action _ _ _ _
+
+/-- The decoder's radix reads are conclusions of genuine retained startup
+seed directory cells, rather than a supplied coordinate conversion table. -/
+lemma retained_directory (n:ℕ) (s:State)
+ (retained:UniformAllAxisSeedPreparation.Retained n (UniformAllAxisSeedPreparation.axisCount n) s):
+ ∀i:Fin (UniformAllAxisSeedPreparation.axisCount n),s.natHeap (UniformAllAxisSeedPreparation.directoryBase n+2*i.val+1)=some (radices n i):=by
+ intro i
+ exact retained.width i i.isLt
+end
+end ExactFourierCircuits.UniformSelectedPhysicalCRT

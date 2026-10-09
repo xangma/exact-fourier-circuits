@@ -1,0 +1,8 @@
+import UniformActualClockHeaderInputs
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualClockHeaderInputs.diagonal_input
+#print axioms ExactFourierCircuits.UniformActualClockHeaderInputs.kernel_input
+#print axioms ExactFourierCircuits.UniformActualClockHeaderInputs.source

@@ -1,0 +1,44 @@
+import UniformFinalAxisRetention
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.Frame
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.Frame.all
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.Frame.cache
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.Frame.casesOn
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.Frame.inputs
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.Frame.inputs._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.Frame.inputs._proof_1_2
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.Frame.inputs._proof_1_3
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.Frame.inputs._proof_1_4
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.Frame.inputs._proof_1_5
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.Frame.mk
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.Frame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.Frame.natHigh
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.Frame.natLow
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.Frame.outputs
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.Frame.rec
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.Frame.recOn
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.Frame.refl
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.Frame.registers
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.Frame.roots
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.Frame.scalarHigh
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.Frame.scalarLow
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.Frame.trans
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.frame
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.frame._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.frame._proof_1_10
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.frame._proof_1_11
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.frame._proof_1_12
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.frame._proof_1_13
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.frame._proof_1_14
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.frame._proof_1_15
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.frame._proof_1_2
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.frame._proof_1_3
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.frame._proof_1_4
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.frame._proof_1_5
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.frame._proof_1_6
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.frame._proof_1_7
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.frame._proof_1_8
+#print axioms ExactFourierCircuits.UniformFinalAxisRetention.frame._proof_1_9

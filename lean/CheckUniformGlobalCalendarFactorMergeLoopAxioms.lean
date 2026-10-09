@@ -1,0 +1,49 @@
+import UniformGlobalCalendarFactorMergeLoop
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.Args
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.Args.casesOn
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.Args.laneReg
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.Args.mk
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.Args.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.Args.output
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.Args.pool
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.Args.radix
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.Args.rec
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.Args.recOn
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.Factors.storeProduct
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.Factors.storeProduct._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.Tail.storeProduct
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.Tail.storeProduct._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.Tail.storeProduct._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.boot.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.boot_header
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.execution
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.loop
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.loop._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.loop._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.loop._proof_1_3
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.loop._proof_1_4
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.loop._proof_1_5
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.loop._proof_1_6
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.loop._proof_1_7
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.loop._proof_1_8
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.loop._proof_1_9
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.mergeHeap.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.mergeHeap.eq_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarFactorMerge.mergeHeap.eq_def
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformGlobalCalendarFactorMergeLoop.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

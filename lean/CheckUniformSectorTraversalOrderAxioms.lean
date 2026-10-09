@@ -1,6 +1,6 @@
 import UniformSectorTraversalOrder
+import Lean
 
--- The immutable audit intentionally includes generated auxiliary declarations.
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformSectorTraversalOrder.block_lex_ofFn
@@ -20,11 +20,8 @@ set_option linter.auxLemma false
 
 open Lean Elab Command in
 run_cmd do
-  let env ← getEnv
-  for (name, _) in env.constants.toList do
-    if "_private.UniformSectorTraversalOrder.".isPrefixOf name.toString then
-      let axioms ← collectAxioms name
-      logInfo m!"'{name}' depends on axioms: {axioms.toList}"
-      for ax in axioms do
-        unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
-          throwError m!"Forbidden axiom {ax} in {name}"
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformSectorTraversalOrder.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

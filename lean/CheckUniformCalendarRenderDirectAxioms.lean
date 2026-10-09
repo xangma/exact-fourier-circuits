@@ -1,0 +1,20 @@
+import UniformCalendarRenderDirect
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarRenderDirect.direct_leaf_tick
+#print axioms ExactFourierCircuits.UniformCalendarRenderDirect.flatten_tick
+#print axioms ExactFourierCircuits.UniformCalendarRenderDirect.flatten_tick._proof_1_1
+#print axioms ExactFourierCircuits.UniformCalendarRenderDirect.flatten_tick._proof_1_2
+#print axioms ExactFourierCircuits.UniformCalendarRenderDirect.flatten_tick._proof_1_3
+#print axioms ExactFourierCircuits.UniformCalendarRenderDirect.flatten_tick._proof_1_4
+#print axioms ExactFourierCircuits.UniformCalendarRenderDirect.leaf_tick
+#print axioms ExactFourierCircuits.UniformCalendarRenderDirect.leaf_tick._simp_1_1
+#print axioms ExactFourierCircuits.UniformCalendarRenderDirect.operationLayers
+#print axioms ExactFourierCircuits.UniformCalendarRenderDirect.operationLayers.congr_simp
+#print axioms ExactFourierCircuits.UniformCalendarRenderDirect.operationLayers.eq_1
+#print axioms ExactFourierCircuits.UniformCalendarRenderDirect.operation_length
+#print axioms ExactFourierCircuits.UniformCalendarRenderDirect.scale_tick
+#print axioms ExactFourierCircuits.UniformCalendarRenderDirect.scale_tick._proof_1_1
+#print axioms ExactFourierCircuits.UniformCalendarRenderDirect.shear_tick

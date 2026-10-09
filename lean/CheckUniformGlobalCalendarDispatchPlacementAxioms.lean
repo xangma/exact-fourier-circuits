@@ -1,0 +1,11 @@
+import UniformGlobalCalendarDispatchPlacement
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.embed_code_at
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.factor_code
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.init_code
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.phasePrinter_code
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.phase_code
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.rows_code

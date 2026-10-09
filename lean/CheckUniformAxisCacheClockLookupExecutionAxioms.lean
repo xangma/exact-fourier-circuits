@@ -1,0 +1,44 @@
+import UniformAxisCacheClockLookupExecution
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.Frame
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.Frame.casesOn
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.Frame.mk
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.Frame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.Frame.natHeap
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.Frame.natReg
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.Frame.outputs
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.Frame.rec
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.Frame.recOn
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.Frame.roots
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.Frame.scalarHeap
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.Frame.scalarReg
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_10
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_11
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_12
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_13
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_14
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_15
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_16
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_17
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_18
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_19
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_20
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_21
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_22
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_23
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_24
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_25
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_26
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformAxisCacheClockLookup.execution._proof_1_9

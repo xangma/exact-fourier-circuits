@@ -1,0 +1,10 @@
+import UniformFourierAxisPrepareEpoch
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareEpoch.execution
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareEpoch.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareEpoch.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareEpoch.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareEpoch.execution._proof_1_4

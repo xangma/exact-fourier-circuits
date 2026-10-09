@@ -1,0 +1,7 @@
+import UniformRecursivePreparedRootPackage
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveRootPackage.PreparedResult
+#print axioms ExactFourierCircuits.UniformRecursiveRootPackage.finalize_prepared

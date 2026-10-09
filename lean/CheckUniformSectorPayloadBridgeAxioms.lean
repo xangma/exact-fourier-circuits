@@ -1,0 +1,28 @@
+import UniformSectorPayloadBridge
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformSectorPayloadBridge.Cover
+#print axioms ExactFourierCircuits.UniformSectorPayloadBridge.Cover._proof_1
+#print axioms ExactFourierCircuits.UniformSectorPayloadBridge.actual_cover
+#print axioms ExactFourierCircuits.UniformSectorPayloadBridge.actual_cover._proof_1_1
+#print axioms ExactFourierCircuits.UniformSectorPayloadBridge.actual_cover._proof_1_2
+#print axioms ExactFourierCircuits.UniformSectorPayloadBridge.getD_present
+#print axioms ExactFourierCircuits.UniformSectorPayloadBridge.interval_unique
+#print axioms ExactFourierCircuits.UniformSectorPayloadBridge.interval_unique._proof_1_1
+#print axioms ExactFourierCircuits.UniformSectorPayloadBridge.interval_unique._proof_1_2
+#print axioms ExactFourierCircuits.UniformSectorPayloadBridge.inverse_source
+#print axioms ExactFourierCircuits.UniformSectorPayloadBridge.location
+#print axioms ExactFourierCircuits.UniformSectorPayloadBridge.location.congr_simp
+#print axioms ExactFourierCircuits.UniformSectorPayloadBridge.location_spec
+#print axioms ExactFourierCircuits.UniformSectorPayloadBridge.payload
+#print axioms ExactFourierCircuits.UniformSectorPayloadBridge.payload.congr_simp
+#print axioms ExactFourierCircuits.UniformSectorPayloadBridge.payload.eq_1
+#print axioms ExactFourierCircuits.UniformSectorPayloadBridge.payloadFin
+#print axioms ExactFourierCircuits.UniformSectorPayloadBridge.payloadFin._proof_1
+#print axioms ExactFourierCircuits.UniformSectorPayloadBridge.payload_at
+#print axioms ExactFourierCircuits.UniformSectorPayloadBridge.payload_at._proof_1_1
+#print axioms ExactFourierCircuits.UniformSectorPayloadBridge.payload_at._proof_1_2
+#print axioms ExactFourierCircuits.UniformSectorPayloadBridge.payload_at._proof_1_3
+#print axioms ExactFourierCircuits.UniformSectorPayloadBridge.zero

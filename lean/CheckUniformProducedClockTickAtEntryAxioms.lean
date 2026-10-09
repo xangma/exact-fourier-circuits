@@ -1,0 +1,7 @@
+import UniformProducedClockTickAtEntry
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformProducedClockTickAtEntry.numeric
+#print axioms ExactFourierCircuits.UniformProducedClockTickAtEntry.prepared

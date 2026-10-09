@@ -1,0 +1,6 @@
+import UniformAxisCacheClockPreparation
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisCacheClockPreparation.execution

@@ -1,5 +1,6 @@
-import UniformFixedNetworkYRecordLoopMachine
+import UniformXorTranslationMachine
 import Lean
+
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformXorTranslationMachine.Bank
@@ -174,6 +175,4 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformXorTranslationMachine.translated.congr_simp
 #print axioms ExactFourierCircuits.UniformXorTranslationMachine.translated.eq_1
 #print axioms ExactFourierCircuits.UniformXorTranslationMachine.volume
-#print axioms ExactFourierCircuits.UniformXorTranslationMachine.volume.eq_1
 #print axioms ExactFourierCircuits.UniformXorTranslationMachine.xor_code
-#print axioms ExactFourierCircuits.UniformXorTranslationMachine.Changed.eq_1

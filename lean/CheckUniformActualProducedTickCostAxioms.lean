@@ -1,0 +1,8 @@
+import UniformActualProducedTickCost
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualProducedTickCost.entries_two
+#print axioms ExactFourierCircuits.UniformActualProducedTickCost.reserve_ticks
+#print axioms ExactFourierCircuits.UniformActualProducedTickCost.retention_bound

@@ -1,0 +1,12 @@
+import UniformAxisCacheFinalEnds
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisCacheFinalEnds.nat_end
+#print axioms ExactFourierCircuits.UniformAxisCacheFinalEnds.registers
+#print axioms ExactFourierCircuits.UniformAxisCacheFinalEnds.scalar_end
+#print axioms ExactFourierCircuits.UniformJointCacheAllocation.natEnd.eq_1
+#print axioms ExactFourierCircuits.UniformJointCacheAllocation.natTotal.eq_1
+#print axioms ExactFourierCircuits.UniformJointCacheAllocation.scalarEnd.eq_1
+#print axioms ExactFourierCircuits.UniformJointCacheAllocation.scalarTotal.eq_1

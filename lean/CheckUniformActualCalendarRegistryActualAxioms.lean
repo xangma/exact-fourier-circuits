@@ -1,0 +1,17 @@
+import UniformActualCalendarRegistryActual
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.cast
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.of_actual
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.of_actual._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.of_actual._proof_10
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.of_actual._proof_2
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.of_actual._proof_3
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.of_actual._proof_4
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.of_actual._proof_5
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.of_actual._proof_6
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.of_actual._proof_7
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.of_actual._proof_8
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.of_actual._proof_9

@@ -1,6 +1,10 @@
 import ConstructiveBridge
+import Lean
 
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.ConstructiveBridge.b_ne_zero
+#print axioms ExactFourierCircuits.ConstructiveBridge.finiteWin_of_word
 #print axioms ExactFourierCircuits.ConstructiveBridge.kernel_isUnit
 #print axioms ExactFourierCircuits.ConstructiveBridge.kernel_not_isMonomial
-#print axioms ExactFourierCircuits.ConstructiveBridge.finiteWin_of_word
 #print axioms ExactFourierCircuits.ConstructiveBridge.main_of_word

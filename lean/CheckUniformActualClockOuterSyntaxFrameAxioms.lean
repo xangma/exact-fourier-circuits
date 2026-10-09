@@ -1,0 +1,40 @@
+import UniformActualClockOuterSyntaxFrame
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.Safe
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.Safe.eq_1
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.Safe.match_1
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.SafeProgram
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.append_safe
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.avoids
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.bounded_execution
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.bounded_runs
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.checked
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.conductor_safe
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.conductor_safe._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.conductor_safe._proof_1_2
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.conductor_safe._proof_1_3
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.conductor_safe._proof_1_4
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.conductor_safe._proof_1_5
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.conductor_safe._proof_1_6
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.conductor_safe._proof_1_7
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.conductor_safe._proof_1_8
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.instDecidableSafe
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.instDecidableSafe._proof_1
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.instDecidableSafe._proof_2
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.instDecidableSafe._proof_3
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.kernel_safe
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.kernel_safe._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.program_safe
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.program_safe._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualClockOuterSyntaxFrame.relocated_safe
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformActualClockOuterSyntaxFrame.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

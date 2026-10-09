@@ -1,21 +1,54 @@
 import UniformRootExtractionMachine
+import Lean
 
-#print axioms ExactFourierCircuits.UniformRootExtractionMachine.head
-#print axioms ExactFourierCircuits.UniformRootExtractionMachine.program
-#print axioms ExactFourierCircuits.UniformRootExtractionMachine.program_length
-#print axioms ExactFourierCircuits.UniformRootExtractionMachine.prefix_code
-#print axioms ExactFourierCircuits.UniformRootExtractionMachine.power_code
-#print axioms ExactFourierCircuits.UniformRootExtractionMachine.store_at
-#print axioms ExactFourierCircuits.UniformRootExtractionMachine.halt_at
-#print axioms ExactFourierCircuits.UniformRootExtractionMachine.zero
-#print axioms ExactFourierCircuits.UniformRootExtractionMachine.ratio
-#print axioms ExactFourierCircuits.UniformRootExtractionMachine.loaded
-#print axioms ExactFourierCircuits.UniformRootExtractionMachine.store
+set_option linter.auxLemma false
+
 #print axioms ExactFourierCircuits.UniformRootExtractionMachine.Frame
-#print axioms ExactFourierCircuits.UniformRootExtractionMachine.loaded_frame
-#print axioms ExactFourierCircuits.UniformRootExtractionMachine.startup
-#print axioms ExactFourierCircuits.UniformRootExtractionMachine.execution
-#print axioms ExactFourierCircuits.UniformRootExtractionMachine.runtime_log_bound
-#print axioms ExactFourierCircuits.UniformRootExtractionMachine.Frame.saved
 #print axioms ExactFourierCircuits.UniformRootExtractionMachine.Frame.metadata
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.Frame.saved
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.execution
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.execution._proof_1_10
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.execution._proof_1_9
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.halt_at
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.head
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.head.eq_1
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.loaded
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.loaded.eq_1
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.loaded_frame
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.loaded_frame._proof_1_4
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.power_code
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.prefix_code
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.prefix_code._proof_1_2
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.program
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.program.eq_1
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.program_length
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.ratio
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.ratio.eq_1
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.runtime_log_bound
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.runtime_log_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.runtime_log_bound._proof_1_2
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.runtime_log_bound._proof_1_3
 #print axioms ExactFourierCircuits.UniformRootExtractionMachine.selected_execution
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.selected_execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.startup
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.startup._proof_1_1
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.startup._proof_1_2
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.startup._proof_1_3
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.startup._proof_1_4
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.store
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.store_at
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.zero
+#print axioms ExactFourierCircuits.UniformRootExtractionMachine.zero.eq_1
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformRootExtractionMachine.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

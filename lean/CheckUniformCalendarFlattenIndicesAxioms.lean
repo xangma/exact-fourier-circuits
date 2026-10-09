@@ -1,0 +1,11 @@
+import UniformCalendarFlattenIndices
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarFlattenIndices.get_order
+#print axioms ExactFourierCircuits.UniformCalendarFlattenIndices.get_order._proof_1_1
+#print axioms ExactFourierCircuits.UniformCalendarFlattenIndices.get_order._proof_1_2
+#print axioms ExactFourierCircuits.UniformCalendarFlattenIndices.order
+#print axioms ExactFourierCircuits.UniformCalendarFlattenIndices.order._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarFlattenIndices.order_val

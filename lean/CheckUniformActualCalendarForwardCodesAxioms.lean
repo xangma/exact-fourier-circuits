@@ -1,0 +1,14 @@
+import UniformActualCalendarForwardCodes
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarForwardCodes.layer_forward
+#print axioms ExactFourierCircuits.UniformActualCalendarForwardCodes.occurrences
+#print axioms ExactFourierCircuits.UniformActualCalendarForwardCodes.occurrences.eq_1
+#print axioms ExactFourierCircuits.UniformActualCalendarForwardCodes.occurrences_color
+#print axioms ExactFourierCircuits.UniformActualCalendarForwardCodes.row_values
+#print axioms ExactFourierCircuits.UniformActualCalendarForwardCodes.selectedCode
+#print axioms ExactFourierCircuits.UniformActualCalendarForwardCodes.selectedCode.eq_1
+#print axioms ExactFourierCircuits.UniformCalendarSelectedColors.chosen.eq_1
+#print axioms ExactFourierCircuits.UniformForwardMatchingFactorPreparation.selectedEdge.eq_1

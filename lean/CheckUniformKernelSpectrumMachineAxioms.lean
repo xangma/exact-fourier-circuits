@@ -1,5 +1,9 @@
 import UniformKernelSpectrumMachine
+import Lean
+
 set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFFTInputMachine.padded.eq_1
 #print axioms ExactFourierCircuits.UniformKernelSpectrumMachine.Context
 #print axioms ExactFourierCircuits.UniformKernelSpectrumMachine.Context.casesOn
 #print axioms ExactFourierCircuits.UniformKernelSpectrumMachine.Context.count

@@ -1,0 +1,30 @@
+import UniformFinalFiniteAxisState
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.AxisReady
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.AxisReady.allocatorFrontiers
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.AxisReady.cacheFrontiers
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.AxisReady.casesOn
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.AxisReady.directory
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.AxisReady.index
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.AxisReady.mk
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.AxisReady.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.AxisReady.natFrontier
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.AxisReady.pc
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.AxisReady.printed
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.AxisReady.ready
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.AxisReady.rec
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.AxisReady.recOn
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.AxisReady.retained
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.AxisReady.scalarFrontier
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.AxisReady.seed
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.allocator_slab
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.cache_next
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.clock
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.natAt_zero
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.scalarAt_zero
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.workspace_next
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.workspace_next._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisState.workspace_next._proof_1_2

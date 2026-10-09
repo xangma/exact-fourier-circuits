@@ -1,6 +1,6 @@
 import UniformForwardMatchingFactorExecution
+import Lean
 
--- Inventory uses the defining Lean module, including generated declarations.
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformForwardMatchingFactorPreparation.Result

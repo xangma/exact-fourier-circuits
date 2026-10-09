@@ -1,0 +1,15 @@
+import UniformCalendarNativeRootAction
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarNativeRootAction.Atoms
+#print axioms ExactFourierCircuits.UniformCalendarNativeRootAction.action
+#print axioms ExactFourierCircuits.UniformCalendarNativeRootAction.action._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarNativeRootAction.atomEvent
+#print axioms ExactFourierCircuits.UniformCalendarNativeRootAction.atomEvent.eq_1
+#print axioms ExactFourierCircuits.UniformCalendarNativeRootAction.macros
+#print axioms ExactFourierCircuits.UniformCalendarNativeRootAction.sourceMatch
+#print axioms ExactFourierCircuits.UniformCalendarNativeRootAction.sourceMatch._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarNativeRootAction.sourceMatch._proof_2
+#print axioms ExactFourierCircuits.UniformCalendarNativeRootAction.visits

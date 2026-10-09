@@ -1,0 +1,12 @@
+import UniformFastPhysicalCRTVisits
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTArithmetic.reverse_prefixVisits
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTArithmetic.reverse_totalVisits
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTArithmetic.reverse_valid
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTArithmetic.totalVisits_mono
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTArithmetic.two_valid
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTArithmetic.two_valid._proof_1_1
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTArithmetic.two_valid._proof_1_2

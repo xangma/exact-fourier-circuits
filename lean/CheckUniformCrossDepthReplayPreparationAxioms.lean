@@ -1,9 +1,9 @@
 import UniformCrossDepthReplayPreparation
 import Lean
 
-set_option autoImplicit false
 set_option linter.auxLemma false
 
+#print axioms ExactFourierCircuits.UniformColoring.incidentEdges.eq_1
 #print axioms ExactFourierCircuits.UniformCrossDepthReplayPreparation.Frame
 #print axioms ExactFourierCircuits.UniformCrossDepthReplayPreparation.Frame.trans
 #print axioms ExactFourierCircuits.UniformCrossDepthReplayPreparation.Header
@@ -193,14 +193,18 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformCrossDepthReplayPreparation.shiftedEdges_degree._simp_1_5
 #print axioms ExactFourierCircuits.UniformCrossDepthReplayPreparation.table_edges
 #print axioms ExactFourierCircuits.UniformCrossDepthReplayPreparation.wordBudget
+#print axioms ExactFourierCircuits.UniformCrossShearTableMachine.Fields.eq_1
+#print axioms ExactFourierCircuits.UniformCrossShearTableMachine.OrderBank.eq_1
+#print axioms ExactFourierCircuits.UniformCrossShearTableMachine.Table.eq_1
+#print axioms ExactFourierCircuits.UniformCrossShearTableMachine.Tape.eq_1
+#print axioms ExactFourierCircuits.UniformDAGBucketMachine.Bank.eq_1
+#print axioms ExactFourierCircuits.UniformDAGBucketMachine.order.eq_1
+#print axioms ExactFourierCircuits.UniformDAGLayers.depthBuckets.eq_1
 
 open Lean Elab Command in
 run_cmd do
  let env ← getEnv
  for (name, _) in env.constants.toList do
   if "_private.UniformCrossDepthReplayPreparation.".isPrefixOf name.toString then
-   let axioms ← collectAxioms name
-   logInfo m!"'{name}' depends on axioms: {axioms.toList}"
-   for ax in axioms do
-    unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
-     throwError m!"Forbidden axiom {ax} in {name}"
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

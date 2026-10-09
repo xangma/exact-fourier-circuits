@@ -1,0 +1,13 @@
+import UniformFourierAxisCommonBounds
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonBounds.actual_events_length
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonBounds.actual_tree_length
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonBounds.events_length
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonBounds.one_le_capacity
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonBounds.one_le_capacity._proof_1_1
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonBounds.records_count
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonBounds.reference_events_length
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonBounds.reference_tree_length

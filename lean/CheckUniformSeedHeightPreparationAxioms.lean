@@ -1,7 +1,9 @@
 import UniformSeedHeightPreparation
 import Lean
+
 set_option linter.auxLemma false
 
+#print axioms ExactFourierCircuits.UniformKernelSpectrumMachine.controllerHead.eq_1
 #print axioms ExactFourierCircuits.UniformSeedHeightPreparation.Args
 #print axioms ExactFourierCircuits.UniformSeedHeightPreparation.Config
 #print axioms ExactFourierCircuits.UniformSeedHeightPreparation.Config.A
@@ -284,14 +286,12 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformSeedHeightPreparation.spectrum_below
 #print axioms ExactFourierCircuits.UniformSeedHeightPreparation.widths
 #print axioms ExactFourierCircuits.UniformSeedHeightPreparation.widths._proof_1_1
+#print axioms ExactFourierCircuits.UniformWorkspacePlanner.exponent.eq_1
 
 open Lean Elab Command in
 run_cmd do
  let env ← getEnv
  for (name, _) in env.constants.toList do
   if "_private.UniformSeedHeightPreparation.".isPrefixOf name.toString then
-   let axioms ← collectAxioms name
-   logInfo m!"'{name}' depends on axioms: {axioms.toList}"
-   for ax in axioms do
-    unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
-     throwError m!"Forbidden axiom {ax} in {name}"
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

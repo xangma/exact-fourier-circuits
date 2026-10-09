@@ -1,0 +1,25 @@
+import UniformFourierAxisCommonResult
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonResult.Result
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonResult.Result.action
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonResult.Result.cached
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonResult.Result.casesOn
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonResult.Result.dispatch
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonResult.Result.footer
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonResult.Result.inputs
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonResult.Result.mk
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonResult.Result.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonResult.Result.natOutside
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonResult.Result.natReg
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonResult.Result.outputs
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonResult.Result.pc
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonResult.Result.rec
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonResult.Result.recOn
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonResult.Result.roots
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonResult.Result.scalarOutside
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonResult.Result.selections
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonResult.depth
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonResult.events

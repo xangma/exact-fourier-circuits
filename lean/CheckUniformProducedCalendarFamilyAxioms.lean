@@ -1,0 +1,17 @@
+import UniformProducedCalendarFamily
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformProducedCalendarFamily.family
+#print axioms ExactFourierCircuits.UniformProducedCalendarFamily.family._proof_1
+#print axioms ExactFourierCircuits.UniformProducedCalendarFamily.family._proof_2
+#print axioms ExactFourierCircuits.UniformProducedCalendarFamily.family._proof_3
+#print axioms ExactFourierCircuits.UniformProducedCalendarFamily.family_physical
+#print axioms ExactFourierCircuits.UniformProducedCalendarFamily.family_values
+#print axioms ExactFourierCircuits.UniformProducedCalendarFamily.physical
+#print axioms ExactFourierCircuits.UniformProducedCalendarFamily.physical._proof_1
+#print axioms ExactFourierCircuits.UniformProducedCalendarFamily.physical._proof_2
+#print axioms ExactFourierCircuits.UniformProducedCalendarFamily.physical_radix
+#print axioms ExactFourierCircuits.UniformProducedCalendarFamily.workspace_regions
+#print axioms ExactFourierCircuits.UniformProducedCalendarFamily.workspace_regions._proof_1_1

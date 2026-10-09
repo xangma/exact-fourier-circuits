@@ -1,0 +1,7 @@
+import UniformJointKernelHeaderInstallation
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformJointKernelHeaderInstallation.execution
+#print axioms ExactFourierCircuits.UniformJointKernelHeaderInstallation.input

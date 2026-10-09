@@ -1,0 +1,15 @@
+import UniformRecursiveBodyGeometry
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveBodyGeometry.geometry
+#print axioms ExactFourierCircuits.UniformRecursiveBodyGeometry.geometry._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveBodyGeometry.geometry._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveBodyGeometry.geometry._proof_1_3
+#print axioms ExactFourierCircuits.UniformRecursiveBodyGeometry.geometry._proof_1_4
+#print axioms ExactFourierCircuits.UniformRecursiveBodyGeometry.geometry._proof_1_5
+#print axioms ExactFourierCircuits.UniformRecursiveBodyGeometry.geometry._proof_1_6
+#print axioms ExactFourierCircuits.UniformRecursiveBodyGeometry.reserve_le
+#print axioms ExactFourierCircuits.UniformRecursiveBodyGeometry.reserve_le._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveBodyGeometry.reserve_le._proof_1_2

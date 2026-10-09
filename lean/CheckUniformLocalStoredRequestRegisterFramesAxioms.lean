@@ -1,0 +1,47 @@
+import UniformLocalStoredRequestRegisterFrames
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.S.advance
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.S.boot
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.S.directory
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.S.header
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.S.keeps
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.S.keeps._proof_1_2
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.S.keeps._proof_1_3
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.S.keeps._proof_1_4
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.S.keeps._proof_1_5
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.advanceClock
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.clockInstruction
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.clockInstruction._sparseCasesOn_1
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.clockInstruction._sparseCasesOn_1.else_eq
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.clockInstruction.eq_1
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.clockInstruction.eq_2
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.clockInstruction.eq_3
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.clockInstruction.eq_4
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.clockInstruction.eq_5
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.clockInstruction.match_1
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.clock_keeps
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.clock_keeps._proof_1_7
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.contextClock
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.context_keeps
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.cursorClock
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.execution_clock
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.program_keeps
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.program_keeps._proof_1_3
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.program_keeps._proof_1_4
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.program_keeps._simp_1_1
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.program_keeps._simp_1_2
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.rectangle_keeps
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.rectangle_keeps._proof_1_1
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.storedClock
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestRegisterFrames.stored_keeps
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformLocalStoredRequestRegisterFrames.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

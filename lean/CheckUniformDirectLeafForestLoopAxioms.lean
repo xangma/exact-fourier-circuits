@@ -1,0 +1,9 @@
+import UniformDirectLeafForestLoop
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafForestLoop.remaining
+#print axioms ExactFourierCircuits.UniformDirectLeafForestLoop.remaining._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestLoop.remaining._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirectLeafForestLoop.remaining._proof_1_3

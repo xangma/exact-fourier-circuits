@@ -1,0 +1,58 @@
+import UniformRecursiveRuntimeBridge
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.actualThreshold
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.actualThreshold.eq_1
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.baseTicks
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.baseTicks_bound
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.baseTicks_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.baseUnit
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.baseUnit_lower
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.base_array_bound
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.base_array_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.base_array_bound._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.base_array_bound._proof_1_3
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.base_weaken
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.batch_le_volume
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.chargedConstant
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.chargedCost
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.chargedCost_base
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.chargedCost_base_bound
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.chargedCost_critical_bound
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.chargedCost_isBigO
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.chargedCost_recurrence
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.chargedCost_step
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.costWithUnit
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.costWithUnit._proof_1
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.costWithUnit._unsafe_rec
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.costWithUnit.eq_1
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.costWithUnit.eq_def
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.costWithUnit_base
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.costWithUnit_recurrence
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.costWithUnit_step
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.exchange_bound
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.gather_bound
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.group_charge
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.inverse_bound
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.localUnit
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.nat_critical_bound
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.node_call_charge
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.preparationTicks
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.preparedY_bound
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.recurrenceUnit
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.scalar_bound
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.scalar_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.stepUnit
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.stepUnit_lower
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.step_weaken
+#print axioms ExactFourierCircuits.UniformRecursiveRuntimeBridge.translation_bound
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformRecursiveRuntimeBridge.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

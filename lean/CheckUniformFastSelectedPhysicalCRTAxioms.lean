@@ -1,0 +1,9 @@
+import UniformFastSelectedPhysicalCRT
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTArithmetic.rho_value
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTArithmetic.selected_normal
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTArithmetic.selected_prefixVisits
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTArithmetic.selected_totalVisits

@@ -1,148 +1,102 @@
-# Uniform proof checkpoint
+# Uniform theorem closeout
 
-The original selected-length theorem is verified. The stronger single fixed
-algorithm for every positive length is **still open**. The registry has 341
-modules and `closed_uniform_algorithm=null`; receipts retain
-`uniform_algorithm_verified=false`. The required final result is the
-unconditional `UniformMachine.UniformDFTStatement UniformExponent.theta`.
+The stronger all-length theorem is closed:
+[`UniformFinalDFTExecution.uniformDFT`](../lean/UniformFinalDFTExecution.lean)
+proves `UniformMachine.UniformDFTStatement UniformExponent.theta` without
+inputs or execution hypotheses. One fixed finite program computes the exact
+standard unnormalized DFT at every positive length.
 
-## Current verified work
+Its `execution hn x` theorem starts the actual 20-stage program from the empty
+initial state. It prepares the real caches, runs three complete Fourier clocks,
+retains the kernel spectrum, performs pointwise multiplication and CRT/output
+routing, and emits the DFT. The same execution has exactly one specified
+master-root request, a common polynomial integer/address bound and the
+charged fast runtime. No child, advance, global action, selected-count or
+cost-bound premise remains in the final theorem.
 
-**Twenty-nine recursive controller modules** pass a fresh normal-path audit
-of **2,552 defining-module declarations**, including 104 private declarations,
-with standard axioms and default proof limits. All 276 frozen inputs and 82
-artifacts match. The registry now contains 341 modules; its prior 312 entries
-remain unchanged. See the [module list](../verification/uniform-recursive-foundation-modules.json)
-and [receipt](../verification/uniform-recursive-foundations.json).
+The bound is `O(n*(log n)^theta*(log log n)^(4-theta))`, with `0<theta<1` and
+`theta<1-2/10^13`. Its exact complex unit-cost model and practical limits are
+specified in the [uniform contract](uniform-proof-contract.md).
 
-The four freshly exported native, residual-entry, padding-control and terminal
-suites pass **5,640 cases and 5,547,308 steps**, with 45 adverse controls.
-Reproduce with `python3 scripts/check-uniform-recursive-foundations.py`.
-These prove controller foundations, stack interfaces, native handlers and the
-terminal suffix. Complete numerical opcode0/5 execution and the recursive
-induction remain open.
+## Current verification status
 
-A kernel-checked generic residual exposes an integration defect: a norm-one
-weight-3 direction requires the opposite sign from its raw increasing/decreasing
-flag. This does not establish that the fixed seed contains that edge. A charged
-descriptor scan and its sign/cost proofs are implemented separately; the corrected
-common program and its consumers are being integrated. The frozen controller
-packet above does not certify the missing sign join or complete residual handler.
+The coherent frozen-source audit passes **1,271 modules and 82,513 declaration
+closures**: **79,030 public/generated and 3,483 private**. Only `propext`,
+`Quot.sound` and `Classical.choice` occur. The frozen hash checks and exact
+`UniformDFTStatement UniformExponent.theta` guard pass. All six final theorem
+modules pass fresh builds with default proof limits. Seven historical source
+files retain their prior limit options; the default-limit claim does not
+cover every source in the import cone.
 
-**Eleven forward-factor modules** pass a fresh normal-path audit of **671
-defining-module declarations** with only the standard three axioms, default
-proof limits and 283 frozen inputs. The actual 415/430-instruction producers
-read stored forward slots, derive translated matching endpoints and selected
-typed coefficients, and construct all nine diagonal pools for the tensor
-consumer. Their earlier physical `Processed`, coefficient-source and startup
-constant banks remain explicit entry conditions. This proves one factor
-producer; the complete cache loop and global execution remain open.
+The [normal final verification](../verification/uniform-final-algorithm.json)
+and [independent Main audit](../verification/uniform-final-independent-main-audit.json)
+also pass. The normal proof imports only the promoted project sources and
+pinned dependencies, with no scratch proof imports. It freshly checks Main,
+the exact target and the complete census. Its 1,270 reused project artifacts
+are accepted only after compiler, source, artifact and complete import-lineage
+checks against the coherent audit; one project Main is rebuilt, followed by
+an additional fresh normal Main check.
 
-Fresh exported bytecode passes **384 exact cases and 1,048,384 steps**, including
-320 positive matchings and all 415/430 instruction positions. There are 368
-typed K=0 cases and 16 generic K=1 diagnostics; the latter do not prove a typed
-K=1 producer. Seven negative controls also pass. Reproduce with
-`python3 scripts/check-uniform-forward-factor.py`; see the
-[forward-factor receipt](../verification/uniform-forward-factor-foundations.json).
+Reproduce the current final proof from the repository root:
 
-The preceding **23 operational modules** passed a separate source-stable audit
-of **2,274 declarations**, inventoried using Lean's defining-module metadata
-rather than namespace prefixes. This includes 49 private declarations and generated declarations outside the
-anticipated namespaces. The audit binds 284 inputs, permits only the same three standard axioms, verifies all
-51 upstream files and uses default proof limits. See the
-[module list](../verification/uniform-operational-modules.json) and
-[foundation receipt](../verification/uniform-operational-foundations.json).
+```sh
+./scripts/verify-uniform.sh
+# Force fresh compilation of all project modules:
+./scripts/verify-uniform.sh --rebuild-all
+```
 
-**Ten operational exact-bytecode suites pass 20,604 cases**. A separate
-physical inverse check verifies 21,845 exact matrix entries at q=0..7; the
-produced sector-transpose suite also checks 1,360 matrix entries. These entry
-checks are not additional execution cases. See the
-[bytecode receipt](../verification/uniform-operational-bytecode.json).
-Reproduce with `python3 scripts/check-uniform-operational-foundations.py` and
-`python3 scripts/check-uniform-operational-bytecode.py`; both reject changes to
-their frozen inputs. The new census is
-`verification/UniformOperationalCensus.lean`.
+The wrapper dispatches to `scripts/verify-uniform-final.py` for the closed
+registry. The normal receipt records `uniform_algorithm_verified=true`.
 
-| Operational component | Proved execution and boundary |
-|---|---|
-| Spectator suffix69 | Executes ordinary binary C only on the k-b suffix of all physical role arrays, retaining the low b coordinates. Its charged cost is linear when k-b<m. It does not replace the recursive low-q child. |
-| Native scalar106 and exchange98 | Read the actual variable-width records and act on all 2^k cells for k=q*m+r, including nonzero r. Scalar codes and signed pair order are preserved. |
-| Stored direct leaf orientations82 | Reads the genuine stored node width/offset and retained original [pool,radix] directory with charged instructions, then prints the real forward lower-Toeplitz word in descending row order, derives its count, and prints the reversed transposed word. Kernel addresses stay relative to the retained kernel prefix even at nonzero subtree offset. All retained coefficient lanes and directory cells survive in ordinary disjoint layouts. |
-| Physical copied inverse | Proves the inverse of the actual numeric copied C tensor is one forward q-bit child followed by low-q XOR with 2^q-1, independently in every spectator slice. This is matrix algebra; actual common-child execution remains required. |
-| Produced tensor diagonal131 | Reads the physical per-axis [radix,9r-pool] directory, constructs permutation/coefficient/axis-row banks, then traverses all W arrays. The full prepared pool family and complete synchronized schedule remain separate. |
-| Sector transpose movement | Actual gathers, child-entry preparation, restoring scatter and all-sector traversal preserve tagged values and outside storage. The continuous produced permutation caller identifies the action with the physical binary tensor. Its child-action premise remains explicit. |
+The complete-clock component receipt covers five modules and 63 defining-module
+closures, including three private declarations, with 1,235 frozen inputs. Its
+literal program proves boot, every finite axis, every clock iteration and the
+terminal branch/halt, with exact numeric values, prepared tags, retention and
+the actual `clockEnvelope` bound. The outer theorem supplies that clock's real
+entry conditions internally for all three transforms.
 
-The earlier source-stable focused audit of **46 newly registered modules**
-passed, including **4,720 public, generated and private declaration axiom
-closures**. Only `propext`, `Quot.sound` and `Classical.choice` occur. The receipt
-binds 381 inputs, verifies the 51 unchanged upstream files and pinned
-Lean/Mathlib, and records default proof limits. See
-[the module list](../verification/uniform-closeout-modules.json) and
-[the foundation receipt](../verification/uniform-closeout-foundations.json).
+No new CUDA measurement or giant saving-array execution accompanies these
+proofs. Existing [JAX/CUDA results](jax-investigation.md) keep their measured
+implementation boundaries.
 
-**Nine new normal-path exact-bytecode suites passed 12,329 cases**. They execute
-freshly exported literal Lean instructions with exact cyclotomic arithmetic,
-checking guards, data tags, frames and bounded integer words. There are no
-host-side writes between assembled phases. See
-[the bytecode receipt](../verification/uniform-closeout-bytecode.json).
+## Historical component audits
 
-From the repository root, reproduce these focused checks with
-`python3 scripts/check-uniform-closeout-foundations.py` and
-`python3 scripts/check-uniform-closeout-bytecode.py`. Both freeze their relevant
-inputs and reject source changes during verification. The combined environment
-census is saved in `verification/UniformCloseoutCensus.lean`.
+These receipts describe earlier source snapshots and component entry
+conditions. Their overlapping declaration counts must not be added together,
+and old `uniform_algorithm_verified=false` fields describe those historical
+packets rather than the new closed theorem.
 
-The previous 2026-10-08 aggregate audits remain historical evidence: 232 modules,
-30,079 distinct declaration closures, and 66 bytecode suites with 48,870 cases.
-Their [Lean](../verification/uniform-components.json) and
-[bytecode](../verification/uniform-bytecode-components.json) receipts bind 561
-and 366 inputs respectively. Neither is an aggregate audit of the current
-341-module registry; overlapping declaration scopes must not be added together.
+| Packet | Lean evidence | Exact diagnostics |
+|---|---|---|
+| Recursive foundations | 29 modules; 2,552 defining-module closures, 104 private; [receipt](../verification/uniform-recursive-foundations.json) | 5,640 cases, 5,547,308 steps and 45 adverse controls |
+| Forward factors | 11 modules; 671 defining-module closures; [receipt](../verification/uniform-forward-factor-foundations.json) | 384 cases, 1,048,384 steps, all 415/430 instruction positions and seven negative controls |
+| Operational foundations | 23 modules; 2,274 closures, 49 private; [receipt](../verification/uniform-operational-foundations.json) | 20,604 cases and 21,845 independent inverse entries; [bytecode receipt](../verification/uniform-operational-bytecode.json) |
+| Earlier closeout foundations | 46 modules; 4,720 closures; [receipt](../verification/uniform-closeout-foundations.json) | 12,329 cases; [bytecode receipt](../verification/uniform-closeout-bytecode.json) |
+| 2026-10-08 aggregate | 232 modules; 30,079 closures; [receipt](../verification/uniform-components.json) | 66 suites, 48,870 cases; [bytecode receipt](../verification/uniform-bytecode-components.json) |
 
-| Component | Proved execution and boundary |
-|---|---|
-| Small CRT axes | The actual fixed182 loop reads the retained CRT metadata and original935 root bank, executes every selected small axis through fixed161 gather/direct-transform/scatter, and preserves roots, metadata and external cells. Native mixed-radix address lemmas identify the output with the corresponding partial tensor of DFTs. For fixed threshold T, actual runtime is at most `(17+(T+1)*(8*T+165))*L`. Large-axis execution is separate. |
-| Primitive transforms | Fixed22 computes a direct Fourier array from an actual prepared root; fixed34 batches it. Fixed54 batches the ordinary binary C tensor. These prove exact numeric output, tags, frames and charged costs, but the ordinary binary algorithm does not establish recursive power saving. |
-| Physical matching preparation | Fixed23 translates actual row endpoints while retaining coefficient references. Fixed172 produces physical coefficient pools and diagonal banks from real rows and source coefficients. The native diagonal equals the proved matching-phase factor. The complete balanced cache and synchronized phase dispatcher are still required. |
-| Sector padding | Fixed205 derives counts and directories from actual rows, then copies the tagged source into role0 and prepares zero cells in all other W roles. It retains startup metadata, roots and unrelated storage and charges all transitions. It does not execute a recursive child transform. |
-| Residual movement | Fixed188 derives the residual permutation from the original nonzero direction descriptor. Fixed210 gathers through that produced permutation, with exact address coverage, value/tag preservation and outside frames. The general-k remainder controller and large-q recursive return are not part of this frozen bundle. |
-| Edge prototype | Fixed1410 constructs one unit matching across retained axes. At r=196 its chosen depth1 matching is empty. It is not the complete Fourier schedule; actual nonempty depth2 chunks require the full balanced compiler. |
+Historical entrypoints, retained for compatibility:
 
-| Exact suite | Cases |
-|---|---:|
-| Direct Fourier22 | 1,008 |
-| Binary batch54 | 480 |
-| Direct batch34 | 1,152 |
-| Translated rows23 | 208 |
-| Small axis161 | 624 |
-| Small axes182 | 384 |
-| Matching preparation172 | 2,916 |
-| Sector padding205 | 5,317 |
-| Residual gather210 | 240 |
+```sh
+python3 scripts/check-uniform-recursive-foundations.py
+python3 scripts/check-uniform-forward-factor.py
+python3 scripts/check-uniform-operational-foundations.py
+python3 scripts/check-uniform-operational-bytecode.py
+python3 scripts/check-uniform-closeout-foundations.py
+python3 scripts/check-uniform-closeout-bytecode.py
+```
 
-The small-axis suite uses genuine roots of orders3/5/8 in exact cyclotomic fields,
-including Phi60/Phi120. Sector diagnostics use physical W=1/2/3/5; fixed W=2^71
-is tested only through the Nat producers. They do not allocate the astronomical
-saving arrays. Prepared local coefficient banks and layouts remain the stated
-entry conditions. These are instruction-level diagnostics, not a full
-empty-state all-length Fourier execution or a CUDA speedup measurement.
+The four foundation proof scripts now forward a closed registry to the
+current final verifier; they do not regenerate the old checkpoint receipts.
+The bytecode scripts remain focused component diagnostics and were not rerun
+by final proof verification. Exact historical reproduction requires the
+matching source/configuration commit or packet; archived inputs are under
+`verification/historical-uniform-components-341`. Use the canonical command
+above for the current complete theorem.
 
-## What must close next
-
-1. Finish the physical balanced-tree cache compiler, including every rectangle,
-ragged chunk, depth, color, direct leaf and diagonal. Prove its complete schedule
-and charge the local preparation once.
-2. Finish the actual recursive return controller and opcode0/5 interpreter.
-For k=q*m+r, each saving node must call the same fixed q-bit child entry on all
-W arrays together, with q(m-1)+r spectator bits retained. W=2^71 and m=1,000,000
-remain symbolic. Replacing a large child by the ordinary binary transform does
-not yield the claimed exponent.
-3. Assemble synchronized tensor phases across all axes, sector movement,
-recursive calls, chirp/convolution, CRT transfer and output routing from the
-empty initial state. Derive one compatible allocation, polynomial word bound,
-exact DFT output and fast runtime for that same finite program.
-4. Register and audit the unconditional `UniformDFTStatement`. Only then may
-`uniform_algorithm_verified` become true.
-
-No new CUDA/JAX or FFT timing result is claimed by this checkpoint. Earlier
-numerical replication and plots keep their documented scope.
+The prior operational suites intentionally exercised component boundaries:
+prepared banks, supplied layouts, small exact cyclotomic roots and physical
+role counts W=1/2/3/5. The fixed W=2^71 saving arrays were not allocated.
+Diagnostics with synthetic larger-height data did not establish typed producer
+executions at that height. These limitations remain facts about those tests;
+the universal final Lean theorem is established by proof, not by extending
+the fixtures to astronomical saving instances.

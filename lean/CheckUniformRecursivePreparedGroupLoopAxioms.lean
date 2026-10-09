@@ -1,0 +1,27 @@
+import UniformRecursivePreparedGroupLoop
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveGroupLoop.PreparedBank
+#print axioms ExactFourierCircuits.UniformRecursiveGroupLoop.PreparedBank.advance
+#print axioms ExactFourierCircuits.UniformRecursiveGroupLoop.PreparedBank.advance._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveGroupLoop.PreparedBank.casesOn
+#print axioms ExactFourierCircuits.UniformRecursiveGroupLoop.PreparedBank.complete
+#print axioms ExactFourierCircuits.UniformRecursiveGroupLoop.PreparedBank.initial
+#print axioms ExactFourierCircuits.UniformRecursiveGroupLoop.PreparedBank.initial._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveGroupLoop.PreparedBank.mk
+#print axioms ExactFourierCircuits.UniformRecursiveGroupLoop.PreparedBank.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformRecursiveGroupLoop.PreparedBank.prepared
+#print axioms ExactFourierCircuits.UniformRecursiveGroupLoop.PreparedBank.rec
+#print axioms ExactFourierCircuits.UniformRecursiveGroupLoop.PreparedBank.recOn
+#print axioms ExactFourierCircuits.UniformRecursiveGroupLoop.PreparedBank.toBank
+#print axioms ExactFourierCircuits.UniformRecursiveGroupLoop.PreparedBank.withPC
+#print axioms ExactFourierCircuits.UniformRecursiveGroupLoop.loop_prepared
+#print axioms ExactFourierCircuits.UniformRecursiveGroupLoop.loop_prepared._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveGroupLoop.loop_prepared._proof_1_3
+#print axioms ExactFourierCircuits.UniformRecursiveGroupLoop.loop_prepared._proof_1_4
+#print axioms ExactFourierCircuits.UniformRecursiveGroupLoop.loop_prepared._proof_1_5
+#print axioms ExactFourierCircuits.UniformRecursiveGroupLoop.loop_prepared._simp_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveGroupLoop.loop_prepared._simp_1_6
+#print axioms ExactFourierCircuits.UniformRecursiveGroupLoop.loop_prepared._simp_1_7

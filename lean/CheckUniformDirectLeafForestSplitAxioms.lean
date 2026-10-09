@@ -1,0 +1,23 @@
+import UniformDirectLeafForestSplit
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafForestProgram.skip.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSplit.execution
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSplit.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSplit.execution._proof_1_10
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSplit.execution._proof_1_11
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSplit.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSplit.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSplit.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSplit.execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSplit.execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSplit.execution._proof_1_9
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSplit.finished
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSplit.finished.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSplit.frame
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSplit.heap
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSplit.nextCursor
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSplit.skipped
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSplit.skipped.eq_1

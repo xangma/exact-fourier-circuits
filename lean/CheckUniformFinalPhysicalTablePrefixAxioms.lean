@@ -1,0 +1,65 @@
+import UniformFinalPhysicalTablePrefix
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Frame
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Frame.casesOn
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Frame.mk
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Frame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Frame.natHeap
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Frame.natReg
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Frame.outputs
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Frame.rec
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Frame.recOn
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Frame.roots
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Frame.scalarHeap
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Frame.scalarReg
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Result
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Result.alpha
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Result.casesOn
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Result.core
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Result.data
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Result.headers
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Result.inverse
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Result.mk
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Result.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Result.rec
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Result.recOn
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Result.source
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.Result.tableArgs
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.execution
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.execution._proof_1_10
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.execution._proof_1_9
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.header_args_pc
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.header_code
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.table_args_frame
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.table_args_frame._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.table_args_frame._proof_1_10
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.table_args_frame._proof_1_11
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.table_args_frame._proof_1_12
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.table_args_frame._proof_1_2
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.table_args_frame._proof_1_3
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.table_args_frame._proof_1_4
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.table_args_frame._proof_1_5
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.table_args_frame._proof_1_6
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.table_args_frame._proof_1_7
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.table_args_frame._proof_1_8
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.table_args_frame._proof_1_9
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTablePrefix.table_code
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformFinalPhysicalTablePrefix.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

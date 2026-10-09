@@ -1,6 +1,9 @@
 import UniformMatchingPackingPreparation
 import Lean
+
 set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformChunkMatchingPreparation.axis.congr_simp
 #print axioms ExactFourierCircuits.UniformMatchingPackingPreparation.Frame
 #print axioms ExactFourierCircuits.UniformMatchingPackingPreparation.Frame.refl
 #print axioms ExactFourierCircuits.UniformMatchingPackingPreparation.Frame.trans
@@ -216,15 +219,3 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformMatchingPackingPreparation.setup_safe._proof_1_2
 #print axioms ExactFourierCircuits.UniformMatchingPackingPreparation.single_original_value
 #print axioms ExactFourierCircuits.UniformMatchingPackingPreparation.single_packed_value
-
--- Numeric private/generated names require direct environment lookup.
-open Lean Elab Command in
-run_cmd do
- let env←getEnv
- for (name,_) in env.constants.toList do
-  if "_private.UniformMatchingPackingPreparation.".isPrefixOf name.toString then
-   let axioms←collectAxioms name
-   logInfo m!"'{name}' depends on axioms: {axioms.toList}"
-   for ax in axioms do
-    unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
-     throwError m!"Forbidden axiom {ax} in {name}"

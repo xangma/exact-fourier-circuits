@@ -1,5 +1,6 @@
 import UniformSectorBatchDirectoryMachine
 import Lean
+
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformSectorBatchDirectoryMachine.BatchCell
@@ -214,3 +215,4 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformSectorBatchDirectoryMachine.written_step._proof_1_5
 #print axioms ExactFourierCircuits.UniformSectorBatchDirectoryMachine.written_step._proof_1_6
 #print axioms ExactFourierCircuits.UniformSectorBatchDirectoryMachine.written_step._proof_1_7
+#print axioms ExactFourierCircuits.UniformSectorMetadataMachine.Cell.eq_1

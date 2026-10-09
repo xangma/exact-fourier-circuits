@@ -1,0 +1,12 @@
+import UniformFinalCRTRoleSource
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFinalCRTRoleSource.execution
+#print axioms ExactFourierCircuits.UniformFinalCRTRoleSource.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformFinalCRTRoleSource.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformFinalCRTRoleSource.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformFinalCRTRoleSource.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformFinalCRTRoleSource.values
+#print axioms ExactFourierCircuits.UniformFinalCRTRoleSource.values.eq_1

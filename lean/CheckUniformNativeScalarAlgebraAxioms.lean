@@ -1,0 +1,15 @@
+import UniformNativeScalarAlgebra
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformNativeScalarAlgebra.embedded_shear
+#print axioms ExactFourierCircuits.UniformNativeScalarAlgebra.native_active_shear
+#print axioms ExactFourierCircuits.UniformNativeScalarAlgebra.native_active_shear_values
+#print axioms ExactFourierCircuits.UniformNativeScalarAlgebra.native_pointwise
+#print axioms ExactFourierCircuits.UniformNativeScalarAlgebra.original_pointwise
+#print axioms ExactFourierCircuits.UniformNativeScalarAlgebra.pointwise_at
+#print axioms ExactFourierCircuits.UniformNativeScalarAlgebra.pointwise_embedding
+#print axioms ExactFourierCircuits.UniformNativeScalarAlgebra.pointwise_reindex
+#print axioms ExactFourierCircuits.UniformNativeScalarAlgebra.spectator_pointwise_array
+#print axioms ExactFourierCircuits.UniformNativeScalarAlgebra.spectator_shear_values

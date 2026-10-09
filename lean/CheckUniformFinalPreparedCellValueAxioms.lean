@@ -1,0 +1,8 @@
+import UniformFinalPreparedCellValue
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFinalDataClockProduct.prepared_cell_value
+#print axioms ExactFourierCircuits.UniformFinalDataClockProduct.zero_role_product
+#print axioms ExactFourierCircuits.UniformFinalDataClockProduct.zero_role_transform

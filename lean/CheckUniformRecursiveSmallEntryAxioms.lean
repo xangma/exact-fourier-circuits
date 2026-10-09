@@ -1,0 +1,12 @@
+import UniformRecursiveSmallEntry
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveSmallEntry.execution
+#print axioms ExactFourierCircuits.UniformRecursiveSmallEntry.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveSmallEntry.nonroot_stack
+#print axioms ExactFourierCircuits.UniformRecursiveSmallEntry.nonroot_stack._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveSmallEntry.nonroot_stack._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveSmallEntry.nonroot_stack._proof_1_3
+#print axioms ExactFourierCircuits.UniformRecursiveSmallEntry.runs_same_end

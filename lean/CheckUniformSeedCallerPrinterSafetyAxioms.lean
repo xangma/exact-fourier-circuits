@@ -1,0 +1,36 @@
+import UniformSeedCallerPrinterSafety
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformSeedCallerPrinterSafety.Safe
+#print axioms ExactFourierCircuits.UniformSeedCallerPrinterSafety.Safe.eq_1
+#print axioms ExactFourierCircuits.UniformSeedCallerPrinterSafety.Safe.match_1
+#print axioms ExactFourierCircuits.UniformSeedCallerPrinterSafety.SafeProgram
+#print axioms ExactFourierCircuits.UniformSeedCallerPrinterSafety.append_safe
+#print axioms ExactFourierCircuits.UniformSeedCallerPrinterSafety.checked
+#print axioms ExactFourierCircuits.UniformSeedCallerPrinterSafety.decoder_patches_safe
+#print axioms ExactFourierCircuits.UniformSeedCallerPrinterSafety.decoder_safe
+#print axioms ExactFourierCircuits.UniformSeedCallerPrinterSafety.decoder_setup_safe
+#print axioms ExactFourierCircuits.UniformSeedCallerPrinterSafety.fixed_decoder_safe
+#print axioms ExactFourierCircuits.UniformSeedCallerPrinterSafety.fixed_program_eq
+#print axioms ExactFourierCircuits.UniformSeedCallerPrinterSafety.halt_safe
+#print axioms ExactFourierCircuits.UniformSeedCallerPrinterSafety.instDecidableSafe
+#print axioms ExactFourierCircuits.UniformSeedCallerPrinterSafety.instDecidableSafe._proof_1
+#print axioms ExactFourierCircuits.UniformSeedCallerPrinterSafety.instDecidableSafe._proof_2
+#print axioms ExactFourierCircuits.UniformSeedCallerPrinterSafety.instDecidableSafe._proof_3
+#print axioms ExactFourierCircuits.UniformSeedCallerPrinterSafety.printer_boot_safe
+#print axioms ExactFourierCircuits.UniformSeedCallerPrinterSafety.printer_cells_safe
+#print axioms ExactFourierCircuits.UniformSeedCallerPrinterSafety.printer_safe
+#print axioms ExactFourierCircuits.UniformSeedCallerPrinterSafety.reflexive_apply
+#print axioms ExactFourierCircuits.UniformSeedCallerPrinterSafety.relocated_safe
+#print axioms ExactFourierCircuits.UniformSeedCallerPrinterSafety.safe_avoids
+#print axioms ExactFourierCircuits.UniformSeedCallerPrinterSafety.safe_avoids._proof_1_2
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformSeedCallerPrinterSafety.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

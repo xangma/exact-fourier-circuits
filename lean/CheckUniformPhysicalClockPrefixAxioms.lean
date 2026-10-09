@@ -1,0 +1,16 @@
+import UniformPhysicalClockPrefix
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformPhysicalClockPrefix.endpoint
+#print axioms ExactFourierCircuits.UniformPhysicalClockPrefix.endpoint._proof_1_1
+#print axioms ExactFourierCircuits.UniformPhysicalClockPrefix.endpoint._proof_1_2
+#print axioms ExactFourierCircuits.UniformPhysicalClockPrefix.final
+#print axioms ExactFourierCircuits.UniformPhysicalClockPrefix.prefixProduct
+#print axioms ExactFourierCircuits.UniformPhysicalClockPrefix.prefixProduct.congr_simp
+#print axioms ExactFourierCircuits.UniformPhysicalClockPrefix.prefixProduct.eq_1
+#print axioms ExactFourierCircuits.UniformPhysicalClockPrefix.step
+#print axioms ExactFourierCircuits.UniformPhysicalClockPrefix.step_values
+#print axioms ExactFourierCircuits.UniformPhysicalClockPrefix.zero
+#print axioms ExactFourierCircuits.UniformPhysicalSynchronizedSchedule.slot.congr_simp

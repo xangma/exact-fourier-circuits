@@ -1,0 +1,16 @@
+import UniformDirectLeafHighFinal
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafHighFinal.final_leaf_time
+#print axioms ExactFourierCircuits.UniformDirectLeafHighFinal.final_partition
+#print axioms ExactFourierCircuits.UniformDirectLeafHighFinal.final_pool
+#print axioms ExactFourierCircuits.UniformDirectLeafHighFinal.final_time
+#print axioms ExactFourierCircuits.UniformDirectLeafHighFinal.records_elapsed
+#print axioms ExactFourierCircuits.UniformDirectLeafHighFinal.retained_conjugate
+#print axioms ExactFourierCircuits.UniformDirectLeafHighFinal.retained_conjugate._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafHighFinal.retained_conjugate._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirectLeafHighFinal.retained_original
+#print axioms ExactFourierCircuits.UniformDirectLeafHighFinal.retained_original._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafHighFinal.retained_original._proof_1_2

@@ -1,0 +1,10 @@
+import UniformCanonicalAxisCost
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCanonicalAxisCost.axisCost
+#print axioms ExactFourierCircuits.UniformCanonicalAxisCost.bound
+#print axioms ExactFourierCircuits.UniformCanonicalAxisCost.bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformCanonicalAxisCost.prep
+#print axioms ExactFourierCircuits.UniformCanonicalAxisCost.selected

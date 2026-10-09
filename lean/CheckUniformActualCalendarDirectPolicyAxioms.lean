@@ -1,0 +1,11 @@
+import UniformActualCalendarDirectPolicy
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectEvent.cached_policy
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectEvent.decoded
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectEvent.phase
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectEvent.phase._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectEvent.phase._proof_2
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectEvent.phase.eq_1

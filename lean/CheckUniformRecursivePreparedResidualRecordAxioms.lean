@@ -1,0 +1,8 @@
+import UniformRecursivePreparedResidualRecord
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveResidualRecord.execution_prepared
+#print axioms ExactFourierCircuits.UniformRecursiveResidualRecord.execution_prepared._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveResidualRecord.execution_prepared._proof_1_2

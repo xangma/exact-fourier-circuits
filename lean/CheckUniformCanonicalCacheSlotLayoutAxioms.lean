@@ -1,0 +1,42 @@
+import UniformCanonicalCacheSlotLayout
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.broadcast
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.broadcast._proof_1_1
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.broadcast._proof_1_2
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.broadcast._proof_1_3
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.broadcast._proof_1_4
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.broadcast._proof_1_5
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.broadcast._proof_1_6
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.broadcast._proof_1_7
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.broadcast._proof_1_8
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.broadcast._proof_1_9
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.cache
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.cache._proof_1_1
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.cache._proof_1_2
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.cache._proof_1_3
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.cache._proof_1_4
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.cache._proof_1_5
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.cache._proof_1_6
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.cache._proof_1_7
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.inputs
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.inputs._proof_1_1
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.inputs._proof_1_2
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.inputs._proof_1_3
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.inputs._proof_1_4
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.inputs._proof_1_5
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.inverse
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.inverse._proof_1_1
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.inverse._proof_1_2
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.inverse._proof_1_3
+#print axioms ExactFourierCircuits.UniformCanonicalCacheSlotLayout.linear
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformCanonicalCacheSlotLayout.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

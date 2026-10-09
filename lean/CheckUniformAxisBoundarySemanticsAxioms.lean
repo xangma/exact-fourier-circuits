@@ -1,0 +1,23 @@
+import UniformAxisBoundarySemantics
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisBoundarySemantics.boundary
+#print axioms ExactFourierCircuits.UniformAxisBoundarySemantics.boundary_action
+#print axioms ExactFourierCircuits.UniformAxisBoundarySemantics.boundary_action._proof_1
+#print axioms ExactFourierCircuits.UniformAxisBoundarySemantics.boundary_action._proof_2
+#print axioms ExactFourierCircuits.UniformAxisBoundarySemantics.empty_action
+#print axioms ExactFourierCircuits.UniformAxisBoundarySemantics.empty_action._proof_1
+#print axioms ExactFourierCircuits.UniformAxisBoundarySemantics.empty_action._proof_2
+#print axioms ExactFourierCircuits.UniformAxisBoundarySemantics.empty_action._proof_3
+#print axioms ExactFourierCircuits.UniformAxisBoundarySemantics.empty_action._proof_4
+#print axioms ExactFourierCircuits.UniformAxisBoundarySemantics.inactive
+#print axioms ExactFourierCircuits.UniformAxisBoundarySemantics.inactive_action
+#print axioms ExactFourierCircuits.UniformAxisBoundarySemantics.inactive_action._proof_1
+#print axioms ExactFourierCircuits.UniformAxisBoundarySemantics.inactive_clock
+#print axioms ExactFourierCircuits.UniformAxisBoundarySemantics.inactive_clock._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisBoundarySemantics.inactive_clock._proof_1_2
+#print axioms ExactFourierCircuits.UniformAxisBoundarySemantics.inactive_clock._proof_1_3
+#print axioms ExactFourierCircuits.UniformAxisBoundarySemantics.inactive_clock._proof_1_4
+#print axioms ExactFourierCircuits.UniformAxisBoundarySemantics.inactive_clock._proof_1_5

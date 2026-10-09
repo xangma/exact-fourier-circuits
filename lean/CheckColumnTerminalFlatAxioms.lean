@@ -1,17 +1,21 @@
 import ColumnTerminalFlat
+import Lean
 
-#print axioms ExactFourierCircuits.ColumnTerminalFlat.lineExponent
-#print axioms ExactFourierCircuits.ColumnTerminalFlat.perpExponent
-#print axioms ExactFourierCircuits.ColumnTerminalFlat.direction
-#print axioms ExactFourierCircuits.ColumnTerminalFlat.inverse_coordinates_column
-#print axioms ExactFourierCircuits.ColumnTerminalFlat.lineExponent_coordinates
-#print axioms ExactFourierCircuits.ColumnTerminalFlat.perpExponent_coordinates
-#print axioms ExactFourierCircuits.ColumnTerminalFlat.direction_dot
-#print axioms ExactFourierCircuits.ColumnTerminalFlat.weightModFour_coordinates
-#print axioms ExactFourierCircuits.ColumnTerminalFlat.terminal_phase
-#print axioms ExactFourierCircuits.ColumnTerminalFlat.terminal_frame_ratio
-#print axioms ExactFourierCircuits.ColumnTerminalFlat.sourceInverse
-#print axioms ExactFourierCircuits.ColumnTerminalFlat.sinkFrames
-#print axioms ExactFourierCircuits.ColumnTerminalFlat.correction
-#print axioms ExactFourierCircuits.ColumnTerminalFlat.corrected_source_sink_exchange
+set_option linter.auxLemma false
+
 #print axioms ExactFourierCircuits.ColumnTerminalFlat.corrected_of_endpoint
+#print axioms ExactFourierCircuits.ColumnTerminalFlat.corrected_source_sink_exchange
+#print axioms ExactFourierCircuits.ColumnTerminalFlat.correction
+#print axioms ExactFourierCircuits.ColumnTerminalFlat.direction
+#print axioms ExactFourierCircuits.ColumnTerminalFlat.direction._proof_1
+#print axioms ExactFourierCircuits.ColumnTerminalFlat.direction_dot
+#print axioms ExactFourierCircuits.ColumnTerminalFlat.inverse_coordinates_column
+#print axioms ExactFourierCircuits.ColumnTerminalFlat.lineExponent
+#print axioms ExactFourierCircuits.ColumnTerminalFlat.lineExponent_coordinates
+#print axioms ExactFourierCircuits.ColumnTerminalFlat.perpExponent
+#print axioms ExactFourierCircuits.ColumnTerminalFlat.perpExponent_coordinates
+#print axioms ExactFourierCircuits.ColumnTerminalFlat.sinkFrames
+#print axioms ExactFourierCircuits.ColumnTerminalFlat.sourceInverse
+#print axioms ExactFourierCircuits.ColumnTerminalFlat.terminal_frame_ratio
+#print axioms ExactFourierCircuits.ColumnTerminalFlat.terminal_phase
+#print axioms ExactFourierCircuits.ColumnTerminalFlat.weightModFour_coordinates

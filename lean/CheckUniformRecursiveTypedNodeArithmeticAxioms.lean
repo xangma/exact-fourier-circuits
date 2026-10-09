@@ -1,0 +1,10 @@
+import UniformRecursiveTypedNodeArithmetic
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveTypedNodeArithmetic.groups_at
+#print axioms ExactFourierCircuits.UniformRecursiveTypedNodeArithmetic.groups_at._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveTypedNodeArithmetic.node_charge
+#print axioms ExactFourierCircuits.UniformRecursiveTypedNodeArithmetic.quotient_at
+#print axioms ExactFourierCircuits.UniformRecursiveTypedNodeArithmetic.quotient_at._proof_1_1

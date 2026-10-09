@@ -1,50 +1,92 @@
 import InvocationBudget
+import Lean
 
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.InvocationBudget.actual_loss_total
+#print axioms ExactFourierCircuits.InvocationBudget.centerLoss
+#print axioms ExactFourierCircuits.InvocationBudget.centerLoss.eq_1
+#print axioms ExactFourierCircuits.InvocationBudget.centerLoss.eq_2
+#print axioms ExactFourierCircuits.InvocationBudget.centerLoss_sum
+#print axioms ExactFourierCircuits.InvocationBudget.centralDecrease
+#print axioms ExactFourierCircuits.InvocationBudget.centralDecrease._sparseCasesOn_1
+#print axioms ExactFourierCircuits.InvocationBudget.centralDecrease._sparseCasesOn_1.else_eq
+#print axioms ExactFourierCircuits.InvocationBudget.centralDecrease.eq_1
+#print axioms ExactFourierCircuits.InvocationBudget.centralDecrease.eq_2
+#print axioms ExactFourierCircuits.InvocationBudget.centralDecrease.match_1
+#print axioms ExactFourierCircuits.InvocationBudget.centralSpace
+#print axioms ExactFourierCircuits.InvocationBudget.centralSpace.eq_1
+#print axioms ExactFourierCircuits.InvocationBudget.centralSpace_basis
+#print axioms ExactFourierCircuits.InvocationBudget.central_decomposition
+#print axioms ExactFourierCircuits.InvocationBudget.central_edge_dimension
+#print axioms ExactFourierCircuits.InvocationBudget.central_edge_dimension._proof_1_1
+#print axioms ExactFourierCircuits.InvocationBudget.central_residual_rank
+#print axioms ExactFourierCircuits.InvocationBudget.coordinate_rank
+#print axioms ExactFourierCircuits.InvocationBudget.data_edgeLoss
+#print axioms ExactFourierCircuits.InvocationBudget.edgeLoss
+#print axioms ExactFourierCircuits.InvocationBudget.edgeLoss._proof_1
+#print axioms ExactFourierCircuits.InvocationBudget.edgeLoss.eq_1
+#print axioms ExactFourierCircuits.InvocationBudget.edgeLoss.eq_2
+#print axioms ExactFourierCircuits.InvocationBudget.edgeLoss.match_1
+#print axioms ExactFourierCircuits.InvocationBudget.edgeLoss_decreasing
+#print axioms ExactFourierCircuits.InvocationBudget.edgeLoss_decreasing._proof_1_1
+#print axioms ExactFourierCircuits.InvocationBudget.edgeLoss_increasing
+#print axioms ExactFourierCircuits.InvocationBudget.edgeLoss_increasing._proof_1_1
+#print axioms ExactFourierCircuits.InvocationBudget.edge_balance
+#print axioms ExactFourierCircuits.InvocationBudget.edge_balance._proof_1_4
+#print axioms ExactFourierCircuits.InvocationBudget.edge_balance._proof_1_5
+#print axioms ExactFourierCircuits.InvocationBudget.edge_decreasing_dimension
+#print axioms ExactFourierCircuits.InvocationBudget.edge_decreasing_dimension._proof_1_1
+#print axioms ExactFourierCircuits.InvocationBudget.edge_decreasing_dimension._proof_1_2
+#print axioms ExactFourierCircuits.InvocationBudget.edge_increasing_dimension
+#print axioms ExactFourierCircuits.InvocationBudget.edge_increasing_dimension._proof_1_1
+#print axioms ExactFourierCircuits.InvocationBudget.edge_increasing_dimension._proof_1_2
+#print axioms ExactFourierCircuits.InvocationBudget.finished_role_balance
+#print axioms ExactFourierCircuits.InvocationBudget.invocation_balance
+#print axioms ExactFourierCircuits.InvocationBudget.invocation_dimension_formula
 #print axioms ExactFourierCircuits.InvocationBudget.label_dimension
 #print axioms ExactFourierCircuits.InvocationBudget.label_dimension_eq
-#print axioms ExactFourierCircuits.InvocationBudget.edgeLoss
-#print axioms ExactFourierCircuits.InvocationBudget.edge_balance
-#print axioms ExactFourierCircuits.InvocationBudget.edge_increasing_dimension
-#print axioms ExactFourierCircuits.InvocationBudget.edge_decreasing_dimension
-#print axioms ExactFourierCircuits.InvocationBudget.edgeLoss_increasing
-#print axioms ExactFourierCircuits.InvocationBudget.edgeLoss_decreasing
-#print axioms ExactFourierCircuits.InvocationBudget.centralDecrease
-#print axioms ExactFourierCircuits.InvocationBudget.local_nested
 #print axioms ExactFourierCircuits.InvocationBudget.labels_nested
-#print axioms ExactFourierCircuits.InvocationBudget.sink_nested
-#print axioms ExactFourierCircuits.InvocationBudget.centralSpace
-#print axioms ExactFourierCircuits.InvocationBudget.central_decomposition
-#print axioms ExactFourierCircuits.InvocationBudget.centralSpace_basis
-#print axioms ExactFourierCircuits.InvocationBudget.central_residual_rank
-#print axioms ExactFourierCircuits.InvocationBudget.central_edge_dimension
-#print axioms ExactFourierCircuits.InvocationBudget.data_edgeLoss
-#print axioms ExactFourierCircuits.InvocationBudget.sink_edgeLoss
-#print axioms ExactFourierCircuits.InvocationBudget.roleSum
-#print axioms ExactFourierCircuits.InvocationBudget.sum_roles
-#print axioms ExactFourierCircuits.InvocationBudget.centerLoss
-#print axioms ExactFourierCircuits.InvocationBudget.rowLoss_sum
-#print axioms ExactFourierCircuits.InvocationBudget.centerLoss_sum
-#print axioms ExactFourierCircuits.InvocationBudget.actual_loss_total
-#print axioms ExactFourierCircuits.InvocationBudget.rows_role_balance
-#print axioms ExactFourierCircuits.InvocationBudget.finished_role_balance
-#print axioms ExactFourierCircuits.InvocationBudget.residualTotal
-#print axioms ExactFourierCircuits.InvocationBudget.sourceDimension
-#print axioms ExactFourierCircuits.InvocationBudget.sinkDimension
-#print axioms ExactFourierCircuits.InvocationBudget.invocation_balance
-#print axioms ExactFourierCircuits.InvocationBudget.coordinate_rank
-#print axioms ExactFourierCircuits.InvocationBudget.top_rank
 #print axioms ExactFourierCircuits.InvocationBudget.line_rank
+#print axioms ExactFourierCircuits.InvocationBudget.local_nested
 #print axioms ExactFourierCircuits.InvocationBudget.perp_rank
-#print axioms ExactFourierCircuits.InvocationBudget.tensor_rank
-#print axioms ExactFourierCircuits.InvocationBudget.tensor_line_rank
-#print axioms ExactFourierCircuits.InvocationBudget.source_x_dimension
-#print axioms ExactFourierCircuits.InvocationBudget.source_y_dimension
-#print axioms ExactFourierCircuits.InvocationBudget.source_side_dimension
-#print axioms ExactFourierCircuits.InvocationBudget.source_center_dimension
+#print axioms ExactFourierCircuits.InvocationBudget.perp_rank._proof_1_1
+#print axioms ExactFourierCircuits.InvocationBudget.residualTotal
+#print axioms ExactFourierCircuits.InvocationBudget.residualTotal._proof_1
+#print axioms ExactFourierCircuits.InvocationBudget.roleSum
+#print axioms ExactFourierCircuits.InvocationBudget.roleSum._proof_1
+#print axioms ExactFourierCircuits.InvocationBudget.roleSum._proof_2
+#print axioms ExactFourierCircuits.InvocationBudget.roleSum.eq_1
+#print axioms ExactFourierCircuits.InvocationBudget.roleSum.match_1
+#print axioms ExactFourierCircuits.InvocationBudget.roleSum.match_3
+#print axioms ExactFourierCircuits.InvocationBudget.rowLoss_sum
+#print axioms ExactFourierCircuits.InvocationBudget.rows_role_balance
+#print axioms ExactFourierCircuits.InvocationBudget.sinkDimension
+#print axioms ExactFourierCircuits.InvocationBudget.sinkDimension.eq_1
+#print axioms ExactFourierCircuits.InvocationBudget.sink_center_dimension
+#print axioms ExactFourierCircuits.InvocationBudget.sink_dimension_formula
+#print axioms ExactFourierCircuits.InvocationBudget.sink_edgeLoss
+#print axioms ExactFourierCircuits.InvocationBudget.sink_nested
+#print axioms ExactFourierCircuits.InvocationBudget.sink_side_dimension
 #print axioms ExactFourierCircuits.InvocationBudget.sink_x_dimension
 #print axioms ExactFourierCircuits.InvocationBudget.sink_y_dimension
-#print axioms ExactFourierCircuits.InvocationBudget.sink_side_dimension
-#print axioms ExactFourierCircuits.InvocationBudget.sink_center_dimension
+#print axioms ExactFourierCircuits.InvocationBudget.sourceDimension
+#print axioms ExactFourierCircuits.InvocationBudget.sourceDimension.eq_1
+#print axioms ExactFourierCircuits.InvocationBudget.source_center_dimension
 #print axioms ExactFourierCircuits.InvocationBudget.source_dimension_formula
-#print axioms ExactFourierCircuits.InvocationBudget.sink_dimension_formula
-#print axioms ExactFourierCircuits.InvocationBudget.invocation_dimension_formula
+#print axioms ExactFourierCircuits.InvocationBudget.source_side_dimension
+#print axioms ExactFourierCircuits.InvocationBudget.source_x_dimension
+#print axioms ExactFourierCircuits.InvocationBudget.source_y_dimension
+#print axioms ExactFourierCircuits.InvocationBudget.sum_roles
+#print axioms ExactFourierCircuits.InvocationBudget.sum_roles._abel_1_4
+#print axioms ExactFourierCircuits.InvocationBudget.tensor_line_rank
+#print axioms ExactFourierCircuits.InvocationBudget.tensor_rank
+#print axioms ExactFourierCircuits.InvocationBudget.top_rank
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.InvocationBudget.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

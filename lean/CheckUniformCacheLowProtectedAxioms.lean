@@ -1,0 +1,21 @@
+import UniformCacheLowProtected
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Frame.alpha_copied
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Frame.alpha_copied._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Frame.alpha_copied._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Frame.beta_inverse
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Frame.beta_inverse._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Frame.normal_alpha
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Frame.normal_alpha._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Frame.normal_beta
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Frame.normal_beta._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Frame.operands
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Frame.operands._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Frame.permutation
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Frame.permutation._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Frame.preserved
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.execution_frame
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.saved_same

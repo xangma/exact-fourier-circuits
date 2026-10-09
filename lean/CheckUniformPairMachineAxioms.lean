@@ -1,38 +1,103 @@
 import UniformPairMachine
+import Lean
 
-#print axioms ExactFourierCircuits.UniformPairMachine.program
-#print axioms ExactFourierCircuits.UniformPairMachine.program_length
-#print axioms ExactFourierCircuits.UniformPairMachine.contextFree
-#print axioms ExactFourierCircuits.UniformPairMachine.prepared
-#print axioms ExactFourierCircuits.UniformPairMachine.product
-#print axioms ExactFourierCircuits.UniformPairMachine.combine
-#print axioms ExactFourierCircuits.UniformPairMachine.loadedLeft
-#print axioms ExactFourierCircuits.UniformPairMachine.loadedBoth
-#print axioms ExactFourierCircuits.UniformPairMachine.productLeft
-#print axioms ExactFourierCircuits.UniformPairMachine.productRight
-#print axioms ExactFourierCircuits.UniformPairMachine.addedLeft
-#print axioms ExactFourierCircuits.UniformPairMachine.productOtherLeft
-#print axioms ExactFourierCircuits.UniformPairMachine.productOtherRight
-#print axioms ExactFourierCircuits.UniformPairMachine.addedRight
-#print axioms ExactFourierCircuits.UniformPairMachine.storedLeft
-#print axioms ExactFourierCircuits.UniformPairMachine.finalState
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformPairMachine.C_execution
 #print axioms ExactFourierCircuits.UniformPairMachine.Ready
-#print axioms ExactFourierCircuits.UniformPairMachine.prepared_mul
-#print axioms ExactFourierCircuits.UniformPairMachine.product_add
+#print axioms ExactFourierCircuits.UniformPairMachine.Ready.casesOn
+#print axioms ExactFourierCircuits.UniformPairMachine.Ready.diagonal
+#print axioms ExactFourierCircuits.UniformPairMachine.Ready.left
+#print axioms ExactFourierCircuits.UniformPairMachine.Ready.mk
+#print axioms ExactFourierCircuits.UniformPairMachine.Ready.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformPairMachine.Ready.offDiagonal
+#print axioms ExactFourierCircuits.UniformPairMachine.Ready.pc
+#print axioms ExactFourierCircuits.UniformPairMachine.Ready.rec
+#print axioms ExactFourierCircuits.UniformPairMachine.Ready.recOn
+#print axioms ExactFourierCircuits.UniformPairMachine.Ready.right
+#print axioms ExactFourierCircuits.UniformPairMachine.addedLeft
+#print axioms ExactFourierCircuits.UniformPairMachine.addedLeft.eq_1
+#print axioms ExactFourierCircuits.UniformPairMachine.addedRight
+#print axioms ExactFourierCircuits.UniformPairMachine.addedRight.eq_1
 #print axioms ExactFourierCircuits.UniformPairMachine.bounded_execution
+#print axioms ExactFourierCircuits.UniformPairMachine.bounded_execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformPairMachine.bounded_execution._proof_1_11
+#print axioms ExactFourierCircuits.UniformPairMachine.bounded_execution._proof_1_13
+#print axioms ExactFourierCircuits.UniformPairMachine.bounded_execution._proof_1_15
+#print axioms ExactFourierCircuits.UniformPairMachine.bounded_execution._proof_1_17
+#print axioms ExactFourierCircuits.UniformPairMachine.bounded_execution._proof_1_19
+#print axioms ExactFourierCircuits.UniformPairMachine.bounded_execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformPairMachine.bounded_execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformPairMachine.bounded_execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformPairMachine.bounded_execution._proof_1_9
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficientDiagonal
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficientDiagonal.eq_1
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficientDifference
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficientDifference.eq_1
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficientHalf
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficientHalf._proof_1
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficientHalf.eq_1
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficientOne
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficientOne.eq_1
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficientProgram
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficientProgram.eq_1
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficientProgram_length
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficientState
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficientState.eq_1
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficientSum
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficientSum.eq_1
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficient_execution
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficient_execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficient_execution._proof_1_11
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficient_execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficient_execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficient_execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficient_execution._proof_1_9
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficient_frame
+#print axioms ExactFourierCircuits.UniformPairMachine.coefficient_values
+#print axioms ExactFourierCircuits.UniformPairMachine.combine
+#print axioms ExactFourierCircuits.UniformPairMachine.combine.eq_1
+#print axioms ExactFourierCircuits.UniformPairMachine.contextFree
+#print axioms ExactFourierCircuits.UniformPairMachine.finalState
+#print axioms ExactFourierCircuits.UniformPairMachine.finalState.eq_1
 #print axioms ExactFourierCircuits.UniformPairMachine.final_frame
+#print axioms ExactFourierCircuits.UniformPairMachine.final_frame._proof_1_1
+#print axioms ExactFourierCircuits.UniformPairMachine.final_frame._proof_1_2
+#print axioms ExactFourierCircuits.UniformPairMachine.final_frame._proof_1_3
+#print axioms ExactFourierCircuits.UniformPairMachine.final_frame._proof_1_4
+#print axioms ExactFourierCircuits.UniformPairMachine.final_frame._proof_1_5
+#print axioms ExactFourierCircuits.UniformPairMachine.final_frame._proof_1_6
 #print axioms ExactFourierCircuits.UniformPairMachine.final_heap
 #print axioms ExactFourierCircuits.UniformPairMachine.final_values
+#print axioms ExactFourierCircuits.UniformPairMachine.loadedBoth
+#print axioms ExactFourierCircuits.UniformPairMachine.loadedBoth.eq_1
+#print axioms ExactFourierCircuits.UniformPairMachine.loadedLeft
+#print axioms ExactFourierCircuits.UniformPairMachine.loadedLeft.eq_1
+#print axioms ExactFourierCircuits.UniformPairMachine.prepared
+#print axioms ExactFourierCircuits.UniformPairMachine.prepared.eq_1
+#print axioms ExactFourierCircuits.UniformPairMachine.prepared_mul
+#print axioms ExactFourierCircuits.UniformPairMachine.product
+#print axioms ExactFourierCircuits.UniformPairMachine.product.eq_1
+#print axioms ExactFourierCircuits.UniformPairMachine.productLeft
+#print axioms ExactFourierCircuits.UniformPairMachine.productLeft.eq_1
+#print axioms ExactFourierCircuits.UniformPairMachine.productOtherLeft
+#print axioms ExactFourierCircuits.UniformPairMachine.productOtherLeft.eq_1
+#print axioms ExactFourierCircuits.UniformPairMachine.productOtherRight
+#print axioms ExactFourierCircuits.UniformPairMachine.productOtherRight.eq_1
+#print axioms ExactFourierCircuits.UniformPairMachine.productRight
+#print axioms ExactFourierCircuits.UniformPairMachine.productRight.eq_1
+#print axioms ExactFourierCircuits.UniformPairMachine.product_add
+#print axioms ExactFourierCircuits.UniformPairMachine.program
+#print axioms ExactFourierCircuits.UniformPairMachine.program.eq_1
+#print axioms ExactFourierCircuits.UniformPairMachine.program_length
+#print axioms ExactFourierCircuits.UniformPairMachine.storedLeft
+#print axioms ExactFourierCircuits.UniformPairMachine.storedLeft.eq_1
 #print axioms ExactFourierCircuits.UniformPairMachine.untouched
-#print axioms ExactFourierCircuits.UniformPairMachine.C_execution
-#print axioms ExactFourierCircuits.UniformPairMachine.coefficientProgram
-#print axioms ExactFourierCircuits.UniformPairMachine.coefficientProgram_length
-#print axioms ExactFourierCircuits.UniformPairMachine.coefficientOne
-#print axioms ExactFourierCircuits.UniformPairMachine.coefficientHalf
-#print axioms ExactFourierCircuits.UniformPairMachine.coefficientSum
-#print axioms ExactFourierCircuits.UniformPairMachine.coefficientDifference
-#print axioms ExactFourierCircuits.UniformPairMachine.coefficientDiagonal
-#print axioms ExactFourierCircuits.UniformPairMachine.coefficientState
-#print axioms ExactFourierCircuits.UniformPairMachine.coefficient_execution
-#print axioms ExactFourierCircuits.UniformPairMachine.coefficient_values
-#print axioms ExactFourierCircuits.UniformPairMachine.coefficient_frame
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformPairMachine.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

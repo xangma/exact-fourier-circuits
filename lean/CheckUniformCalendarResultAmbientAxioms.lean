@@ -1,0 +1,8 @@
+import UniformCalendarResultAmbient
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarResultAmbient.cast
+#print axioms ExactFourierCircuits.UniformCalendarResultAmbient.cast._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarResultAmbient.cast._proof_2

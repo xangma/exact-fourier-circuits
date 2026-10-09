@@ -1,0 +1,7 @@
+import UniformPhysicalCoordinateValue
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformPhysicalCoordinateValue.coordinate_value
+#print axioms ExactFourierCircuits.UniformPhysicalCoordinateValue.family_value

@@ -1,0 +1,47 @@
+import UniformFourierAxisTreeTail
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.Header
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.Header.axis
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.Header.cacheNat
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.Header.cacheScalar
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.Header.casesOn
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.Header.directory
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.Header.mk
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.Header.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.Header.physical
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.Header.radix
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.Header.rec
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.Header.recOn
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.Header.transfer
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.Header.transfer._proof_1_1
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.Header.transfer._proof_1_2
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.Header.transfer._proof_1_3
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.Header.transfer._proof_1_4
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.Header.transfer._proof_1_5
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.Header.transfer._proof_1_6
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.Header.transfer._proof_1_7
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.Header.workspace
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.Kept
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.execution
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.execution._proof_1_10
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.execution._proof_1_11
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.execution._proof_1_12
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.execution._proof_1_13
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.execution._proof_1_16
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.execution._proof_1_17
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.execution._proof_1_18
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.execution._proof_1_19
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.execution._proof_1_9
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.execution._simp_1_14
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeTail.execution._simp_1_15

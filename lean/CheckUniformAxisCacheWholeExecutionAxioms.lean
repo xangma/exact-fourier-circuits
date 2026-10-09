@@ -1,0 +1,28 @@
+import UniformAxisCacheWholeExecution
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeExecution.Output
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeExecution.Output.all
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeExecution.Output.bank
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeExecution.Output.casesOn
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeExecution.Output.clock
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeExecution.Output.input
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeExecution.Output.mk
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeExecution.Output.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeExecution.Output.natEnd
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeExecution.Output.outputs
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeExecution.Output.rec
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeExecution.Output.recOn
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeExecution.Output.roots
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeExecution.Output.savedNat
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeExecution.Output.savedScalar
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeExecution.Output.scalarEnd
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeExecution.execution
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeExecution.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeExecution.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeExecution.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeExecution.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeExecution.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformAxisCacheWholeExecution.execution._proof_1_6

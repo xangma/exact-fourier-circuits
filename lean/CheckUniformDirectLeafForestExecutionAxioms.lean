@@ -1,0 +1,36 @@
+import UniformDirectLeafForestExecution
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.Frame
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.Frame.casesOn
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.Frame.mk
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.Frame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.Frame.natBefore
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.Frame.natHigh
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.Frame.outputs
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.Frame.rec
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.Frame.recOn
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.Frame.roots
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.Frame.scalarOutside
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.Post
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.Post.cached
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.Post.casesOn
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.Post.counts
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.Post.endpoints
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.Post.mk
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.Post.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.Post.pc
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.Post.ranges
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.Post.rec
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.Post.recOn
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.Post.root
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.Post.sources
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.execution
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExecution.execution._proof_1_6

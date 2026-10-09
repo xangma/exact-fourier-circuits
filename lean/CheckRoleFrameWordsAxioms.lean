@@ -1,28 +1,35 @@
 import RoleFrameWords
+import Lean
 
-#print axioms ExactFourierCircuits.RoleFrameWords.roleEmbedding
-#print axioms ExactFourierCircuits.RoleFrameWords.roleEmbedding_apply
-#print axioms ExactFourierCircuits.RoleFrameWords.roleEmbedding_not_mem
-#print axioms ExactFourierCircuits.RoleFrameWords.roleMatrix_selected_entry
-#print axioms ExactFourierCircuits.RoleFrameWords.roleMatrix_selected_apply
-#print axioms ExactFourierCircuits.RoleFrameWords.roleMatrix_untouched_apply
-#print axioms ExactFourierCircuits.RoleFrameWords.roleWord
-#print axioms ExactFourierCircuits.RoleFrameWords.roleWord_matrix
-#print axioms ExactFourierCircuits.RoleFrameWords.roleWord_calls
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.RoleFrameWords.binaryAction_apply
 #print axioms ExactFourierCircuits.RoleFrameWords.binaryValues
+#print axioms ExactFourierCircuits.RoleFrameWords.binaryValues.eq_1
 #print axioms ExactFourierCircuits.RoleFrameWords.binaryValues_at
 #print axioms ExactFourierCircuits.RoleFrameWords.binaryValues_surjective
-#print axioms ExactFourierCircuits.RoleFrameWords.binaryAction_apply
-#print axioms ExactFourierCircuits.RoleFrameWords.roleWord_selected_apply
-#print axioms ExactFourierCircuits.RoleFrameWords.roleWord_untouched_apply
-#print axioms ExactFourierCircuits.RoleFrameWords.roleWord_array
-#print axioms ExactFourierCircuits.RoleFrameWords.roleFrameList
-#print axioms ExactFourierCircuits.RoleFrameWords.roleFrameList_calls
-#print axioms ExactFourierCircuits.RoleFrameWords.roleFrameList_array
-#print axioms ExactFourierCircuits.RoleFrameWords.roleFrameList_selected_apply
-#print axioms ExactFourierCircuits.RoleFrameWords.roleFrameList_untouched_apply
+#print axioms ExactFourierCircuits.RoleFrameWords.compile_nested_role_edge
 #print axioms ExactFourierCircuits.RoleFrameWords.compile_signed_role_frame
 #print axioms ExactFourierCircuits.RoleFrameWords.nestedRatio
+#print axioms ExactFourierCircuits.RoleFrameWords.nestedRatio._proof_1
 #print axioms ExactFourierCircuits.RoleFrameWords.nestedRatio_signedWord
+#print axioms ExactFourierCircuits.RoleFrameWords.roleEmbedding
+#print axioms ExactFourierCircuits.RoleFrameWords.roleEmbedding._proof_1
+#print axioms ExactFourierCircuits.RoleFrameWords.roleEmbedding_apply
+#print axioms ExactFourierCircuits.RoleFrameWords.roleEmbedding_not_mem
+#print axioms ExactFourierCircuits.RoleFrameWords.roleFrameList
+#print axioms ExactFourierCircuits.RoleFrameWords.roleFrameList.eq_1
+#print axioms ExactFourierCircuits.RoleFrameWords.roleFrameList_array
+#print axioms ExactFourierCircuits.RoleFrameWords.roleFrameList_calls
 #print axioms ExactFourierCircuits.RoleFrameWords.roleFrameList_nested_array
-#print axioms ExactFourierCircuits.RoleFrameWords.compile_nested_role_edge
+#print axioms ExactFourierCircuits.RoleFrameWords.roleFrameList_selected_apply
+#print axioms ExactFourierCircuits.RoleFrameWords.roleFrameList_untouched_apply
+#print axioms ExactFourierCircuits.RoleFrameWords.roleMatrix_selected_apply
+#print axioms ExactFourierCircuits.RoleFrameWords.roleMatrix_selected_entry
+#print axioms ExactFourierCircuits.RoleFrameWords.roleMatrix_untouched_apply
+#print axioms ExactFourierCircuits.RoleFrameWords.roleWord
+#print axioms ExactFourierCircuits.RoleFrameWords.roleWord_array
+#print axioms ExactFourierCircuits.RoleFrameWords.roleWord_calls
+#print axioms ExactFourierCircuits.RoleFrameWords.roleWord_matrix
+#print axioms ExactFourierCircuits.RoleFrameWords.roleWord_selected_apply
+#print axioms ExactFourierCircuits.RoleFrameWords.roleWord_untouched_apply

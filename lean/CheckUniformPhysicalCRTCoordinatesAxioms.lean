@@ -1,0 +1,10 @@
+import UniformPhysicalCRTCoordinates
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformPhysicalCRTArithmetic.digit.eq_1
+#print axioms ExactFourierCircuits.UniformPhysicalCRTCoordinates.list_digit
+#print axioms ExactFourierCircuits.UniformPhysicalCRTCoordinates.physical_digit
+#print axioms ExactFourierCircuits.UniformPhysicalCRTCoordinates.rho
+#print axioms ExactFourierCircuits.UniformPhysicalCRTCoordinates.rho_value

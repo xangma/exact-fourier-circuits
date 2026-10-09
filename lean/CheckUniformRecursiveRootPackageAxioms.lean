@@ -1,0 +1,10 @@
+import UniformRecursiveRootPackage
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveRootPackage.Result
+#print axioms ExactFourierCircuits.UniformRecursiveRootPackage.cap
+#print axioms ExactFourierCircuits.UniformRecursiveRootPackage.cap._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveRootPackage.finalize
+#print axioms ExactFourierCircuits.UniformRecursiveRootPackage.root_if

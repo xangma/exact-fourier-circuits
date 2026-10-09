@@ -1,4 +1,7 @@
 import UniformInitialTraversalPreparation
+import Lean
+
+set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformInitialTraversalPreparation.halt_at
 #print axioms ExactFourierCircuits.UniformInitialTraversalPreparation.halt_at._proof_1_2

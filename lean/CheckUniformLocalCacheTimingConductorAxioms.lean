@@ -1,0 +1,73 @@
+import UniformLocalCacheTimingConductor
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.Allocation
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.Allocation.casesOn
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.Allocation.durations
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.Allocation.mk
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.Allocation.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.Allocation.rec
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.Allocation.recOn
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.Allocation.requests
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.Allocation.starts
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.destinations
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.destinations._sparseCasesOn_1
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.destinations._sparseCasesOn_1.else_eq
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.destinations.eq_1
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.destinations.eq_2
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.destinations.eq_3
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.destinations.eq_4
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.destinations.match_1
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.execution
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.instDecidableDestinations
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.installer
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.installer.eq_1
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.installer_addresses
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.installer_code
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.installer_end
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.installer_heap
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.installer_nodes
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.installer_source_tables
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.keepsDec
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.keepsDec._proof_1
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.keepsDec._proof_10
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.keepsDec._proof_11
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.keepsDec._proof_12
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.keepsDec._proof_13
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.keepsDec._proof_14
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.keepsDec._proof_2
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.keepsDec._proof_3
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.keepsDec._proof_4
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.keepsDec._proof_5
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.keepsDec._proof_6
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.keepsDec._proof_7
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.keepsDec._proof_8
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.keepsDec._proof_9
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.producer_code
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.producer_keeps_sources
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.program
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.program.eq_1
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.program_destinations
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.program_keeps
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.program_keeps._proof_1_1
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.program_length
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.program_natOnly
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.timing_code
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingConductor.timing_code._proof_1_2
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformLocalCacheTimingConductor.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

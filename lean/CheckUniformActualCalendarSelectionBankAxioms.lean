@@ -1,0 +1,9 @@
+import UniformActualCalendarSelectionBank
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarSelectionBank.of_cells
+#print axioms ExactFourierCircuits.UniformActualCalendarSelectionBank.of_pairs
+#print axioms ExactFourierCircuits.UniformActualCalendarSelectionBank.pairs
+#print axioms ExactFourierCircuits.UniformActualCalendarSelectionBank.pairs.eq_1

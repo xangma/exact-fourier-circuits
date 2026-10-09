@@ -1,0 +1,14 @@
+import UniformDirectLeafForestSelect
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSelect.leaf_branch
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSelect.leaf_branch._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSelect.leaf_branch._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSelect.leaf_branch._proof_1_3
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSelect.leaf_branch._proof_1_4
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSelect.split_branch
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSelect.split_branch._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSelect.split_branch._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirectLeafForestSelect.split_branch._proof_1_3

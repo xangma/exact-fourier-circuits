@@ -1,7 +1,9 @@
 import UniformChunkRowTableMachine
-set_option autoImplicit false
+import Lean
+
 set_option linter.auxLemma false
 
+#print axioms ExactFourierCircuits.UniformChunkPortMachine.Domain.eq_1
 #print axioms ExactFourierCircuits.UniformChunkRowTableMachine.Cache
 #print axioms ExactFourierCircuits.UniformChunkRowTableMachine.Cache.casesOn
 #print axioms ExactFourierCircuits.UniformChunkRowTableMachine.Cache.coefficient
@@ -356,3 +358,4 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformChunkRowTableMachine.stores_safe._proof_1_2
 #print axioms ExactFourierCircuits.UniformChunkRowTableMachine.stores_safe._proof_1_4
 #print axioms ExactFourierCircuits.UniformChunkRowTableMachine.stores_spec
+#print axioms ExactFourierCircuits.UniformToeplitzChunkWord.packCode.eq_1

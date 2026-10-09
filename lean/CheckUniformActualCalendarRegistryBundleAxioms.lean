@@ -1,0 +1,26 @@
+import UniformActualCalendarRegistryBundle
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Bundle
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Bundle._sizeOf_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Bundle._sizeOf_inst
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Bundle.cached
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Bundle.casesOn
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Bundle.ctorIdx
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Bundle.events
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Bundle.events.eq_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Bundle.mk
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Bundle.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Bundle.mk.inj
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Bundle.mk.injEq
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Bundle.mk.noConfusion
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Bundle.mk.sizeOf_spec
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Bundle.noConfusion
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Bundle.noConfusionType
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Bundle.node
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Bundle.pairs
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Bundle.rec
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Bundle.recOn
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Bundle.rectangle

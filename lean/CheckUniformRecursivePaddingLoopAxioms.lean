@@ -1,0 +1,9 @@
+import UniformRecursivePaddingLoop
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursivePaddingLoop.loop
+#print axioms ExactFourierCircuits.UniformRecursivePaddingLoop.loop._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursivePaddingLoop.loop._proof_1_3
+#print axioms ExactFourierCircuits.UniformRecursivePaddingLoop.loop._simp_1_1

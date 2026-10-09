@@ -1,0 +1,13 @@
+import UniformActualCalendarWitnessSource
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarWitnessSource.source
+#print axioms ExactFourierCircuits.UniformActualCalendarWitnessSource.source._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarWitnessSource.source._proof_2
+#print axioms ExactFourierCircuits.UniformActualCalendarWitnessSource.source._proof_3
+#print axioms ExactFourierCircuits.UniformActualCalendarWitnessSource.source._proof_4
+#print axioms ExactFourierCircuits.UniformActualCalendarWitnessSource.source._proof_5
+#print axioms ExactFourierCircuits.UniformActualCalendarWitnessSource.source._proof_6
+#print axioms ExactFourierCircuits.UniformActualCalendarWitnessSource.source._proof_7

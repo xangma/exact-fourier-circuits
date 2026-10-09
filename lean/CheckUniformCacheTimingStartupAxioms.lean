@@ -1,0 +1,35 @@
+import UniformCacheTimingStartup
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCacheTimingProgram.boot.eq_1
+#print axioms ExactFourierCircuits.UniformCacheTimingProgram.initSetup.eq_1
+#print axioms ExactFourierCircuits.UniformCacheTimingProgram.reverseSetup.eq_1
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.Input
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.Input.casesOn
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.Input.durations
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.Input.mk
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.Input.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.Input.nodeCount
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.Input.nodes
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.Input.rec
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.Input.recOn
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.Input.requestEnd
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.Input.requestStarts
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.Input.requests
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.Input.starts
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.boot_header
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.boot_heap
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.reverse_header
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.setup_header
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.startup
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.startup._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.startup._proof_1_10
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.startup._proof_1_12
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.startup._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.startup._proof_1_4
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.startup._proof_1_5
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.startup._proof_1_6
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.startup._proof_1_7
+#print axioms ExactFourierCircuits.UniformCacheTimingStartup.startup._proof_1_9

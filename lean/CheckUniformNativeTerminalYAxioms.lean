@@ -1,0 +1,26 @@
+import UniformNativeTerminalY
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformNativeRecordRoles.paddingRole.congr_simp
+#print axioms ExactFourierCircuits.UniformNativeTerminalY.actions_bank
+#print axioms ExactFourierCircuits.UniformNativeTerminalY.actions_bank._simp_1_1
+#print axioms ExactFourierCircuits.UniformNativeTerminalY.actions_outside
+#print axioms ExactFourierCircuits.UniformNativeTerminalY.direction
+#print axioms ExactFourierCircuits.UniformNativeTerminalY.direction._proof_1
+#print axioms ExactFourierCircuits.UniformNativeTerminalY.direction.eq_1
+#print axioms ExactFourierCircuits.UniformNativeTerminalY.directions
+#print axioms ExactFourierCircuits.UniformNativeTerminalY.encode_add
+#print axioms ExactFourierCircuits.UniformNativeTerminalY.instDecidableEq_uniformNativeTerminalY
+#print axioms ExactFourierCircuits.UniformNativeTerminalY.lowIndex
+#print axioms ExactFourierCircuits.UniformNativeTerminalY.lowIndex._proof_1
+#print axioms ExactFourierCircuits.UniformNativeTerminalY.lowIndex.eq_1
+#print axioms ExactFourierCircuits.UniformNativeTerminalY.native_active_translation_values
+#print axioms ExactFourierCircuits.UniformNativeTerminalY.original_points
+#print axioms ExactFourierCircuits.UniformNativeTerminalY.original_translation_aux
+#print axioms ExactFourierCircuits.UniformNativeTerminalY.original_translation_bank
+#print axioms ExactFourierCircuits.UniformNativeTerminalY.reindex_action
+#print axioms ExactFourierCircuits.UniformNativeTerminalY.spectator_xor
+#print axioms ExactFourierCircuits.UniformNativeTerminalY.values_bank
+#print axioms ExactFourierCircuits.UniformNativeTerminalY.values_outside

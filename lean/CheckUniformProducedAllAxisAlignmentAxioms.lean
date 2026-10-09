@@ -1,0 +1,13 @@
+import UniformProducedAllAxisAlignment
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformProducedAllAxisAlignment.aligned
+#print axioms ExactFourierCircuits.UniformProducedAllAxisAlignment.axes_get
+#print axioms ExactFourierCircuits.UniformProducedAllAxisAlignment.axes_length
+#print axioms ExactFourierCircuits.UniformProducedAllAxisAlignment.factors
+#print axioms ExactFourierCircuits.UniformProducedAllAxisAlignment.factors._proof_1
+#print axioms ExactFourierCircuits.UniformProducedAllAxisAlignment.semanticAxis
+#print axioms ExactFourierCircuits.UniformProducedAllAxisAlignment.semanticAxis._proof_1
+#print axioms ExactFourierCircuits.UniformProducedAllAxisAlignment.semanticAxis._proof_2

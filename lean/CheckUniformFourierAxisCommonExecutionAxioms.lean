@@ -1,0 +1,8 @@
+import UniformFourierAxisCommonExecution
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonExecution.execution
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonExecution.execution_of_action
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonExecution.postcondition

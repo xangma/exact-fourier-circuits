@@ -1,0 +1,7 @@
+import UniformActualKernelPreparedTags
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualKernelPreparedTags.execution
+#print axioms ExactFourierCircuits.UniformActualKernelPreparedTags.of_execution

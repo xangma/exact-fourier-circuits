@@ -1,0 +1,15 @@
+import UniformCalendarRenderTick
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarRenderTick.tick
+#print axioms ExactFourierCircuits.UniformCalendarRenderTick.tick.eq_1
+#print axioms ExactFourierCircuits.UniformCalendarRenderTick.tick_append
+#print axioms ExactFourierCircuits.UniformCalendarRenderTick.tick_cons_succ
+#print axioms ExactFourierCircuits.UniformCalendarRenderTick.tick_cons_zero
+#print axioms ExactFourierCircuits.UniformCalendarRenderTick.tick_embed
+#print axioms ExactFourierCircuits.UniformCalendarRenderTick.tick_nil
+#print axioms ExactFourierCircuits.UniformCalendarRenderTick.tick_of_le
+#print axioms ExactFourierCircuits.UniformCalendarRenderTick.tick_of_lt
+#print axioms ExactFourierCircuits.UniformCalendarRenderTick.tick_parallel

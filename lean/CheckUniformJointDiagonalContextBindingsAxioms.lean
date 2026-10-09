@@ -1,0 +1,11 @@
+import UniformJointDiagonalContextBindings
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformJointDiagonalContext.PhysicalPlacement.shape
+#print axioms ExactFourierCircuits.UniformJointDiagonalContext.PhysicalPlacement.shape._proof_1_1
+#print axioms ExactFourierCircuits.UniformJointDiagonalContext.addresses
+#print axioms ExactFourierCircuits.UniformJointDiagonalContext.canonical
+#print axioms ExactFourierCircuits.UniformJointDiagonalContext.canonical._proof_1
+#print axioms ExactFourierCircuits.UniformJointDiagonalContext.same_kernel

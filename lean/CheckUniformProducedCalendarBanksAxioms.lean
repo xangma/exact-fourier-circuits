@@ -1,0 +1,8 @@
+import UniformProducedCalendarBanks
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformProducedCalendarBanks.banks
+#print axioms ExactFourierCircuits.UniformProducedCalendarBanks.directory
+#print axioms ExactFourierCircuits.UniformProducedCalendarBanks.pools

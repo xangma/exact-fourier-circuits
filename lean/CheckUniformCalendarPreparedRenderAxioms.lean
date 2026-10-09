@@ -1,0 +1,15 @@
+import UniformCalendarPreparedRender
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarPreparedRender.AxisSources
+#print axioms ExactFourierCircuits.UniformCalendarPreparedRender.AxisSources._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarPreparedRender.AxisSources._proof_2
+#print axioms ExactFourierCircuits.UniformCalendarPreparedRender.Sources
+#print axioms ExactFourierCircuits.UniformCalendarPreparedRender.axis_diagonal
+#print axioms ExactFourierCircuits.UniformCalendarPreparedRender.axis_matrix
+#print axioms ExactFourierCircuits.UniformCalendarPreparedRender.forward_matrix
+#print axioms ExactFourierCircuits.UniformCalendarPreparedRender.reflected_diagonal
+#print axioms ExactFourierCircuits.UniformCalendarPreparedRender.reflected_matrix
+#print axioms ExactFourierCircuits.UniformCalendarPreparedRender.render_matrix

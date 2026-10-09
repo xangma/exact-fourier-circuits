@@ -1,0 +1,11 @@
+import UniformActualClockNumericInvariant
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualClockNumericInvariant.Prefix
+#print axioms ExactFourierCircuits.UniformActualClockNumericInvariant.final
+#print axioms ExactFourierCircuits.UniformActualClockNumericInvariant.initial
+#print axioms ExactFourierCircuits.UniformActualClockNumericInvariant.prepared
+#print axioms ExactFourierCircuits.UniformActualClockNumericInvariant.step
+#print axioms ExactFourierCircuits.UniformActualClockNumericInvariant.transport

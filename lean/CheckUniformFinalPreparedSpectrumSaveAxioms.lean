@@ -1,0 +1,6 @@
+import UniformFinalPreparedSpectrumSave
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFinalPreparedSpectrumSave.execution

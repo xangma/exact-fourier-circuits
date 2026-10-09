@@ -1,0 +1,23 @@
+import UniformCalendarRenderActive
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarRenderActive.localFamily
+#print axioms ExactFourierCircuits.UniformCalendarRenderActive.localFamily._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarRenderActive.localFamily._proof_2
+#print axioms ExactFourierCircuits.UniformCalendarRenderActive.localFamily.eq_1
+#print axioms ExactFourierCircuits.UniformCalendarRenderActive.localFamily_embedded
+#print axioms ExactFourierCircuits.UniformCalendarRenderActive.localSnapshot
+#print axioms ExactFourierCircuits.UniformCalendarRenderActive.localSnapshot._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarRenderActive.localSnapshot._proof_2
+#print axioms ExactFourierCircuits.UniformCalendarRenderActive.localSnapshot._proof_3
+#print axioms ExactFourierCircuits.UniformCalendarRenderActive.localSnapshot_matrix
+#print axioms ExactFourierCircuits.UniformCalendarRenderActive.pieceAt
+#print axioms ExactFourierCircuits.UniformCalendarRenderActive.pieceAt._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarRenderActive.pieceAt.eq_1
+#print axioms ExactFourierCircuits.UniformCalendarRenderActive.pieceAt_descriptor
+#print axioms ExactFourierCircuits.UniformCalendarRenderActive.pieceAt_mem
+#print axioms ExactFourierCircuits.UniformCalendarRenderActive.sum_active
+#print axioms ExactFourierCircuits.UniformCalendarRenderActive.sum_pieceAt
+#print axioms ExactFourierCircuits.UniformCalendarRenderActive.union_total

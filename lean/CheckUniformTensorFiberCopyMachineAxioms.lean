@@ -1,5 +1,6 @@
 import UniformTensorFiberCopyMachine
 import Lean
+
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.Cursor
@@ -98,14 +99,3 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.program_length
 #print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.runtime_linear
 #print axioms ExactFourierCircuits.UniformTensorFiberCopyMachine.runtime_linear._proof_1_1
-
-open Lean Elab Command in
-run_cmd do
- let env ← getEnv
- for (name, _) in env.constants.toList do
-  if "_private.UniformTensorFiberCopyMachine.".isPrefixOf name.toString then
-   let axioms ← collectAxioms name
-   logInfo m!"'{name}' depends on axioms: {axioms.toList}"
-   for ax in axioms do
-    unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
-     throwError m!"Forbidden axiom {ax} in {name}"

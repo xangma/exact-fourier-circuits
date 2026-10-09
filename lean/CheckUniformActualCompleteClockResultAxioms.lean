@@ -1,0 +1,16 @@
+import UniformActualCompleteClockResult
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCompleteClockExecution.Output
+#print axioms ExactFourierCircuits.UniformActualCompleteClockExecution.Output.casesOn
+#print axioms ExactFourierCircuits.UniformActualCompleteClockExecution.Output.mk
+#print axioms ExactFourierCircuits.UniformActualCompleteClockExecution.Output.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformActualCompleteClockExecution.Output.numeric
+#print axioms ExactFourierCircuits.UniformActualCompleteClockExecution.Output.prepared
+#print axioms ExactFourierCircuits.UniformActualCompleteClockExecution.Output.rec
+#print axioms ExactFourierCircuits.UniformActualCompleteClockExecution.Output.recOn
+#print axioms ExactFourierCircuits.UniformActualCompleteClockExecution.Output.retained
+#print axioms ExactFourierCircuits.UniformActualCompleteClockExecution.Output.runtime
+#print axioms ExactFourierCircuits.UniformActualCompleteClockExecution.Output.spectrum

@@ -1,0 +1,6 @@
+import UniformNativeSchedulePrefix
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformNativeSchedulePrefix.interpret_prefix_values

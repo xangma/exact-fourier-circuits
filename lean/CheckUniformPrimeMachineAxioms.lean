@@ -1,32 +1,102 @@
 import UniformPrimeMachine
+import Lean
 
-#print axioms ExactFourierCircuits.UniformPrimeMachine.program
-#print axioms ExactFourierCircuits.UniformPrimeMachine.boolCode
-#print axioms ExactFourierCircuits.UniformPrimeMachine.loopCost
-#print axioms ExactFourierCircuits.UniformPrimeMachine.totalCost
+set_option linter.auxLemma false
+
 #print axioms ExactFourierCircuits.UniformPrimeMachine.Frame
-#print axioms ExactFourierCircuits.UniformPrimeMachine.frame_refl
 #print axioms ExactFourierCircuits.UniformPrimeMachine.Frame.trans
-#print axioms ExactFourierCircuits.UniformPrimeMachine.initialized
-#print axioms ExactFourierCircuits.UniformPrimeMachine.loopEntry
 #print axioms ExactFourierCircuits.UniformPrimeMachine.Invariant
-#print axioms ExactFourierCircuits.UniformPrimeMachine.tested
-#print axioms ExactFourierCircuits.UniformPrimeMachine.incremented
-#print axioms ExactFourierCircuits.UniformPrimeMachine.decremented
-#print axioms ExactFourierCircuits.UniformPrimeMachine.roundState
-#print axioms ExactFourierCircuits.UniformPrimeMachine.round_invariant
-#print axioms ExactFourierCircuits.UniformPrimeMachine.state_frames
-#print axioms ExactFourierCircuits.UniformPrimeMachine.round_bounded
-#print axioms ExactFourierCircuits.UniformPrimeMachine.loop_bounded
-#print axioms ExactFourierCircuits.UniformPrimeMachine.loopCost_bound
-#print axioms ExactFourierCircuits.UniformPrimeMachine.initialized_bounded
-#print axioms ExactFourierCircuits.UniformPrimeMachine.start_bounded
-#print axioms ExactFourierCircuits.UniformPrimeMachine.loopEntry_invariant
-#print axioms ExactFourierCircuits.UniformPrimeMachine.bounded_trialPrime
+#print axioms ExactFourierCircuits.UniformPrimeMachine.Invariant.eq_1
+#print axioms ExactFourierCircuits.UniformPrimeMachine.boolCode
+#print axioms ExactFourierCircuits.UniformPrimeMachine.boolCode.eq_1
 #print axioms ExactFourierCircuits.UniformPrimeMachine.boolCode_one
 #print axioms ExactFourierCircuits.UniformPrimeMachine.bounded_prime_correct
-#print axioms ExactFourierCircuits.UniformPrimeMachine.totalCost_bound
+#print axioms ExactFourierCircuits.UniformPrimeMachine.bounded_trialPrime
+#print axioms ExactFourierCircuits.UniformPrimeMachine.bounded_trialPrime._proof_1_1
+#print axioms ExactFourierCircuits.UniformPrimeMachine.bounded_trialPrime._proof_1_6
 #print axioms ExactFourierCircuits.UniformPrimeMachine.candidateState
+#print axioms ExactFourierCircuits.UniformPrimeMachine.candidateState.eq_1
 #print axioms ExactFourierCircuits.UniformPrimeMachine.candidateState_bound
 #print axioms ExactFourierCircuits.UniformPrimeMachine.canonical_prime
+#print axioms ExactFourierCircuits.UniformPrimeMachine.canonical_prime._proof_1_2
+#print axioms ExactFourierCircuits.UniformPrimeMachine.decremented
+#print axioms ExactFourierCircuits.UniformPrimeMachine.decremented.eq_1
+#print axioms ExactFourierCircuits.UniformPrimeMachine.frame_refl
+#print axioms ExactFourierCircuits.UniformPrimeMachine.incremented
+#print axioms ExactFourierCircuits.UniformPrimeMachine.incremented.eq_1
+#print axioms ExactFourierCircuits.UniformPrimeMachine.initialized
+#print axioms ExactFourierCircuits.UniformPrimeMachine.initialized.eq_1
+#print axioms ExactFourierCircuits.UniformPrimeMachine.initialized_bounded
+#print axioms ExactFourierCircuits.UniformPrimeMachine.initialized_bounded._proof_1_1
+#print axioms ExactFourierCircuits.UniformPrimeMachine.initialized_bounded._proof_1_2
+#print axioms ExactFourierCircuits.UniformPrimeMachine.initialized_bounded._proof_1_3
+#print axioms ExactFourierCircuits.UniformPrimeMachine.initialized_bounded._proof_1_4
+#print axioms ExactFourierCircuits.UniformPrimeMachine.initialized_bounded._proof_1_5
+#print axioms ExactFourierCircuits.UniformPrimeMachine.initialized_bounded._proof_1_6
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loopCost
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loopCost._f
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loopCost._sunfold
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loopCost._unsafe_rec
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loopCost.eq_1
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loopCost.eq_2
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loopCost.eq_def
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loopCost.match_1
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loopCost_bound
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loopCost_bound._proof_1_4
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loopEntry
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loopEntry.eq_1
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loopEntry_invariant
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loop_bounded
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loop_bounded._proof_1_1
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loop_bounded._proof_1_12
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loop_bounded._proof_1_2
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loop_bounded._proof_1_20
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loop_bounded._proof_1_21
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loop_bounded._proof_1_22
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loop_bounded._proof_1_3
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loop_bounded._proof_1_6
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loop_bounded._proof_1_7
+#print axioms ExactFourierCircuits.UniformPrimeMachine.loop_bounded._proof_1_8
 #print axioms ExactFourierCircuits.UniformPrimeMachine.placed_trialPrime
+#print axioms ExactFourierCircuits.UniformPrimeMachine.program
+#print axioms ExactFourierCircuits.UniformPrimeMachine.program.eq_1
+#print axioms ExactFourierCircuits.UniformPrimeMachine.roundState
+#print axioms ExactFourierCircuits.UniformPrimeMachine.roundState.eq_1
+#print axioms ExactFourierCircuits.UniformPrimeMachine.round_bounded
+#print axioms ExactFourierCircuits.UniformPrimeMachine.round_bounded._proof_1_1
+#print axioms ExactFourierCircuits.UniformPrimeMachine.round_bounded._proof_1_10
+#print axioms ExactFourierCircuits.UniformPrimeMachine.round_bounded._proof_1_2
+#print axioms ExactFourierCircuits.UniformPrimeMachine.round_bounded._proof_1_3
+#print axioms ExactFourierCircuits.UniformPrimeMachine.round_bounded._proof_1_4
+#print axioms ExactFourierCircuits.UniformPrimeMachine.round_bounded._proof_1_5
+#print axioms ExactFourierCircuits.UniformPrimeMachine.round_bounded._proof_1_6
+#print axioms ExactFourierCircuits.UniformPrimeMachine.round_bounded._proof_1_8
+#print axioms ExactFourierCircuits.UniformPrimeMachine.round_bounded._proof_1_9
+#print axioms ExactFourierCircuits.UniformPrimeMachine.round_invariant
+#print axioms ExactFourierCircuits.UniformPrimeMachine.start_bounded
+#print axioms ExactFourierCircuits.UniformPrimeMachine.start_bounded._proof_1_1
+#print axioms ExactFourierCircuits.UniformPrimeMachine.start_bounded._proof_1_2
+#print axioms ExactFourierCircuits.UniformPrimeMachine.start_bounded._proof_1_3
+#print axioms ExactFourierCircuits.UniformPrimeMachine.start_bounded._proof_1_4
+#print axioms ExactFourierCircuits.UniformPrimeMachine.state_frames
+#print axioms ExactFourierCircuits.UniformPrimeMachine.state_frames._proof_1_10
+#print axioms ExactFourierCircuits.UniformPrimeMachine.state_frames._proof_1_11
+#print axioms ExactFourierCircuits.UniformPrimeMachine.state_frames._proof_1_12
+#print axioms ExactFourierCircuits.UniformPrimeMachine.state_frames._proof_1_13
+#print axioms ExactFourierCircuits.UniformPrimeMachine.state_frames._proof_1_7
+#print axioms ExactFourierCircuits.UniformPrimeMachine.state_frames._proof_1_8
+#print axioms ExactFourierCircuits.UniformPrimeMachine.state_frames._proof_1_9
+#print axioms ExactFourierCircuits.UniformPrimeMachine.tested
+#print axioms ExactFourierCircuits.UniformPrimeMachine.tested.eq_1
+#print axioms ExactFourierCircuits.UniformPrimeMachine.totalCost
+#print axioms ExactFourierCircuits.UniformPrimeMachine.totalCost.eq_1
+#print axioms ExactFourierCircuits.UniformPrimeMachine.totalCost_bound
+#print axioms ExactFourierCircuits.UniformPrimeMachine.totalCost_bound._proof_1_2
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformPrimeMachine.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

@@ -1,0 +1,80 @@
+import UniformGlobalCalendarDispatchEvents
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CachedEvent
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CachedEvent.casesOn
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CachedEvent.decoded
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CachedEvent.entryFit
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CachedEvent.matching
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CachedEvent.mk
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CachedEvent.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CachedEvent.rec
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CachedEvent.recOn
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CachedEvent.source
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CachedEvent.sourcePool
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CachedEvent.sourceRows
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CachedEvent.stored
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CachedEvent.transfer
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CachedEvent.transfer._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CachedEvent.transfer._proof_1_10
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CachedEvent.transfer._proof_1_11
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CachedEvent.transfer._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CachedEvent.transfer._proof_1_3
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CachedEvent.transfer._proof_1_4
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CachedEvent.transfer._proof_1_8
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CachedEvent.transfer._proof_1_9
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.CachedEvent.values
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Event
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Event._sizeOf_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Event._sizeOf_inst
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Event.casesOn
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Event.ctorIdx
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Event.descriptor
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Event.factor
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Event.mk
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Event.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Event.mk.inj
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Event.mk.injEq
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Event.mk.noConfusion
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Event.mk.sizeOf_spec
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Event.noConfusion
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Event.noConfusionType
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Event.phase
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Event.rec
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Event.recOn
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Event.records
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Selections
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Selections._f
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Selections._sunfold
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Selections._unsafe_rec
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Selections.match_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Selections.transfer
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Selections.transfer._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Selections.transfer._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Selections.transfer._proof_1_3
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Source.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.Source.eq_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.callCount
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.callTotal
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.foldRows
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.foldRows._f
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.foldRows._sunfold
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.foldRows._unsafe_rec
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.foldRows.match_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.foldValues
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.foldValues._f
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.foldValues._sunfold
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.foldValues._unsafe_rec
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.foldValues.match_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.printed_transfer
+#print axioms ExactFourierCircuits.UniformGlobalCalendarDispatch.printed_transfer._proof_1_1
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformGlobalCalendarDispatchEvents.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

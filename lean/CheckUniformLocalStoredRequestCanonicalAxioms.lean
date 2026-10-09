@@ -1,0 +1,7 @@
+import UniformLocalStoredRequestCanonical
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.canonical_execution
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.canonical_header

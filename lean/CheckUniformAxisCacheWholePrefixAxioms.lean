@@ -1,0 +1,11 @@
+import UniformAxisCacheWholePrefix
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisCacheWholePrefix.code_fits
+#print axioms ExactFourierCircuits.UniformAxisCacheWholePrefix.code_fits._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCacheWholePrefix.rectangle_axis
+#print axioms ExactFourierCircuits.UniformAxisCacheWholePrefix.rectangle_axis._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCacheWholePrefix.rectangle_axis._proof_1_2
+#print axioms ExactFourierCircuits.UniformAxisCacheWholePrefix.rectangle_axis._proof_1_3

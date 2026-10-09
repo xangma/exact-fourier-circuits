@@ -1,0 +1,111 @@
+import UniformCacheRangeSelectorData
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Args
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Args.casesOn
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Args.control
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Args.mk
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Args.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Args.output
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Args.radix
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Args.rec
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Args.recOn
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Args.tasks
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Args.tick
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Control
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Control.casesOn
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Control.index
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Control.mk
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Control.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Control.nodeCount
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Control.one
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Control.output
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Control.pointer
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Control.rec
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Control.recOn
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Control.spacing
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Control.tick
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Control.two
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Control.used
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Control.withPC
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Control.zero
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Layout
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Layout.casesOn
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Layout.header
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Layout.mk
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Layout.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Layout.nodeRows
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Layout.nodes
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Layout.output
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Layout.rec
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Layout.recOn
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Layout.rectangle
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.NodeSource
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.NodeSource.low
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.NodeSource.low._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.NodeSource.low._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.NodeSource.low._proof_1_3
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.NodeSource.low._proof_1_4
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.NodeSource.tail
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Range
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Range._sizeOf_1
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Range._sizeOf_inst
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Range.base
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Range.casesOn
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Range.count
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Range.ctorIdx
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Range.mk
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Range.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Range.mk.inj
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Range.mk.injEq
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Range.mk.noConfusion
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Range.mk.sizeOf_spec
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Range.noConfusion
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Range.noConfusionType
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Range.rec
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Range.recOn
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Range.records
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.RangeSource
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.RangeSource.casesOn
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.RangeSource.mk
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.RangeSource.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.RangeSource.nodeCount
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.RangeSource.nodes
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.RangeSource.rec
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.RangeSource.recOn
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.RangeSource.rectangle
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.RangeSource.rectangleCountCell
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.S.Source
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.S.selected
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.S.writeSelections
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.endAddress
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.selectedRanges
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.selectedRanges._f
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.selectedRanges._sunfold
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.selectedRanges._unsafe_rec
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.selectedRanges.eq_1
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.selectedRanges.eq_2
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.selectedRanges.eq_def
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.selectedRanges_length
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.stride
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.total
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.total._f
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.total._sunfold
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.total._unsafe_rec
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.total.eq_1
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.total.eq_2
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.total.eq_def
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.total.match_1
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.writeSelections_append
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.writeSelections_append._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.writeSelections_low
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformCacheRangeSelectorData.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

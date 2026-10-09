@@ -1,0 +1,95 @@
+import UniformCacheTimingControl
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Header
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Header.casesOn
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Header.durations
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Header.fourteen
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Header.mk
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Header.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Header.nodeCount
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Header.nodes
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Header.one
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Header.pc
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Header.rec
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Header.recOn
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Header.requestCount
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Header.requestStarts
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Header.requests
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Header.rootStart
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Header.seven
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Header.starts
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Header.three
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Header.two
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Header.zero
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Init
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Init.casesOn
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Init.index
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Init.mk
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Init.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Init.pc
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Init.rec
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Init.recOn
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.Init.toHeader
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.ZeroPrefix
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.ZeroPrefix.eq_1
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.destinations
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.destinations._sparseCasesOn_1
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.destinations._sparseCasesOn_1.else_eq
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.destinations.eq_1
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.destinations.eq_2
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.destinations.eq_3
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.destinations.eq_4
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.destinations.match_1
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.execution_natFrame
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.execution_scalarFrame
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.init_header
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.init_outside
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.init_outside._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.init_outside._proof_1_3
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.init_outside._proof_1_4
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.init_outside._proof_1_5
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.init_prefix
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.init_prefix._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.initialize_loop
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.initialize_loop._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.initialize_loop._proof_1_10
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.initialize_loop._proof_1_11
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.initialize_loop._proof_1_12
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.initialize_loop._proof_1_13
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.initialize_loop._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.initialize_loop._proof_1_4
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.initialize_loop._proof_1_5
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.initialize_loop._proof_1_6
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.initialize_loop._proof_1_8
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.initialize_loop._proof_1_9
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.instDecidableDestinations
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.instDecidableDestinations._proof_1
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.instDecidableDestinations._proof_10
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.instDecidableDestinations._proof_11
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.instDecidableDestinations._proof_12
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.instDecidableDestinations._proof_13
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.instDecidableDestinations._proof_14
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.instDecidableDestinations._proof_2
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.instDecidableDestinations._proof_3
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.instDecidableDestinations._proof_4
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.instDecidableDestinations._proof_5
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.instDecidableDestinations._proof_6
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.instDecidableDestinations._proof_7
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.instDecidableDestinations._proof_8
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.instDecidableDestinations._proof_9
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.keeps_nat
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.keeps_nat._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.program_destinations
+#print axioms ExactFourierCircuits.UniformCacheTimingControl.program_natOnly
+#print axioms ExactFourierCircuits.UniformCacheTimingProgram.initCell.eq_1
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformCacheTimingControl.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

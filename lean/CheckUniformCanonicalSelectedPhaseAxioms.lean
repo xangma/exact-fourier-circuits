@@ -1,0 +1,11 @@
+import UniformCanonicalSelectedPhase
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCanonicalSelectedPhase.castPlacement_fit
+#print axioms ExactFourierCircuits.UniformCanonicalSelectedPhase.chunkRender_selected
+#print axioms ExactFourierCircuits.UniformCanonicalSelectedPhase.normalPlacement_fit
+#print axioms ExactFourierCircuits.UniformCanonicalSelectedPhase.normalPlacement_fit._proof_1
+#print axioms ExactFourierCircuits.UniformCanonicalSelectedPhase.rowBank
+#print axioms ExactFourierCircuits.UniformCanonicalSelectedPhase.rowBank_producer

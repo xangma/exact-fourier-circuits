@@ -1,0 +1,17 @@
+import UniformAxisCacheForestEntry
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisCacheForestEntry.directory_get
+#print axioms ExactFourierCircuits.UniformAxisCacheForestEntry.directory_get._simp_1_1
+#print axioms ExactFourierCircuits.UniformAxisCacheForestEntry.directory_get_zero
+#print axioms ExactFourierCircuits.UniformAxisCacheForestEntry.facts
+#print axioms ExactFourierCircuits.UniformAxisCacheForestEntry.header
+#print axioms ExactFourierCircuits.UniformAxisCacheForestEntry.parameters
+#print axioms ExactFourierCircuits.UniformAxisCacheForestEntry.printed_root
+#print axioms ExactFourierCircuits.UniformAxisCacheForestEntry.rectangleCount
+#print axioms ExactFourierCircuits.UniformAxisCacheForestEntry.sources
+#print axioms ExactFourierCircuits.UniformAxisCacheForestEntry.visits
+#print axioms ExactFourierCircuits.UniformAxisCacheForestEntry.visits.eq_1
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingMetadata.nodeCount.eq_1

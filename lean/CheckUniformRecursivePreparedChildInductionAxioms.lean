@@ -1,0 +1,8 @@
+import UniformRecursivePreparedChildInduction
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveChildInduction.execution_prepared
+#print axioms ExactFourierCircuits.UniformRecursiveChildInduction.execution_prepared._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveChildInduction.smaller_prepared

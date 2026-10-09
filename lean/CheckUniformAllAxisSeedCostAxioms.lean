@@ -1,4 +1,7 @@
 import UniformAllAxisSeedCost
+import Lean
+
+set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformAllAxisSeedCost.budget_axis_power
 #print axioms ExactFourierCircuits.UniformAllAxisSeedCost.budget_axis_power._proof_1_1
@@ -15,3 +18,5 @@ import UniformAllAxisSeedCost
 #print axioms ExactFourierCircuits.UniformAllAxisSeedCost.runtime_isLittleO_input
 #print axioms ExactFourierCircuits.UniformAllAxisSeedCost.workingLength_isBigO_input
 #print axioms ExactFourierCircuits.UniformAllAxisSeedCost.workingLength_isBigO_input._proof_1_1
+#print axioms ExactFourierCircuits.UniformAllAxisSeedPreparation.fullBudget.eq_1
+#print axioms ExactFourierCircuits.UniformInitialTraversalPreparation.preparationBudget.eq_1

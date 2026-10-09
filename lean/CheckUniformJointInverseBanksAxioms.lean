@@ -1,0 +1,9 @@
+import UniformJointInverseBanks
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformJointInverseBanks.roles_volume
+#print axioms ExactFourierCircuits.UniformJointInverseBanks.roles_volume._proof_1_1
+#print axioms ExactFourierCircuits.UniformJointInverseBanks.separation
+#print axioms ExactFourierCircuits.UniformJointInverseBanks.separation._proof_1_1

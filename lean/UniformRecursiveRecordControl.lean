@@ -291,7 +291,7 @@ lemma dispatch_vector (start a b c d e f g:ℕ):
   .natLiteral 4177 6,.branchLT 2851 4177 f (start+11),.jump g]:=rfl
 
 def targets : Fin 7→ℕ := ![P.address .residualMark,P.address .scalar,P.address .marker,
- P.address .translation,P.address .exchange,P.address .paddingInit,P.address .marker]
+ P.address .yRestore,P.address .exchange,P.address .paddingInit,P.address .marker]
 lemma dispatch_from_slice (main piece:Program)(start:ℕ)(target:Fin 7→ℕ)
  (slice:UniformRecursiveSavingProgram.Slice piece main start)
  (eq:piece=dispatchCode start target):DispatchAt main start target:=by
@@ -301,7 +301,7 @@ lemma dispatch_from_slice (main piece:Program)(start:ℕ)(target:Fin 7→ℕ)
  exact (slice i ip).trans (congrArg (fun z:Program=>z[i]?) eq)
 lemma dispatch_piece:P.piece .dispatch=dispatchCode (P.address .dispatch) targets:=
  (dispatch_vector (P.address .dispatch) (P.address .residualMark) (P.address .scalar) (P.address .marker)
-  (P.address .translation) (P.address .exchange) (P.address .paddingInit) (P.address .marker)).symm
+  (P.address .yRestore) (P.address .exchange) (P.address .paddingInit) (P.address .marker)).symm
 lemma dispatch_code : DispatchAt P.program (P.address .dispatch) targets:=
  dispatch_from_slice P.program (P.piece .dispatch) (P.address .dispatch) targets
   (UniformRecursiveSavingProgram.part_slice .dispatch) dispatch_piece
@@ -311,7 +311,7 @@ lemma vector_bound (a b c d e f g B:ℕ)
  intro j;fin_cases j <;> assumption
 lemma targets_bound (B:ℕ)(code:P.program.length≤B):∀j,targets j≤B:=
  vector_bound _ _ _ _ _ _ _ B (R.start_bound .residualMark B code) (R.start_bound .scalar B code)
-  (R.start_bound .marker B code) (R.start_bound .translation B code) (R.start_bound .exchange B code)
+  (R.start_bound .marker B code) (R.start_bound .yRestore B code) (R.start_bound .exchange B code)
   (R.start_bound .paddingInit B code) (R.start_bound .marker B code)
 
 theorem dispatch_execution (n B k:ℕ) (x:Fin n→ℂ) (s:State)

@@ -1,0 +1,17 @@
+import UniformFinalOuterCost
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFinalOuterCost.input_isBigO_paper
+#print axioms ExactFourierCircuits.UniformFinalOuterCost.overhead
+#print axioms ExactFourierCircuits.UniformFinalOuterCost.overhead.eq_1
+#print axioms ExactFourierCircuits.UniformFinalOuterCost.overhead_isBigO_input
+#print axioms ExactFourierCircuits.UniformFinalOuterCost.stageCosts
+#print axioms ExactFourierCircuits.UniformFinalOuterCost.stageCosts.eq_1
+#print axioms ExactFourierCircuits.UniformFinalOuterCost.stages_length
+#print axioms ExactFourierCircuits.UniformFinalOuterCost.totalBudget
+#print axioms ExactFourierCircuits.UniformFinalOuterCost.totalBudget.eq_1
+#print axioms ExactFourierCircuits.UniformFinalOuterCost.totalBudget_eq
+#print axioms ExactFourierCircuits.UniformFinalOuterCost.totalBudget_isBigO_paper
+#print axioms ExactFourierCircuits.UniformFinalOuterCost.totalBudget_split

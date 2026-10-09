@@ -1,0 +1,18 @@
+import UniformPaddingRecordProjections
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformPaddingRecordProjections.columns
+#print axioms ExactFourierCircuits.UniformPaddingRecordProjections.columns_of_eq
+#print axioms ExactFourierCircuits.UniformPaddingRecordProjections.dest
+#print axioms ExactFourierCircuits.UniformPaddingRecordProjections.dest_of_eq
+#print axioms ExactFourierCircuits.UniformPaddingRecordProjections.length
+#print axioms ExactFourierCircuits.UniformPaddingRecordProjections.length_of_padding_eq
+#print axioms ExactFourierCircuits.UniformPaddingRecordProjections.opcode
+#print axioms ExactFourierCircuits.UniformPaddingRecordProjections.opcode_of_eq
+#print axioms ExactFourierCircuits.UniformPaddingRecordProjections.record
+#print axioms ExactFourierCircuits.UniformPaddingRecordProjections.source
+#print axioms ExactFourierCircuits.UniformPaddingRecordProjections.source_of_eq
+#print axioms ExactFourierCircuits.UniformPaddingRecordProjections.width
+#print axioms ExactFourierCircuits.UniformPaddingRecordProjections.width_of_eq

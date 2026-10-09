@@ -1,0 +1,60 @@
+import UniformJointConditionalKernelBanks
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.loop
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.loop._proof_1
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.loop._proof_10
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.loop._proof_11
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.loop._proof_12
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.loop._proof_13
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.loop._proof_14
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.loop._proof_15
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.loop._proof_16
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.loop._proof_17
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.loop._proof_18
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.loop._proof_19
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.loop._proof_2
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.loop._proof_3
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.loop._proof_4
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.loop._proof_5
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.loop._proof_6
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.loop._proof_7
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.loop._proof_8
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.loop._proof_9
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.packing
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.packing._proof_1
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.packing._proof_10
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.packing._proof_2
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.packing._proof_3
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.packing._proof_4
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.packing._proof_5
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.packing._proof_6
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.packing._proof_7
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.packing._proof_8
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.packing._proof_9
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.reserve_bound
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.reserve_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.room
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.room._proof_1_1
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.room._proof_1_2
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.scatter
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.scatter._proof_1
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.scatter._proof_10
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.scatter._proof_2
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.scatter._proof_3
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.scatter._proof_4
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.scatter._proof_5
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.scatter._proof_6
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.scatter._proof_7
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.scatter._proof_8
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelBanks.scatter._proof_9
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformJointConditionalKernelBanks.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

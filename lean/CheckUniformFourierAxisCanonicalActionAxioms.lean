@@ -1,0 +1,16 @@
+import UniformFourierAxisCanonicalAction
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFourierAxisCanonicalAction.boundary
+#print axioms ExactFourierCircuits.UniformFourierAxisCanonicalAction.boundary._proof_1
+#print axioms ExactFourierCircuits.UniformFourierAxisCanonicalAction.boundary._proof_2
+#print axioms ExactFourierCircuits.UniformFourierAxisCanonicalAction.boundary._proof_3
+#print axioms ExactFourierCircuits.UniformFourierAxisCanonicalAction.boundary_family
+#print axioms ExactFourierCircuits.UniformFourierAxisCanonicalAction.boundary_family._proof_1_1
+#print axioms ExactFourierCircuits.UniformFourierAxisCanonicalAction.boundary_nonempty
+#print axioms ExactFourierCircuits.UniformFourierAxisCanonicalAction.inactive
+#print axioms ExactFourierCircuits.UniformFourierAxisCanonicalAction.inactive._proof_1
+#print axioms ExactFourierCircuits.UniformFourierAxisCanonicalAction.inactive._proof_2
+#print axioms ExactFourierCircuits.UniformFourierAxisCanonicalAction.inactive_nonempty

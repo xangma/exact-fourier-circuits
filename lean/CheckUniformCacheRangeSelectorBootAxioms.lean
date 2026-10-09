@@ -1,0 +1,18 @@
+import UniformCacheRangeSelectorBoot
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.boot.eq_1
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.boot_execution
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.boot_execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.boot_execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.boot_execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.boot_execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.boot_execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.boot_heap
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.boot_result
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.boot_result._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.boot_result._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.boot_stage
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.stride.eq_1

@@ -1,0 +1,10 @@
+import UniformGlobalFiniteClockInduction
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformGlobalFiniteClockInduction.axes
+#print axioms ExactFourierCircuits.UniformGlobalFiniteClockInduction.clocks
+#print axioms ExactFourierCircuits.UniformGlobalFiniteClockInduction.segments
+#print axioms ExactFourierCircuits.UniformGlobalFiniteClockInduction.segments._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalFiniteClockInduction.segments._proof_1_2

@@ -1,7 +1,6 @@
 import UniformRecursiveNativeEntries
 import Lean
 
--- Inventory uses defining-module provenance, including generated/private names.
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformRecursiveNativeEntries.UniformFixedNetworkMarkerMachine.embedded

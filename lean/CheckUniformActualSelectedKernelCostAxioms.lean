@@ -1,0 +1,8 @@
+import UniformActualSelectedKernelCost
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualSelectedKernelCost.all_clocks
+#print axioms ExactFourierCircuits.UniformActualSelectedKernelCost.selected_kernel
+#print axioms ExactFourierCircuits.UniformJointConditionalKernelContext.actualReserveContext.congr_simp

@@ -1,0 +1,9 @@
+import UniformFinalActualClockCost
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFinalActualClockCost.actual_loop_bound
+#print axioms ExactFourierCircuits.UniformFinalActualClockCost.actual_tick_bound
+#print axioms ExactFourierCircuits.UniformFinalActualClockCost.actual_tick_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalActualClockCost.child_cost_eq

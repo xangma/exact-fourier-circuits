@@ -1,0 +1,11 @@
+import UniformRecursiveAdjacent
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveAdjacent.adjacent
+#print axioms ExactFourierCircuits.UniformRecursiveAdjacent.adjacent._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveAdjacent.adjacent_function
+#print axioms ExactFourierCircuits.UniformRecursiveAdjacent.boot_after
+#print axioms ExactFourierCircuits.UniformRecursiveAdjacent.post
+#print axioms ExactFourierCircuits.UniformRecursiveAdjacent.pre

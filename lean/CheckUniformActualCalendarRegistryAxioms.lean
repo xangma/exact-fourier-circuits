@@ -1,0 +1,48 @@
+import UniformActualCalendarRegistry
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Produced
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Produced._sizeOf_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Produced._sizeOf_inst
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Produced.address_eq
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Produced.cached
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Produced.casesOn
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Produced.ctorIdx
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Produced.elapsed_eq
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Produced.event
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Produced.mk
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Produced.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Produced.mk.inj
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Produced.mk.injEq
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Produced.mk.noConfusion
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Produced.mk.sizeOf_spec
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Produced.noConfusion
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Produced.noConfusionType
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Produced.rec
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Produced.recOn
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.event_pairs
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.event_pairs._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.event_pairs._proof_1_5
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.events
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.events._f
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.events._sunfold
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.events._unsafe_rec
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.events.eq_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.events.eq_2
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.events.eq_def
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.events.match_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.events_cached
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.events_cached._proof_1_5
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.events_cached._proof_1_6
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.events_cached._proof_1_7
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.events_cached._simp_1_4
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformActualCalendarRegistry.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

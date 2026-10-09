@@ -1,5 +1,6 @@
 import UniformResidualBasisExecution
 import Lean
+
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformResidualBasisExecution.Inputs
@@ -125,3 +126,6 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformResidualBasisExecution.round_runs._proof_1_72
 #print axioms ExactFourierCircuits.UniformResidualBasisExecution.round_runs._proof_1_8
 #print axioms ExactFourierCircuits.UniformResidualBasisExecution.round_runs._proof_1_9
+#print axioms ExactFourierCircuits.UniformResidualBasisMachine.Partial.eq_1
+#print axioms ExactFourierCircuits.UniformResidualBasisMachine.boot.eq_1
+#print axioms ExactFourierCircuits.UniformResidualBasisMachine.roundCost.eq_1

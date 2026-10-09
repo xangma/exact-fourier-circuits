@@ -1,0 +1,33 @@
+import UniformAxisBoundaryClock
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_delta
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_finish
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_finish._proof_1_10
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_finish._proof_1_11
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_finish._proof_1_12
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_finish._proof_1_3
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_finish._proof_1_4
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_finish._proof_1_5
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_finish._proof_1_6
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_finish._proof_1_7
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_finish._proof_1_8
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_finish._proof_1_9
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_inactive
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_inactive._proof_1_10
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_inactive._proof_1_11
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_inactive._proof_1_12
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_inactive._proof_1_3
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_inactive._proof_1_4
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_inactive._proof_1_5
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_inactive._proof_1_6
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_inactive._proof_1_7
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_inactive._proof_1_8
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_inactive._proof_1_9
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_right_one
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_right_two
+#print axioms ExactFourierCircuits.UniformAxisBoundaryClock.full_start
+#print axioms ExactFourierCircuits.UniformFourierCalendarSnapshot.join.eq_1
+#print axioms ExactFourierCircuits.UniformReflectedFourierCalendar.full.eq_1

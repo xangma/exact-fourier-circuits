@@ -1,0 +1,23 @@
+import UniformFinalFiniteAxes
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAllAxisSeedPreparation.prefixSum.eq_1
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxes.axisBoot_frame
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxes.axisBoot_kept
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxes.cache
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxes.execution
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxes.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxes.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxes.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxes.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxes.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxes.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxes.execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxes.frame_pc
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxes.nat_zero
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxes.printed_pc
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxes.reset_self
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxes.scalar_zero
+#print axioms ExactFourierCircuits.UniformFourierAxisWorkspace.natPrefix.eq_1

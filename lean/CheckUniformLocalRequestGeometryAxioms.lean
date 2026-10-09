@@ -1,0 +1,36 @@
+import UniformLocalRequestGeometry
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Complete
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Complete._proof_1
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Complete.heaps
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Complete.retained
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Complete.retained._proof_1_1
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Complete.retained._proof_1_2
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Complete.retained._proof_1_3
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Complete.retained._proof_1_4
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Complete.retained._proof_1_5
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Complete.retained._proof_1_6
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Complete.retained._proof_1_7
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Geometry
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Geometry.capacity
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Geometry.casesOn
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Geometry.mk
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Geometry.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Geometry.rec
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Geometry.recOn
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Geometry.rowsBefore
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Geometry.rowsBound
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Geometry.rowsHigh
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Geometry.slots
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Geometry.timesAfter
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Geometry.timesBound
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Geometry.timesHigh
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.Geometry.workspace
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.aBound
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.bank
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.eBound
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.past_prefix
+#print axioms ExactFourierCircuits.UniformLocalRequestGeometry.past_prefix._proof_1_1

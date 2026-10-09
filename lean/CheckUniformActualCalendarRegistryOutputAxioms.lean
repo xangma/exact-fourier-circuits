@@ -1,0 +1,7 @@
+import UniformActualCalendarRegistryOutput
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Bundle.cached_after_selector
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Bundle.selections

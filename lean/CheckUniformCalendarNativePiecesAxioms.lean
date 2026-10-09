@@ -1,0 +1,17 @@
+import UniformCalendarNativePieces
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarNativePieces.Core
+#print axioms ExactFourierCircuits.UniformCalendarNativePieces.Core.casesOn
+#print axioms ExactFourierCircuits.UniformCalendarNativePieces.Core.direct
+#print axioms ExactFourierCircuits.UniformCalendarNativePieces.Core.pair
+#print axioms ExactFourierCircuits.UniformCalendarNativePieces.Core.rec
+#print axioms ExactFourierCircuits.UniformCalendarNativePieces.Core.recOn
+#print axioms ExactFourierCircuits.UniformCalendarNativePieces.Native
+#print axioms ExactFourierCircuits.UniformCalendarNativePieces.Native.congr_simp
+#print axioms ExactFourierCircuits.UniformCalendarNativePieces.calendar_native
+#print axioms ExactFourierCircuits.UniformCalendarNativePieces.correction_native
+#print axioms ExactFourierCircuits.UniformCalendarNativePieces.pieceAt_native
+#print axioms ExactFourierCircuits.UniformCalendarNativePieces.stamp_native

@@ -1,0 +1,9 @@
+import UniformActualCalendarBundleAtoms
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarBundleAtoms.enumeration
+#print axioms ExactFourierCircuits.UniformActualCalendarBundleAtoms.enumeration._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarBundleAtoms.event
+#print axioms ExactFourierCircuits.UniformActualCalendarBundleAtoms.events_eq

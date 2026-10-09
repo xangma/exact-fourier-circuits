@@ -1,0 +1,12 @@
+import UniformProducedClockTick
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformProducedClockTick.budget
+#print axioms ExactFourierCircuits.UniformProducedClockTick.execution
+#print axioms ExactFourierCircuits.UniformProducedClockTick.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformProducedClockTick.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformProducedClockTick.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformProducedClockTick.family
+#print axioms ExactFourierCircuits.UniformProducedClockTick.stored

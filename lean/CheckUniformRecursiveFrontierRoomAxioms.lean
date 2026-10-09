@@ -1,0 +1,11 @@
+import UniformRecursiveFrontierRoom
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveFrontierRoom.child_room
+#print axioms ExactFourierCircuits.UniformRecursiveFrontierRoom.pow_room
+#print axioms ExactFourierCircuits.UniformRecursiveFrontierRoom.pow_room._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveFrontierRoom.pow_room._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveFrontierRoom.room
+#print axioms ExactFourierCircuits.UniformRecursiveFrontierRoom.room._proof_1_1

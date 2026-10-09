@@ -1,0 +1,15 @@
+import UniformAxisCacheBoot
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisCacheBoot.execution
+#print axioms ExactFourierCircuits.UniformAxisCacheBoot.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCacheBoot.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformAxisCacheBoot.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformAxisCacheBoot.execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformAxisCacheBoot.execution._simp_1_5
+#print axioms ExactFourierCircuits.UniformAxisCacheBoot.execution._simp_1_6
+#print axioms ExactFourierCircuits.UniformAxisCacheBoot.resetOps
+#print axioms ExactFourierCircuits.UniformAxisCacheBoot.resetOps.eq_1
+#print axioms ExactFourierCircuits.UniformAxisCacheBoot.resetOps_length

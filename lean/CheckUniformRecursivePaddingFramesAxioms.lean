@@ -1,0 +1,89 @@
+import UniformRecursivePaddingFrames
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Metadata
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Metadata.casesOn
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Metadata.current
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Metadata.endpoint
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Metadata.mk
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Metadata.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Metadata.mode
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Metadata.rec
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Metadata.recOn
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Metadata.saved
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Metadata.transport
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Metadata.unit
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.bits
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.casesOn
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.columns
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.depth
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.frontier
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.mk
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.nativeBase
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.nativeBits
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.nativeRest
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.of_control
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.one
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.original
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.padding
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.padding._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.padding._proof_1_10
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.padding._proof_1_11
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.padding._proof_1_12
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.padding._proof_1_13
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.padding._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.padding._proof_1_3
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.padding._proof_1_4
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.padding._proof_1_5
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.padding._proof_1_6
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.padding._proof_1_7
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.padding._proof_1_8
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.padding._proof_1_9
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.rec
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.recOn
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.residual
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.residual._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.residual._proof_1_10
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.residual._proof_1_11
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.residual._proof_1_12
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.residual._proof_1_13
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.residual._proof_1_14
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.residual._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.residual._proof_1_3
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.residual._proof_1_4
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.residual._proof_1_5
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.residual._proof_1_6
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.residual._proof_1_7
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.residual._proof_1_8
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.residual._proof_1_9
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.rest
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.stack
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.table
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.volume
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.Parent.width
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.block_branch_register
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.block_branch_register._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.block_branch_register_len
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.block_jump_register
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.block_jump_register_len
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.block_register
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.block_register._simp_1_6
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.keeps
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.keeps.eq_1
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.keeps.eq_2
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.keeps.eq_3
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.keeps.eq_4
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.keeps.match_1
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFrames.runs_unique
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformRecursivePaddingFrames.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

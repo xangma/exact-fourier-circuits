@@ -1,0 +1,11 @@
+import UniformNativeDirectionMetadata
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformNativeDirectionMetadata.bitWords_cast
+#print axioms ExactFourierCircuits.UniformNativeDirectionMetadata.direction_one_words
+#print axioms ExactFourierCircuits.UniformNativeDirectionMetadata.exchange_record_model
+#print axioms ExactFourierCircuits.UniformNativeDirectionMetadata.padded_role_value
+#print axioms ExactFourierCircuits.UniformNativeDirectionMetadata.translation_record_model
+#print axioms ExactFourierCircuits.UniformNativeTerminalY.directions.eq_1

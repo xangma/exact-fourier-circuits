@@ -1,0 +1,22 @@
+import UniformLocalStoredRequestEndpoints
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Endpoints
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Endpoints.abi
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Endpoints.casesOn
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Endpoints.count
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Endpoints.index
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Endpoints.markers
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Endpoints.mk
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Endpoints.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Endpoints.permutation
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Endpoints.physicalAxis
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Endpoints.pointer
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Endpoints.pool
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Endpoints.rec
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Endpoints.recOn
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Endpoints.timePointer
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Endpoints.widths
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Ready.endpoints

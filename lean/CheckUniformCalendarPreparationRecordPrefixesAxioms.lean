@@ -1,0 +1,10 @@
+import UniformCalendarPreparationRecordPrefixes
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarPreparationRecordPrefixes.direct
+#print axioms ExactFourierCircuits.UniformCalendarPreparationRecordPrefixes.direct_fine
+#print axioms ExactFourierCircuits.UniformCalendarPreparationRecordPrefixes.fine_val
+#print axioms ExactFourierCircuits.UniformCalendarPreparationRecordPrefixes.rectangle
+#print axioms ExactFourierCircuits.UniformCalendarPreparationRecordPrefixes.rectangle_fine

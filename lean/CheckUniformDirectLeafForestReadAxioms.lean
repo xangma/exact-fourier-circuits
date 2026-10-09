@@ -1,0 +1,14 @@
+import UniformDirectLeafForestRead
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafForestProgram.read.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRead.cursor
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRead.execution
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRead.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRead.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRead.frame
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRead.pc
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRead.result
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRead.result.eq_1

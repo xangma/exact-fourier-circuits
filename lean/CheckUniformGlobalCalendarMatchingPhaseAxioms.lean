@@ -1,0 +1,37 @@
+import UniformGlobalCalendarMatchingPhase
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.coefficients
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.diagonal_blocks
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.edges
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.edges._proof_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.edges.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.edges_matching
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.factor_nonzero
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.factor_nonzero._simp_1_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.factor_nonzero._simp_1_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.factor_nonzero._simp_1_3
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.matchingCalls
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.matchingCalls.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.matching_diagonal
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.matching_phase_matrix
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.matching_phase_snapshot
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.nativeFactor_nonzero
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.phaseSnapshot
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.phaseSnapshot._proof_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.phaseSnapshot._proof_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.phaseSnapshot._proof_3
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.phaseSnapshot.congr_simp
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.phaseSnapshot.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.phaseSnapshot.eq_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.phaseSnapshot.match_1
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformGlobalCalendarMatchingPhase.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

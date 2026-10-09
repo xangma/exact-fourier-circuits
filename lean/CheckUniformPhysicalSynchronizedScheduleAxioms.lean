@@ -1,0 +1,8 @@
+import UniformPhysicalSynchronizedSchedule
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformPhysicalSynchronizedSchedule.fourier
+#print axioms ExactFourierCircuits.UniformPhysicalSynchronizedSchedule.product
+#print axioms ExactFourierCircuits.UniformPhysicalSynchronizedSchedule.slot

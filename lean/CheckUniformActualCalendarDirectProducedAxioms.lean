@@ -1,0 +1,11 @@
+import UniformActualCalendarDirectProduced
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectProduced.duration
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectProduced.event
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectProduced.produced
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectProduced.produced._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectProduced.produced._proof_2
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectProduced.produced._proof_3

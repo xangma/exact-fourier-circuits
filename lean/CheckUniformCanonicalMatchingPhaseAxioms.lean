@@ -1,0 +1,14 @@
+import UniformCanonicalMatchingPhase
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCanonicalMatchingPhase.nativeFactor_reindex
+#print axioms ExactFourierCircuits.UniformCanonicalMatchingPhase.phase_congr
+#print axioms ExactFourierCircuits.UniformCanonicalMatchingPhase.phase_reindex
+#print axioms ExactFourierCircuits.UniformCanonicalMatchingPhase.phase_reverse
+#print axioms ExactFourierCircuits.UniformCanonicalMatchingPhase.reverseOrder
+#print axioms ExactFourierCircuits.UniformCanonicalMatchingPhase.reverseOrder.eq_1
+#print axioms ExactFourierCircuits.UniformCanonicalMatchingPhase.reverseOrder_get
+#print axioms ExactFourierCircuits.UniformCanonicalMatchingPhase.reverseOrder_get._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarMatchingPhase.matchingCalls.congr_simp

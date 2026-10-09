@@ -1,0 +1,40 @@
+import UniformGlobalCalendarGeometry
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.Active
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.DisjointBands
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.Event.high
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.Event.high.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.Event.high.eq_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.Event.low
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.Event.low.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.Event.low.eq_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.Event.low.match_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.SeparatedAt
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.actual_walk_separated
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.ordinary_clock
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.ordinary_clock._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.ordinary_disjoint
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.rows_shape
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.sequenceRows_band
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.sequenceRows_event
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.sequenceRows_separated
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.sequenceRows_separated._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.tree_band
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.tree_band._proof_1_6
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.tree_band._proof_1_7
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.tree_separated
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.tree_separated._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.tree_separated._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.tree_separated._proof_1_3
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.tree_separated._proof_1_4
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformGlobalCalendarGeometry.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

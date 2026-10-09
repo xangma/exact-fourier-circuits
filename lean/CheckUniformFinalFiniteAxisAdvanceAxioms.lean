@@ -1,0 +1,16 @@
+import UniformFinalFiniteAxisAdvance
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisAdvance.axisCost
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisAdvance.cache_frontiers_next
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisAdvance.cost_join
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisAdvance.cost_join._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisAdvance.directory_step
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisAdvance.directory_step._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisAdvance.execution
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisAdvance.next_state
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisAdvance.printed_next
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisAdvance.ready_next
+#print axioms ExactFourierCircuits.UniformFinalFiniteAxisAdvance.reset_start

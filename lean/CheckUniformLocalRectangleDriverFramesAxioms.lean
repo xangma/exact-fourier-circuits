@@ -1,0 +1,40 @@
+import UniformLocalRectangleDriverFrames
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.disabled_keeps
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.disabled_keeps._proof_1_10
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.disabled_keeps._proof_1_11
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.disabled_keeps._proof_1_6
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.disabled_keeps._proof_1_7
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.disabled_keeps._proof_1_8
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.disabled_keeps._proof_1_9
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.disabled_keeps._simp_1_1
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.disabled_keeps._simp_1_2
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.disabled_keeps._simp_1_3
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.disabled_keeps._simp_1_4
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.disabled_keeps._simp_1_5
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.driverProtected
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.driverProtected._sparseCasesOn_1
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.driverProtected._sparseCasesOn_1.else_eq
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.driverProtected.eq_1
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.driverProtected.eq_2
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.driverProtected.eq_3
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.driverProtected.eq_4
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.driverProtected.eq_5
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.driverProtected.match_1
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.execution_keeps_driver
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.height_keeps
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.height_keeps._proof_1_7
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.height_protected
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.program_keeps_driver
+#print axioms ExactFourierCircuits.UniformLocalRectanglePhaseBanks.program_keeps_driver._proof_1_1
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformLocalRectangleDriverFrames.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

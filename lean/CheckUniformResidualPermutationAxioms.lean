@@ -1,5 +1,6 @@
 import UniformResidualPermutation
 import Lean
+
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformResidualPermutation.address_eq_permutation

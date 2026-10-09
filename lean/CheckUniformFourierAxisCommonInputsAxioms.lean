@@ -1,0 +1,27 @@
+import UniformFourierAxisCommonInputs
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonInputs.ClockArgs
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonInputs.ClockArgs.bound
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonInputs.ClockArgs.casesOn
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonInputs.ClockArgs.directory
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonInputs.ClockArgs.epoch
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonInputs.ClockArgs.head
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonInputs.ClockArgs.input
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonInputs.ClockArgs.later
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonInputs.ClockArgs.mk
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonInputs.ClockArgs.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonInputs.ClockArgs.natFrontier
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonInputs.ClockArgs.pc
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonInputs.ClockArgs.physical
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonInputs.ClockArgs.pool
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonInputs.ClockArgs.rec
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonInputs.ClockArgs.recOn
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonInputs.ClockArgs.scalarFrontier
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonInputs.nodes
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonInputs.of_cache
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonInputs.records
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonInputs.records_count
+#print axioms ExactFourierCircuits.UniformFourierAxisCommonInputs.rectangle

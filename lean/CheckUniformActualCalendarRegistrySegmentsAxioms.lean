@@ -1,0 +1,12 @@
+import UniformActualCalendarRegistrySegments
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.events_congr
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.events_congr._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.events_congr._proof_1_2
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.events_congr._proof_1_3
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.events_shift
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.events_shift._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.events_split

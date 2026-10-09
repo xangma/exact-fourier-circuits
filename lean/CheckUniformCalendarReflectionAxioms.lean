@@ -1,0 +1,12 @@
+import UniformCalendarReflection
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarReflection.layer_fixed
+#print axioms ExactFourierCircuits.UniformCalendarReflection.layer_symmetric
+#print axioms ExactFourierCircuits.UniformCalendarReflection.reflected_forward_snapshot
+#print axioms ExactFourierCircuits.UniformCalendarReflection.step_fixed
+#print axioms ExactFourierCircuits.UniformCalendarReflection.tick_symmetric
+#print axioms ExactFourierCircuits.UniformCalendarReflection.transpose_epoch
+#print axioms ExactFourierCircuits.UniformCalendarReflection.transpose_tick

@@ -1,0 +1,16 @@
+import UniformCanonicalClockStepCost
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.diagonal.congr_simp
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.kernel.congr_simp
+#print axioms ExactFourierCircuits.UniformCanonicalAxisCost.axisCost.congr_simp
+#print axioms ExactFourierCircuits.UniformCanonicalClockStepCost.actual_step_bound
+#print axioms ExactFourierCircuits.UniformCanonicalClockStepCost.actual_step_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformCanonicalClockStepCost.canonical_bound
+#print axioms ExactFourierCircuits.UniformCanonicalClockStepCost.envelope_eq
+#print axioms ExactFourierCircuits.UniformCanonicalClockStepCost.nonneg
+#print axioms ExactFourierCircuits.UniformCanonicalClockStepCost.prepared_step_bound
+#print axioms ExactFourierCircuits.UniformCanonicalClockStepCost.retention_real
+#print axioms ExactFourierCircuits.UniformCanonicalClockStepCost.stepEnvelope

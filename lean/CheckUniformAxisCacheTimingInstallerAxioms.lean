@@ -1,0 +1,41 @@
+import UniformAxisCacheTimingInstaller
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.Frame
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.Frame.casesOn
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.Frame.mk
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.Frame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.Frame.natHeap
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.Frame.outputs
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.Frame.rec
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.Frame.recOn
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.Frame.registers
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.Frame.rootOrders
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.Frame.scalarHeap
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.Frame.scalarReg
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.Installed
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.Installed.casesOn
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.Installed.durations
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.Installed.mk
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.Installed.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.Installed.rec
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.Installed.recOn
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.Installed.requests
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.Installed.starts
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.Installed.zero
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.execution
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.four
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.frame
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.halt_at
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.installed
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.ops
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.ops.eq_1
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.ops_code
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.ops_length
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.program
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.program_length
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.safe
+#print axioms ExactFourierCircuits.UniformAxisCacheTimingInstaller.safe._proof_1_2

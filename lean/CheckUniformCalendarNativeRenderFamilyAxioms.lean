@@ -1,0 +1,9 @@
+import UniformCalendarNativeRenderFamily
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarNativeRenderFamily.core_transport
+#print axioms ExactFourierCircuits.UniformCalendarNativeRenderFamily.localFamily_native
+#print axioms ExactFourierCircuits.UniformCalendarNativeRenderFamily.renderFamily_native
+#print axioms ExactFourierCircuits.UniformCalendarNativeRenderFamily.transportFamily_native

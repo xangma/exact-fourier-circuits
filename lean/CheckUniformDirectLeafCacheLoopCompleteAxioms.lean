@@ -1,0 +1,12 @@
+import UniformDirectLeafCacheLoopComplete
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopComplete.execution
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopComplete.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopComplete.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopComplete.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopComplete.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopComplete.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheLoopComplete.execution._proof_1_6

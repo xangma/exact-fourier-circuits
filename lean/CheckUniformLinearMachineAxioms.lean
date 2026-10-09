@@ -1,12 +1,29 @@
 import UniformLinearMachine
+import Lean
+
+set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformLinearMachine.Ready
-#print axioms ExactFourierCircuits.UniformLinearMachine.prefix_runs
-#print axioms ExactFourierCircuits.UniformLinearMachine.row_runs
 #print axioms ExactFourierCircuits.UniformLinearMachine.ValidSchedule
-#print axioms ExactFourierCircuits.UniformLinearMachine.ValidSchedule.runs
-#print axioms ExactFourierCircuits.UniformLinearMachine.ValidSchedule.pc
+#print axioms ExactFourierCircuits.UniformLinearMachine.ValidSchedule.below
+#print axioms ExactFourierCircuits.UniformLinearMachine.ValidSchedule.below.casesOn
+#print axioms ExactFourierCircuits.UniformLinearMachine.ValidSchedule.below.cons
+#print axioms ExactFourierCircuits.UniformLinearMachine.ValidSchedule.below.nil
+#print axioms ExactFourierCircuits.UniformLinearMachine.ValidSchedule.below.rec
+#print axioms ExactFourierCircuits.UniformLinearMachine.ValidSchedule.brecOn
+#print axioms ExactFourierCircuits.UniformLinearMachine.ValidSchedule.casesOn
+#print axioms ExactFourierCircuits.UniformLinearMachine.ValidSchedule.cons
 #print axioms ExactFourierCircuits.UniformLinearMachine.ValidSchedule.counters
+#print axioms ExactFourierCircuits.UniformLinearMachine.ValidSchedule.nil
+#print axioms ExactFourierCircuits.UniformLinearMachine.ValidSchedule.pc
+#print axioms ExactFourierCircuits.UniformLinearMachine.ValidSchedule.rec
+#print axioms ExactFourierCircuits.UniformLinearMachine.ValidSchedule.recOn
+#print axioms ExactFourierCircuits.UniformLinearMachine.ValidSchedule.runs
 #print axioms ExactFourierCircuits.UniformLinearMachine.interpreted_schedule
+#print axioms ExactFourierCircuits.UniformLinearMachine.interpreted_schedule._proof_1_1
+#print axioms ExactFourierCircuits.UniformLinearMachine.interpreted_schedule._proof_1_2
+#print axioms ExactFourierCircuits.UniformLinearMachine.interpreted_schedule._proof_1_3
+#print axioms ExactFourierCircuits.UniformLinearMachine.prefix_runs
 #print axioms ExactFourierCircuits.UniformLinearMachine.prepared_ready
 #print axioms ExactFourierCircuits.UniformLinearMachine.prepared_schedule
+#print axioms ExactFourierCircuits.UniformLinearMachine.row_runs

@@ -1,37 +1,105 @@
 import UniformNatCopyMachine
+import Lean
 
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.program
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.program_length
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.Source
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.Outside
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.Invariant
+set_option linter.auxLemma false
+
 #print axioms ExactFourierCircuits.UniformNatCopyMachine.Frame
 #print axioms ExactFourierCircuits.UniformNatCopyMachine.Frame.trans
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.Invariant
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.Invariant.casesOn
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.Invariant.copied
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.Invariant.destination
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.Invariant.index
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.Invariant.length
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.Invariant.mk
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.Invariant.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.Invariant.one
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.Invariant.outside
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.Invariant.rec
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.Invariant.recOn
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.Invariant.source
 #print axioms ExactFourierCircuits.UniformNatCopyMachine.Invariant.withPC
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.sourceAddress
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.loaded
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.destinationAddress
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.stored
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.advanced
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.iterationEnd
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.store_bound
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration_heap
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration_frame
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration_invariant
 #print axioms ExactFourierCircuits.UniformNatCopyMachine.NatFrame
 #print axioms ExactFourierCircuits.UniformNatCopyMachine.NatFrame.trans
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration_nat
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.loop
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.zeroState
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.initialized
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.initialize_invariant
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.initialize_frame
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.initialize_nat
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.Outside
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.Outside.eq_1
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.Source
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.advanced
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.advanced.eq_1
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.destinationAddress
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.destinationAddress.eq_1
 #print axioms ExactFourierCircuits.UniformNatCopyMachine.execution
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.execution._proof_1_10
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.execution._proof_1_9
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.execution_budget
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.execution_budget._proof_1_1
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.initialize_frame
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.initialize_invariant
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.initialize_nat
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.initialize_nat._proof_1_3
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.initialize_nat._proof_1_4
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.initialized
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.initialized.eq_1
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.isScalar
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.isScalar._sparseCasesOn_1
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.isScalar.match_1
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration._proof_1_1
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration._proof_1_10
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration._proof_1_11
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration._proof_1_2
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration._proof_1_3
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration._proof_1_4
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration._proof_1_5
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration._proof_1_6
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration._proof_1_7
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration._proof_1_8
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration._proof_1_9
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iterationEnd
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iterationEnd.eq_1
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration_frame
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration_heap
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration_invariant
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration_invariant._proof_1_7
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration_invariant._proof_1_8
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration_invariant._proof_1_9
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration_nat
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration_nat._proof_1_10
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration_nat._proof_1_7
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration_nat._proof_1_8
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.iteration_nat._proof_1_9
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.loaded
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.loaded.eq_1
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.loop
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.loop._proof_1_1
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.loop._proof_1_2
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.loop._proof_1_3
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.no_scalar_input_root_output
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.program
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.program.eq_1
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.program_length
 #print axioms ExactFourierCircuits.UniformNatCopyMachine.runtime_bound
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.runtime_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.sourceAddress
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.sourceAddress.eq_1
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.store_bound
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.stored
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.stored.eq_1
 #print axioms ExactFourierCircuits.UniformNatCopyMachine.wordBudget
 #print axioms ExactFourierCircuits.UniformNatCopyMachine.wordBudget_polynomial
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.execution_budget
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.isScalar
-#print axioms ExactFourierCircuits.UniformNatCopyMachine.no_scalar_input_root_output
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.wordBudget_polynomial._proof_1_1
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.zeroState
+#print axioms ExactFourierCircuits.UniformNatCopyMachine.zeroState.eq_1
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformNatCopyMachine.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

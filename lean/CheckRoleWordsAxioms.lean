@@ -1,7 +1,38 @@
 import RoleWords
-#print axioms ExactFourierCircuits.RoleWords.pointwiseWord_matrix
-#print axioms ExactFourierCircuits.RoleWords.pointwiseWord_calls
-#print axioms ExactFourierCircuits.RoleWords.pointwiseWord_array
-#print axioms ExactFourierCircuits.RoleWords.pointwiseShearWord_apply
-#print axioms ExactFourierCircuits.RoleWords.pointwiseShearWord_untouched
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.RoleWords.arrayValues
+#print axioms ExactFourierCircuits.RoleWords.arrayValues.eq_1
+#print axioms ExactFourierCircuits.RoleWords.arrayValues_at
 #print axioms ExactFourierCircuits.RoleWords.compile_pointwise_shear
+#print axioms ExactFourierCircuits.RoleWords.copyCoordinates
+#print axioms ExactFourierCircuits.RoleWords.copyCoordinates.eq_1
+#print axioms ExactFourierCircuits.RoleWords.pointwiseMatrix
+#print axioms ExactFourierCircuits.RoleWords.pointwiseMatrix.eq_1
+#print axioms ExactFourierCircuits.RoleWords.pointwiseMatrix_apply
+#print axioms ExactFourierCircuits.RoleWords.pointwiseShearWord
+#print axioms ExactFourierCircuits.RoleWords.pointwiseShearWord.eq_1
+#print axioms ExactFourierCircuits.RoleWords.pointwiseShearWord_apply
+#print axioms ExactFourierCircuits.RoleWords.pointwiseShearWord_apply._simp_1_1
+#print axioms ExactFourierCircuits.RoleWords.pointwiseShearWord_calls
+#print axioms ExactFourierCircuits.RoleWords.pointwiseShearWord_matrix
+#print axioms ExactFourierCircuits.RoleWords.pointwiseShearWord_untouched
+#print axioms ExactFourierCircuits.RoleWords.pointwiseStepWord
+#print axioms ExactFourierCircuits.RoleWords.pointwiseStepWord.eq_1
+#print axioms ExactFourierCircuits.RoleWords.pointwiseStepWord_calls
+#print axioms ExactFourierCircuits.RoleWords.pointwiseStepWord_matrix
+#print axioms ExactFourierCircuits.RoleWords.pointwiseWord
+#print axioms ExactFourierCircuits.RoleWords.pointwiseWord.eq_1
+#print axioms ExactFourierCircuits.RoleWords.pointwiseWord_apply
+#print axioms ExactFourierCircuits.RoleWords.pointwiseWord_array
+#print axioms ExactFourierCircuits.RoleWords.pointwiseWord_calls
+#print axioms ExactFourierCircuits.RoleWords.pointwiseWord_matrix
+#print axioms ExactFourierCircuits.RoleWords.roleAddresses
+#print axioms ExactFourierCircuits.RoleWords.roleAddresses.eq_1
+#print axioms ExactFourierCircuits.RoleWords.roleAddresses_val
+#print axioms ExactFourierCircuits.RoleWords.roleShearWord
+#print axioms ExactFourierCircuits.RoleWords.roleShearWord.eq_1
+#print axioms ExactFourierCircuits.RoleWords.roleShearWord_calls
+#print axioms ExactFourierCircuits.RoleWords.roleShearWord_matrix

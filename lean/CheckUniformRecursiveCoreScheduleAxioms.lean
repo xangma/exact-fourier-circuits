@@ -1,0 +1,21 @@
+import UniformRecursiveCoreSchedule
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveCoreSchedule.coreInstructions
+#print axioms ExactFourierCircuits.UniformRecursiveCoreSchedule.coreInstructions.eq_1
+#print axioms ExactFourierCircuits.UniformRecursiveCoreSchedule.core_length
+#print axioms ExactFourierCircuits.UniformRecursiveCoreSchedule.core_noPadding
+#print axioms ExactFourierCircuits.UniformRecursiveCoreSchedule.core_noPadding._simp_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveCoreSchedule.core_noPadding._simp_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveCoreSchedule.execution
+#print axioms ExactFourierCircuits.UniformRecursiveCoreSchedule.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveCoreSchedule.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveCoreSchedule.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformRecursiveCoreSchedule.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformRecursiveCoreSchedule.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformRecursiveCoreSchedule.full_length
+#print axioms ExactFourierCircuits.UniformRecursiveCoreSchedule.instructions_core
+#print axioms ExactFourierCircuits.UniformRecursiveCoreSchedule.padding_length
+#print axioms ExactFourierCircuits.UniformRecursiveCoreSchedule.printedRecords_append

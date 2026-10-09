@@ -1,0 +1,51 @@
+import UniformCacheTimingNodeStore
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.Cursor
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.Cursor.casesOn
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.Cursor.correction
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.Cursor.durationAddress
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.Cursor.mk
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.Cursor.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.Cursor.parent
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.Cursor.pc
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.Cursor.rec
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.Cursor.recOn
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.Cursor.reg_congr
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.Cursor.startAddress
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.Cursor.toInit
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.Cursor.value
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.execution
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.execution._proof_1_10
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.execution._proof_1_11
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.execution._proof_1_12
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.execution._proof_1_14
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.execution._proof_1_15
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.execution._proof_1_17
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.execution._proof_1_18
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.execution._proof_1_19
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.execution._proof_1_20
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.execution._proof_1_21
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.execution._proof_1_22
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.execution._proof_1_23
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.execution._proof_1_24
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.execution._proof_1_25
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.execution._proof_1_9
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.outputHeap
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.outputHeap.eq_1
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.parentWrite_cursor
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.parent_cursor
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.store_cursor
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.store_heap
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.ticks
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeStore.ticks.eq_1
+#print axioms ExactFourierCircuits.UniformCacheTimingProgram.parentRead.eq_1
+#print axioms ExactFourierCircuits.UniformCacheTimingProgram.parentWrite.eq_1
+#print axioms ExactFourierCircuits.UniformCacheTimingProgram.storeDuration.eq_1

@@ -1,0 +1,9 @@
+import UniformNativeLowXor
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformNativeLowXor.gathered_low_mask
+#print axioms ExactFourierCircuits.UniformNativeLowXor.low_mask
+#print axioms ExactFourierCircuits.UniformNativeLowXor.low_mask._proof_1_1
+#print axioms ExactFourierCircuits.UniformNativeLowXor.low_xor

@@ -1,0 +1,13 @@
+import UniformActualCalendarDirectEvent
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectEvent.actualEvent
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectEvent.cached
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectEvent.grid
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectEvent.grid._proof_1_2
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectEvent.grid._proof_1_3
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectEvent.values
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectEvent.values.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalMatchingScaleMachine.FullFactorTable.eq_1

@@ -1,0 +1,8 @@
+import UniformCalendarCallReindex
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarCallReindex.calls_matrix
+#print axioms ExactFourierCircuits.UniformCalendarCallReindex.familyOrder
+#print axioms ExactFourierCircuits.UniformCalendarCallReindex.familyOrder_apply

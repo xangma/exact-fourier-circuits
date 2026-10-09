@@ -1,5 +1,6 @@
 import UniformTensorDiagonalBankMachine
-set_option autoImplicit false
+import Lean
+
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformTensorDiagonalBankMachine.Coefficients
@@ -173,3 +174,11 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformTensorDiagonalBankMachine.setup_properties._proof_1_7
 #print axioms ExactFourierCircuits.UniformTensorDiagonalBankMachine.setup_properties._proof_1_8
 #print axioms ExactFourierCircuits.UniformTensorDiagonalBankMachine.setup_properties._proof_1_9
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformTensorDiagonalBankMachine.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

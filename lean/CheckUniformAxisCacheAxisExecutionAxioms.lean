@@ -1,0 +1,27 @@
+import UniformAxisCacheAxisExecution
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisCacheAxisExecution.Result
+#print axioms ExactFourierCircuits.UniformAxisCacheAxisExecution.Result.allocation
+#print axioms ExactFourierCircuits.UniformAxisCacheAxisExecution.Result.bank
+#print axioms ExactFourierCircuits.UniformAxisCacheAxisExecution.Result.casesOn
+#print axioms ExactFourierCircuits.UniformAxisCacheAxisExecution.Result.clock
+#print axioms ExactFourierCircuits.UniformAxisCacheAxisExecution.Result.contents
+#print axioms ExactFourierCircuits.UniformAxisCacheAxisExecution.Result.control
+#print axioms ExactFourierCircuits.UniformAxisCacheAxisExecution.Result.input
+#print axioms ExactFourierCircuits.UniformAxisCacheAxisExecution.Result.mk
+#print axioms ExactFourierCircuits.UniformAxisCacheAxisExecution.Result.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformAxisCacheAxisExecution.Result.outputs
+#print axioms ExactFourierCircuits.UniformAxisCacheAxisExecution.Result.previous
+#print axioms ExactFourierCircuits.UniformAxisCacheAxisExecution.Result.rec
+#print axioms ExactFourierCircuits.UniformAxisCacheAxisExecution.Result.recOn
+#print axioms ExactFourierCircuits.UniformAxisCacheAxisExecution.Result.roots
+#print axioms ExactFourierCircuits.UniformAxisCacheAxisExecution.Result.savedNat
+#print axioms ExactFourierCircuits.UniformAxisCacheAxisExecution.Result.savedScalar
+#print axioms ExactFourierCircuits.UniformAxisCacheAxisExecution.budget
+#print axioms ExactFourierCircuits.UniformAxisCacheAxisExecution.execution
+#print axioms ExactFourierCircuits.UniformAxisCacheAxisExecution.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCacheAxisExecution.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformAxisCacheAxisExecution.execution._proof_1_3

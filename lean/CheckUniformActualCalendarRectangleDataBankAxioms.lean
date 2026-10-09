@@ -1,0 +1,11 @@
+import UniformActualCalendarRectangleDataBank
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleDataBank.castBank
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleDataBank.castBank._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleDataBank.castBank_event
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleDataBank.nativeData
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleDataBank.nativeData_event
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleDataBank.producerBank

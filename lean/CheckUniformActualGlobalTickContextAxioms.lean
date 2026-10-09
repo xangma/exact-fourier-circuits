@@ -1,0 +1,32 @@
+import UniformActualGlobalTickContext
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.Geometry
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.Geometry._sizeOf_1
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.Geometry._sizeOf_inst
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.Geometry.casesOn
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.Geometry.ctorIdx
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.Geometry.entries
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.Geometry.mk
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.Geometry.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.Geometry.mk.inj
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.Geometry.mk.injEq
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.Geometry.mk.noConfusion
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.Geometry.mk.sizeOf_spec
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.Geometry.noConfusion
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.Geometry.noConfusionType
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.Geometry.physical
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.Geometry.placement
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.Geometry.poolFit
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.Geometry.rec
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.Geometry.recOn
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.Geometry.selected
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.diagonal
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.execution
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.kernel
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.kernel._proof_1
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.kernel_bound
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.links
+#print axioms ExactFourierCircuits.UniformActualGlobalTickContext.source_link

@@ -1,0 +1,30 @@
+import UniformRecursiveSmallBase
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.Changed
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.Frame
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.Frame.casesOn
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.Frame.mk
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.Frame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.Frame.natHeap
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.Frame.natReg
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.Frame.outputs
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.Frame.rec
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.Frame.recOn
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.Frame.roots
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.Frame.scalarHeap
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.Frame.scalarReg
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.baseTicks
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.baseTicks_bound
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.baseTicks_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.batch_embedded
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.batch_embedded._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.compose_frame
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.execution_generic
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.execution_generic._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.execution_generic._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.execution_generic._proof_1_3
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.finish_generic
+#print axioms ExactFourierCircuits.UniformRecursiveSmallBase.finish_generic._proof_1_1

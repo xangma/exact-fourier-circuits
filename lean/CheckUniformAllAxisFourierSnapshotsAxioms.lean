@@ -1,0 +1,12 @@
+import UniformAllAxisFourierSnapshots
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAllAxisFourierSnapshots.axis
+#print axioms ExactFourierCircuits.UniformAllAxisFourierSnapshots.axis_matrix
+#print axioms ExactFourierCircuits.UniformAllAxisFourierSnapshots.calls
+#print axioms ExactFourierCircuits.UniformAllAxisFourierSnapshots.diagonal
+#print axioms ExactFourierCircuits.UniformAllAxisFourierSnapshots.tensor_factors
+#print axioms ExactFourierCircuits.UniformAllAxisFourierSnapshots.tensor_product
+#print axioms ExactFourierCircuits.UniformAllAxisFourierSnapshots.tensor_tick

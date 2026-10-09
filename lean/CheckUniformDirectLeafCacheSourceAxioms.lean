@@ -1,0 +1,16 @@
+import UniformDirectLeafCacheSource
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheSource.At
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheSource.At._proof_1
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheSource.InRange
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheSource.Legal
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheSource.mu
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheSource.mu._proof_1
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheSource.mu.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheSource.retained_directories
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheSource.retained_sources
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheSource.retained_sources._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheSource.retained_sources._proof_1_3

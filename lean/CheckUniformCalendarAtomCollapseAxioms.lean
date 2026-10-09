@@ -1,0 +1,21 @@
+import UniformCalendarAtomCollapse
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarAtomCollapse.ActiveAtom
+#print axioms ExactFourierCircuits.UniformCalendarAtomCollapse.collapse
+#print axioms ExactFourierCircuits.UniformCalendarAtomCollapse.collapse._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarAtomCollapse.collapse_macro
+#print axioms ExactFourierCircuits.UniformCalendarAtomCollapse.project
+#print axioms ExactFourierCircuits.UniformCalendarAtomCollapse.project._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarAtomCollapse.project._proof_2
+#print axioms ExactFourierCircuits.UniformCalendarAtomCollapse.project._proof_3
+#print axioms ExactFourierCircuits.UniformCalendarAtomCollapse.project_injective
+#print axioms ExactFourierCircuits.UniformCalendarAtomCollapse.project_injective._proof_1_1
+#print axioms ExactFourierCircuits.UniformCalendarAtomCollapse.project_injective._proof_1_2
+#print axioms ExactFourierCircuits.UniformCalendarAtomCollapse.project_injective._proof_1_3
+#print axioms ExactFourierCircuits.UniformCalendarAtomCollapse.project_surjective
+#print axioms ExactFourierCircuits.UniformCalendarAtomCollapse.project_surjective._proof_1_1
+#print axioms ExactFourierCircuits.UniformCalendarAtomCollapse.project_surjective._proof_1_2
+#print axioms ExactFourierCircuits.UniformCalendarAtomCollapse.project_surjective._proof_1_3

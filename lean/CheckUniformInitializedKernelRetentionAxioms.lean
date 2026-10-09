@@ -1,0 +1,16 @@
+import UniformInitializedKernelRetention
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformInitializedKernelRetention.after_header
+#print axioms ExactFourierCircuits.UniformInitializedKernelRetention.after_header._proof_1_1
+#print axioms ExactFourierCircuits.UniformInitializedKernelRetention.after_header._proof_1_2
+#print axioms ExactFourierCircuits.UniformInitializedKernelRetention.code_space
+#print axioms ExactFourierCircuits.UniformInitializedKernelRetention.code_space._proof_1_1
+#print axioms ExactFourierCircuits.UniformInitializedKernelRetention.execution
+#print axioms ExactFourierCircuits.UniformInitializedKernelRetention.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformInitializedKernelRetention.return_space
+#print axioms ExactFourierCircuits.UniformInitializedKernelRetention.return_space._proof_1_1
+#print axioms ExactFourierCircuits.UniformInitializedKernelRetention.shift_bound
+#print axioms ExactFourierCircuits.UniformInitializedKernelRetention.shift_bound._proof_1_1

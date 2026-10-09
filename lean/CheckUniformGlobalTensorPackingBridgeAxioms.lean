@@ -1,0 +1,50 @@
+import UniformGlobalTensorPackingBridge
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalPhasePreparation.program.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.argumentRegisters
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.argumentRegisters.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.diagonal_free
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.diagonal_keeps
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.execution_keeps
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.outputValues
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.outputValues.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.output_volume
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.packing_banks
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.packing_banks._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.packing_banks._proof_1_10
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.packing_banks._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.packing_banks._proof_1_3
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.packing_banks._proof_1_4
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.packing_banks._proof_1_5
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.packing_banks._proof_1_6
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.packing_banks._proof_1_7
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.packing_banks._proof_1_8
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.packing_banks._proof_1_9
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.packing_header
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.packing_source
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.relocated
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.rows_above
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.rows_above._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.rows_above._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.rows_above._proof_1_3
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.rows_above._proof_1_4
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.writesArguments
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.writesArguments._sparseCasesOn_1
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.writesArguments._sparseCasesOn_1.else_eq
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.writesArguments.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.writesArguments.eq_2
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.writesArguments.eq_3
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.writesArguments.eq_4
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.writesArguments.eq_5
+#print axioms ExactFourierCircuits.UniformGlobalTensorPackingBridge.writesArguments.match_1
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformGlobalTensorPackingBridge.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

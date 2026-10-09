@@ -1,0 +1,24 @@
+import UniformDirectLeafForestFrame
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafForestFrame.Frame
+#print axioms ExactFourierCircuits.UniformDirectLeafForestFrame.Frame.casesOn
+#print axioms ExactFourierCircuits.UniformDirectLeafForestFrame.Frame.mk
+#print axioms ExactFourierCircuits.UniformDirectLeafForestFrame.Frame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformDirectLeafForestFrame.Frame.natBefore
+#print axioms ExactFourierCircuits.UniformDirectLeafForestFrame.Frame.natHigh
+#print axioms ExactFourierCircuits.UniformDirectLeafForestFrame.Frame.outputs
+#print axioms ExactFourierCircuits.UniformDirectLeafForestFrame.Frame.rec
+#print axioms ExactFourierCircuits.UniformDirectLeafForestFrame.Frame.recOn
+#print axioms ExactFourierCircuits.UniformDirectLeafForestFrame.Frame.refl
+#print axioms ExactFourierCircuits.UniformDirectLeafForestFrame.Frame.roots
+#print axioms ExactFourierCircuits.UniformDirectLeafForestFrame.Frame.scalarOutside
+#print axioms ExactFourierCircuits.UniformDirectLeafForestFrame.Frame.trans
+#print axioms ExactFourierCircuits.UniformDirectLeafForestFrame.of_step
+#print axioms ExactFourierCircuits.UniformDirectLeafForestFrame.of_step._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestFrame.of_step._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirectLeafForestFrame.of_step._proof_1_3
+#print axioms ExactFourierCircuits.UniformDirectLeafForestFrame.of_step._proof_1_4
+#print axioms ExactFourierCircuits.UniformDirectLeafForestFrame.of_step._proof_1_5

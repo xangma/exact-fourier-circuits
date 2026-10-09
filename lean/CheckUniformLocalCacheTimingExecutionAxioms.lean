@@ -1,0 +1,17 @@
+import UniformLocalCacheTimingExecution
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingExecution.Printed
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingExecution.Printed.casesOn
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingExecution.Printed.durations
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingExecution.Printed.mk
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingExecution.Printed.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingExecution.Printed.nodes
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingExecution.Printed.rec
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingExecution.Printed.recOn
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingExecution.Printed.requests
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingExecution.execute_from_printed
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingExecution.printerBudget
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingExecution.producer_timing

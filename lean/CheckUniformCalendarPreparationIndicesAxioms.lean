@@ -1,0 +1,19 @@
+import UniformCalendarPreparationIndices
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarPreparationIndices.Index
+#print axioms ExactFourierCircuits.UniformCalendarPreparationIndices.direct_descriptor
+#print axioms ExactFourierCircuits.UniformCalendarPreparationIndices.direct_get
+#print axioms ExactFourierCircuits.UniformCalendarPreparationIndices.direct_get._proof_1_1
+#print axioms ExactFourierCircuits.UniformCalendarPreparationIndices.direct_leaf
+#print axioms ExactFourierCircuits.UniformCalendarPreparationIndices.direct_leaf._proof_1_1
+#print axioms ExactFourierCircuits.UniformCalendarPreparationIndices.direct_val
+#print axioms ExactFourierCircuits.UniformCalendarPreparationIndices.direct_zero
+#print axioms ExactFourierCircuits.UniformCalendarPreparationIndices.direct_zero._proof_1_1
+#print axioms ExactFourierCircuits.UniformCalendarPreparationIndices.order
+#print axioms ExactFourierCircuits.UniformCalendarPreparationIndices.order._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarPreparationIndices.order._proof_2
+#print axioms ExactFourierCircuits.UniformCalendarPreparationIndices.rectangle_get
+#print axioms ExactFourierCircuits.UniformCalendarPreparationIndices.rectangle_val

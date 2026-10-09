@@ -1,0 +1,12 @@
+import UniformActualCalendarHeaderCodes
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarHeaderCodes.Header.Parameters
+#print axioms ExactFourierCircuits.UniformActualCalendarHeaderCodes.Header.forward
+#print axioms ExactFourierCircuits.UniformActualCalendarHeaderCodes.forward
+#print axioms ExactFourierCircuits.UniformActualCalendarHeaderCodes.inverse
+#print axioms ExactFourierCircuits.UniformActualCalendarHeaderCodes.occurrenceValue
+#print axioms ExactFourierCircuits.UniformActualCalendarHeaderCodes.occurrenceValue._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarHeaderCodes.occurrenceValue.congr_simp

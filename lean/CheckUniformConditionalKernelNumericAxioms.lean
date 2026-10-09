@@ -1,0 +1,9 @@
+import UniformConditionalKernelNumeric
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformConditionalKernelNumeric.execution
+#print axioms ExactFourierCircuits.UniformConditionalKernelNumeric.inverse_address
+#print axioms ExactFourierCircuits.UniformConditionalKernelNumeric.packed_input
+#print axioms ExactFourierCircuits.UniformGlobalRolePackingMachine.permutation.eq_1

@@ -1,0 +1,35 @@
+import UniformJointCacheExtent
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.actual_request_slots
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.actual_request_slots._proof_1_1
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.actual_walk_slots
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.capacity
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.exponent_le
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.exponent_le._proof_1_1
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.jointSize
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.joint_bound
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.joint_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.joint_bound._proof_1_2
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.joint_bound._proof_1_3
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.joint_bound._proof_1_4
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.joint_bound._proof_1_5
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.joint_bound._proof_1_6
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.natSize
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.scalarSize
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.search_bound
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.search_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.search_bound._proof_1_2
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.selected_joint_bound
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.slotCount
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.slotCount.eq_1
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.slotCount_formula
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.slotCount_mono
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.slotCount_mono._proof_1_1
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.slot_bound
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.slot_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformJointCacheExtent.sum_bound
+#print axioms ExactFourierCircuits.UniformLocalCacheTreeMachine.Row.kernel.eq_1
+#print axioms ExactFourierCircuits.UniformLocalCacheTreeMachine.requestKernel.eq_1

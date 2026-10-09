@@ -1,0 +1,23 @@
+import UniformActualSectorCost
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualSectorCost.actualCost
+#print axioms ExactFourierCircuits.UniformActualSectorCost.budget_value
+#print axioms ExactFourierCircuits.UniformActualSectorCost.budget_value._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualSectorCost.critical_nonneg
+#print axioms ExactFourierCircuits.UniformActualSectorCost.densityConstant
+#print axioms ExactFourierCircuits.UniformActualSectorCost.densityConstant.eq_1
+#print axioms ExactFourierCircuits.UniformActualSectorCost.density_nonneg
+#print axioms ExactFourierCircuits.UniformActualSectorCost.list_bound
+#print axioms ExactFourierCircuits.UniformActualSectorCost.point_bound
+#print axioms ExactFourierCircuits.UniformActualSectorCost.power_count
+#print axioms ExactFourierCircuits.UniformActualSectorCost.power_count._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualSectorCost.sector_budget
+#print axioms ExactFourierCircuits.UniformActualSectorCost.states_count
+#print axioms ExactFourierCircuits.UniformActualSectorCost.states_pairs
+#print axioms ExactFourierCircuits.UniformActualSectorCost.volume_one
+#print axioms ExactFourierCircuits.UniformActualSectorCost.volume_one._proof_1_1
+#print axioms ExactFourierCircuits.UniformNetworkCost.volume.eq_1
+#print axioms ExactFourierCircuits.UniformSectorPacking.pairCounts.eq_1

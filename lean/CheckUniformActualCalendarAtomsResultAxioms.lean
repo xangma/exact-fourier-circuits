@@ -1,0 +1,11 @@
+import UniformActualCalendarAtomsResult
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarAtomsResult.result
+#print axioms ExactFourierCircuits.UniformActualCalendarAtomsResult.result._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarAtomsResult.result._proof_2
+#print axioms ExactFourierCircuits.UniformActualCalendarAtomsResult.result._proof_3
+#print axioms ExactFourierCircuits.UniformActualCalendarAtomsResult.result._proof_4
+#print axioms ExactFourierCircuits.UniformActualCalendarAtomsResult.result._proof_5

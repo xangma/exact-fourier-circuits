@@ -1,0 +1,9 @@
+import UniformFinalStartupCode
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFinalStartupCode.allocation_code
+#print axioms ExactFourierCircuits.UniformFinalStartupCode.cache_code
+#print axioms ExactFourierCircuits.UniformFinalStartupCode.initial_code
+#print axioms ExactFourierCircuits.UniformFinalStartupCode.workspace_code

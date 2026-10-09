@@ -1,0 +1,13 @@
+import UniformCanonicalRectangleSnapshot
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleSnapshot.snapshot.congr_simp
+#print axioms ExactFourierCircuits.UniformCanonicalRectangleSnapshot.chunk_snapshot_tick
+#print axioms ExactFourierCircuits.UniformCanonicalRectangleSnapshot.pair_gates
+#print axioms ExactFourierCircuits.UniformCanonicalRectangleSnapshot.pair_snapshot_elapsed
+#print axioms ExactFourierCircuits.UniformCanonicalRectangleSnapshot.pair_snapshot_elapsed._proof_1_1
+#print axioms ExactFourierCircuits.UniformCanonicalRectangleSnapshot.pair_snapshot_source
+#print axioms ExactFourierCircuits.UniformCanonicalRectangleSnapshot.pair_snapshot_source._proof_1
+#print axioms ExactFourierCircuits.UniformCanonicalRectangleSnapshot.pair_snapshot_tick

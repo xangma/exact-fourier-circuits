@@ -1,0 +1,12 @@
+import UniformCalendarExplicitLocalFamily
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarExplicitLocalFamily.family_matrix
+#print axioms ExactFourierCircuits.UniformCalendarExplicitLocalFamily.localFamily_matrix
+#print axioms ExactFourierCircuits.UniformCalendarExplicitLocalFamily.localPhaseMatrix
+#print axioms ExactFourierCircuits.UniformCalendarExplicitLocalFamily.localPhaseMatrix._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarExplicitLocalFamily.transport
+#print axioms ExactFourierCircuits.UniformCalendarExplicitLocalFamily.transport._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarExplicitLocalFamily.transport_agreement

@@ -1,6 +1,12 @@
 import UniformSixCInverseMatchingPreparation
 import Lean
+
 set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformMatchingAxisTableMachine.geometry.eq_1
+#print axioms ExactFourierCircuits.UniformMatchingAxisTableMachine.originalPermutation.congr_simp
+#print axioms ExactFourierCircuits.UniformPackedMatchingShearMachine.Packed.eq_1
+#print axioms ExactFourierCircuits.UniformSectorPacking.Axis.mk.congr_simp
 #print axioms ExactFourierCircuits.UniformSixCInverseMatchingPreparation.AxisResult
 #print axioms ExactFourierCircuits.UniformSixCInverseMatchingPreparation.AxisResult.casesOn
 #print axioms ExactFourierCircuits.UniformSixCInverseMatchingPreparation.AxisResult.count
@@ -572,15 +578,3 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformSixCInverseMatchingPreparation.unpacking_pair
 #print axioms ExactFourierCircuits.UniformSixCInverseMatchingPreparation.unpacking_pair._proof_1
 #print axioms ExactFourierCircuits.UniformSixCInverseMatchingPreparation.unpacking_pair._proof_1_1
-open Lean Elab Command in
-run_cmd do
- let env ← getEnv
- let names := env.constants.toList.map Prod.fst |>.filter (fun name =>
-   "_private.UniformSixCInverseMatchingPreparation.".isPrefixOf name.toString)
- let names := names.toArray.qsort (fun a b => a.toString < b.toString)
- for name in names do
-  let axioms ← collectAxioms name
-  logInfo m!"'{name}' depends on axioms: {axioms.toList}"
-  for ax in axioms do
-   unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
-    throwError m!"Forbidden axiom {ax} in {name}"

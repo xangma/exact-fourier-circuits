@@ -1,0 +1,18 @@
+import UniformActualCalendarTypedSlots
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarTypedSlots.Header.Parameters
+#print axioms ExactFourierCircuits.UniformActualCalendarTypedSlots.Header.forward
+#print axioms ExactFourierCircuits.UniformActualCalendarTypedSlots.forward
+#print axioms ExactFourierCircuits.UniformActualCalendarTypedSlots.inverse
+#print axioms ExactFourierCircuits.UniformActualCalendarTypedSlots.placement
+#print axioms ExactFourierCircuits.UniformActualCalendarTypedSlots.placement._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarTypedSlots.placement._proof_2
+#print axioms ExactFourierCircuits.UniformActualCalendarTypedSlots.placement._proof_3
+#print axioms ExactFourierCircuits.UniformActualCalendarTypedSlots.producer_values
+#print axioms ExactFourierCircuits.UniformActualCalendarTypedSlots.slotCodes
+#print axioms ExactFourierCircuits.UniformActualCalendarTypedSlots.typedSlot
+#print axioms ExactFourierCircuits.UniformActualCalendarTypedSlots.typedSlot._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarTypedSlots.typedSlot_matching

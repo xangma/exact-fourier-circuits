@@ -1,0 +1,8 @@
+import UniformRecursiveNamedUnitPrinterFacts
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveNamedUnitPrinterFacts.square_eq
+#print axioms ExactFourierCircuits.UniformRecursiveNamedUnitPrinterFacts.unit_printer_eq
+#print axioms ExactFourierCircuits.UniformRecursiveNamedUnitPrinterFacts.unit_printer_square

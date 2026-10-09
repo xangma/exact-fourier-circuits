@@ -1,0 +1,28 @@
+import UniformCacheTimingNodeBody
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeBody.direct_cursor
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeBody.execution
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeBody.execution._proof_1_10
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeBody.execution._proof_1_12
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeBody.execution._proof_1_13
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeBody.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeBody.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeBody.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeBody.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeBody.execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeBody.execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeBody.execution._proof_1_9
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeBody.split_cursor
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeBody.split_cursor._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeBody.split_cursor._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeBody.split_cursor._proof_1_3
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeBody.split_cursor._proof_1_4
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeBody.split_cursor._proof_1_5
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeBody.value
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeBody.value.eq_1
+#print axioms ExactFourierCircuits.UniformCacheTimingProgram.direct.eq_1
+#print axioms ExactFourierCircuits.UniformCacheTimingProgram.split.eq_1
+#print axioms ExactFourierCircuits.UniformLocalCacheTiming.directDuration.eq_1

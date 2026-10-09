@@ -1,0 +1,12 @@
+import UniformCalendarAtomValues
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarAtomValues.clock
+#print axioms ExactFourierCircuits.UniformCalendarAtomValues.clock._proof_1_1
+#print axioms ExactFourierCircuits.UniformCalendarAtomValues.direct_get
+#print axioms ExactFourierCircuits.UniformCalendarAtomValues.direct_values
+#print axioms ExactFourierCircuits.UniformCalendarAtomValues.elapsed_lt
+#print axioms ExactFourierCircuits.UniformCalendarAtomValues.elapsed_lt._proof_1_1
+#print axioms ExactFourierCircuits.UniformCalendarAtomValues.get_replicate

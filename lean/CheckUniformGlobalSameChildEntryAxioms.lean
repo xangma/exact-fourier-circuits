@@ -1,0 +1,20 @@
+import UniformGlobalSameChildEntry
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformGlobalSameChildEntry.boundedRuns_placed
+#print axioms ExactFourierCircuits.UniformGlobalSameChildEntry.boundedRuns_placed._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalSameChildEntry.envelope_arithmetic
+#print axioms ExactFourierCircuits.UniformGlobalSameChildEntry.envelope_arithmetic._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalSameChildEntry.execution
+#print axioms ExactFourierCircuits.UniformGlobalSameChildEntry.execution._proof_1
+#print axioms ExactFourierCircuits.UniformGlobalSameChildEntry.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalSameChildEntry.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalSameChildEntry.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformGlobalSameChildEntry.loop_code
+#print axioms ExactFourierCircuits.UniformGlobalSameChildEntry.prefix_code
+#print axioms ExactFourierCircuits.UniformGlobalSameChildEntry.programFor
+#print axioms ExactFourierCircuits.UniformGlobalSameChildEntry.programFor.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalSameChildEntry.program_length
+#print axioms ExactFourierCircuits.UniformGlobalSameChildEntry.program_length._proof_1_2

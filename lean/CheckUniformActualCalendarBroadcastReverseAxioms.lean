@@ -1,0 +1,13 @@
+import UniformActualCalendarBroadcastReverse
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarBroadcastReverse.canonical_gate
+#print axioms ExactFourierCircuits.UniformActualCalendarBroadcastReverse.canonical_gate._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarBroadcastReverse.canonical_gate._proof_2
+#print axioms ExactFourierCircuits.UniformActualCalendarBroadcastReverse.normal_typed
+#print axioms ExactFourierCircuits.UniformActualCalendarBroadcastReverse.pack_relabel_reverse
+#print axioms ExactFourierCircuits.UniformActualCalendarBroadcastReverse.pack_reverse
+#print axioms ExactFourierCircuits.UniformActualCalendarBroadcastSource.typed.congr_simp
+#print axioms ExactFourierCircuits.UniformActualCalendarTypedSlots.slotCodes.congr_simp

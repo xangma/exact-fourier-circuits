@@ -1,0 +1,13 @@
+import UniformActualCalendarBundleRefinement
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarBundleRefinement.actual_records
+#print axioms ExactFourierCircuits.UniformActualCalendarBundleRefinement.flatten_records
+#print axioms ExactFourierCircuits.UniformActualCalendarBundleRefinement.rootEnumeration
+#print axioms ExactFourierCircuits.UniformActualCalendarBundleRefinement.rootEnumeration._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarBundleRefinement.rootEnumeration._proof_2
+#print axioms ExactFourierCircuits.UniformActualCalendarBundleRefinement.scan_records
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.scan.eq_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Scan.append.eq_1

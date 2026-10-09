@@ -1,0 +1,10 @@
+import UniformRecursiveTypedLargeCost
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveTypedLargeCost.actual_body_value
+#print axioms ExactFourierCircuits.UniformRecursiveTypedLargeCost.controls
+#print axioms ExactFourierCircuits.UniformRecursiveTypedLargeCost.controls._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveTypedLargeCost.large_node_bound
+#print axioms ExactFourierCircuits.UniformRecursiveTypedLargeCost.large_node_bound._proof_1_1

@@ -1,0 +1,49 @@
+import UniformKernelDiagonalBanks
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Diagonal
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Kernel
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links._sizeOf_1
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links._sizeOf_inst
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.bound
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.casesOn
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.ctorIdx
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.directory
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.lane
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.mk
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.mk.inj
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.mk.injEq
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.mk.noConfusion
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.mk.sizeOf_spec
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.natEnd
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.natFresh
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.natInverse
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.natMetadata
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.natPacking
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.natStack
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.noConfusion
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.noConfusionType
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.pools
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.rec
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.recOn
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.scalarBuffer
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.scalarEnd
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.scalarFinal
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.scalarFresh
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.scalarNative
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.scalarPacked
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.scalarTemporary
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.source
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.Links.volume
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.directory_transfer
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.directory_transfer._proof_1_1
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.directory_transfer._proof_1_2
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.directory_transfer._proof_1_3
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.kernelValue
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.kernelValue._proof_1
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.numeric_source
+#print axioms ExactFourierCircuits.UniformKernelDiagonalBanks.pools_transfer

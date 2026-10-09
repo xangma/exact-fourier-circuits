@@ -1,0 +1,10 @@
+import UniformCalendarScanFactoryIndices
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Bundle.scan_node_make
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Scan.append_make_left
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Scan.append_make_right
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Scan.append_make_right._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Scan.flatten_make

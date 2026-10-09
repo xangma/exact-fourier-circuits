@@ -1,0 +1,7 @@
+import UniformPreparedKernelAnyExecution
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformPreparedKernelAnyExecution.execution
+#print axioms ExactFourierCircuits.UniformPreparedKernelAnyExecution.projected_false

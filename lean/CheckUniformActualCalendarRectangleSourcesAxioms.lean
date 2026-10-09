@@ -1,0 +1,20 @@
+import UniformActualCalendarRectangleSources
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.T.slotCodes
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.T.typedSlot
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.T.typedSlot_matching
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.forward_source
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.forward_source._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.inverse_source
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.inverse_source._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.source
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.source._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.source._proof_2
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.source._proof_3
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.source._proof_4
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.source._proof_5
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.source._proof_6
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.source._proof_7

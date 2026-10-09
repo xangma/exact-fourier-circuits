@@ -1,0 +1,9 @@
+import UniformActualCalendarShiftedSnapshot
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarShiftedSnapshot.gates
+#print axioms ExactFourierCircuits.UniformActualCalendarShiftedSnapshot.snapshot_source
+#print axioms ExactFourierCircuits.UniformActualCalendarShiftedSnapshot.snapshot_source._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarShiftedSnapshot.snapshot_tick

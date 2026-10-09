@@ -1,0 +1,16 @@
+import UniformCalendarPhysicalAxis
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarPhysicalAxis.coordinate
+#print axioms ExactFourierCircuits.UniformCalendarPhysicalAxis.diagonal
+#print axioms ExactFourierCircuits.UniformCalendarPhysicalAxis.diagonal.eq_1
+#print axioms ExactFourierCircuits.UniformCalendarPhysicalAxis.diagonal_matrix
+#print axioms ExactFourierCircuits.UniformCalendarPhysicalAxis.factor
+#print axioms ExactFourierCircuits.UniformCalendarPhysicalAxis.geometry
+#print axioms ExactFourierCircuits.UniformCalendarPhysicalAxis.geometry._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarPhysicalAxis.geometry._proof_2
+#print axioms ExactFourierCircuits.UniformCalendarPhysicalAxis.kernel
+#print axioms ExactFourierCircuits.UniformCalendarPhysicalAxis.position
+#print axioms ExactFourierCircuits.UniformCalendarPhysicalAxis.position_matrix

@@ -1,0 +1,14 @@
+import UniformReflectedPhysicalCalendar
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformReflectedPhysicalCalendar.coordinates
+#print axioms ExactFourierCircuits.UniformReflectedPhysicalCalendar.diagonal
+#print axioms ExactFourierCircuits.UniformReflectedPhysicalCalendar.family
+#print axioms ExactFourierCircuits.UniformReflectedPhysicalCalendar.family.congr_simp
+#print axioms ExactFourierCircuits.UniformReflectedPhysicalCalendar.physicalAxes
+#print axioms ExactFourierCircuits.UniformReflectedPhysicalCalendar.physicalAxes.eq_1
+#print axioms ExactFourierCircuits.UniformReflectedPhysicalCalendar.physicalAxes_get
+#print axioms ExactFourierCircuits.UniformReflectedPhysicalCalendar.physicalAxes_length
+#print axioms ExactFourierCircuits.UniformReflectedPhysicalCalendar.tensor_tick

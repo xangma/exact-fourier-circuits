@@ -1,0 +1,14 @@
+import UniformActualCalendarRectangleOccurrences
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarBroadcastCodes.occurrences.eq_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.coefficients.eq_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.constant_occurrences
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.edges.eq_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.occurrences
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.occurrences.eq_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.occurrences_broadcast
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.occurrences_forward
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleEvent.occurrences_inverse

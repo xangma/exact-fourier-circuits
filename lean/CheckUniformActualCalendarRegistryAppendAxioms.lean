@@ -1,0 +1,20 @@
+import UniformActualCalendarRegistryAppend
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.append
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.append._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.append._proof_10
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.append._proof_11
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.append._proof_12
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.append._proof_13
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.append._proof_2
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.append._proof_3
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.append._proof_4
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.append._proof_5
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.append._proof_6
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.append._proof_7
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.append._proof_8
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.append._proof_9
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.Family.nil

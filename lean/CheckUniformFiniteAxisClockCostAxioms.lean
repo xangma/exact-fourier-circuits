@@ -1,0 +1,9 @@
+import UniformFiniteAxisClockCost
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFiniteAxisClockCost.axes_bound
+#print axioms ExactFourierCircuits.UniformFiniteAxisClockCost.axis_eq
+#print axioms ExactFourierCircuits.UniformFiniteAxisClockCost.prepared_step_bound
+#print axioms ExactFourierCircuits.UniformFiniteAxisClockCost.sum_eq

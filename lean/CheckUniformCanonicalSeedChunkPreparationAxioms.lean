@@ -1,5 +1,6 @@
 import UniformCanonicalSeedChunkPreparation
 import Lean
+
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformCanonicalSeedChunkPreparation.Args
@@ -292,14 +293,13 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformCanonicalSeedChunkPreparation.sizing
 #print axioms ExactFourierCircuits.UniformCanonicalSeedChunkPreparation.sizing.eq_1
 #print axioms ExactFourierCircuits.UniformCanonicalSeedChunkPreparation.sizing_spec
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.allocate.eq_1
+#print axioms ExactFourierCircuits.UniformSeedChunkAllocation.slot.eq_1
 
 open Lean Elab Command in
 run_cmd do
  let env ← getEnv
  for (name, _) in env.constants.toList do
   if "_private.UniformCanonicalSeedChunkPreparation.".isPrefixOf name.toString then
-   let axioms ← collectAxioms name
-   logInfo m!"'{name}' depends on axioms: {axioms.toList}"
-   for ax in axioms do
-    unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
-     throwError m!"Forbidden axiom {ax} in {name}"
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

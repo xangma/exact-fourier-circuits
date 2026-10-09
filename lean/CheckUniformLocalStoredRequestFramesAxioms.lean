@@ -1,0 +1,33 @@
+import UniformLocalStoredRequestFrames
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestBootstrap.driver_retained
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestBootstrap.driver_retained._proof_1_1
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestBootstrap.driver_retained._proof_1_2
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestBootstrap.driver_retained._proof_1_3
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestBootstrap.driver_retained._proof_1_4
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestBootstrap.driver_retained._proof_1_5
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestBootstrap.execution_saved
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestBootstrap.prefix_frame
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestBootstrap.program_keeps_saved
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestBootstrap.program_keeps_saved._proof_1_7
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestBootstrap.savedInstruction
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestBootstrap.savedInstruction._sparseCasesOn_1
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestBootstrap.savedInstruction._sparseCasesOn_1.else_eq
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestBootstrap.savedInstruction.eq_1
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestBootstrap.savedInstruction.eq_2
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestBootstrap.savedInstruction.eq_3
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestBootstrap.savedInstruction.eq_4
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestBootstrap.savedInstruction.eq_5
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestBootstrap.savedInstruction.match_1
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestBootstrap.saved_program
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformLocalStoredRequestFrames.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

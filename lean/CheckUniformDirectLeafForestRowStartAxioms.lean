@@ -1,0 +1,12 @@
+import UniformDirectLeafForestRowStart
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRowStart.execution
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRowStart.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRowStart.header
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRowStart.heap
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRowStart.pc
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRowStart.sources
+#print axioms ExactFourierCircuits.UniformDirectLeafForestRowStart.state

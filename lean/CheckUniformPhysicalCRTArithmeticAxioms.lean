@@ -1,0 +1,25 @@
+import UniformPhysicalCRTArithmetic
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformPhysicalCRTArithmetic.accumulated
+#print axioms ExactFourierCircuits.UniformPhysicalCRTArithmetic.digit
+#print axioms ExactFourierCircuits.UniformPhysicalCRTArithmetic.digit_lt
+#print axioms ExactFourierCircuits.UniformPhysicalCRTArithmetic.divisor_step
+#print axioms ExactFourierCircuits.UniformPhysicalCRTArithmetic.normal
+#print axioms ExactFourierCircuits.UniformPhysicalCRTArithmetic.normal_lt
+#print axioms ExactFourierCircuits.UniformPhysicalCRTArithmetic.place_le
+#print axioms ExactFourierCircuits.UniformPhysicalCRTArithmetic.prefix_all
+#print axioms ExactFourierCircuits.UniformPhysicalCRTArithmetic.prefix_lt
+#print axioms ExactFourierCircuits.UniformPhysicalCRTArithmetic.prefix_succ
+#print axioms ExactFourierCircuits.UniformPhysicalCRTArithmetic.prefix_zero
+#print axioms ExactFourierCircuits.UniformPhysicalCRTArithmetic.product_digit_le
+#print axioms ExactFourierCircuits.UniformPhysicalCRTArithmetic.split_product
+#print axioms ExactFourierCircuits.UniformPhysicalCRTArithmetic.suffix
+#print axioms ExactFourierCircuits.UniformPhysicalCRTArithmetic.suffix.eq_1
+#print axioms ExactFourierCircuits.UniformPhysicalCRTArithmetic.suffix_all
+#print axioms ExactFourierCircuits.UniformPhysicalCRTArithmetic.suffix_le
+#print axioms ExactFourierCircuits.UniformPhysicalCRTArithmetic.suffix_pos
+#print axioms ExactFourierCircuits.UniformPhysicalCRTArithmetic.suffix_succ
+#print axioms ExactFourierCircuits.UniformPhysicalCRTArithmetic.suffix_zero

@@ -1,0 +1,8 @@
+import UniformCalendarFlattenPrefix
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarFlattenPrefix.rectangle_prefix
+#print axioms ExactFourierCircuits.UniformCalendarFlattenPrefix.take_order
+#print axioms ExactFourierCircuits.UniformCalendarFlattenPrefix.take_order._proof_1_1

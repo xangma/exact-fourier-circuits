@@ -1,0 +1,67 @@
+import UniformGlobalCalendarSelectorLoop
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.Args
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.Args.casesOn
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.Args.count
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.Args.directory
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.Args.mk
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.Args.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.Args.output
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.Args.rec
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.Args.recOn
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.Args.spacing
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.Args.tick
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.Args.used
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.Source
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.Source.storeSelection
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.Source.storeSelection._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.Source.storeSelection._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.boot.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.boot_header
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.execution
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.loop
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.loop._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.loop._proof_1_10
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.loop._proof_1_11
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.loop._proof_1_15
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.loop._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.loop._proof_1_6
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.loop._proof_1_7
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.loop._proof_1_8
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.loop._proof_1_9
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.selected
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.selected._f
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.selected._sunfold
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.selected._unsafe_rec
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.selected.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.selected.eq_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.selected.eq_def
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.selected.match_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.selected_length
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.selected_length._proof_1_4
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.storeSelection_low
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.storeSelection_low._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.storeSelection_low._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.writeSelections
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.writeSelections._f
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.writeSelections._sunfold
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.writeSelections._unsafe_rec
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.writeSelections.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.writeSelections.eq_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.writeSelections.eq_def
+#print axioms ExactFourierCircuits.UniformGlobalCalendarSelector.writeSelections.match_1
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformGlobalCalendarSelectorLoop.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

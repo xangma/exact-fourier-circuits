@@ -1,0 +1,8 @@
+import UniformProducedCalendarAction
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformProducedCalendarAction.family
+#print axioms ExactFourierCircuits.UniformProducedCalendarAction.local_matrices
+#print axioms ExactFourierCircuits.UniformProducedCalendarAction.rows

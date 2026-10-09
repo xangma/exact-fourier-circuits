@@ -1,0 +1,14 @@
+import UniformReflectedAllAxisCalendar
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformReflectedAllAxisCalendar.axis
+#print axioms ExactFourierCircuits.UniformReflectedAllAxisCalendar.axis_matrix
+#print axioms ExactFourierCircuits.UniformReflectedAllAxisCalendar.calendar_ordinal
+#print axioms ExactFourierCircuits.UniformReflectedAllAxisCalendar.inverse_beta_restores
+#print axioms ExactFourierCircuits.UniformReflectedAllAxisCalendar.selected_calendar
+#print axioms ExactFourierCircuits.UniformReflectedAllAxisCalendar.tensor_factors
+#print axioms ExactFourierCircuits.UniformReflectedAllAxisCalendar.tensor_product
+#print axioms ExactFourierCircuits.UniformReflectedAllAxisCalendar.tensor_tick
+#print axioms ExactFourierCircuits.UniformSynchronizedLayers.selectedSchedule.congr_simp

@@ -1,0 +1,9 @@
+import UniformActualCalendarDirectAlgebra
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectAlgebra.embedded_diagonal_comp
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectAlgebra.scale_factor
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectAlgebra.singleton_factor
+#print axioms ExactFourierCircuits.UniformActualCalendarDirectAlgebra.singleton_factor._proof_1_1

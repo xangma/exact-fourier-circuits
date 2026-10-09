@@ -1,0 +1,10 @@
+import UniformRecursiveNamedSeedPrinterFacts
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveNamedSeedPrinterFacts.fixed_program_eq
+#print axioms ExactFourierCircuits.UniformRecursiveNamedSeedPrinterFacts.preparation_polynomial
+#print axioms ExactFourierCircuits.UniformRecursiveNamedSeedPrinterFacts.reflexive_apply
+#print axioms ExactFourierCircuits.UniformRecursiveNamedSeedPrinterFacts.seed_printer_eq
+#print axioms ExactFourierCircuits.UniformRecursiveNamedSeedPrinterFacts.three_equalities

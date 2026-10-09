@@ -1,0 +1,54 @@
+import UniformAxisCacheStartupExecution
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Frame
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Frame.casesOn
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Frame.mk
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Frame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Frame.natHeap
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Frame.natReg
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Frame.outputs
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Frame.rec
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Frame.recOn
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Frame.refl
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Frame.roots
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Frame.scalarHeap
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Frame.scalarReg
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Frame.trans
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.arithmetic
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.arithmetic._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.arithmetic._proof_1_2
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.arithmetic._proof_1_3
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.arithmetic._proof_1_4
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.block_frame
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.boot_frame
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.boot_safe
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.boot_safe._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.boot_safe._proof_1_2
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.changed
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.changed.eq_1
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.execution
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.execution._proof_1
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.op_frame
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.ordinary
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.ordinary.eq_1
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.ordinary.eq_2
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.ordinary.eq_3
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.ordinary.eq_4
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.ordinary.match_1
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.select_frame
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.select_safe
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.select_safe._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.select_safe._proof_1_2
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformAxisCacheStartupExecution.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

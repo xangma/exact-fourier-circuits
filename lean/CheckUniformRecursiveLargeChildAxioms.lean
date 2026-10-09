@@ -1,0 +1,11 @@
+import UniformRecursiveLargeChild
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveLargeChild.cost_trans
+#print axioms ExactFourierCircuits.UniformRecursiveLargeChild.cost_trans._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveLargeChild.execution
+#print axioms ExactFourierCircuits.UniformRecursiveLargeChild.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveLargeChild.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveLargeChild.native_return

@@ -1,0 +1,17 @@
+import UniformFinalRoleModel
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFinalRoleModel.V
+#print axioms ExactFourierCircuits.UniformFinalRoleModel.W
+#print axioms ExactFourierCircuits.UniformFinalRoleModel.data
+#print axioms ExactFourierCircuits.UniformFinalRoleModel.data_zero
+#print axioms ExactFourierCircuits.UniformFinalRoleModel.input
+#print axioms ExactFourierCircuits.UniformFinalRoleModel.kernel
+#print axioms ExactFourierCircuits.UniformFinalRoleModel.kernel.eq_1
+#print axioms ExactFourierCircuits.UniformFinalRoleModel.kernel_one
+#print axioms ExactFourierCircuits.UniformFinalRoleModel.kernel_prepared
+#print axioms ExactFourierCircuits.UniformFinalRoleModel.prepared
+#print axioms ExactFourierCircuits.UniformFinalRoleModel.values
+#print axioms ExactFourierCircuits.UniformFinalRoleModel.values.eq_1

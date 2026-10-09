@@ -1,0 +1,8 @@
+import UniformDirectLeafCacheSemanticRetention
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheSemanticRetention.result
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheSemanticRetention.result._proof_1
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheSemanticRetention.result._proof_2

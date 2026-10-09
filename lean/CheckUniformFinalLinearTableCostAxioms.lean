@@ -1,0 +1,17 @@
+import UniformFinalLinearTableCost
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFinalLinearTableCost.finalBudget
+#print axioms ExactFourierCircuits.UniformFinalLinearTableCost.finalBudget._proof_1
+#print axioms ExactFourierCircuits.UniformFinalLinearTableCost.finalBudget._proof_2
+#print axioms ExactFourierCircuits.UniformFinalLinearTableCost.finalBudget_isBigO_paper
+#print axioms ExactFourierCircuits.UniformFinalLinearTableCost.of_execution
+#print axioms ExactFourierCircuits.UniformFinalLinearTableCost.tableBudget
+#print axioms ExactFourierCircuits.UniformFinalLinearTableCost.tableBudget_bound
+#print axioms ExactFourierCircuits.UniformFinalLinearTableCost.tableBudget_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalLinearTableCost.tableBudget_bound._proof_1_2
+#print axioms ExactFourierCircuits.UniformFinalLinearTableCost.tableBudget_isBigO_input
+#print axioms ExactFourierCircuits.UniformFinalLinearTableCost.tableBudget_isBigO_input._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalLinearTableCost.totalBudget_le_finalBudget

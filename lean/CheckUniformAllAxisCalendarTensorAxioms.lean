@@ -1,0 +1,17 @@
+import UniformAllAxisCalendarTensor
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAllAxisCalendarTensor.axisSnapshot
+#print axioms ExactFourierCircuits.UniformAllAxisCalendarTensor.axisSnapshot._proof_1
+#print axioms ExactFourierCircuits.UniformAllAxisCalendarTensor.axisSnapshot._proof_2
+#print axioms ExactFourierCircuits.UniformAllAxisCalendarTensor.axisSnapshot.congr_simp
+#print axioms ExactFourierCircuits.UniformAllAxisCalendarTensor.axisSnapshot.eq_1
+#print axioms ExactFourierCircuits.UniformAllAxisCalendarTensor.axisSnapshot_matrix
+#print axioms ExactFourierCircuits.UniformAllAxisCalendarTensor.axisSnapshot_matrix._proof_1_3
+#print axioms ExactFourierCircuits.UniformAllAxisCalendarTensor.axisSnapshot_matrix._simp_1_2
+#print axioms ExactFourierCircuits.UniformAllAxisCalendarTensor.slot_tick
+#print axioms ExactFourierCircuits.UniformAllAxisCalendarTensor.slot_tick._proof_1_1
+#print axioms ExactFourierCircuits.UniformAllAxisCalendarTensor.tensor_calendar
+#print axioms ExactFourierCircuits.UniformAllAxisCalendarTensor.tensor_calendar_product

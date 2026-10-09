@@ -1,7 +1,9 @@
-import UniformFixedNetworkYRecordLoopMachine
+import UniformRepeatedMaskMachine
 import Lean
+
 set_option linter.auxLemma false
 
+#print axioms ExactFourierCircuits.ColumnTerminalFlat.direction.eq_1
 #print axioms ExactFourierCircuits.UniformRepeatedMaskMachine.Control
 #print axioms ExactFourierCircuits.UniformRepeatedMaskMachine.Control.casesOn
 #print axioms ExactFourierCircuits.UniformRepeatedMaskMachine.Control.columns

@@ -1,0 +1,27 @@
+import UniformAxisCachePhysical
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisCachePhysical.Heaps
+#print axioms ExactFourierCircuits.UniformAxisCachePhysical.Heaps.casesOn
+#print axioms ExactFourierCircuits.UniformAxisCachePhysical.Heaps.mk
+#print axioms ExactFourierCircuits.UniformAxisCachePhysical.Heaps.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformAxisCachePhysical.Heaps.nat
+#print axioms ExactFourierCircuits.UniformAxisCachePhysical.Heaps.of_eq
+#print axioms ExactFourierCircuits.UniformAxisCachePhysical.Heaps.rec
+#print axioms ExactFourierCircuits.UniformAxisCachePhysical.Heaps.recOn
+#print axioms ExactFourierCircuits.UniformAxisCachePhysical.Heaps.refl
+#print axioms ExactFourierCircuits.UniformAxisCachePhysical.Heaps.scalar
+#print axioms ExactFourierCircuits.UniformAxisCachePhysical.Heaps.trans
+#print axioms ExactFourierCircuits.UniformAxisCachePhysical.axis_lower
+#print axioms ExactFourierCircuits.UniformAxisCachePhysical.axis_lower._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCachePhysical.control_after_tasks
+#print axioms ExactFourierCircuits.UniformAxisCachePhysical.control_after_tasks._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCachePhysical.preparation
+#print axioms ExactFourierCircuits.UniformAxisCachePhysical.preparation._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCachePhysical.requests
+#print axioms ExactFourierCircuits.UniformAxisCachePhysical.requests._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCachePhysical.requests._proof_1_2
+#print axioms ExactFourierCircuits.UniformAxisCachePhysical.requests._proof_1_3
+#print axioms ExactFourierCircuits.UniformAxisCachePhysical.requests._proof_1_4

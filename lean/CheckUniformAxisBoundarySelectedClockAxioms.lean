@@ -1,0 +1,11 @@
+import UniformAxisBoundarySelectedClock
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisBoundarySelectedClock.depth
+#print axioms ExactFourierCircuits.UniformAxisBoundarySelectedClock.selected_boundary
+#print axioms ExactFourierCircuits.UniformAxisBoundarySelectedClock.selected_inactive
+#print axioms ExactFourierCircuits.UniformAxisBoundarySelectedClock.specified_boundary
+#print axioms ExactFourierCircuits.UniformAxisBoundarySelectedClock.specified_inactive
+#print axioms ExactFourierCircuits.UniformAxisBoundarySelectedClock.toeplitz_length

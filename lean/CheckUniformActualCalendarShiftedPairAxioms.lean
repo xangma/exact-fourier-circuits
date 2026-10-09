@@ -1,0 +1,9 @@
+import UniformActualCalendarShiftedPair
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarShiftedPair.chunk_selected
+#print axioms ExactFourierCircuits.UniformActualCalendarShiftedPair.placement_fit
+#print axioms ExactFourierCircuits.UniformActualCalendarShiftedPair.placement_fit._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarShiftedPair.shifted

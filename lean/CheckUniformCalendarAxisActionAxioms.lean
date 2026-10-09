@@ -1,0 +1,29 @@
+import UniformCalendarAxisAction
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarAxisAction.Action
+#print axioms ExactFourierCircuits.UniformCalendarAxisAction.Action._sizeOf_1
+#print axioms ExactFourierCircuits.UniformCalendarAxisAction.Action._sizeOf_inst
+#print axioms ExactFourierCircuits.UniformCalendarAxisAction.Action.casesOn
+#print axioms ExactFourierCircuits.UniformCalendarAxisAction.Action.ctorIdx
+#print axioms ExactFourierCircuits.UniformCalendarAxisAction.Action.matrix
+#print axioms ExactFourierCircuits.UniformCalendarAxisAction.Action.mk
+#print axioms ExactFourierCircuits.UniformCalendarAxisAction.Action.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformCalendarAxisAction.Action.mk.inj
+#print axioms ExactFourierCircuits.UniformCalendarAxisAction.Action.mk.injEq
+#print axioms ExactFourierCircuits.UniformCalendarAxisAction.Action.mk.noConfusion
+#print axioms ExactFourierCircuits.UniformCalendarAxisAction.Action.mk.sizeOf_spec
+#print axioms ExactFourierCircuits.UniformCalendarAxisAction.Action.noConfusion
+#print axioms ExactFourierCircuits.UniformCalendarAxisAction.Action.noConfusionType
+#print axioms ExactFourierCircuits.UniformCalendarAxisAction.Action.position
+#print axioms ExactFourierCircuits.UniformCalendarAxisAction.Action.rec
+#print axioms ExactFourierCircuits.UniformCalendarAxisAction.Action.recOn
+#print axioms ExactFourierCircuits.UniformCalendarAxisAction.Action.rows
+#print axioms ExactFourierCircuits.UniformCalendarAxisAction.congr
+#print axioms ExactFourierCircuits.UniformCalendarAxisAction.congr._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarAxisAction.of_sources
+#print axioms ExactFourierCircuits.UniformCalendarAxisAction.of_sources._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarAxisAction.of_sources._proof_2
+#print axioms ExactFourierCircuits.UniformCalendarAxisAction.of_sources._proof_3

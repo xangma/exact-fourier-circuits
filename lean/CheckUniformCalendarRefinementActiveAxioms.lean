@@ -1,0 +1,17 @@
+import UniformCalendarRefinementActive
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarRefinementActive.FineIndex
+#print axioms ExactFourierCircuits.UniformCalendarRefinementActive.collapse
+#print axioms ExactFourierCircuits.UniformCalendarRefinementActive.collapse._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarRefinementActive.collapse.eq_1
+#print axioms ExactFourierCircuits.UniformCalendarRefinementActive.collapse_macro
+#print axioms ExactFourierCircuits.UniformCalendarRefinementActive.fineEquiv
+#print axioms ExactFourierCircuits.UniformCalendarRefinementActive.fineEquiv._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarRefinementActive.order
+#print axioms ExactFourierCircuits.UniformCalendarRefinementActive.order._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarRefinementActive.order.eq_1
+#print axioms ExactFourierCircuits.UniformCalendarRefinementActive.order_get
+#print axioms ExactFourierCircuits.UniformCalendarRefinementActive.pieces

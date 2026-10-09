@@ -1,0 +1,44 @@
+import UniformDirectLeafForestControl
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.Control
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.Control.casesOn
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.Control.count
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.Control.divisor
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.Control.durations
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.Control.forward
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.Control.four
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.Control.fourteen
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.Control.index
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.Control.mk
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.Control.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.Control.nodes
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.Control.one
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.Control.ordinal
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.Control.pointer
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.Control.ranges
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.Control.rec
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.Control.recOn
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.Control.root
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.Control.seven
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.Control.starts
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.Control.transpose
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.Control.two
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.Control.zero
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.cursor
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.forward
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.forward._simp_1_2
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.forward._simp_1_3
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.ofCursor
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.produced
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.produced._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.produced._proof_1_5
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.produced._proof_1_6
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.produced._simp_1_3
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.produced._simp_1_4
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.registers
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.registers.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.transport
+#print axioms ExactFourierCircuits.UniformDirectLeafForestControl.withPC

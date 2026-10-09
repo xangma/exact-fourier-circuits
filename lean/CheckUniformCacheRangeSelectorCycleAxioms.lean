@@ -1,0 +1,23 @@
+import UniformCacheRangeSelectorCycle
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.advance.eq_1
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.advance_result
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.advance_result._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.cycle
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.cycle._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.cycle._proof_1_11
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.cycle._proof_1_12
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.cycle._proof_1_13
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.cycle._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.cycle._proof_1_4
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.cycle._proof_1_5
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.cycle._proof_1_6
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.cycle._proof_1_7
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.cycle._proof_1_8
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.cycle._proof_1_9
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.loadRange.eq_1
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.load_result
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.placed_zero

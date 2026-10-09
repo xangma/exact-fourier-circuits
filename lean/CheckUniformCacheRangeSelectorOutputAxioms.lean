@@ -1,0 +1,22 @@
+import UniformCacheRangeSelectorOutput
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Result
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Result.bank
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Result.casesOn
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Result.clock
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Result.count
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Result.frame
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Result.mk
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Result.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Result.outside
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Result.rec
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Result.recOn
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Result.registers
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.complete_execution
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.writeSelections_high
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.writeSelections_high._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.writeSelections_high._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.writeSelections_high._proof_1_3

@@ -1,0 +1,92 @@
+import UniformFinalCacheRegisters
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafForestProgram.frontCode.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestProgram.suffix.eq_1
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_10
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_11
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_12
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_13
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_14
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_15
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_16
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_17
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_18
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_19
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_20
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_21
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_22
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_23
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_24
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_25
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_26
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_27
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_28
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_29
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_30
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_31
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_32
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_33
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_34
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_35
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_36
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_37
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_38
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_39
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_4
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_40
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_41
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_42
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_43
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_44
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_45
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_46
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_47
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_48
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_49
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_5
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_50
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_51
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_52
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_53
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_54
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_55
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_56
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_57
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_58
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_59
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_6
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_60
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_61
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_62
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_63
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_64
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_65
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_7
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_8
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.code._proof_1_9
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.execution
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.keeps
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.keeps._proof_1_7
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.protectedInstruction
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.protectedInstruction._sparseCasesOn_1
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.protectedInstruction._sparseCasesOn_1.else_eq
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.protectedInstruction.eq_1
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.protectedInstruction.eq_2
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.protectedInstruction.eq_3
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.protectedInstruction.eq_4
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.protectedInstruction.eq_5
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.protectedInstruction.match_1
+#print axioms ExactFourierCircuits.UniformFinalCacheRegisters.relocated
+#print axioms ExactFourierCircuits.UniformSeedRankCrossPreparation.head.eq_1
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformFinalCacheRegisters.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

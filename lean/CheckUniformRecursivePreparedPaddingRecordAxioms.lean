@@ -1,0 +1,8 @@
+import UniformRecursivePreparedPaddingRecord
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursivePaddingRecord.execution_prepared
+#print axioms ExactFourierCircuits.UniformRecursivePaddingRecord.execution_prepared._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursivePaddingRecord.execution_prepared._proof_1_2

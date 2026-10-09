@@ -1,0 +1,20 @@
+import UniformAxisCacheRequestBounds
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisCacheRequestBounds.capacity
+#print axioms ExactFourierCircuits.UniformAxisCacheRequestBounds.node_event
+#print axioms ExactFourierCircuits.UniformAxisCacheRequestBounds.node_event._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCacheRequestBounds.origin
+#print axioms ExactFourierCircuits.UniformAxisCacheRequestBounds.origin._proof_1_2
+#print axioms ExactFourierCircuits.UniformAxisCacheRequestBounds.origin._proof_1_3
+#print axioms ExactFourierCircuits.UniformAxisCacheRequestBounds.origin._proof_1_4
+#print axioms ExactFourierCircuits.UniformAxisCacheRequestBounds.origin._proof_1_5
+#print axioms ExactFourierCircuits.UniformAxisCacheRequestBounds.origin._simp_1_1
+#print axioms ExactFourierCircuits.UniformAxisCacheRequestBounds.prefix_total
+#print axioms ExactFourierCircuits.UniformAxisCacheRequestBounds.rectangle_duration
+#print axioms ExactFourierCircuits.UniformAxisCacheRequestBounds.slotCount_eq
+#print axioms ExactFourierCircuits.UniformAxisCacheRequestBounds.time_bound
+#print axioms ExactFourierCircuits.UniformAxisCacheRequestBounds.walk_good
+#print axioms ExactFourierCircuits.UniformAxisCacheRequestBounds.walk_good._simp_1_1

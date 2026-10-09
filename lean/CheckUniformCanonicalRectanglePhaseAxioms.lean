@@ -1,0 +1,13 @@
+import UniformCanonicalRectanglePhase
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarTypedSlots.typedSlot.congr_simp
+#print axioms ExactFourierCircuits.UniformCanonicalRectanglePhase.chunkRender
+#print axioms ExactFourierCircuits.UniformCanonicalRectanglePhase.chunkRender._proof_1
+#print axioms ExactFourierCircuits.UniformCanonicalRectanglePhase.chunkRender._proof_2
+#print axioms ExactFourierCircuits.UniformCanonicalRectanglePhase.chunkRender.congr_simp
+#print axioms ExactFourierCircuits.UniformCanonicalRectanglePhase.chunk_elapsed_tick
+#print axioms ExactFourierCircuits.UniformCanonicalRectanglePhase.chunk_elapsed_tick._proof_1_1
+#print axioms ExactFourierCircuits.UniformCanonicalRectanglePhase.chunk_slot_tick

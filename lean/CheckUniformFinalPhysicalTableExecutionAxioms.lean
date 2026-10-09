@@ -1,0 +1,21 @@
+import UniformFinalPhysicalTableExecution
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCRTTraversalCycle.decodeEquiv.congr_simp
+#print axioms ExactFourierCircuits.UniformCRTTraversalCycle.ordinalEquiv.eq_1
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTableExecution.below
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTableExecution.below._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTableExecution.below._proof_1_2
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTableExecution.cache_frame
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTableExecution.execution
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTableExecution.retained_core
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTableExecution.retained_core._proof_1_2
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTableExecution.retained_core._proof_1_3
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTableExecution.retained_data
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTableExecution.retained_data._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTableGeometry.addresses.eq_1
+#print axioms ExactFourierCircuits.UniformPhysicalCRTCoordinates.rho.eq_1
+#print axioms ExactFourierCircuits.UniformSelectedPhysicalCRT.physicalAlpha.eq_1
+#print axioms ExactFourierCircuits.UniformSelectedPhysicalCRT.physicalBeta.eq_1

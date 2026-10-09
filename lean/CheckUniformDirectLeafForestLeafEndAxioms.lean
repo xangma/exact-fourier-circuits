@@ -1,0 +1,17 @@
+import UniformDirectLeafForestLeafEnd
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafForestLeafEnd.count
+#print axioms ExactFourierCircuits.UniformDirectLeafForestLeafEnd.endCore
+#print axioms ExactFourierCircuits.UniformDirectLeafForestLeafEnd.events
+#print axioms ExactFourierCircuits.UniformDirectLeafForestLeafEnd.events._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestLeafEnd.events._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirectLeafForestLeafEnd.events._proof_1_3
+#print axioms ExactFourierCircuits.UniformDirectLeafForestLeafEnd.events._proof_1_4
+#print axioms ExactFourierCircuits.UniformDirectLeafForestLeafEnd.events._proof_1_5
+#print axioms ExactFourierCircuits.UniformDirectLeafForestLeafEnd.finished
+#print axioms ExactFourierCircuits.UniformDirectLeafForestLeafEnd.nextCursor
+#print axioms ExactFourierCircuits.UniformDirectLeafForestLeafEnd.qs
+#print axioms ExactFourierCircuits.UniformDirectLeafForestLeafEnd.rangeHeap

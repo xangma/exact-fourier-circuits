@@ -1,0 +1,21 @@
+import UniformReflectedFourierCalendar
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformReflectedFourierCalendar.full
+#print axioms ExactFourierCircuits.UniformReflectedFourierCalendar.full_matrix
+#print axioms ExactFourierCircuits.UniformReflectedFourierCalendar.reflected
+#print axioms ExactFourierCircuits.UniformReflectedFourierCalendar.reflected.congr_simp
+#print axioms ExactFourierCircuits.UniformReflectedFourierCalendar.reflected.eq_1
+#print axioms ExactFourierCircuits.UniformReflectedFourierCalendar.reflected_matrix
+#print axioms ExactFourierCircuits.UniformReflectedFourierCalendar.selected
+#print axioms ExactFourierCircuits.UniformReflectedFourierCalendar.selected._proof_1
+#print axioms ExactFourierCircuits.UniformReflectedFourierCalendar.selected._proof_2
+#print axioms ExactFourierCircuits.UniformReflectedFourierCalendar.selected.congr_simp
+#print axioms ExactFourierCircuits.UniformReflectedFourierCalendar.selected_matrix
+#print axioms ExactFourierCircuits.UniformReflectedFourierCalendar.specified
+#print axioms ExactFourierCircuits.UniformReflectedFourierCalendar.specified._proof_1
+#print axioms ExactFourierCircuits.UniformReflectedFourierCalendar.specified._proof_2
+#print axioms ExactFourierCircuits.UniformReflectedFourierCalendar.specified.eq_1
+#print axioms ExactFourierCircuits.UniformReflectedFourierCalendar.specified_matrix

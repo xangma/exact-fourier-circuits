@@ -1,0 +1,18 @@
+import UniformFinalClockOuterRuntime
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFinalClockOuterRetention.Frame.movement_runtime
+#print axioms ExactFourierCircuits.UniformFinalClockOuterRetention.Frame.movement_runtime._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalClockOuterRetention.Frame.movement_runtime._proof_1_2
+#print axioms ExactFourierCircuits.UniformFinalClockOuterRetention.Frame.movement_runtime._proof_1_3
+#print axioms ExactFourierCircuits.UniformFinalClockOuterRetention.Frame.movement_runtime._proof_1_4
+#print axioms ExactFourierCircuits.UniformFinalClockOuterRetention.Frame.movement_runtime._proof_1_5
+#print axioms ExactFourierCircuits.UniformFinalClockOuterRetention.Frame.movement_runtime._proof_1_6
+#print axioms ExactFourierCircuits.UniformFinalClockOuterRetention.Frame.role_runtime
+#print axioms ExactFourierCircuits.UniformFinalClockOuterRetention.Frame.runtime_transport
+#print axioms ExactFourierCircuits.UniformFinalClockOuterRetention.Frame.runtime_transport._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalClockOuterRetention.Spectrum.beforePC
+#print axioms ExactFourierCircuits.UniformFinalClockOuterRetention.Spectrum.trans
+#print axioms ExactFourierCircuits.UniformFinalClockOuterRetention.Spectrum.withPC

@@ -1,0 +1,10 @@
+import UniformCalendarPulledSourceAction
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarPulledSourceAction.action
+#print axioms ExactFourierCircuits.UniformCalendarPulledSourceAction.action._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarPulledSourceAction.pullBand
+#print axioms ExactFourierCircuits.UniformCalendarPulledSourceAction.pullBand_event
+#print axioms ExactFourierCircuits.UniformCalendarPulledSourceAction.pulled_matrix

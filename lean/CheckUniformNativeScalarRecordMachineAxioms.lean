@@ -1,6 +1,6 @@
 import UniformNativeScalarRecordMachine
+import Lean
 
--- Include generated declarations in the closure audit.
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformFixedNetworkOpcodeMachine.headCost.eq_1

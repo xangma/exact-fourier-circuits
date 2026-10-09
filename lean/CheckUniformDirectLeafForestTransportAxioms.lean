@@ -1,0 +1,10 @@
+import UniformDirectLeafForestTransport
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafForestTransport.cached
+#print axioms ExactFourierCircuits.UniformDirectLeafForestTransport.cached._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestTransport.counts
+#print axioms ExactFourierCircuits.UniformDirectLeafForestTransport.ranges
+#print axioms ExactFourierCircuits.UniformDirectLeafForestTransport.sources

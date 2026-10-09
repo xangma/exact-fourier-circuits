@@ -1,0 +1,14 @@
+import UniformNativeUnitColumns
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformNativeUnitColumns.copy_unit
+#print axioms ExactFourierCircuits.UniformNativeUnitColumns.native_unitAxes
+#print axioms ExactFourierCircuits.UniformNativeUnitColumns.native_unitColumns
+#print axioms ExactFourierCircuits.UniformNativeUnitColumns.native_unitColumns_spectator
+#print axioms ExactFourierCircuits.UniformNativeUnitColumns.unitAxes_signed
+#print axioms ExactFourierCircuits.UniformNativeUnitColumns.unitColumns
+#print axioms ExactFourierCircuits.UniformNativeUnitColumns.unitColumns._proof_1
+#print axioms ExactFourierCircuits.UniformNativeUnitColumns.unitColumns.eq_1
+#print axioms ExactFourierCircuits.UniformNativeUnitColumns.unitColumns_matrix

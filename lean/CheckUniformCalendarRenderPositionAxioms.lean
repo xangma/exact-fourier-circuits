@@ -1,0 +1,11 @@
+import UniformCalendarRenderPosition
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarRenderPosition.Positioned
+#print axioms ExactFourierCircuits.UniformCalendarRenderPosition.calendar_positioned
+#print axioms ExactFourierCircuits.UniformCalendarRenderPosition.correction_positioned
+#print axioms ExactFourierCircuits.UniformCalendarRenderPosition.left_val
+#print axioms ExactFourierCircuits.UniformCalendarRenderPosition.right_val
+#print axioms ExactFourierCircuits.UniformCalendarRenderPosition.stamp_positioned

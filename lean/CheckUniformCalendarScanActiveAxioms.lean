@@ -1,0 +1,20 @@
+import UniformCalendarScanActive
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarScanActive.enumeration
+#print axioms ExactFourierCircuits.UniformCalendarScanActive.fineRecords
+#print axioms ExactFourierCircuits.UniformCalendarScanActive.naturalEquiv
+#print axioms ExactFourierCircuits.UniformCalendarScanActive.naturalEquiv._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarScanActive.naturalEquiv._proof_10
+#print axioms ExactFourierCircuits.UniformCalendarScanActive.naturalEquiv._proof_2
+#print axioms ExactFourierCircuits.UniformCalendarScanActive.naturalEquiv._proof_3
+#print axioms ExactFourierCircuits.UniformCalendarScanActive.naturalEquiv._proof_4
+#print axioms ExactFourierCircuits.UniformCalendarScanActive.naturalEquiv._proof_5
+#print axioms ExactFourierCircuits.UniformCalendarScanActive.naturalEquiv._proof_6
+#print axioms ExactFourierCircuits.UniformCalendarScanActive.naturalEquiv._proof_7
+#print axioms ExactFourierCircuits.UniformCalendarScanActive.naturalEquiv._proof_8
+#print axioms ExactFourierCircuits.UniformCalendarScanActive.naturalEquiv._proof_9
+#print axioms ExactFourierCircuits.UniformCalendarScanActive.recordAt
+#print axioms ExactFourierCircuits.UniformCalendarScanActive.rootEnumeration

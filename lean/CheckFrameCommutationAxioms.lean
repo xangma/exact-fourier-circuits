@@ -1,6 +1,13 @@
 import FrameCommutation
+import Lean
 
-#print axioms ExactFourierCircuits.FrameCommutation.pointwiseMatrix_as_sum
-#print axioms ExactFourierCircuits.FrameCommutation.compatible_operators_commute
+set_option linter.auxLemma false
+
 #print axioms ExactFourierCircuits.FrameCommutation.common_operator_commutes
 #print axioms ExactFourierCircuits.FrameCommutation.compatible_frames_commute
+#print axioms ExactFourierCircuits.FrameCommutation.compatible_operators_commute
+#print axioms ExactFourierCircuits.FrameCommutation.pointwiseMatrix
+#print axioms ExactFourierCircuits.FrameCommutation.pointwiseMatrix.eq_1
+#print axioms ExactFourierCircuits.FrameCommutation.pointwiseMatrix_as_sum
+#print axioms ExactFourierCircuits.FrameCommutation.roleOperators
+#print axioms ExactFourierCircuits.FrameCommutation.roleOperators.eq_1

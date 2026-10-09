@@ -1,5 +1,8 @@
 import UniformRankCrossPreparationMachine
+import Lean
+
 set_option linter.auxLemma false
+
 #print axioms ExactFourierCircuits.UniformRankCrossPreparationMachine.Frame
 #print axioms ExactFourierCircuits.UniformRankCrossPreparationMachine.Frame.master
 #print axioms ExactFourierCircuits.UniformRankCrossPreparationMachine.Frame.refl

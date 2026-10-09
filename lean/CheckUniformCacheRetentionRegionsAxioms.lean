@@ -1,0 +1,22 @@
+import UniformCacheRetentionRegions
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCacheRetentionRegions.CoefficientFrame
+#print axioms ExactFourierCircuits.UniformCacheRetentionRegions.Config
+#print axioms ExactFourierCircuits.UniformCacheRetentionRegions.ConjugateNat
+#print axioms ExactFourierCircuits.UniformCacheRetentionRegions.ConjugateScalar
+#print axioms ExactFourierCircuits.UniformCacheRetentionRegions.DisabledNat
+#print axioms ExactFourierCircuits.UniformCacheRetentionRegions.OriginalNat
+#print axioms ExactFourierCircuits.UniformCacheRetentionRegions.OriginalScalar
+#print axioms ExactFourierCircuits.UniformCacheRetentionRegions.Params
+#print axioms ExactFourierCircuits.UniformCacheRetentionRegions.PhaseFrame
+#print axioms ExactFourierCircuits.UniformCacheRetentionRegions.ReplayFrame
+#print axioms ExactFourierCircuits.UniformCacheRetentionRegions.Slot
+#print axioms ExactFourierCircuits.UniformCacheRetentionRegions.conjugate_nat
+#print axioms ExactFourierCircuits.UniformCacheRetentionRegions.conjugate_scalar
+#print axioms ExactFourierCircuits.UniformCacheRetentionRegions.disabled_nat
+#print axioms ExactFourierCircuits.UniformCacheRetentionRegions.original_nat
+#print axioms ExactFourierCircuits.UniformCacheRetentionRegions.original_scalar
+#print axioms ExactFourierCircuits.UniformCacheRetentionRegions.slot_nat

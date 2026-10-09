@@ -1,0 +1,51 @@
+import UniformCacheLowFrame
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Below
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Below.casesOn
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Below.conjugateNat
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Below.conjugateScalar
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Below.disabled
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Below.frame
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Below.mk
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Below.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Below.originalNat
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Below.originalScalar
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Below.rec
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Below.recOn
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Below.slots
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Frame
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Frame.casesOn
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Frame.mk
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Frame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Frame.nat
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Frame.rec
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Frame.recOn
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Frame.refl
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Frame.scalar
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.Frame.trans
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.workspace_below
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.workspace_below._proof_1_10
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.workspace_below._proof_1_11
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.workspace_below._proof_1_12
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.workspace_below._proof_1_13
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.workspace_below._proof_1_14
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.workspace_below._proof_1_15
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.workspace_below._proof_1_16
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.workspace_below._proof_1_17
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.workspace_below._proof_1_18
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.workspace_below._proof_1_19
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.workspace_below._proof_1_20
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.workspace_below._proof_1_21
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.workspace_below._proof_1_3
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.workspace_below._proof_1_4
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.workspace_below._proof_1_5
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.workspace_below._proof_1_6
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.workspace_below._proof_1_7
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.workspace_below._proof_1_8
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.workspace_below._proof_1_9
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.workspace_below._simp_1_1
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.workspace_below._simp_1_2
+#print axioms ExactFourierCircuits.UniformCacheLowRetention.z

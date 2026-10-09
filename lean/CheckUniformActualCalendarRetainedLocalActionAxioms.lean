@@ -1,0 +1,16 @@
+import UniformActualCalendarRetainedLocalAction
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarRetainedLocalAction.action
+#print axioms ExactFourierCircuits.UniformActualCalendarRetainedLocalAction.action._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRetainedLocalAction.action._proof_10
+#print axioms ExactFourierCircuits.UniformActualCalendarRetainedLocalAction.action._proof_2
+#print axioms ExactFourierCircuits.UniformActualCalendarRetainedLocalAction.action._proof_3
+#print axioms ExactFourierCircuits.UniformActualCalendarRetainedLocalAction.action._proof_4
+#print axioms ExactFourierCircuits.UniformActualCalendarRetainedLocalAction.action._proof_5
+#print axioms ExactFourierCircuits.UniformActualCalendarRetainedLocalAction.action._proof_6
+#print axioms ExactFourierCircuits.UniformActualCalendarRetainedLocalAction.action._proof_7
+#print axioms ExactFourierCircuits.UniformActualCalendarRetainedLocalAction.action._proof_8
+#print axioms ExactFourierCircuits.UniformActualCalendarRetainedLocalAction.action._proof_9

@@ -1,0 +1,52 @@
+import UniformPhysicalCRTTableHeaders
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformKernelSpectrumStorage.alphaBase.eq_1
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.Args
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.Args.alpha
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.Args.axes
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.Args.casesOn
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.Args.destAlpha
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.Args.destInverse
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.Args.inverse
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.Args.mk
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.Args.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.Args.rec
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.Args.recOn
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.Args.seed
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.Args.sourceAlpha
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.Args.sourceBeta
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.Args.storage
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.Args.volume
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.Args.work
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.Changed
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.frame
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.frame._proof_1_3
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.operations.eq_1
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.raw_alpha
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.raw_axes
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.raw_destAlpha
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.raw_destInverse
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.raw_inverse
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.raw_seed
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.raw_sourceAlpha
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.raw_sourceBeta
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.raw_storage
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.raw_volume
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.raw_work
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.safe
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.safe._proof_1_2
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.values
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.values._proof_1_1
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.values._proof_1_3
+#print axioms ExactFourierCircuits.UniformPhysicalCRTTableHeaders.values._proof_1_4
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformPhysicalCRTTableHeaders.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

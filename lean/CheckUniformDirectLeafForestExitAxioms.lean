@@ -1,0 +1,29 @@
+import UniformDirectLeafForestExit
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExit.Endpoints
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExit.Endpoints.axis
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExit.Endpoints.casesOn
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExit.Endpoints.entry
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExit.Endpoints.innerPool
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExit.Endpoints.markers
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExit.Endpoints.mk
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExit.Endpoints.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExit.Endpoints.ordinal
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExit.Endpoints.permutation
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExit.Endpoints.pool
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExit.Endpoints.rec
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExit.Endpoints.recOn
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExit.Endpoints.widths
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExit.endpoints
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExit.execution
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExit.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExit.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExit.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExit.finished
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExit.finished.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExit.heap
+#print axioms ExactFourierCircuits.UniformDirectLeafForestExit.pc
+#print axioms ExactFourierCircuits.UniformDirectLeafForestProgram.finish.eq_1

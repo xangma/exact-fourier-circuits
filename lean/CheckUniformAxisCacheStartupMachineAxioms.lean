@@ -1,0 +1,42 @@
+import UniformAxisCacheStartupMachine
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Control
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Control.casesOn
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Control.count
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Control.index
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Control.mk
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Control.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Control.nine
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Control.one
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Control.rec
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Control.recOn
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Control.source
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Control.two
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Control.zero
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Frontiers
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Frontiers.casesOn
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Frontiers.mk
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Frontiers.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Frontiers.natFrontier
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Frontiers.rec
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Frontiers.recOn
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.Frontiers.scalarFrontier
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.boot
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.boot.eq_1
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.boot_code
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.boot_length
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.boot_values
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.halt_at
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.program
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.program_length
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.select
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.select.eq_1
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.select_code
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.select_length
+#print axioms ExactFourierCircuits.UniformAxisCacheStartupMachine.select_values_of_width
+#print axioms ExactFourierCircuits.UniformJointCacheAllocation.natStart.eq_1
+#print axioms ExactFourierCircuits.UniformJointCacheAllocation.offsetSum.eq_1
+#print axioms ExactFourierCircuits.UniformJointCacheAllocation.scalarStart.eq_1

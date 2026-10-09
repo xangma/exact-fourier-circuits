@@ -1,0 +1,20 @@
+import UniformGlobalMovementAssembly
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformGlobalMovementAssembly.assembly
+#print axioms ExactFourierCircuits.UniformGlobalMovementAssembly.assembly.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalMovementAssembly.assembly_length
+#print axioms ExactFourierCircuits.UniformGlobalMovementAssembly.child_entry_code
+#print axioms ExactFourierCircuits.UniformGlobalMovementAssembly.diagonal_code
+#print axioms ExactFourierCircuits.UniformGlobalMovementAssembly.first_code
+#print axioms ExactFourierCircuits.UniformGlobalMovementAssembly.halt_at
+#print axioms ExactFourierCircuits.UniformGlobalMovementAssembly.halt_at._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalMovementAssembly.packing_code
+#print axioms ExactFourierCircuits.UniformGlobalMovementAssembly.program
+#print axioms ExactFourierCircuits.UniformGlobalMovementAssembly.programFor
+#print axioms ExactFourierCircuits.UniformGlobalMovementAssembly.programFor.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalMovementAssembly.program_length
+#print axioms ExactFourierCircuits.UniformGlobalMovementAssembly.second_code
+#print axioms ExactFourierCircuits.UniformGlobalMovementAssembly.third_code

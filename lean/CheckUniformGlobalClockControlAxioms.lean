@@ -1,0 +1,26 @@
+import UniformGlobalClockControl
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.advance.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.axisBoot.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.boot.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalClockConductor.tickAdvance.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalClockControl.advance_execution
+#print axioms ExactFourierCircuits.UniformGlobalClockControl.advance_headers
+#print axioms ExactFourierCircuits.UniformGlobalClockControl.advance_safe
+#print axioms ExactFourierCircuits.UniformGlobalClockControl.advance_safe._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalClockControl.axis_execution
+#print axioms ExactFourierCircuits.UniformGlobalClockControl.axis_headers
+#print axioms ExactFourierCircuits.UniformGlobalClockControl.axis_safe
+#print axioms ExactFourierCircuits.UniformGlobalClockControl.axis_safe._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalClockControl.boot_execution
+#print axioms ExactFourierCircuits.UniformGlobalClockControl.boot_headers
+#print axioms ExactFourierCircuits.UniformGlobalClockControl.boot_safe
+#print axioms ExactFourierCircuits.UniformGlobalClockControl.boot_safe._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalClockControl.heap_frame
+#print axioms ExactFourierCircuits.UniformGlobalClockControl.tick_execution
+#print axioms ExactFourierCircuits.UniformGlobalClockControl.tick_headers
+#print axioms ExactFourierCircuits.UniformGlobalClockControl.tick_safe
+#print axioms ExactFourierCircuits.UniformGlobalClockControl.tick_safe._proof_1_2

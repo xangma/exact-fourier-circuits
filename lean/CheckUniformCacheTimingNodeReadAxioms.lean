@@ -1,0 +1,40 @@
+import UniformCacheTimingNodeRead
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.NodeCursor
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.NodeCursor.base
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.NodeCursor.casesOn
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.NodeCursor.child
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.NodeCursor.correction
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.NodeCursor.count
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.NodeCursor.durationAddress
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.NodeCursor.index
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.NodeCursor.mk
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.NodeCursor.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.NodeCursor.ordinal
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.NodeCursor.parent
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.NodeCursor.pc
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.NodeCursor.rec
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.NodeCursor.recOn
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.NodeCursor.row
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.NodeCursor.rows
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.NodeCursor.selected
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.NodeCursor.startAddress
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.NodeCursor.toHeader
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.NodeCursor.width
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.execution
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.node_values
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.readState
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.readState.eq_1
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.read_cursor
+#print axioms ExactFourierCircuits.UniformCacheTimingNodeRead.read_heap
+#print axioms ExactFourierCircuits.UniformCacheTimingProgram.loadReverse.eq_1
+#print axioms ExactFourierCircuits.UniformCacheTimingProgram.rowSetup.eq_1

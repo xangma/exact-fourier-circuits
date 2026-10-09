@@ -1,0 +1,11 @@
+import UniformDirectLeafFactorTail
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafFactorTail.execution
+#print axioms ExactFourierCircuits.UniformDirectLeafFactorTail.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafFactorTail.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirectLeafFactorTail.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformDirectLeafFactorTail.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformDirectLeafFactorTail.execution._proof_1_5

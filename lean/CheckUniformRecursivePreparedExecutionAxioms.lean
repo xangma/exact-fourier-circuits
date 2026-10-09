@@ -1,0 +1,7 @@
+import UniformRecursivePreparedExecution
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveRootExecution.prepared_of_execution
+#print axioms ExactFourierCircuits.UniformRecursiveRootExecution.prepared_present_of_execution

@@ -1,4 +1,8 @@
 import UniformBoundedAssembly
+import Lean
 
-#print axioms ExactFourierCircuits.UniformBoundedAssembly.placed_bound
+set_option linter.auxLemma false
+
 #print axioms ExactFourierCircuits.UniformBoundedAssembly.boundedExecution_placed
+#print axioms ExactFourierCircuits.UniformBoundedAssembly.boundedExecution_placed._proof_1_1
+#print axioms ExactFourierCircuits.UniformBoundedAssembly.placed_bound

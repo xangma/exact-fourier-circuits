@@ -1,0 +1,19 @@
+import UniformRecursiveRootExecution
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveChildInduction.cost.eq_1
+#print axioms ExactFourierCircuits.UniformRecursiveRootExecution.execution
+#print axioms ExactFourierCircuits.UniformRecursiveRootExecution.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveRootExecution.large_execution
+#print axioms ExactFourierCircuits.UniformRecursiveRootExecution.large_execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveRootExecution.large_execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveRootExecution.large_execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformRecursiveRootExecution.large_execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformRecursiveRootExecution.small_cost
+#print axioms ExactFourierCircuits.UniformRecursiveRootExecution.small_cost._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveRootExecution.small_execution
+#print axioms ExactFourierCircuits.UniformRecursiveRootExecution.small_execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveRootExecution.small_execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveRootExecution.small_execution._proof_1_3

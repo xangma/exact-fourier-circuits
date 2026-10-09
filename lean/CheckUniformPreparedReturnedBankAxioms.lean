@@ -1,0 +1,7 @@
+import UniformPreparedReturnedBank
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformPreparedReturnedBank.present
+#print axioms ExactFourierCircuits.UniformPreparedReturnedBank.source_and_prepared

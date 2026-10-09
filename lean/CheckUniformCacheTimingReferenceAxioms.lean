@@ -1,0 +1,55 @@
+import UniformCacheTimingReference
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomStep
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomStep_other
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomStep_other._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomStep_other._proof_1_10
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomStep_other._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomStep_other._proof_1_3
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomStep_other._proof_1_4
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomStep_other._proof_1_5
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomStep_other._proof_1_6
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomStep_other._proof_1_7
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomStep_other._proof_1_8
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomStep_other._proof_1_9
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomStep_self
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomStep_self._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomStep_self._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomStep_self._proof_1_3
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomStep_self._proof_1_4
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomStep_self._proof_1_5
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomStep_self._proof_1_6
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomStep_self._proof_1_7
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomUp
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomUp.eq_1
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomUpFrom
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomUpFrom._f
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomUpFrom._sunfold
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomUpFrom._unsafe_rec
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomUpFrom.eq_1
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomUpFrom.eq_2
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomUpFrom.eq_def
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomUpFrom.match_1
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.bottomUpFrom_append
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.canonical_eq_plan
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.correction
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.processedSuffix
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.processedSuffix.eq_1
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.processedSuffix_end
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.processedSuffix_step
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.processedSuffix_zero
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.requestPrefix
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.requestStart
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.taskDuration
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.taskDuration_ofPlan
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformCacheTimingReference.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

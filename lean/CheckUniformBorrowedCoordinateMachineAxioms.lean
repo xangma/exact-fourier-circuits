@@ -1,4 +1,7 @@
 import UniformBorrowedCoordinateMachine
+import Lean
+
+set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformBorrowedCoordinateMachine.Cursor
 #print axioms ExactFourierCircuits.UniformBorrowedCoordinateMachine.Cursor.casesOn

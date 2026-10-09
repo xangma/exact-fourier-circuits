@@ -1,0 +1,41 @@
+import UniformRecursiveSmallPrologue
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.Changed
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.Frame
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.Frame.casesOn
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.Frame.mk
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.Frame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.Frame.natHeap
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.Frame.natReg
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.Frame.outputs
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.Frame.rec
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.Frame.recOn
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.Frame.roots
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.Frame.scalarHeap
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.Frame.scalarReg
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.execution
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.execution._proof_1_10
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.execution._proof_1_11
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.execution._proof_1_12
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.execution._proof_1_13
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.execution._proof_1_14
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.execution._proof_1_15
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.execution._proof_1_16
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.execution._proof_1_17
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.execution._proof_1_18
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.execution._proof_1_19
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.execution._proof_1_20
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.execution._proof_1_9
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.setupOps
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.setupOps.eq_1
+#print axioms ExactFourierCircuits.UniformRecursiveSmallPrologue.setup_length

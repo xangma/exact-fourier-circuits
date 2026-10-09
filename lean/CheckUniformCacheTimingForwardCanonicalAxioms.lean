@@ -1,0 +1,54 @@
+import UniformCacheTimingForwardCanonical
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.Stored
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.Stored.casesOn
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.Stored.corrections
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.Stored.durations
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.Stored.mk
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.Stored.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.Stored.prefixes
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.Stored.rec
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.Stored.recOn
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.bank
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.bank._simp_1_1
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.data
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.data.eq_1
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.data_eq
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.directory_at
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.execution
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.execution_ticks_bound
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.execution_ticks_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.execution_ticks_bound._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.ordered
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.ordered._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.ordered._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.rowCount
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.rowCount._f
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.rowCount._sunfold
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.rowCount._unsafe_rec
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.rowCount.eq_1
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.rowCount.eq_2
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.rowCount.eq_def
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.rowCount.match_1
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.rowCount_suffix
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.rowCount_suffix._proof_1_4
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.rowCount_suffix._proof_1_5
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.ticks_bound
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.ticks_bound._proof_1_8
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardCanonical.ticks_bound._proof_1_9
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardLoop.ticks.eq_1
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardLoop.ticks.eq_2
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardLoop.ticks.eq_def
+#print axioms ExactFourierCircuits.UniformCacheTimingForwardNode.ticks.eq_1
+#print axioms ExactFourierCircuits.UniformCacheTimingReference.requestStart.eq_1
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformCacheTimingForwardCanonical.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

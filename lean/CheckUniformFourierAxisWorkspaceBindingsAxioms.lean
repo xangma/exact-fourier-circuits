@@ -1,0 +1,10 @@
+import UniformFourierAxisWorkspaceBindings
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFourierAxisWorkspace.axis.eq_1
+#print axioms ExactFourierCircuits.UniformFourierAxisWorkspaceBindings.arguments
+#print axioms ExactFourierCircuits.UniformFourierAxisWorkspaceBindings.execution
+#print axioms ExactFourierCircuits.UniformFourierAxisWorkspaceBindings.word_fit
+#print axioms ExactFourierCircuits.UniformFourierAxisWorkspaceBindings.word_fit._proof_1_1

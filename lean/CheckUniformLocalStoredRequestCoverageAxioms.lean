@@ -1,0 +1,10 @@
+import UniformLocalStoredRequestCoverage
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestCoverage.root_stored_request
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestCoverage.stored_request
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestCoverage.stored_request._proof_1_2
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestCoverage.stored_request._proof_1_3
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestCoverage.stored_request._simp_1_1

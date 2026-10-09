@@ -1,0 +1,22 @@
+import UniformFinalOuterProgram
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFinalOuterProgram.code_envelope
+#print axioms ExactFourierCircuits.UniformFinalOuterProgram.code_envelope._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalOuterProgram.code_slab
+#print axioms ExactFourierCircuits.UniformFinalOuterProgram.code_slab._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalOuterProgram.code_slab._proof_1_2
+#print axioms ExactFourierCircuits.UniformFinalOuterProgram.halt_at
+#print axioms ExactFourierCircuits.UniformFinalOuterProgram.program
+#print axioms ExactFourierCircuits.UniformFinalOuterProgram.programFor
+#print axioms ExactFourierCircuits.UniformFinalOuterProgram.programFor.eq_1
+#print axioms ExactFourierCircuits.UniformFinalOuterProgram.programFor_length
+#print axioms ExactFourierCircuits.UniformFinalOuterProgram.program_length
+#print axioms ExactFourierCircuits.UniformFinalOuterProgram.stages
+#print axioms ExactFourierCircuits.UniformFinalOuterProgram.stagesFor
+#print axioms ExactFourierCircuits.UniformFinalOuterProgram.stagesFor.eq_1
+#print axioms ExactFourierCircuits.UniformFinalOuterProgram.stages_length
+#print axioms ExactFourierCircuits.UniformFinalOuterProgram.stages_size
+#print axioms ExactFourierCircuits.UniformFinalOuterProgram.stages_size._proof_1_2

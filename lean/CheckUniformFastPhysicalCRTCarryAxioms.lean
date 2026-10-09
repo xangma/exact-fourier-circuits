@@ -1,0 +1,60 @@
+import UniformFastPhysicalCRTCarry
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.body_constants
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.body_frame
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.body_frame._proof_1_10
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.body_frame._proof_1_11
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.body_frame._proof_1_2
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.body_frame._proof_1_3
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.body_frame._proof_1_4
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.body_frame._proof_1_5
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.body_frame._proof_1_6
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.body_frame._proof_1_7
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.body_frame._proof_1_8
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.body_frame._proof_1_9
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.body_peak
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.body_peak._proof_1_10
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.body_readable
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.body_regs
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.execution
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.execution._proof_1_17
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.execution._proof_1_18
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.execution._proof_1_20
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.execution._proof_1_21
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.execution._proof_1_23
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.execution._proof_1_24
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.success_constants
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.success_frame
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.success_frame._proof_1_2
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.success_frame._proof_1_3
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.wrap_constants
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.wrap_frame
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTCarry.wrap_frame._proof_1_2
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.carryBody.eq_1
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.successBody.eq_1
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.wrapBody.eq_1
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.Op.peak.eq_1
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.Op.peak.eq_2
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.Op.peak.eq_3
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.Op.peak.eq_4
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.peak.eq_1
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.peak.eq_2
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.peak.eq_def
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.readable.eq_1
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.readable.eq_2
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.readable.eq_def
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformFastPhysicalCRTCarry.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

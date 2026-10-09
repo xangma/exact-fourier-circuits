@@ -1,0 +1,11 @@
+import UniformCalendarStableDepth
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarStableDepth.activeBuckets_eq
+#print axioms ExactFourierCircuits.UniformCalendarStableDepth.bucket_at
+#print axioms ExactFourierCircuits.UniformCalendarStableDepth.bucket_at._proof_1_1
+#print axioms ExactFourierCircuits.UniformCalendarStableDepth.filter_insert
+#print axioms ExactFourierCircuits.UniformCalendarStableDepth.filter_insert._proof_1_1
+#print axioms ExactFourierCircuits.UniformCalendarStableDepth.filter_sort

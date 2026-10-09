@@ -1,0 +1,41 @@
+import UniformLocalRequestDriver
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformJointCacheAllocation.slot.eq_1
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.Live
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.Live.abi
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.Live.axis
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.Live.casesOn
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.Live.conjugateMu
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.Live.control
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.Live.count
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.Live.index
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.Live.inverse
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.Live.lowRow
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.Live.markers
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.Live.mk
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.Live.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.Live.mu
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.Live.permutation
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.Live.pointer
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.Live.pool
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.Live.rec
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.Live.recOn
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.Live.timePointer
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.Live.widths
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.Live.withPC
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.bank_read
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.bank_read._proof_1_1
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.boot_live
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.driver
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.driver._proof_1_3
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.driver._proof_1_4
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.driver._proof_1_5
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.driver._proof_1_6
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.driver._proof_1_7
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.driver._proof_1_8
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.driver._proof_1_9
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.driver._simp_1_1
+#print axioms ExactFourierCircuits.UniformLocalRequestDriver.driver._simp_1_2

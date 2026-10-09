@@ -1,0 +1,25 @@
+import UniformPhysicalTensorPi
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformPhysicalTensorPi.coordinate
+#print axioms ExactFourierCircuits.UniformPhysicalTensorPi.coordinate_symm
+#print axioms ExactFourierCircuits.UniformPhysicalTensorPi.diagonal_kernel
+#print axioms ExactFourierCircuits.UniformPhysicalTensorPi.digits
+#print axioms ExactFourierCircuits.UniformPhysicalTensorPi.digits._f
+#print axioms ExactFourierCircuits.UniformPhysicalTensorPi.digits._sunfold
+#print axioms ExactFourierCircuits.UniformPhysicalTensorPi.digits._unsafe_rec
+#print axioms ExactFourierCircuits.UniformPhysicalTensorPi.digits.match_1
+#print axioms ExactFourierCircuits.UniformPhysicalTensorPi.digitsEquiv
+#print axioms ExactFourierCircuits.UniformPhysicalTensorPi.digits_undigits
+#print axioms ExactFourierCircuits.UniformPhysicalTensorPi.local_product
+#print axioms ExactFourierCircuits.UniformPhysicalTensorPi.original_action
+#print axioms ExactFourierCircuits.UniformPhysicalTensorPi.original_pi
+#print axioms ExactFourierCircuits.UniformPhysicalTensorPi.pi_diagonal
+#print axioms ExactFourierCircuits.UniformPhysicalTensorPi.undigits
+#print axioms ExactFourierCircuits.UniformPhysicalTensorPi.undigits._f
+#print axioms ExactFourierCircuits.UniformPhysicalTensorPi.undigits._sunfold
+#print axioms ExactFourierCircuits.UniformPhysicalTensorPi.undigits._unsafe_rec
+#print axioms ExactFourierCircuits.UniformPhysicalTensorPi.undigits.match_1
+#print axioms ExactFourierCircuits.UniformPhysicalTensorPi.undigits_digits

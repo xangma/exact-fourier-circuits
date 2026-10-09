@@ -1,49 +1,90 @@
 import UniformWorkingLength
+import Lean
 
-#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime_exists
-#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime
-#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime_prime
-#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime_count
-#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime_eq_nth
-#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime_lower
-#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime_gt_two
-#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime_odd
-#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime_strictMono
-#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime_coprime
-#print axioms ExactFourierCircuits.UniformWorkingLength.primeProduct
-#print axioms ExactFourierCircuits.UniformWorkingLength.primeProduct_pos
-#print axioms ExactFourierCircuits.UniformWorkingLength.primeProduct_odd
-#print axioms ExactFourierCircuits.UniformWorkingLength.primeProduct_eq_prod
-#print axioms ExactFourierCircuits.UniformWorkingLength.primeProduct_lower
-#print axioms ExactFourierCircuits.UniformWorkingLength.primeProduct_strictMono
-#print axioms ExactFourierCircuits.UniformWorkingLength.product_exceeds_exists
-#print axioms ExactFourierCircuits.UniformWorkingLength.firstExceed
+set_option linter.auxLemma false
+
 #print axioms ExactFourierCircuits.UniformWorkingLength.axisCount
-#print axioms ExactFourierCircuits.UniformWorkingLength.oddProduct
-#print axioms ExactFourierCircuits.UniformWorkingLength.nextPrime
+#print axioms ExactFourierCircuits.UniformWorkingLength.axisCount_log_bound
+#print axioms ExactFourierCircuits.UniformWorkingLength.binaryFactor
+#print axioms ExactFourierCircuits.UniformWorkingLength.binaryFactor.eq_1
+#print axioms ExactFourierCircuits.UniformWorkingLength.binaryFactor_log_bound
+#print axioms ExactFourierCircuits.UniformWorkingLength.binaryFactor_log_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformWorkingLength.binaryFactor_quadratic
+#print axioms ExactFourierCircuits.UniformWorkingLength.binaryFactor_quadratic._proof_1_1
+#print axioms ExactFourierCircuits.UniformWorkingLength.binaryFactor_upper
+#print axioms ExactFourierCircuits.UniformWorkingLength.doublingExponent
+#print axioms ExactFourierCircuits.UniformWorkingLength.doublingExponent_log_bound
+#print axioms ExactFourierCircuits.UniformWorkingLength.doubling_exists
+#print axioms ExactFourierCircuits.UniformWorkingLength.doubling_minimal
+#print axioms ExactFourierCircuits.UniformWorkingLength.firstExceed
 #print axioms ExactFourierCircuits.UniformWorkingLength.firstExceed_bound
 #print axioms ExactFourierCircuits.UniformWorkingLength.firstExceed_pos
-#print axioms ExactFourierCircuits.UniformWorkingLength.maximal_product
-#print axioms ExactFourierCircuits.UniformWorkingLength.oddProduct_pos
-#print axioms ExactFourierCircuits.UniformWorkingLength.axisCount_log_bound
-#print axioms ExactFourierCircuits.UniformWorkingLength.doubling_exists
-#print axioms ExactFourierCircuits.UniformWorkingLength.doublingExponent
-#print axioms ExactFourierCircuits.UniformWorkingLength.binaryFactor
-#print axioms ExactFourierCircuits.UniformWorkingLength.workingLength
-#print axioms ExactFourierCircuits.UniformWorkingLength.workingLength_lower
-#print axioms ExactFourierCircuits.UniformWorkingLength.doubling_minimal
-#print axioms ExactFourierCircuits.UniformWorkingLength.workingLength_upper
-#print axioms ExactFourierCircuits.UniformWorkingLength.binaryFactor_upper
-#print axioms ExactFourierCircuits.UniformWorkingLength.workingLength_pos
-#print axioms ExactFourierCircuits.UniformWorkingLength.oddProduct_coprime_binaryFactor
-#print axioms ExactFourierCircuits.UniformWorkingLength.selected_masterRoot_bound
+#print axioms ExactFourierCircuits.UniformWorkingLength.firstExceed_pos._proof_1_1
+#print axioms ExactFourierCircuits.UniformWorkingLength.firstExceed_pos._proof_1_5
 #print axioms ExactFourierCircuits.UniformWorkingLength.log_two_lower
 #print axioms ExactFourierCircuits.UniformWorkingLength.log_two_upper
-#print axioms ExactFourierCircuits.UniformWorkingLength.primeCounting_quadratic
-#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime_upper
-#print axioms ExactFourierCircuits.UniformWorkingLength.nextPrime_upper
-#print axioms ExactFourierCircuits.UniformWorkingLength.binaryFactor_quadratic
+#print axioms ExactFourierCircuits.UniformWorkingLength.maximal_product
+#print axioms ExactFourierCircuits.UniformWorkingLength.maximal_product._proof_1_1
+#print axioms ExactFourierCircuits.UniformWorkingLength.maximal_product._proof_1_2
+#print axioms ExactFourierCircuits.UniformWorkingLength.nextPrime
 #print axioms ExactFourierCircuits.UniformWorkingLength.nextPrime_log_bound
-#print axioms ExactFourierCircuits.UniformWorkingLength.binaryFactor_log_bound
+#print axioms ExactFourierCircuits.UniformWorkingLength.nextPrime_upper
+#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime
+#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime_coprime
+#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime_coprime._proof_1_1
+#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime_count
+#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime_eq_nth
+#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime_exists
+#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime_gt_two
+#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime_gt_two._proof_1_1
+#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime_lower
+#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime_odd
+#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime_prime
+#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime_strictMono
+#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime_upper
+#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime_upper._proof_1_1
+#print axioms ExactFourierCircuits.UniformWorkingLength.oddPrime_upper._proof_1_2
+#print axioms ExactFourierCircuits.UniformWorkingLength.oddProduct
+#print axioms ExactFourierCircuits.UniformWorkingLength.oddProduct_coprime_binaryFactor
+#print axioms ExactFourierCircuits.UniformWorkingLength.oddProduct_pos
+#print axioms ExactFourierCircuits.UniformWorkingLength.primeCounting_quadratic
+#print axioms ExactFourierCircuits.UniformWorkingLength.primeCounting_quadratic._proof_1_1
+#print axioms ExactFourierCircuits.UniformWorkingLength.primeCounting_quadratic._proof_1_2
+#print axioms ExactFourierCircuits.UniformWorkingLength.primeCounting_quadratic._proof_1_3
+#print axioms ExactFourierCircuits.UniformWorkingLength.primeCounting_quadratic._proof_1_4
+#print axioms ExactFourierCircuits.UniformWorkingLength.primeCounting_quadratic._proof_1_5
+#print axioms ExactFourierCircuits.UniformWorkingLength.primeProduct
+#print axioms ExactFourierCircuits.UniformWorkingLength.primeProduct._f
+#print axioms ExactFourierCircuits.UniformWorkingLength.primeProduct._sunfold
+#print axioms ExactFourierCircuits.UniformWorkingLength.primeProduct._unsafe_rec
+#print axioms ExactFourierCircuits.UniformWorkingLength.primeProduct.eq_1
+#print axioms ExactFourierCircuits.UniformWorkingLength.primeProduct.eq_2
+#print axioms ExactFourierCircuits.UniformWorkingLength.primeProduct.eq_def
+#print axioms ExactFourierCircuits.UniformWorkingLength.primeProduct.match_1
+#print axioms ExactFourierCircuits.UniformWorkingLength.primeProduct_eq_prod
+#print axioms ExactFourierCircuits.UniformWorkingLength.primeProduct_lower
+#print axioms ExactFourierCircuits.UniformWorkingLength.primeProduct_lower._proof_1_4
+#print axioms ExactFourierCircuits.UniformWorkingLength.primeProduct_odd
+#print axioms ExactFourierCircuits.UniformWorkingLength.primeProduct_pos
+#print axioms ExactFourierCircuits.UniformWorkingLength.primeProduct_strictMono
+#print axioms ExactFourierCircuits.UniformWorkingLength.product_exceeds_exists
+#print axioms ExactFourierCircuits.UniformWorkingLength.selected_masterRoot_bound
 #print axioms ExactFourierCircuits.UniformWorkingLength.stoppingProduct_bound
-#print axioms ExactFourierCircuits.UniformWorkingLength.doublingExponent_log_bound
+#print axioms ExactFourierCircuits.UniformWorkingLength.workingLength
+#print axioms ExactFourierCircuits.UniformWorkingLength.workingLength.eq_1
+#print axioms ExactFourierCircuits.UniformWorkingLength.workingLength_lower
+#print axioms ExactFourierCircuits.UniformWorkingLength.workingLength_pos
+#print axioms ExactFourierCircuits.UniformWorkingLength.workingLength_pos._proof_1_1
+#print axioms ExactFourierCircuits.UniformWorkingLength.workingLength_upper
+#print axioms ExactFourierCircuits.UniformWorkingLength.workingLength_upper._proof_1_3
+#print axioms ExactFourierCircuits.UniformWorkingLength.workingLength_upper._proof_1_4
+#print axioms ExactFourierCircuits.UniformWorkingLength.workingLength_upper._proof_1_5
+#print axioms ExactFourierCircuits.UniformWorkingLength.workingLength_upper._proof_1_6
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformWorkingLength.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

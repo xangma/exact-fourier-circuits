@@ -1,0 +1,23 @@
+import UniformAxisCacheInputs
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisCacheInputs.Inputs
+#print axioms ExactFourierCircuits.UniformAxisCacheInputs.Inputs.casesOn
+#print axioms ExactFourierCircuits.UniformAxisCacheInputs.Inputs.conjugate
+#print axioms ExactFourierCircuits.UniformAxisCacheInputs.Inputs.metadata
+#print axioms ExactFourierCircuits.UniformAxisCacheInputs.Inputs.mk
+#print axioms ExactFourierCircuits.UniformAxisCacheInputs.Inputs.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformAxisCacheInputs.Inputs.operands
+#print axioms ExactFourierCircuits.UniformAxisCacheInputs.Inputs.original
+#print axioms ExactFourierCircuits.UniformAxisCacheInputs.Inputs.rec
+#print axioms ExactFourierCircuits.UniformAxisCacheInputs.Inputs.recOn
+#print axioms ExactFourierCircuits.UniformAxisCacheInputs.Inputs.withPC
+#print axioms ExactFourierCircuits.UniformAxisCacheInputs.of_core
+#print axioms ExactFourierCircuits.UniformAxisCacheInputs.transport
+#print axioms ExactFourierCircuits.UniformAxisCacheInputs.transport._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCacheInputs.transport._proof_1_2
+#print axioms ExactFourierCircuits.UniformAxisCacheInputs.transport._proof_1_3
+#print axioms ExactFourierCircuits.UniformAxisCacheInputs.transport._proof_1_4
+#print axioms ExactFourierCircuits.UniformAxisCacheInputs.transport._proof_1_5

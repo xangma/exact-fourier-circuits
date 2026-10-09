@@ -1,0 +1,16 @@
+import UniformFinalPhysicalTableInputs
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTableInputs.args
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTableInputs.header_core
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTableInputs.header_core._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTableInputs.header_data
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTableInputs.installed
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTableInputs.installed._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTableInputs.safe
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTableInputs.safe._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTableInputs.safe._proof_1_2
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTableInputs.safe._proof_1_3
+#print axioms ExactFourierCircuits.UniformFinalPhysicalTableInputs.safe._proof_1_4

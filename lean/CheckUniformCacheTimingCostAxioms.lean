@@ -1,0 +1,13 @@
+import UniformCacheTimingCost
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCacheTimingCost.polynomial_bound
+#print axioms ExactFourierCircuits.UniformCacheTimingCost.reverse_ticks_bound
+#print axioms ExactFourierCircuits.UniformCacheTimingCost.reverse_ticks_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheTimingCost.reverse_ticks_bound._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheTimingCost.rows_ticks_bound
+#print axioms ExactFourierCircuits.UniformCacheTimingCost.rows_ticks_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheTimingCost.whole_ticks_bound
+#print axioms ExactFourierCircuits.UniformCacheTimingCost.whole_ticks_bound._proof_1_1

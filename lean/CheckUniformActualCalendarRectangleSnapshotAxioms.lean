@@ -1,0 +1,14 @@
+import UniformActualCalendarRectangleSnapshot
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleSnapshot.snapshot
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleSnapshot.snapshot._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleSnapshot.snapshot.eq_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleSnapshot.source
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleSnapshot.source._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleSnapshot.source._proof_2
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleSnapshot.source._proof_3
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleSnapshot.source._proof_4
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleSnapshot.source_of_bindings

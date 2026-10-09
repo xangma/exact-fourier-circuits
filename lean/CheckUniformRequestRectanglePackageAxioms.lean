@@ -1,0 +1,28 @@
+import UniformRequestRectanglePackage
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRequestRectanglePackage.Package
+#print axioms ExactFourierCircuits.UniformRequestRectanglePackage.Package._sizeOf_1
+#print axioms ExactFourierCircuits.UniformRequestRectanglePackage.Package._sizeOf_inst
+#print axioms ExactFourierCircuits.UniformRequestRectanglePackage.Package.casesOn
+#print axioms ExactFourierCircuits.UniformRequestRectanglePackage.Package.ctorIdx
+#print axioms ExactFourierCircuits.UniformRequestRectanglePackage.Package.data
+#print axioms ExactFourierCircuits.UniformRequestRectanglePackage.Package.event
+#print axioms ExactFourierCircuits.UniformRequestRectanglePackage.Package.ha
+#print axioms ExactFourierCircuits.UniformRequestRectanglePackage.Package.he
+#print axioms ExactFourierCircuits.UniformRequestRectanglePackage.Package.mk
+#print axioms ExactFourierCircuits.UniformRequestRectanglePackage.Package.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformRequestRectanglePackage.Package.mk.inj
+#print axioms ExactFourierCircuits.UniformRequestRectanglePackage.Package.mk.injEq
+#print axioms ExactFourierCircuits.UniformRequestRectanglePackage.Package.mk.noConfusion
+#print axioms ExactFourierCircuits.UniformRequestRectanglePackage.Package.mk.sizeOf_spec
+#print axioms ExactFourierCircuits.UniformRequestRectanglePackage.Package.noConfusion
+#print axioms ExactFourierCircuits.UniformRequestRectanglePackage.Package.noConfusionType
+#print axioms ExactFourierCircuits.UniformRequestRectanglePackage.Package.positive
+#print axioms ExactFourierCircuits.UniformRequestRectanglePackage.Package.rec
+#print axioms ExactFourierCircuits.UniformRequestRectanglePackage.Package.recOn
+#print axioms ExactFourierCircuits.UniformRequestRectanglePackage.cast
+#print axioms ExactFourierCircuits.UniformRequestRectanglePackage.cast_event
+#print axioms ExactFourierCircuits.UniformRequestRectanglePackage.controller_eq

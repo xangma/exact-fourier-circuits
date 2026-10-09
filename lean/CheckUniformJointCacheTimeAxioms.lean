@@ -1,0 +1,31 @@
+import UniformJointCacheTime
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformJointCacheTime.correction_duration
+#print axioms ExactFourierCircuits.UniformJointCacheTime.duration_word_bound
+#print axioms ExactFourierCircuits.UniformJointCacheTime.duration_word_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformJointCacheTime.duration_word_bound._proof_1_2
+#print axioms ExactFourierCircuits.UniformJointCacheTime.duration_word_bound._proof_1_3
+#print axioms ExactFourierCircuits.UniformJointCacheTime.duration_word_bound._proof_1_4
+#print axioms ExactFourierCircuits.UniformJointCacheTime.full_slots_bound
+#print axioms ExactFourierCircuits.UniformJointCacheTime.full_slots_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformJointCacheTime.leafOperations
+#print axioms ExactFourierCircuits.UniformJointCacheTime.leafOperations._f
+#print axioms ExactFourierCircuits.UniformJointCacheTime.leafOperations._sunfold
+#print axioms ExactFourierCircuits.UniformJointCacheTime.leafOperations._unsafe_rec
+#print axioms ExactFourierCircuits.UniformJointCacheTime.leafOperations.match_1
+#print axioms ExactFourierCircuits.UniformJointCacheTime.leaf_operations_bound
+#print axioms ExactFourierCircuits.UniformJointCacheTime.leaf_records_bound
+#print axioms ExactFourierCircuits.UniformJointCacheTime.leaf_records_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformJointCacheTime.plan_duration_bound
+#print axioms ExactFourierCircuits.UniformJointCacheTime.plan_duration_bound._proof_1_2
+#print axioms ExactFourierCircuits.UniformJointCacheTime.plan_duration_bound._proof_1_3
+#print axioms ExactFourierCircuits.UniformJointCacheTime.plan_duration_bound._proof_1_4
+#print axioms ExactFourierCircuits.UniformJointCacheTime.plan_duration_bound._proof_1_5
+#print axioms ExactFourierCircuits.UniformJointCacheTime.rectangle_slot_duration
+#print axioms ExactFourierCircuits.UniformJointCacheTime.sum_scale
+#print axioms ExactFourierCircuits.UniformJointCacheTime.sum_squares
+#print axioms ExactFourierCircuits.UniformJointCacheTime.timed_word_bound
+#print axioms ExactFourierCircuits.UniformJointCacheTime.timed_word_bound._proof_1_1

@@ -1,0 +1,17 @@
+import UniformActualCalendarOccurrences
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarOccurrences.actual
+#print axioms ExactFourierCircuits.UniformActualCalendarOccurrences.actual.eq_1
+#print axioms ExactFourierCircuits.UniformActualCalendarOccurrences.count
+#print axioms ExactFourierCircuits.UniformActualCalendarOccurrences.occurrence_at
+#print axioms ExactFourierCircuits.UniformActualCalendarOccurrences.order
+#print axioms ExactFourierCircuits.UniformActualCalendarOccurrences.order.eq_1
+#print axioms ExactFourierCircuits.UniformActualCalendarOccurrences.source
+#print axioms ExactFourierCircuits.UniformActualCalendarOccurrences.source._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarOccurrences.source._proof_2
+#print axioms ExactFourierCircuits.UniformActualCalendarOccurrences.source._proof_3
+#print axioms ExactFourierCircuits.UniformActualCalendarOccurrences.typed
+#print axioms ExactFourierCircuits.UniformActualCalendarOccurrences.typed.eq_1

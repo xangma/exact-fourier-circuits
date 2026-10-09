@@ -1,0 +1,7 @@
+import UniformKernelDiagonalSynchronizedAction
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformKernelDiagonalSynchronizedAction.action
+#print axioms ExactFourierCircuits.UniformKernelDiagonalSynchronizedAction.stored

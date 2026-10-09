@@ -1,0 +1,17 @@
+import UniformMatchingKernelTyped
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformMatchingKernelTyped.axis
+#print axioms ExactFourierCircuits.UniformMatchingKernelTyped.axis.congr_simp
+#print axioms ExactFourierCircuits.UniformMatchingKernelTyped.axis_sum
+#print axioms ExactFourierCircuits.UniformMatchingKernelTyped.edges_range
+#print axioms ExactFourierCircuits.UniformMatchingKernelTyped.local_kernel
+#print axioms ExactFourierCircuits.UniformMatchingKernelTyped.orderedPosition
+#print axioms ExactFourierCircuits.UniformMatchingKernelTyped.ordered_position
+#print axioms ExactFourierCircuits.UniformMatchingKernelTyped.original_kernel
+#print axioms ExactFourierCircuits.UniformMatchingKernelTyped.physical_phase
+#print axioms ExactFourierCircuits.UniformMatchingKernelTyped.physical_phase.match_1
+#print axioms ExactFourierCircuits.UniformMatchingKernelTyped.radixCoordinate
+#print axioms ExactFourierCircuits.UniformMatchingKernelTyped.unary_volume

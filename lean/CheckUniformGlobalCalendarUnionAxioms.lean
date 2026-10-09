@@ -1,0 +1,33 @@
+import UniformGlobalCalendarUnion
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformGlobalCalendarGeometry.DisjointBands.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.ActiveIndex
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.Calls.family
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.Calls.family_matrix
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.Event.width
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.Event.width.match_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.Snapshot.family
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.Snapshot.family._proof_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.Snapshot.family._proof_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.Snapshot.family_matrix
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.active_separated
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.event_high
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.instDecidableEqActiveIndex
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.instFintypeActiveIndex
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.intervalEmbedding
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.intervalEmbedding._proof_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.intervalEmbedding._proof_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.intervalEmbedding._proof_3
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.intervalEmbedding._proof_4
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.intervalEmbedding._proof_5
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.intervalEmbedding._proof_6
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.treeEmbedding
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.treeEmbedding._proof_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.treeEmbedding._proof_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.treeEmbedding._proof_3
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.treeSnapshot
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.treeSnapshot.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarUnion.treeSnapshot_matrix

@@ -1,0 +1,7 @@
+import UniformCanonicalBroadcastPhase
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCanonicalBroadcastPhase.chunk_tick
+#print axioms ExactFourierCircuits.UniformCanonicalBroadcastPhase.normal_phase

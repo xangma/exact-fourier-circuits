@@ -1,14 +1,32 @@
 import FrameWords
+import Lean
 
-#print axioms ExactFourierCircuits.FrameWords.binaryAction_one
-#print axioms ExactFourierCircuits.FrameWords.binaryAction_mul
-#print axioms ExactFourierCircuits.FrameWords.translation_entry
-#print axioms ExactFourierCircuits.FrameWords.binaryAction_translation
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.DirectionalWords.directionalWord.congr_simp
+#print axioms ExactFourierCircuits.DirectionalWords.directionalWord.eq_1
+#print axioms ExactFourierCircuits.DirectionalWords.inverseDirectionalWord.congr_simp
+#print axioms ExactFourierCircuits.DirectionalWords.inverseDirectionalWord.eq_1
+#print axioms ExactFourierCircuits.DirectionalWords.inverseDirectionalWordAt.congr_simp
+#print axioms ExactFourierCircuits.DirectionalWords.translationFin.eq_1
+#print axioms ExactFourierCircuits.FrameSpectrum.directionalMap.eq_1
+#print axioms ExactFourierCircuits.FrameSpectrum.translateMap.eq_1
+#print axioms ExactFourierCircuits.FrameWords.binaryAction
+#print axioms ExactFourierCircuits.FrameWords.binaryAction._proof_1
+#print axioms ExactFourierCircuits.FrameWords.binaryAction.eq_1
 #print axioms ExactFourierCircuits.FrameWords.binaryAction_directional
 #print axioms ExactFourierCircuits.FrameWords.binaryAction_inverse
+#print axioms ExactFourierCircuits.FrameWords.binaryAction_mul
+#print axioms ExactFourierCircuits.FrameWords.binaryAction_one
+#print axioms ExactFourierCircuits.FrameWords.binaryAction_translation
+#print axioms ExactFourierCircuits.FrameWords.compile_signed_frame
 #print axioms ExactFourierCircuits.FrameWords.norm_one_nonzero
-#print axioms ExactFourierCircuits.FrameWords.signedLayer_action
-#print axioms ExactFourierCircuits.FrameWords.signedLayer_calls
+#print axioms ExactFourierCircuits.FrameWords.signedFrameList
+#print axioms ExactFourierCircuits.FrameWords.signedFrameList.eq_1
 #print axioms ExactFourierCircuits.FrameWords.signedFrameList_action
 #print axioms ExactFourierCircuits.FrameWords.signedFrameList_calls
-#print axioms ExactFourierCircuits.FrameWords.compile_signed_frame
+#print axioms ExactFourierCircuits.FrameWords.signedLayer
+#print axioms ExactFourierCircuits.FrameWords.signedLayer.congr_simp
+#print axioms ExactFourierCircuits.FrameWords.signedLayer_action
+#print axioms ExactFourierCircuits.FrameWords.signedLayer_calls
+#print axioms ExactFourierCircuits.FrameWords.translation_entry

@@ -1,6 +1,6 @@
 import UniformSectorPhysicalBinaryAction
+import Lean
 
--- Include generated declarations in the closure audit.
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformSectorPhysicalBinaryAction.batchCoordinate

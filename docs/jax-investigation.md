@@ -27,9 +27,20 @@ all-length uniform runtime conclusion.
 [An explicit power saving for the exact discrete Fourier
 transform](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/main.pdf)
 supplies the explicit incidence construction used by our closed seed. Its
-stronger single-algorithm theorem remains unfinished in this repository. That
-formalization is preserved while this investigation focuses on replication
-and numerical understanding.
+stronger all-length exact theorem is now closed in Lean as
+[UniformFinalDFTExecution.uniformDFT](../lean/UniformFinalDFTExecution.lean);
+the coherent, independent Main and
+[normal final verification](../verification/uniform-final-algorithm.json)
+audits pass. The actual 20-stage proof includes preparation, scheduling,
+three transforms and final DFT outputs. Its canonical check is
+`./scripts/verify-uniform.sh`.
+
+These JAX/CUDA receipts still concern only the concrete component, projection
+and conventional DFT programs measured here. They do not execute or benchmark
+the complete formal saving algorithm, and no formal translation of that whole
+machine program into JAX is claimed. Rounding can break an implementation's
+exact identities without invalidating the Lean theorem; the exact proof
+conversely supplies no floating-point error bound.
 
 Open [the paper playground](../notebooks/paper-playground.ipynb) to change both
 papers' parameters, precision, target amplitude and local transform sizes.
@@ -204,6 +215,6 @@ Render their PNG, SVG and PDF figures with:
 
 The next numerical investigation is to capture intermediate magnitude and
 source error through each three-C step, then test power-of-two normalization
-on the same inputs. The next formal milestone is the stronger uniform
-algorithm's complete preparation, scheduling and Fourier transfer; none of
-these small GPU plots closes that theorem.
+on the same inputs. The stronger uniform theorem is now closed separately
+and verified in Lean. These small GPU plots retain their empirical scope
+and do not establish a practical faster FFT.

@@ -1,0 +1,73 @@
+import UniformLocalStoredRequestResult
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.BodyResult
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.BodyResult.casesOn
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.BodyResult.current
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.BodyResult.driver
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.BodyResult.frame
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.BodyResult.frame._proof_1_1
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.BodyResult.frame._proof_1_2
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.BodyResult.frame._proof_1_3
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.BodyResult.frame._proof_1_4
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.BodyResult.high
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.BodyResult.low
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.BodyResult.measured
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.BodyResult.mk
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.BodyResult.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.BodyResult.natHigh
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.BodyResult.outputs
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.BodyResult.ready
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.BodyResult.rec
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.BodyResult.recOn
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.BodyResult.roots
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.BodyResult.scalar
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.LoopFrame
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.LoopFrame.casesOn
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.LoopFrame.driver
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.LoopFrame.mk
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.LoopFrame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.LoopFrame.nat
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.LoopFrame.outputs
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.LoopFrame.rec
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.LoopFrame.recOn
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.LoopFrame.refl
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.LoopFrame.roots
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.LoopFrame.scalar
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.LoopFrame.trans
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Ready
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Ready.casesOn
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Ready.completed
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Ready.conjugate
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Ready.control
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Ready.metadata
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Ready.mk
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Ready.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Ready.operands
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Ready.original
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Ready.rec
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Ready.recOn
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Ready.source
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Ready.transport
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.Ready.withPC
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.bodyCharge
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.costPrefix
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.costPrefix._f
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.costPrefix._sunfold
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.costPrefix._unsafe_rec
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.costPrefix.eq_1
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.costPrefix.eq_2
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.costPrefix.eq_def
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.costPrefix.match_1
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.costPrefix_step
+#print axioms ExactFourierCircuits.UniformLocalStoredRequestLoop.requestCharge
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformLocalStoredRequestResult.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

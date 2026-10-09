@@ -1,0 +1,9 @@
+import UniformGlobalSourceContinuity
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformExecutedTaggedBank.values.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalSourceContinuity.source
+#print axioms ExactFourierCircuits.UniformGlobalSourceContinuity.values
+#print axioms ExactFourierCircuits.UniformGlobalTickReturnedBank.values.eq_1

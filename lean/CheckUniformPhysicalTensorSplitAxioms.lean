@@ -1,0 +1,22 @@
+import UniformPhysicalTensorSplit
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformNativeCopiedInverse.spectatorSplit.eq_1
+#print axioms ExactFourierCircuits.UniformPhysicalTensorSplit.axis_list_matrix
+#print axioms ExactFourierCircuits.UniformPhysicalTensorSplit.highMatrix
+#print axioms ExactFourierCircuits.UniformPhysicalTensorSplit.low_high_tensor
+#print axioms ExactFourierCircuits.UniformPhysicalTensorSplit.low_prefix_matrix
+#print axioms ExactFourierCircuits.UniformPhysicalTensorSplit.low_prefix_matrix._proof_1_3
+#print axioms ExactFourierCircuits.UniformPhysicalTensorSplit.low_prefix_matrix._simp_1_1
+#print axioms ExactFourierCircuits.UniformPhysicalTensorSplit.low_prefix_matrix._simp_1_2
+#print axioms ExactFourierCircuits.UniformPhysicalTensorSplit.low_prefix_values
+#print axioms ExactFourierCircuits.UniformPhysicalTensorSplit.mem_low_axes
+#print axioms ExactFourierCircuits.UniformPhysicalTensorSplit.mem_low_axes._proof_1_1
+#print axioms ExactFourierCircuits.UniformPhysicalTensorSplit.mem_low_axes._proof_1_2
+#print axioms ExactFourierCircuits.UniformPhysicalTensorSplit.physical_split
+#print axioms ExactFourierCircuits.UniformPhysicalTensorSplit.split_address
+#print axioms ExactFourierCircuits.UniformPhysicalTensorSplit.split_high_digit
+#print axioms ExactFourierCircuits.UniformPhysicalTensorSplit.split_low_digit
+#print axioms ExactFourierCircuits.UniformPhysicalTensorSplit.split_low_digit._proof_1_1

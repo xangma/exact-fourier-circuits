@@ -1,26 +1,68 @@
 import UniformTraversalMachine
+import Lean
 
-#print axioms ExactFourierCircuits.UniformTraversalMachine.program
-#print axioms ExactFourierCircuits.UniformTraversalMachine.packingState
-#print axioms ExactFourierCircuits.UniformTraversalMachine.packingDigit
-#print axioms ExactFourierCircuits.UniformTraversalMachine.stage1
-#print axioms ExactFourierCircuits.UniformTraversalMachine.stage2
-#print axioms ExactFourierCircuits.UniformTraversalMachine.stage3
-#print axioms ExactFourierCircuits.UniformTraversalMachine.stage4
-#print axioms ExactFourierCircuits.UniformTraversalMachine.stage5
-#print axioms ExactFourierCircuits.UniformTraversalMachine.stage6
-#print axioms ExactFourierCircuits.UniformTraversalMachine.stage7
-#print axioms ExactFourierCircuits.UniformTraversalMachine.finalState
-#print axioms ExactFourierCircuits.UniformTraversalMachine.program_length
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformTraversalMachine.AssignmentBounds
+#print axioms ExactFourierCircuits.UniformTraversalMachine.LocalBounds
+#print axioms ExactFourierCircuits.UniformTraversalMachine.assignment_bounds
+#print axioms ExactFourierCircuits.UniformTraversalMachine.assignment_bounds._proof_1_1
+#print axioms ExactFourierCircuits.UniformTraversalMachine.assignment_bounds._proof_1_2
+#print axioms ExactFourierCircuits.UniformTraversalMachine.assignment_bounds._proof_1_3
+#print axioms ExactFourierCircuits.UniformTraversalMachine.assignment_bounds._proof_1_4
+#print axioms ExactFourierCircuits.UniformTraversalMachine.bounded_executes
+#print axioms ExactFourierCircuits.UniformTraversalMachine.bounded_executes._proof_1_1
+#print axioms ExactFourierCircuits.UniformTraversalMachine.bounded_executes._proof_1_10
+#print axioms ExactFourierCircuits.UniformTraversalMachine.bounded_executes._proof_1_11
+#print axioms ExactFourierCircuits.UniformTraversalMachine.bounded_executes._proof_1_12
+#print axioms ExactFourierCircuits.UniformTraversalMachine.bounded_executes._proof_1_13
+#print axioms ExactFourierCircuits.UniformTraversalMachine.bounded_executes._proof_1_14
+#print axioms ExactFourierCircuits.UniformTraversalMachine.bounded_executes._proof_1_15
+#print axioms ExactFourierCircuits.UniformTraversalMachine.bounded_executes._proof_1_16
+#print axioms ExactFourierCircuits.UniformTraversalMachine.bounded_executes._proof_1_2
+#print axioms ExactFourierCircuits.UniformTraversalMachine.bounded_executes._proof_1_3
+#print axioms ExactFourierCircuits.UniformTraversalMachine.bounded_executes._proof_1_4
+#print axioms ExactFourierCircuits.UniformTraversalMachine.bounded_executes._proof_1_5
+#print axioms ExactFourierCircuits.UniformTraversalMachine.bounded_executes._proof_1_6
+#print axioms ExactFourierCircuits.UniformTraversalMachine.bounded_executes._proof_1_7
+#print axioms ExactFourierCircuits.UniformTraversalMachine.bounded_executes._proof_1_8
+#print axioms ExactFourierCircuits.UniformTraversalMachine.bounded_executes._proof_1_9
 #print axioms ExactFourierCircuits.UniformTraversalMachine.executes
 #print axioms ExactFourierCircuits.UniformTraversalMachine.executes_unique
-#print axioms ExactFourierCircuits.UniformTraversalMachine.final_packingState
-#print axioms ExactFourierCircuits.UniformTraversalMachine.final_temporary
+#print axioms ExactFourierCircuits.UniformTraversalMachine.finalState
+#print axioms ExactFourierCircuits.UniformTraversalMachine.finalState.eq_1
 #print axioms ExactFourierCircuits.UniformTraversalMachine.final_natReg_other
+#print axioms ExactFourierCircuits.UniformTraversalMachine.final_packingState
 #print axioms ExactFourierCircuits.UniformTraversalMachine.final_pc
 #print axioms ExactFourierCircuits.UniformTraversalMachine.final_preserves_auxiliary_state
+#print axioms ExactFourierCircuits.UniformTraversalMachine.final_temporary
+#print axioms ExactFourierCircuits.UniformTraversalMachine.packingDigit
+#print axioms ExactFourierCircuits.UniformTraversalMachine.packingDigit.eq_1
+#print axioms ExactFourierCircuits.UniformTraversalMachine.packingState
+#print axioms ExactFourierCircuits.UniformTraversalMachine.packingState.eq_1
+#print axioms ExactFourierCircuits.UniformTraversalMachine.program
+#print axioms ExactFourierCircuits.UniformTraversalMachine.program.eq_1
+#print axioms ExactFourierCircuits.UniformTraversalMachine.program_length
+#print axioms ExactFourierCircuits.UniformTraversalMachine.stage1
+#print axioms ExactFourierCircuits.UniformTraversalMachine.stage1.eq_1
+#print axioms ExactFourierCircuits.UniformTraversalMachine.stage2
+#print axioms ExactFourierCircuits.UniformTraversalMachine.stage2.eq_1
+#print axioms ExactFourierCircuits.UniformTraversalMachine.stage3
+#print axioms ExactFourierCircuits.UniformTraversalMachine.stage3.eq_1
+#print axioms ExactFourierCircuits.UniformTraversalMachine.stage4
+#print axioms ExactFourierCircuits.UniformTraversalMachine.stage4.eq_1
+#print axioms ExactFourierCircuits.UniformTraversalMachine.stage5
+#print axioms ExactFourierCircuits.UniformTraversalMachine.stage5.eq_1
+#print axioms ExactFourierCircuits.UniformTraversalMachine.stage6
+#print axioms ExactFourierCircuits.UniformTraversalMachine.stage6.eq_1
+#print axioms ExactFourierCircuits.UniformTraversalMachine.stage7
+#print axioms ExactFourierCircuits.UniformTraversalMachine.stage7.eq_1
 #print axioms ExactFourierCircuits.UniformTraversalMachine.writeNat_wordBound
-#print axioms ExactFourierCircuits.UniformTraversalMachine.LocalBounds
-#print axioms ExactFourierCircuits.UniformTraversalMachine.AssignmentBounds
-#print axioms ExactFourierCircuits.UniformTraversalMachine.assignment_bounds
-#print axioms ExactFourierCircuits.UniformTraversalMachine.bounded_executes
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformTraversalMachine.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

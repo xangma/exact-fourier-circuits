@@ -1,0 +1,9 @@
+import UniformLayerSnapshotCount
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformLayerSnapshot.finite_snapshot_count
+#print axioms ExactFourierCircuits.UniformLayerSnapshot.layer_snapshot_count
+#print axioms ExactFourierCircuits.UniformLayerSnapshot.step_snapshot_count
+#print axioms ExactFourierCircuits.UniformLayerSnapshot.synchronized_finite_snapshot_count

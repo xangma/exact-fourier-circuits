@@ -1,0 +1,49 @@
+import UniformCacheTimingReverseData
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Bank
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Bank.casesOn
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Bank.corrections
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Bank.directory
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Bank.durations
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Bank.mk
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Bank.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Bank.prefixes
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Bank.rec
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Bank.recOn
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Bank.rows
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Layout
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Layout.casesOn
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Layout.code
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Layout.directory
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Layout.durations
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Layout.mk
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Layout.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Layout.rec
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Layout.recOn
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Layout.requests
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Layout.starts
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Metadata
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Metadata.casesOn
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Metadata.corrections
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Metadata.durations
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Metadata.mk
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Metadata.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Metadata.ordered
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Metadata.parentBefore
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Metadata.parentIndex
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Metadata.rec
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Metadata.recOn
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Metadata.requests
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Metadata.rowBudgets
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.Metadata.source
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.ordinal
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.ticks
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.ticks.eq_1
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.ticks_nil
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.ticks_succ
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.ticks_succ._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.ticks_zero
+#print axioms ExactFourierCircuits.UniformCacheTimingReverseData.value_eq

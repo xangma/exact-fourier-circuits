@@ -1,0 +1,28 @@
+import UniformAxisCachePrepareExecution
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareExecution.Ready
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareExecution.Ready.casesOn
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareExecution.Ready.forest
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareExecution.Ready.mk
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareExecution.Ready.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareExecution.Ready.natFrontier
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareExecution.Ready.pool
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareExecution.Ready.rec
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareExecution.Ready.recOn
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareExecution.Ready.result
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareExecution.Ready.scalarFrontier
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareExecution.Ready.timing
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareExecution.execution
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareExecution.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareExecution.execution._proof_1_10
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareExecution.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareExecution.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareExecution.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareExecution.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareExecution.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareExecution.execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareExecution.execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformAxisCachePrepareExecution.execution._proof_1_9

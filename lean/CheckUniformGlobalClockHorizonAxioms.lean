@@ -1,0 +1,26 @@
+import UniformGlobalClockHorizon
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformGlobalClockHorizon.block
+#print axioms ExactFourierCircuits.UniformGlobalClockHorizon.block.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalClockHorizon.block_length
+#print axioms ExactFourierCircuits.UniformGlobalClockHorizon.execution
+#print axioms ExactFourierCircuits.UniformGlobalClockHorizon.frame
+#print axioms ExactFourierCircuits.UniformGlobalClockHorizon.frame._proof_1_10
+#print axioms ExactFourierCircuits.UniformGlobalClockHorizon.frame._proof_1_11
+#print axioms ExactFourierCircuits.UniformGlobalClockHorizon.frame._proof_1_12
+#print axioms ExactFourierCircuits.UniformGlobalClockHorizon.frame._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalClockHorizon.frame._proof_1_3
+#print axioms ExactFourierCircuits.UniformGlobalClockHorizon.frame._proof_1_4
+#print axioms ExactFourierCircuits.UniformGlobalClockHorizon.frame._proof_1_5
+#print axioms ExactFourierCircuits.UniformGlobalClockHorizon.frame._proof_1_6
+#print axioms ExactFourierCircuits.UniformGlobalClockHorizon.frame._proof_1_7
+#print axioms ExactFourierCircuits.UniformGlobalClockHorizon.frame._proof_1_8
+#print axioms ExactFourierCircuits.UniformGlobalClockHorizon.frame._proof_1_9
+#print axioms ExactFourierCircuits.UniformGlobalClockHorizon.horizon
+#print axioms ExactFourierCircuits.UniformGlobalClockHorizon.max_identity
+#print axioms ExactFourierCircuits.UniformGlobalClockHorizon.max_identity._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalClockHorizon.safe
+#print axioms ExactFourierCircuits.UniformGlobalClockHorizon.safe._proof_1_2

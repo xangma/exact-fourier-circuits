@@ -1,0 +1,20 @@
+import UniformNativeRecordRoles
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.PaddingWords.paddingRoles.congr_simp
+#print axioms ExactFourierCircuits.PaddingWords.paddingRoles.eq_1
+#print axioms ExactFourierCircuits.TripleSchedule.Global.addressEmbedding.eq_1
+#print axioms ExactFourierCircuits.UniformNativeRecordRoles.embedding_role
+#print axioms ExactFourierCircuits.UniformNativeRecordRoles.lifted_role_matrix
+#print axioms ExactFourierCircuits.UniformNativeRecordRoles.native_active_lifted_role
+#print axioms ExactFourierCircuits.UniformNativeRecordRoles.native_embedding
+#print axioms ExactFourierCircuits.UniformNativeRecordRoles.native_lifted_role
+#print axioms ExactFourierCircuits.UniformNativeRecordRoles.paddingAddress
+#print axioms ExactFourierCircuits.UniformNativeRecordRoles.paddingAddress.eq_1
+#print axioms ExactFourierCircuits.UniformNativeRecordRoles.paddingAddress_role
+#print axioms ExactFourierCircuits.UniformNativeRecordRoles.paddingRole
+#print axioms ExactFourierCircuits.UniformNativeRecordRoles.paddingRole.eq_1
+#print axioms ExactFourierCircuits.UniformNativeRecordRoles.paddingRole_value
+#print axioms ExactFourierCircuits.UniformNativeRecordRoles.spectator_role_array

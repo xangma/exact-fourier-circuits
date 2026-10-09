@@ -1,0 +1,112 @@
+import UniformRoleInputMachine
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.Frame
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.Frame.beforePC
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.Frame.casesOn
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.Frame.copy
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.Frame.fill
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.Frame.kernel
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.Frame.kernel._proof_1_1
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.Frame.kernel._proof_1_2
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.Frame.mk
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.Frame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.Frame.natHeap
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.Frame.natReg
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.Frame.outputs
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.Frame.rec
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.Frame.recOn
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.Frame.roots
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.Frame.scalarReg
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.Frame.trans
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.Frame.withPC
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.Protected
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.all_prepared
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.block_pc
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.block_pc._proof_1_4
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.copySetup
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.copySetup.eq_1
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.copy_code
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.copy_jump
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.copy_setup_code
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.copy_setup_frame
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.copy_setup_frame._proof_1_5
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.copy_setup_frame._proof_1_6
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.copy_setup_frame._proof_1_7
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.copy_setup_heap
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.copy_setup_peak
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.copy_setup_regs
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_13
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_14
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_15
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_16
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_17
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_18
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_19
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_20
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_21
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_22
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_23
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_24
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_25
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_27
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_28
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_29
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_30
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_31
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_32
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_33
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_34
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_35
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_36
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_37
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_39
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_40
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_41
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_42
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_43
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_44
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_45
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_46
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_47
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_48
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_49
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.fill_code
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.halt_at
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.jump_run
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.kernelSetup
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.kernelSetup.eq_1
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.kernel_code
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.kernel_jump
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.kernel_setup_code
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.kernel_setup_frame
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.kernel_setup_frame._proof_1_5
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.kernel_setup_frame._proof_1_6
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.kernel_setup_frame._proof_1_7
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.kernel_setup_frame._proof_1_8
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.kernel_setup_peak
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.kernel_setup_regs
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.program
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.program_length
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.roleValue
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.roleValue.eq_1
+#print axioms ExactFourierCircuits.UniformRoleInputMachine.role_one_prepared
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformRoleInputMachine.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

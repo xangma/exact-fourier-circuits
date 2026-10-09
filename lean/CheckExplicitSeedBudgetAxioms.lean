@@ -1,13 +1,47 @@
 import ExplicitSeedBudget
+import Lean
 
-#print axioms ExactFourierCircuits.ExplicitSeedBudget.parameter_formulas
-#print axioms ExactFourierCircuits.ExplicitSeedBudget.padding
-#print axioms ExactFourierCircuits.ExplicitSeedBudget.residual_balance
-#print axioms ExactFourierCircuits.ExplicitSeedBudget.columns_value
-#print axioms ExactFourierCircuits.ExplicitSeedBudget.bits_value
-#print axioms ExactFourierCircuits.ExplicitSeedBudget.strict_margin
-#print axioms ExactFourierCircuits.ExplicitSeedBudget.saved_coefficient
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.bits
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.bits.eq_1
 #print axioms ExactFourierCircuits.ExplicitSeedBudget.bits_at_least_two
-#print axioms ExactFourierCircuits.ExplicitSeedBudget.ordinary_factorization
-#print axioms ExactFourierCircuits.ExplicitSeedBudget.proposed_count_saves
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.bits_value
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.calls
 #print axioms ExactFourierCircuits.ExplicitSeedBudget.closed_proposed_count_saves
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.columns
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.columns.eq_1
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.columns_value
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.degree
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.degree.eq_1
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.factor
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.h
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.h.eq_1
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.invocations
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.invocations.eq_1
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.m
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.m.eq_1
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.margin
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.margin.eq_1
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.ordinaryCalls
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.ordinary_factorization
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.paddedRoles
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.paddedRoles.eq_1
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.padding
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.parameter_formulas
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.pointwiseCalls
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.pointwiseCalls.eq_1
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.proposed_count_saves
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.proposed_count_saves._proof_1_2
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.proposed_count_saves._proof_1_3
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.residual_balance
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.residuals
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.residuals.eq_1
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.roleBits
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.roleBits.eq_1
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.roles
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.roles.eq_1
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.saved_coefficient
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.strict_margin
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.v
+#print axioms ExactFourierCircuits.ExplicitSeedBudget.v.eq_1

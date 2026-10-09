@@ -1,18 +1,88 @@
 import TripleInvocationFrames
+import Lean
 
-#print axioms ExactFourierCircuits.TripleInvocationFrames.pair_tensor
-#print axioms ExactFourierCircuits.TripleInvocationFrames.pair_complement
-#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationData
-#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationCoordinates
-#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationAddressCoordinates
-#print axioms ExactFourierCircuits.TripleInvocationFrames.bank_reassemble
-#print axioms ExactFourierCircuits.TripleInvocationFrames.entry_X
-#print axioms ExactFourierCircuits.TripleInvocationFrames.entry_Y
-#print axioms ExactFourierCircuits.TripleInvocationFrames.final_X
-#print axioms ExactFourierCircuits.TripleInvocationFrames.final_Y
+set_option linter.auxLemma false
+
+#print axioms Equiv.funSplitAt.eq_1
+#print axioms ExactFourierCircuits.BinaryResiduals.label0.eq_1
+#print axioms ExactFourierCircuits.FramedScheduleWords.Label.mk.congr_simp
+#print axioms ExactFourierCircuits.GateFrames.Data.finalLabels.eq_1
+#print axioms ExactFourierCircuits.GateFrames.Data.labels.eq_1
+#print axioms ExactFourierCircuits.GateFrames.labelOfBasis.eq_1
+#print axioms ExactFourierCircuits.GateFrames.t.eq_1
+#print axioms ExactFourierCircuits.TripleInvocationFrames.Future
+#print axioms ExactFourierCircuits.TripleInvocationFrames.Prefix
+#print axioms ExactFourierCircuits.TripleInvocationFrames.Prefix.match_1
+#print axioms ExactFourierCircuits.TripleInvocationFrames.bank
+#print axioms ExactFourierCircuits.TripleInvocationFrames.bank.eq_1
+#print axioms ExactFourierCircuits.TripleInvocationFrames.bankDirection
+#print axioms ExactFourierCircuits.TripleInvocationFrames.bankDirection._proof_1
+#print axioms ExactFourierCircuits.TripleInvocationFrames.bankDirection.eq_1
 #print axioms ExactFourierCircuits.TripleInvocationFrames.bankDirection_norm
-#print axioms ExactFourierCircuits.TripleInvocationFrames.entry_bank
-#print axioms ExactFourierCircuits.TripleInvocationFrames.final_bank
-#print axioms ExactFourierCircuits.TripleInvocationFrames.source_bank
-#print axioms ExactFourierCircuits.TripleInvocationFrames.sink_bank
+#print axioms ExactFourierCircuits.TripleInvocationFrames.bankProfile
+#print axioms ExactFourierCircuits.TripleInvocationFrames.bankVectors
+#print axioms ExactFourierCircuits.TripleInvocationFrames.bankVectors.eq_1
+#print axioms ExactFourierCircuits.TripleInvocationFrames.bank_reassemble
 #print axioms ExactFourierCircuits.TripleInvocationFrames.consecutive_bank
+#print axioms ExactFourierCircuits.TripleInvocationFrames.entry_X
+#print axioms ExactFourierCircuits.TripleInvocationFrames.entry_X._simp_1_8
+#print axioms ExactFourierCircuits.TripleInvocationFrames.entry_Y
+#print axioms ExactFourierCircuits.TripleInvocationFrames.entry_Y._simp_1_8
+#print axioms ExactFourierCircuits.TripleInvocationFrames.entry_bank
+#print axioms ExactFourierCircuits.TripleInvocationFrames.final_X
+#print axioms ExactFourierCircuits.TripleInvocationFrames.final_X._simp_1_8
+#print axioms ExactFourierCircuits.TripleInvocationFrames.final_Y
+#print axioms ExactFourierCircuits.TripleInvocationFrames.final_Y._simp_1_8
+#print axioms ExactFourierCircuits.TripleInvocationFrames.final_bank
+#print axioms ExactFourierCircuits.TripleInvocationFrames.futureFintype
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationAddressCoordinates
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationAddressCoordinates.eq_1
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationCoordinates
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationCoordinates.eq_1
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationCoordinates.eq_2
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationCoordinates.eq_3
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationCoordinates.match_1
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationData
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationData._proof_1
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationData._proof_10
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationData._proof_11
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationData._proof_12
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationData._proof_13
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationData._proof_14
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationData._proof_15
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationData._proof_16
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationData._proof_2
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationData._proof_3
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationData._proof_4
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationData._proof_5
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationData._proof_6
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationData._proof_7
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationData._proof_8
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationData._proof_9
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationData.congr_simp
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationData.eq_1
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationData.eq_2
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationData.eq_3
+#print axioms ExactFourierCircuits.TripleInvocationFrames.invocationData.match_1
+#print axioms ExactFourierCircuits.TripleInvocationFrames.pairCoordinates
+#print axioms ExactFourierCircuits.TripleInvocationFrames.pairCoordinates._proof_1
+#print axioms ExactFourierCircuits.TripleInvocationFrames.pairCoordinates._proof_2
+#print axioms ExactFourierCircuits.TripleInvocationFrames.pairCoordinates._proof_3
+#print axioms ExactFourierCircuits.TripleInvocationFrames.pairCoordinates.eq_1
+#print axioms ExactFourierCircuits.TripleInvocationFrames.pair_complement
+#print axioms ExactFourierCircuits.TripleInvocationFrames.pair_tensor
+#print axioms ExactFourierCircuits.TripleInvocationFrames.physicalFin
+#print axioms ExactFourierCircuits.TripleInvocationFrames.physicalFin._proof_1
+#print axioms ExactFourierCircuits.TripleInvocationFrames.prefixFintype
+#print axioms ExactFourierCircuits.TripleInvocationFrames.prefixFintype._proof_1
+#print axioms ExactFourierCircuits.TripleInvocationFrames.sink_bank
+#print axioms ExactFourierCircuits.TripleInvocationFrames.source_bank
+#print axioms ExactFourierCircuits.TripleNetwork.axisCoordinates.eq_1
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.TripleInvocationFrames.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

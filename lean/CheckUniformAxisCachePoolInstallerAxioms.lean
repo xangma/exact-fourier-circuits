@@ -1,0 +1,44 @@
+import UniformAxisCachePoolInstaller
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.Frame
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.Frame.casesOn
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.Frame.mk
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.Frame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.Frame.natHeap
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.Frame.outputs
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.Frame.rec
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.Frame.recOn
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.Frame.registers
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.Frame.rootOrders
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.Frame.scalarHeap
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.Frame.scalarReg
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.Installed
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.Installed.caller
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.Installed.casesOn
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.Installed.mk
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.Installed.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.Installed.pool
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.Installed.rec
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.Installed.recOn
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.execution
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.frame
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.frame._simp_1_1
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.frame._simp_1_2
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.frame._simp_1_3
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.halt_at
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.installed
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.ops
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.ops.eq_1
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.ops_code
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.ops_length
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.poolOp
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.poolOp.eq_1
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.program
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.program_length
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.safe
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.safe._proof_1_3
+#print axioms ExactFourierCircuits.UniformAxisCachePoolInstaller.ten

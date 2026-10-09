@@ -1,11 +1,16 @@
 import UniformSelectedCRT
+import Lean
 
-#print axioms ExactFourierCircuits.UniformSelectedCRT.radices
-#print axioms ExactFourierCircuits.UniformSelectedCRT.radix_pos
-#print axioms ExactFourierCircuits.UniformSelectedCRT.radix_coprime_binary
-#print axioms ExactFourierCircuits.UniformSelectedCRT.radices_pairwise
-#print axioms ExactFourierCircuits.UniformSelectedCRT.radices_product
-#print axioms ExactFourierCircuits.UniformSelectedCRT.radix_quadratic
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformSelectedCRT.matrix_factorization
 #print axioms ExactFourierCircuits.UniformSelectedCRT.permutation
 #print axioms ExactFourierCircuits.UniformSelectedCRT.permutation_address
-#print axioms ExactFourierCircuits.UniformSelectedCRT.matrix_factorization
+#print axioms ExactFourierCircuits.UniformSelectedCRT.radices
+#print axioms ExactFourierCircuits.UniformSelectedCRT.radices.eq_1
+#print axioms ExactFourierCircuits.UniformSelectedCRT.radices_pairwise
+#print axioms ExactFourierCircuits.UniformSelectedCRT.radices_product
+#print axioms ExactFourierCircuits.UniformSelectedCRT.radix_coprime_binary
+#print axioms ExactFourierCircuits.UniformSelectedCRT.radix_pos
+#print axioms ExactFourierCircuits.UniformSelectedCRT.radix_quadratic
+#print axioms ExactFourierCircuits.UniformSelectedCRT.radix_quadratic._proof_1_2

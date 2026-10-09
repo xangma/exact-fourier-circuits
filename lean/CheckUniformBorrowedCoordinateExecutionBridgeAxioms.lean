@@ -1,0 +1,8 @@
+import UniformBorrowedCoordinateExecutionBridge
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformBorrowedCoordinateBridge.borrowed_execution
+#print axioms ExactFourierCircuits.UniformBorrowedCoordinateBridge.port_execution
+#print axioms ExactFourierCircuits.UniformBorrowedCoordinateBridge.port_execution._proof_1

@@ -1,0 +1,8 @@
+import UniformActualCalendarRectangleFineFactory
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleFineFactory.make
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleFineFactory.slot_bound
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleFineFactory.slot_bound._proof_1

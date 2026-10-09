@@ -1,6 +1,12 @@
 import SavingBudget
+import Lean
+
+set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.SavingBudget.coefficient_saving
+#print axioms ExactFourierCircuits.SavingBudget.coefficient_saving._proof_1_1
 #print axioms ExactFourierCircuits.SavingBudget.factored_saving
 #print axioms ExactFourierCircuits.SavingBudget.floor_choice_saves
+#print axioms ExactFourierCircuits.SavingBudget.floor_choice_saves._proof_1_1
 #print axioms ExactFourierCircuits.SavingBudget.tensor_axis_factorization
+#print axioms ExactFourierCircuits.SavingBudget.tensor_axis_factorization._proof_1_1

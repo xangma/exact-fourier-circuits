@@ -1,0 +1,12 @@
+import UniformLocalCacheContextCopies
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformLocalCacheContextCopies.Safe
+#print axioms ExactFourierCircuits.UniformLocalCacheContextCopies.Sources
+#print axioms ExactFourierCircuits.UniformLocalCacheContextCopies.copy_heaps
+#print axioms ExactFourierCircuits.UniformLocalCacheContextCopies.copy_keeps
+#print axioms ExactFourierCircuits.UniformLocalCacheContextCopies.copy_nat
+#print axioms ExactFourierCircuits.UniformLocalCacheContextCopies.copy_safe
+#print axioms ExactFourierCircuits.UniformLocalCacheContextCopies.copy_sources

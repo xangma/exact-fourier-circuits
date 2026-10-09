@@ -1,0 +1,36 @@
+import UniformSyntacticPrinterSafety
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformSyntacticPrinterSafety.Safe
+#print axioms ExactFourierCircuits.UniformSyntacticPrinterSafety.Safe.eq_1
+#print axioms ExactFourierCircuits.UniformSyntacticPrinterSafety.Safe.match_1
+#print axioms ExactFourierCircuits.UniformSyntacticPrinterSafety.SafeProgram
+#print axioms ExactFourierCircuits.UniformSyntacticPrinterSafety.append_safe
+#print axioms ExactFourierCircuits.UniformSyntacticPrinterSafety.checked
+#print axioms ExactFourierCircuits.UniformSyntacticPrinterSafety.decoder_patches_safe
+#print axioms ExactFourierCircuits.UniformSyntacticPrinterSafety.decoder_safe
+#print axioms ExactFourierCircuits.UniformSyntacticPrinterSafety.decoder_setup_safe
+#print axioms ExactFourierCircuits.UniformSyntacticPrinterSafety.fixed_decoder_safe
+#print axioms ExactFourierCircuits.UniformSyntacticPrinterSafety.fixed_program_eq
+#print axioms ExactFourierCircuits.UniformSyntacticPrinterSafety.halt_safe
+#print axioms ExactFourierCircuits.UniformSyntacticPrinterSafety.instDecidableSafe
+#print axioms ExactFourierCircuits.UniformSyntacticPrinterSafety.instDecidableSafe._proof_1
+#print axioms ExactFourierCircuits.UniformSyntacticPrinterSafety.instDecidableSafe._proof_2
+#print axioms ExactFourierCircuits.UniformSyntacticPrinterSafety.instDecidableSafe._proof_3
+#print axioms ExactFourierCircuits.UniformSyntacticPrinterSafety.printer_boot_safe
+#print axioms ExactFourierCircuits.UniformSyntacticPrinterSafety.printer_cells_safe
+#print axioms ExactFourierCircuits.UniformSyntacticPrinterSafety.printer_safe
+#print axioms ExactFourierCircuits.UniformSyntacticPrinterSafety.reflexive_apply
+#print axioms ExactFourierCircuits.UniformSyntacticPrinterSafety.relocated_safe
+#print axioms ExactFourierCircuits.UniformSyntacticPrinterSafety.safe_avoids
+#print axioms ExactFourierCircuits.UniformSyntacticPrinterSafety.safe_avoids._proof_1_2
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformSyntacticPrinterSafety.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

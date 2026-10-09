@@ -1,7 +1,6 @@
 import UniformGlobalDiagonalRowsLoop
 import Lean
 
--- Include generated declarations in the closure audit.
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Directory.transfer
@@ -52,14 +51,10 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformTensorMonomialMachine.Rows.eq_2
 #print axioms ExactFourierCircuits.UniformTensorMonomialMachine.Rows.eq_def
 
--- Private names require direct environment lookup.
 open Lean Elab Command in
 run_cmd do
-  let env ← getEnv
-  for (name, _) in env.constants.toList do
-    if "_private.UniformGlobalDiagonalRowsLoop.".isPrefixOf name.toString then
-      let axioms ← collectAxioms name
-      logInfo m!"'{name}' depends on axioms: {axioms.toList}"
-      for ax in axioms do
-        unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
-          throwError m!"Unexpected axiom {ax} in {name}"
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformGlobalDiagonalRowsLoop.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

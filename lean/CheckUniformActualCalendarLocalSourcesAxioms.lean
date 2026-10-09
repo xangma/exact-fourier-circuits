@@ -1,0 +1,33 @@
+import UniformActualCalendarLocalSources
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.Source
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.Source._sizeOf_1
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.Source._sizeOf_inst
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.Source.calls
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.Source.casesOn
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.Source.ctorIdx
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.Source.factor
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.Source.mk
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.Source.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.Source.mk.inj
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.Source.mk.injEq
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.Source.mk.noConfusion
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.Source.mk.sizeOf_spec
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.Source.noConfusion
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.Source.noConfusionType
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.Source.rec
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.Source.recOn
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.Source.records
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.matching
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.matching._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.matching._proof_2
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.matching._proof_3
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.matching._proof_4
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.matching._proof_5
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.matching._proof_6
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.matching._proof_7
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.matching._proof_8
+#print axioms ExactFourierCircuits.UniformActualCalendarLocalSources.matching._proof_9

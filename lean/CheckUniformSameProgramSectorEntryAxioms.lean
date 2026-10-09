@@ -1,0 +1,11 @@
+import UniformSameProgramSectorEntry
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformSameProgramSectorLoop.boot_heaps
+#print axioms ExactFourierCircuits.UniformSameProgramSectorLoop.entry_execution
+#print axioms ExactFourierCircuits.UniformSameProgramSectorLoop.entry_execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformSameProgramSectorLoop.entry_execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformSameProgramSectorLoop.entry_execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformSameProgramSectorLoop.program.eq_1

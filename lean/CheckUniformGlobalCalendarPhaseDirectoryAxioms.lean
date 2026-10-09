@@ -1,0 +1,40 @@
+import UniformGlobalCalendarPhaseDirectory
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.execution
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.halt_code
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.kind
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.kind.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.kind.eq_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.kind.match_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.lane
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.lane.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.lane.eq_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.printed_cells
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.program
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.program_length
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.readOps
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.readOps.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.readOps_code
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.read_execution
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.read_execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.read_execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.read_execution._proof_1_9
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.words
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.words_kind
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.words_kind._proof_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.words_lane
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.words_lane._proof_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.words_length
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPhaseDirectory.words_values
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformGlobalCalendarPhaseDirectory.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

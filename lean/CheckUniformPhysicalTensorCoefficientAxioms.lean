@@ -1,0 +1,38 @@
+import UniformPhysicalTensorCoefficient
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformPhysicalTensorCoefficient.CoefficientEq
+#print axioms ExactFourierCircuits.UniformPhysicalTensorCoefficient.EntryCoefficientEq
+#print axioms ExactFourierCircuits.UniformPhysicalTensorCoefficient.aligned_coefficient
+#print axioms ExactFourierCircuits.UniformPhysicalTensorCoefficient.aligned_matrix
+#print axioms ExactFourierCircuits.UniformPhysicalTensorCoefficient.axes
+#print axioms ExactFourierCircuits.UniformPhysicalTensorCoefficient.axes._f
+#print axioms ExactFourierCircuits.UniformPhysicalTensorCoefficient.axes._proof_1
+#print axioms ExactFourierCircuits.UniformPhysicalTensorCoefficient.axes._proof_3
+#print axioms ExactFourierCircuits.UniformPhysicalTensorCoefficient.axes._sunfold
+#print axioms ExactFourierCircuits.UniformPhysicalTensorCoefficient.axes._unsafe_rec
+#print axioms ExactFourierCircuits.UniformPhysicalTensorCoefficient.axes.eq_1
+#print axioms ExactFourierCircuits.UniformPhysicalTensorCoefficient.axes.eq_2
+#print axioms ExactFourierCircuits.UniformPhysicalTensorCoefficient.axes.eq_def
+#print axioms ExactFourierCircuits.UniformPhysicalTensorCoefficient.axes.match_1
+#print axioms ExactFourierCircuits.UniformPhysicalTensorCoefficient.coefficient
+#print axioms ExactFourierCircuits.UniformPhysicalTensorCoefficient.entry_axes
+#print axioms ExactFourierCircuits.UniformPhysicalTensorCoefficient.equal_radices
+#print axioms ExactFourierCircuits.UniformPhysicalTensorCoefficient.mixed_coefficient
+#print axioms ExactFourierCircuits.UniformPhysicalTensorCoefficient.radices
+#print axioms ExactFourierCircuits.UniformPhysicalTensorCoefficient.split_cast
+#print axioms ExactFourierCircuits.UniformPhysicalTensorCoefficient.split_cast_pair
+#print axioms ExactFourierCircuits.UniformPhysicalTensorCoefficient.tensor_congr
+#print axioms ExactFourierCircuits.UniformTensorMonomialMachine.tensorCoefficient.eq_1
+#print axioms ExactFourierCircuits.UniformTensorMonomialMachine.tensorCoefficient.eq_2
+#print axioms ExactFourierCircuits.UniformTensorMonomialMachine.tensorCoefficient.eq_def
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformPhysicalTensorCoefficient.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

@@ -1,0 +1,15 @@
+import UniformLocalCacheSlotExecutionLoop
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.execution
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.loop
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.loop._proof_1_1
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.loop._proof_1_2
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.loop._proof_1_3
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.loop._proof_1_4
+#print axioms ExactFourierCircuits.UniformLocalCacheSlotConductorMachine.loop._proof_1_5

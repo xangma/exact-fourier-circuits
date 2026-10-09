@@ -1,0 +1,17 @@
+import UniformRecursivePreparedValues
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursivePreparedValues.Prepared
+#print axioms ExactFourierCircuits.UniformRecursivePreparedValues.Prepared2
+#print axioms ExactFourierCircuits.UniformRecursivePreparedValues.axes
+#print axioms ExactFourierCircuits.UniformRecursivePreparedValues.axis
+#print axioms ExactFourierCircuits.UniformRecursivePreparedValues.batch
+#print axioms ExactFourierCircuits.UniformRecursivePreparedValues.exchange
+#print axioms ExactFourierCircuits.UniformRecursivePreparedValues.exchanges
+#print axioms ExactFourierCircuits.UniformRecursivePreparedValues.selected
+#print axioms ExactFourierCircuits.UniformRecursivePreparedValues.shear
+#print axioms ExactFourierCircuits.UniformRecursivePreparedValues.spectator
+#print axioms ExactFourierCircuits.UniformRecursivePreparedValues.translation
+#print axioms ExactFourierCircuits.UniformRecursivePreparedValues.translations

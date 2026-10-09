@@ -1,0 +1,7 @@
+import UniformMatchingCoordinateBridge
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformBorrowedCoordinateBridge.coordinate_natPorts
+#print axioms ExactFourierCircuits.UniformBorrowedCoordinateBridge.coordinate_natPorts._proof_1

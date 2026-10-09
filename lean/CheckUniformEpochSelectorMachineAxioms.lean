@@ -1,0 +1,91 @@
+import UniformEpochSelectorMachine
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Frame
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Frame.casesOn
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Frame.mk
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Frame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Frame.natHeap
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Frame.natReg
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Frame.outputs
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Frame.protected
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Frame.protected._proof_1_2
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Frame.rec
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Frame.recOn
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Frame.roots
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Frame.scalarHeap
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Frame.scalarReg
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Frame.trans
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Header
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Header.casesOn
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Header.duration
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Header.epoch
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Header.finalBoundary
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Header.five
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Header.four
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Header.mk
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Header.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Header.nextBoundary
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Header.one
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Header.rec
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Header.recOn
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Header.reverseStart
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Header.three
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Header.two
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Header.zero
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.boundary_iff
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.boundary_iff._proof_1_1
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.boundary_iff._proof_1_2
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.boundary_iff._proof_1_3
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.boundary_iff._proof_1_4
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.boundary_iff._proof_1_5
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.boundary_iff._proof_1_6
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.forward_stage
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.forward_stage._proof_1_1
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.forward_stage._proof_1_2
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.forward_stage._proof_1_3
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.forward_stage._proof_1_4
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.forward_stage._proof_1_5
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.forward_stage._proof_1_6
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.inactive_iff
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.inactive_iff._proof_1_1
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.inactive_iff._proof_1_2
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.inactive_iff._proof_1_3
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.inactive_iff._proof_1_4
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.inactive_iff._proof_1_5
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.inactive_iff._proof_1_6
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.reverse_stage
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.reverse_stage._proof_1_1
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.reverse_stage._proof_1_2
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.reverse_stage._proof_1_3
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.reverse_stage._proof_1_4
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.reverse_stage._proof_1_5
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.reverse_stage._proof_1_6
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.tree_iff
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.tree_iff._proof_1_1
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.tree_iff._proof_1_2
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.tree_iff._proof_1_3
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.tree_iff._proof_1_4
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.tree_iff._proof_1_5
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.Selected.tree_iff._proof_1_6
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.execution
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.modified
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.modified.eq_1
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.program
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.program.eq_1
+#print axioms ExactFourierCircuits.UniformEpochSelectorMachine.program_length
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformEpochSelectorMachine.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

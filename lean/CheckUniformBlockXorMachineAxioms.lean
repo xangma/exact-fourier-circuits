@@ -1,5 +1,6 @@
-import UniformFixedNetworkYRecordLoopMachine
+import UniformBlockXorMachine
 import Lean
+
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformBlockXorMachine.Changed

@@ -1,0 +1,16 @@
+import UniformReplaySlotWitness
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformReplaySlotWitness.bound
+#print axioms ExactFourierCircuits.UniformReplaySlotWitness.bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformReplaySlotWitness.bound._proof_1_2
+#print axioms ExactFourierCircuits.UniformReplaySlotWitness.depth_color
+#print axioms ExactFourierCircuits.UniformReplaySlotWitness.depth_color._proof_1_1
+#print axioms ExactFourierCircuits.UniformReplaySlotWitness.depth_color._proof_1_2
+#print axioms ExactFourierCircuits.UniformReplaySlotWitness.depth_color._proof_1_3
+#print axioms ExactFourierCircuits.UniformReplaySlotWitness.depth_color._proof_1_4
+#print axioms ExactFourierCircuits.UniformReplaySlotWitness.get
+#print axioms ExactFourierCircuits.UniformReplaySlotWitness.layer_bound
+#print axioms ExactFourierCircuits.UniformReplaySlotWitness.layer_get

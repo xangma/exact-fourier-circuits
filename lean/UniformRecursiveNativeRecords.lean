@@ -1,4 +1,5 @@
 import UniformRecursiveRecordControl
+import UniformRecursiveYRestore
 set_option autoImplicit false
 namespace ExactFourierCircuits.UniformRecursiveNativeRecords
 open UniformMachine UniformAssembly
@@ -32,19 +33,19 @@ lemma vector_marker2 (pc a b c d e f g:ℕ)(h:pc=(![a,b,c,d,e,f,g]) 2):pc=c:=h
 lemma vector_marker6 (pc a b c d e f g:ℕ)(h:pc=(![a,b,c,d,e,f,g]) 6):pc=g:=h
 lemma scalar_pc (pc:ℕ)(h:pc=C.targets 1):pc=P.address .scalar:=
  vector_scalar pc (P.address .residualMark) (P.address .scalar) (P.address .marker)
-  (P.address .translation) (P.address .exchange) (P.address .paddingInit) (P.address .marker) h
+  (P.address .yRestore) (P.address .exchange) (P.address .paddingInit) (P.address .marker) h
 lemma exchange_pc (pc:ℕ)(h:pc=C.targets 4):pc=P.address .exchange:=
  vector_exchange pc (P.address .residualMark) (P.address .scalar) (P.address .marker)
-  (P.address .translation) (P.address .exchange) (P.address .paddingInit) (P.address .marker) h
-lemma translation_pc (pc:ℕ)(h:pc=C.targets 3):pc=P.address .translation:=
+  (P.address .yRestore) (P.address .exchange) (P.address .paddingInit) (P.address .marker) h
+lemma translation_pc (pc:ℕ)(h:pc=C.targets 3):pc=P.address .yRestore:=
  vector_translation pc (P.address .residualMark) (P.address .scalar) (P.address .marker)
-  (P.address .translation) (P.address .exchange) (P.address .paddingInit) (P.address .marker) h
+  (P.address .yRestore) (P.address .exchange) (P.address .paddingInit) (P.address .marker) h
 lemma marker2_pc (pc:ℕ)(h:pc=C.targets 2):pc=P.address .marker:=
  vector_marker2 pc (P.address .residualMark) (P.address .scalar) (P.address .marker)
-  (P.address .translation) (P.address .exchange) (P.address .paddingInit) (P.address .marker) h
+  (P.address .yRestore) (P.address .exchange) (P.address .paddingInit) (P.address .marker) h
 lemma marker6_pc (pc:ℕ)(h:pc=C.targets 6):pc=P.address .marker:=
  vector_marker6 pc (P.address .residualMark) (P.address .scalar) (P.address .marker)
-  (P.address .translation) (P.address .exchange) (P.address .paddingInit) (P.address .marker) h
+  (P.address .yRestore) (P.address .exchange) (P.address .paddingInit) (P.address .marker) h
 lemma printed_control {s t:State}{A:ℕ}{data:List ℕ}(fr:C.ControlFrame s t)(bank:Printed A data s):Printed A data t:=by
  intro j hj;rw [fr.natHeap];exact bank j hj
 lemma present_control {s t:State}{A R V:ℕ}{f:Fin R→Fin V→Scalar}(fr:C.ControlFrame s t)(data:Present A R V f s):Present A R V f t:=by
@@ -57,7 +58,7 @@ theorem scalar_loop {roles:ℕ}(q w k A T work tapeEnd B n:ℕ)(x:Fin n→ℂ)
  (pc:s.pc=P.address .loop)(ptr:s.natReg 2850=T)(base:s.natReg 3300=A)(native:s.natReg 5300=k)
  (workHeader:s.natReg 4123=work)(one:s.natReg 4153=1)(metadata:s.natHeap (work-1)=some tapeEnd)(live:T<tapeEnd)
  (bank:Printed T (S.shearRecord q w d source c).data s)(data:Present A roles (2^k) f s)
- (bound:WordBound B s)(code:P.program.length≤B)(tableEnd:T+8≤B)(width:w+1≤B)(extent:A+roles*2^k≤B):∃u t,
+ (bound:WordBound B s)(code:P.program.length ≤ B)(tableEnd:T+8 ≤ B)(width:w+1 ≤ B)(extent:A+roles*2^k ≤ B):∃u t,
  BoundedRuns P.program n x B s (10*2^k+4*k+c.val+102) u ∧ u.pc=P.address .loop ∧
  Present A roles (2^k) (UniformFixedNetworkShearChildMachine.shearValues d source (UniformFixedCoefficientCodec.decode c) f) u ∧
  u.natReg 2850=T+8 ∧ C.ControlFrame s t ∧
@@ -82,7 +83,7 @@ theorem exchange_loop {roles:ℕ}(q w k A T work tapeEnd B n:ℕ)(x:Fin n→ℂ)
  (pc:s.pc=P.address .loop)(ptr:s.natReg 2850=T)(base:s.natReg 3300=A)(native:s.natReg 5300=k)
  (workHeader:s.natReg 4123=work)(one:s.natReg 4153=1)(metadata:s.natHeap (work-1)=some tapeEnd)(live:T<tapeEnd)
  (bank:Printed T (E.record q w pairs).data s)(data:Present A roles (2^k) f s)(positive:0<roles)
- (bound:WordBound B s)(code:P.program.length≤B)(tableEnd:T+8+4*pairs.length≤B)(width:w+1≤B)(extent:A+roles*2^k≤B):∃u t,
+ (bound:WordBound B s)(code:P.program.length ≤ B)(tableEnd:T+8+4*pairs.length ≤ B)(width:w+1 ≤ B)(extent:A+roles*2^k ≤ B):∃u t,
  BoundedRuns P.program n x B s ((10*2^k+21)*pairs.length+4*k+99) u ∧ u.pc=P.address .loop ∧
  Present A roles (2^k) (E.actions pairs f) u ∧ u.natReg 2850=T+8+4*pairs.length ∧
  C.ControlFrame s t ∧ E.FullFrame A (roles*2^k) t u:=by
@@ -106,32 +107,47 @@ geometry. It starts and ends at the same physical parent's loop. -/
 theorem translation_loop {roles:ℕ}(q w rest k A E T recordBase work tapeEnd B n:ℕ)(x:Fin n→ℂ)
  (ds:List (Y.Direction roles w))(f:Fin roles→Fin (volume k)→Scalar)(s:State)
  (pc:s.pc=P.address .loop)(ptr:s.natReg 2850=recordBase)(base:s.natReg 3300=A)(native:s.natReg 5300=k)
- (restHeader:s.natReg 5301=rest)(shape:k=q*w+rest)(qp:1≤q)(padded:2^(q*(w+rest))≤B)
- (buffer:s.natReg 3364=E)(table:s.natReg 3389=T)
+ (restHeader:s.natReg 5301=rest)(shape:k=q*w+rest)(qp:1 ≤ q)(padded:2^(q*(w+rest)) ≤ B)
+ (volumeHeader:s.natReg 4122=volume k)(fresh:E=work+4*volume k)(table:s.natReg 3389=T)
  (workHeader:s.natReg 4123=work)(one:s.natReg 4153=1)(metadata:s.natHeap (work-1)=some tapeEnd)(live:recordBase<tapeEnd)
  (bank:Printed recordBase (Y.record q w ds).data s)(data:Present A roles (volume k) f s)
- (bound:WordBound B s)(code:P.program.length≤B)(sourceBeforeTable:recordBase+(Y.record q w ds).data.length≤T)
- (separate:A+roles*volume k≤E)(tableEnd:T+2^q*2^q≤B)(extent:E+volume k≤B)(width:w+1≤B):∃u t,
- BoundedRuns P.program n x B s (Y.runtime q w rest k ds.length+47) u ∧ u.pc=P.address .loop ∧
+ (bound:WordBound B s)(code:P.program.length ≤ B)(sourceBeforeTable:recordBase+(Y.record q w ds).data.length ≤ T)
+ (separate:A+roles*volume k ≤ E)(tableEnd:T+2^q*2^q ≤ B)(extent:E+volume k ≤ B)(width:w+1 ≤ B):∃u t a,
+ BoundedRuns P.program n x B s (Y.runtime q w rest k ds.length+51) u ∧ u.pc=P.address .loop ∧
  Present A roles (volume k) (Y.actions q w k ds f) u ∧ u.natReg 2850=recordBase+(Y.record q w ds).data.length ∧
- C.ControlFrame s t ∧ Y.FullFrame q A (roles*volume k) E T w k t u:=by
- have tb:T≤B:=by omega
+ C.ControlFrame s t ∧ UniformRecursiveYRestore.Frame t a ∧ Y.FullFrame q A (roles*volume k) E T w k a u:=by
+ have tb:T ≤ B:=by omega
  obtain ⟨t,controlRun,tp,fields,_,_,fr⟩:=C.read_dispatch_execution work recordBase tapeEnd B n (Y.record q w ds) x s
   pc workHeader ptr one metadata live bank (Y.record_good q w ds) bound (sourceBeforeTable.trans tb) width code
  have fi:(⟨(Y.record q w ds).opcode,(Y.record_good q w ds).1⟩:Fin 7)=3:=Fin.ext (by rfl)
- have ep:t.pc=P.address .translation:=translation_pc t.pc (tp.trans (congrArg C.targets fi))
+ have ep:t.pc=P.address .yRestore:=translation_pc t.pc (tp.trans (congrArg C.targets fi))
  have keep(j:ℕ)(hj:¬C.ControlChanged j):t.natReg j=s.natReg j:=fr.natReg j hj
- have ba:t.natReg 3300=A:=(keep _ (by unfold C.ControlChanged;omega)).trans base
- have nk:t.natReg 5300=k:=(keep _ (by unfold C.ControlChanged;omega)).trans native
- have rh:t.natReg 5301=rest:=(keep _ (by unfold C.ControlChanged;omega)).trans restHeader
- have eb:t.natReg 3364=E:=(keep _ (by unfold C.ControlChanged;omega)).trans buffer
- have xt:t.natReg 3389=T:=(keep _ (by unfold C.ControlChanged;omega)).trans table
+ have wt:t.natReg 4123=work:=(keep _ (by unfold C.ControlChanged;omega)).trans workHeader
+ have vt:t.natReg 4122=volume k:=(keep _ (by unfold C.ControlChanged;omega)).trans volumeHeader
+ have four:4 ≤ B:=by
+  have pos:=Nat.two_pow_pos k
+  unfold volume at fresh extent
+  omega
+ obtain ⟨a,restore,ap,buffer,af⟩:=UniformRecursiveYRestore.execution n B work (volume k) x t ep wt vt
+  controlRun.final_bound (by omega) four code
+ have ak(j:ℕ)(hj:¬C.ControlChanged j)(ha:¬UniformRecursiveYRestore.Changed j):a.natReg j=s.natReg j:=
+  (af.natReg j ha).trans (keep j hj)
+ have ba:a.natReg 3300=A:=(ak _ (by unfold C.ControlChanged;omega) (by unfold UniformRecursiveYRestore.Changed;omega)).trans base
+ have nk:a.natReg 5300=k:=(ak _ (by unfold C.ControlChanged;omega) (by unfold UniformRecursiveYRestore.Changed;omega)).trans native
+ have rh:a.natReg 5301=rest:=(ak _ (by unfold C.ControlChanged;omega) (by unfold UniformRecursiveYRestore.Changed;omega)).trans restHeader
+ have xt:a.natReg 3389=T:=(ak _ (by unfold C.ControlChanged;omega) (by unfold UniformRecursiveYRestore.Changed;omega)).trans table
+ have ac:a.natReg 2850=recordBase:=(af.natReg _ (by unfold UniformRecursiveYRestore.Changed;omega)).trans fields.cursor
+ have eb:a.natReg 3364=E:=buffer.trans fresh.symm
+ have bankA:Printed recordBase (Y.record q w ds).data a:=by
+  intro j hj;rw[af.natHeap,fr.natHeap];exact bank j hj
+ have dataA:Present A roles (volume k) f a:=by
+  intro i j;rw[af.scalarHeap,fr.scalarHeap];exact data i j
  obtain ⟨u,run,up,out,done,yf⟩:=UniformRecursiveNativeEntries.UniformNativeYRecordMachine.entry q w rest k A E T recordBase B n x
-  ds f t ep fields.cursor ba nk rh shape qp padded eb xt (printed_control fr bank) (present_control fr data)
-  controlRun.final_bound (R.code_bound .translation Y.program.length B rfl code) (R.start_bound .loop B code)
+  ds f a ap ac ba nk rh shape qp padded eb xt bankA dataA
+  restore.final_bound (R.code_bound .translation Y.program.length B rfl code) (R.start_bound .loop B code)
   sourceBeforeTable separate tableEnd extent width
- refine ⟨u,t,?_,up,out,done,fr,yf⟩
- convert controlRun.trans run using 1
+ refine ⟨u,t,a,?_,up,out,done,fr,af,yf⟩
+ convert (controlRun.trans restore).trans run using 1
  simp [UniformFixedNetworkOpcodeMachine.headCost,UniformNativeYRecordMachine.record,C.dispatchCost]
  omega
 
@@ -141,7 +157,7 @@ theorem marker_loop (T work tapeEnd B n:ℕ)(r:Record)(x:Fin n→ℂ)(s:State)
  (pc:s.pc=P.address .loop)(ptr:s.natReg 2850=T)(workHeader:s.natReg 4123=work)(one:s.natReg 4153=1)
  (metadata:s.natHeap (work-1)=some tapeEnd)(live:T<tapeEnd)(bank:Printed T r.data s)
  (marker:r.opcode=2∨r.opcode=6)(good:UniformFixedNetworkOpcodeMachine.WellFormed r)(bound:WordBound B s)
- (code:P.program.length≤B)(extent:T+r.data.length≤B)(width:r.width+1≤B):∃u t,
+ (code:P.program.length ≤ B)(extent:T+r.data.length ≤ B)(width:r.width+1 ≤ B):∃u t,
  BoundedRuns P.program n x B s (6+2*UniformFixedNetworkOpcodeMachine.headCost r+C.dispatchCost r.opcode) u ∧
  u.pc=P.address .loop ∧ u.natReg 2850=T+r.data.length ∧ C.ControlFrame s t ∧ UniformFixedNetworkOpcodeMachine.Frame t u:=by
  obtain ⟨t,controlRun,tp,fields,_,_,fr⟩:=C.read_dispatch_execution work T tapeEnd B n r x s

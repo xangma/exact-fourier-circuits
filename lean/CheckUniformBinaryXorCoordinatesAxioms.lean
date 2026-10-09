@@ -1,5 +1,6 @@
 import UniformBinaryXorCoordinates
 import Lean
+
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformBinaryXorCoordinates.binaryCoordinates

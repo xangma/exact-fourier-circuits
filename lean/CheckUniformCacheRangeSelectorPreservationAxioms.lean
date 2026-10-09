@@ -1,0 +1,52 @@
+import UniformCacheRangeSelectorPreservation
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Frame
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Frame.casesOn
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Frame.mk
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Frame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Frame.outputs
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Frame.rec
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Frame.recOn
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Frame.roots
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Frame.scalarHeap
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Frame.scalarReg
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.Frame.trans
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.execution_frame
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.execution_register
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.footprint
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.instructionFootprint
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.instructionFootprint._sparseCasesOn_1
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.instructionFootprint._sparseCasesOn_1.else_eq
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.instructionFootprint.eq_1
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.instructionFootprint.eq_2
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.instructionFootprint.eq_3
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.instructionFootprint.eq_4
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.instructionFootprint.eq_5
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.instructionFootprint.match_1
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.natInstruction
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.natInstruction._sparseCasesOn_1
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.natInstruction._sparseCasesOn_1.else_eq
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.natInstruction.eq_1
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.natInstruction.eq_2
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.natInstruction.eq_3
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.natInstruction.eq_4
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.natInstruction.eq_5
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.natInstruction.eq_6
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.natInstruction.eq_7
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.natInstruction.eq_8
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.natInstruction.match_1
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.onlyNat
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.program_keeps
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.program_keeps._proof_1_7
+#print axioms ExactFourierCircuits.UniformCacheRangeSelector.step_frame
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformCacheRangeSelectorPreservation.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

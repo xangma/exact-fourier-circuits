@@ -1,0 +1,36 @@
+import UniformKernelCallerPrinterSafety
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformKernelCallerPrinterSafety.Safe
+#print axioms ExactFourierCircuits.UniformKernelCallerPrinterSafety.Safe.eq_1
+#print axioms ExactFourierCircuits.UniformKernelCallerPrinterSafety.Safe.match_1
+#print axioms ExactFourierCircuits.UniformKernelCallerPrinterSafety.SafeProgram
+#print axioms ExactFourierCircuits.UniformKernelCallerPrinterSafety.append_safe
+#print axioms ExactFourierCircuits.UniformKernelCallerPrinterSafety.checked
+#print axioms ExactFourierCircuits.UniformKernelCallerPrinterSafety.decoder_patches_safe
+#print axioms ExactFourierCircuits.UniformKernelCallerPrinterSafety.decoder_safe
+#print axioms ExactFourierCircuits.UniformKernelCallerPrinterSafety.decoder_setup_safe
+#print axioms ExactFourierCircuits.UniformKernelCallerPrinterSafety.fixed_decoder_safe
+#print axioms ExactFourierCircuits.UniformKernelCallerPrinterSafety.fixed_program_eq
+#print axioms ExactFourierCircuits.UniformKernelCallerPrinterSafety.halt_safe
+#print axioms ExactFourierCircuits.UniformKernelCallerPrinterSafety.instDecidableSafe
+#print axioms ExactFourierCircuits.UniformKernelCallerPrinterSafety.instDecidableSafe._proof_1
+#print axioms ExactFourierCircuits.UniformKernelCallerPrinterSafety.instDecidableSafe._proof_2
+#print axioms ExactFourierCircuits.UniformKernelCallerPrinterSafety.instDecidableSafe._proof_3
+#print axioms ExactFourierCircuits.UniformKernelCallerPrinterSafety.printer_boot_safe
+#print axioms ExactFourierCircuits.UniformKernelCallerPrinterSafety.printer_cells_safe
+#print axioms ExactFourierCircuits.UniformKernelCallerPrinterSafety.printer_safe
+#print axioms ExactFourierCircuits.UniformKernelCallerPrinterSafety.reflexive_apply
+#print axioms ExactFourierCircuits.UniformKernelCallerPrinterSafety.relocated_safe
+#print axioms ExactFourierCircuits.UniformKernelCallerPrinterSafety.safe_avoids
+#print axioms ExactFourierCircuits.UniformKernelCallerPrinterSafety.safe_avoids._proof_1_2
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformKernelCallerPrinterSafety.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

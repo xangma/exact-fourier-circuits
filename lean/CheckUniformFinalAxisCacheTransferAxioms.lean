@@ -1,0 +1,25 @@
+import UniformFinalAxisCacheTransfer
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheTransfer.bundle_events_eq
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheTransfer.bundle_mono
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheTransfer.bundle_mono_events
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheTransfer.family
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheTransfer.family_make
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheTransfer.family_mono
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheTransfer.family_mono._proof_1
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheTransfer.interval
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheTransfer.interval._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheTransfer.interval._proof_1_2
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheTransfer.interval._proof_1_3
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheTransfer.interval._proof_1_4
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheTransfer.interval._proof_1_5
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheTransfer.interval._proof_1_6
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheTransfer.interval._proof_1_7
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheTransfer.interval._proof_1_8
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheTransfer.interval._proof_1_9
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheTransfer.monotone
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheTransfer.produced
+#print axioms ExactFourierCircuits.UniformFinalAxisCacheTransfer.selected_eq

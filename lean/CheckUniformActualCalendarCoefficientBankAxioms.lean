@@ -1,0 +1,7 @@
+import UniformActualCalendarCoefficientBank
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarCoefficientBank.context_bank
+#print axioms ExactFourierCircuits.UniformActualCalendarCoefficientBank.values

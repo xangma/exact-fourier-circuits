@@ -1,0 +1,8 @@
+import UniformCalendarPermutationIndices
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarPermutationIndices.exists_index_equiv
+#print axioms ExactFourierCircuits.UniformCalendarPermutationIndices.indexEquiv
+#print axioms ExactFourierCircuits.UniformCalendarPermutationIndices.indexEquiv_get

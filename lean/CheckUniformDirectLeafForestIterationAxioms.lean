@@ -1,0 +1,22 @@
+import UniformDirectLeafForestIteration
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafForestIteration.Invariant
+#print axioms ExactFourierCircuits.UniformDirectLeafForestIteration.Invariant.cached
+#print axioms ExactFourierCircuits.UniformDirectLeafForestIteration.Invariant.casesOn
+#print axioms ExactFourierCircuits.UniformDirectLeafForestIteration.Invariant.counts
+#print axioms ExactFourierCircuits.UniformDirectLeafForestIteration.Invariant.cursor
+#print axioms ExactFourierCircuits.UniformDirectLeafForestIteration.Invariant.mk
+#print axioms ExactFourierCircuits.UniformDirectLeafForestIteration.Invariant.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformDirectLeafForestIteration.Invariant.pc
+#print axioms ExactFourierCircuits.UniformDirectLeafForestIteration.Invariant.ranges
+#print axioms ExactFourierCircuits.UniformDirectLeafForestIteration.Invariant.rec
+#print axioms ExactFourierCircuits.UniformDirectLeafForestIteration.Invariant.recOn
+#print axioms ExactFourierCircuits.UniformDirectLeafForestIteration.Invariant.sources
+#print axioms ExactFourierCircuits.UniformDirectLeafForestIteration.execution
+#print axioms ExactFourierCircuits.UniformDirectLeafForestIteration.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestIteration.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirectLeafForestIteration.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformDirectLeafForestIteration.frame_source

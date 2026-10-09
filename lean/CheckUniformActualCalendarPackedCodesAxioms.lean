@@ -1,0 +1,10 @@
+import UniformActualCalendarPackedCodes
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarPackedCodes.canonical_values
+#print axioms ExactFourierCircuits.UniformActualCalendarPackedCodes.canonical_values._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarPackedCodes.pack_values
+#print axioms ExactFourierCircuits.UniformActualCalendarPackedCodes.values
+#print axioms ExactFourierCircuits.UniformActualCalendarPackedCodes.values.eq_1

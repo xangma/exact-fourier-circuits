@@ -1,0 +1,8 @@
+import UniformDiagonalDependencyTags
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDiagonalDependencyTags.all_prepared
+#print axioms ExactFourierCircuits.UniformDiagonalDependencyTags.execution
+#print axioms ExactFourierCircuits.UniformDiagonalDependencyTags.phase

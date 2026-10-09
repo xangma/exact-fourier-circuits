@@ -1,0 +1,39 @@
+import UniformFourierAxisPrepareTree
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.Result
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.Result.allocation
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.Result.bank
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.Result.casesOn
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.Result.footer
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.Result.inputs
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.Result.mk
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.Result.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.Result.mode
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.Result.outputs
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.Result.pc
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.Result.rec
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.Result.recOn
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.Result.registers
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.Result.roots
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.Result.scalarHeap
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.Result.scalarReg
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.Result.seed
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.Result.tick
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.count
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.execution
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.frontier_below_selected
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.localTick
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.localTick.eq_1
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.tree_values
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.tree_values._proof_1_2

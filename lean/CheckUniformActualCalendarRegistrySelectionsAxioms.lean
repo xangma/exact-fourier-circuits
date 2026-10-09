@@ -1,0 +1,11 @@
+import UniformActualCalendarRegistrySelections
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.selectedRanges_eq_map
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.selected_congr
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.selected_congr._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.selected_congr._proof_1_2
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.selected_ofFn
+#print axioms ExactFourierCircuits.UniformActualCalendarRegistry.selected_ofFn._proof_1_1

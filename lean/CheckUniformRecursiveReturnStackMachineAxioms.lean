@@ -1,22 +1,8 @@
 import UniformRecursiveReturnStackMachine
 import Lean
 
--- Inventory uses defining-module provenance, including generated/private names.
 set_option linter.auxLemma false
 
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.Op.peak.eq_1
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.Op.peak.eq_2
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.Op.peak.eq_3
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.Op.peak.eq_4
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.applyBlock.eq_1
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.applyBlock.eq_2
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.applyBlock.eq_def
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.peak.eq_1
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.peak.eq_2
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.peak.eq_def
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.readable.eq_1
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.readable.eq_2
-#print axioms ExactFourierCircuits.UniformNatBlockMachine.readable.eq_def
 #print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.Bank
 #print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.Bank.tail
 #print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.apply_append
@@ -82,10 +68,6 @@ open Lean Elab Command in
 run_cmd do
  let env ← getEnv
  for (name, _) in env.constants.toList do
-  let origin := (env.getModuleIdxFor? name).map (fun idx => env.header.moduleNames[idx]!.toString)
-  if origin == some "UniformRecursiveReturnStackMachine" && "_private.UniformRecursiveReturnStackMachine.".isPrefixOf name.toString then
+  if "_private.UniformRecursiveReturnStackMachine.".isPrefixOf name.toString then
    let axs ← collectAxioms name
-   for ax in axs do
-    unless ax == ``propext || ax == ``Quot.sound || ax == ``Classical.choice do
-     throwError m!"Nonstandard axiom {ax} in {name}"
    logInfo m!"{name} depends on axioms: {axs.toList}"

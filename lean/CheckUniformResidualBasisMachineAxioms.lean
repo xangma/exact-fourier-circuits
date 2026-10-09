@@ -1,5 +1,6 @@
 import UniformResidualBasisMachine
 import Lean
+
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformResidualBasisMachine.Control
@@ -36,12 +37,10 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformResidualBasisMachine.Frame.scalarReg
 #print axioms ExactFourierCircuits.UniformResidualBasisMachine.Frame.trans
 #print axioms ExactFourierCircuits.UniformResidualBasisMachine.Partial
-#print axioms ExactFourierCircuits.UniformResidualBasisMachine.Partial.eq_1
 #print axioms ExactFourierCircuits.UniformResidualBasisMachine.advance
 #print axioms ExactFourierCircuits.UniformResidualBasisMachine.advance.eq_1
 #print axioms ExactFourierCircuits.UniformResidualBasisMachine.advance_code
 #print axioms ExactFourierCircuits.UniformResidualBasisMachine.boot
-#print axioms ExactFourierCircuits.UniformResidualBasisMachine.boot.eq_1
 #print axioms ExactFourierCircuits.UniformResidualBasisMachine.boot_code
 #print axioms ExactFourierCircuits.UniformResidualBasisMachine.branch_at
 #print axioms ExactFourierCircuits.UniformResidualBasisMachine.halt_at
@@ -71,7 +70,6 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformResidualBasisMachine.round
 #print axioms ExactFourierCircuits.UniformResidualBasisMachine.round.eq_1
 #print axioms ExactFourierCircuits.UniformResidualBasisMachine.roundCost
-#print axioms ExactFourierCircuits.UniformResidualBasisMachine.roundCost.eq_1
 #print axioms ExactFourierCircuits.UniformResidualBasisMachine.roundCost_bound
 #print axioms ExactFourierCircuits.UniformResidualBasisMachine.roundCost_bound._proof_1_1
 #print axioms ExactFourierCircuits.UniformResidualBasisMachine.roundCost_bound._proof_1_2

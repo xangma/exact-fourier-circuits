@@ -5,6 +5,11 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime,timezone
 import re,json,hashlib,subprocess,os
 R=Path(__file__).resolve().parents[1];D=R/'logs/uniform-operational-foundations';D.mkdir(parents=True,exist_ok=True)
+# Historical component reports remain archived; the current command verifies the closed normal theorem.
+import sys
+if json.loads((R/'lean/UNIFORM_CHECKS.json').read_text()).get('closed_uniform_algorithm') is not None:
+ print('Historical component report preserved; running the current closed-theorem verifier.',flush=True)
+ raise SystemExit(subprocess.call([sys.executable,str(R/'scripts/verify-uniform-final.py'),*sys.argv[1:]]))
 mods=json.load(open(R/'verification/uniform-operational-modules.json'))['modules'];registry=json.load(open(R/'lean/UNIFORM_CHECKS.json'))
 assert registry['closed_uniform_algorithm'] is None
 manifest=json.load(open(R/'lean/UPSTREAM_MANIFEST.json'));assert len(manifest['files'])==51

@@ -1,0 +1,11 @@
+import UniformAxisBoundaryBindings
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAxisBoundaryBindings.events
+#print axioms ExactFourierCircuits.UniformAxisBoundaryBindings.events.eq_1
+#print axioms ExactFourierCircuits.UniformAxisBoundaryBindings.factual
+#print axioms ExactFourierCircuits.UniformAxisBoundaryBindings.factual._simp_1_2
+#print axioms ExactFourierCircuits.UniformAxisBoundaryBindings.payload_cached
+#print axioms ExactFourierCircuits.UniformAxisBoundaryBindings.payload_cached._proof_1_1

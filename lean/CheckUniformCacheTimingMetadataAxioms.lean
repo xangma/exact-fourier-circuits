@@ -1,0 +1,17 @@
+import UniformCacheTimingMetadata
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCacheTimingMetadata.ParentBefore
+#print axioms ExactFourierCircuits.UniformCacheTimingMetadata.root_parentBefore
+#print axioms ExactFourierCircuits.UniformCacheTimingMetadata.root_parentBefore._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheTimingMetadata.root_parentBefore._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheTimingMetadata.root_parentBefore._simp_1_3
+#print axioms ExactFourierCircuits.UniformCacheTimingMetadata.root_request_ordinal
+#print axioms ExactFourierCircuits.UniformCacheTimingMetadata.walk_parents
+#print axioms ExactFourierCircuits.UniformCacheTimingMetadata.walk_parents._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheTimingMetadata.walk_parents._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheTimingMetadata.walk_parents._simp_1_3
+#print axioms ExactFourierCircuits.UniformCacheTimingMetadata.walk_rectangle_prefix
+#print axioms ExactFourierCircuits.UniformCacheTimingMetadata.walk_rectangle_prefix._simp_1_1

@@ -1,0 +1,27 @@
+import UniformGlobalCalendarArena
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformGlobalCalendarArena.arena_fit
+#print axioms ExactFourierCircuits.UniformGlobalCalendarArena.axis_budgets
+#print axioms ExactFourierCircuits.UniformGlobalCalendarArena.axis_budgets._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarArena.before_diagonal
+#print axioms ExactFourierCircuits.UniformGlobalCalendarArena.cache_total_polynomial
+#print axioms ExactFourierCircuits.UniformGlobalCalendarArena.cache_total_polynomial._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarArena.natBase
+#print axioms ExactFourierCircuits.UniformGlobalCalendarArena.natBase.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarArena.nat_fits
+#print axioms ExactFourierCircuits.UniformGlobalCalendarArena.nat_fits._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarArena.prior_nat
+#print axioms ExactFourierCircuits.UniformGlobalCalendarArena.prior_scalar
+#print axioms ExactFourierCircuits.UniformGlobalCalendarArena.reserve
+#print axioms ExactFourierCircuits.UniformGlobalCalendarArena.reserve._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarArena.reserve._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarArena.reserve._proof_1_3
+#print axioms ExactFourierCircuits.UniformGlobalCalendarArena.scalarBase
+#print axioms ExactFourierCircuits.UniformGlobalCalendarArena.scalarBase.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarArena.scalar_fits
+#print axioms ExactFourierCircuits.UniformGlobalCalendarArena.scalar_fits._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarArena.size
+#print axioms ExactFourierCircuits.UniformGlobalCalendarArena.size.eq_1

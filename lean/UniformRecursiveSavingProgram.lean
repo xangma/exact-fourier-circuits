@@ -1,3 +1,4 @@
+import UniformResidualOrientationMachine
 import UniformRecursiveResidualGatherRecordMachine
 import UniformRecursiveBatchGroupMachine
 import UniformNativeYRecordMachine
@@ -56,7 +57,7 @@ inductive Part where
  | inverseTest | inverseSetup | inverse | scatterSetup | scatter | directionNext | directionTest
  | edgeDone | recordAdvance | scalar | translation | exchange | marker
  | paddingInit | paddingTest | paddingPatch | paddingReader | paddingNext | paddingFinish
- | spectatorSetup | spectator | finish | returnSite | restored | halt
+ | spectatorSetup | spectator | finish | returnSite | restored | halt | orientation | yRestore
  deriving DecidableEq
 
 def order : List Part := [.entry,.rootAllocate,.readyEntry,.smallSetup,.base,.largeSetup,.seedPrinter,.unitSetup,.unitPrinter,.nodeReady,
@@ -64,7 +65,7 @@ def order : List Part := [.entry,.rootAllocate,.readyEntry,.smallSetup,.base,.la
  .inverseTest,.inverseSetup,.inverse,.scatterSetup,.scatter,.directionNext,.directionTest,
  .edgeDone,.recordAdvance,.scalar,.translation,.exchange,.marker,
  .paddingInit,.paddingTest,.paddingPatch,.paddingReader,.paddingNext,.paddingFinish,
- .spectatorSetup,.spectator,.finish,.returnSite,.restored,.halt]
+ .spectatorSetup,.spectator,.finish,.returnSite,.restored,.halt,.orientation,.yRestore]
 
 /-- The size table does not inspect any vector or input-dependent value. -/
 def size : Part→ℕ
@@ -75,7 +76,7 @@ def size : Part→ℕ
  | .scatterSetup=>7 | .scatter=>16 | .directionNext=>2 | .directionTest=>1 | .edgeDone=>4
  | .recordAdvance=>2 | .scalar=>106 | .translation=>197 | .exchange=>98 | .marker=>54
  | .paddingInit=>11 | .paddingTest=>6 | .paddingPatch=>10 | .paddingReader=>52 | .paddingNext=>6 | .paddingFinish=>4
- | .spectatorSetup=>6 | .spectator=>69 | .finish=>1 | .returnSite=>76 | .restored=>9 | .halt=>1
+ | .spectatorSetup=>6 | .spectator=>69 | .finish=>1 | .returnSite=>76 | .restored=>9 | .halt=>1 | .orientation=>20 | .yRestore=>4
 
 def address (a : Part) : ℕ := offset size order a
 /-- Metadata is immediately before this node's direction/gather workspace.
@@ -113,7 +114,7 @@ def piece : Part→Program
  | .dispatch=>[.branchLT 2851 4153 (address .residualMark) (address .dispatch+1),
    .natLiteral 4177 2,.branchLT 2851 4177 (address .scalar) (address .dispatch+3),
    .natLiteral 4177 3,.branchLT 2851 4177 (address .marker) (address .dispatch+5),
-   .natLiteral 4177 4,.branchLT 2851 4177 (address .translation) (address .dispatch+7),
+   .natLiteral 4177 4,.branchLT 2851 4177 (address .yRestore) (address .dispatch+7),
    .natLiteral 4177 5,.branchLT 2851 4177 (address .exchange) (address .dispatch+9),
    .natLiteral 4177 6,.branchLT 2851 4177 (address .paddingInit) (address .dispatch+11),.jump (address .marker)]
  | .residualMark=>metaAddress 0++[.natLiteral 4177 0,.storeNat 4178 4177]
@@ -123,7 +124,7 @@ def piece : Part→Program
  | .bootGroups=>UniformRecursiveBatchGroupMachine.bootGroups.map UniformNatBlockMachine.Op.code
  | .groupTest=>[.branchLT 4125 4126 (address .call) (address .inverseTest)]
  | .call=>UniformRecursiveSelfCallMachine.callCode (address .call)
- | .inverseTest=>[.branchLT 4131 4153 (address .scatterSetup) (address .inverseSetup)]
+ | .inverseTest=>[.jump (address .orientation)]
  | .inverseSetup=>[.natBinary .mul 3360 4091 4153,.natBinary .mul 3364 4090 4153,
    .natBinary .add 3361 4061 4127,.natBinary .mul 3362 4122 4153,
    .natBinary .sub 3363 4124 4153,.natBinary .mul 3353 4124 4153,
@@ -167,6 +168,11 @@ def piece : Part→Program
    .natBinary .mul 5301 4127 4153,.natBinary .mul 3300 4121 4153,
    .natBinary .mul 2852 4060 4153,.natBinary .mul 2853 4061 4153,.jump (address .groupTest)]
  | .halt=>[.halt]
+ | .yRestore=>[.natLiteral 4189 4,.natBinary .mul 4189 4122 4189,
+   .natBinary .add 3364 4123 4189,.jump (address .translation)]
+ | .orientation=>UniformResidualOrientationMachine.program.map
+   (relocate (address .orientation) (address .orientation+19))++
+   [.branchLT 4188 4153 (address .scatterSetup) (address .inverseSetup)]
 
 lemma unitRecord_length : unitRecord.data.length=unitLength:=by
  simp only [unitRecord,UniformFixedNetworkScheduleMachine.Record.data_length,List.length_ofFn,unitLength]
@@ -185,7 +191,7 @@ lemma piece_size (a : Part) : (piece a).length=size a:=by
   UniformResidualArrayCopyMachine.program_length,UniformNativeScalarRecordMachine.scalarProgram_length,
   UniformNativeYRecordMachine.program_length,UniformNativeExchangeRecordMachine.program_length,
   UniformFixedNetworkMarkerMachine.program_length,UniformBinarySpectatorCMachine.program_length,
-  UniformRecursiveSelfCallMachine.returnCode_length,List.length_cons,List.length_nil]
+  UniformRecursiveSelfCallMachine.returnCode_length,UniformResidualOrientationMachine.program_length,List.length_cons,List.length_nil]
  <;> rfl
 
 /-- One finite bytecode, independent of k,q,n and scalar inputs. This
@@ -201,6 +207,12 @@ lemma part_child {a : Part} {child : Program} {ret : ℕ}
  rw [part_slice a i hi,eq,List.getElem?_map]
 lemma gather_code : CodeAt UniformRecursiveResidualGatherRecordMachine.program program (address .gather) (address .bootGroups):=
  part_child rfl
+lemma orientation_code : CodeAt UniformResidualOrientationMachine.program program (address .orientation) (address .orientation+19):=by
+ intro i hi
+ rw [part_slice .orientation i (by simpa only [piece,List.length_append,List.length_map,UniformResidualOrientationMachine.program_length,List.length_cons,List.length_nil] using Nat.lt_add_right 1 hi)]
+ change (UniformResidualOrientationMachine.program.map (relocate (address .orientation) (address .orientation+19))++
+  [.branchLT 4188 4153 (address .scatterSetup) (address .inverseSetup)])[i]?=_
+ rw [List.getElem?_append_left (by simpa only [List.length_map] using hi),List.getElem?_map]
 lemma scalar_code : CodeAt UniformNativeScalarRecordMachine.scalarProgram program (address .scalar) (address .loop):=
  part_child rfl
 lemma translation_code : CodeAt UniformNativeYRecordMachine.program program (address .translation) (address .loop):=

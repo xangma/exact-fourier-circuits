@@ -1,5 +1,6 @@
 import UniformGlobalScalePoolMachine
 import Lean
+
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformGlobalScalePoolMachine.Cursor
@@ -66,5 +67,4 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformGlobalScalePoolMachine.nextState
 #print axioms ExactFourierCircuits.UniformGlobalScalePoolMachine.nextState.eq_1
 #print axioms ExactFourierCircuits.UniformGlobalScalePoolMachine.program
-#print axioms ExactFourierCircuits.UniformGlobalScalePoolMachine.program.eq_1
 #print axioms ExactFourierCircuits.UniformGlobalScalePoolMachine.program_length

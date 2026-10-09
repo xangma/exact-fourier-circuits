@@ -1,5 +1,8 @@
 import UniformChunkMatchingPreparation
+import Lean
+
 set_option linter.auxLemma false
+
 #print axioms ExactFourierCircuits.UniformChunkMatchingPreparation.CallerBlock
 #print axioms ExactFourierCircuits.UniformChunkMatchingPreparation.CodesDomain
 #print axioms ExactFourierCircuits.UniformChunkMatchingPreparation.Constants
@@ -865,3 +868,7 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformChunkMatchingPreparation.table_transport._proof_1_4
 #print axioms ExactFourierCircuits.UniformChunkMatchingPreparation.table_transport._proof_1_5
 #print axioms ExactFourierCircuits.UniformChunkMatchingPreparation.table_transport._proof_1_6
+#print axioms ExactFourierCircuits.UniformColorLayerTableMachine.selectedEdges.eq_1
+#print axioms ExactFourierCircuits.UniformColorLayerTableMachine.selectionIndex.eq_1
+#print axioms ExactFourierCircuits.UniformCrossDepthReplayPreparation.shiftedEdges.eq_1
+#print axioms ExactFourierCircuits.UniformCrossHeightPreparationMachine.Record.eq_1

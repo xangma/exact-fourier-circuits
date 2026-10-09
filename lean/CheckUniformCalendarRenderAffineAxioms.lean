@@ -1,0 +1,10 @@
+import UniformCalendarRenderAffine
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarRenderAffine.blocks_perturbations
+#print axioms ExactFourierCircuits.UniformCalendarRenderAffine.embed_add_sub_one
+#print axioms ExactFourierCircuits.UniformCalendarRenderAffine.embed_sum_perturbations
+#print axioms ExactFourierCircuits.UniformCalendarRenderAffine.embed_sum_perturbations._abel_1_1
+#print axioms ExactFourierCircuits.UniformCalendarRenderAffine.embed_sum_perturbations._abel_1_2

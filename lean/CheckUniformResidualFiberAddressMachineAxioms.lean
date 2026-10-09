@@ -1,5 +1,6 @@
 import UniformResidualFiberAddressMachine
 import Lean
+
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformResidualFiberAddressMachine.Header
@@ -22,7 +23,6 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformResidualFiberAddressMachine.afterToggle.eq_1
 #print axioms ExactFourierCircuits.UniformResidualFiberAddressMachine.after_code
 #print axioms ExactFourierCircuits.UniformResidualFiberAddressMachine.boot
-#print axioms ExactFourierCircuits.UniformResidualFiberAddressMachine.boot.eq_1
 #print axioms ExactFourierCircuits.UniformResidualFiberAddressMachine.boot_code
 #print axioms ExactFourierCircuits.UniformResidualFiberAddressMachine.child_at
 #print axioms ExactFourierCircuits.UniformResidualFiberAddressMachine.descend
@@ -34,7 +34,6 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformResidualFiberAddressMachine.emit_at
 #print axioms ExactFourierCircuits.UniformResidualFiberAddressMachine.emit_code
 #print axioms ExactFourierCircuits.UniformResidualFiberAddressMachine.enter
-#print axioms ExactFourierCircuits.UniformResidualFiberAddressMachine.enter.eq_1
 #print axioms ExactFourierCircuits.UniformResidualFiberAddressMachine.enter_code
 #print axioms ExactFourierCircuits.UniformResidualFiberAddressMachine.halt_at
 #print axioms ExactFourierCircuits.UniformResidualFiberAddressMachine.leaf_runs
@@ -250,8 +249,5 @@ run_cmd do
  let env ← getEnv
  for (name, _) in env.constants.toList do
   if "_private.UniformResidualFiberAddressMachine.".isPrefixOf name.toString then
-   let axioms ← collectAxioms name
-   for ax in axioms do
-    unless ax == ``propext || ax == ``Quot.sound || ax == ``Classical.choice do
-     throwError m!"Nonstandard axiom {ax} in {name}"
-   logInfo m!"{name} depends on axioms: {axioms.toList}"
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

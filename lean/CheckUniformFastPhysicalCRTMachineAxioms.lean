@@ -1,0 +1,112 @@
+import UniformFastPhysicalCRTMachine
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Addresses
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Addresses._sizeOf_1
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Addresses._sizeOf_inst
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Addresses.alpha
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Addresses.beta
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Addresses.casesOn
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Addresses.ctorIdx
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Addresses.directory
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Addresses.inverseBeta
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Addresses.mk
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Addresses.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Addresses.mk.inj
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Addresses.mk.injEq
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Addresses.mk.noConfusion
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Addresses.mk.sizeOf_spec
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Addresses.noConfusion
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Addresses.noConfusionType
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Addresses.physicalAlpha
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Addresses.rec
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Addresses.recOn
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Addresses.work
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Args
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Args.alpha
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Args.axes
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Args.beta
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Args.casesOn
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Args.directory
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Args.inverseBeta
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Args.mk
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Args.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Args.physicalAlpha
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Args.rec
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Args.recOn
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Args.volume
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Args.work
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Constants
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Constants.casesOn
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Constants.mk
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Constants.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Constants.one
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Constants.rec
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Constants.recOn
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Constants.two
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Constants.zero
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Frame
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Frame.args
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Frame.args._proof_1_1
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Frame.args._proof_1_2
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Frame.args._proof_1_3
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Frame.args._proof_1_4
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Frame.args._proof_1_5
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Frame.args._proof_1_6
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Frame.args._proof_1_7
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Frame.args._proof_1_8
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Frame.casesOn
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Frame.mk
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Frame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Frame.natReg
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Frame.outputs
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Frame.pc
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Frame.rec
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Frame.recOn
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Frame.refl
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Frame.roots
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Frame.scalarHeap
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Frame.scalarReg
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.Frame.trans
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.args_pc
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.block_pc
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.block_pc._proof_1_4
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.boot
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.boot_code
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.carryBody
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.carryInit
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.carry_code
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.carry_init_code
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.carry_init_jump
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.carry_test
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.constants_pc
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.emitBody
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.emit_code
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.emit_test
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.halt_code
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.initBody
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.init_code
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.init_jump
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.init_test
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.program
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.program_length
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.successBody
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.success_code
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.success_jump
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.success_test
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.wrapBody
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.wrap_code
+#print axioms ExactFourierCircuits.UniformFastPhysicalCRTMachine.wrap_jump
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.applyBlock.eq_1
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.applyBlock.eq_2
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.applyBlock.eq_def
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformFastPhysicalCRTMachine.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

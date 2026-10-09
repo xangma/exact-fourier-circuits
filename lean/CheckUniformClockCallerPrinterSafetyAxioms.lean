@@ -1,0 +1,38 @@
+import UniformClockCallerPrinterSafety
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.Safe
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.Safe.eq_1
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.Safe.match_1
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.SafeProgram
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.append_safe
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.checked
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.decoder_patches_safe
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.decoder_safe
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.decoder_setup_safe
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.fixed_decoder_safe
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.fixed_program_eq
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.halt_safe
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.instDecidableSafe
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.instDecidableSafe._proof_1
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.instDecidableSafe._proof_2
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.instDecidableSafe._proof_3
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.printer_boot_safe
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.printer_cells_safe
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.printer_safe
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.reflexive_apply
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.relocated_safe
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.safe_avoids
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.safe_avoids._proof_1_2
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.safe_startup_avoids
+#print axioms ExactFourierCircuits.UniformClockCallerPrinterSafety.safe_startup_avoids._proof_1_2
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformClockCallerPrinterSafety.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

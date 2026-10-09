@@ -1,16 +1,42 @@
 import UniformPairDiagonalMachine
+import Lean
 
-#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.program
-#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.program_length
-#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.contextFree
-#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.scaledLeft
-#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.scaledBoth
-#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.storedLeft
-#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.finalState
+set_option linter.auxLemma false
+
 #print axioms ExactFourierCircuits.UniformPairDiagonalMachine.bounded_execution
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.bounded_execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.bounded_execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.bounded_execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.bounded_execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.bounded_execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.bounded_execution._proof_1_9
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.contextFree
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.diagonal_execution
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.finalState
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.finalState.eq_1
 #print axioms ExactFourierCircuits.UniformPairDiagonalMachine.final_frame
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.final_frame._proof_1_1
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.final_frame._proof_1_2
 #print axioms ExactFourierCircuits.UniformPairDiagonalMachine.final_heap
 #print axioms ExactFourierCircuits.UniformPairDiagonalMachine.final_values
-#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.untouched
 #print axioms ExactFourierCircuits.UniformPairDiagonalMachine.preserves_bank
-#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.diagonal_execution
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.preserves_bank._proof_1_1
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.preserves_bank._proof_1_2
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.program
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.program.eq_1
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.program_length
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.scaledBoth
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.scaledBoth.eq_1
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.scaledLeft
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.scaledLeft.eq_1
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.storedLeft
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.storedLeft.eq_1
+#print axioms ExactFourierCircuits.UniformPairDiagonalMachine.untouched
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformPairDiagonalMachine.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

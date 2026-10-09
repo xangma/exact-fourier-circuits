@@ -1,0 +1,9 @@
+import UniformFinalStatementBridge
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFinalStatementBridge.eventual_runtime_bound
+#print axioms ExactFourierCircuits.UniformFinalStatementBridge.execution_polynomial
+#print axioms ExactFourierCircuits.UniformFinalStatementBridge.of_majorized_execution
+#print axioms ExactFourierCircuits.UniformFinalStatementBridge.paper_eventually_nonneg

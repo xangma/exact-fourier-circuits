@@ -4,6 +4,9 @@ root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 log_dir="$root/logs"
 mkdir -p "$log_dir"
 cd "$root/lean"
+if python3 -c 'import json,sys; sys.exit(json.load(open("UNIFORM_CHECKS.json")).get("closed_uniform_algorithm") is None)'; then
+  exec python3 "$root/scripts/verify-uniform-final.py" "$@"
+fi
 exec > >(tee "$log_dir/lean-uniform-verification.log") 2>&1
 printf 'Host: %s\nCwd: %s\nPID: %s\nCommand: %s\nLog: %s\n' "$(hostname)" "$PWD" "$$" "$root/scripts/verify-uniform.sh" "$log_dir/lean-uniform-verification.log"
 printf 'Stop: terminate child processes of PID %s, then kill -TERM %s\n' "$$" "$$"

@@ -1,9 +1,42 @@
 import NetworkTerminal
+import Lean
 
-#print axioms ExactFourierCircuits.NetworkTerminal.translateMap_square
-#print axioms ExactFourierCircuits.NetworkTerminal.corrected_source_sink_exchange
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.NetworkTerminal.State
+#print axioms ExactFourierCircuits.NetworkTerminal.State._sizeOf_1
+#print axioms ExactFourierCircuits.NetworkTerminal.State._sizeOf_inst
+#print axioms ExactFourierCircuits.NetworkTerminal.State.auxiliary
+#print axioms ExactFourierCircuits.NetworkTerminal.State.casesOn
+#print axioms ExactFourierCircuits.NetworkTerminal.State.ctorIdx
+#print axioms ExactFourierCircuits.NetworkTerminal.State.ext
+#print axioms ExactFourierCircuits.NetworkTerminal.State.ext.match_1
+#print axioms ExactFourierCircuits.NetworkTerminal.State.ext_iff
+#print axioms ExactFourierCircuits.NetworkTerminal.State.mk
+#print axioms ExactFourierCircuits.NetworkTerminal.State.mk._flat_ctor
+#print axioms ExactFourierCircuits.NetworkTerminal.State.mk.inj
+#print axioms ExactFourierCircuits.NetworkTerminal.State.mk.injEq
+#print axioms ExactFourierCircuits.NetworkTerminal.State.mk.noConfusion
+#print axioms ExactFourierCircuits.NetworkTerminal.State.mk.sizeOf_spec
+#print axioms ExactFourierCircuits.NetworkTerminal.State.noConfusion
+#print axioms ExactFourierCircuits.NetworkTerminal.State.noConfusionType
+#print axioms ExactFourierCircuits.NetworkTerminal.State.rec
+#print axioms ExactFourierCircuits.NetworkTerminal.State.recOn
+#print axioms ExactFourierCircuits.NetworkTerminal.State.x
+#print axioms ExactFourierCircuits.NetworkTerminal.State.y
+#print axioms ExactFourierCircuits.NetworkTerminal.bankDirection
+#print axioms ExactFourierCircuits.NetworkTerminal.bankDirection.eq_1
 #print axioms ExactFourierCircuits.NetworkTerminal.bankDirection_norm
 #print axioms ExactFourierCircuits.NetworkTerminal.bankDirection_weight
-#print axioms ExactFourierCircuits.NetworkTerminal.triple_corrected_source_sink_exchange
+#print axioms ExactFourierCircuits.NetworkTerminal.columnSinkFrames
+#print axioms ExactFourierCircuits.NetworkTerminal.columnSourceInverse
 #print axioms ExactFourierCircuits.NetworkTerminal.corrected_column_source_sink_exchange
+#print axioms ExactFourierCircuits.NetworkTerminal.corrected_source_sink_exchange
+#print axioms ExactFourierCircuits.NetworkTerminal.correction
+#print axioms ExactFourierCircuits.NetworkTerminal.exchange
+#print axioms ExactFourierCircuits.NetworkTerminal.ordinary
+#print axioms ExactFourierCircuits.NetworkTerminal.sinkFrames
+#print axioms ExactFourierCircuits.NetworkTerminal.sourceInverse
+#print axioms ExactFourierCircuits.NetworkTerminal.translateMap_square
 #print axioms ExactFourierCircuits.NetworkTerminal.triple_column_corrected_source_sink_exchange
+#print axioms ExactFourierCircuits.NetworkTerminal.triple_corrected_source_sink_exchange

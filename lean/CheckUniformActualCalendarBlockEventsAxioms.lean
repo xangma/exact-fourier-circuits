@@ -1,0 +1,8 @@
+import UniformActualCalendarBlockEvents
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarForestRegistry.family_make
+#print axioms ExactFourierCircuits.UniformActualCalendarForestRegistry.family_make._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarRectangleRegistry.family_make

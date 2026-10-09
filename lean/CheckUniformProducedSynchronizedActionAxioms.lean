@@ -1,0 +1,8 @@
+import UniformProducedSynchronizedAction
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformProducedSynchronizedAction.action
+#print axioms ExactFourierCircuits.UniformProducedSynchronizedAction.coordinate
+#print axioms ExactFourierCircuits.UniformProducedSynchronizedAction.reindex_action

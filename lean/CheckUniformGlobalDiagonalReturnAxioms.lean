@@ -1,0 +1,51 @@
+import UniformGlobalDiagonalReturn
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.copy_code
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.diagonal_code
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.diagonal_free
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.execution
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.execution._proof_1_10
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.execution._proof_1_11
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.execution._proof_1_12
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.execution._proof_1_9
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.halt_at
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.halt_at._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.header_kept
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.programFor
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.programFor.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.program_length
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.relocated
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.setup
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.setup.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.setup_code
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.setup_headers
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.setup_safe
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.setup_safe._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.writesHeader
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.writesHeader._sparseCasesOn_1
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.writesHeader._sparseCasesOn_1.else_eq
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.writesHeader.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.writesHeader.eq_2
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.writesHeader.eq_3
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.writesHeader.eq_4
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.writesHeader.eq_5
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalReturn.writesHeader.match_1
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformGlobalDiagonalReturn.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

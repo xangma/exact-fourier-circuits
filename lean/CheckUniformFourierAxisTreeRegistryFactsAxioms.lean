@@ -1,0 +1,9 @@
+import UniformFourierAxisTreeRegistryFacts
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFourierAxisPrepareTree.count.eq_1
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeRegistryFacts.cached_mono
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeRegistryFacts.factual
+#print axioms ExactFourierCircuits.UniformFourierAxisTreeRegistryFacts.factual._proof_1_1

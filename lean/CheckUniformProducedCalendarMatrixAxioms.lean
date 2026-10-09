@@ -1,0 +1,10 @@
+import UniformProducedCalendarMatrix
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformProducedCalendarMatrix.cast_matrix_congr
+#print axioms ExactFourierCircuits.UniformProducedCalendarMatrix.diagonal_reindex
+#print axioms ExactFourierCircuits.UniformProducedCalendarMatrix.local_matrices
+#print axioms ExactFourierCircuits.UniformProducedCalendarMatrix.local_matrix
+#print axioms ExactFourierCircuits.UniformProducedCalendarMatrix.printed_axis

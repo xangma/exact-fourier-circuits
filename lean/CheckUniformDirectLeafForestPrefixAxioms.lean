@@ -1,0 +1,12 @@
+import UniformDirectLeafForestPrefix
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafForestPrefix.before_mono
+#print axioms ExactFourierCircuits.UniformDirectLeafForestPrefix.before_mono._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestPrefix.before_mono._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirectLeafForestPrefix.before_succ
+#print axioms ExactFourierCircuits.UniformDirectLeafForestPrefix.before_succ._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafForestPrefix.before_succ._proof_1_2
+#print axioms ExactFourierCircuits.UniformDirectLeafForestPrefix.before_succ._proof_1_3

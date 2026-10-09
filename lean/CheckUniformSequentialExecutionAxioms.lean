@@ -1,0 +1,26 @@
+import UniformSequentialExecution
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformSequentialExecution.Contains
+#print axioms ExactFourierCircuits.UniformSequentialExecution.LocalStages
+#print axioms ExactFourierCircuits.UniformSequentialExecution.LocalStages.append
+#print axioms ExactFourierCircuits.UniformSequentialExecution.LocalStages.below
+#print axioms ExactFourierCircuits.UniformSequentialExecution.LocalStages.below.casesOn
+#print axioms ExactFourierCircuits.UniformSequentialExecution.LocalStages.below.cons
+#print axioms ExactFourierCircuits.UniformSequentialExecution.LocalStages.below.nil
+#print axioms ExactFourierCircuits.UniformSequentialExecution.LocalStages.below.rec
+#print axioms ExactFourierCircuits.UniformSequentialExecution.LocalStages.brecOn
+#print axioms ExactFourierCircuits.UniformSequentialExecution.LocalStages.casesOn
+#print axioms ExactFourierCircuits.UniformSequentialExecution.LocalStages.cons
+#print axioms ExactFourierCircuits.UniformSequentialExecution.LocalStages.execution
+#print axioms ExactFourierCircuits.UniformSequentialExecution.LocalStages.nil
+#print axioms ExactFourierCircuits.UniformSequentialExecution.LocalStages.rec
+#print axioms ExactFourierCircuits.UniformSequentialExecution.LocalStages.recOn
+#print axioms ExactFourierCircuits.UniformSequentialExecution.LocalStages.runs
+#print axioms ExactFourierCircuits.UniformSequentialExecution.LocalStages.runs._proof_1_1
+#print axioms ExactFourierCircuits.UniformSequentialExecution.LocalStages.runs._proof_1_2
+#print axioms ExactFourierCircuits.UniformSequentialExecution.contains_suffix
+#print axioms ExactFourierCircuits.UniformSequentialExecution.contains_tail
+#print axioms ExactFourierCircuits.UniformSequentialExecution.program_contains

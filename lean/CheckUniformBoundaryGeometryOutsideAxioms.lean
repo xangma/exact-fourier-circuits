@@ -1,0 +1,8 @@
+import UniformBoundaryGeometryOutside
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFourierAxisGeometry.boundary_execution_outside
+#print axioms ExactFourierCircuits.UniformFourierAxisGeometry.boundary_execution_outside._proof_1_1
+#print axioms ExactFourierCircuits.UniformFourierAxisGeometry.boundary_execution_outside._proof_1_2

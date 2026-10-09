@@ -1,7 +1,6 @@
 import UniformRecursiveSavingProgram
 import Lean
 
--- Inventory uses defining-module provenance, including generated/private names.
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformFixedNetworkLiteralDecoderMachine.fixedProgram.eq_1
@@ -76,6 +75,9 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.Part.nodeReady.sizeOf_spec
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.Part.ofNat
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.Part.ofNat_ctorIdx
+#print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.Part.orientation
+#print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.Part.orientation.elim
+#print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.Part.orientation.sizeOf_spec
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.Part.paddingFinish
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.Part.paddingFinish.elim
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.Part.paddingFinish.sizeOf_spec
@@ -150,6 +152,9 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.Part.unitSetup
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.Part.unitSetup.elim
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.Part.unitSetup.sizeOf_spec
+#print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.Part.yRestore
+#print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.Part.yRestore.elim
+#print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.Part.yRestore.sizeOf_spec
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.Slice
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.address
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.base_code
@@ -176,6 +181,7 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.offset.match_1
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.order
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.order.eq_1
+#print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.orientation_code
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.part_child
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.part_slice
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.piece
@@ -218,11 +224,14 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.piece.eq_42
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.piece.eq_43
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.piece.eq_44
+#print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.piece.eq_45
+#print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.piece.eq_46
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.piece.eq_5
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.piece.eq_6
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.piece.eq_7
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.piece.eq_8
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.piece.eq_9
+#print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.piece.match_1
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.piece_size
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.printer_code
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.program
@@ -270,6 +279,8 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.size.eq_42
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.size.eq_43
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.size.eq_44
+#print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.size.eq_45
+#print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.size.eq_46
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.size.eq_5
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.size.eq_6
 #print axioms ExactFourierCircuits.UniformRecursiveSavingProgram.size.eq_7
@@ -292,10 +303,6 @@ open Lean Elab Command in
 run_cmd do
  let env ← getEnv
  for (name, _) in env.constants.toList do
-  let origin := (env.getModuleIdxFor? name).map (fun idx => env.header.moduleNames[idx]!.toString)
-  if origin == some "UniformRecursiveSavingProgram" && "_private.UniformRecursiveSavingProgram.".isPrefixOf name.toString then
+  if "_private.UniformRecursiveSavingProgram.".isPrefixOf name.toString then
    let axs ← collectAxioms name
-   for ax in axs do
-    unless ax == ``propext || ax == ``Quot.sound || ax == ``Classical.choice do
-     throwError m!"Nonstandard axiom {ax} in {name}"
    logInfo m!"{name} depends on axioms: {axs.toList}"

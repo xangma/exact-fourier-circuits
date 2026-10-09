@@ -1,0 +1,24 @@
+import UniformCanonicalClockCost
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCanonicalAxisCost.axisCost.eq_1
+#print axioms ExactFourierCircuits.UniformCanonicalAxisCost.selected.congr_simp
+#print axioms ExactFourierCircuits.UniformCanonicalClockCost.action
+#print axioms ExactFourierCircuits.UniformCanonicalClockCost.action._proof_1
+#print axioms ExactFourierCircuits.UniformCanonicalClockCost.actualBudget
+#print axioms ExactFourierCircuits.UniformCanonicalClockCost.actual_bound
+#print axioms ExactFourierCircuits.UniformCanonicalClockCost.actual_eq
+#print axioms ExactFourierCircuits.UniformCanonicalClockCost.actual_eq._proof_1_5
+#print axioms ExactFourierCircuits.UniformCanonicalClockCost.bound
+#print axioms ExactFourierCircuits.UniformCanonicalClockCost.geometry
+#print axioms ExactFourierCircuits.UniformCanonicalClockCost.length
+#print axioms ExactFourierCircuits.UniformCanonicalClockCost.length._proof_1_2
+#print axioms ExactFourierCircuits.UniformCanonicalClockCost.loopBudget
+#print axioms ExactFourierCircuits.UniformCanonicalClockCost.prepared_budget
+#print axioms ExactFourierCircuits.UniformCanonicalClockCost.retainedBudget
+#print axioms ExactFourierCircuits.UniformCanonicalClockCost.retainedBudget.congr_simp
+#print axioms ExactFourierCircuits.UniformCanonicalClockCost.specified_length
+#print axioms ExactFourierCircuits.UniformCanonicalClockCost.specified_length._proof_1_1
+#print axioms ExactFourierCircuits.UniformProducedClockTick.budget.congr_simp

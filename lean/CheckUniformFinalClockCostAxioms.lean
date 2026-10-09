@@ -1,0 +1,17 @@
+import UniformFinalClockCost
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFinalClockCost.actual_loop_bound
+#print axioms ExactFourierCircuits.UniformFinalClockCost.clockEnvelope
+#print axioms ExactFourierCircuits.UniformFinalClockCost.clockEnvelope_isBigO_paper
+#print axioms ExactFourierCircuits.UniformFinalClockCost.clockEnvelope_nonneg
+#print axioms ExactFourierCircuits.UniformFinalClockCost.diagonalBudget
+#print axioms ExactFourierCircuits.UniformFinalClockCost.diagonalBudget_bound
+#print axioms ExactFourierCircuits.UniformFinalClockCost.diagonalBudget_isBigO_paper
+#print axioms ExactFourierCircuits.UniformFinalClockCost.diagonalBudget_isBigO_paper._proof_1_1
+#print axioms ExactFourierCircuits.UniformFinalClockCost.loopBudget
+#print axioms ExactFourierCircuits.UniformFinalClockCost.loopBudget.eq_1
+#print axioms ExactFourierCircuits.UniformFinalClockCost.loopBudget_bound
+#print axioms ExactFourierCircuits.UniformFinalClockCost.total_with_clockEnvelope_isBigO_paper

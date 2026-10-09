@@ -1,0 +1,8 @@
+import UniformActualCalendarRootAtoms
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarRootAtoms.descriptor
+#print axioms ExactFourierCircuits.UniformActualCalendarRootAtoms.enumeration
+#print axioms ExactFourierCircuits.UniformActualCalendarRootAtoms.enumeration._proof_1

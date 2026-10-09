@@ -1,5 +1,6 @@
 import UniformBinaryTensorCoordinates
 import Lean
+
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.abstract_axis_mulVec
@@ -43,14 +44,5 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.update_address
 #print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.update_balance
 #print axioms ExactFourierCircuits.UniformBinaryTensorCoordinates.update_balance._proof_1_1
-
-open Lean Elab Command in
-run_cmd do
- let env ← getEnv
- for (name, _) in env.constants.toList do
-  if "_private.UniformBinaryTensorCoordinates.".isPrefixOf name.toString then
-   let axioms ← collectAxioms name
-   logInfo m!"'{name}' depends on axioms: {axioms.toList}"
-   for ax in axioms do
-    unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
-     throwError m!"Forbidden axiom {ax} in {name}"
+#print axioms ExactFourierCircuits.UniformCRTTraversalCycle.decodeDigits.congr_simp
+#print axioms ExactFourierCircuits.UniformCRTTraversalCycle.decodeEquiv.eq_1

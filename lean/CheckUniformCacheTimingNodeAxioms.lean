@@ -1,0 +1,13 @@
+import UniformCacheTimingNode
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCacheTimingNode.budget
+#print axioms ExactFourierCircuits.UniformCacheTimingNode.execution
+#print axioms ExactFourierCircuits.UniformCacheTimingNode.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformCacheTimingNode.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformCacheTimingNode.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformCacheTimingNode.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformCacheTimingNode.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformCacheTimingNode.outputHeap

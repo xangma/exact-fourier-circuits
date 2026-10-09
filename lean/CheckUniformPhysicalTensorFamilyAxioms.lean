@@ -1,0 +1,9 @@
+import UniformPhysicalTensorFamily
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformPhysicalTensorFamily.coordinate
+#print axioms ExactFourierCircuits.UniformPhysicalTensorFamily.diagonal_kernel
+#print axioms ExactFourierCircuits.UniformPhysicalTensorFamily.pi_reindex
+#print axioms ExactFourierCircuits.UniformPhysicalTensorFamily.tensor

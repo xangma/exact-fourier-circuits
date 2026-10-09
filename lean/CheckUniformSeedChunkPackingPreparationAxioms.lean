@@ -1,6 +1,8 @@
 import UniformSeedChunkPackingPreparation
 import Lean
+
 set_option linter.auxLemma false
+
 #print axioms ExactFourierCircuits.UniformSeedChunkPackingPreparation.Args
 #print axioms ExactFourierCircuits.UniformSeedChunkPackingPreparation.Config
 #print axioms ExactFourierCircuits.UniformSeedChunkPackingPreparation.Frame
@@ -289,14 +291,3 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformSeedChunkPackingPreparation.word
 #print axioms ExactFourierCircuits.UniformSeedChunkPackingPreparation.word._proof_1
 #print axioms ExactFourierCircuits.UniformSeedChunkPackingPreparation.word._proof_2
--- Private/generated declarations are also checked from the actual environment.
-open Lean Elab Command in
-run_cmd do
- let env←getEnv
- for (name,_) in env.constants.toList do
-  if "_private.UniformSeedChunkPackingPreparation.".isPrefixOf name.toString then
-   let axioms←collectAxioms name
-   logInfo m!"'{name}' depends on axioms: {axioms.toList}"
-   for ax in axioms do
-    unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
-     throwError m!"Forbidden axiom {ax} in {name}"

@@ -1,0 +1,19 @@
+import UniformActualGlobalClockProgram
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualGlobalClockProgram.adapter_code
+#print axioms ExactFourierCircuits.UniformActualGlobalClockProgram.code_bound
+#print axioms ExactFourierCircuits.UniformActualGlobalClockProgram.dispatch_code
+#print axioms ExactFourierCircuits.UniformActualGlobalClockProgram.fixed_code_bound
+#print axioms ExactFourierCircuits.UniformActualGlobalClockProgram.generic_code_bound
+#print axioms ExactFourierCircuits.UniformActualGlobalClockProgram.generic_code_bound._proof_1_2
+#print axioms ExactFourierCircuits.UniformActualGlobalClockProgram.kernel_code
+#print axioms ExactFourierCircuits.UniformActualGlobalClockProgram.kernel_code._proof_1_1
+#print axioms ExactFourierCircuits.UniformActualGlobalClockProgram.prepare_code
+#print axioms ExactFourierCircuits.UniformActualGlobalClockProgram.program
+#print axioms ExactFourierCircuits.UniformActualGlobalClockProgram.program.eq_1
+#print axioms ExactFourierCircuits.UniformActualGlobalClockProgram.program_length
+#print axioms ExactFourierCircuits.UniformActualGlobalClockProgram.program_length._proof_1_2
+#print axioms ExactFourierCircuits.UniformJointAllocation.fixed.eq_1

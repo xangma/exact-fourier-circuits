@@ -1,0 +1,23 @@
+import UniformFourierAxisOperationalFrames
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFourierAxisOperationalCases.Branch.footer
+#print axioms ExactFourierCircuits.UniformFourierAxisOperationalCases.Branch.frame
+#print axioms ExactFourierCircuits.UniformFourierAxisOperationalCases.Branch.inputs
+#print axioms ExactFourierCircuits.UniformFourierAxisOperationalCases.Branch.pc
+#print axioms ExactFourierCircuits.UniformFourierAxisOperationalCases.Frame
+#print axioms ExactFourierCircuits.UniformFourierAxisOperationalCases.Frame.casesOn
+#print axioms ExactFourierCircuits.UniformFourierAxisOperationalCases.Frame.mk
+#print axioms ExactFourierCircuits.UniformFourierAxisOperationalCases.Frame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformFourierAxisOperationalCases.Frame.natPrefix
+#print axioms ExactFourierCircuits.UniformFourierAxisOperationalCases.Frame.natReg
+#print axioms ExactFourierCircuits.UniformFourierAxisOperationalCases.Frame.outputs
+#print axioms ExactFourierCircuits.UniformFourierAxisOperationalCases.Frame.rec
+#print axioms ExactFourierCircuits.UniformFourierAxisOperationalCases.Frame.recOn
+#print axioms ExactFourierCircuits.UniformFourierAxisOperationalCases.Frame.roots
+#print axioms ExactFourierCircuits.UniformFourierAxisOperationalCases.Frame.scalarOutside
+#print axioms ExactFourierCircuits.UniformFourierAxisOperationalCases.selected_length
+#print axioms ExactFourierCircuits.UniformFourierAxisOperationalCases.tree_natOutside
+#print axioms ExactFourierCircuits.UniformFourierAxisOperationalCases.tree_natOutside._proof_1_1

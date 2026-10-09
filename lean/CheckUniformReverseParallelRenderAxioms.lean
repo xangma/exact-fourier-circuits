@@ -1,0 +1,17 @@
+import UniformReverseParallelRender
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformReverseParallelRender.frontParallel
+#print axioms ExactFourierCircuits.UniformReverseParallelRender.frontParallel.eq_1
+#print axioms ExactFourierCircuits.UniformReverseParallelRender.frontParallel_length
+#print axioms ExactFourierCircuits.UniformReverseParallelRender.frontParallel_length._proof_1_2
+#print axioms ExactFourierCircuits.UniformReverseParallelRender.frontParallel_matrix
+#print axioms ExactFourierCircuits.UniformReverseParallelRender.frontParallel_tick
+#print axioms ExactFourierCircuits.UniformReverseParallelRender.leading
+#print axioms ExactFourierCircuits.UniformReverseParallelRender.leading.eq_1
+#print axioms ExactFourierCircuits.UniformReverseParallelRender.leading_length
+#print axioms ExactFourierCircuits.UniformReverseParallelRender.leading_matrix
+#print axioms ExactFourierCircuits.UniformReverseParallelRender.leading_tick
+#print axioms ExactFourierCircuits.UniformReverseParallelRender.leading_tick._proof_1_2

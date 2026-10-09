@@ -1,0 +1,10 @@
+import UniformFourierAxisPhaseReadBounds
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFourierAxisPhaseReadBounds.boundary
+#print axioms ExactFourierCircuits.UniformFourierAxisPhaseReadBounds.boundary._simp_1_1
+#print axioms ExactFourierCircuits.UniformFourierAxisPhaseReadBounds.boundary_payload
+#print axioms ExactFourierCircuits.UniformFourierAxisPhaseReadBounds.tree
+#print axioms ExactFourierCircuits.UniformFourierAxisPhaseReadBounds.tree._proof_1_1

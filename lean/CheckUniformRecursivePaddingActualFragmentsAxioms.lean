@@ -1,0 +1,10 @@
+import UniformRecursivePaddingActualFragments
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFragments.finish_bits
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFragments.init_bits
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFragments.next_bits
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFragments.residual_init_cursor
+#print axioms ExactFourierCircuits.UniformRecursivePaddingFragments.test_bits

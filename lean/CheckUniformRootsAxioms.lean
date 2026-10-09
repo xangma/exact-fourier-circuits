@@ -1,5 +1,15 @@
 import UniformRoots
+import Lean
 
-#print axioms ExactFourierCircuits.UniformRoots.specifiedRoot_ne_zero
-#print axioms ExactFourierCircuits.UniformRoots.specifiedRoot_mul_power
+set_option linter.auxLemma false
+
 #print axioms ExactFourierCircuits.UniformRoots.specifiedRoot_divisor_power
+#print axioms ExactFourierCircuits.UniformRoots.specifiedRoot_mul_power
+#print axioms ExactFourierCircuits.UniformRoots.specifiedRoot_mul_power._simp_1_1
+#print axioms ExactFourierCircuits.UniformRoots.specifiedRoot_mul_power._simp_1_2
+#print axioms ExactFourierCircuits.UniformRoots.specifiedRoot_mul_power._simp_1_3
+#print axioms ExactFourierCircuits.UniformRoots.specifiedRoot_mul_power._simp_1_4
+#print axioms ExactFourierCircuits.UniformRoots.specifiedRoot_mul_power._simp_1_5
+#print axioms ExactFourierCircuits.UniformRoots.specifiedRoot_mul_power._simp_1_6
+#print axioms ExactFourierCircuits.UniformRoots.specifiedRoot_mul_power._simp_1_7
+#print axioms ExactFourierCircuits.UniformRoots.specifiedRoot_ne_zero

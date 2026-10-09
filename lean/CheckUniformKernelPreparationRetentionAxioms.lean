@@ -1,0 +1,47 @@
+import UniformKernelPreparationRetention
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformAllSectorTransposeMachine.programFor.eq_1
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.execution
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.execution._proof_1_10
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.execution._proof_1_11
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.execution._proof_1_12
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.execution._proof_1_13
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.execution._proof_1_14
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.execution._proof_1_15
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.execution._proof_1_16
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.execution._proof_1_17
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.execution._proof_1_18
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.execution._proof_1_19
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.execution._proof_1_20
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.execution._proof_1_9
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.keeps_args
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.program_free
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.writesArgs
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.writesArgs._sparseCasesOn_1
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.writesArgs._sparseCasesOn_1.else_eq
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.writesArgs.eq_1
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.writesArgs.eq_2
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.writesArgs.eq_3
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.writesArgs.eq_4
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.writesArgs.eq_5
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.writesArgs.match_1
+#print axioms ExactFourierCircuits.UniformKernelPreparationRetention.writes_relocate
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformKernelPreparationRetention.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

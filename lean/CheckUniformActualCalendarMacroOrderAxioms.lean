@@ -1,0 +1,14 @@
+import UniformActualCalendarMacroOrder
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarMacroOrder.directEvents
+#print axioms ExactFourierCircuits.UniformActualCalendarMacroOrder.directEvents.eq_1
+#print axioms ExactFourierCircuits.UniformActualCalendarMacroOrder.flatMap_partition
+#print axioms ExactFourierCircuits.UniformActualCalendarMacroOrder.node_requests_events
+#print axioms ExactFourierCircuits.UniformActualCalendarMacroOrder.preparationEvents
+#print axioms ExactFourierCircuits.UniformActualCalendarMacroOrder.preparationEvents.eq_1
+#print axioms ExactFourierCircuits.UniformActualCalendarMacroOrder.preparation_perm
+#print axioms ExactFourierCircuits.UniformActualCalendarMacroOrder.rectangleEvent
+#print axioms ExactFourierCircuits.UniformActualCalendarMacroOrder.root_preparation_perm

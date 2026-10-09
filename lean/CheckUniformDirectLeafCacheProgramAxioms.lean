@@ -1,0 +1,27 @@
+import UniformDirectLeafCacheProgram
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProgram.branch_at
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProgram.choose
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProgram.choose_length
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProgram.directory_code
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProgram.factor_code
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProgram.halt_at
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProgram.halt_at._proof_1_1
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProgram.install
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProgram.install_code
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProgram.install_length
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProgram.pool_code
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProgram.program
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProgram.program.eq_1
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProgram.program_length
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProgram.read_code
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProgram.scale
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProgram.scale_code
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProgram.scale_jump
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProgram.scale_length
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProgram.shear_count
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProgram.shear_jump
+#print axioms ExactFourierCircuits.UniformDirectLeafCacheProgram.shear_kind

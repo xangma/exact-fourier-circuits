@@ -1,0 +1,14 @@
+import UniformLocalCacheTimingRows
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingRows.indexedRow
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingRows.indexedRow.eq_1
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingRows.pair_index
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingRows.rows_ofFn
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingRows.rows_ofFn._simp_1_1
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingRows.tableAt_of_requestTables
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingRows.tableAt_of_requestTables._proof_1_1
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingRows.tableAt_of_requestTables._proof_1_2
+#print axioms ExactFourierCircuits.UniformLocalCacheTimingRows.tableAt_of_table

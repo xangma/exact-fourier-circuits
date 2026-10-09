@@ -1,0 +1,30 @@
+import UniformFourierClockBounds
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.bound
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.clockPrefix
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.clockPrefix.eq_1
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.full_preparation
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.horizon
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.horizonCap
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.horizon_word
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.localDepth
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.localDepth.eq_1
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.localHorizon
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.local_positive
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.local_positive._proof_1_1
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.positive
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.positive._proof_1_1
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.prefix_bound
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.prefix_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.prefix_eq_horizon
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.prefix_step
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.prefix_zero
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.selected_bound
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.selected_bound._proof_1_1
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.selected_depth
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.selected_le
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.selected_word
+#print axioms ExactFourierCircuits.UniformFourierClockBounds.selected_word._proof_1_1

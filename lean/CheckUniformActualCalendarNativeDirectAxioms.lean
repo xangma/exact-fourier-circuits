@@ -1,0 +1,11 @@
+import UniformActualCalendarNativeDirect
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualCalendarNativeDirect.snapshot
+#print axioms ExactFourierCircuits.UniformActualCalendarNativeDirect.snapshot._proof_1
+#print axioms ExactFourierCircuits.UniformActualCalendarNativeDirect.snapshot_tick
+#print axioms ExactFourierCircuits.UniformActualCalendarNativeDirect.source
+#print axioms ExactFourierCircuits.UniformActualCalendarNativeDirect.topology_positive
+#print axioms ExactFourierCircuits.UniformActualCalendarNativeDirect.topology_positive._proof_1_1

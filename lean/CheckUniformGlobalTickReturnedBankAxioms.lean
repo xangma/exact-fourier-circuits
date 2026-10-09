@@ -1,0 +1,7 @@
+import UniformGlobalTickReturnedBank
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformGlobalTickReturnedBank.source_and_value
+#print axioms ExactFourierCircuits.UniformGlobalTickReturnedBank.values

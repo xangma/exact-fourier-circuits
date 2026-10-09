@@ -1,9 +1,9 @@
 import UniformFixedNetworkChildDispatchMachine
 import Lean
+
 set_option linter.auxLemma false
 
 #print axioms ExactFourierCircuits.UniformFixedNetworkChildDispatchMachine.ScalarChanged
-#print axioms ExactFourierCircuits.UniformFixedNetworkChildDispatchMachine.ScalarChanged.eq_1
 #print axioms ExactFourierCircuits.UniformFixedNetworkChildDispatchMachine.ScalarFrame
 #print axioms ExactFourierCircuits.UniformFixedNetworkChildDispatchMachine.ScalarFrame.casesOn
 #print axioms ExactFourierCircuits.UniformFixedNetworkChildDispatchMachine.ScalarFrame.child

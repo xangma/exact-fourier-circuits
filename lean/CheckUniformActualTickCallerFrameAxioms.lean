@@ -1,0 +1,12 @@
+import UniformActualTickCallerFrame
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformActualTickCallerFrame.clock
+#print axioms ExactFourierCircuits.UniformActualTickCallerFrame.clock_diagonal
+#print axioms ExactFourierCircuits.UniformActualTickCallerFrame.clock_program
+#print axioms ExactFourierCircuits.UniformActualTickCallerFrame.high
+#print axioms ExactFourierCircuits.UniformActualTickCallerFrame.high_diagonal
+#print axioms ExactFourierCircuits.UniformActualTickCallerFrame.high_program
+#print axioms ExactFourierCircuits.UniformActualTickCallerFrame.startup

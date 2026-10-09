@@ -1,0 +1,26 @@
+import UniformCalendarAtomSourceTransport
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformCalendarAtomSourceTransport.Match
+#print axioms ExactFourierCircuits.UniformCalendarAtomSourceTransport.Match._sizeOf_1
+#print axioms ExactFourierCircuits.UniformCalendarAtomSourceTransport.Match._sizeOf_inst
+#print axioms ExactFourierCircuits.UniformCalendarAtomSourceTransport.Match.casesOn
+#print axioms ExactFourierCircuits.UniformCalendarAtomSourceTransport.Match.ctorIdx
+#print axioms ExactFourierCircuits.UniformCalendarAtomSourceTransport.Match.matrix
+#print axioms ExactFourierCircuits.UniformCalendarAtomSourceTransport.Match.mk
+#print axioms ExactFourierCircuits.UniformCalendarAtomSourceTransport.Match.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformCalendarAtomSourceTransport.Match.mk.inj
+#print axioms ExactFourierCircuits.UniformCalendarAtomSourceTransport.Match.mk.injEq
+#print axioms ExactFourierCircuits.UniformCalendarAtomSourceTransport.Match.mk.noConfusion
+#print axioms ExactFourierCircuits.UniformCalendarAtomSourceTransport.Match.mk.sizeOf_spec
+#print axioms ExactFourierCircuits.UniformCalendarAtomSourceTransport.Match.noConfusion
+#print axioms ExactFourierCircuits.UniformCalendarAtomSourceTransport.Match.noConfusionType
+#print axioms ExactFourierCircuits.UniformCalendarAtomSourceTransport.Match.rec
+#print axioms ExactFourierCircuits.UniformCalendarAtomSourceTransport.Match.recOn
+#print axioms ExactFourierCircuits.UniformCalendarAtomSourceTransport.Match.snapshot
+#print axioms ExactFourierCircuits.UniformCalendarAtomSourceTransport.Match.source
+#print axioms ExactFourierCircuits.UniformCalendarAtomSourceTransport.native_result
+#print axioms ExactFourierCircuits.UniformCalendarAtomSourceTransport.native_result._proof_1
+#print axioms ExactFourierCircuits.UniformCalendarAtomSourceTransport.native_result._proof_2

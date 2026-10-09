@@ -1,0 +1,75 @@
+import UniformMatchingPhaseControl
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.advancePC
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.boot
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.boot_length
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.controlFor
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.controlFor.eq_1
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.control_length
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.control_length._proof_1_2
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.destination
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.destination.eq_1
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.destination.eq_2
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.destination_bound
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.destination_bound._proof_1_6
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.destination_bound._proof_1_7
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.diagonalPC
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.diagonalPC.eq_1
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.diagonal_code
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.dispatchFrom
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.dispatchFrom._f
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.dispatchFrom._sunfold
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.dispatchFrom._unsafe_rec
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.dispatchFrom.eq_1
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.dispatchFrom.eq_2
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.dispatchFrom.eq_def
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.dispatchFrom.match_1
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.dispatch_code
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.dispatch_code._proof_1_1
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.dispatch_code._proof_1_2
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.dispatch_code._proof_1_3
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.dispatch_code._proof_1_4
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.dispatch_code._proof_1_5
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.dispatch_code._proof_1_6
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.dispatch_code._proof_1_7
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.dispatch_get
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.dispatch_get._proof_1_5
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.dispatch_get._proof_1_6
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.dispatch_length
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.dispatch_length._proof_1_5
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.kernelPC
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.kernelPC.eq_1
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.kernel_code
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.lane
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.lane.match_1
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.lane_bound
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.oneDispatch
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.oneDispatch.eq_1
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.oneDispatch_length
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.selected_dispatch
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.selected_dispatch._proof_1_10
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.selected_dispatch._proof_1_11
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.selected_dispatch._proof_1_12
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.selected_dispatch._proof_1_13
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.selected_dispatch._proof_1_14
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.selected_dispatch._proof_1_15
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.selected_dispatch._proof_1_16
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.selected_dispatch._proof_1_2
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.selected_dispatch._proof_1_3
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.selected_dispatch._proof_1_4
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.selected_dispatch._proof_1_5
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.selected_dispatch._proof_1_6
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.selected_dispatch._proof_1_7
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.selected_dispatch._proof_1_8
+#print axioms ExactFourierCircuits.UniformMatchingPhaseControl.selected_dispatch._proof_1_9
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformMatchingPhaseControl.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

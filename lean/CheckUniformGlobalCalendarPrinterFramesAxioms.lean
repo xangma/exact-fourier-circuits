@@ -1,0 +1,43 @@
+import UniformGlobalCalendarPrinterFrames
+import Lean
+
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.Destinations
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.Destinations._sparseCasesOn_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.Destinations._sparseCasesOn_1.else_eq
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.Destinations.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.Destinations.eq_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.Destinations.eq_3
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.Destinations.eq_4
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.Destinations.eq_5
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.Destinations.match_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.factor_destinations
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.factor_natFrame
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.instDecidableDestinations
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.instDecidableDestinations._proof_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.instDecidableDestinations._proof_10
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.instDecidableDestinations._proof_11
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.instDecidableDestinations._proof_12
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.instDecidableDestinations._proof_13
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.instDecidableDestinations._proof_14
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.instDecidableDestinations._proof_2
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.instDecidableDestinations._proof_3
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.instDecidableDestinations._proof_4
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.instDecidableDestinations._proof_5
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.instDecidableDestinations._proof_6
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.instDecidableDestinations._proof_7
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.instDecidableDestinations._proof_8
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.instDecidableDestinations._proof_9
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.keeps_nat
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.keeps_nat._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.rows_destinations
+#print axioms ExactFourierCircuits.UniformGlobalCalendarPrinterFrames.rows_natFrame
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformGlobalCalendarPrinterFrames.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"

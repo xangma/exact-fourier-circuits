@@ -1,7 +1,9 @@
 import UniformChunkPortMachine
-set_option autoImplicit false
+import Lean
+
 set_option linter.auxLemma false
 
+#print axioms ExactFourierCircuits.UniformBorrowedCoordinateMachine.embedding.congr_simp
 #print axioms ExactFourierCircuits.UniformChunkPortMachine.Bank
 #print axioms ExactFourierCircuits.UniformChunkPortMachine.Bounds
 #print axioms ExactFourierCircuits.UniformChunkPortMachine.Bounds.borrowedEnd
@@ -15,7 +17,6 @@ set_option linter.auxLemma false
 #print axioms ExactFourierCircuits.UniformChunkPortMachine.Bounds.sourceEnd
 #print axioms ExactFourierCircuits.UniformChunkPortMachine.Bounds.targetEnd
 #print axioms ExactFourierCircuits.UniformChunkPortMachine.Domain
-#print axioms ExactFourierCircuits.UniformChunkPortMachine.Domain.eq_1
 #print axioms ExactFourierCircuits.UniformChunkPortMachine.Fixed
 #print axioms ExactFourierCircuits.UniformChunkPortMachine.Fixed.casesOn
 #print axioms ExactFourierCircuits.UniformChunkPortMachine.Fixed.gateEnd

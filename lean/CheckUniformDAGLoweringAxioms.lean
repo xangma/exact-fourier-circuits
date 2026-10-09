@@ -1,32 +1,93 @@
 import UniformDAGLowering
+import Lean
 
-#print axioms ExactFourierCircuits.UniformDAGLowering.DProgram
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformDAGLowering.BaseHeap
 #print axioms ExactFourierCircuits.UniformDAGLowering.DInstruction
-#print axioms ExactFourierCircuits.UniformDAGLowering.lowerInstruction
+#print axioms ExactFourierCircuits.UniformDAGLowering.DProgram
+#print axioms ExactFourierCircuits.UniformDAGLowering.LiteralReady
+#print axioms ExactFourierCircuits.UniformDAGLowering.LiteralReady._sparseCasesOn_1
+#print axioms ExactFourierCircuits.UniformDAGLowering.LiteralReady._sparseCasesOn_1.else_eq
+#print axioms ExactFourierCircuits.UniformDAGLowering.LiteralReady.eq_1
+#print axioms ExactFourierCircuits.UniformDAGLowering.LiteralReady.eq_2
+#print axioms ExactFourierCircuits.UniformDAGLowering.LiteralReady.match_1
+#print axioms ExactFourierCircuits.UniformDAGLowering.LiteralsReady
+#print axioms ExactFourierCircuits.UniformDAGLowering.LiteralsReady._f
+#print axioms ExactFourierCircuits.UniformDAGLowering.LiteralsReady._sunfold
+#print axioms ExactFourierCircuits.UniformDAGLowering.LiteralsReady._unsafe_rec
+#print axioms ExactFourierCircuits.UniformDAGLowering.LiteralsReady.eq_1
+#print axioms ExactFourierCircuits.UniformDAGLowering.LiteralsReady.eq_2
+#print axioms ExactFourierCircuits.UniformDAGLowering.LiteralsReady.eq_def
+#print axioms ExactFourierCircuits.UniformDAGLowering.LiteralsReady.match_1
+#print axioms ExactFourierCircuits.UniformDAGLowering.NatTable
+#print axioms ExactFourierCircuits.UniformDAGLowering.Registers
+#print axioms ExactFourierCircuits.UniformDAGLowering.Registers.eq_1
+#print axioms ExactFourierCircuits.UniformDAGLowering.RootsReady
+#print axioms ExactFourierCircuits.UniformDAGLowering.Values
+#print axioms ExactFourierCircuits.UniformDAGLowering.bytecode
+#print axioms ExactFourierCircuits.UniformDAGLowering.bytecode._f
+#print axioms ExactFourierCircuits.UniformDAGLowering.bytecode._sunfold
+#print axioms ExactFourierCircuits.UniformDAGLowering.bytecode._unsafe_rec
+#print axioms ExactFourierCircuits.UniformDAGLowering.bytecode.eq_1
+#print axioms ExactFourierCircuits.UniformDAGLowering.bytecode.eq_2
+#print axioms ExactFourierCircuits.UniformDAGLowering.bytecode.eq_def
+#print axioms ExactFourierCircuits.UniformDAGLowering.bytecode.match_1
+#print axioms ExactFourierCircuits.UniformDAGLowering.bytecode_get
+#print axioms ExactFourierCircuits.UniformDAGLowering.bytecode_length
+#print axioms ExactFourierCircuits.UniformDAGLowering.bytecode_length._proof_1_4
+#print axioms ExactFourierCircuits.UniformDAGLowering.bytecode_natTable
 #print axioms ExactFourierCircuits.UniformDAGLowering.compile
-#print axioms ExactFourierCircuits.UniformDAGLowering.compileReverse
+#print axioms ExactFourierCircuits.UniformDAGLowering.compile._f
+#print axioms ExactFourierCircuits.UniformDAGLowering.compile._sunfold
+#print axioms ExactFourierCircuits.UniformDAGLowering.compile._unsafe_rec
+#print axioms ExactFourierCircuits.UniformDAGLowering.compile.eq_1
+#print axioms ExactFourierCircuits.UniformDAGLowering.compile.eq_2
+#print axioms ExactFourierCircuits.UniformDAGLowering.compile.eq_def
+#print axioms ExactFourierCircuits.UniformDAGLowering.compile.match_1
 #print axioms ExactFourierCircuits.UniformDAGLowering.compileLinear
 #print axioms ExactFourierCircuits.UniformDAGLowering.compileLinear_eq
-#print axioms ExactFourierCircuits.UniformDAGLowering.bytecode
-#print axioms ExactFourierCircuits.UniformDAGLowering.bytecode_length
-#print axioms ExactFourierCircuits.UniformDAGLowering.bytecode_get
+#print axioms ExactFourierCircuits.UniformDAGLowering.compileReverse
+#print axioms ExactFourierCircuits.UniformDAGLowering.compileReverse._f
+#print axioms ExactFourierCircuits.UniformDAGLowering.compileReverse._sunfold
+#print axioms ExactFourierCircuits.UniformDAGLowering.compileReverse._unsafe_rec
+#print axioms ExactFourierCircuits.UniformDAGLowering.compile_last_get
 #print axioms ExactFourierCircuits.UniformDAGLowering.compile_length
 #print axioms ExactFourierCircuits.UniformDAGLowering.compile_prefix_get
-#print axioms ExactFourierCircuits.UniformDAGLowering.compile_last_get
-#print axioms ExactFourierCircuits.UniformDAGLowering.NatTable
-#print axioms ExactFourierCircuits.UniformDAGLowering.bytecode_natTable
-#print axioms ExactFourierCircuits.UniformDAGLowering.RootsReady
-#print axioms ExactFourierCircuits.UniformDAGLowering.LiteralReady
-#print axioms ExactFourierCircuits.UniformDAGLowering.LiteralsReady
-#print axioms ExactFourierCircuits.UniformDAGLowering.BaseHeap
-#print axioms ExactFourierCircuits.UniformDAGLowering.Values
-#print axioms ExactFourierCircuits.UniformDAGLowering.Registers
-#print axioms ExactFourierCircuits.UniformDAGLowering.schedule_append
-#print axioms ExactFourierCircuits.UniformDAGLowering.instruction_operands
-#print axioms ExactFourierCircuits.UniformDAGLowering.natTable_prefix
 #print axioms ExactFourierCircuits.UniformDAGLowering.compile_valid
-#print axioms ExactFourierCircuits.UniformDAGLowering.literals_heap_eq
+#print axioms ExactFourierCircuits.UniformDAGLowering.compile_valid._proof_1_1
+#print axioms ExactFourierCircuits.UniformDAGLowering.compile_valid._proof_1_2
+#print axioms ExactFourierCircuits.UniformDAGLowering.compile_valid._proof_1_3
+#print axioms ExactFourierCircuits.UniformDAGLowering.compile_valid._proof_1_7
+#print axioms ExactFourierCircuits.UniformDAGLowering.compile_valid._proof_1_8
 #print axioms ExactFourierCircuits.UniformDAGLowering.instruction_addresses
-#print axioms ExactFourierCircuits.UniformDAGLowering.values_output
+#print axioms ExactFourierCircuits.UniformDAGLowering.instruction_addresses._proof_1_10
+#print axioms ExactFourierCircuits.UniformDAGLowering.instruction_addresses._proof_1_8
+#print axioms ExactFourierCircuits.UniformDAGLowering.instruction_addresses._proof_1_9
+#print axioms ExactFourierCircuits.UniformDAGLowering.instruction_operands
+#print axioms ExactFourierCircuits.UniformDAGLowering.instruction_operands._proof_1_1
+#print axioms ExactFourierCircuits.UniformDAGLowering.instruction_operands._proof_1_10
+#print axioms ExactFourierCircuits.UniformDAGLowering.instruction_operands._proof_1_2
 #print axioms ExactFourierCircuits.UniformDAGLowering.interpreted_DAG
 #print axioms ExactFourierCircuits.UniformDAGLowering.interpreted_DAG_packed
+#print axioms ExactFourierCircuits.UniformDAGLowering.interpreted_DAG_packed._proof_1_1
+#print axioms ExactFourierCircuits.UniformDAGLowering.literals_heap_eq
+#print axioms ExactFourierCircuits.UniformDAGLowering.lowerInstruction
+#print axioms ExactFourierCircuits.UniformDAGLowering.lowerInstruction.eq_1
+#print axioms ExactFourierCircuits.UniformDAGLowering.lowerInstruction.eq_2
+#print axioms ExactFourierCircuits.UniformDAGLowering.lowerInstruction.eq_3
+#print axioms ExactFourierCircuits.UniformDAGLowering.lowerInstruction.eq_4
+#print axioms ExactFourierCircuits.UniformDAGLowering.lowerInstruction.eq_5
+#print axioms ExactFourierCircuits.UniformDAGLowering.lowerInstruction.eq_6
+#print axioms ExactFourierCircuits.UniformDAGLowering.lowerInstruction.match_1
+#print axioms ExactFourierCircuits.UniformDAGLowering.natTable_prefix
+#print axioms ExactFourierCircuits.UniformDAGLowering.schedule_append
+#print axioms ExactFourierCircuits.UniformDAGLowering.values_output
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  if "_private.UniformDAGLowering.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   logInfo m!"{name} depends on axioms: {axs.toList}"
