@@ -1,0 +1,65 @@
+import UniformGlobalDiagonalRowsLoop
+import Lean
+
+-- Include generated declarations in the closure audit.
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Directory.transfer
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Directory.transfer._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Directory.transfer._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Directory.transfer._proof_1_3
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Directory.transfer._proof_1_4
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Outside
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Outside.casesOn
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Outside.mk
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Outside.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Outside.nat
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Outside.rec
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Outside.recOn
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Outside.scalar
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Pools.transfer
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Pools.transfer._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Produced.cons
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Produced.cons._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Produced.cons._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Produced.cons._proof_1_3
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Produced.cons._proof_1_4
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Produced.cons._proof_1_5
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Produced.cons._proof_1_6
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Produced.cons._proof_1_7
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Produced.cons._simp_1_8
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.Produced.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.amount.eq_1
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.amount_cons
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.loop
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.loop._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.loop._proof_1_10
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.loop._proof_1_11
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.loop._proof_1_12
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.loop._proof_1_13
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.loop._proof_1_14
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.loop._proof_1_15
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.loop._proof_1_16
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.loop._proof_1_17
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.loop._proof_1_7
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.loop._proof_1_8
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.loop._proof_1_9
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.row_low
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.row_low._proof_1_1
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.row_low._proof_1_2
+#print axioms ExactFourierCircuits.UniformGlobalDiagonalRowsMachine.row_low._proof_1_3
+#print axioms ExactFourierCircuits.UniformTensorMonomialMachine.Rows.eq_1
+#print axioms ExactFourierCircuits.UniformTensorMonomialMachine.Rows.eq_2
+#print axioms ExactFourierCircuits.UniformTensorMonomialMachine.Rows.eq_def
+
+-- Private names require direct environment lookup.
+open Lean Elab Command in
+run_cmd do
+  let env ← getEnv
+  for (name, _) in env.constants.toList do
+    if "_private.UniformGlobalDiagonalRowsLoop.".isPrefixOf name.toString then
+      let axioms ← collectAxioms name
+      logInfo m!"'{name}' depends on axioms: {axioms.toList}"
+      for ax in axioms do
+        unless ax == `propext || ax == `Quot.sound || ax == `Classical.choice do
+          throwError m!"Unexpected axiom {ax} in {name}"

@@ -28,9 +28,9 @@ checked components from the remaining program and cost obligations. The
 [component receipt](verification/uniform-components.json) explicitly records
 `uniform_algorithm_verified=false`. The [latest checkpoint](docs/uniform-closeout.md)
 records separate focused audits of 46 modules/4,720 declaration closures and
-17 operational modules/1,798 closures. Their exact-bytecode suites pass 12,329
-and 16,320 cases respectively; the new inverse tensor check covers 21,845 exact
-matrix entries. The current registry contains 295 modules. Actual native
+23 operational modules/2,274 closures. Their exact-bytecode suites pass 12,329
+and 20,604 cases respectively; the new inverse tensor check covers 21,845 exact
+matrix entries. The current registry contains 301 modules. Actual native
 spectators, direct-leaf orientations and sector/tensor movement are checked.
 The complete cache compiler, common recursive execution and global fast
 program remain open.
@@ -161,7 +161,7 @@ conjugate preparation and matching with charged header setup. It consumes
 ordinary physical input/layout headers. The new fixed5375 caller proves the
 complete local cross replay; original tape/banks and compatible layout remain inputs.
 
-The registry contains 295 modules. The [latest checkpoint](docs/uniform-closeout.md)
+The registry contains 301 modules. The [latest checkpoint](docs/uniform-closeout.md)
 records full audits and exact entry boundaries. With the required rank-kernel
 banks, size and displacement identities, the fixed5375 local program adds `M*x`
 to the target and restores numeric source/workspace values. The fixed535

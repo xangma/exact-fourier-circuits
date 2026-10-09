@@ -12,7 +12,9 @@ suites=[
  ('UniformDirectLeafOrientationsMachine','DirectLeafOrientations','closeout-kernels/direct-orientations-fixtures.json','uniform-direct-leaf-orientations-bytecode-fixtures.py',396),
  ('UniformGlobalTensorDiagonalLoop','TensorDiagonal','operational-kernels/tensor-bytecode/fixtures.json','uniform-tensor-diagonal-bytecode-fixtures.py',288),
  ('UniformAllSectorTransposeMachine','SectorTranspose','operational-kernels/transpose-bytecode/fixtures.json','uniform-sector-transpose-bytecode-fixtures.py',8544),
- ('UniformProducedSectorTransposePreparation','ProducedSectorTranspose','operational-kernels/produced-transpose-bytecode/fixtures.json','uniform-produced-sector-transpose-bytecode-fixtures.py',864)]
+ ('UniformProducedSectorTransposePreparation','ProducedSectorTranspose','operational-kernels/produced-transpose-bytecode/fixtures.json','uniform-produced-sector-transpose-bytecode-fixtures.py',864),
+ ('UniformGlobalTensorDiagonalPreparation','ProducedTensorDiagonal','operational-kernels/produced-tensor-bytecode/fixtures.json','uniform-produced-tensor-diagonal-bytecode-fixtures.py',3888),
+ ('UniformStoredDirectLeafOrientations','StoredLeaf','operational-kernels/stored-leaf-bytecode/fixtures.json','uniform-stored-leaf-bytecode-fixtures.py',396)]
 mods=json.loads((R/'verification/uniform-operational-modules.json').read_text())['modules']
 paths={Path(__file__).resolve(),R/'verification/uniform-operational-modules.json',R/'scripts/uniform_seed_cyclotomic_engine.py',R/'scripts/uniform-physical-inverse-fixtures.py',R/'lean/lean-toolchain',R/'lean/lakefile.lean',R/'lean/lake-manifest.json',R/'lean/UPSTREAM_MANIFEST.json'}
 pending=[R/'lean'/(m+'.lean') for m in mods]+[R/'verification'/('Export'+s[1]+'Bytecode.lean') for s in suites]+[R/'verification/ExportSectorPaddingPreparationBytecode.lean']
@@ -48,6 +50,6 @@ run(['python3','scripts/uniform-physical-inverse-fixtures.py'],R,'physical-inver
 f=R/'logs/uniform-bytecode/closeout-kernels/physical-inverse-fixtures.json';inv=json.loads(f.read_text())['receipt']
 assert inv['status']=='PASS' and inv['matrixEntries']==21845 and inv['dimensions']==8
 for path,h in hashes.items():assert hashlib.sha256((R/path).read_bytes()).hexdigest()==h,path
-receipt=dict(schema='uniform-operational-bytecode/v1',passed=True,finished_utc=datetime.now(timezone.utc).isoformat(),suites=len(records),exact_cases=sum(r['cases'] for r in records),records=records,inverse=dict(receipt=str(f.relative_to(R)),sha256=hashlib.sha256(f.read_bytes()).hexdigest(),matrix_entries=inv['matrixEntries'],dimensions=inv['dimensions']),source_sha256=hashes,uniform_algorithm_verified=False,scope='Focused8 exact bytecode suites and independent physical inverse tensor checks. Full cache, common recursive self-call correctness, all-length DFT, numerical CUDA and performance claims remain open.')
+receipt=dict(schema='uniform-operational-bytecode/v1',passed=True,finished_utc=datetime.now(timezone.utc).isoformat(),suites=len(records),exact_cases=sum(r['cases'] for r in records),records=records,inverse=dict(receipt=str(f.relative_to(R)),sha256=hashlib.sha256(f.read_bytes()).hexdigest(),matrix_entries=inv['matrixEntries'],dimensions=inv['dimensions']),source_sha256=hashes,uniform_algorithm_verified=False,scope='Focused10 exact bytecode suites and independent physical inverse tensor checks. Full cache, common recursive self-call correctness, all-length DFT, numerical CUDA and performance claims remain open.')
 (R/'verification/uniform-operational-bytecode.json').write_text(json.dumps(receipt,indent=2)+'\n')
 print('PASS suites='+str(len(records))+' exactCases='+str(receipt['exact_cases'])+' inverseEntries='+str(inv['matrixEntries'])+' frozenInputs='+str(len(hashes)),flush=True)

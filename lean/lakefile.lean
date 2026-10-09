@@ -670,3 +670,22 @@ lean_lib UniformSectorTransposeCoordinates
 lean_lib UniformProducedSectorTransposePreparation
 
 lean_lib UniformSectorPhysicalBinaryAction
+
+lean_lib UniformGlobalDiagonalRowsMachine where
+  roots := #[`UniformGlobalDiagonalRowsMachine]
+
+lean_lib UniformGlobalDiagonalRowsIteration where
+  roots := #[`UniformGlobalDiagonalRowsIteration]
+
+lean_lib UniformGlobalDiagonalRowsLoop where
+  roots := #[`UniformGlobalDiagonalRowsLoop]
+
+lean_lib UniformGlobalDiagonalRowsPreparation where
+  roots := #[`UniformGlobalDiagonalRowsPreparation]
+
+lean_lib UniformGlobalTensorDiagonalPreparation where
+  roots := #[`UniformGlobalTensorDiagonalPreparation]
+
+lean_lib UniformStoredDirectLeafOrientations where
+  roots := #[`UniformStoredDirectLeafOrientations]
+

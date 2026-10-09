@@ -17,7 +17,13 @@
     "UniformAllSectorTransposeMachine",
     "UniformSectorTransposeCoordinates",
     "UniformProducedSectorTransposePreparation",
-    "UniformSectorPhysicalBinaryAction"
+    "UniformSectorPhysicalBinaryAction",
+    "UniformGlobalDiagonalRowsMachine",
+    "UniformGlobalDiagonalRowsIteration",
+    "UniformGlobalDiagonalRowsLoop",
+    "UniformGlobalDiagonalRowsPreparation",
+    "UniformGlobalTensorDiagonalPreparation",
+    "UniformStoredDirectLeafOrientations"
   ],
   "uniform_algorithm_verified": false,
   "promoted_sources": {
@@ -97,6 +103,36 @@
     "UniformNativeCopiedInverse": {
       "source": "lean/UniformNativeCopiedInverse.lean",
       "sha256": "167f5fa81c0ffe960aa3d6408b7a7a80e9b9941dd86b3a1b4b9e3ec5c0656336"
+    },
+    "UniformGlobalDiagonalRowsMachine": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformGlobalDiagonalRowsMachine.lean",
+      "sha256": "d0179d30b7ec63a72931ac2c791780ed03810912d8e255811067565ee4aa0098",
+      "receipt": "logs/uniform-global-saving-agent-20261008/produced-tensor-receipt.json"
+    },
+    "UniformGlobalDiagonalRowsIteration": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformGlobalDiagonalRowsIteration.lean",
+      "sha256": "8b55a529d3d4b9e25fbb89aae1ee82e89bc74d1332e43ad6c86359153391c62b",
+      "receipt": "logs/uniform-global-saving-agent-20261008/produced-tensor-receipt.json"
+    },
+    "UniformGlobalDiagonalRowsLoop": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformGlobalDiagonalRowsLoop.lean",
+      "sha256": "d03a7051d52251290cd63d281a26263c79f5b0154d6769e44d1c68dfdfb9bfa9",
+      "receipt": "logs/uniform-global-saving-agent-20261008/produced-tensor-receipt.json"
+    },
+    "UniformGlobalDiagonalRowsPreparation": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformGlobalDiagonalRowsPreparation.lean",
+      "sha256": "2a50dc3f2b27f5c774fb5ba2d521ab9e846726dac8c7199936caf625c2177597",
+      "receipt": "logs/uniform-global-saving-agent-20261008/produced-tensor-receipt.json"
+    },
+    "UniformGlobalTensorDiagonalPreparation": {
+      "source": "logs/uniform-global-saving-agent-20261008/UniformGlobalTensorDiagonalPreparation.lean",
+      "sha256": "2766ee6b90a0297f091883cbb65e41597a714dc264ede4ea901c9aaba843663b",
+      "receipt": "logs/uniform-global-saving-agent-20261008/produced-tensor-receipt.json"
+    },
+    "UniformStoredDirectLeafOrientations": {
+      "source": "logs/uniform-stored-leaf-root-20261009/UniformStoredDirectLeafOrientations.lean",
+      "sha256": "25005fa481f16099676217c696a81f856876c8828fcd4955f35f59c39a3f4906",
+      "receipt": "logs/uniform-stored-leaf-root-20261009/receipt.json"
     }
   }
 }

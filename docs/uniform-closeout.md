@@ -1,23 +1,22 @@
 # Uniform proof checkpoint
 
 The original selected-length theorem is verified. The stronger single fixed
-algorithm for every positive length is **still open**. The registry has 295
+algorithm for every positive length is **still open**. The registry has 301
 modules and `closed_uniform_algorithm=null`; receipts retain
 `uniform_algorithm_verified=false`. The required final result is the
 unconditional `UniformMachine.UniformDFTStatement UniformExponent.theta`.
 
 ## Current verified work
 
-A further **17 operational modules** now pass a separate source-stable audit
-of **1,798 declarations**, inventoried using Lean's defining-module metadata
-rather than namespace prefixes. This includes 36 private declarations and
-three generated declarations outside the anticipated namespaces. The audit
-binds 258 inputs, permits only the same three standard axioms, verifies all
+A further **23 operational modules** now pass a separate source-stable audit
+of **2,274 declarations**, inventoried using Lean's defining-module metadata
+rather than namespace prefixes. This includes 49 private declarations and generated declarations outside the
+anticipated namespaces. The audit binds 284 inputs, permits only the same three standard axioms, verifies all
 51 upstream files and uses default proof limits. See the
 [module list](../verification/uniform-operational-modules.json) and
 [foundation receipt](../verification/uniform-operational-foundations.json).
 
-**Eight operational exact-bytecode suites pass 16,320 cases**. A separate
+**Ten operational exact-bytecode suites pass 20,604 cases**. A separate
 physical inverse check verifies 21,845 exact matrix entries at q=0..7; the
 produced sector-transpose suite also checks 1,360 matrix entries. These entry
 checks are not additional execution cases. See the
@@ -31,9 +30,9 @@ their frozen inputs. The new census is
 |---|---|
 | Spectator suffix69 | Executes ordinary binary C only on the k-b suffix of all physical role arrays, retaining the low b coordinates. Its charged cost is linear when k-b<m. It does not replace the recursive low-q child. |
 | Native scalar106 and exchange98 | Read the actual variable-width records and act on all 2^k cells for k=q*m+r, including nonzero r. Scalar codes and signed pair order are preserved. |
-| Direct leaf orientations68 | Prints the real forward lower-Toeplitz word in descending row order, derives its count, and prints the reversed transposed word. Kernel addresses stay relative to the retained kernel prefix even at nonzero subtree offset. The stored forest-header reader remains separate. |
+| Stored direct leaf orientations82 | Reads the genuine stored node width/offset and retained original [pool,radix] directory with charged instructions, then prints the real forward lower-Toeplitz word in descending row order, derives its count, and prints the reversed transposed word. Kernel addresses stay relative to the retained kernel prefix even at nonzero subtree offset. All retained coefficient lanes and directory cells survive in ordinary disjoint layouts. |
 | Physical copied inverse | Proves the inverse of the actual numeric copied C tensor is one forward q-bit child followed by low-q XOR with 2^q-1, independently in every spectator slice. This is matrix algebra; actual common-child execution remains required. |
-| Tensor diagonal81 | Physically traverses actual per-axis permutation/coefficient banks and all W arrays. The axis-bank producer and complete synchronized schedule are separate. |
+| Produced tensor diagonal131 | Reads the physical per-axis [radix,9r-pool] directory, constructs permutation/coefficient/axis-row banks, then traverses all W arrays. The full prepared pool family and complete synchronized schedule remain separate. |
 | Sector transpose movement | Actual gathers, child-entry preparation, restoring scatter and all-sector traversal preserve tagged values and outside storage. The continuous produced permutation caller identifies the action with the physical binary tensor. Its child-action premise remains explicit. |
 
 The earlier source-stable focused audit of **46 newly registered modules**
@@ -61,7 +60,7 @@ The previous 2026-10-08 aggregate audits remain historical evidence: 232 modules
 Their [Lean](../verification/uniform-components.json) and
 [bytecode](../verification/uniform-bytecode-components.json) receipts bind 561
 and 366 inputs respectively. Neither is an aggregate audit of the current
-295-module registry; overlapping declaration scopes must not be added together.
+301-module registry; overlapping declaration scopes must not be added together.
 
 | Component | Proved execution and boundary |
 |---|---|

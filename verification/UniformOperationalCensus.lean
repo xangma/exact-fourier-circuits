@@ -1,3 +1,9 @@
+import UniformGlobalDiagonalRowsMachine
+import UniformGlobalDiagonalRowsIteration
+import UniformGlobalDiagonalRowsLoop
+import UniformGlobalDiagonalRowsPreparation
+import UniformGlobalTensorDiagonalPreparation
+import UniformStoredDirectLeafOrientations
 import UniformBinarySpectatorCMachine
 import UniformNativeScalarRecordMachine
 import UniformNativeExchangeRecordMachine
@@ -19,7 +25,7 @@ import Lean
 open Lean Elab Command in
 run_cmd do
  let env ← getEnv
- let mods := ["UniformBinarySpectatorCMachine", "UniformNativeScalarRecordMachine", "UniformNativeExchangeRecordMachine", "UniformDirectLeafDescriptorMachine", "UniformTransposeDescriptorMachine", "UniformDirectLeafOrientationsMachine", "UniformPhysicalBinaryInverse", "UniformNativeCopiedInverse", "UniformGlobalTensorDiagonalMachine", "UniformGlobalTensorDiagonalLoop", "UniformSectorTransposeMachine", "UniformSectorChildEntryPreparation", "UniformSectorRestoringScatterPreparation", "UniformAllSectorTransposeMachine", "UniformSectorTransposeCoordinates", "UniformProducedSectorTransposePreparation", "UniformSectorPhysicalBinaryAction"]
+ let mods := ["UniformBinarySpectatorCMachine", "UniformNativeScalarRecordMachine", "UniformNativeExchangeRecordMachine", "UniformDirectLeafDescriptorMachine", "UniformTransposeDescriptorMachine", "UniformDirectLeafOrientationsMachine", "UniformPhysicalBinaryInverse", "UniformNativeCopiedInverse", "UniformGlobalTensorDiagonalMachine", "UniformGlobalTensorDiagonalLoop", "UniformSectorTransposeMachine", "UniformSectorChildEntryPreparation", "UniformSectorRestoringScatterPreparation", "UniformAllSectorTransposeMachine", "UniformSectorTransposeCoordinates", "UniformProducedSectorTransposePreparation", "UniformSectorPhysicalBinaryAction", "UniformGlobalDiagonalRowsMachine", "UniformGlobalDiagonalRowsIteration", "UniformGlobalDiagonalRowsLoop", "UniformGlobalDiagonalRowsPreparation", "UniformGlobalTensorDiagonalPreparation", "UniformStoredDirectLeafOrientations"]
  let mut entries:Array Json:=#[]
  for (name, _) in env.constants.toList do
   let source := (env.getModuleIdxFor? name).map (fun idx => env.header.moduleNames[idx]!.toString)
