@@ -1,0 +1,24 @@
+{
+  "repository": "https://github.com/openai/math",
+  "revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "scope": "Unmodified RAM and Goal definitions only; no upstream Main proof or full upstream build is imported or certified.",
+  "files": [
+    {
+      "upstream_path": "lean/OAI/Computability/FourierTransform/RAM.lean",
+      "path": "lean/ModelEquivalenceUpstream/OAI/Computability/FourierTransform/RAM.lean",
+      "sha256": "4eb8a7cbd1566b9a0537c3423e32528c3d6be691a4780bd549768a96e568fa8d"
+    },
+    {
+      "upstream_path": "lean/OAI/Computability/FourierTransform/Goal.lean",
+      "path": "lean/ModelEquivalenceUpstream/OAI/Computability/FourierTransform/Goal.lean",
+      "sha256": "879a7d19393b7f162e1711fba08e10626444b9e34b5183ead3b7832ba462c344"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "path": "lean/ModelEquivalenceUpstream/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    }
+  ]
+}

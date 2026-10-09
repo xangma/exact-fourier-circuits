@@ -48,6 +48,14 @@ See the [checkpoint](docs/uniform-closeout.md) and
 receipts record their historical boundaries; their overlapping counts are not
 an aggregate audit of this final source snapshot.
 
+The independent [paper audit](docs/audit-all-lengths.md) adds precise references
+to 175 Lean modules and freshly checks the complete final proof. The later
+[machine-model comparison](docs/machine-model-comparison.md) formally shows that
+the entire languages differ under their declared data interface: ours can
+compute `x + 1`, while upstream typed data stay zero on zero input. This does
+not refute either DFT theorem. Concrete primitive translations are checked;
+a cost-preserving translation of a common DFT fragment remains open.
+
 ## Run
 
 The local checkout already has `.venv` and the Lean dependencies installed.
