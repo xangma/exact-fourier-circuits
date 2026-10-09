@@ -1,0 +1,20 @@
+import UniformResidualSpectators
+import Lean
+
+-- Inventory uses defining-module provenance, including generated/private names.
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformResidualSpectators.extend
+#print axioms ExactFourierCircuits.UniformResidualSpectators.extend.eq_1
+#print axioms ExactFourierCircuits.UniformResidualSpectators.extend_high_unit
+#print axioms ExactFourierCircuits.UniformResidualSpectators.extend_high_unit._proof_1
+#print axioms ExactFourierCircuits.UniformResidualSpectators.extend_low
+#print axioms ExactFourierCircuits.UniformResidualSpectators.extend_low._proof_1
+#print axioms ExactFourierCircuits.UniformResidualSpectators.extend_low._proof_2
+#print axioms ExactFourierCircuits.UniformResidualSpectators.extend_value
+#print axioms ExactFourierCircuits.UniformResidualSpectators.extend_xor
+#print axioms ExactFourierCircuits.UniformResidualSpectators.extend_zero
+#print axioms ExactFourierCircuits.UniformResidualSpectators.split
+#print axioms ExactFourierCircuits.UniformResidualSpectators.split._proof_1
+#print axioms ExactFourierCircuits.UniformResidualSpectators.split.eq_1
+#print axioms ExactFourierCircuits.UniformResidualSpectators.split_values

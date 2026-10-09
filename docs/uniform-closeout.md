@@ -1,12 +1,33 @@
 # Uniform proof checkpoint
 
 The original selected-length theorem is verified. The stronger single fixed
-algorithm for every positive length is **still open**. The registry has 312
+algorithm for every positive length is **still open**. The registry has 341
 modules and `closed_uniform_algorithm=null`; receipts retain
 `uniform_algorithm_verified=false`. The required final result is the
 unconditional `UniformMachine.UniformDFTStatement UniformExponent.theta`.
 
 ## Current verified work
+
+**Twenty-nine recursive controller modules** pass a fresh normal-path audit
+of **2,552 defining-module declarations**, including 104 private declarations,
+with standard axioms and default proof limits. All 276 frozen inputs and 82
+artifacts match. The registry now contains 341 modules; its prior 312 entries
+remain unchanged. See the [module list](../verification/uniform-recursive-foundation-modules.json)
+and [receipt](../verification/uniform-recursive-foundations.json).
+
+The four freshly exported native, residual-entry, padding-control and terminal
+suites pass **5,640 cases and 5,547,308 steps**, with 45 adverse controls.
+Reproduce with `python3 scripts/check-uniform-recursive-foundations.py`.
+These prove controller foundations, stack interfaces, native handlers and the
+terminal suffix. Complete numerical opcode0/5 execution and the recursive
+induction remain open.
+
+A kernel-checked generic residual exposes an integration defect: a norm-one
+weight-3 direction requires the opposite sign from its raw increasing/decreasing
+flag. This does not establish that the fixed seed contains that edge. A charged
+descriptor scan and its sign/cost proofs are implemented separately; the corrected
+common program and its consumers are being integrated. The frozen controller
+packet above does not certify the missing sign join or complete residual handler.
 
 **Eleven forward-factor modules** pass a fresh normal-path audit of **671
 defining-module declarations** with only the standard three axioms, default
@@ -76,7 +97,7 @@ The previous 2026-10-08 aggregate audits remain historical evidence: 232 modules
 Their [Lean](../verification/uniform-components.json) and
 [bytecode](../verification/uniform-bytecode-components.json) receipts bind 561
 and 366 inputs respectively. Neither is an aggregate audit of the current
-312-module registry; overlapping declaration scopes must not be added together.
+341-module registry; overlapping declaration scopes must not be added together.
 
 | Component | Proved execution and boundary |
 |---|---|

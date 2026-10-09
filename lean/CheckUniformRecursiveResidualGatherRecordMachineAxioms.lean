@@ -1,0 +1,73 @@
+import UniformRecursiveResidualGatherRecordMachine
+import Lean
+
+-- Inventory uses defining-module provenance, including generated/private names.
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.data_end
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.data_end._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.data_end._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.direction_end
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.direction_end._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.direction_end._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.execution
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.execution._proof_1_10
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.execution._proof_1_11
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.execution._proof_1_12
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.execution._proof_1_13
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.execution._proof_1_14
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.execution._proof_1_15
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.execution._proof_1_16
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.execution._proof_1_17
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.execution._proof_1_18
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.execution._proof_1_19
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.execution._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.execution._proof_1_20
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.execution._proof_1_21
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.execution._proof_1_23
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.execution._proof_1_3
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.execution._proof_1_4
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.execution._proof_1_5
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.execution._proof_1_6
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.execution._proof_1_7
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.execution._proof_1_9
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.gather_code
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.gather_preserves_q
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.gather_preserves_q._proof_1_10
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.gather_preserves_q._simp_1_11
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.gather_preserves_q._simp_1_12
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.halt_at
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.halt_at._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.native_padded
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.native_padded._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.program
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.program.eq_1
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.program_length
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.reader_code
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.table_fits
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.table_fits._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveResidualGatherRecordMachine.table_fits._proof_1_2
+#print axioms ExactFourierCircuits.UniformResidualDescriptorBankMachine.Safe._sparseCasesOn_1.else_eq
+#print axioms ExactFourierCircuits.UniformResidualDescriptorBankMachine.Safe.eq_1
+#print axioms ExactFourierCircuits.UniformResidualDescriptorBankMachine.Safe.eq_2
+#print axioms ExactFourierCircuits.UniformResidualDescriptorBankMachine.Safe.eq_3
+#print axioms ExactFourierCircuits.UniformResidualDescriptorBankMachine.Safe.eq_4
+#print axioms ExactFourierCircuits.UniformResidualDescriptorBankMachine.Safe.eq_5
+#print axioms ExactFourierCircuits.UniformResidualDescriptorBankMachine.Safe.eq_6
+#print axioms ExactFourierCircuits.UniformResidualDescriptorBankMachine.Safe.eq_7
+#print axioms ExactFourierCircuits.UniformResidualDescriptorBankMachine.Safe.eq_8
+#print axioms ExactFourierCircuits.UniformResidualExtendedPermutation.fibers.congr_simp
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  let origin := (env.getModuleIdxFor? name).map (fun idx => env.header.moduleNames[idx]!.toString)
+  if origin == some "UniformRecursiveResidualGatherRecordMachine" && "_private.UniformRecursiveResidualGatherRecordMachine.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   for ax in axs do
+    unless ax == ``propext || ax == ``Quot.sound || ax == ``Classical.choice do
+     throwError m!"Nonstandard axiom {ax} in {name}"
+   logInfo m!"{name} depends on axioms: {axs.toList}"

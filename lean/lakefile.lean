@@ -721,3 +721,179 @@ lean_lib UniformForwardMatchingFactorHeaderExecution where
 
 lean_lib UniformForwardMatchingFactorTensorBridge where
   roots := #[`UniformForwardMatchingFactorTensorBridge]
+
+
+lean_lib UniformRecursiveReturnStackMachine where
+  roots := #[`UniformRecursiveReturnStackMachine]
+
+lean_lib UniformRecursiveBaseCallMachine where
+  roots := #[`UniformRecursiveBaseCallMachine]
+
+lean_lib UniformRecursiveSelfCallMachine where
+  roots := #[`UniformRecursiveSelfCallMachine]
+
+lean_lib UniformResidualTraversalHeaders where
+  roots := #[`UniformResidualTraversalHeaders]
+
+lean_lib UniformResidualImagePreparation where
+  roots := #[`UniformResidualImagePreparation]
+
+lean_lib UniformResidualSpectators where
+  roots := #[`UniformResidualSpectators]
+
+lean_lib UniformResidualSpectatorBankMachine where
+  roots := #[`UniformResidualSpectatorBankMachine]
+
+lean_lib UniformResidualGeneralPreparation where
+  roots := #[`UniformResidualGeneralPreparation]
+
+lean_lib UniformResidualGeneralGatherPreparation where
+  roots := #[`UniformResidualGeneralGatherPreparation]
+
+lean_lib UniformRecursiveResidualRecordPreparation where
+  roots := #[`UniformRecursiveResidualRecordPreparation]
+
+lean_lib UniformRecursiveRegisterFrames where
+  roots := #[`UniformRecursiveRegisterFrames]
+
+lean_lib UniformResidualExtendedPermutation where
+  roots := #[`UniformResidualExtendedPermutation]
+
+lean_lib UniformRecursiveResidualGatherRecordMachine where
+  roots := #[`UniformRecursiveResidualGatherRecordMachine]
+
+lean_lib UniformRecursiveBatchGroupMachine where
+  roots := #[`UniformRecursiveBatchGroupMachine]
+
+lean_lib UniformResidualNativeTranslationMachine where
+  roots := #[`UniformResidualNativeTranslationMachine]
+
+lean_lib UniformNativePreparedYTranslationMachine where
+  roots := #[`UniformNativePreparedYTranslationMachine]
+
+lean_lib UniformNativeYRecordMachine where
+  roots := #[`UniformNativeYRecordMachine]
+
+lean_lib UniformRecursiveSavingProgram where
+  roots := #[`UniformRecursiveSavingProgram]
+
+lean_lib UniformRecursiveNativeEntries where
+  roots := #[`UniformRecursiveNativeEntries]
+
+lean_lib UniformRecursiveSavingExecution where
+  roots := #[`UniformRecursiveSavingExecution]
+
+lean_lib UniformRecursiveNodePreparation where
+  roots := #[`UniformRecursiveNodePreparation]
+
+lean_lib UniformRecursiveNodeJoin where
+  roots := #[`UniformRecursiveNodeJoin]
+
+lean_lib UniformRecursiveParentReturn where
+  roots := #[`UniformRecursiveParentReturn]
+
+lean_lib UniformRecursiveRecordControl where
+  roots := #[`UniformRecursiveRecordControl]
+
+lean_lib UniformRecursiveNativeRecords where
+  roots := #[`UniformRecursiveNativeRecords]
+
+lean_lib UniformRecursiveSpectatorFinish where
+  roots := #[`UniformRecursiveSpectatorFinish]
+
+lean_lib UniformRecursiveSpectatorValues where
+  roots := #[`UniformRecursiveSpectatorValues]
+
+lean_lib UniformRecursiveResidualControl where
+  roots := #[`UniformRecursiveResidualControl]
+
+lean_lib UniformRecursivePaddingControl where
+  roots := #[`UniformRecursivePaddingControl]
+
+
+lean_lib CheckUniformRecursiveReturnStackMachineAxioms where
+  roots := #[`CheckUniformRecursiveReturnStackMachineAxioms]
+
+lean_lib CheckUniformRecursiveBaseCallMachineAxioms where
+  roots := #[`CheckUniformRecursiveBaseCallMachineAxioms]
+
+lean_lib CheckUniformRecursiveSelfCallMachineAxioms where
+  roots := #[`CheckUniformRecursiveSelfCallMachineAxioms]
+
+lean_lib CheckUniformResidualTraversalHeadersAxioms where
+  roots := #[`CheckUniformResidualTraversalHeadersAxioms]
+
+lean_lib CheckUniformResidualImagePreparationAxioms where
+  roots := #[`CheckUniformResidualImagePreparationAxioms]
+
+lean_lib CheckUniformResidualSpectatorsAxioms where
+  roots := #[`CheckUniformResidualSpectatorsAxioms]
+
+lean_lib CheckUniformResidualSpectatorBankMachineAxioms where
+  roots := #[`CheckUniformResidualSpectatorBankMachineAxioms]
+
+lean_lib CheckUniformResidualGeneralPreparationAxioms where
+  roots := #[`CheckUniformResidualGeneralPreparationAxioms]
+
+lean_lib CheckUniformResidualGeneralGatherPreparationAxioms where
+  roots := #[`CheckUniformResidualGeneralGatherPreparationAxioms]
+
+lean_lib CheckUniformRecursiveResidualRecordPreparationAxioms where
+  roots := #[`CheckUniformRecursiveResidualRecordPreparationAxioms]
+
+lean_lib CheckUniformRecursiveRegisterFramesAxioms where
+  roots := #[`CheckUniformRecursiveRegisterFramesAxioms]
+
+lean_lib CheckUniformResidualExtendedPermutationAxioms where
+  roots := #[`CheckUniformResidualExtendedPermutationAxioms]
+
+lean_lib CheckUniformRecursiveResidualGatherRecordMachineAxioms where
+  roots := #[`CheckUniformRecursiveResidualGatherRecordMachineAxioms]
+
+lean_lib CheckUniformRecursiveBatchGroupMachineAxioms where
+  roots := #[`CheckUniformRecursiveBatchGroupMachineAxioms]
+
+lean_lib CheckUniformResidualNativeTranslationMachineAxioms where
+  roots := #[`CheckUniformResidualNativeTranslationMachineAxioms]
+
+lean_lib CheckUniformNativePreparedYTranslationMachineAxioms where
+  roots := #[`CheckUniformNativePreparedYTranslationMachineAxioms]
+
+lean_lib CheckUniformNativeYRecordMachineAxioms where
+  roots := #[`CheckUniformNativeYRecordMachineAxioms]
+
+lean_lib CheckUniformRecursiveSavingProgramAxioms where
+  roots := #[`CheckUniformRecursiveSavingProgramAxioms]
+
+lean_lib CheckUniformRecursiveNativeEntriesAxioms where
+  roots := #[`CheckUniformRecursiveNativeEntriesAxioms]
+
+lean_lib CheckUniformRecursiveSavingExecutionAxioms where
+  roots := #[`CheckUniformRecursiveSavingExecutionAxioms]
+
+lean_lib CheckUniformRecursiveNodePreparationAxioms where
+  roots := #[`CheckUniformRecursiveNodePreparationAxioms]
+
+lean_lib CheckUniformRecursiveNodeJoinAxioms where
+  roots := #[`CheckUniformRecursiveNodeJoinAxioms]
+
+lean_lib CheckUniformRecursiveParentReturnAxioms where
+  roots := #[`CheckUniformRecursiveParentReturnAxioms]
+
+lean_lib CheckUniformRecursiveRecordControlAxioms where
+  roots := #[`CheckUniformRecursiveRecordControlAxioms]
+
+lean_lib CheckUniformRecursiveNativeRecordsAxioms where
+  roots := #[`CheckUniformRecursiveNativeRecordsAxioms]
+
+lean_lib CheckUniformRecursiveSpectatorFinishAxioms where
+  roots := #[`CheckUniformRecursiveSpectatorFinishAxioms]
+
+lean_lib CheckUniformRecursiveSpectatorValuesAxioms where
+  roots := #[`CheckUniformRecursiveSpectatorValuesAxioms]
+
+lean_lib CheckUniformRecursiveResidualControlAxioms where
+  roots := #[`CheckUniformRecursiveResidualControlAxioms]
+
+lean_lib CheckUniformRecursivePaddingControlAxioms where
+  roots := #[`CheckUniformRecursivePaddingControlAxioms]

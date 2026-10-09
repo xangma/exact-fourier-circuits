@@ -34,7 +34,10 @@ matrix entries. A further eleven forward-factor modules have a fresh normal
 audit of 671 declaration closures and 384 exact cases; their real 415/430-instruction
 programs produce typed forward matching coefficient pools for the tensor
 consumer. See the [forward-factor receipt](verification/uniform-forward-factor-foundations.json).
-The current registry contains 312 modules. Actual native
+The current registry contains 341 modules. A fresh normal-path audit of 29
+recursive controller foundations checks 2,552 declaration closures and 5,640
+exact bytecode cases; see the [recursive receipt](verification/uniform-recursive-foundations.json).
+Actual native
 spectators, direct-leaf orientations and sector/tensor movement are checked.
 The complete cache compiler, common recursive execution and global fast
 program remain open.

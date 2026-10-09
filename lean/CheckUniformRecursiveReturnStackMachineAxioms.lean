@@ -1,0 +1,91 @@
+import UniformRecursiveReturnStackMachine
+import Lean
+
+-- Inventory uses defining-module provenance, including generated/private names.
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.Op.peak.eq_1
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.Op.peak.eq_2
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.Op.peak.eq_3
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.Op.peak.eq_4
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.applyBlock.eq_1
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.applyBlock.eq_2
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.applyBlock.eq_def
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.peak.eq_1
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.peak.eq_2
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.peak.eq_def
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.readable.eq_1
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.readable.eq_2
+#print axioms ExactFourierCircuits.UniformNatBlockMachine.readable.eq_def
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.Bank
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.Bank.tail
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.apply_append
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.fields
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.fields_length
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.fields_safe
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.loadFields
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.loadFields._f
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.loadFields._sunfold
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.loadFields._unsafe_rec
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.loadFields.eq_1
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.loadFields.eq_2
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.loadFields.eq_def
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.loadFields_length
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.loadFields_length._proof_1_4
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.loadProgram
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.loadProgram.eq_1
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.loadProgram_length
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.load_code
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.load_execution
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.load_execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.load_execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.load_heap
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.load_registers
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.load_safe
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.load_safe._proof_1_13
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.load_safe._proof_1_14
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.load_safe._proof_1_15
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.load_safe._simp_1_21
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.load_scalar
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.load_spec
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.saveFields
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.saveFields._f
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.saveFields._sunfold
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.saveFields._unsafe_rec
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.saveFields.eq_1
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.saveFields.eq_2
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.saveFields.eq_def
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.saveFields.match_1
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.saveFields_length
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.saveFields_length._proof_1_4
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.saveProgram
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.saveProgram.eq_1
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.saveProgram_length
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.save_code
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.save_execution
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.save_execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.save_execution._proof_1_8
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.save_registers
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.save_safe
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.save_safe._proof_1_13
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.save_safe._proof_1_14
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.save_safe._proof_1_15
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.save_safe._simp_1_21
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.save_scalar
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.save_spec
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.save_spec._proof_1_10
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.save_spec._proof_1_7
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.save_spec._proof_1_8
+#print axioms ExactFourierCircuits.UniformRecursiveReturnStackMachine.save_spec._proof_1_9
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  let origin := (env.getModuleIdxFor? name).map (fun idx => env.header.moduleNames[idx]!.toString)
+  if origin == some "UniformRecursiveReturnStackMachine" && "_private.UniformRecursiveReturnStackMachine.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   for ax in axs do
+    unless ax == ``propext || ax == ``Quot.sound || ax == ``Classical.choice do
+     throwError m!"Nonstandard axiom {ax} in {name}"
+   logInfo m!"{name} depends on axioms: {axs.toList}"

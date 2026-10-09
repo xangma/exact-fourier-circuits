@@ -1,0 +1,12 @@
+import UniformResidualTraversalHeaders
+import Lean
+
+-- Inventory uses defining-module provenance, including generated/private names.
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.execution_headers
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.execution_headers._proof_1_1
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.execution_headers._proof_1_2
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.execution_headers._proof_1_3
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.execution_headers._proof_1_4
+#print axioms ExactFourierCircuits.UniformResidualFiberTraversal.execution_headers._proof_1_5

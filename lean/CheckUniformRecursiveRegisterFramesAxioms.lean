@@ -1,0 +1,54 @@
+import UniformRecursiveRegisterFrames
+import Lean
+
+-- Inventory uses defining-module provenance, including generated/private names.
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.Avoids
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.Avoids._sparseCasesOn_1
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.Avoids._sparseCasesOn_1.else_eq
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.Avoids.eq_1
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.Avoids.eq_2
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.Avoids.eq_3
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.Avoids.eq_4
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.Avoids.eq_5
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.Avoids.match_1
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.append_iff
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.append_iff._simp_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.append_iff._simp_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.append_iff._simp_1_3
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.boundedExecution_keep
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.boundedRuns_keep
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.code_of_all
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.executes_keep
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.instDecidableAvoids
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.instDecidableAvoids._proof_1
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.instDecidableAvoids._proof_10
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.instDecidableAvoids._proof_11
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.instDecidableAvoids._proof_12
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.instDecidableAvoids._proof_13
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.instDecidableAvoids._proof_14
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.instDecidableAvoids._proof_2
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.instDecidableAvoids._proof_3
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.instDecidableAvoids._proof_4
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.instDecidableAvoids._proof_5
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.instDecidableAvoids._proof_6
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.instDecidableAvoids._proof_7
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.instDecidableAvoids._proof_8
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.instDecidableAvoids._proof_9
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.relocated_iff
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.relocated_iff._simp_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.runs_keep
+#print axioms ExactFourierCircuits.UniformRecursiveRegisterFrames.step_keep
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  let origin := (env.getModuleIdxFor? name).map (fun idx => env.header.moduleNames[idx]!.toString)
+  if origin == some "UniformRecursiveRegisterFrames" && "_private.UniformRecursiveRegisterFrames.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   for ax in axs do
+    unless ax == ``propext || ax == ``Quot.sound || ax == ``Classical.choice do
+     throwError m!"Nonstandard axiom {ax} in {name}"
+   logInfo m!"{name} depends on axioms: {axs.toList}"

@@ -1,0 +1,20 @@
+import UniformRecursiveBatchGroupMachine
+import Lean
+
+-- Inventory uses defining-module provenance, including generated/private names.
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveBatchGroupMachine.W
+#print axioms ExactFourierCircuits.UniformRecursiveBatchGroupMachine.W_eq
+#print axioms ExactFourierCircuits.UniformRecursiveBatchGroupMachine.bootGroups
+#print axioms ExactFourierCircuits.UniformRecursiveBatchGroupMachine.bootGroups.eq_1
+#print axioms ExactFourierCircuits.UniformRecursiveBatchGroupMachine.branch_execution
+#print axioms ExactFourierCircuits.UniformRecursiveBatchGroupMachine.division
+#print axioms ExactFourierCircuits.UniformRecursiveBatchGroupMachine.groupCount
+#print axioms ExactFourierCircuits.UniformRecursiveBatchGroupMachine.groupCount_positive
+#print axioms ExactFourierCircuits.UniformRecursiveBatchGroupMachine.group_data_generic
+#print axioms ExactFourierCircuits.UniformRecursiveBatchGroupMachine.group_data_generic._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveBatchGroupMachine.initialize_execution
+#print axioms ExactFourierCircuits.UniformRecursiveBatchGroupMachine.initialize_execution._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveBatchGroupMachine.initialize_length
+#print axioms ExactFourierCircuits.UniformRecursiveBatchGroupMachine.partition

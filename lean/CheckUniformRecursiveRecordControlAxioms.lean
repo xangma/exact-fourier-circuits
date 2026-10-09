@@ -1,0 +1,132 @@
+import UniformRecursiveRecordControl
+import Lean
+
+-- Inventory uses defining-module provenance, including generated/private names.
+set_option linter.auxLemma false
+
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.ControlChanged
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.ControlFrame
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.ControlFrame.casesOn
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.ControlFrame.mk
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.ControlFrame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.ControlFrame.natHeap
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.ControlFrame.natReg
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.ControlFrame.outputs
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.ControlFrame.rec
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.ControlFrame.recOn
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.ControlFrame.roots
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.ControlFrame.scalarHeap
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.ControlFrame.scalarReg
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.DispatchAt
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.DispatchFrame
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.DispatchFrame.casesOn
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.DispatchFrame.mk
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.DispatchFrame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.DispatchFrame.natHeap
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.DispatchFrame.natReg
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.DispatchFrame.outputs
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.DispatchFrame.rec
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.DispatchFrame.recOn
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.DispatchFrame.roots
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.DispatchFrame.scalarHeap
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.DispatchFrame.scalarReg
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.LoopFrame
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.LoopFrame.casesOn
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.LoopFrame.mk
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.LoopFrame.mk._flat_ctor
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.LoopFrame.natHeap
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.LoopFrame.natReg
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.LoopFrame.outputs
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.LoopFrame.rec
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.LoopFrame.recOn
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.LoopFrame.roots
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.LoopFrame.scalarHeap
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.LoopFrame.scalarReg
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.branch_control
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatchCode
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatchCode._proof_1
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatchCode.eq_1
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatchCost
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatchCost.eq_1
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatch_code
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatch_execution
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatch_from_slice
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatch_generic
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatch_generic._proof_1_10
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatch_generic._proof_1_11
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatch_generic._proof_1_12
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatch_generic._proof_1_13
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatch_generic._proof_1_14
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatch_generic._proof_1_15
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatch_generic._proof_1_16
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatch_generic._proof_1_17
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatch_generic._proof_1_18
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatch_generic._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatch_generic._proof_1_4
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatch_generic._proof_1_5
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatch_generic._proof_1_6
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatch_generic._proof_1_7
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatch_generic._proof_1_8
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatch_generic._proof_1_9
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatch_piece
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.dispatch_vector
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.fields_dispatch
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.fields_dispatch._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.fields_dispatch._proof_1_10
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.fields_dispatch._proof_1_11
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.fields_dispatch._proof_1_12
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.fields_dispatch._proof_1_13
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.fields_dispatch._proof_1_14
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.fields_dispatch._proof_1_15
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.fields_dispatch._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.fields_dispatch._proof_1_3
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.fields_dispatch._proof_1_4
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.fields_dispatch._proof_1_5
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.fields_dispatch._proof_1_6
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.fields_dispatch._proof_1_7
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.fields_dispatch._proof_1_8
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.fields_dispatch._proof_1_9
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.loopBlock
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.loopBlock.eq_1
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.loopBlock_length
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.loop_branch
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.loop_code
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.loop_execution
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.loop_frame
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.loop_generic
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.loop_generic._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.loop_generic._proof_1_3
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.pair_control
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.pair_control._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.read_dispatch_execution
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.read_dispatch_generic
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.read_dispatch_generic._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.read_dispatch_generic._proof_1_10
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.read_dispatch_generic._proof_1_11
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.read_dispatch_generic._proof_1_2
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.read_dispatch_generic._proof_1_3
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.read_dispatch_generic._proof_1_4
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.read_dispatch_generic._proof_1_5
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.read_dispatch_generic._proof_1_6
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.read_dispatch_generic._proof_1_7
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.read_dispatch_generic._proof_1_8
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.read_dispatch_generic._proof_1_9
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.reader_code
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.reader_execution
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.reader_generic
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.reader_generic._proof_1_1
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.targets
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.targets_bound
+#print axioms ExactFourierCircuits.UniformRecursiveRecordControl.vector_bound
+
+open Lean Elab Command in
+run_cmd do
+ let env ← getEnv
+ for (name, _) in env.constants.toList do
+  let origin := (env.getModuleIdxFor? name).map (fun idx => env.header.moduleNames[idx]!.toString)
+  if origin == some "UniformRecursiveRecordControl" && "_private.UniformRecursiveRecordControl.".isPrefixOf name.toString then
+   let axs ← collectAxioms name
+   for ax in axs do
+    unless ax == ``propext || ax == ``Quot.sound || ax == ``Classical.choice do
+     throwError m!"Nonstandard axiom {ax} in {name}"
+   logInfo m!"{name} depends on axioms: {axs.toList}"

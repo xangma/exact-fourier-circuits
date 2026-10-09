@@ -1,0 +1,414 @@
+{
+  "schema": "uniform-recursive-foundations-modules/v1",
+  "modules": [
+    "UniformRecursiveReturnStackMachine",
+    "UniformRecursiveBaseCallMachine",
+    "UniformRecursiveSelfCallMachine",
+    "UniformResidualTraversalHeaders",
+    "UniformResidualImagePreparation",
+    "UniformResidualSpectators",
+    "UniformResidualSpectatorBankMachine",
+    "UniformResidualGeneralPreparation",
+    "UniformResidualGeneralGatherPreparation",
+    "UniformRecursiveResidualRecordPreparation",
+    "UniformRecursiveRegisterFrames",
+    "UniformResidualExtendedPermutation",
+    "UniformRecursiveResidualGatherRecordMachine",
+    "UniformRecursiveBatchGroupMachine",
+    "UniformResidualNativeTranslationMachine",
+    "UniformNativePreparedYTranslationMachine",
+    "UniformNativeYRecordMachine",
+    "UniformRecursiveSavingProgram",
+    "UniformRecursiveNativeEntries",
+    "UniformRecursiveSavingExecution",
+    "UniformRecursiveNodePreparation",
+    "UniformRecursiveNodeJoin",
+    "UniformRecursiveParentReturn",
+    "UniformRecursiveRecordControl",
+    "UniformRecursiveNativeRecords",
+    "UniformRecursiveSpectatorFinish",
+    "UniformRecursiveSpectatorValues",
+    "UniformRecursiveResidualControl",
+    "UniformRecursivePaddingControl"
+  ],
+  "source_copies": [
+    {
+      "module": "UniformRecursiveReturnStackMachine",
+      "source": "logs/uniform-recursive-saving-agent-20261008/UniformRecursiveReturnStackMachine.lean",
+      "sha256": "54e7089c66b96b6ec9d855ced3f694384a4c1c510d4e9c7a865ce2b30967c887",
+      "imports": [
+        "UniformNatBlockMachine",
+        "UniformAssembly"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformRecursiveBaseCallMachine",
+      "source": "logs/uniform-recursive-saving-agent-20261008/UniformRecursiveBaseCallMachine.lean",
+      "sha256": "d18b9b0154639c7bb15ceddea0cb66b7fceb84b21f93aef1d8f62202ac870cbd",
+      "imports": [
+        "UniformRecursiveReturnStackMachine",
+        "UniformBinaryBatchCMachine"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformRecursiveSelfCallMachine",
+      "source": "logs/uniform-recursive-saving-agent-20261008/UniformRecursiveSelfCallMachine.lean",
+      "sha256": "be3df335cfcc023406b561cd4f2ead63680a7ba51d4c5f9e124e74cc086a73be",
+      "imports": [
+        "UniformRecursiveBaseCallMachine",
+        "UniformBatching"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformResidualTraversalHeaders",
+      "source": "logs/uniform-recursive-saving-agent-20261008/UniformResidualTraversalHeaders.lean",
+      "sha256": "53e0ee61ab0ead531134adf2e8c2b869316815c6a3edbd4a6ed73fc6c6396fd0",
+      "imports": [
+        "UniformResidualFiberTraversal"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformResidualImagePreparation",
+      "source": "logs/uniform-recursive-saving-agent-20261008/UniformResidualImagePreparation.lean",
+      "sha256": "7b77f0a796c9fe1c4c2369aa14f4509583c3d58f244224a6ee4760dea02825d5",
+      "imports": [
+        "UniformResidualPermutationPreparation",
+        "UniformResidualTraversalHeaders"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformResidualSpectators",
+      "source": "logs/uniform-recursive-saving-agent-20261008/UniformResidualSpectators.lean",
+      "sha256": "8799dc0695005aaa0938b86fbecf29608914e5583d684008ee505c808c208fd3",
+      "imports": [
+        "UniformResidualPermutation"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformResidualSpectatorBankMachine",
+      "source": "logs/uniform-recursive-saving-agent-20261008/UniformResidualSpectatorBankMachine.lean",
+      "sha256": "362f7fefcd64f4b3a54578f8ad355db2dde8b180d4c279df4cbf6db2c632ba15",
+      "imports": [
+        "UniformResidualSpectators",
+        "UniformResidualPermutationPreparation"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformResidualGeneralPreparation",
+      "source": "logs/uniform-recursive-saving-agent-20261008/UniformResidualGeneralPreparation.lean",
+      "sha256": "5e374cc80e29b099a9e1fb8af103f9ebcb05cd199454a5e330d62086a847ddfe",
+      "imports": [
+        "UniformResidualImagePreparation",
+        "UniformResidualSpectatorBankMachine",
+        "UniformResidualSpectators"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformResidualGeneralGatherPreparation",
+      "source": "logs/uniform-recursive-saving-agent-20261008/UniformResidualGeneralGatherPreparation.lean",
+      "sha256": "ce7bcbff23d49e7ebeb5a6f0972ed39175449d2868f37ce9f445eb6eea817dd5",
+      "imports": [
+        "UniformResidualGeneralPreparation"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformRecursiveResidualRecordPreparation",
+      "source": "logs/uniform-recursive-saving-agent-20261008/UniformRecursiveResidualRecordPreparation.lean",
+      "sha256": "b5ad666abe4750bb82e851a62722e3b1642cd87368977dc4100291c8b392ac7b",
+      "imports": [
+        "UniformRecursiveSelfCallMachine",
+        "UniformResidualGeneralGatherPreparation",
+        "UniformFixedNetworkOpcodeMachine"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformRecursiveRegisterFrames",
+      "source": "logs/uniform-recursive-saving-agent-20261008/UniformRecursiveRegisterFrames.lean",
+      "sha256": "a0b1a3bf91d72659a2b71247633f4f9225422837b4aeb0314a596ae8a05c4ff8",
+      "imports": [
+        "UniformAssembly"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformResidualExtendedPermutation",
+      "source": "logs/uniform-recursive-saving-agent-20261008/UniformResidualExtendedPermutation.lean",
+      "sha256": "351f47cd39ab140129798cfc9cc74b318077b153e4420309a43b9b1b924becbd",
+      "imports": [
+        "UniformResidualSpectators"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformRecursiveResidualGatherRecordMachine",
+      "source": "logs/uniform-recursive-saving-agent-20261008/UniformRecursiveResidualGatherRecordMachine.lean",
+      "sha256": "8b672a69e881b07f5ee2e28e87c5a63a4a5a9e33417a199e8172488448988fa4",
+      "imports": [
+        "UniformRecursiveResidualRecordPreparation",
+        "UniformRecursiveRegisterFrames",
+        "UniformResidualExtendedPermutation"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformRecursiveBatchGroupMachine",
+      "source": "logs/uniform-recursive-saving-agent-20261008/UniformRecursiveBatchGroupMachine.lean",
+      "sha256": "3f1cccbc3496e43a8c0d6748596b9b3e0ee8e7ebedacd45b2c5064710199dfc9",
+      "imports": [
+        "UniformRecursiveSelfCallMachine",
+        "UniformResidualExtendedPermutation"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformResidualNativeTranslationMachine",
+      "source": "logs/uniform-recursive-saving-agent-20261008/UniformResidualNativeTranslationMachine.lean",
+      "sha256": "e5b21b7d26665ec54c5a33d92fa20c9a83c7eb189816b8ec1f5270aa5170f34c",
+      "imports": [
+        "UniformXorTranslationMachine"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformNativePreparedYTranslationMachine",
+      "source": "logs/uniform-recursive-saving-agent-20261008/UniformNativePreparedYTranslationMachine.lean",
+      "sha256": "d9d7e55278105e2f8a5bb62ffcf2e1ee7f0f18e85892186e1f798e878da49c87",
+      "imports": [
+        "UniformRepeatedMaskMachine",
+        "UniformResidualNativeTranslationMachine"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformNativeYRecordMachine",
+      "source": "logs/uniform-recursive-saving-agent-20261008/UniformNativeYRecordMachine.lean",
+      "sha256": "4b8a9532802a8f19735053e716cc559bfba472b9421b73f5e07cec31fd1d6fd5",
+      "imports": [
+        "UniformNativeScalarRecordMachine",
+        "UniformNativePreparedYTranslationMachine"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformRecursiveSavingProgram",
+      "source": "logs/uniform-recursive-saving-agent-20261008/UniformRecursiveSavingProgram.lean",
+      "sha256": "3cef4f1fdd4f335f86495db3afada3c8ffbe6efc8a7e71057a09c5210652cbf5",
+      "imports": [
+        "UniformRecursiveResidualGatherRecordMachine",
+        "UniformRecursiveBatchGroupMachine",
+        "UniformNativeYRecordMachine",
+        "UniformNativeScalarRecordMachine",
+        "UniformNativeExchangeRecordMachine",
+        "UniformBinarySpectatorCMachine",
+        "UniformFixedNetworkLiteralDecoderMachine",
+        "UniformFixedNetworkMarkerMachine"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformRecursiveNativeEntries",
+      "source": "logs/uniform-native-dispatch-root-20261009/UniformRecursiveNativeEntries.lean",
+      "sha256": "fb8e4d059ab5e45ac0a108f88421cdb7d3f8e970fc4fca95c027a28f96988970",
+      "imports": [
+        "UniformRecursiveSavingProgram"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformRecursiveSavingExecution",
+      "source": "logs/uniform-recursive-saving-agent-20261008/UniformRecursiveSavingExecution.lean",
+      "sha256": "ccb0403fe91200451d81133fbcb9503024f833006801b4d374e0c976c5b36b2e",
+      "imports": [
+        "UniformRecursiveSavingProgram"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformRecursiveNodePreparation",
+      "source": "logs/uniform-recursive-saving-agent-20261008/UniformRecursiveNodePreparation.lean",
+      "sha256": "87853e93f10bdc033d33d353508bb47e236858a20d44c9929874b11b85ffa2d9",
+      "imports": [
+        "UniformRecursiveSavingExecution"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformRecursiveNodeJoin",
+      "source": "logs/uniform-recursive-saving-agent-20261008/UniformRecursiveNodeJoin.lean",
+      "sha256": "87c2dee8bc79a4ad2506dd8f1b260ce006c31a451e4d12271f674897aa39eb31",
+      "imports": [
+        "UniformRecursiveNodePreparation"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformRecursiveParentReturn",
+      "source": "logs/uniform-recursive-saving-agent-20261008/UniformRecursiveParentReturn.lean",
+      "sha256": "ded22c122f48953962bc661eff1b81ff0e2865ff199dac79d7b35357d895a431",
+      "imports": [
+        "UniformRecursiveNodeJoin"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformRecursiveRecordControl",
+      "source": "logs/uniform-native-dispatch-root-20261009/UniformRecursiveRecordControl.lean",
+      "sha256": "bcc1cb0831a649590513598f669a45576ff179e7da84016877d4f22f400920a6",
+      "imports": [
+        "UniformRecursiveNativeEntries",
+        "UniformRecursiveParentReturn"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformRecursiveNativeRecords",
+      "source": "logs/uniform-native-dispatch-root-20261009/UniformRecursiveNativeRecords.lean",
+      "sha256": "8aadd6ac91c241333018680fc444ae7b3d812c440712937d3f6f65b1520298c7",
+      "imports": [
+        "UniformRecursiveRecordControl"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformRecursiveSpectatorFinish",
+      "source": "logs/uniform-recursive-spectator-root-20261009/UniformRecursiveSpectatorFinish.lean",
+      "sha256": "1d4d81abe28d07e2bef7e2d88da92ea4dbf04cf8f5ea781115a453d18d9b1731",
+      "imports": [
+        "UniformRecursiveRecordControl"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformRecursiveSpectatorValues",
+      "source": "logs/uniform-recursive-spectator-values-root-20261009/UniformRecursiveSpectatorValues.lean",
+      "sha256": "3f69de1305af55f302a89a17febd0e50f7750bf3a3689a21c1b9b67acbb65fbf",
+      "imports": [
+        "UniformRecursiveSpectatorFinish"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformRecursiveResidualControl",
+      "source": "logs/uniform-recursive-residual-control-root-20261009/UniformRecursiveResidualControl.lean",
+      "sha256": "d16875407eb722a9ab21546ad0c4333fa7dfb1ce120f7a34b451adb664a92023",
+      "imports": [
+        "UniformRecursiveRecordControl"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    },
+    {
+      "module": "UniformRecursivePaddingControl",
+      "source": "logs/uniform-recursive-padding-root-20261009/UniformRecursivePaddingControl.lean",
+      "sha256": "dbdb4f53bf4694b4fc8f4eedc5a248436097d79c8ea747e03a4631783bff9179",
+      "imports": [
+        "UniformRecursiveRecordControl",
+        "UniformRecursiveNodeJoin"
+      ],
+      "normal_exists": false,
+      "normal_sha256": null
+    }
+  ],
+  "uniform_algorithm_verified": false,
+  "closed_uniform_algorithm": null,
+  "scope": "Frozen same-program recursive controller foundations only; no complete numerical opcode0/5 handler, recursive IH or all-length DFT/runtime theorem.",
+  "declarations": 2552,
+  "private_declarations": 104,
+  "declarations_by_module": {
+    "UniformRecursiveReturnStackMachine": 84,
+    "UniformRecursiveBaseCallMachine": 52,
+    "UniformRecursiveSelfCallMachine": 77,
+    "UniformResidualTraversalHeaders": 6,
+    "UniformResidualImagePreparation": 93,
+    "UniformResidualSpectators": 14,
+    "UniformResidualSpectatorBankMachine": 87,
+    "UniformResidualGeneralPreparation": 85,
+    "UniformResidualGeneralGatherPreparation": 50,
+    "UniformRecursiveResidualRecordPreparation": 31,
+    "UniformRecursiveRegisterFrames": 48,
+    "UniformResidualExtendedPermutation": 31,
+    "UniformRecursiveResidualGatherRecordMachine": 65,
+    "UniformRecursiveBatchGroupMachine": 14,
+    "UniformResidualNativeTranslationMachine": 154,
+    "UniformNativePreparedYTranslationMachine": 82,
+    "UniformNativeYRecordMachine": 253,
+    "UniformRecursiveSavingProgram": 331,
+    "UniformRecursiveNativeEntries": 12,
+    "UniformRecursiveSavingExecution": 129,
+    "UniformRecursiveNodePreparation": 137,
+    "UniformRecursiveNodeJoin": 68,
+    "UniformRecursiveParentReturn": 102,
+    "UniformRecursiveRecordControl": 137,
+    "UniformRecursiveNativeRecords": 30,
+    "UniformRecursiveSpectatorFinish": 98,
+    "UniformRecursiveSpectatorValues": 2,
+    "UniformRecursiveResidualControl": 100,
+    "UniformRecursivePaddingControl": 180
+  },
+  "diagnostic_export_sha256": {
+    "native": {
+      "small-program.json": "f4664645261d57c7552421a5f6ec1373fddc06b71c43aa280350926d55401eda",
+      "slices.json": "3f3b18f2afa80ed630e87eb5ec736947e38bb11b0d2834af8ee31ce4ac03a6cb",
+      "fixtures.json": "5429e51481d40947370c0d8208828f2ad467d8a393a0ecf240c08825248d3264"
+    },
+    "residual": {
+      "program.json": "e4134c034f9891e68fa27c74dd13da15103bddd70073a9aaad13b11b43eead7a",
+      "slices.json": "14e46a1729862e4e7cf91f17b21ef43c6b2850c1cf79ec72c8d9beb631e50087",
+      "fixtures.json": "2c8e3653845c75d29ddeb2cd687660c8c18efb9f0cbde5191759cf085812d17b"
+    },
+    "padding": {
+      "program.json": "1ab802715d77d75e74444eeebc51f7651485a603088d593d2b7c4b6925e787a2",
+      "slices.json": "e84fae9ac4f69bb3d617150b336e09ecd447163e72d58b417d32e97c87656adb",
+      "fixtures.json": "44d47a4941f10882f88d0c8fa5e6f0851a37ec7e291f6a69769d184c778ab741"
+    },
+    "terminal": {
+      "programs.json": "842583c177af3fb7860ebdd1703fbc50aa54455a67b229ea849d558edb951c15",
+      "slices.json": "5487b71efb71e7098a47791cefdeebb3dae9243802ba2ec297e7a2bd258d0fa8",
+      "fixtures.json": "fd3bcdce0a7f69b94868a74e6e41894fdf3f483704ecb8774918a0e814fee007"
+    }
+  },
+  "historical_packet_sha256": {
+    "verification/uniform-operational-modules.json": "1d1a83c689944180eeb50bef69eb6edd88a73139b4d0599db071a90aaa595b0e",
+    "verification/UniformOperationalCensus.lean": "e0f94ffe75245f266c4a96977af1ed8be8403687d8c6a1068638f043280252d0",
+    "verification/uniform-operational-foundations.json": "39694900bd489e9bef6844055dc6ae019d909e1aa2e739fbe91d07eb1df7ab38",
+    "verification/uniform-operational-bytecode.json": "eeda0c4414bc78da515fd16b9f5436e9d5f6d494899db25743d789061cdf1330",
+    "verification/uniform-forward-factor-foundations.json": "ebcd905150b2e153bc395f15f932897a47e6ad341e4a6dce742b31e08a4f21ef"
+  }
+}
