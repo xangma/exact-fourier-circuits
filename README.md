@@ -60,11 +60,14 @@ paired affine operations, closed root/header/CRT/chirp/normalization producers,
 and complete local stages. The closed recursive saving root now matches both
 actual source runs, preserves their exact returned flags, and bounds the one
 paired computation by a fixed factor times those same actual ticks. Its closed
-typed program also has a polynomial peak bound. Cache
-producers build native descriptors, direct-leaf records, all-axis spectrum
-forests and the synchronized event calendar. The component receipt still
-leaves the whole-program compiler open: scalar matching factors, physical cache
-and global-clock assembly, outer stages and total work/storage must be joined.
+typed program also has a polynomial peak bound. Cache producers now build
+native descriptors, leaf coefficients and chronology, spectrum forests,
+rectangle replay phases and matching factors. A charged matching-table client
+reproduces native permutation generation; a mixed-program projection checks
+integer metadata separately. Sector gathering enters the actual closed paired
+child once. The component receipt leaves the whole compiler open: selected
+matching rows, physical cache and sector maps, global-clock and outer-stage
+assembly, and total work/storage must still be joined.
 
 The separate [unchanged upstream reproduction](docs/upstream-dft-reproduction.md)
 also passes: **89 freshly built modules and 4,247 declaration closures**,

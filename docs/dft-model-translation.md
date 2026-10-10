@@ -59,8 +59,15 @@ may have nonzero terminal offset. Dropping that offset would change its answer.
 | Odd-axis preparation and compact banks | A closed caller from `(n, master root)` extracts all odd roots and produces Newton `H`, scale, inverse `H`, diagonal/inverse diagonal, and reciprocal-series `G` coefficients. A charged adapter constructs the exact original five-lane cache layout and proves its lane/address provenance against original retained source data. No produced root or coefficient table is supplied. The all-axis spectrum and synchronized calendar producers are now checked separately; their physical cache/global-clock assembly remains open. |
 | Rectangle kernels and spectrum banks | Runtime rectangle metadata and the original master root → charged root extraction, Newton/`G` production, all six original displacement kernels, root powers and six spectra. The exact original seven-block shared bank is derived without a supplied kernel or spectrum table. Local work is quadratic in the axis width, plus charged root extraction, when the actual convolution length is at most eight times that width. The closed spectrum forest performs the actual traversal once and constructs every genuine rectangle bank, retaining its node directory. A closed all-axis caller derives the selected radices and master order, includes the final binary axis, retains the actual root rows, and charges every forest and repeated root-production call. Its work bound is the explicit sum of those axis budgets and its peak is at most `(n+2)^24`. Matching factors and clock storage remain separate obligations. |
 | Balanced descriptor traversal | Closed runtime width/offset → the source algorithm's actual selected descriptors, preorder node directory and complete rectangle tape, including zero/small widths. Charged search and traversal have polynomial work and peak bounds. The kernel audit is supplemented by exact serialized-program cases at the first split threshold and recursive splits, with rejected mutants. No input tree or supplied plan is assumed. |
-| Direct leaf records | Closed runtime width/offset/coefficient-base → the actual traversal plus forward and reversed-transposed direct-leaf record tapes. Zero/one widths and empty split nodes are covered, and every address and copy is charged. The records reference scalar coefficient addresses; this packet does not construct their scalar banks or matching factors. |
+| Direct leaf records and coefficients | Closed width/offset/coefficient-base producers construct the actual forward and reversed-transposed records. Charged inverse-`H` production at the root and inverse root supplies their exact coefficient pairs, including native compact-lane address provenance. The forest caller follows actual node order and retains empty split nodes. A separate forward chronology producer adds genuine timestamps and shear/scale kinds. Transposed records are a prepared orientation, not an additional global event family. Matching selection and physical storage assembly remain open. |
 | Balanced cache calendar | Closed runtime width/offset/start → the native synchronized subtree duration and exact nine-field event tape. Both children start together; parent rectangles begin after the maximum child duration. Value, unconditional validity and polynomial work/peak pass the isolated default-limit audit (15 fresh modules, 423 standard-axiom declaration closures). Exact serialized-program cases include unequal child durations and rejected timing mutants. Scalar factors and storage assembly remain separate. |
+| Rectangle replay chronology | Actual seven-field rectangle row and start → charged exponent/height calculation, all six native replay phases, exact ordered slot tape, timestamps, shear kind and duration. No supplied exponent, plan, duration or schedule is assumed. Endpoint selection and scalar banks remain separate. |
+| Matching factors | Runtime radix, actual pairs-first full permutation, coefficient pairs and produced `I`/`aInv` → the native lane-major `9r` factor bank, including singleton factors, source scatter and inverse negation. Forward/inverse/broadcast source selections are checked. Constructing the selected rows and coefficient pairs remains a caller obligation. |
+| DAG depths | Charged decoding of the native five-field topology tape followed by fresh sequential updates computes the exact native depths. Work is quadratic in local span and peak is linear. Actual encoded topology production remains separate. |
+| Integer metadata compiler | `DFTModelCacheNatControl` and `DFTModelCacheNatDispatch` compile a fixed finite instruction list with charged PC selection, fuel and dense finite updates. Genuine bounded native executions imply validity, exact represented Nat state and work/peak bounds under explicit finite-address safety. Generic invalid paths use scalar inverse-of-zero guards; successful metadata paths avoid them. This is preparation machinery, not a constant-cost mutable heap for the main input bank. |
+| Concrete matching-table client | `DFTModelCacheMatchingNat.execution` starts from radix and selected raw endpoint rows, charges initialization, computes fuel, executes the actual native Matching55 program and reads back pairs followed by ascending unused indices. It proves work at most `3000000*(r+1)^2` and peak at most `4000*(r+1)`, including radix zero. Endpoint provenance, matching and range are explicit obligations; no initialized state, permutation, fuel or safety trajectory is supplied. The third row word is ignored and charged zero projection replaces it. |
+| Mixed-program Nat projection | `DFTModelCacheNatProjection.bounded_source` preserves exact ticks and Nat state of genuine successful mixed runs without length instructions. Scalar instructions become charged PC advances; original scalar/output/root fields are retained. Its typed adapter has explicit initialization, finite-address safety and charged fuel obligations. It does not compile the scalar effects or instantiate the full rectangle printer. |
+| Cache asymptotics | All-axis spectrum and calendar budgets and actual work are `o(n)`. The sum of existing initial-preparation, all-axis and calendar budgets is `O(n)`. A general polynomial local-budget lemma supports further cache clients; no composed whole-cache program or bound for all newly assembled work is claimed. |
 | Residual addresses and paired batches | Raw directions → charged mask/pivot/basis, one XOR table, geometric native/spectator addresses, gather/scatter and word bounds. The concrete residual body invokes one complete paired child per group and transports its returned flags. Additive source wrappers preserve the scanner's actual least-pivot fact and the group loop's exact returned Scalars. The complete oriented opcode-zero record now joins actual least-pivot gathering, every direction and group, restoration and both exact returned banks. Its local source contract retains the smaller-child induction hypothesis. The closed positive-depth strong induction now supplies those actual paired children without a caller callback. |
 | Recursive padding record | Actual opcode-five decoding, charged fresh unit printing, all ascending roles and all nested directions return the complete actual/zero-source banks, flags and numerical padding action. The source footprint includes the patched unit fields and four mode cells; it is proved explicitly. Actual-tick role, loop and full-record billing pay fresh unit printing with the same child cost factor. The closed positive-depth induction discharges the local record contracts’ smaller-child premise. |
 | Closed recursive syntax and validity | `DFTModelSavingProgram.program` is one closed upstream program: it computes the split, prints seed/unit tapes, dispatches records chronologically, recursively batches residual groups and executes the spectator suffix. `DFTModelSavingValidity.program_valid` covers all internally executed descendants without a child-validity oracle. The self-call and fuel lemmas preserve the entire tagged tape and account for actual work. |
@@ -74,6 +81,7 @@ may have nonzero terminal offset. Dropping that offset would change its answer.
 | Input-independent typed billing | For every typed program, changing homogeneous input data preserves work, validity and integer peak when prepared scalars, natural words and array shapes are fixed. The DFT solver's uniform work bound needs no extra compiler premise. |
 | Recursive local billing | Charged dispatcher, residual, padding and leaf bounds count each child work term once. Billed residual wrappers retain actual child durations and bound typed work against those same source ticks, with one fixed factor. Padding billing and the closed positive-depth source/work induction are checked. The same fixed factor is retained across every recursive depth; root packaging has passed its isolated audit. A source runtime upper bound alone cannot supply this comparison. |
 | Closed recursive peak | `DFTModelSavingPeakClosed.polynomial_peak` bounds the actual closed saving AST by `C*(2^k+1)^2` for one fixed `C`, arbitrary prepared complex parameter and full-width Boolean-tagged bank. Seed printing, suffix, threshold and recursion-fuel charges are included. The internal induction bounds fuel explicitly; the exported program theorem supplies its actual fuel internally and requires no child, action, cache or peak callback. This is the typed RAM's integer/tape peak, not a measured GPU memory claim. |
+| Sector gather, scatter and closed child | Genuine native sector gather/reverse-scatter preserve complete paired Scalars and tags. Scatter retains a compact patch with the original bank; its reader has constant charged work. `DFTModelSectorTranspose.saving` gathers the whole child bank and enters the actual closed saving program once, retaining context, with exact billing, unconditional validity and polynomial peak. Generating the sector map, joining the actual native child entry, and materializing the final whole bank remain open. |
 | Cost-contract adapter | Derives OpenAI's exact `DFTProgram` and `TimeBounds` from explicit `ComputationalPremises`; no instance of those premises exists yet. |
 
 The source DFT proof and the 51 originally vendored OpenAI files are unchanged.
@@ -87,33 +95,24 @@ identity through every stage and recursive call.
 
 ## Remaining proof, in dependency order
 
-1. Finish the actual cache forest and clock storage. The working headers, CRT
-   permutations, outer scalars, seed/unit records and odd-axis Newton/`G` banks
-   now have closed producers. The exact odd compact lanes also have a charged
-   adapter. Closed rectangle kernels and shared spectrum banks are checked.
-   The balanced descriptor traversal and full rectangle spectrum forest are
-   checked, including a closed all-axis spectrum caller. Direct-leaf record
-   production is checked; scalar coefficient banks, matching factors and complete
-   storage chronology must still be joined. The exact synchronized calendar
-   producer has passed its fresh isolated audit and serialized-program timing controls.
-2. Integrate the checked recursive saving body with the global clock. Preserve chronological record
-   order; batch only independent cells within a record. One recursive invocation
-   must return both channels. Two recursive calls for offset and data would
-   change the recurrence and can destroy the saving. The closed syntax and
-   validity are checked. Full residual and padding records now retain real
-   returned dependency flags and the native scanner's actual least-pivot choice.
-   The closed positive-depth source and cost inductions discharge their
-   smaller-child hypotheses, preserving actual child durations and returned
-   flags. The root entry/halting join and closed polynomial peak bound are checked.
-   The combined verifier below rebuilds these components together. `DFTModelSavingNativeRootCompare` relates
-   billing to any supplied terminated execution by deterministic equality of
-   its actual instruction count. Numerical
-   matrix identities alone do not establish the flag identities, and an upper
-   runtime budget alone does not establish a bound against `sourceTicks`.
-3. Compile the synchronized global clock, including matching movement,
-   direction/basis tables, complete role batches and prepared diagonal factors.
-   Table production and restoration of physical bank layouts must be charged;
-   residual address/block word bounds must also be established.
+1. Join the actual cache factory and physical storage. Derive topology,
+   buckets/colors, borrowed cells, selected matching rows and their coefficient
+   pairs from original runtime inputs. Existing producers now supply roots,
+   spectra, direct-leaf coefficients/chronology, rectangle replay slots,
+   matching permutations and factors. Their combined ABI, stored-source
+   provenance and total preparation budget still need one coherent program.
+   Concrete mixed-printer metadata clients must discharge static length/operand
+   restrictions, charged finite initialization, safety and justified fuel.
+2. Generate the sector-to-offset direct map and join the checked sector call to
+   its actual native child entry. Keep one paired recursive call and preserve
+   its returned flags. Use constant-work patch lookup and one final whole-bank
+   materialization. The closed recursive source/billing and polynomial peak
+   theorems supply the child; a supplied execution budget alone does not prove
+   billing against its actual `sourceTicks`.
+3. Assemble the complete synchronized global clock, including matching
+   movement, direction/basis tables, role batches and diagonal factors.
+   Prove charged layout restoration, source correspondence, work and storage
+   for the same concrete execution.
 4. Assemble the actual outer stages: preparation, kernel transform/save, input
    transform, pointwise product, inverse transform and final chirp/output.
 5. Prove `DFTModelCost.ComputationalPremises` for those concrete closed `order`
@@ -123,12 +122,17 @@ identity through every stage and recursive call.
    Uniform solver billing is already a universal typed-program theorem.
    Only then apply `DFTModelCost.contract` and certify the whole translation.
 
-Dense copying after each mutable source store is insufficient: the existing
-checked implementation costs linearly in tape capacity per update. Copying the
-source's virtual address slabs would be worse still. The intended construction
-uses compact banks, fresh whole-layer arrays and disjoint child batches.
-Likewise, scanning address bits for every element can introduce a logarithmic
-factor. Residual and CRT tables need explicit amortized preparation bounds.
+Dense copying after each main-bank store costs linearly in tape capacity and
+does not preserve the runtime saving. Polynomial copying is acceptable inside
+the small preparation clients only with their explicit aggregate asymptotic
+bound. The global construction uses compact patches, a direct sector map and
+disjoint child batches. Copying virtual address slabs, searching all patches
+per read, or scanning address bits per element can introduce unwanted factors;
+table generation and final materialization must be charged.
+
+Calendar event tags describe whole-leaf/whole-rectangle macros. They cannot be
+copied into the native shear/scale/recursive event-kind field. Rectangle inverse
+replay also negates coefficients; conjugation is a separate scalar operation.
 
 ## Reproduction and trust boundary
 
