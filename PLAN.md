@@ -164,16 +164,32 @@ all-axis spectra, calendar, rectangle replay phases and matching factors now
 have checked producers. Raw extents now generate the native topology and exact
 DAG depths and stable buckets in one closed producer. Charged height selection
 returns the native physical rows; native greedy coloring and its degree-six
-matching-layer guarantee are checked separately. Original/conjugate spectra
+matching-layer guarantee, charged endpoint rebasing and stable color selection
+are checked separately. Charged borrowed-coordinate mapping retains exact native
+labels and occurrence order. The joined raw-height caller derives degree six
+from its generated DAG and runs coloring and stable selection internally. Original/conjugate spectra
 and signed physical coefficient decoding have charged producers; a joined
 matching producer derives its coefficient pairs, permutation, C constants and
 nine-lane factor bank internally. Integer dispatch and a concrete matching-table client
 charge initialization, execution and readback; mixed-program Nat projection
 separates metadata from scalar production. Sector gathering enters the closed
 paired saving child once, with checked validity, billing and polynomial peak.
-A closed sector map charges linear construction and constant patch lookup
-from its prepared directory.
-Remaining milestones are joining generated height/color rows to matching selection and coherent physical
-cache storage, runtime sector-directory production and global-clock assembly, outer-stage
+A compact factor-pool reader matches actual paired diagonal outputs with
+charged access. A closed sector map charges linear construction and constant
+patch lookup from its prepared directory; one final tab assembles child patches
+and retained spectators.
+A closed packing producer now generates both native permutation directions and
+the fitted sector directory, with an explicit local quadratic preparation term.
+For genuine selected radices this cost is charged to the same native ticks.
+A closed typed kernel assembles packing, gather, saving children, materialization
+and scatter, with derived work and peak bounds. The joined cache caller
+generates its height/color rows, borrowed coordinates and matching factors internally.
+Caller-frame proofs preserve genuine headers, cursor and directory cells across
+the saving child. The complete original sector loop now constructs each paired
+child and its exact patches/ticks, retaining count and later caller registers.
+The original spectrum-copy, data-header and role-reload stages
+have a continuous paired join with exact prepared flags.
+Remaining milestones are joining matching factors to the genuine rectangle factory and coherent physical
+cache storage, complete kernel movement/source correspondence and global-clock assembly, remaining outer-stage
 assembly, and the whole-program cost/storage certificate. Component
 verification leaves that complete translation open.

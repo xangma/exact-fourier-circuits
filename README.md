@@ -66,15 +66,38 @@ rectangle replay phases and matching factors. Raw rectangle extents now produce
 the genuine five-field topology, exact DAG depths and stable buckets in one
 closed producer. A charged height selector derives the native physical rows;
 a separate producer executes native greedy coloring and proves eleven matching
-layers under the degree-six condition. Paired original/conjugate spectra and signed physical
+layers under the degree-six condition. Charged endpoint rebasing and stable
+color selection preserve the original physical rows and coefficient addresses.
+The joined raw-height caller derives that degree bound from the generated DAG
+and runs height selection, coloring and stable selection internally.
+The charged borrowed-coordinate mapper preserves their native coefficient
+labels and occurrence order. The joined caller generates those rows internally,
+then invokes the mapper and matching-factor producer once each, with derived
+word bounds and native chunk exponent/source-base correspondence.
+Paired original/conjugate spectra and signed physical
 coefficient decoding are also checked. One joined producer builds coefficients,
 the native permutation, C constants and all matching factors from the same raw
 selected rows and master root. A mixed-program projection checks
 integer metadata separately. Sector gathering enters the actual closed paired
-child once. A charged sector map has linear construction work and constant
-patch lookup from a prepared directory. The component receipt leaves the whole compiler open: selected
-matching rows joined to their colors, physical cache and generated sector directories, global-clock and outer-stage
-assembly, and total work/storage must still be joined.
+child once. Compact factor-pool access preserves the actual paired diagonal
+outputs without allocating up to physical source addresses. A charged sector
+map has linear construction work and constant patch lookup from a prepared
+directory; one final tab assembles all child patches and retained spectators.
+A closed runtime packing producer now generates both permutation directions
+and that directory, deriving its geometry and saving-child widths. Its work
+includes explicit local quadratic preparation. For the actual selected radices,
+that preparation is bounded by a fixed multiple of the same native execution's
+ticks. A closed typed kernel joins packing, whole-bank gather, one saving call
+per generated sector, materialization and scatter, with work and peak bounds.
+The original saving child preserves the genuine caller headers, cursor and
+directory cells. The complete native child-sector loop constructs each actual paired child, with exact
+patches and ticks, and retains its count and later caller registers. The native
+spectrum-copy, data-header and role-reload stages also have a continuous paired
+source join, including exact prepared flags.
+The component receipt leaves the whole compiler open: selected
+matching factors joined to their rectangle factory, physical cache, complete kernel source correspondence,
+global-clock and remaining outer-stage assembly, and total work/storage must
+still be joined.
 
 The separate [unchanged upstream reproduction](docs/upstream-dft-reproduction.md)
 also passes: **89 freshly built modules and 4,247 declaration closures**,
