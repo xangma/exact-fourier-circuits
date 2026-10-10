@@ -189,7 +189,14 @@ the saving child. The complete original sector loop now constructs each paired
 child and its exact patches/ticks, retaining count and later caller registers.
 The original spectrum-copy, data-header and role-reload stages
 have a continuous paired join with exact prepared flags.
-Remaining milestones are joining matching factors to the genuine rectangle factory and coherent physical
-cache storage, complete kernel movement/source correspondence and global-clock assembly, remaining outer-stage
-assembly, and the whole-program cost/storage certificate. Component
-verification leaves that complete translation open.
+The full original packing/all-gather/child-loop/scatter/inverse execution is
+now joined to the typed kernel: every returned paired cell, the entire work
+bill, quadratic peak and conductor/startup frames use the same native witness.
+Genuine descriptor/slot/selected-root arguments generate local factors, while
+charged endpoint translation derives ambient factors matching native415.
+The padded-input gather, final CRT/chirp/output suffix and pointwise/CRT stages
+have paired source joins. Fixed selected-radix polynomial costs have a working-volume bound.
+Remaining milestones are coherent cache traversal/storage and its aggregate
+cost, synchronized global-clock assembly, remaining outer-stage assembly, and
+the whole-program work/word certificate. Component verification leaves that
+complete translation open.

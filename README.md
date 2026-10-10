@@ -55,49 +55,27 @@ the entire languages differ under their declared data interface: ours can
 compute `x + 1`, while upstream typed data stay zero on zero input. This does
 not refute either DFT theorem. Concrete primitive translations are checked;
 a cost-preserving translation of our complete DFT remains open.
-The [actual DFT translation work](docs/dft-model-translation.md) now checks
-paired affine operations, closed root/header/CRT/chirp/normalization producers,
-and complete local stages. The closed recursive saving root now matches both
-actual source runs, preserves their exact returned flags, and bounds the one
-paired computation by a fixed factor times those same actual ticks. Its closed
-typed program also has a polynomial peak bound. Cache producers now build
-native descriptors, leaf coefficients and chronology, spectrum forests,
-rectangle replay phases and matching factors. Raw rectangle extents now produce
-the genuine five-field topology, exact DAG depths and stable buckets in one
-closed producer. A charged height selector derives the native physical rows;
-a separate producer executes native greedy coloring and proves eleven matching
-layers under the degree-six condition. Charged endpoint rebasing and stable
-color selection preserve the original physical rows and coefficient addresses.
-The joined raw-height caller derives that degree bound from the generated DAG
-and runs height selection, coloring and stable selection internally.
-The charged borrowed-coordinate mapper preserves their native coefficient
-labels and occurrence order. The joined caller generates those rows internally,
-then invokes the mapper and matching-factor producer once each, with derived
-word bounds and native chunk exponent/source-base correspondence.
-Paired original/conjugate spectra and signed physical
-coefficient decoding are also checked. One joined producer builds coefficients,
-the native permutation, C constants and all matching factors from the same raw
-selected rows and master root. A mixed-program projection checks
-integer metadata separately. Sector gathering enters the actual closed paired
-child once. Compact factor-pool access preserves the actual paired diagonal
-outputs without allocating up to physical source addresses. A charged sector
-map has linear construction work and constant patch lookup from a prepared
-directory; one final tab assembles all child patches and retained spectators.
-A closed runtime packing producer now generates both permutation directions
-and that directory, deriving its geometry and saving-child widths. Its work
-includes explicit local quadratic preparation. For the actual selected radices,
-that preparation is bounded by a fixed multiple of the same native execution's
-ticks. A closed typed kernel joins packing, whole-bank gather, one saving call
-per generated sector, materialization and scatter, with work and peak bounds.
-The original saving child preserves the genuine caller headers, cursor and
-directory cells. The complete native child-sector loop constructs each actual paired child, with exact
-patches and ticks, and retains its count and later caller registers. The native
-spectrum-copy, data-header and role-reload stages also have a continuous paired
-source join, including exact prepared flags.
-The component receipt leaves the whole compiler open: selected
-matching factors joined to their rectangle factory, physical cache, complete kernel source correspondence,
-global-clock and remaining outer-stage assembly, and total work/storage must
-still be joined.
+The [actual DFT translation](docs/dft-model-translation.md) now has a closed
+paired recursive saving program and a complete typed kernel. The kernel matches
+the original packing, all-gather, child loop, scatter and inverse-packing run
+at every returned cell, including flags. Its entire work is bounded against
+those same native ticks, with a fixed quadratic integer-peak bound. No packed
+bank, child action or execution budget is supplied.
+
+Cache callers derive topology, heights, colors, borrowed coordinates and
+matching factors from the genuine descriptor, slot and selected-axis root.
+Physical width and root order remain distinct. A charged endpoint translator
+places local factors into the full ambient nine-lane pool and matches the
+original native415 program under ordinary entry conditions. Fixed polynomial
+costs in the selected radices have a formal working-volume bound; complete
+request traversal and storage accounting remain to be joined.
+
+The original spectrum-copy/data-reload and padded-input gather stages, pointwise-product/CRT stages,
+and final CRT/chirp/output suffix have continuous paired source joins. The
+[component receipt](verification/dft-model-components.json) leaves the whole
+compiler open: coherent generated cache storage, synchronized global clock,
+remaining outer-stage assembly, and total work/word bounds still need one
+closed program.
 
 The separate [unchanged upstream reproduction](docs/upstream-dft-reproduction.md)
 also passes: **89 freshly built modules and 4,247 declaration closures**,

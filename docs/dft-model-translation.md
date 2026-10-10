@@ -92,10 +92,17 @@ may have nonzero terminal offset. Dropping that offset would change its answer.
 | Borrowed-coordinate row mapping | A closed mapper generates the ascending eligible borrowed cells, maps selected occurrences through the exact native zero-hole injection and preserves coefficient addresses and duplicates. Work is at most `5000*(r+M+1)²`; integer peak has a fixed AST exponent in the input word bound. Selected occurrence/domain/fit and actual cache-caller provenance remain explicit. |
 | Joined raw height and color selection | Raw dimensions, height/color request and physical label bases generate topology, depths, buckets and height rows once; rebased native coloring and stable selection then run once. The genuine DAG supplies degree six, so no row tape, color table or degree bound is supplied. Exact work is `RawHeight.work+Color.work+47`; work is polynomial in local dimensions, while input addresses enter integer peak bounds. Requested-height and physical-fit conditions remain explicit. |
 | Joined selected-row matching caller | From raw rectangle dimensions and height/color requests, one closed caller generates the genuine topology and selected rows, applies borrowed-coordinate mapping once, then produces matching factors once. The exact added work is `25` for the outer caller and `27` for the mapper/producer join. Validity, source correspondence and fixed-exponent word bounds are derived without supplied row tapes, degree bounds or matching witnesses. The native chunk exponent is the generated exponent and its logical source base is zero. Coupling every kernel parameter and ambient root to the genuine rectangle descriptor remains a separate join. |
+| Genuine rectangle arguments and mixed radii | The actual seven-word rectangle descriptor, slot and selected-axis root generate every kernel field and raw caller argument with charged Code. Physical width `q.width` and original spectrum radix remain distinct. The unchanged producer returns local `9*q.width` factors; offset remains available for ambient placement. Topology configuration costs `28K+35`, and the outer join adds291 work. Ordinary ProducedRow, requested height, physical Layout and coefficient-address separation remain explicit. |
+| Ambient factor placement | A charged Row3 endpoint translator adds `q.offset` only to endpoints, retaining coefficient pointers, occurrence order and duplicates. It costs `49M+6`. One existing matching producer then constructs all `9*ambient` factors from those generated rows, retaining the genuine spectrum radix. The exact native415 adapter constructs the original forward preparation and matches every ambient prepared Scalar, including flags, under ordinary header/layout/source contracts. Rooted request provenance, all-phase factory composition and total storage are separate. |
+| Generated rectangle-to-ambient caller | The genuine descriptor/slot/root caller runs once, and its retained mapped rows and spectra feed the ambient producer once. Charged projections cost75; total work is exactly `RectangleCaller.work+AmbientPool.work+83`. Rooted forest membership derives both local ProducedRow and offset extent. The returned pool matches every native forward factor; native415 header installation, persistent ABI7 and timestamps remain separate. |
 | Selected-radix packing billing | The genuine selected family supplies a quadratic radix bound and `3^ℓ≤V`. These absorb the explicit local quadratic preparation cost into `12780306000V`. The unchanged native packing137 execution has `9V≤ticks`, so typed directory preparation is bounded by `12780306000` times those same actual ticks. Header, rows, permutations and ordinary entry conditions are retained; no execution budget is supplied. |
-| Closed typed kernel assembly | One charged packing/directory producer feeds whole-bank gather using `unpacking[packed]=original`, one closed saving call per generated sector on the shared bank, one direct-map materialization, then scatter using `packing[original]=packed`. The final cells match the actual closed saving results in original coordinates, including flags. The exact work counts each child once, retaining an explicit local quadratic overhead; the fixed native role width gives a polynomial peak bound. This is the complete typed functional pipeline. Its whole native packing/gather/loop/scatter/inverse execution and billing remain a separate source join. |
+| Selected polynomial absorption | For every fixed degree, a proved exponential bound absorbs a polynomial in the selected-axis count, and the sum of selected-radix powers is at most a fixed constant times working volume. The actual local raw-height/color budget is at most `2*10^24*(r+1)^8`. The genuine rectangle caller has actual work at most `3*10^24*(r+1)^8+rootWork(D)`, where `rootWork(D)≤5000*(log2(D+1)+1)`. For every positive selected input, the root term is at most `205000*(ℓ+2)^2`. Weighting these local bills by all genuine request/slot counts remains a separate aggregate bound. |
+| Complete typed/native kernel | One closed typed assembly generates packing and sectors, gathers the whole bank, invokes the same closed saving child once per sector, materializes patches and scatters. `DFTModelGlobalKernelJoin.execution` constructs the original packing/all-gather/loop/scatter/inverse native runs internally and proves exact paired cells at every returned original coordinate, including flags. Its entire work is at most `(K+12780306000+10000)` times those same ticks; peak is bounded by a fixed quadratic in volume and axis count. Entry paired cells/length, genuine selected-radix shape, Ready, constants and finite room remain ordinary caller contracts. No packed-bank certificate, child action or execution budget is supplied. Conductor5920–5939, startup100–106, outputs and root orders are retained. Original caller headers and low cache/pool frames remain a separate clock join. |
 | Complete paired child-sector loop | The original boot, branches, nine-instruction setup, closed saving child, increment/backedge and halt run in both source states with the same ticks. Every sector has an exact paired compact patch, including flags; `ticks=ΣchildTicks+12M+9`. Typed saving work is charged to those same child ticks and actual gather costs. A separate frame theorem preserves register464 and5900–5910 through that same complete loop. Ordinary gathered input, table and geometry remain entry conditions; the exported scalar frame is outside the whole grouped bank, with no arbitrary interior-gap claim. All-gather placement and later scatter/inverse packing remain separate source joins. |
 | Saved spectrum and role reload | The original outer stages 10–12 run continuously: spectrum copy, data-role headers and role loader. Both paired runs retain the saved spectrum and produce exact affine role cells and flags. Prepared spectrum equality follows from `StateMatch.prepared`. Typed work is at most `61WV+11V+21`, at most thirteen times those source ticks, and peak at most `WV`. Genuine first-clock prepared spectrum, input/kernel/alpha provenance and geometry remain entry conditions. |
+| Padded-input alpha gather | Actual outer stage13 gathers the arbitrary padded-input bank7312 through AP7310 into role0; prepared saved spectrum7300 and all spectator roles are retained separately. Both actual and zero-source runs preserve full flags. Native ticks are `9V+10`, with one added assembled halt; typed work is `21V+8`, at most three times those ticks, and peak at mostV. Genuine stage12 output is an entry contract; whole-bank publication remains a caller obligation. |
+| Pointwise product and CRT return | Actual outer stages15–16 compose the role0 product with the genuinely prepared saved kernel, then BI and AP gathers. Both source runs preserve complete paired flags, the saved kernel, spectator roles and separated banks. Native ticks are `27V+27`; typed work is `91V+100`, at most four times those ticks, with peak at mostV. Genuine stage14 output is an entry contract; matched-endpoint transport and later whole-bank publication remain caller obligations. |
+| Final CRT/chirp/output suffix | Actual outer stages18–20 compose the two CRT gathers, original output headers and final chirp/output, with exact paired intermediate cells and outputs. Prepared coefficient equality follows from StateMatch. Typed work `42V+105n+84` is at most nine times the same local `18V+13n+36` ticks; the assembled final halt adds one tick. Peak is at most `max(V,2n)`. Genuine stage17 source, prepared coefficient provenance and separated bank/table geometry remain entry contracts. |
 | Cost-contract adapter | Derives OpenAI's exact `DFTProgram` and `TimeBounds` from explicit `ComputationalPremises`; no instance of those premises exists yet. |
 
 The source DFT proof and the 51 originally vendored OpenAI files are unchanged.
@@ -109,28 +116,24 @@ identity through every stage and recursive call.
 
 ## Remaining proof, in dependency order
 
-1. Join the actual cache factory and physical storage. Compose generated height
-   rows with rebased coloring, stable matching selection and borrowed cells from original runtime
-   inputs. Existing producers now supply raw topology and depths, stable
-   buckets, roots,
-   spectra, direct-leaf coefficients/chronology, rectangle replay slots,
-   paired spectra, signed coefficient decoding, matching permutations and
-   factors. Their combined ABI, stored-source
-   provenance and total preparation budget still need one coherent program.
-   Concrete mixed-printer metadata clients must discharge static length/operand
-   restrictions, charged finite initialization, safety and justified fuel.
-2. Join the closed typed kernel, generated runtime sector directory, complete paired sector loop
-   and caller-frame proofs to the actual packing/all-gather and later scatter/inverse sequence.
-   Keep one paired recursive call per sector and preserve its returned flags. The typed kernel
-   already charges constant-work patch lookup and one final whole-bank materialization. The closed recursive source/billing and polynomial peak
-   theorems supply the child; a supplied execution budget alone does not prove
-   billing against its actual `sourceTicks`.
+1. Join the genuine rectangle/slot caller and ambient factor placement into
+   the actual complete cache factory. Its stored-source provenance, six replay
+   phases, request/slot multiplicities, repeated root-extraction bills and resident
+   storage need one charged traversal. Existing raw producers derive topology,
+   rows, colors, borrowed coordinates, spectra, coefficient labels,
+   permutations and factors internally. Concrete metadata clients still need
+   finite initialization, safety and justified fuel for their actual callers.
+2. Wrap the complete paired kernel in the original kernel headers and diagonal
+   consumer, preserving low cache/table/pool frames. Use the same returned
+   paired bank and native witness throughout. Compact nine-lane pools have a
+   checked reader; their genuine generated-cache provenance must be retained.
 3. Assemble the complete synchronized global clock, including matching
    movement, direction/basis tables, role batches and diagonal factors.
    Prove charged layout restoration, source correspondence, work and storage
    for the same concrete execution.
-4. Assemble the actual outer stages: preparation, kernel transform/save, input
-   transform, pointwise product, inverse transform and final chirp/output.
+4. Assemble the remaining actual outer stages and their entry provenance.
+   Stages10–12,13,15–16 and18–20 already have local paired source joins. Startup/cache/CRT preparation, all three synchronized clocks and
+   their intervening callers still need one complete typed program.
 5. Prove `DFTModelCost.ComputationalPremises` for those concrete closed `order`
    and `solve` programs. This supplies validity, polynomial word bounds, exact
    outputs, and total
