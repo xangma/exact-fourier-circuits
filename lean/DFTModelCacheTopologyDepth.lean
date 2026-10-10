@@ -1,0 +1,160 @@
+import DFTModelCacheTopologyClosed
+
+set_option autoImplicit false
+namespace ExactFourierCircuits.DFTModelCacheTopologyDepth
+open OAI.PowerSaving OAI.PowerSaving.RAM OAI.PowerSaving.RAM.Ty
+open DFTModelRecursiveScalarCore
+noncomputable section
+
+abbrev Topology := p w (p w (Ty.a w))
+abbrev Input := p (p w w) Topology
+abbrev Output := p Topology (Ty.a w)
+
+/-- Retain the produced flat5 topology while computing its actual DAG depths.
+The first pair supplies the ordinary rectangle extents (a,e). -/
+def argument : Prog false Input (p w (p w (Ty.a w))) :=
+  .fork (.comp (.atom .fst) (.atom .snd)) (.comp (.atom .snd) (.atom .snd))
+def adapter : Prog false Input Output :=
+  .fork (.atom .snd) (.comp argument DFTModelCacheDAGDepth.fromTopology)
+
+attribute [local irreducible] DFTModelCacheDAGDepth.fromTopology
+
+theorem adapter_run (a e K G : ℕ) (t : Tape ℕ) :
+    run adapter ((a,e),(K,(G,t)))=
+      ⟨((K,(G,t)),(run DFTModelCacheDAGDepth.fromTopology (e,(G,t))).val),
+        (run DFTModelCacheDAGDepth.fromTopology (e,(G,t))).work+10,
+        (run DFTModelCacheDAGDepth.fromTopology (e,(G,t))).peak,
+        (run DFTModelCacheDAGDepth.fromTopology (e,(G,t))).valid⟩ := by
+  simp only [adapter,argument,run,Code.run,Atom.run,Bill.one,Bill.pass,Bill.pay,
+    true_and,and_true,zero_max,max_zero]
+  congr 1; omega
+
+theorem adapter_native {r e G d : ℕ} (p : UniformReplayPrint.Program r e G)
+    (a K : ℕ) (t : Tape ℕ) (s : UniformMachine.State)
+    (encoded : UniformDAGDepthMachine.EncodedTape p d s)
+    (copied : DFTModelCacheDAGDepth.CopiedTopology G d t s) :
+    (run adapter ((a,e),(K,(G,t)))).valid ∧
+    (run adapter ((a,e),(K,(G,t)))).work≤
+      DFTModelCacheDAGDepth.workBudget e G+57*G+19 ∧
+    (run adapter ((a,e),(K,(G,t)))).peak≤e+5*G+5 ∧
+    ∀i:Fin (e+1+G),(run adapter ((a,e),(K,(G,t)))).val.2.look i.val 0=
+      UniformToeplitzCrossDAG.runDepth p (fun _=>0) i := by
+  have h:=DFTModelCacheDAGDepth.fromTopology_native p t s encoded copied
+  rw [adapter_run]
+  exact ⟨h.1,by dsimp only; omega,h.2.2.1,h.2.2.2⟩
+
+/-- Raw extents generate their own topology before the depth recurrence runs. -/
+def program : Prog false DFTModelCacheTopology.Input Output :=
+  .comp (.fork (.atom .id) DFTModelCacheTopology.program) adapter
+
+attribute [local irreducible] DFTModelCacheTopology.program adapter
+
+theorem program_run (a e : ℕ) :
+    run program (a,e)=
+      let top:=run DFTModelCacheTopology.program (a,e)
+      let dep:=run DFTModelCacheDAGDepth.fromTopology (e,top.val.2)
+      ⟨(top.val,dep.val),top.work+dep.work+13,
+        max top.peak dep.peak,top.valid ∧ dep.valid⟩ := by
+  rw [program,comp_run,fork_run,atom_run]
+  simp only [Atom.run,Bill.one,Bill.pass,Bill.pay,true_and,zero_max,max_zero]
+  generalize hv:(run DFTModelCacheTopology.program (a,e)).val=v
+  rcases v with ⟨K,G,t⟩
+  rw [adapter_run]
+  simp only [and_true]
+  congr 1; omega
+
+def dag (a e : ℕ) := UniformToeplitzCrossDAG.crossDAG
+  (DFTModelCacheTopology.exponent a e) a e
+  (DFTModelCacheTopology.dimensions_fit a e).1
+  (DFTModelCacheTopology.dimensions_fit a e).2
+
+theorem depth_value (a e : ℕ) (u : UniformMachine.State) (ticks : ℕ)
+    (source : DFTModelCacheTopology.Result a e u ticks)
+    (i : Fin (e+1+(dag a e).size)) :
+    (run program (a,e)).val.2.look i.val 0=
+      UniformToeplitzCrossDAG.runDepth (dag a e).program (fun _=>0) i := by
+  have size:(dag a e).size=DFTModelCacheTopology.C (DFTModelCacheTopology.exponent a e) a :=
+    DFTModelCacheTopology.typed_count _ _ _
+      (DFTModelCacheTopology.dimensions_fit a e).1
+      (DFTModelCacheTopology.dimensions_fit a e).2
+  have copied:DFTModelCacheDAGDepth.CopiedTopology (dag a e).size
+      (DFTModelCacheTopology.D (DFTModelCacheTopology.exponent a e))
+      (run DFTModelCacheTopology.program (a,e)).val.2.2 u := by
+    simpa only [size] using source.copied
+  have fields:=DFTModelCacheDAGDepth.fields_of_encoded (dag a e).program _ u
+    source.encoded copied
+  have argument_eq:(e,(run DFTModelCacheTopology.program (a,e)).val.2)=
+      (e,((dag a e).size,(run DFTModelCacheTopology.program (a,e)).val.2.2)) := by
+    congr 1
+    exact Prod.ext (source.count.trans size.symm) rfl
+  rw [program_run]
+  change (run DFTModelCacheDAGDepth.fromTopology
+    (e,(run DFTModelCacheTopology.program (a,e)).val.2)).val.look i.val 0=_
+  rw [argument_eq]
+  exact DFTModelCacheDAGDepth.fromTopology_typed _ _ fields i
+
+/-- Both native topology generation and exact depth computation start at raw
+rectangle extents. No topology or depth result is an entry argument. -/
+theorem execution_values (a e : ℕ) : ∃u ticks,
+    DFTModelCacheTopology.Result a e u ticks ∧
+    ∀i:Fin (e+1+(dag a e).size),
+      (run program (a,e)).val.2.look i.val 0=
+        UniformToeplitzCrossDAG.runDepth (dag a e).program (fun _=>0) i ∧
+      (run program (a,e)).val.2.look i.val 0≤8*DFTModelCacheTopology.exponent a e+6 := by
+  obtain ⟨u,ticks,source⟩:=DFTModelCacheTopology.execution_values a e
+  refine ⟨u,ticks,source,fun i=>⟨depth_value a e u ticks source i,?_⟩⟩
+  rw [depth_value a e u ticks source i]
+  exact UniformToeplitzCrossDAG.crossDAG_depth _ _ _
+    (DFTModelCacheTopology.dimensions_fit a e).1
+    (DFTModelCacheTopology.dimensions_fit a e).2 i
+
+def count (a e : ℕ) := DFTModelCacheTopology.C (DFTModelCacheTopology.exponent a e) a
+def workBudget (a e : ℕ) := DFTModelCacheTopology.workBudget a e+
+  DFTModelCacheDAGDepth.workBudget e (count a e)+57*count a e+22
+def peakBudget (a e : ℕ) := max (DFTModelCacheTopology.peakBudget a e) (e+5*count a e+5)
+
+theorem depth_budget (a e : ℕ) (u : UniformMachine.State) (ticks : ℕ)
+    (source : DFTModelCacheTopology.Result a e u ticks) :
+    DFTModelCacheMatchingNat.Budget
+      (run DFTModelCacheDAGDepth.fromTopology (e,(run DFTModelCacheTopology.program (a,e)).val.2))
+      (DFTModelCacheDAGDepth.workBudget e (count a e)+57*count a e+9) (e+5*count a e+5) := by
+  have size:(dag a e).size=count a e := DFTModelCacheTopology.typed_count _ _ _
+    (DFTModelCacheTopology.dimensions_fit a e).1 (DFTModelCacheTopology.dimensions_fit a e).2
+  have copied:DFTModelCacheDAGDepth.CopiedTopology (dag a e).size
+      (DFTModelCacheTopology.D (DFTModelCacheTopology.exponent a e))
+      (run DFTModelCacheTopology.program (a,e)).val.2.2 u := by
+    simpa only [size,count] using source.copied
+  have h:=DFTModelCacheDAGDepth.fromTopology_native (dag a e).program _ u source.encoded copied
+  have argument_eq:(e,(run DFTModelCacheTopology.program (a,e)).val.2)=
+      (e,((dag a e).size,(run DFTModelCacheTopology.program (a,e)).val.2.2)) := by
+    congr 1
+    exact Prod.ext (source.count.trans size.symm) rfl
+  have valid:=h.1
+  have work:=h.2.1
+  have peak:=h.2.2.1
+  rw [←argument_eq] at valid work peak
+  rw [size] at work peak
+  exact ⟨valid,work,peak⟩
+
+/-- The composed raw-input generator charges topology production, flat5
+readback and every depth update, retaining the genuine native source run. -/
+theorem execution (a e : ℕ) : ∃u ticks,
+    DFTModelCacheTopology.Result a e u ticks ∧
+    DFTModelCacheMatchingNat.Budget (run program (a,e)) (workBudget a e) (peakBudget a e) := by
+  obtain ⟨u,ticks,source,top⟩:=DFTModelCacheTopology.execution a e
+  have dep:=depth_budget a e u ticks source
+  refine ⟨u,ticks,source,?_⟩
+  rw [program_run]
+  change (_ ∧ _) ∧ _ ∧ _
+  refine ⟨⟨top.1,dep.1⟩,?_,?_⟩
+  · dsimp only
+    unfold workBudget
+    have ht:=top.2.1
+    have hd:=dep.2.1
+    omega
+  · dsimp only
+    exact max_le (top.2.2.trans (le_max_left _ _))
+      (dep.2.2.trans (le_max_right _ _))
+
+end
+end ExactFourierCircuits.DFTModelCacheTopologyDepth

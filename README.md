@@ -62,11 +62,18 @@ actual source runs, preserves their exact returned flags, and bounds the one
 paired computation by a fixed factor times those same actual ticks. Its closed
 typed program also has a polynomial peak bound. Cache producers now build
 native descriptors, leaf coefficients and chronology, spectrum forests,
-rectangle replay phases and matching factors. A charged matching-table client
-reproduces native permutation generation; a mixed-program projection checks
+rectangle replay phases and matching factors. Raw rectangle extents now produce
+the genuine five-field topology, exact DAG depths and stable buckets in one
+closed producer. A charged height selector derives the native physical rows;
+a separate producer executes native greedy coloring and proves eleven matching
+layers under the degree-six condition. Paired original/conjugate spectra and signed physical
+coefficient decoding are also checked. One joined producer builds coefficients,
+the native permutation, C constants and all matching factors from the same raw
+selected rows and master root. A mixed-program projection checks
 integer metadata separately. Sector gathering enters the actual closed paired
-child once. The component receipt leaves the whole compiler open: selected
-matching rows, physical cache and sector maps, global-clock and outer-stage
+child once. A charged sector map has linear construction work and constant
+patch lookup from a prepared directory. The component receipt leaves the whole compiler open: selected
+matching rows joined to their colors, physical cache and generated sector directories, global-clock and outer-stage
 assembly, and total work/storage must still be joined.
 
 The separate [unchanged upstream reproduction](docs/upstream-dft-reproduction.md)

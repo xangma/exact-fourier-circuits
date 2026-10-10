@@ -161,11 +161,19 @@ typed preparation now computes headers, primes, CRT permutations, chirps,
 normalization and C constants from the original length/root/data, with charged
 work and word bounds. Native descriptors, direct-leaf coefficients/chronology,
 all-axis spectra, calendar, rectangle replay phases and matching factors now
-have checked producers. Integer dispatch and a concrete matching-table client
+have checked producers. Raw extents now generate the native topology and exact
+DAG depths and stable buckets in one closed producer. Charged height selection
+returns the native physical rows; native greedy coloring and its degree-six
+matching-layer guarantee are checked separately. Original/conjugate spectra
+and signed physical coefficient decoding have charged producers; a joined
+matching producer derives its coefficient pairs, permutation, C constants and
+nine-lane factor bank internally. Integer dispatch and a concrete matching-table client
 charge initialization, execution and readback; mixed-program Nat projection
 separates metadata from scalar production. Sector gathering enters the closed
 paired saving child once, with checked validity, billing and polynomial peak.
-Remaining milestones are actual selected matching rows and coherent physical
-cache storage, generated sector maps and global-clock assembly, outer-stage
+A closed sector map charges linear construction and constant patch lookup
+from its prepared directory.
+Remaining milestones are joining generated height/color rows to matching selection and coherent physical
+cache storage, runtime sector-directory production and global-clock assembly, outer-stage
 assembly, and the whole-program cost/storage certificate. Component
 verification leaves that complete translation open.

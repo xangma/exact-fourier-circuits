@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Freshly check DFT translation components, with an explicit incomplete-compiler receipt."""
 import argparse
+from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
 from datetime import datetime, timezone
 import hashlib
 import json
@@ -9,6 +10,7 @@ from pathlib import Path
 import re
 import signal
 import subprocess
+import threading
 import uuid
 
 if not __debug__:
@@ -86,40 +88,136 @@ def strip_comments(text):
     return "".join(result)
 
 
-def run_logged(args, log, env=None):
-    print(f"Checking {log.stem}", flush=True)
-    with log.open("w") as handle:
-        process = subprocess.Popen(args, cwd=LEAN, stdout=handle,
-                                   stderr=subprocess.STDOUT, start_new_session=True, env=env)
-        print(f"  group {process.pid}; log {log}; stop: kill -TERM -- -{process.pid}", flush=True)
-        try:
-            code = process.wait()
-        except BaseException:
+def ignore_termination():
+    if threading.current_thread() is threading.main_thread():
+        return {sig: signal.signal(sig, signal.SIG_IGN)
+                for sig in (signal.SIGTERM, signal.SIGINT)}
+    return {}
+
+
+def restore_termination(saved):
+    for sig, handler in saved.items():
+        signal.signal(sig, handler)
+
+
+def termination_requested(sig, _frame):
+    # Make stopping one-shot before raising into any cleanup/lock path.
+    signal.signal(sig, signal.SIG_IGN)
+    ignore_termination()
+    raise SystemExit(128+sig)
+
+
+def stop_processes(processes):
+    """Reap each direct child and kill its entire owned session."""
+    # A second stop request must not interrupt cleanup and leave workers alive.
+    saved = ignore_termination()
+    try:
+        for process in processes:
             try:
                 os.killpg(process.pid, signal.SIGTERM)
             except ProcessLookupError:
                 pass
+        for process in processes:
             try:
                 process.wait(timeout=10)
             except subprocess.TimeoutExpired:
                 pass
-            # The direct child can exit while a grandchild ignores SIGTERM.
-            # Clean the entire owned group even when wait() already returned.
             try:
                 os.killpg(process.pid, signal.SIGKILL)
             except ProcessLookupError:
                 pass
             process.wait()
+    finally:
+        restore_termination(saved)
+
+
+class BuildProcesses:
+    def __init__(self):
+        self.lock = threading.Lock()
+        self.stopping = False
+        self.active = set()
+
+    def start(self, *args, **kwargs):
+        with self.lock:
+            if self.stopping:
+                raise RuntimeError("Build cancelled before process start")
+            process = subprocess.Popen(*args, **kwargs)
+            self.active.add(process)
+            return process
+
+    def discard(self, process):
+        with self.lock:
+            self.active.discard(process)
+
+    def cancel(self):
+        saved = ignore_termination()
+        try:
+            with self.lock:
+                self.stopping = True
+                processes = list(self.active)
+            stop_processes(processes)
+        finally:
+            restore_termination(saved)
+
+
+def dependency_builds(ordered, dependencies, compile_one, jobs, cancel):
+    """Start only modules whose imports have completed successfully."""
+    if jobs < 1:
+        raise ValueError("jobs must be positive")
+    pending, complete, running, results = set(ordered), set(), {}, {}
+    assert len(pending) == len(ordered), "Duplicate build module"
+    assert all(dependencies[n] <= pending for n in pending), "Unknown dependency"
+    executor = ThreadPoolExecutor(max_workers=jobs)
+    try:
+        while pending or running:
+            ready = [n for n in ordered if n in pending and dependencies[n] <= complete]
+            for name in ready[:jobs-len(running)]:
+                running[executor.submit(compile_one, name)] = name
+                pending.remove(name)
+            assert running, f"Cyclic component imports: {pending}"
+            done, _ = wait(running, return_when=FIRST_COMPLETED)
+            for future in done:
+                name = running.pop(future)
+                results[name] = future.result()
+                complete.add(name)
+    except BaseException:
+        cancel()
+        for future in running:
+            future.cancel()
+        raise
+    finally:
+        executor.shutdown(wait=True, cancel_futures=True)
+    return results
+
+
+def run_logged(args, log, env=None, processes=None):
+    print(f"Checking {log.stem}", flush=True)
+    with log.open("w") as handle:
+        start = subprocess.Popen if processes is None else processes.start
+        process = start(args, cwd=LEAN, stdout=handle,
+                        stderr=subprocess.STDOUT, start_new_session=True, env=env)
+        print(f"  group {process.pid}; log {log}; stop: kill -TERM -- -{process.pid}", flush=True)
+        try:
+            code = process.wait()
+            assert code == 0, f"Lean failed ({code}): {log}"
+            assert not re.search(r"\bwarning:", log.read_text()), f"Lean warning: {log}"
+        except BaseException:
+            stop_processes([process])
             raise
-    assert code == 0, f"Lean failed ({code}): {log}"
-    assert not re.search(r"\bwarning:", log.read_text()), f"Lean warning: {log}"
+        finally:
+            if processes is not None:
+                processes.discard(process)
 
 
 def main():
-    signal.signal(signal.SIGTERM, lambda sig, frame: (_ for _ in ()).throw(SystemExit(128+sig)))
+    signal.signal(signal.SIGTERM, termination_requested)
+    signal.signal(signal.SIGINT, termination_requested)
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=ROOT / "logs/dft-model-components")
+    parser.add_argument("--jobs", type=int, default=1, help="Maximum concurrent dependency-ready Lean builds")
     args = parser.parse_args()
+    if args.jobs < 1:
+        parser.error("--jobs must be positive")
     logs = args.output.resolve() / ("run-" + uuid.uuid4().hex)
     logs.mkdir(parents=True, exist_ok=False)
     stage = logs / "build"
@@ -222,11 +320,16 @@ def main():
 
     check_inputs()
     print(f"Certified reuse: {len(artifacts)} project and {len(external)} external artifacts.", flush=True)
-    for name in ordered:
+    processes = BuildProcesses()
+
+    def compile_one(name):
         run_logged([str(compiler), "-o", str(stage / (name+".olean")), name+".lean"],
-                   logs / (name+".log"), env=build_env)
-        fresh[name] = sha(stage / (name+".olean"))
-        fresh_parts[name] = optional_parts(stage / (name+".olean"))
+                   logs / (name+".log"), env=build_env, processes=processes)
+        return sha(stage / (name+".olean")), optional_parts(stage / (name+".olean"))
+
+    results = dependency_builds(ordered, dependencies, compile_one, args.jobs, processes.cancel)
+    for name in ordered:
+        fresh[name], fresh_parts[name] = results[name]
     check_inputs()
     census = "\n".join("import " + name for name in ordered) + """
 import Lean
@@ -270,6 +373,7 @@ run_cmd do
         "scope": "Checked building blocks for translating our actual all-length DFT. The cost adapter has explicit computational premises; no closed whole-program translation is certified.",
         "compiler_closed": False, "model_equivalence_proved": False,
         "default_limits_for_new_modules": True, "standard_axioms_only": True,
+        "build_workers": args.jobs,
         "fresh_modules": ordered, "declaration_closures": len(entries),
         "private_closures": sum(e["name"].startswith("_private.") for e in entries),
         "axioms": sorted({ax for e in entries for ax in e["axioms"]}),
