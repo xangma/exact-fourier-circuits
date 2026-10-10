@@ -159,7 +159,11 @@ remain intact. The unchanged upstream all-length solution now also has a
 The [actual DFT translation](docs/dft-model-translation.md) is ongoing. Closed
 typed preparation now computes headers, primes, CRT permutations, chirps,
 normalization and C constants from the original length/root/data, with charged
-work and word bounds. Remaining milestones are the recursive cache forest,
-one-call paired recursive saving body, synchronized calendar, outer-stage
-assembly, and the resulting whole-program cost/storage certificate. Component
-verification does not mark those milestones complete.
+work and word bounds. Native descriptor traversal, direct-leaf records,
+all-axis spectrum forests and the synchronized calendar now have closed
+producers. The one-call paired recursive saving root has checked exact source
+outputs/flags and billing against the same actual ticks, without smaller-child
+callbacks, and its closed typed program has a polynomial peak bound. Remaining
+milestones are scalar matching factors and physical cache/global-clock
+assembly, outer-stage assembly, and the resulting whole-program cost/storage
+certificate. Component verification leaves that complete translation open.

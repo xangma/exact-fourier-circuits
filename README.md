@@ -54,13 +54,17 @@ to 175 Lean modules and freshly checks the complete final proof. The later
 the entire languages differ under their declared data interface: ours can
 compute `x + 1`, while upstream typed data stay zero on zero input. This does
 not refute either DFT theorem. Concrete primitive translations are checked;
-a cost-preserving translation of a common DFT fragment remains open.
+a cost-preserving translation of our complete DFT remains open.
 The [actual DFT translation work](docs/dft-model-translation.md) now checks
 paired affine operations, closed root/header/CRT/chirp/normalization producers,
-and complete local stages. The preparation takes the original length, master
-root and data. Its component receipt explicitly leaves the whole-program
-compiler open; the cache forest, recursive saving body and synchronized
-schedule still need their complete typed implementations and cost proofs.
+and complete local stages. The closed recursive saving root now matches both
+actual source runs, preserves their exact returned flags, and bounds the one
+paired computation by a fixed factor times those same actual ticks. Its closed
+typed program also has a polynomial peak bound. Cache
+producers build native descriptors, direct-leaf records, all-axis spectrum
+forests and the synchronized event calendar. The component receipt still
+leaves the whole-program compiler open: scalar matching factors, physical cache
+and global-clock assembly, outer stages and total work/storage must be joined.
 
 The separate [unchanged upstream reproduction](docs/upstream-dft-reproduction.md)
 also passes: **89 freshly built modules and 4,247 declaration closures**,
